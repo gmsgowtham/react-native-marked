@@ -1,0 +1,23 @@
+{
+  "name": "react-native-marked-example",
+  "displayName": "Marked Example",
+  "expo": {
+    "name": "react-native-marked-example",
+    "slug": "react-native-marked-example",
+    "description": "Example app for react-native-marked",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "jsEngine": "hermes",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
