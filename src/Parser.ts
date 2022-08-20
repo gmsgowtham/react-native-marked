@@ -39,6 +39,7 @@ class Parser {
 
       switch (token.type) {
         case 'escape': {
+          elements.push(renderer.text(token.text));
           break;
         }
         case 'html': {
