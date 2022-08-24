@@ -8,7 +8,7 @@ import {
   ViewStyle,
 } from 'react-native';
 import Renderer from './Renderer';
-import type { MarkedStyles } from './types';
+import type { MarkedStyles } from './../types/styles';
 
 class Parser {
   private renderer;

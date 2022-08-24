@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Image, ImageStyle, Linking, View, ViewStyle } from 'react-native';
 import type { StyleProp, TextStyle } from 'react-native';
 import { Text } from 'react-native';
-import { generateRandomString } from './utils';
+import { generateRandomString } from '../utils/string';
 
 class Renderer {
   private onLinkPress = (href: string) => () => Linking.openURL(href);

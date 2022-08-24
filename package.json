@@ -2,19 +2,19 @@
   "name": "react-native-marked",
   "version": "0.1.0",
   "description": "test",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
-  "types": "lib/typescript/index.d.ts",
+  "main": "dist/commonjs/index",
+  "module": "dist/module/index",
+  "types": "dist/typescript/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
   "files": [
     "src",
-    "lib",
+    "dist",
     "android",
     "ios",
     "cpp",
     "react-native-marked.podspec",
-    "!lib/typescript/example",
+    "!dist/typescript/example",
     "!android/build",
     "!ios/build",
     "!**/__tests__",
@@ -79,8 +79,8 @@
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
-      "<rootDir>/example/node_modules",
-      "<rootDir>/lib/"
+      "<rootDir>/examples/*/node_modules",
+      "<rootDir>/dist/"
     ]
   },
   "commitlint": {
@@ -148,7 +148,7 @@
   },
   "eslintIgnore": [
     "node_modules/",
-    "lib/",
+    "dist/",
     "examples/*/node_modules"
   ],
   "prettier": {
@@ -160,7 +160,7 @@
   },
   "react-native-builder-bob": {
     "source": "src",
-    "output": "lib",
+    "output": "dist",
     "targets": [
       "commonjs",
       "module",
