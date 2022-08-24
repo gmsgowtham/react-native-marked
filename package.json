@@ -54,6 +54,8 @@
     "@types/marked": "^4.0.3",
     "@types/react": "~17.0.21",
     "@types/react-native": "0.68.0",
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
+    "@typescript-eslint/parser": "^5.34.0",
     "commitlint": "^17.0.2",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.5.0",
@@ -105,10 +107,11 @@
   },
   "eslintConfig": {
     "root": true,
-    "parser": "@babel/eslint-parser",
+    "parser": "@typescript-eslint/parser",
     "extends": [
       "@react-native-community",
-      "prettier"
+      "prettier",
+      "plugin:@typescript-eslint/recommended"
     ],
     "rules": {
       "prettier/prettier": [
@@ -125,7 +128,8 @@
   },
   "eslintIgnore": [
     "node_modules/",
-    "lib/"
+    "lib/",
+    "examples/*/node_modules"
   ],
   "prettier": {
     "quoteProps": "consistent",

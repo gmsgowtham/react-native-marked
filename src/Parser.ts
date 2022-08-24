@@ -1,86 +1,158 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import type { marked } from 'marked';
+import {
+  Dimensions,
+  ImageStyle,
+  StyleProp,
+  StyleSheet,
+  TextStyle,
+  ViewStyle,
+} from 'react-native';
 import Renderer from './Renderer';
+import type { MarkedStyles } from './types';
 
 class Parser {
-  renderer;
-  constructor() {
+  private renderer;
+  private styles: MarkedStyles;
+  private window = Dimensions.get('window');
+  constructor(styles: MarkedStyles = {}) {
     this.renderer = new Renderer();
+    this.styles = {
+      ...defaultStyles,
+      ...styles,
+    };
   }
 
-  parse(tokens: marked.TokensList) {
-    const elements: React.ReactNode[] = [];
+  parse(tokens: marked.Token[]) {
+    return this.parseBlocks(tokens);
+  }
 
-    for (let i = 0; i < tokens.length; i++) {
-      const token = tokens[i];
-      if (!token) continue;
+  parseBlocks(
+    tokens: marked.Token[],
+    styleObj: StyleProp<ViewStyle | TextStyle | ImageStyle> = {}
+  ) {
+    const elements: React.ReactNode[] = tokens.map((token) => {
       switch (token.type) {
         case 'space': {
-          break;
+          return null;
         }
         case 'paragraph': {
-          elements.push(
-            this.renderer.paragraph(
-              this.parseInline(token.tokens, this.renderer)
-            )
+          return this.renderer.getParagraph(
+            this.parseInline(token.tokens, this.renderer),
+            [styleObj, this.styles.paragraph]
           );
-          break;
         }
+        case 'blockquote': {
+          return this.renderer.getBlockquote(
+            this.parseBlocks(token.tokens, this.styles.blockquoteText),
+            this.styles.blockquoteContainer
+          );
+        }
+        case 'heading': {
+          if (token.depth === 2) {
+            return this.renderer.getHeading(token.text, this.styles.h2);
+          }
+          return null;
+        }
+        default:
+          return null;
       }
-    }
+    });
     return elements;
   }
 
   parseInline(tokens: marked.Token[], renderer: Renderer) {
-    const elements: React.ReactNode[] = [];
-    for (let i = 0; i < tokens.length; i++) {
-      const token = tokens[i];
-      if (!token) continue;
+    const elements: React.ReactNode[] = tokens.map((token) => {
+      if (!token) return null;
 
       switch (token.type) {
         case 'escape': {
-          elements.push(renderer.text(token.text));
-          break;
+          return renderer.getTextNode(token.text, this.styles.text);
         }
         case 'html': {
-          break;
+          return null;
         }
         case 'link': {
-          elements.push(renderer.link(token.text, token.href));
-          break;
+          return renderer.getLinkNode(token.text, token.href, this.styles.link);
         }
         case 'image': {
-          break;
+          return renderer.getImage('https://picsum.photos/200/300', [
+            {
+              resizeMode: 'contain',
+              width: this.window.width,
+              height: 300,
+            },
+            this.styles.image,
+          ]);
         }
         case 'strong': {
-          break;
+          return renderer.getTextNode(token.text, this.styles.strong);
         }
         case 'em': {
-          elements.push(renderer.em(token.text));
-          break;
+          return renderer.getTextNode(token.text, this.styles.em);
         }
         case 'codespan': {
-          break;
+          return null;
         }
         case 'br': {
-          break;
+          return renderer.getLineBreak();
         }
         case 'del': {
-          break;
+          return null;
         }
         case 'text': {
-          elements.push(renderer.text(token.raw));
-          break;
+          return renderer.getTextNode(token.raw, this.styles.text);
         }
         default: {
           const errMsg = 'Token with "' + token.type + '" type was not found.';
           console.error(errMsg);
-          break;
+          return null;
         }
       }
-    }
+    });
     return elements;
   }
 }
+
+const defaultStyles = StyleSheet.create<MarkedStyles>({
+  em: {
+    fontSize: 14,
+    lineHeight: 21,
+    fontStyle: 'italic',
+  },
+  strong: {
+    fontSize: 14,
+    lineHeight: 21,
+    fontWeight: 'bold',
+  },
+  text: {
+    fontSize: 14,
+    lineHeight: 21,
+  },
+  paragraph: {
+    fontSize: 14,
+    lineHeight: 21,
+    paddingVertical: 8,
+  },
+  link: {
+    fontStyle: 'italic',
+    fontSize: 14,
+    lineHeight: 21,
+    color: '#0074cc',
+  },
+  blockquoteText: {
+    color: '#6a737d',
+  },
+  blockquoteContainer: {
+    borderLeftColor: '#dfe2e5',
+    paddingLeft: 16,
+    borderLeftWidth: 5,
+  },
+  h2: {
+    fontSize: 18,
+    fontWeight: '500',
+    lineHeight: 27,
+    paddingVertical: 8,
+  },
+});
 
 export default Parser;

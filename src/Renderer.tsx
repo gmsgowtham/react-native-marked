@@ -1,64 +1,65 @@
 import * as React from 'react';
-import { Linking, StyleSheet } from 'react-native';
+import { Image, ImageStyle, Linking, View, ViewStyle } from 'react-native';
+import type { StyleProp, TextStyle } from 'react-native';
 import { Text } from 'react-native';
 import { generateRandomString } from './utils';
 
 class Renderer {
   private onLinkPress = (href: string) => () => Linking.openURL(href);
 
-  text(text: string) {
+  getTextNode = (text: string, styles: StyleProp<TextStyle>) => {
     return (
-      <Text key={generateRandomString()} style={[styles.text]}>
+      <Text key={generateRandomString()} style={styles}>
         {text}
       </Text>
     );
-  }
+  };
 
-  em(text: string) {
-    return (
-      <Text key={generateRandomString()} style={[styles.em, styles.text]}>
-        {text}
-      </Text>
-    );
-  }
-
-  link(text: string, href: string) {
+  getLinkNode = (text: string, href: string, styles: StyleProp<TextStyle>) => {
     return (
       <Text
         key={generateRandomString()}
         onPress={this.onLinkPress(href)}
-        style={[styles.em, styles.text, styles.link]}
+        style={styles}
       >
+        {text}
+      </Text>
+    );
+  };
+
+  getParagraph(children: React.ReactNode[], styles: StyleProp<TextStyle>) {
+    return (
+      <Text key={generateRandomString()} style={styles}>
+        {children}
+      </Text>
+    );
+  }
+
+  getLineBreak() {
+    return <Text key={generateRandomString()}>{'\n'}</Text>;
+  }
+
+  getBlockquote(children: React.ReactNode[], styles: StyleProp<ViewStyle>) {
+    return (
+      <View key={generateRandomString()} style={styles}>
+        {children}
+      </View>
+    );
+  }
+
+  getHeading(text: string, styles: StyleProp<TextStyle>) {
+    return (
+      <Text key={generateRandomString()} style={styles}>
         {text}
       </Text>
     );
   }
 
-  paragraph(children: React.ReactNode[]) {
+  getImage(uri: string, styles: StyleProp<ImageStyle>) {
     return (
-      <Text
-        key={generateRandomString()}
-        style={[styles.text, styles.paragraph]}
-      >
-        {children}
-      </Text>
+      <Image style={styles} source={{ uri }} key={generateRandomString()} />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  em: {
-    fontStyle: 'italic',
-  },
-  text: {
-    fontSize: 14,
-  },
-  paragraph: {
-    padding: 8,
-  },
-  link: {
-    color: '#0074cc',
-  },
-});
 
 export default Renderer;
