@@ -56,6 +56,7 @@ class Renderer {
   }
 
   getImage(uri: string, styles: StyleProp<ImageStyle>) {
+    // TODO: custom image component with proper width and height
     return (
       <Image style={styles} source={{ uri }} key={generateRandomString()} />
     );
