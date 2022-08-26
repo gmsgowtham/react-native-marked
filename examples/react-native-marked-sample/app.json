@@ -13,11 +13,15 @@
       "web"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rnmarked.sample"
     },
     "jsEngine": "hermes",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.rnmarked.sample"
+    }
   }
 }
