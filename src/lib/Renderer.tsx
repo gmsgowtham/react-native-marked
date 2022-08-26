@@ -1,16 +1,20 @@
 import * as React from 'react';
-import { Image, ImageStyle, Linking, View, ViewStyle } from 'react-native';
+import { Linking, View, ViewStyle } from 'react-native';
 import type { StyleProp, TextStyle } from 'react-native';
 import { Text } from 'react-native';
+import MDImage from './../components/MDImage';
 import { generateRandomString } from '../utils/string';
 
 class Renderer {
   private onLinkPress = (href: string) => () => Linking.openURL(href);
 
-  getTextNode = (text: string, styles: StyleProp<TextStyle>) => {
+  getTextNode = (
+    children: string | React.ReactNode[],
+    styles: StyleProp<TextStyle>
+  ) => {
     return (
       <Text key={generateRandomString()} style={styles}>
-        {text}
+        {children}
       </Text>
     );
   };
@@ -27,16 +31,12 @@ class Renderer {
     );
   };
 
-  getParagraph(children: React.ReactNode[], styles: StyleProp<TextStyle>) {
+  getParagraph(children: React.ReactNode[], styles: StyleProp<ViewStyle>) {
     return (
-      <Text key={generateRandomString()} style={styles}>
+      <View key={generateRandomString()} style={styles}>
         {children}
-      </Text>
+      </View>
     );
-  }
-
-  getLineBreak() {
-    return <Text key={generateRandomString()}>{'\n'}</Text>;
   }
 
   getBlockquote(children: React.ReactNode[], styles: StyleProp<ViewStyle>) {
@@ -55,11 +55,8 @@ class Renderer {
     );
   }
 
-  getImage(uri: string, styles: StyleProp<ImageStyle>) {
-    // TODO: custom image component with proper width and height
-    return (
-      <Image style={styles} source={{ uri }} key={generateRandomString()} />
-    );
+  getImage(uri: string, width: number) {
+    return <MDImage key={generateRandomString()} uri={uri} width={width} />;
   }
 }
 

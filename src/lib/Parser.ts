@@ -1,6 +1,5 @@
 import type { marked } from 'marked';
 import {
-  Dimensions,
   ImageStyle,
   StyleProp,
   StyleSheet,
@@ -8,17 +7,18 @@ import {
   ViewStyle,
 } from 'react-native';
 import Renderer from './Renderer';
-import type { MarkedStyles } from './../types/styles';
+import type { MarkedStyles, ParserOptions } from '../types/types';
 
 class Parser {
   private renderer;
   private styles: MarkedStyles;
-  private window = Dimensions.get('window');
-  constructor(styles: MarkedStyles = {}) {
+  private options: ParserOptions;
+  constructor(options: ParserOptions) {
     this.renderer = new Renderer();
+    this.options = options;
     this.styles = {
       ...defaultStyles,
-      ...styles,
+      ...options.styles,
     };
   }
 
@@ -36,10 +36,34 @@ class Parser {
           return null;
         }
         case 'paragraph': {
-          return this.renderer.getParagraph(
-            this.parseInline(token.tokens, this.renderer),
-            [styleObj, this.styles.paragraph]
-          );
+          let tempTokens: marked.Token[] = [];
+          const paragraphChildren: React.ReactNode[] = [];
+          token.tokens.forEach((t) => {
+            // TODO: move type checking value to const
+            if (t.type === 'image') {
+              paragraphChildren.push(
+                this.renderer.getTextNode(
+                  this.parseInline(tempTokens),
+                  styleObj
+                )
+              );
+              paragraphChildren.push(this.parseInline([t]));
+              tempTokens = [];
+              return;
+            }
+            tempTokens = [...tempTokens, t];
+          });
+
+          if (tempTokens.length > 0) {
+            paragraphChildren.push(
+              this.renderer.getTextNode(this.parseInline(tempTokens), styleObj)
+            );
+          }
+
+          return this.renderer.getParagraph(paragraphChildren, [
+            styleObj,
+            this.styles.paragraph,
+          ]);
         }
         case 'blockquote': {
           return this.renderer.getBlockquote(
@@ -60,47 +84,44 @@ class Parser {
     return elements;
   }
 
-  parseInline(tokens: marked.Token[], renderer: Renderer) {
+  parseInline(tokens: marked.Token[]) {
     const elements: React.ReactNode[] = tokens.map((token) => {
       if (!token) return null;
 
       switch (token.type) {
         case 'escape': {
-          return renderer.getTextNode(token.text, this.styles.text);
+          return this.renderer.getTextNode(token.text, this.styles.text);
         }
         case 'html': {
           return null;
         }
         case 'link': {
-          return renderer.getLinkNode(token.text, token.href, this.styles.link);
+          return this.renderer.getLinkNode(
+            token.text,
+            token.href,
+            this.styles.link
+          );
         }
         case 'image': {
-          return renderer.getImage('https://picsum.photos/200/300', [
-            {
-              resizeMode: 'contain',
-              width: this.window.width,
-              height: 300,
-            },
-            this.styles.image,
-          ]);
+          return this.renderer.getImage(token.href, this.options.contentWidth);
         }
         case 'strong': {
-          return renderer.getTextNode(token.text, this.styles.strong);
+          return this.renderer.getTextNode(token.text, this.styles.strong);
         }
         case 'em': {
-          return renderer.getTextNode(token.text, this.styles.em);
+          return this.renderer.getTextNode(token.text, this.styles.em);
         }
         case 'codespan': {
           return null;
         }
         case 'br': {
-          return renderer.getLineBreak();
+          return this.renderer.getTextNode('\n', {});
         }
         case 'del': {
           return null;
         }
         case 'text': {
-          return renderer.getTextNode(token.raw, this.styles.text);
+          return this.renderer.getTextNode(token.raw, this.styles.text);
         }
         default: {
           const errMsg = 'Token with "' + token.type + '" type was not found.';
@@ -113,30 +134,31 @@ class Parser {
   }
 }
 
+// TODO: material typography for font size
 const defaultStyles = StyleSheet.create<MarkedStyles>({
   em: {
-    fontSize: 14,
-    lineHeight: 21,
+    fontSize: 16,
+    lineHeight: 24,
     fontStyle: 'italic',
   },
   strong: {
-    fontSize: 14,
-    lineHeight: 21,
+    fontSize: 16,
+    lineHeight: 24,
     fontWeight: 'bold',
   },
   text: {
-    fontSize: 14,
-    lineHeight: 21,
+    fontSize: 16,
+    lineHeight: 24,
   },
   paragraph: {
-    fontSize: 14,
-    lineHeight: 21,
+    fontSize: 16,
+    lineHeight: 24,
     paddingVertical: 8,
   },
   link: {
     fontStyle: 'italic',
-    fontSize: 14,
-    lineHeight: 21,
+    fontSize: 16,
+    lineHeight: 24,
     color: '#0074cc',
   },
   blockquoteText: {
@@ -148,9 +170,9 @@ const defaultStyles = StyleSheet.create<MarkedStyles>({
     borderLeftWidth: 5,
   },
   h2: {
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: '500',
-    lineHeight: 27,
+    lineHeight: 33,
     paddingVertical: 8,
   },
 });

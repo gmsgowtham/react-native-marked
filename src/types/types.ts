@@ -16,3 +16,8 @@ export interface MarkedStyles {
   h6?: TextStyle;
   image?: ImageStyle;
 }
+
+export interface ParserOptions {
+  contentWidth: number;
+  styles?: MarkedStyles;
+}
