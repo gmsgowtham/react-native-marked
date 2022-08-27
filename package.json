@@ -73,8 +73,8 @@
     "@types/react": "17.0.21"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
+    "react": "^16.8.6 || ^17.0.0 || ^18.0.0",
+    "react-native": ">=0.60.0"
   },
   "jest": {
     "preset": "react-native",
@@ -173,6 +173,7 @@
     ]
   },
   "dependencies": {
-    "marked": "^4.0.18"
+    "marked": "^4.0.18",
+    "react-native-fast-image": "^8.5.11"
   }
 }

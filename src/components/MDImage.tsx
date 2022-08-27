@@ -1,5 +1,6 @@
 import React, { memo, useEffect, useState } from 'react';
-import { Image, StyleSheet } from 'react-native';
+import { Image } from 'react-native';
+import FastImage from 'react-native-fast-image';
 
 interface MDImageProps {
   uri: string;
@@ -22,24 +23,18 @@ const MDImage = ({ uri, width }: MDImageProps) => {
   }
 
   return (
-    <Image
+    <FastImage
+      fallback
       source={{ uri }}
       style={[
-        styles.image,
         {
           width: width,
           height: height,
         },
       ]}
+      resizeMode={FastImage.resizeMode.cover}
     />
   );
 };
-
-const styles = StyleSheet.create({
-  image: {
-    resizeMode: 'cover',
-    flex: 1,
-  },
-});
 
 export default memo(MDImage);
