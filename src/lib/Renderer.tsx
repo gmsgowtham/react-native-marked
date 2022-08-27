@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Linking, View, ViewStyle } from 'react-native';
+import { Linking, ScrollView, View, ViewStyle } from 'react-native';
 import type { StyleProp, TextStyle } from 'react-native';
 import { Text } from 'react-native';
 import MDImage from './../components/MDImage';
@@ -36,6 +36,18 @@ class Renderer {
       <View key={generateRandomString()} style={styles}>
         {children}
       </View>
+    );
+  }
+
+  getCodeBlock(
+    text: string,
+    containerStyle: StyleProp<ViewStyle>,
+    textStyle: StyleProp<TextStyle>
+  ) {
+    return (
+      <ScrollView contentContainerStyle={containerStyle} horizontal>
+        <Text style={textStyle}>{text}</Text>
+      </ScrollView>
     );
   }
 
