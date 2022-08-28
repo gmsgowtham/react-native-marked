@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useCallback } from 'react';
 import { marked } from 'marked';
 import Parser from './Parser';
 import { FlatList, FlatListProps } from 'react-native';
@@ -17,15 +17,17 @@ const Markdown = ({ value, contentWidth, listProps }: MarkdownProps) => {
   const parser = new Parser({ contentWidth });
   const rnElements = parser.parse(tokens);
 
-  const renderItem = ({ item }: { item: ReactNode }) => {
+  const renderItem = useCallback(({ item }: { item: ReactNode }) => {
     return <>{item}</>;
-  };
+  }, []);
+
+  const keyExtractor = useCallback((_, index) => index.toString(), []);
 
   return (
     <FlatList
-      keyExtractor={(_, index) => index.toString()}
-      maxToRenderPerBatch={5}
-      initialNumToRender={5}
+      keyExtractor={keyExtractor}
+      maxToRenderPerBatch={8}
+      initialNumToRender={8}
       removeClippedSubviews
       {...listProps}
       data={rnElements}
