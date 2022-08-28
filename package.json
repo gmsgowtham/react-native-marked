@@ -27,7 +27,7 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "build": "bob build",
     "prepare": "npm run build",
-    "release": "release-it"
+    "release": "release-it --preRelease=alpha"
   },
   "keywords": [
     "react-native",
