@@ -1,6 +1,6 @@
 {
   "name": "react-native-marked",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "test",
   "main": "dist/commonjs/index",
   "module": "dist/module/index",
