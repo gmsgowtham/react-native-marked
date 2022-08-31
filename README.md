@@ -1,5 +1,7 @@
 # react-native-marked
+
 Markdown support for React Native
+
 ## Installation
 
 ```sh
@@ -8,12 +10,25 @@ npm install react-native-marked
 
 ## Usage
 
-```js
-import { multiply } from "react-native-marked";
+```jsx
+import * as React from 'react';
+import { Dimensions } from 'react-native';
+import Markdown from 'react-native-marked';
 
-// ...
+const ExampleComponent = () => {
+  const { width: windowWidth } = Dimensions.get('window');
+  return (
+    <Markdown
+      value={`#Hello world`}
+      contentWidth={windowWidth}
+      listProps={{
+        initialNumToRender: 8,
+      }}
+    />
+  );
+};
 
-const result = await multiply(3, 7);
+export default ExampleComponent;
 ```
 
 ## Contributing
