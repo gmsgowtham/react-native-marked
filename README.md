@@ -5,7 +5,7 @@ Markdown support for React Native
 ## Installation
 
 ```sh
-npm install react-native-marked
+yarn add react-native-marked
 ```
 
 ## Usage
