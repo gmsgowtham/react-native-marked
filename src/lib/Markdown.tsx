@@ -6,13 +6,13 @@ import { FlatList, FlatListProps } from 'react-native';
 interface MarkdownProps {
   value: string;
   contentWidth: number;
-  listProps?: Omit<
+  flatListProps?: Omit<
     FlatListProps<ReactNode>,
     'data' | 'renderItem' | 'horizontal'
   >;
 }
 
-const Markdown = ({ value, contentWidth, listProps }: MarkdownProps) => {
+const Markdown = ({ value, contentWidth, flatListProps }: MarkdownProps) => {
   const tokens = marked.lexer(value.trim());
   const parser = new Parser({ contentWidth });
   const rnElements = parser.parse(tokens);
@@ -29,7 +29,7 @@ const Markdown = ({ value, contentWidth, listProps }: MarkdownProps) => {
       maxToRenderPerBatch={8}
       initialNumToRender={8}
       removeClippedSubviews
-      {...listProps}
+      {...flatListProps}
       data={rnElements}
       renderItem={renderItem}
     />

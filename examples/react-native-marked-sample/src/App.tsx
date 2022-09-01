@@ -13,7 +13,7 @@ export default function App() {
       <Markdown
         value={json.body_markdown_1}
         contentWidth={width - PADDING_HORIZONTAL * 2}
-        listProps={{
+        flatListProps={{
           contentContainerStyle: styles.container,
         }}
       />
