@@ -8,7 +8,7 @@ interface MDImageProps {
 }
 
 const MDImage = ({ uri, width }: MDImageProps) => {
-  const [height, setHeight] = useState<number>(0);
+  const [height, setHeight] = useState(0);
   const isMounted = useRef(false);
 
   useEffect(() => {
