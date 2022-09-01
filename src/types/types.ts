@@ -20,6 +20,6 @@ export interface MarkedStyles {
 }
 
 export interface ParserOptions {
-  contentWidth: number;
+  containerWidth: number;
   styles?: MarkedStyles;
 }

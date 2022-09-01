@@ -128,7 +128,10 @@ class Parser {
           ]);
         }
         case 'image': {
-          return this.renderer.getImage(token.href, this.options.contentWidth);
+          return this.renderer.getImage(
+            token.href,
+            this.options.containerWidth
+          );
         }
         case 'strong': {
           return this.renderer.getTextNode(

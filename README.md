@@ -16,12 +16,12 @@ import { Dimensions } from 'react-native';
 import Markdown from 'react-native-marked';
 
 const ExampleComponent = () => {
-  const { width: windowWidth } = Dimensions.get('window');
+  const { width } = Dimensions.get('window');
   return (
     <Markdown
       value={`#Hello world`}
-      contentWidth={windowWidth}
-      listProps={{
+      containerWidth={width}
+      flatListProps={{
         initialNumToRender: 8,
       }}
     />

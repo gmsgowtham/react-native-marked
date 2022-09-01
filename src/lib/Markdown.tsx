@@ -1,20 +1,22 @@
 import React, { ReactNode, useCallback } from 'react';
+import { Dimensions, FlatList, FlatListProps } from 'react-native';
 import { marked } from 'marked';
 import Parser from './Parser';
-import { FlatList, FlatListProps } from 'react-native';
 
 interface MarkdownProps {
   value: string;
-  contentWidth: number;
+  containerWidth?: number;
   flatListProps?: Omit<
     FlatListProps<ReactNode>,
     'data' | 'renderItem' | 'horizontal'
   >;
 }
 
-const Markdown = ({ value, contentWidth, flatListProps }: MarkdownProps) => {
+const Markdown = ({ value, containerWidth, flatListProps }: MarkdownProps) => {
+  const { width } = Dimensions.get('window');
   const tokens = marked.lexer(value.trim());
-  const parser = new Parser({ contentWidth });
+
+  const parser = new Parser({ containerWidth: containerWidth || width });
   const rnElements = parser.parse(tokens);
 
   const renderItem = useCallback(({ item }: { item: ReactNode }) => {
