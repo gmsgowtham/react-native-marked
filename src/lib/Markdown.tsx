@@ -1,4 +1,4 @@
-import React, { ReactNode, useCallback } from 'react';
+import React, { memo, ReactNode, useCallback } from 'react';
 import { Dimensions, FlatList, FlatListProps } from 'react-native';
 import { marked } from 'marked';
 import Parser from './Parser';
@@ -38,4 +38,4 @@ const Markdown = ({ value, containerWidth, flatListProps }: MarkdownProps) => {
   );
 };
 
-export default Markdown;
+export default memo(Markdown);
