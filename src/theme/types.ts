@@ -1,13 +1,13 @@
 import type { TextStyle, ViewStyle } from 'react-native';
 
 export interface MarkedStyles {
+  container?: ViewStyle;
   em?: TextStyle;
   strong?: TextStyle;
   text?: TextStyle;
   paragraph?: ViewStyle;
   link?: TextStyle;
-  blockquoteText?: TextStyle;
-  blockquoteContainer?: ViewStyle;
+  blockquote?: ViewStyle;
   h1?: TextStyle;
   h2?: TextStyle;
   h3?: TextStyle;
@@ -16,4 +16,10 @@ export interface MarkedStyles {
   h6?: TextStyle;
   codespan?: TextStyle;
   code?: ViewStyle;
+}
+
+export type ColorKeys = 'background' | 'code' | 'link' | 'text' | 'border';
+
+export interface Theme {
+  colors: Record<ColorKeys, string>;
 }

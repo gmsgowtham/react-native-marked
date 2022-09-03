@@ -1,8 +1,14 @@
-import React, { memo, ReactNode, useCallback } from 'react';
-import { Dimensions, FlatList, FlatListProps } from 'react-native';
+import React, { memo, ReactNode, useCallback, useMemo } from 'react';
+import {
+  Dimensions,
+  FlatList,
+  FlatListProps,
+  useColorScheme,
+} from 'react-native';
 import { marked } from 'marked';
 import Parser from './Parser';
-import type { MarkedStyles } from '../types';
+import getStyles from '../theme/styles';
+import type { MarkedStyles } from '../theme/types';
 
 interface MarkdownProps {
   value: string;
@@ -18,16 +24,24 @@ const Markdown = ({
   value,
   containerWidth,
   flatListProps,
-  styles,
+  styles: userStyles,
 }: MarkdownProps) => {
   const { width } = Dimensions.get('window');
-  const tokens = marked.lexer(value.trim());
+  const systemTheme = useColorScheme();
+  const styles = useMemo(
+    () => getStyles(userStyles, systemTheme),
+    [userStyles, systemTheme]
+  );
 
-  const parser = new Parser({
-    containerWidth: containerWidth || width,
-    styles,
-  });
-  const rnElements = parser.parse(tokens);
+  const rnElements = useMemo(() => {
+    const parser = new Parser({
+      styles,
+      containerWidth: containerWidth || width,
+    });
+    const tokens = marked.lexer(value.trim());
+
+    return parser.parse(tokens);
+  }, [value, styles, containerWidth, width]);
 
   const renderItem = useCallback(({ item }: { item: ReactNode }) => {
     return <>{item}</>;
@@ -41,6 +55,7 @@ const Markdown = ({
       maxToRenderPerBatch={8}
       initialNumToRender={8}
       removeClippedSubviews
+      style={styles.container}
       {...flatListProps}
       data={rnElements}
       renderItem={renderItem}

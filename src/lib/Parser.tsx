@@ -1,13 +1,7 @@
 import type { marked } from 'marked';
-import {
-  ImageStyle,
-  StyleProp,
-  StyleSheet,
-  TextStyle,
-  ViewStyle,
-} from 'react-native';
+import type { ImageStyle, StyleProp, TextStyle, ViewStyle } from 'react-native';
 import Renderer from './Renderer';
-import type { MarkedStyles } from '../types';
+import type { MarkedStyles } from '../theme/types';
 
 interface ParserOptions {
   containerWidth: number;
@@ -19,22 +13,18 @@ class Parser {
   private styles: MarkedStyles;
   private options: ParserOptions;
   constructor(options: ParserOptions) {
-    this.renderer = new Renderer();
     this.options = options;
     this.styles = {
-      ...defaultStyles,
       ...options.styles,
     };
+    this.renderer = new Renderer();
   }
 
   parse(tokens: marked.Token[]) {
     return this.parseBlocks(tokens);
   }
 
-  parseBlocks(
-    tokens: marked.Token[],
-    styleObj: StyleProp<ViewStyle | TextStyle | ImageStyle> = {}
-  ) {
+  parseBlocks(tokens: marked.Token[]) {
     const elements: React.ReactNode[] = tokens.map((token) => {
       switch (token.type) {
         case 'space': {
@@ -48,7 +38,7 @@ class Parser {
               paragraphChildren.push(
                 this.renderer.getTextNode(
                   this.parseInline(tempTokens),
-                  styleObj
+                  this.styles.text
                 )
               );
               paragraphChildren.push(this.parseInline([t]));
@@ -60,19 +50,19 @@ class Parser {
 
           if (tempTokens.length > 0) {
             paragraphChildren.push(
-              this.renderer.getTextNode(this.parseInline(tempTokens), styleObj)
+              this.renderer.getTextNode(this.parseInline(tempTokens), {})
             );
           }
 
-          return this.renderer.getParagraph(paragraphChildren, [
-            styleObj,
-            this.styles.paragraph,
-          ]);
+          return this.renderer.getParagraph(
+            paragraphChildren,
+            this.styles.paragraph
+          );
         }
         case 'blockquote': {
           return this.renderer.getBlockquote(
-            this.parseBlocks(token.tokens, this.styles.blockquoteText),
-            this.styles.blockquoteContainer
+            this.parseBlocks(token.tokens),
+            this.styles.blockquote
           );
         }
         case 'heading': {
@@ -168,8 +158,7 @@ class Parser {
           ]);
         }
         default: {
-          const errMsg = 'Token with "' + token.type + '" type was not found.';
-          console.error(errMsg);
+          console.error(`Token with ${token.type} type was not found.`);
           return null;
         }
       }
@@ -177,87 +166,5 @@ class Parser {
     return elements;
   }
 }
-
-// TODO: material typography for font size
-const defaultStyles = StyleSheet.create<MarkedStyles>({
-  em: {
-    fontSize: 16,
-    lineHeight: 24,
-    fontStyle: 'italic',
-  },
-  strong: {
-    fontSize: 16,
-    lineHeight: 24,
-    fontWeight: 'bold',
-  },
-  text: {
-    fontSize: 16,
-    lineHeight: 24,
-  },
-  paragraph: {
-    fontSize: 16,
-    lineHeight: 24,
-    paddingVertical: 8,
-  },
-  link: {
-    fontStyle: 'italic',
-    fontSize: 16,
-    lineHeight: 24,
-    color: '#0074cc',
-  },
-  blockquoteText: {
-    color: '#6a737d',
-  },
-  blockquoteContainer: {
-    borderLeftColor: '#dfe2e5',
-    paddingLeft: 16,
-    borderLeftWidth: 5,
-  },
-  h1: {
-    fontSize: 32,
-    lineHeight: 40,
-    fontWeight: 'bold',
-    paddingVertical: 8,
-    letterSpacing: 0,
-  },
-  h2: {
-    fontSize: 28,
-    lineHeight: 36,
-    fontWeight: '500',
-    paddingVertical: 8,
-  },
-  h3: {
-    fontSize: 36,
-    lineHeight: 44,
-    fontWeight: '500',
-  },
-  h4: {
-    fontSize: 22,
-    lineHeight: 28,
-    fontWeight: '500',
-  },
-  h5: {
-    fontSize: 16,
-    lineHeight: 24,
-    fontWeight: '500',
-  },
-  h6: {
-    fontSize: 14,
-    lineHeight: 20,
-    fontWeight: '500',
-  },
-  codespan: {
-    fontSize: 16,
-    lineHeight: 24,
-    fontStyle: 'italic',
-    backgroundColor: '#afb8c133',
-    fontWeight: '300',
-  },
-  code: {
-    padding: 16,
-    backgroundColor: '#afb8c133',
-    minWidth: '100%',
-  },
-});
 
 export default Parser;
