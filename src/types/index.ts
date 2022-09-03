@@ -1,4 +1,4 @@
-import type { ImageStyle, TextStyle, ViewStyle } from 'react-native';
+import type { TextStyle, ViewStyle } from 'react-native';
 
 export interface MarkedStyles {
   em?: TextStyle;
@@ -14,7 +14,6 @@ export interface MarkedStyles {
   h4?: TextStyle;
   h5?: TextStyle;
   h6?: TextStyle;
-  image?: ImageStyle;
   codespan?: TextStyle;
   code?: ViewStyle;
 }

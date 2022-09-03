@@ -44,7 +44,6 @@ class Parser {
           let tempTokens: marked.Token[] = [];
           const paragraphChildren: React.ReactNode[] = [];
           token.tokens.forEach((t) => {
-            // TODO: move type checking value to const
             if (t.type === 'image') {
               paragraphChildren.push(
                 this.renderer.getTextNode(
