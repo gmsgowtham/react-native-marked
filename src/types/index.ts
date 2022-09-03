@@ -18,8 +18,3 @@ export interface MarkedStyles {
   codespan?: TextStyle;
   code?: ViewStyle;
 }
-
-export interface ParserOptions {
-  containerWidth: number;
-  styles?: MarkedStyles;
-}

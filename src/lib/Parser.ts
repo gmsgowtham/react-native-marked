@@ -7,7 +7,12 @@ import {
   ViewStyle,
 } from 'react-native';
 import Renderer from './Renderer';
-import type { MarkedStyles, ParserOptions } from '../types/types';
+import type { MarkedStyles } from '../types';
+
+interface ParserOptions {
+  containerWidth: number;
+  styles?: MarkedStyles;
+}
 
 class Parser {
   private renderer;
