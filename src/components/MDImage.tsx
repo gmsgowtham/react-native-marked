@@ -1,51 +1,18 @@
-import React, { memo, useEffect, useRef, useState } from 'react';
+import React, { memo, useEffect } from 'react';
 import { Image } from 'react-native';
-import FastImage from 'react-native-fast-image';
+import FitImage from 'react-native-fit-image';
 
 interface MDImageProps {
   uri: string;
   width: number;
 }
 
-const MDImage = ({ uri, width }: MDImageProps) => {
-  const [height, setHeight] = useState(0);
-  const isMounted = useRef(false);
-
-  useEffect(() => {
-    isMounted.current = true;
-
-    return () => {
-      isMounted.current = false;
-    };
-  });
-
+const MDImage = ({ uri }: MDImageProps) => {
   useEffect(() => {
     Image.prefetch(uri);
-    Image.getSize(uri, (_width, _height) => {
-      if (isMounted.current) {
-        const heightCalc = width * (_height / _width);
-        setHeight(heightCalc);
-      }
-    });
-  }, [uri, width, height, isMounted]);
+  }, [uri]);
 
-  if (height < 1) {
-    return null;
-  }
-
-  return (
-    <FastImage
-      fallback
-      source={{ uri }}
-      style={[
-        {
-          width: width,
-          height: height,
-        },
-      ]}
-      resizeMode={FastImage.resizeMode.cover}
-    />
-  );
+  return <FitImage source={{ uri }} resizeMode="cover" />;
 };
 
 export default memo(MDImage);
