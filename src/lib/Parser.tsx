@@ -4,16 +4,13 @@ import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
 
 interface ParserOptions {
-  containerWidth: number;
   styles?: MarkedStyles;
 }
 
 class Parser {
   private renderer;
   private styles: MarkedStyles;
-  private options: ParserOptions;
   constructor(options: ParserOptions) {
-    this.options = options;
     this.styles = {
       ...options.styles,
     };
@@ -122,10 +119,7 @@ class Parser {
           ]);
         }
         case 'image': {
-          return this.renderer.getImage(
-            token.href,
-            this.options.containerWidth
-          );
+          return this.renderer.getImage(token.href);
         }
         case 'strong': {
           return this.renderer.getTextNode(

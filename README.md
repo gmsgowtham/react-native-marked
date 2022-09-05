@@ -12,15 +12,12 @@ yarn add react-native-marked
 
 ```jsx
 import * as React from 'react';
-import { Dimensions } from 'react-native';
 import Markdown from 'react-native-marked';
 
 const ExampleComponent = () => {
-  const { width } = Dimensions.get('window');
   return (
     <Markdown
       value={`#Hello world`}
-      containerWidth={width}
       flatListProps={{
         initialNumToRender: 8,
       }}

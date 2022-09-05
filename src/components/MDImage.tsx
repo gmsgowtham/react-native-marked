@@ -4,7 +4,6 @@ import FitImage from 'react-native-fit-image';
 
 interface MDImageProps {
   uri: string;
-  width: number;
 }
 
 const MDImage = ({ uri }: MDImageProps) => {

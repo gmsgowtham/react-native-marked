@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Linking, ScrollView, View, ViewStyle } from 'react-native';
-import type { StyleProp, TextStyle } from 'react-native';
-import { Text } from 'react-native';
+import { Text, StyleProp, TextStyle } from 'react-native';
 import MDImage from './../components/MDImage';
 import { generateRandomString } from '../utils/string';
 
@@ -67,8 +66,8 @@ class Renderer {
     );
   }
 
-  getImage(uri: string, width: number) {
-    return <MDImage key={generateRandomString()} uri={uri} width={width} />;
+  getImage(uri: string) {
+    return <MDImage key={generateRandomString()} uri={uri} />;
   }
 }
 
