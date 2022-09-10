@@ -65,8 +65,8 @@ const getStyles = (
     },
     h3: {
       ...fontStyle.heading,
-      fontSize: 36,
-      lineHeight: 44,
+      fontSize: 24,
+      lineHeight: 32,
     },
     h4: {
       ...fontStyle.heading,
