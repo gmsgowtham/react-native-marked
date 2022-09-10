@@ -93,6 +93,11 @@ const getStyles = (
       backgroundColor: theme.colors.code,
       minWidth: '100%',
     },
+    hr: {
+      borderBottomWidth: 1,
+      borderBottomColor: theme.colors.border,
+      marginVertical: 4,
+    },
   });
 
   return {

@@ -51,7 +51,7 @@ class Parser {
             );
           }
 
-          return this.renderer.getParagraph(
+          return this.renderer.getViewNode(
             paragraphChildren,
             this.styles.paragraph
           );
@@ -86,6 +86,9 @@ class Parser {
             this.styles.code,
             this.styles.em
           );
+        }
+        case 'hr': {
+          return this.renderer.getViewNode(null, this.styles.hr);
         }
         default:
           return null;

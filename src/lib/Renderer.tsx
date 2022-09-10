@@ -30,7 +30,10 @@ class Renderer {
     );
   };
 
-  getParagraph(children: React.ReactNode[], styles: StyleProp<ViewStyle>) {
+  getViewNode(
+    children: React.ReactNode[] | null,
+    styles: StyleProp<ViewStyle>
+  ) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
