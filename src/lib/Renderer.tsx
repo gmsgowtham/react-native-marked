@@ -45,7 +45,7 @@ class Renderer {
     );
   }
 
-  getCodeBlock(
+  getCodeBlockNode(
     text: string,
     containerStyle: StyleProp<ViewStyle>,
     textStyle: StyleProp<TextStyle>
@@ -57,7 +57,7 @@ class Renderer {
     );
   }
 
-  getBlockquote(children: React.ReactNode[], styles: StyleProp<ViewStyle>) {
+  getBlockquoteNode(children: React.ReactNode[], styles: StyleProp<ViewStyle>) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -65,7 +65,7 @@ class Renderer {
     );
   }
 
-  getHeading(text: string, styles: StyleProp<TextStyle>) {
+  getHeadingNode(text: string, styles: StyleProp<TextStyle>) {
     return (
       <Text key={generateRandomString()} style={styles}>
         {text}
@@ -73,7 +73,7 @@ class Renderer {
     );
   }
 
-  getImage(uri: string) {
+  getImageNode(uri: string) {
     return <MDImage key={generateRandomString()} uri={uri} />;
   }
 

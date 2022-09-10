@@ -57,7 +57,7 @@ class Parser {
           );
         }
         case 'blockquote': {
-          return this.renderer.getBlockquote(
+          return this.renderer.getBlockquoteNode(
             this.parseBlocks(token.tokens),
             this.styles.blockquote
           );
@@ -65,23 +65,23 @@ class Parser {
         case 'heading': {
           switch (token.depth) {
             case 1:
-              return this.renderer.getHeading(token.text, this.styles.h1);
+              return this.renderer.getHeadingNode(token.text, this.styles.h1);
             case 2:
-              return this.renderer.getHeading(token.text, this.styles.h2);
+              return this.renderer.getHeadingNode(token.text, this.styles.h2);
             case 3:
-              return this.renderer.getHeading(token.text, this.styles.h3);
+              return this.renderer.getHeadingNode(token.text, this.styles.h3);
             case 4:
-              return this.renderer.getHeading(token.text, this.styles.h4);
+              return this.renderer.getHeadingNode(token.text, this.styles.h4);
             case 5:
-              return this.renderer.getHeading(token.text, this.styles.h5);
+              return this.renderer.getHeadingNode(token.text, this.styles.h5);
             case 6:
-              return this.renderer.getHeading(token.text, this.styles.h6);
+              return this.renderer.getHeadingNode(token.text, this.styles.h6);
             default:
               return null;
           }
         }
         case 'code': {
-          return this.renderer.getCodeBlock(
+          return this.renderer.getCodeBlockNode(
             token.text,
             this.styles.code,
             this.styles.em
@@ -132,7 +132,7 @@ class Parser {
           ]);
         }
         case 'image': {
-          return this.renderer.getImage(token.href);
+          return this.renderer.getImageNode(token.href);
         }
         case 'strong': {
           return this.renderer.getTextNode(
