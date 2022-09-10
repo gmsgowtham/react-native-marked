@@ -1,5 +1,7 @@
 # react-native-marked
 
+[![CI](https://github.com/gmsgowtham/react-native-marked/actions/workflows/build.yml/badge.svg)](https://github.com/gmsgowtham/react-native-marked/actions/workflows/build.yml)
+
 Markdown renderer for React Native powered by [marked.js](https://marked.js.org/)
 
 ## Installation
