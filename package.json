@@ -26,8 +26,8 @@
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "build": "bob build",
-    "prepare": "npm run build",
-    "release": "release-it"
+    "prepare": "yarn build",
+    "release": "yarn build && release-it"
   },
   "keywords": [
     "react-native",
