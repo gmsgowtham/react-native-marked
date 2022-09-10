@@ -99,6 +99,9 @@ class Parser {
             this.styles.li
           );
         }
+        case 'html': {
+          return this.renderer.getTextNode(token.text.trim(), this.styles.text);
+        }
         default:
           console.warn(`Token with '${token.type}' type was not found.`);
           return null;
@@ -117,10 +120,6 @@ class Parser {
             ...styles,
             ...this.styles.text,
           });
-        }
-        case 'html': {
-          console.log('html', token);
-          return null;
         }
         case 'link': {
           return this.renderer.getLinkNode(token.text, token.href, {
