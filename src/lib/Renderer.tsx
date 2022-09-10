@@ -65,14 +65,6 @@ class Renderer {
     );
   }
 
-  getHeadingNode(text: string, styles: StyleProp<TextStyle>) {
-    return (
-      <Text key={generateRandomString()} style={styles}>
-        {text}
-      </Text>
-    );
-  }
-
   getImageNode(uri: string) {
     return <MDImage key={generateRandomString()} uri={uri} />;
   }

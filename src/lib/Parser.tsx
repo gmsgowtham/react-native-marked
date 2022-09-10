@@ -10,11 +10,18 @@ interface ParserOptions {
 class Parser {
   private renderer;
   private styles: MarkedStyles;
+  private headingStylesMap: Record<number, TextStyle | undefined>;
   constructor(options: ParserOptions) {
-    this.styles = {
-      ...options.styles,
-    };
+    this.styles = { ...options.styles };
     this.renderer = new Renderer();
+    this.headingStylesMap = {
+      1: this.styles.h1,
+      2: this.styles.h2,
+      3: this.styles.h3,
+      4: this.styles.h4,
+      5: this.styles.h5,
+      6: this.styles.h6,
+    };
   }
 
   parse(tokens: marked.Token[]) {
@@ -59,22 +66,8 @@ class Parser {
           );
         }
         case 'heading': {
-          switch (token.depth) {
-            case 1:
-              return this.renderer.getHeadingNode(token.text, this.styles.h1);
-            case 2:
-              return this.renderer.getHeadingNode(token.text, this.styles.h2);
-            case 3:
-              return this.renderer.getHeadingNode(token.text, this.styles.h3);
-            case 4:
-              return this.renderer.getHeadingNode(token.text, this.styles.h4);
-            case 5:
-              return this.renderer.getHeadingNode(token.text, this.styles.h5);
-            case 6:
-              return this.renderer.getHeadingNode(token.text, this.styles.h6);
-            default:
-              return null;
-          }
+          const styles = this.headingStylesMap[token.depth] ?? this.styles.text;
+          return this.renderer.getTextNode(token.text, styles);
         }
         case 'code': {
           return this.renderer.getCodeBlockNode(
