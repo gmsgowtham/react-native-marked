@@ -1,7 +1,7 @@
 {
   "name": "react-native-marked",
   "version": "1.0.0",
-  "description": "test",
+  "description": "Markdown renderer for React Native powered by marked.js",
   "main": "dist/commonjs/index",
   "module": "dist/module/index",
   "types": "dist/typescript/index.d.ts",
@@ -31,8 +31,8 @@
   },
   "keywords": [
     "react-native",
-    "ios",
-    "android"
+    "markdown",
+    "react-native markdown"
   ],
   "repository": "https://github.com/gmsgowtham/react-native-marked",
   "author": "Gowtham G <webappsbygowtham@gmail.com> (https://github.com/gmsgowtham)",
