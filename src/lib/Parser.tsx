@@ -80,7 +80,21 @@ class Parser {
           return this.renderer.getViewNode(null, this.styles.hr);
         }
         case 'list': {
-          const li = token.items.map((item) => item.text);
+          const li = token.items.map((item) => {
+            if (
+              item.tokens.length > 0 &&
+              item.tokens[0]?.type === 'text' &&
+              // @ts-ignore
+              Array.isArray(item.tokens[0]?.tokens)
+            ) {
+              return this.renderer.getTextNode(
+                // @ts-ignore
+                this.parseInline(item.tokens[0]?.tokens),
+                this.styles.li
+              );
+            }
+            return this.renderer.getTextNode(item.text, this.styles.li);
+          });
           return this.renderer.getListNode(
             token.ordered,
             li,
