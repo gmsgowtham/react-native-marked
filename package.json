@@ -146,7 +146,8 @@
           "trailingComma": "es5",
           "useTabs": false
         }
-      ]
+      ],
+      "@typescript-eslint/ban-ts-comment": "off"
     }
   },
   "eslintIgnore": [

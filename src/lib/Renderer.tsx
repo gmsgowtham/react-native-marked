@@ -71,7 +71,7 @@ class Renderer {
 
   getListNode(
     ordered: boolean,
-    li: string[],
+    li: React.ReactNode[],
     listStyle: ViewStyle | undefined,
     textStyle: TextStyle | undefined
   ) {
@@ -81,11 +81,7 @@ class Renderer {
         markerTextStyle={textStyle}
         markerBoxStyle={listStyle}
       >
-        {li.map((text, index) => (
-          <Text key={index} style={textStyle}>
-            {text}
-          </Text>
-        ))}
+        {li.map((node) => node)}
       </MarkedList>
     );
   }
