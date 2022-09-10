@@ -12,16 +12,13 @@ yarn add react-native-marked
 
 ```jsx
 import * as React from 'react';
-import { Dimensions } from 'react-native';
 import Markdown from 'react-native-marked';
 
 const ExampleComponent = () => {
-  const { width: windowWidth } = Dimensions.get('window');
   return (
     <Markdown
       value={`#Hello world`}
-      contentWidth={windowWidth}
-      listProps={{
+      flatListProps={{
         initialNumToRender: 8,
       }}
     />
@@ -42,3 +39,7 @@ MIT
 ---
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+
+## External Libraries
+- [React Native Fit Image](https://github.com/huiseoul/react-native-fit-image)
+- [@jsamr/react-native-li](https://github.com/jsamr/react-native-li)

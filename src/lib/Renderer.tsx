@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { Linking, ScrollView, View, ViewStyle } from 'react-native';
-import type { StyleProp, TextStyle } from 'react-native';
-import { Text } from 'react-native';
+import { Text, StyleProp, TextStyle } from 'react-native';
+import MarkedList from '@jsamr/react-native-li';
+import Disc from '@jsamr/counter-style/presets/disc';
+import Decimal from '@jsamr/counter-style/presets/decimal';
 import MDImage from './../components/MDImage';
+
 import { generateRandomString } from '../utils/string';
 
 class Renderer {
@@ -31,7 +34,10 @@ class Renderer {
     );
   };
 
-  getParagraph(children: React.ReactNode[], styles: StyleProp<ViewStyle>) {
+  getViewNode(
+    children: React.ReactNode[] | null,
+    styles: StyleProp<ViewStyle>
+  ) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -39,7 +45,7 @@ class Renderer {
     );
   }
 
-  getCodeBlock(
+  getCodeBlockNode(
     text: string,
     containerStyle: StyleProp<ViewStyle>,
     textStyle: StyleProp<TextStyle>
@@ -51,7 +57,7 @@ class Renderer {
     );
   }
 
-  getBlockquote(children: React.ReactNode[], styles: StyleProp<ViewStyle>) {
+  getBlockquoteNode(children: React.ReactNode[], styles: StyleProp<ViewStyle>) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -59,16 +65,29 @@ class Renderer {
     );
   }
 
-  getHeading(text: string, styles: StyleProp<TextStyle>) {
-    return (
-      <Text key={generateRandomString()} style={styles}>
-        {text}
-      </Text>
-    );
+  getImageNode(uri: string) {
+    return <MDImage key={generateRandomString()} uri={uri} />;
   }
 
-  getImage(uri: string, width: number) {
-    return <MDImage key={generateRandomString()} uri={uri} width={width} />;
+  getListNode(
+    ordered: boolean,
+    li: string[],
+    listStyle: ViewStyle | undefined,
+    textStyle: TextStyle | undefined
+  ) {
+    return (
+      <MarkedList
+        counterRenderer={ordered ? Decimal : Disc}
+        markerTextStyle={textStyle}
+        markerBoxStyle={listStyle}
+      >
+        {li.map((text, index) => (
+          <Text key={index} style={textStyle}>
+            {text}
+          </Text>
+        ))}
+      </MarkedList>
+    );
   }
 }
 
