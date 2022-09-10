@@ -68,7 +68,7 @@
     "react": "17.0.2",
     "react-native": "0.68.2",
     "react-native-builder-bob": "^0.18.3",
-    "release-it": "^15.0.0",
+    "release-it": "^15.4.1",
     "typescript": "^4.5.2"
   },
   "resolutions": {
@@ -105,7 +105,8 @@
           "revert",
           "style",
           "test",
-          "todo"
+          "todo",
+          "bump"
         ]
       ]
     }
