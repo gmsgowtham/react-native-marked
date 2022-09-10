@@ -1,19 +1,18 @@
 import * as React from 'react';
-import { Linking, ScrollView, View, ViewStyle } from 'react-native';
-import { Text, StyleProp, TextStyle } from 'react-native';
+import { Linking, ScrollView, View, Text } from 'react-native';
 import MarkedList from '@jsamr/react-native-li';
 import Disc from '@jsamr/counter-style/presets/disc';
 import Decimal from '@jsamr/counter-style/presets/decimal';
 import MDImage from './../components/MDImage';
-
 import { generateRandomString } from '../utils/string';
+import type { TextStyleProp, ViewStyleProp } from './types';
 
 class Renderer {
   private onLinkPress = (href: string) => () => Linking.openURL(href);
 
   getTextNode = (
     children: string | React.ReactNode[],
-    styles: StyleProp<TextStyle>
+    styles: TextStyleProp
   ) => {
     return (
       <Text key={generateRandomString()} style={styles}>
@@ -22,7 +21,7 @@ class Renderer {
     );
   };
 
-  getLinkNode = (text: string, href: string, styles: StyleProp<TextStyle>) => {
+  getLinkNode = (text: string, href: string, styles: TextStyleProp) => {
     return (
       <Text
         key={generateRandomString()}
@@ -34,10 +33,7 @@ class Renderer {
     );
   };
 
-  getViewNode(
-    children: React.ReactNode[] | null,
-    styles: StyleProp<ViewStyle>
-  ) {
+  getViewNode(children: React.ReactNode[] | null, styles: ViewStyleProp) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -47,8 +43,8 @@ class Renderer {
 
   getCodeBlockNode(
     text: string,
-    containerStyle: StyleProp<ViewStyle>,
-    textStyle: StyleProp<TextStyle>
+    containerStyle: ViewStyleProp,
+    textStyle: TextStyleProp
   ) {
     return (
       <ScrollView contentContainerStyle={containerStyle} horizontal>
@@ -57,7 +53,7 @@ class Renderer {
     );
   }
 
-  getBlockquoteNode(children: React.ReactNode[], styles: StyleProp<ViewStyle>) {
+  getBlockquoteNode(children: React.ReactNode[], styles: ViewStyleProp) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -72,8 +68,8 @@ class Renderer {
   getListNode(
     ordered: boolean,
     li: React.ReactNode[],
-    listStyle: ViewStyle | undefined,
-    textStyle: TextStyle | undefined
+    listStyle: ViewStyleProp,
+    textStyle: TextStyleProp
   ) {
     return (
       <MarkedList
