@@ -1,16 +1,12 @@
 import type { marked } from 'marked';
-import type { ImageStyle, StyleProp, TextStyle, ViewStyle } from 'react-native';
 import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
-
-interface ParserOptions {
-  styles?: MarkedStyles;
-}
+import type { CustomStyleProp, ParserOptions, TextStyleProp } from './types';
 
 class Parser {
   private renderer;
   private styles: MarkedStyles;
-  private headingStylesMap: Record<number, TextStyle | undefined>;
+  private headingStylesMap: Record<number, TextStyleProp>;
   constructor(options: ParserOptions) {
     this.styles = { ...options.styles };
     this.renderer = new Renderer();
@@ -34,6 +30,7 @@ class Parser {
           let tempTokens: marked.Token[] = [];
           const paragraphChildren: React.ReactNode[] = [];
           token.tokens.forEach((t) => {
+            /* To avoid inlining of image */
             if (t.type === 'image') {
               paragraphChildren.push(
                 this.renderer.getTextNode(
@@ -110,29 +107,26 @@ class Parser {
     return elements;
   }
 
-  parseInline(
-    tokens: marked.Token[],
-    styles: StyleProp<ViewStyle | TextStyle | ImageStyle> = {}
-  ) {
+  parseInline(tokens: marked.Token[], styles?: CustomStyleProp) {
     const elements: React.ReactNode[] = tokens.map((token) => {
       if (!token) return null;
 
       switch (token.type) {
         case 'escape': {
-          return this.renderer.getTextNode(token.text, [
-            styles,
-            this.styles.text,
-          ]);
+          return this.renderer.getTextNode(token.text, {
+            ...styles,
+            ...this.styles.text,
+          });
         }
         case 'html': {
           console.log('html', token);
           return null;
         }
         case 'link': {
-          return this.renderer.getLinkNode(token.text, token.href, [
-            styles,
-            this.styles.link,
-          ]);
+          return this.renderer.getLinkNode(token.text, token.href, {
+            ...styles,
+            ...this.styles.link,
+          });
         }
         case 'image': {
           return this.renderer.getImageNode(token.href);
@@ -140,13 +134,13 @@ class Parser {
         case 'strong': {
           return this.renderer.getTextNode(
             this.parseInline(token.tokens, this.styles.strong),
-            [styles, this.styles.strong]
+            { ...styles, ...this.styles.strong }
           );
         }
         case 'em': {
           return this.renderer.getTextNode(
             this.parseInline(token.tokens, this.styles.em),
-            [styles, this.styles.em]
+            { ...styles, ...this.styles.em }
           );
         }
         case 'codespan': {
@@ -159,10 +153,10 @@ class Parser {
           return null;
         }
         case 'text': {
-          return this.renderer.getTextNode(token.raw, [
-            styles,
-            this.styles.text,
-          ]);
+          return this.renderer.getTextNode(token.raw, {
+            ...styles,
+            ...this.styles.text,
+          });
         }
         default: {
           console.warn(`Token with '${token.type}' type was not found.`);

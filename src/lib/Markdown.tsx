@@ -1,18 +1,9 @@
 import React, { memo, ReactNode, useCallback, useMemo } from 'react';
-import { FlatList, FlatListProps, useColorScheme } from 'react-native';
+import { FlatList, useColorScheme } from 'react-native';
 import { marked } from 'marked';
 import Parser from './Parser';
 import getStyles from '../theme/styles';
-import type { MarkedStyles } from '../theme/types';
-
-interface MarkdownProps {
-  value: string;
-  flatListProps?: Omit<
-    FlatListProps<ReactNode>,
-    'data' | 'renderItem' | 'horizontal'
-  >;
-  styles?: MarkedStyles;
-}
+import type { MarkdownProps } from './types';
 
 const Markdown = ({
   value,
