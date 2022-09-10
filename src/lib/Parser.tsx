@@ -18,10 +18,6 @@ class Parser {
   }
 
   parse(tokens: marked.Token[]) {
-    return this.parseBlocks(tokens);
-  }
-
-  parseBlocks(tokens: marked.Token[]) {
     const elements: React.ReactNode[] = tokens.map((token) => {
       switch (token.type) {
         case 'space': {
@@ -58,7 +54,7 @@ class Parser {
         }
         case 'blockquote': {
           return this.renderer.getBlockquoteNode(
-            this.parseBlocks(token.tokens),
+            this.parse(token.tokens),
             this.styles.blockquote
           );
         }
