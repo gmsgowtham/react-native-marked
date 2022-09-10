@@ -39,3 +39,7 @@ MIT
 ---
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+
+## External Libraries
+- [React Native Fit Image](https://github.com/huiseoul/react-native-fit-image)
+- [@jsamr/react-native-li](https://github.com/jsamr/react-native-li)
