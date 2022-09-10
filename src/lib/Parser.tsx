@@ -109,7 +109,7 @@ class Parser {
 
   parseInline(
     tokens: marked.Token[],
-    styleObj: StyleProp<ViewStyle | TextStyle | ImageStyle> = {}
+    styles: StyleProp<ViewStyle | TextStyle | ImageStyle> = {}
   ) {
     const elements: React.ReactNode[] = tokens.map((token) => {
       if (!token) return null;
@@ -117,7 +117,7 @@ class Parser {
       switch (token.type) {
         case 'escape': {
           return this.renderer.getTextNode(token.text, [
-            styleObj,
+            styles,
             this.styles.text,
           ]);
         }
@@ -127,7 +127,7 @@ class Parser {
         }
         case 'link': {
           return this.renderer.getLinkNode(token.text, token.href, [
-            styleObj,
+            styles,
             this.styles.link,
           ]);
         }
@@ -137,20 +137,17 @@ class Parser {
         case 'strong': {
           return this.renderer.getTextNode(
             this.parseInline(token.tokens, this.styles.strong),
-            [styleObj, this.styles.strong]
+            [styles, this.styles.strong]
           );
         }
         case 'em': {
           return this.renderer.getTextNode(
             this.parseInline(token.tokens, this.styles.em),
-            [styleObj, this.styles.em]
+            [styles, this.styles.em]
           );
         }
         case 'codespan': {
-          return this.renderer.getTextNode(
-            ` ${token.text} `,
-            this.styles.codespan
-          );
+          return this.renderer.getTextNode(token.text, this.styles.codespan);
         }
         case 'br': {
           return this.renderer.getTextNode('\n', {});
@@ -160,7 +157,7 @@ class Parser {
         }
         case 'text': {
           return this.renderer.getTextNode(token.raw, [
-            styleObj,
+            styles,
             this.styles.text,
           ]);
         }
