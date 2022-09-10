@@ -91,6 +91,7 @@ class Parser {
           return this.renderer.getViewNode(null, this.styles.hr);
         }
         default:
+          console.warn(`Token with '${token.type}' type was not found.`);
           return null;
       }
     });
@@ -155,7 +156,7 @@ class Parser {
           ]);
         }
         default: {
-          console.error(`Token with ${token.type} type was not found.`);
+          console.warn(`Token with '${token.type}' type was not found.`);
           return null;
         }
       }
