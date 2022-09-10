@@ -90,6 +90,15 @@ class Parser {
         case 'hr': {
           return this.renderer.getViewNode(null, this.styles.hr);
         }
+        case 'list': {
+          const li = token.items.map((item) => item.text);
+          return this.renderer.getListNode(
+            token.ordered,
+            li,
+            this.styles.list,
+            this.styles.li
+          );
+        }
         default:
           console.warn(`Token with '${token.type}' type was not found.`);
           return null;

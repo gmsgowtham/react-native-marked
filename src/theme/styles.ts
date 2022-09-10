@@ -98,6 +98,10 @@ const getStyles = (
       borderBottomColor: theme.colors.border,
       marginVertical: 4,
     },
+    li: {
+      ...fontStyle.regular,
+      flexShrink: 1,
+    },
   });
 
   return {

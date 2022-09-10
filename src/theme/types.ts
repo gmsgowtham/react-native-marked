@@ -17,6 +17,8 @@ export interface MarkedStyles {
   codespan?: TextStyle;
   code?: ViewStyle;
   hr?: ViewStyle;
+  list?: ViewStyle;
+  li?: TextStyle;
 }
 
 export type ColorKeys = 'background' | 'code' | 'link' | 'text' | 'border';
