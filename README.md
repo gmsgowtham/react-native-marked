@@ -44,5 +44,6 @@ Made with [create-react-native-library](https://github.com/callstack/react-nativ
 
 ## External Libraries
 
+- [Marked](https://marked.js.org/)
 - [React Native Fit Image](https://github.com/huiseoul/react-native-fit-image)
 - [@jsamr/react-native-li](https://github.com/jsamr/react-native-li)
