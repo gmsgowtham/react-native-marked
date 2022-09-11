@@ -61,6 +61,7 @@
     "commitlint": "^17.0.2",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^27.0.4",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^28.1.1",
     "pod-install": "^0.1.0",
@@ -136,6 +137,7 @@
       "prettier",
       "plugin:@typescript-eslint/recommended"
     ],
+    "plugins": ["jest"],
     "rules": {
       "prettier/prettier": [
         "error",
@@ -148,6 +150,9 @@
         }
       ],
       "@typescript-eslint/ban-ts-comment": "off"
+    },
+    "env": {
+      "jest/globals": true
     }
   },
   "eslintIgnore": [
