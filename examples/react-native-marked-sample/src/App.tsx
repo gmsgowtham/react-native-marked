@@ -1,19 +1,32 @@
 import * as React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
+import {
+  SafeAreaView,
+  StyleSheet,
+  StatusBar,
+  useColorScheme,
+} from 'react-native';
 import Markdown from 'react-native-marked';
 
 import json from './samples.json';
 
 export default function App() {
+  const theme = useColorScheme();
+  const isLightTheme = theme === 'light';
   return (
-    <SafeAreaView>
-      <Markdown
-        value={json.body_markdown_1}
-        flatListProps={{
-          contentContainerStyle: styles.container,
-        }}
+    <>
+      <StatusBar
+        barStyle={isLightTheme ? 'dark-content' : 'light-content'}
+        backgroundColor={isLightTheme ? '#fff' : '#000'}
       />
-    </SafeAreaView>
+      <SafeAreaView>
+        <Markdown
+          value={json.body_markdown_4}
+          flatListProps={{
+            contentContainerStyle: styles.container,
+          }}
+        />
+      </SafeAreaView>
+    </>
   );
 }
 
