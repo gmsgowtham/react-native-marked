@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/gmsgowtham/react-native-marked/actions/workflows/build.yml/badge.svg)](https://github.com/gmsgowtham/react-native-marked/actions/workflows/build.yml)
 
-Markdown renderer for React Native powered by [marked.js](https://marked.js.org/)
+Markdown renderer for React Native powered by [marked.js](https://marked.js.org/) with built-in theming support
 
 ## Installation
 
@@ -29,6 +29,12 @@ const ExampleComponent = () => {
 
 export default ExampleComponent;
 ```
+
+## Screenshots
+
+|                              Dark Theme                               |                               Light Theme                               |
+| :-------------------------------------------------------------------: | :---------------------------------------------------------------------: |
+| ![Dark theme](assets/Screenshot_1662875200.png?raw=true 'Dark Theme') | ![Light theme](assets/Screenshot_1662875206.png?raw=true 'Light Theme') |
 
 ## Contributing
 
