@@ -1,6 +1,6 @@
 {
   "name": "react-native-marked",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Markdown renderer for React Native powered by marked.js",
   "main": "dist/commonjs/index",
   "module": "dist/module/index",
@@ -137,7 +137,9 @@
       "prettier",
       "plugin:@typescript-eslint/recommended"
     ],
-    "plugins": ["jest"],
+    "plugins": [
+      "jest"
+    ],
     "rules": {
       "prettier/prettier": [
         "error",
