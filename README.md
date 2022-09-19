@@ -19,7 +19,7 @@ import Markdown from 'react-native-marked';
 const ExampleComponent = () => {
   return (
     <Markdown
-      value={`#Hello world`}
+      value={`# Hello world`}
       flatListProps={{
         initialNumToRender: 8,
       }}
