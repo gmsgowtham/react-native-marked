@@ -30,6 +30,9 @@ const ExampleComponent = () => {
 export default ExampleComponent;
 ```
 
+## Example
+https://snack.expo.dev/@gmsgowtham/react-native-marked
+
 ## Screenshots
 
 |                              Dark Theme                               |                               Light Theme                               |
@@ -48,7 +51,7 @@ MIT
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
 
-## External Libraries
+## Built with
 
 - [Marked](https://marked.js.org/)
 - [React Native Fit Image](https://github.com/huiseoul/react-native-fit-image)
