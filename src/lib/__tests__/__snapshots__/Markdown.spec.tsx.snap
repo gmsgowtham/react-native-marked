@@ -1,0 +1,904 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdown simple markdown with image, list and blockquote 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        />
+        <Memo(MDImage)
+          uri="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/973qsby2fdhznx9yuzdw.jpg"
+        />
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            There is a fun anime serie called "One Punch Man".
+And surprisingly, it has some great lessons for mastering Python.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            The story takes place in a slightly more modern world than ours, where heroes defend the modern cityscape from regularly invading monsters. 
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Imagine a parade of mini-Godzilla or Mothra-like critters, but more diverse and colorful and intelligent, and ranging widely in their size and threat level.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            This goes on to the point where a formal league of heroes gets formed, with ranks for different perceived skills. 
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Enter the protagonist, named Saitama.
+He is not as flashy as the other heroes.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            If anything, at first glance he looks harmless.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            But it turns out he is so effective as a martial artist, so unparalleled in his skill, he can knock out massive powerful beasts with a single punch, every time. Hence the name.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            This show is a comedy, filled with hilarious situations created by the hero-managing institutions failing to recognize his super-talent over and over. I am leaving a lot out here - it is worth digging up and watching.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            But the show has a powerful lesson for us Pythonistas.
+Because the source of Saitama's mastery is revealed in the first season. Every day, without fail, he did
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            -100 pushups.
+-100 situps.
+-100 squats.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              And then ran ten kilometers.
+Notice how SIMPLE this is.
+            </Text>
+          </Text>
+        </View>
+      </View>,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            He's drilling these fundamental exercises with relentless consistency. And somehow, it manages to unlock the superhuman skill.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            That reminds me of what happens when you deeply master the basics of Python programming.
+OOP, for example. Because OOP is the critical foundation ALL complex software is built on. A little OOP knowledge goes a long way... but greater understanding unlocks ENTIRE NEW UNIVERSES of software to you.
+Or automated tests, like unit tests. When you master writing those, you can suddenly create shockingly powerful software systems that non-test-writers cannot touch. Writing tests is a legit superpower.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Another interesting point: when you master both, you find they ratchet up the power of each other. OOP amplifies what you can do with tests, and vice versa, in exponential ways that suddenly make the kind of programming you did before seem primitive and simple.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            And then you have scalability patterns that leverage Python's memory model... Or the higher-level function abstractions forming the bedrock of a dozen famous Python libraries you use every day... and so on.
+Each of these is like the pushups or squats Saitama does religiously.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            And all that is just one lesson we can learn from our friend Saitama. There are many others: like how he always goes directly for the monster's weak point (I know you can see a parallel for complex software "beasts")... Or how he is constantly seeking out a greater challenge to test himself and grow... and quite a few lessons more.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            So dig up this show, or read the manga it is based on. And look for what other lessons you can draw on, to improve your coding craft.
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            The Powerful Python Newsletter is just for you. Like reader Charles Hayden puts it:
+          </Text>
+        </Text>
+      </View>,
+      null,
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              "I have seen a lot of books, articles, and newsletters over the years and yours is one of the best. Not just what you say about Python, but how to go about learning.
+"
+IG : 
+            </Text>
+            <Text
+              onPress={[Function]}
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Salah Ihoum
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              
+
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "backgroundColor": "#f6f8fa",
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "fontWeight": "300",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Aaron Maxwell
+              </Text>
+            </Text>
+          </Text>
+        </View>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        />
+        <View
+          accessibilityIgnoresInvertColors={true}
+          style={
+            [
+              undefined,
+              {},
+              {
+                "height": 0,
+              },
+              {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <Image
+            onError={[Function]}
+            onLayout={[Function]}
+            onLoad={[Function]}
+            onLoadStart={[Function]}
+            resizeMode="cover"
+            source={
+              {
+                "uri": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/973qsby2fdhznx9yuzdw.jpg",
+              }
+            }
+            style={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "height": 0,
+                  "width": undefined,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            There is a fun anime serie called "One Punch Man".
+And surprisingly, it has some great lessons for mastering Python.
+          </Text>
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            The story takes place in a slightly more modern world than ours, where heroes defend the modern cityscape from regularly invading monsters. 
+          </Text>
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Imagine a parade of mini-Godzilla or Mothra-like critters, but more diverse and colorful and intelligent, and ranging widely in their size and threat level.
+          </Text>
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "height": 0,
+        }
+      }
+    />
+  </View>
+</RCTScrollView>
+`;
