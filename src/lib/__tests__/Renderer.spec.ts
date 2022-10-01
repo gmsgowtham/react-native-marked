@@ -108,4 +108,11 @@ describe('Renderer', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+  describe('getImageNode', () => {
+    it('returns a Image', () => {
+      const ImageNode = renderer.getImageNode('https://picsum.photos/100/100');
+      const tree = render(ImageNode).toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
