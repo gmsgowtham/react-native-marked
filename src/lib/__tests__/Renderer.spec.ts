@@ -1,4 +1,3 @@
-import type { ReactElement } from 'react';
 import { render, screen } from '@testing-library/react-native';
 import Renderer from '../Renderer';
 import getStyles from './../../theme/styles';
@@ -9,10 +8,7 @@ const renderer = new Renderer();
 describe('Renderer', () => {
   describe('getTextNode', () => {
     it('returns a Text node', () => {
-      const TextNode = renderer.getTextNode(
-        'Hello world',
-        styles.text
-      ) as ReactElement;
+      const TextNode = renderer.getTextNode('Hello world', styles.text);
 
       const r = render(TextNode);
       expect(screen.queryByText('Hello world')).toBeTruthy();
@@ -22,10 +18,7 @@ describe('Renderer', () => {
 
     it('returns a wrapped Text node', () => {
       const TextNodeChild = renderer.getTextNode('Hello world', {});
-      const TextNode = renderer.getTextNode(
-        [TextNodeChild],
-        styles.text
-      ) as ReactElement;
+      const TextNode = renderer.getTextNode([TextNodeChild], styles.text);
       const r = render(TextNode);
       expect(screen.queryByText('Hello world')).toBeTruthy();
       const tree = r.toJSON();
@@ -34,10 +27,7 @@ describe('Renderer', () => {
 
     it('returns a wrapped Text node with styles', () => {
       const TextNodeChild = renderer.getTextNode('Hello world', styles.text);
-      const TextNode = renderer.getTextNode(
-        [TextNodeChild],
-        styles.text
-      ) as ReactElement;
+      const TextNode = renderer.getTextNode([TextNodeChild], styles.text);
       const r = render(TextNode);
       expect(screen.queryByText('Hello world')).toBeTruthy();
       const tree = r.toJSON();
