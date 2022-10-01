@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renderer getBlockquoteNode returns a Blockquote 1`] = `
+exports[`Renderer dark theme getBlockquoteNode returns a Blockquote 1`] = `
 <View
   style={
     {
-      "borderLeftColor": "#d0d7de",
+      "borderLeftColor": "#30363d",
       "borderLeftWidth": 5,
       "opacity": 0.8,
       "paddingLeft": 16,
@@ -14,9 +14,7 @@ exports[`Renderer getBlockquoteNode returns a Blockquote 1`] = `
   <Text
     style={
       {
-        "color": "#333333",
-        "fontSize": 16,
-        "lineHeight": 24,
+        "fontSize": 24,
       }
     }
   >
@@ -38,11 +36,11 @@ exports[`Renderer getBlockquoteNode returns a Blockquote 1`] = `
 </View>
 `;
 
-exports[`Renderer getCodeBlockNode returns a Code block (horizontal ScrollView) 1`] = `
+exports[`Renderer dark theme getCodeBlockNode returns a Code block (horizontal ScrollView) 1`] = `
 <RCTScrollView
   contentContainerStyle={
     {
-      "backgroundColor": "#f6f8fa",
+      "backgroundColor": "#161b22",
       "minWidth": "100%",
       "padding": 16,
     }
@@ -53,7 +51,7 @@ exports[`Renderer getCodeBlockNode returns a Code block (horizontal ScrollView) 
     <Text
       style={
         {
-          "color": "#333333",
+          "color": "#ffffff",
           "fontSize": 16,
           "fontStyle": "italic",
           "lineHeight": 24,
@@ -66,7 +64,7 @@ exports[`Renderer getCodeBlockNode returns a Code block (horizontal ScrollView) 
 </RCTScrollView>
 `;
 
-exports[`Renderer getImageNode returns a Image 1`] = `
+exports[`Renderer dark theme getImageNode returns a Image 1`] = `
 <View
   accessibilityIgnoresInvertColors={true}
   style={
@@ -114,7 +112,7 @@ exports[`Renderer getImageNode returns a Image 1`] = `
 </View>
 `;
 
-exports[`Renderer getLinkNode returns a Link node 1`] = `
+exports[`Renderer dark theme getLinkNode returns a Link node 1`] = `
 <Text
   onPress={[Function]}
   style={
@@ -130,7 +128,7 @@ exports[`Renderer getLinkNode returns a Link node 1`] = `
 </Text>
 `;
 
-exports[`Renderer getListNode returns Ordered List 1`] = `
+exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
 [
   <View
     style={
@@ -145,7 +143,577 @@ exports[`Renderer getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#ffffff",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 28.799999999999997,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        1. 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 1
+    </Text>
+  </View>,
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#ffffff",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 28.799999999999997,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        2. 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 2
+    </Text>
+  </View>,
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#ffffff",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 28.799999999999997,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        3. 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 3
+    </Text>
+  </View>,
+]
+`;
+
+exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
+[
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#ffffff",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 19.2,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        • 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 1
+    </Text>
+  </View>,
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#ffffff",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 19.2,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        • 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 2
+    </Text>
+  </View>,
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#ffffff",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 19.2,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        • 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 3
+    </Text>
+  </View>,
+]
+`;
+
+exports[`Renderer dark theme getTextNode returns a Text node 1`] = `
+<Text
+  style={
+    {
+      "fontSize": 24,
+    }
+  }
+>
+  Hello world
+</Text>
+`;
+
+exports[`Renderer dark theme getTextNode returns a wrapped Text node 1`] = `
+<Text
+  style={
+    {
+      "fontSize": 24,
+    }
+  }
+>
+  <Text
+    style={{}}
+  >
+    Hello world
+  </Text>
+</Text>
+`;
+
+exports[`Renderer dark theme getTextNode returns a wrapped Text node with styles 1`] = `
+<Text
+  style={
+    {
+      "fontSize": 24,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "fontSize": 24,
+      }
+    }
+  >
+    Hello world
+  </Text>
+</Text>
+`;
+
+exports[`Renderer dark theme getViewNode returns a hr View node 1`] = `
+<View
+  style={
+    {
+      "borderBottomColor": "#30363d",
+      "borderBottomWidth": 1,
+      "marginVertical": 4,
+    }
+  }
+/>
+`;
+
+exports[`Renderer dark theme getViewNode returns a paragraph View node 1`] = `
+<View
+  style={
+    {
+      "color": "#ffffff",
+      "fontSize": 16,
+      "lineHeight": 24,
+      "paddingVertical": 8,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "fontSize": 24,
+      }
+    }
+  >
+    Hello world
+  </Text>
+  <Text
+    onPress={[Function]}
+    style={
+      {
+        "color": "#58a6ff",
+        "fontSize": 16,
+        "fontStyle": "italic",
+        "lineHeight": 24,
+      }
+    }
+  >
+    Link
+  </Text>
+</View>
+`;
+
+exports[`Renderer light theme getBlockquoteNode returns a Blockquote 1`] = `
+<View
+  style={
+    {
+      "borderLeftColor": "#d0d7de",
+      "borderLeftWidth": 5,
+      "opacity": 0.8,
+      "paddingLeft": 16,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "fontSize": 24,
+      }
+    }
+  >
+    Hello world
+  </Text>
+  <Text
+    onPress={[Function]}
+    style={
+      {
+        "color": "#58a6ff",
+        "fontSize": 16,
+        "fontStyle": "italic",
+        "lineHeight": 24,
+      }
+    }
+  >
+    Link
+  </Text>
+</View>
+`;
+
+exports[`Renderer light theme getCodeBlockNode returns a Code block (horizontal ScrollView) 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    {
+      "backgroundColor": "#f6f8fa",
+      "minWidth": "100%",
+      "padding": 16,
+    }
+  }
+  horizontal={true}
+>
+  <View>
+    <Text
+      style={
+        {
+          "color": "#333333",
+          "fontSize": 16,
+          "fontStyle": "italic",
+          "lineHeight": 24,
+        }
+      }
+    >
+      print('hello')
+    </Text>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Renderer light theme getImageNode returns a Image 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    [
+      undefined,
+      {},
+      {
+        "height": 0,
+      },
+      {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Image
+    onError={[Function]}
+    onLayout={[Function]}
+    onLoad={[Function]}
+    onLoadStart={[Function]}
+    resizeMode="cover"
+    source={
+      {
+        "uri": "https://picsum.photos/100/100",
+      }
+    }
+    style={
+      [
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        {
+          "height": 0,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Renderer light theme getLinkNode returns a Link node 1`] = `
+<Text
+  onPress={[Function]}
+  style={
+    {
+      "color": "#58a6ff",
+      "fontSize": 16,
+      "fontStyle": "italic",
+      "lineHeight": 24,
+    }
+  }
+>
+  Link
+</Text>
+`;
+
+exports[`Renderer light theme getListNode returns Ordered List 1`] = `
+[
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -194,7 +762,13 @@ exports[`Renderer getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -243,7 +817,13 @@ exports[`Renderer getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -282,7 +862,7 @@ exports[`Renderer getListNode returns Ordered List 1`] = `
 ]
 `;
 
-exports[`Renderer getListNode returns Un-Ordered List 1`] = `
+exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
 [
   <View
     style={
@@ -297,7 +877,13 @@ exports[`Renderer getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -346,7 +932,13 @@ exports[`Renderer getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -395,7 +987,13 @@ exports[`Renderer getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -434,13 +1032,11 @@ exports[`Renderer getListNode returns Un-Ordered List 1`] = `
 ]
 `;
 
-exports[`Renderer getTextNode returns a Text node 1`] = `
+exports[`Renderer light theme getTextNode returns a Text node 1`] = `
 <Text
   style={
     {
-      "color": "#333333",
-      "fontSize": 16,
-      "lineHeight": 24,
+      "fontSize": 24,
     }
   }
 >
@@ -448,13 +1044,11 @@ exports[`Renderer getTextNode returns a Text node 1`] = `
 </Text>
 `;
 
-exports[`Renderer getTextNode returns a wrapped Text node 1`] = `
+exports[`Renderer light theme getTextNode returns a wrapped Text node 1`] = `
 <Text
   style={
     {
-      "color": "#333333",
-      "fontSize": 16,
-      "lineHeight": 24,
+      "fontSize": 24,
     }
   }
 >
@@ -466,22 +1060,18 @@ exports[`Renderer getTextNode returns a wrapped Text node 1`] = `
 </Text>
 `;
 
-exports[`Renderer getTextNode returns a wrapped Text node with styles 1`] = `
+exports[`Renderer light theme getTextNode returns a wrapped Text node with styles 1`] = `
 <Text
   style={
     {
-      "color": "#333333",
-      "fontSize": 16,
-      "lineHeight": 24,
+      "fontSize": 24,
     }
   }
 >
   <Text
     style={
       {
-        "color": "#333333",
-        "fontSize": 16,
-        "lineHeight": 24,
+        "fontSize": 24,
       }
     }
   >
@@ -490,7 +1080,7 @@ exports[`Renderer getTextNode returns a wrapped Text node with styles 1`] = `
 </Text>
 `;
 
-exports[`Renderer getViewNode returns a hr View node 1`] = `
+exports[`Renderer light theme getViewNode returns a hr View node 1`] = `
 <View
   style={
     {
@@ -502,7 +1092,7 @@ exports[`Renderer getViewNode returns a hr View node 1`] = `
 />
 `;
 
-exports[`Renderer getViewNode returns a paragraph View node 1`] = `
+exports[`Renderer light theme getViewNode returns a paragraph View node 1`] = `
 <View
   style={
     {
@@ -516,9 +1106,7 @@ exports[`Renderer getViewNode returns a paragraph View node 1`] = `
   <Text
     style={
       {
-        "color": "#333333",
-        "fontSize": 16,
-        "lineHeight": 24,
+        "fontSize": 24,
       }
     }
   >
