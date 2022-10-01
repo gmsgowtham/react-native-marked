@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
   pull_request:
     types: [opened, edited, ready_for_review]
 
@@ -19,3 +19,5 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Lint code
         run: yarn lint
+      - name: Test
+        run: yarn test
