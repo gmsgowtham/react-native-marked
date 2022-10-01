@@ -4,11 +4,11 @@ import Renderer from '../Renderer';
 import getStyles from './../../theme/styles';
 
 const styles = getStyles();
+const renderer = new Renderer();
 
 describe('Renderer', () => {
   describe('getTextNode', () => {
     it('returns a Text node', () => {
-      const renderer = new Renderer();
       const TextNode = renderer.getTextNode(
         'Hello world',
         styles.text
@@ -21,7 +21,6 @@ describe('Renderer', () => {
     });
 
     it('returns a wrapped Text node', () => {
-      const renderer = new Renderer();
       const TextNodeChild = renderer.getTextNode('Hello world', {});
       const TextNode = renderer.getTextNode(
         [TextNodeChild],
@@ -34,7 +33,6 @@ describe('Renderer', () => {
     });
 
     it('returns a wrapped Text node with styles', () => {
-      const renderer = new Renderer();
       const TextNodeChild = renderer.getTextNode('Hello world', styles.text);
       const TextNode = renderer.getTextNode(
         [TextNodeChild],
