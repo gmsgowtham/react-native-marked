@@ -91,7 +91,7 @@
       "<rootDir>/dist/"
     ],
     "setupFilesAfterEnv": [
-      "./src/jest/test-setup-after-env.js"
+      "@testing-library/jest-native/extend-expect"
     ]
   },
   "commitlint": {
