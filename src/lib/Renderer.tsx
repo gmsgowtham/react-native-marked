@@ -21,6 +21,7 @@ class Renderer {
     );
   };
 
+  // TODO: validate href
   getLinkNode = (text: string, href: string, styles: TextStyleProp) => {
     return (
       <Text
@@ -61,6 +62,7 @@ class Renderer {
     );
   }
 
+  // TODO: validate uri
   getImageNode(uri: string) {
     return <MDImage key={generateRandomString()} uri={uri} />;
   }
