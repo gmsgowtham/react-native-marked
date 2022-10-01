@@ -1,5 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Renderer getBlockquoteNode returns a Blockquote 1`] = `
+<View
+  style={
+    {
+      "borderLeftColor": "#d0d7de",
+      "borderLeftWidth": 5,
+      "opacity": 0.8,
+      "paddingLeft": 16,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#333333",
+        "fontSize": 16,
+        "lineHeight": 24,
+      }
+    }
+  >
+    Hello world
+  </Text>
+  <Text
+    onPress={[Function]}
+    style={
+      {
+        "color": "#58a6ff",
+        "fontSize": 16,
+        "fontStyle": "italic",
+        "lineHeight": 24,
+      }
+    }
+  >
+    Link
+  </Text>
+</View>
+`;
+
+exports[`Renderer getCodeBlockNode returns a Code block (horizontal ScrollView) 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    {
+      "backgroundColor": "#f6f8fa",
+      "minWidth": "100%",
+      "padding": 16,
+    }
+  }
+  horizontal={true}
+>
+  <View>
+    <Text
+      style={
+        {
+          "color": "#333333",
+          "fontSize": 16,
+          "fontStyle": "italic",
+          "lineHeight": 24,
+        }
+      }
+    >
+      print('hello')
+    </Text>
+  </View>
+</RCTScrollView>
+`;
+
 exports[`Renderer getLinkNode returns a Link node 1`] = `
 <Text
   onPress={[Function]}
@@ -70,82 +136,6 @@ exports[`Renderer getTextNode returns a wrapped Text node with styles 1`] = `
     Hello world
   </Text>
 </Text>
-`;
-
-exports[`Renderer getViewNode returns a View node as paragraph 1`] = `
-<View
-  style={
-    {
-      "color": "#333333",
-      "fontSize": 16,
-      "lineHeight": 24,
-      "paddingVertical": 8,
-    }
-  }
->
-  <Text
-    style={
-      {
-        "color": "#333333",
-        "fontSize": 16,
-        "lineHeight": 24,
-      }
-    }
-  >
-    Hello world
-  </Text>
-  <Text
-    onPress={[Function]}
-    style={
-      {
-        "color": "#58a6ff",
-        "fontSize": 16,
-        "fontStyle": "italic",
-        "lineHeight": 24,
-      }
-    }
-  >
-    Link
-  </Text>
-</View>
-`;
-
-exports[`Renderer getViewNode returns a View node with children 1`] = `
-<View
-  style={
-    {
-      "color": "#333333",
-      "fontSize": 16,
-      "lineHeight": 24,
-      "paddingVertical": 8,
-    }
-  }
->
-  <Text
-    style={
-      {
-        "color": "#333333",
-        "fontSize": 16,
-        "lineHeight": 24,
-      }
-    }
-  >
-    Hello world
-  </Text>
-  <Text
-    onPress={[Function]}
-    style={
-      {
-        "color": "#58a6ff",
-        "fontSize": 16,
-        "fontStyle": "italic",
-        "lineHeight": 24,
-      }
-    }
-  >
-    Link
-  </Text>
-</View>
 `;
 
 exports[`Renderer getViewNode returns a hr View node 1`] = `

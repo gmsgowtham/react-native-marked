@@ -75,4 +75,37 @@ describe('Renderer', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+  describe('getCodeBlockNode', () => {
+    it('returns a Code block (horizontal ScrollView)', () => {
+      const CodeBlock = renderer.getCodeBlockNode(
+        "print('hello')",
+        styles.code,
+        styles.em
+      );
+      const r = render(CodeBlock);
+      expect(screen.queryByText("print('hello')")).toBeTruthy();
+      const tree = r.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
+  describe('getBlockquoteNode', () => {
+    it('returns a Blockquote', () => {
+      const TextNode = renderer.getTextNode('Hello world', styles.text);
+      const LinkNode = renderer.getLinkNode(
+        'Link',
+        'https://example.com',
+        styles.link
+      );
+      const Blockquote = renderer.getBlockquoteNode(
+        [TextNode, LinkNode],
+        styles.blockquote
+      );
+
+      const r = render(Blockquote);
+      expect(screen.queryByText('Hello world')).toBeTruthy();
+      expect(screen.queryByText('Link')).toBeTruthy();
+      const tree = r.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
