@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renderer returns a <Text/> node 1`] = `
+<Text
+  style={
+    {
+      "color": "#333333",
+      "fontSize": 16,
+      "lineHeight": 24,
+    }
+  }
+>
+  Hello world
+</Text>
+`;
+
+exports[`Renderer returns a wrapped <Text/> node 1`] = `
+<Text
+  style={
+    {
+      "color": "#333333",
+      "fontSize": 16,
+      "lineHeight": 24,
+    }
+  }
+>
+  <Text
+    style={{}}
+  >
+    Hello world
+  </Text>
+</Text>
+`;
+
+exports[`Renderer returns a wrapped <Text/> node with styles 1`] = `
+<Text
+  style={
+    {
+      "color": "#333333",
+      "fontSize": 16,
+      "lineHeight": 24,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#333333",
+        "fontSize": 16,
+        "lineHeight": 24,
+      }
+    }
+  >
+    Hello world
+  </Text>
+</Text>
+`;
