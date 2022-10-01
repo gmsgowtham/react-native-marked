@@ -48,4 +48,31 @@ describe('Renderer', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+  describe('getViewNode', () => {
+    it('returns a paragraph View node', () => {
+      const TextNode = renderer.getTextNode('Hello world', styles.text);
+      const LinkNode = renderer.getLinkNode(
+        'Link',
+        'https://example.com',
+        styles.link
+      );
+      const ViewNode = renderer.getViewNode(
+        [TextNode, LinkNode],
+        styles.paragraph
+      );
+
+      const r = render(ViewNode);
+      expect(screen.queryByText('Hello world')).toBeTruthy();
+      expect(screen.queryByText('Link')).toBeTruthy();
+      const tree = r.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+
+    it('returns a hr View node', () => {
+      const ViewNode = renderer.getViewNode(null, styles.hr);
+      const r = render(ViewNode);
+      const tree = r.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

@@ -71,3 +71,129 @@ exports[`Renderer getTextNode returns a wrapped Text node with styles 1`] = `
   </Text>
 </Text>
 `;
+
+exports[`Renderer getViewNode returns a View node as paragraph 1`] = `
+<View
+  style={
+    {
+      "color": "#333333",
+      "fontSize": 16,
+      "lineHeight": 24,
+      "paddingVertical": 8,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#333333",
+        "fontSize": 16,
+        "lineHeight": 24,
+      }
+    }
+  >
+    Hello world
+  </Text>
+  <Text
+    onPress={[Function]}
+    style={
+      {
+        "color": "#58a6ff",
+        "fontSize": 16,
+        "fontStyle": "italic",
+        "lineHeight": 24,
+      }
+    }
+  >
+    Link
+  </Text>
+</View>
+`;
+
+exports[`Renderer getViewNode returns a View node with children 1`] = `
+<View
+  style={
+    {
+      "color": "#333333",
+      "fontSize": 16,
+      "lineHeight": 24,
+      "paddingVertical": 8,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#333333",
+        "fontSize": 16,
+        "lineHeight": 24,
+      }
+    }
+  >
+    Hello world
+  </Text>
+  <Text
+    onPress={[Function]}
+    style={
+      {
+        "color": "#58a6ff",
+        "fontSize": 16,
+        "fontStyle": "italic",
+        "lineHeight": 24,
+      }
+    }
+  >
+    Link
+  </Text>
+</View>
+`;
+
+exports[`Renderer getViewNode returns a hr View node 1`] = `
+<View
+  style={
+    {
+      "borderBottomColor": "#d0d7de",
+      "borderBottomWidth": 1,
+      "marginVertical": 4,
+    }
+  }
+/>
+`;
+
+exports[`Renderer getViewNode returns a paragraph View node 1`] = `
+<View
+  style={
+    {
+      "color": "#333333",
+      "fontSize": 16,
+      "lineHeight": 24,
+      "paddingVertical": 8,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#333333",
+        "fontSize": 16,
+        "lineHeight": 24,
+      }
+    }
+  >
+    Hello world
+  </Text>
+  <Text
+    onPress={[Function]}
+    style={
+      {
+        "color": "#58a6ff",
+        "fontSize": 16,
+        "fontStyle": "italic",
+        "lineHeight": 24,
+      }
+    }
+  >
+    Link
+  </Text>
+</View>
+`;
