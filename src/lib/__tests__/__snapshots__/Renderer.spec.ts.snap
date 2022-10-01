@@ -130,6 +130,310 @@ exports[`Renderer getLinkNode returns a Link node 1`] = `
 </Text>
 `;
 
+exports[`Renderer getListNode returns Ordered List 1`] = `
+[
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View>
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#333333",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 28.799999999999997,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        1. 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#333333",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 1
+    </Text>
+  </View>,
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View>
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#333333",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 28.799999999999997,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        2. 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#333333",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 2
+    </Text>
+  </View>,
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View>
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#333333",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 28.799999999999997,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        3. 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#333333",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 3
+    </Text>
+  </View>,
+]
+`;
+
+exports[`Renderer getListNode returns Un-Ordered List 1`] = `
+[
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View>
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#333333",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 19.2,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        • 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#333333",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 1
+    </Text>
+  </View>,
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View>
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#333333",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 19.2,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        • 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#333333",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 2
+    </Text>
+  </View>,
+  <View
+    style={
+      [
+        {
+          "alignSelf": "stretch",
+          "flexDirection": "row",
+          "flexWrap": "nowrap",
+        },
+        undefined,
+      ]
+    }
+    testID="marked-list-item"
+  >
+    <View>
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "flex-end",
+              "color": "#333333",
+              "flexGrow": 0,
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+              "textAlign": "right",
+            },
+            {
+              "width": 19.2,
+            },
+          ]
+        }
+        testID="marker-box"
+      >
+        • 
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#333333",
+          "flexShrink": 1,
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello world 3
+    </Text>
+  </View>,
+]
+`;
+
 exports[`Renderer getTextNode returns a Text node 1`] = `
 <Text
   style={

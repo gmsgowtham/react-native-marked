@@ -115,4 +115,40 @@ describe('Renderer', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+  describe('getListNode', () => {
+    it('returns Ordered List', () => {
+      const TextNode1 = renderer.getTextNode('Hello world 1', styles.li);
+      const TextNode2 = renderer.getTextNode('Hello world 2', styles.li);
+      const TextNode3 = renderer.getTextNode('Hello world 3', styles.li);
+      const OL = renderer.getListNode(
+        true,
+        [TextNode1, TextNode2, TextNode3],
+        styles.list,
+        styles.li
+      );
+      const r = render(OL);
+      expect(screen.queryByText('Hello world 1')).toBeTruthy();
+      expect(screen.queryByText('Hello world 2')).toBeTruthy();
+      expect(screen.queryByText('Hello world 3')).toBeTruthy();
+      const tree = r.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+    it('returns Un-Ordered List', () => {
+      const TextNode1 = renderer.getTextNode('Hello world 1', styles.li);
+      const TextNode2 = renderer.getTextNode('Hello world 2', styles.li);
+      const TextNode3 = renderer.getTextNode('Hello world 3', styles.li);
+      const OL = renderer.getListNode(
+        false,
+        [TextNode1, TextNode2, TextNode3],
+        styles.list,
+        styles.li
+      );
+      const r = render(OL);
+      expect(screen.queryByText('Hello world 1')).toBeTruthy();
+      expect(screen.queryByText('Hello world 2')).toBeTruthy();
+      expect(screen.queryByText('Hello world 3')).toBeTruthy();
+      const tree = r.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
