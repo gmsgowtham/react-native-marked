@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Renderer getLinkNode returns a Link node 1`] = `
+<Text
+  onPress={[Function]}
+  style={
+    {
+      "color": "#58a6ff",
+      "fontSize": 16,
+      "fontStyle": "italic",
+      "lineHeight": 24,
+    }
+  }
+>
+  Link
+</Text>
+`;
+
 exports[`Renderer getTextNode returns a Text node 1`] = `
 <Text
   style={

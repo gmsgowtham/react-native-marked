@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react-native';
+import { fireEvent, render, screen } from '@testing-library/react-native';
 import Renderer from '../Renderer';
 import getStyles from './../../theme/styles';
 
@@ -30,6 +30,20 @@ describe('Renderer', () => {
       const TextNode = renderer.getTextNode([TextNodeChild], styles.text);
       const r = render(TextNode);
       expect(screen.queryByText('Hello world')).toBeTruthy();
+      const tree = r.toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
+  describe('getLinkNode', () => {
+    it('returns a Link node', () => {
+      const LinkNode = renderer.getLinkNode(
+        'Link',
+        'https://example.com',
+        styles.link
+      );
+      const r = render(LinkNode);
+      expect(screen.queryByText('Link')).toBeTruthy();
+      fireEvent.press(screen.queryByText('Link'));
       const tree = r.toJSON();
       expect(tree).toMatchSnapshot();
     });
