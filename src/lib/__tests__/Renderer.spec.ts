@@ -7,7 +7,7 @@ const styles = getStyles();
 
 describe('Renderer', () => {
   describe('getTextNode', () => {
-    it('returns a <Text/> node', () => {
+    it('returns a Text node', () => {
       const renderer = new Renderer();
       const TextNode = renderer.getTextNode(
         'Hello world',
@@ -20,7 +20,7 @@ describe('Renderer', () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it('returns a wrapped <Text/> node', () => {
+    it('returns a wrapped Text node', () => {
       const renderer = new Renderer();
       const TextNodeChild = renderer.getTextNode('Hello world', {});
       const TextNode = renderer.getTextNode(
@@ -33,7 +33,7 @@ describe('Renderer', () => {
       expect(tree).toMatchSnapshot();
     });
 
-    it('returns a wrapped <Text/> node with styles', () => {
+    it('returns a wrapped Text node with styles', () => {
       const renderer = new Renderer();
       const TextNodeChild = renderer.getTextNode('Hello world', styles.text);
       const TextNode = renderer.getTextNode(

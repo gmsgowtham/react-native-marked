@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renderer getTextNode returns a <Text/> node 1`] = `
+exports[`Renderer getTextNode returns a Text node 1`] = `
 <Text
   style={
     {
@@ -14,7 +14,7 @@ exports[`Renderer getTextNode returns a <Text/> node 1`] = `
 </Text>
 `;
 
-exports[`Renderer getTextNode returns a wrapped <Text/> node 1`] = `
+exports[`Renderer getTextNode returns a wrapped Text node 1`] = `
 <Text
   style={
     {
@@ -32,7 +32,7 @@ exports[`Renderer getTextNode returns a wrapped <Text/> node 1`] = `
 </Text>
 `;
 
-exports[`Renderer getTextNode returns a wrapped <Text/> node with styles 1`] = `
+exports[`Renderer getTextNode returns a wrapped Text node with styles 1`] = `
 <Text
   style={
     {
