@@ -120,29 +120,31 @@ class Parser {
       switch (token.type) {
         case 'escape': {
           return this.renderer.getTextNode(token.text, {
-            ...styles,
             ...this.styles.text,
+            ...styles,
           });
         }
         case 'link': {
           return this.renderer.getLinkNode(token.text, token.href, {
-            ...styles,
             ...this.styles.link,
+            ...styles,
           });
         }
         case 'image': {
           return this.renderer.getImageNode(token.href);
         }
         case 'strong': {
+          const boldStyle = { ...this.styles.strong, ...styles };
           return this.renderer.getTextNode(
-            this.parseInline(token.tokens, this.styles.strong),
-            { ...styles, ...this.styles.strong }
+            this.parseInline(token.tokens, boldStyle),
+            boldStyle
           );
         }
         case 'em': {
+          const italicStyle = { ...this.styles.em, ...styles };
           return this.renderer.getTextNode(
-            this.parseInline(token.tokens, this.styles.em),
-            { ...styles, ...this.styles.em }
+            this.parseInline(token.tokens, italicStyle),
+            italicStyle
           );
         }
         case 'codespan': {
@@ -156,9 +158,12 @@ class Parser {
         }
         case 'text': {
           return this.renderer.getTextNode(token.raw, {
-            ...styles,
             ...this.styles.text,
+            ...styles,
           });
+        }
+        case 'html': {
+          return this.renderer.getTextNode(token.text.trim(), this.styles.text);
         }
         default: {
           console.warn(`Token with '${token.type}' type was not found.`);
