@@ -156,14 +156,12 @@ class Parser {
         case 'del': {
           return null;
         }
-        case 'text': {
+        case 'text':
+        case 'html': {
           return this.renderer.getTextNode(token.raw, {
             ...this.styles.text,
             ...styles,
           });
-        }
-        case 'html': {
-          return this.renderer.getTextNode(token.text.trim(), this.styles.text);
         }
         default: {
           console.warn(`Token with '${token.type}' type was not found.`);
