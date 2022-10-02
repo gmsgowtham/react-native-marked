@@ -64,7 +64,10 @@ class Parser {
         }
         case 'heading': {
           const styles = this.headingStylesMap[token.depth] ?? this.styles.text;
-          return this.renderer.getTextNode(token.text, styles);
+          return this.renderer.getTextNode(
+            this.parseInline(token.tokens, styles),
+            styles
+          );
         }
         case 'code': {
           return this.renderer.getCodeBlockNode(
