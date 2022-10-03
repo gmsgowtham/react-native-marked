@@ -22,7 +22,7 @@ const Markdown = ({
     });
     const tokens = marked.lexer(value.trim());
 
-    return parser.parse(tokens);
+    return parser.parse(tokens).filter((token) => token !== null);
   }, [value, styles]);
 
   const renderItem = useCallback(({ item }: { item: ReactNode }) => {
