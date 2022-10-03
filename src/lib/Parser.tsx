@@ -81,19 +81,18 @@ class Parser {
         }
         case 'list': {
           const li = token.items.map((item) => {
-            if (
-              item.tokens.length > 0 &&
-              item.tokens[0]?.type === 'text' &&
-              // @ts-ignore
-              Array.isArray(item.tokens[0]?.tokens)
-            ) {
-              return this.renderer.getTextNode(
-                // @ts-ignore
-                this.parseInline(item.tokens[0]?.tokens),
-                this.styles.li
-              );
-            }
-            return this.renderer.getTextNode(item.text, this.styles.li);
+            const children = item.tokens.map((cItem) => {
+              if (cItem.type === 'text') {
+                return this.renderer.getTextNode(
+                  // @ts-ignore
+                  this.parseInline(item.tokens[0]?.tokens),
+                  this.styles.li
+                );
+              } else {
+                return this.parse([cItem]);
+              }
+            });
+            return this.renderer.getViewNode(children, this.styles.li);
           });
           return this.renderer.getListNode(
             token.ordered,
