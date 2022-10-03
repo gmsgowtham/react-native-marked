@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { ReactNode } from 'react';
 import { Linking, ScrollView, View, Text } from 'react-native';
 import MarkedList from '@jsamr/react-native-li';
 import Disc from '@jsamr/counter-style/presets/disc';
@@ -10,10 +10,7 @@ import type { TextStyleProp, ViewStyleProp } from './types';
 class Renderer {
   private onLinkPress = (href: string) => () => Linking.openURL(href);
 
-  getTextNode = (
-    children: string | React.ReactNode[],
-    styles: TextStyleProp
-  ) => {
+  getTextNode = (children: string | ReactNode[], styles: TextStyleProp) => {
     return (
       <Text key={generateRandomString()} style={styles}>
         {children}
@@ -33,7 +30,7 @@ class Renderer {
     );
   };
 
-  getViewNode(children: React.ReactNode[] | null, styles: ViewStyleProp) {
+  getViewNode(children: ReactNode[] | null, styles: ViewStyleProp) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -53,7 +50,7 @@ class Renderer {
     );
   }
 
-  getBlockquoteNode(children: React.ReactNode[], styles: ViewStyleProp) {
+  getBlockquoteNode(children: ReactNode[], styles: ViewStyleProp) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -67,7 +64,7 @@ class Renderer {
 
   getListNode(
     ordered: boolean,
-    li: React.ReactNode[],
+    li: ReactNode[],
     listStyle: ViewStyleProp,
     textStyle: TextStyleProp
   ) {
