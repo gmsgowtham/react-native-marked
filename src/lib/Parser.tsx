@@ -102,12 +102,8 @@ class Parser {
             this.styles.li
           );
         }
-        case 'html': {
-          return this.renderer.getTextNode(token.text.trim(), this.styles.text);
-        }
         default:
-          console.warn(`Token with '${token.type}' type was not found.`);
-          return null;
+          return this.parseInline([token]);
       }
     });
     return elements;
