@@ -83,14 +83,16 @@ class Parser {
           const li = token.items.map((item) => {
             const children = item.tokens.map((cItem) => {
               if (cItem.type === 'text') {
+                /* Text node */
                 return this.renderer.getTextNode(
                   // @ts-ignore
-                  this.parseInline(item.tokens[0]?.tokens),
+                  this.parseInline(cItem.tokens),
                   this.styles.li
                 );
-              } else {
-                return this.parse([cItem]);
               }
+
+              /* Parse the nested token */
+              return this.parse([cItem]);
             });
             return this.renderer.getViewNode(children, this.styles.li);
           });
