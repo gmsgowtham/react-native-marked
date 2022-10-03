@@ -44,7 +44,11 @@ class Renderer {
     textStyle: TextStyleProp
   ) {
     return (
-      <ScrollView contentContainerStyle={containerStyle} horizontal>
+      <ScrollView
+        key={generateRandomString()}
+        contentContainerStyle={containerStyle}
+        horizontal
+      >
         <Text style={textStyle}>{text}</Text>
       </ScrollView>
     );
@@ -73,6 +77,7 @@ class Renderer {
         counterRenderer={ordered ? Decimal : Disc}
         markerTextStyle={textStyle}
         markerBoxStyle={listStyle}
+        key={generateRandomString()}
       >
         {li.map((node) => node)}
       </MarkedList>
