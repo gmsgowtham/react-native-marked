@@ -14,20 +14,10 @@ exports[`Markdown simple markdown with image, list and blockquote 1`] = `
           }
         }
       >
-        <Text
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        />
         <Memo(MDImage)
           uri="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/973qsby2fdhznx9yuzdw.jpg"
         />
       </View>,
-      null,
       <View
         style={
           {
@@ -55,7 +45,6 @@ And surprisingly, it has some great lessons for mastering Python.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -91,7 +80,6 @@ And surprisingly, it has some great lessons for mastering Python.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -118,7 +106,6 @@ And surprisingly, it has some great lessons for mastering Python.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -145,7 +132,6 @@ And surprisingly, it has some great lessons for mastering Python.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -182,7 +168,6 @@ He is not as flashy as the other heroes.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -209,7 +194,6 @@ He is not as flashy as the other heroes.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -236,7 +220,6 @@ He is not as flashy as the other heroes.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -272,7 +255,6 @@ He is not as flashy as the other heroes.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -300,7 +282,6 @@ Because the source of Saitama's mastery is revealed in the first season. Every d
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -329,7 +310,6 @@ Because the source of Saitama's mastery is revealed in the first season. Every d
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -394,7 +374,6 @@ Notice how SIMPLE this is.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -432,7 +411,6 @@ Or automated tests, like unit tests. When you master writing those, you can sudd
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -468,7 +446,6 @@ Or automated tests, like unit tests. When you master writing those, you can sudd
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -496,7 +473,6 @@ Each of these is like the pushups or squats Saitama does religiously.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -523,7 +499,6 @@ Each of these is like the pushups or squats Saitama does religiously.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -559,7 +534,6 @@ Each of these is like the pushups or squats Saitama does religiously.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -586,7 +560,6 @@ Each of these is like the pushups or squats Saitama does religiously.
           </Text>
         </Text>
       </View>,
-      null,
       <View
         style={
           {
@@ -634,19 +607,18 @@ IG :
                 }
               }
             >
-              Salah Ihoum
-            </Text>
-            <Text
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
+              <Text
+                style={
+                  {
+                    "color": "#58a6ff",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "lineHeight": 24,
+                  }
                 }
-              }
-            >
-              
-
+              >
+                Salah Ihoum
+              </Text>
             </Text>
             <Text
               style={
@@ -716,15 +688,6 @@ IG :
           }
         }
       >
-        <Text
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        />
         <View
           accessibilityIgnoresInvertColors={true}
           style={
@@ -775,10 +738,6 @@ IG :
     <View
       onLayout={[Function]}
       style={null}
-    />
-    <View
-      onLayout={[Function]}
-      style={null}
     >
       <View
         style={
@@ -808,10 +767,6 @@ And surprisingly, it has some great lessons for mastering Python.
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    />
     <View
       onLayout={[Function]}
       style={null}
@@ -860,7 +815,34 @@ And surprisingly, it has some great lessons for mastering Python.
     <View
       onLayout={[Function]}
       style={null}
-    />
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Imagine a parade of mini-Godzilla or Mothra-like critters, but more diverse and colorful and intelligent, and ranging widely in their size and threat level.
+          </Text>
+        </Text>
+      </View>
+    </View>
     <View
       onLayout={[Function]}
       style={null}
@@ -887,7 +869,53 @@ And surprisingly, it has some great lessons for mastering Python.
               }
             }
           >
-            Imagine a parade of mini-Godzilla or Mothra-like critters, but more diverse and colorful and intelligent, and ranging widely in their size and threat level.
+            This goes on to the point where a formal league of heroes gets formed, with ranks for different perceived skills. 
+          </Text>
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Enter the protagonist, named Saitama.
+He is not as flashy as the other heroes.
           </Text>
         </Text>
       </View>
