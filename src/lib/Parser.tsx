@@ -69,6 +69,8 @@ class Parser {
                 /* getViewNode since tokens could contain a block like elements (i.e. img) */
                 const listChildren =
                   this.getNormalizedSiblingNodesForBlockAndInlineTokens(
+                    // Note: Upstream types aren't available for this specific use-case
+                    // @types/marked (https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/marked/index.d.ts)
                     // @ts-ignore
                     cItem.tokens,
                     this.styles.li
