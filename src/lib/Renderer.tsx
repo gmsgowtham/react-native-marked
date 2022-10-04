@@ -65,7 +65,6 @@ class Renderer {
     );
   }
 
-  // TODO: validate uri
   getImageNode(uri: string) {
     return <MDImage key={generateRandomString()} uri={uri} />;
   }
