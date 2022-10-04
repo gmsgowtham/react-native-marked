@@ -83,8 +83,7 @@ class Parser {
           const li = token.items.map((item) => {
             const children = item.tokens.map((cItem) => {
               if (cItem.type === 'text') {
-                /* Text node */
-                return this.renderer.getTextNode(
+                return this.renderer.getViewNode(
                   // @ts-ignore
                   this.parseInline(cItem.tokens),
                   this.styles.li
