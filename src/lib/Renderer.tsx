@@ -1,15 +1,14 @@
 import React, { ReactNode } from 'react';
-import { Linking, ScrollView, View, Text } from 'react-native';
+import { ScrollView, View, Text } from 'react-native';
 import MarkedList from '@jsamr/react-native-li';
 import Disc from '@jsamr/counter-style/presets/disc';
 import Decimal from '@jsamr/counter-style/presets/decimal';
 import MDImage from './../components/MDImage';
 import { generateRandomString } from '../utils/string';
 import type { TextStyleProp, ViewStyleProp } from './types';
+import { onLinkPress } from '../utils/handlers';
 
 class Renderer {
-  private onLinkPress = (href: string) => () => Linking.openURL(href);
-
   getTextNode = (children: string | ReactNode[], styles: TextStyleProp) => {
     return (
       <Text key={generateRandomString()} style={styles}>
@@ -26,7 +25,7 @@ class Renderer {
     return (
       <Text
         key={generateRandomString()}
-        onPress={this.onLinkPress(href)}
+        onPress={onLinkPress(href)}
         style={styles}
       >
         {children}
