@@ -141,7 +141,10 @@ class Parser {
           );
         }
         case 'codespan': {
-          return this.renderer.getTextNode(token.text, this.styles.codespan);
+          return this.renderer.getTextNode(token.text, {
+            ...this.styles.codespan,
+            ...styles,
+          });
         }
         case 'br': {
           return this.renderer.getTextNode('\n', {});
