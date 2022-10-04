@@ -107,28 +107,34 @@ class Parser {
           });
         }
         case 'link': {
-          // TODO: https://www.markdownguide.org/basic-syntax/#formatting-links
+          const linkStyle = {
+            ...styles,
+            ...this.styles.link, // To override color property
+          };
           return this.renderer.getLinkNode(
-            token.title || token.text,
+            this.parseInline(token.tokens, linkStyle),
             token.href,
-            {
-              ...this.styles.link,
-              ...styles,
-            }
+            linkStyle
           );
         }
         case 'image': {
           return this.renderer.getImageNode(token.href);
         }
         case 'strong': {
-          const boldStyle = { ...this.styles.strong, ...styles };
+          const boldStyle = {
+            ...this.styles.strong,
+            ...styles,
+          };
           return this.renderer.getTextNode(
             this.parseInline(token.tokens, boldStyle),
             boldStyle
           );
         }
         case 'em': {
-          const italicStyle = { ...this.styles.em, ...styles };
+          const italicStyle = {
+            ...this.styles.em,
+            ...styles,
+          };
           return this.renderer.getTextNode(
             this.parseInline(token.tokens, italicStyle),
             italicStyle

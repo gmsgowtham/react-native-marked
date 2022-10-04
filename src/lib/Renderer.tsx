@@ -18,14 +18,18 @@ class Renderer {
     );
   };
 
-  getLinkNode = (text: string, href: string, styles: TextStyleProp) => {
+  getLinkNode = (
+    children: string | ReactNode[],
+    href: string,
+    styles: TextStyleProp
+  ) => {
     return (
       <Text
         key={generateRandomString()}
         onPress={this.onLinkPress(href)}
         style={styles}
       >
-        {text}
+        {children}
       </Text>
     );
   };
