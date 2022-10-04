@@ -22,7 +22,7 @@ class Parser {
   }
 
   parse(tokens: marked.Token[]) {
-    const elements: React.ReactNode[] = tokens.map((token) => {
+    const elements: ReactNode[] = tokens.map((token) => {
       switch (token.type) {
         case 'space': {
           return null;
@@ -96,7 +96,7 @@ class Parser {
   }
 
   parseInline(tokens: marked.Token[], styles?: CustomStyleProp) {
-    const elements: React.ReactNode[] = tokens.map((token) => {
+    const elements: ReactNode[] = tokens.map((token) => {
       if (!token) return null;
 
       switch (token.type) {
