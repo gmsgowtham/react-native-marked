@@ -107,10 +107,14 @@ class Parser {
           });
         }
         case 'link': {
-          return this.renderer.getLinkNode(token.text, token.href, {
-            ...this.styles.link,
-            ...styles,
-          });
+          return this.renderer.getLinkNode(
+            token.title || token.text,
+            token.href,
+            {
+              ...this.styles.link,
+              ...styles,
+            }
+          );
         }
         case 'image': {
           return this.renderer.getImageNode(token.href);
