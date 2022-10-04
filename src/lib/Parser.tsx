@@ -107,6 +107,7 @@ class Parser {
           });
         }
         case 'link': {
+          // TODO: https://www.markdownguide.org/basic-syntax/#formatting-links
           return this.renderer.getLinkNode(
             token.title || token.text,
             token.href,
