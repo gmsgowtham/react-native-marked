@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { marked } from 'marked';
 import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
@@ -21,35 +22,17 @@ class Parser {
   }
 
   parse(tokens: marked.Token[]) {
-    const elements: React.ReactNode[] = tokens.map((token) => {
+    const elements: ReactNode[] = tokens.map((token) => {
       switch (token.type) {
         case 'space': {
           return null;
         }
         case 'paragraph': {
-          let tempTokens: marked.Token[] = [];
-          const paragraphChildren: React.ReactNode[] = [];
-          token.tokens.forEach((t) => {
-            /* To avoid inlining of image */
-            if (t.type === 'image') {
-              paragraphChildren.push(
-                this.renderer.getTextNode(
-                  this.parseInline(tempTokens),
-                  this.styles.text
-                )
-              );
-              paragraphChildren.push(this.parseInline([t]));
-              tempTokens = [];
-              return;
-            }
-            tempTokens = [...tempTokens, t];
-          });
-
-          if (tempTokens.length > 0) {
-            paragraphChildren.push(
-              this.renderer.getTextNode(this.parseInline(tempTokens), {})
+          const paragraphChildren =
+            this.getNormalizedSiblingNodesForBlockAndInlineTokens(
+              token.tokens,
+              this.styles.text
             );
-          }
 
           return this.renderer.getViewNode(
             paragraphChildren,
@@ -64,7 +47,10 @@ class Parser {
         }
         case 'heading': {
           const styles = this.headingStylesMap[token.depth] ?? this.styles.text;
-          return this.renderer.getTextNode(token.text, styles);
+          return this.renderer.getTextNode(
+            this.parseInline(token.tokens, styles),
+            styles
+          );
         }
         case 'code': {
           return this.renderer.getCodeBlockNode(
@@ -78,19 +64,22 @@ class Parser {
         }
         case 'list': {
           const li = token.items.map((item) => {
-            if (
-              item.tokens.length > 0 &&
-              item.tokens[0]?.type === 'text' &&
-              // @ts-ignore
-              Array.isArray(item.tokens[0]?.tokens)
-            ) {
-              return this.renderer.getTextNode(
-                // @ts-ignore
-                this.parseInline(item.tokens[0]?.tokens),
-                this.styles.li
-              );
-            }
-            return this.renderer.getTextNode(item.text, this.styles.li);
+            const children = item.tokens.map((cItem) => {
+              if (cItem.type === 'text') {
+                /* getViewNode since tokens could contain a block like elements (i.e. img) */
+                const listChildren =
+                  this.getNormalizedSiblingNodesForBlockAndInlineTokens(
+                    // @ts-ignore
+                    cItem.tokens,
+                    this.styles.li
+                  );
+                return this.renderer.getViewNode(listChildren, this.styles.li);
+              }
+
+              /* Parse the nested token */
+              return this.parse([cItem]);
+            });
+            return this.renderer.getViewNode(children, this.styles.li);
           });
           return this.renderer.getListNode(
             token.ordered,
@@ -99,51 +88,63 @@ class Parser {
             this.styles.li
           );
         }
-        case 'html': {
-          return this.renderer.getTextNode(token.text.trim(), this.styles.text);
-        }
         default:
-          console.warn(`Token with '${token.type}' type was not found.`);
-          return null;
+          return this.parseInline([token]);
       }
     });
-    return elements;
+    return elements.filter((element) => element !== null);
   }
 
   parseInline(tokens: marked.Token[], styles?: CustomStyleProp) {
-    const elements: React.ReactNode[] = tokens.map((token) => {
+    const elements: ReactNode[] = tokens.map((token) => {
       if (!token) return null;
 
       switch (token.type) {
         case 'escape': {
           return this.renderer.getTextNode(token.text, {
-            ...styles,
             ...this.styles.text,
+            ...styles,
           });
         }
         case 'link': {
-          return this.renderer.getLinkNode(token.text, token.href, {
+          const linkStyle = {
             ...styles,
-            ...this.styles.link,
-          });
+            ...this.styles.link, // To override color property
+          };
+          return this.renderer.getLinkNode(
+            this.parseInline(token.tokens, linkStyle),
+            token.href,
+            linkStyle
+          );
         }
         case 'image': {
           return this.renderer.getImageNode(token.href);
         }
         case 'strong': {
+          const boldStyle = {
+            ...this.styles.strong,
+            ...styles,
+          };
           return this.renderer.getTextNode(
-            this.parseInline(token.tokens, this.styles.strong),
-            { ...styles, ...this.styles.strong }
+            this.parseInline(token.tokens, boldStyle),
+            boldStyle
           );
         }
         case 'em': {
+          const italicStyle = {
+            ...this.styles.em,
+            ...styles,
+          };
           return this.renderer.getTextNode(
-            this.parseInline(token.tokens, this.styles.em),
-            { ...styles, ...this.styles.em }
+            this.parseInline(token.tokens, italicStyle),
+            italicStyle
           );
         }
         case 'codespan': {
-          return this.renderer.getTextNode(token.text, this.styles.codespan);
+          return this.renderer.getTextNode(token.text, {
+            ...this.styles.codespan,
+            ...styles,
+          });
         }
         case 'br': {
           return this.renderer.getTextNode('\n', {});
@@ -151,10 +152,15 @@ class Parser {
         case 'del': {
           return null;
         }
-        case 'text': {
+        case 'text':
+        case 'html': {
+          if (token.raw.trim().length < 1) {
+            return null;
+          }
+
           return this.renderer.getTextNode(token.raw, {
-            ...styles,
             ...this.styles.text,
+            ...styles,
           });
         }
         default: {
@@ -163,8 +169,42 @@ class Parser {
         }
       }
     });
-    return elements;
+    return elements.filter((element) => element !== null);
   }
+
+  private getNormalizedSiblingNodesForBlockAndInlineTokens = (
+    tokens: marked.Token[],
+    textStyle: TextStyleProp
+  ): ReactNode[] => {
+    let tempTokens: marked.Token[] = [];
+    const siblingNodes: ReactNode[] = [];
+    tokens.forEach((t) => {
+      /**
+       * To avoid inlining images
+       * Note: to be extend for other token types
+       */
+      if (t.type === 'image') {
+        const parsed = this.parseInline(tempTokens);
+        if (parsed.length > 0) {
+          siblingNodes.push(
+            this.renderer.getTextNode(this.parseInline(tempTokens), textStyle)
+          );
+        }
+        siblingNodes.push(this.parseInline([t]));
+        tempTokens = [];
+        return;
+      }
+      tempTokens = [...tempTokens, t];
+    });
+
+    /* Remaining temp tokens if any */
+    if (tempTokens.length > 0) {
+      siblingNodes.push(
+        this.renderer.getTextNode(this.parseInline(tempTokens), {})
+      );
+    }
+    return siblingNodes;
+  };
 }
 
 export default Parser;

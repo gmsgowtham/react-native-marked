@@ -1,19 +1,15 @@
-import * as React from 'react';
-import { Linking, ScrollView, View, Text } from 'react-native';
+import React, { ReactNode } from 'react';
+import { ScrollView, View, Text } from 'react-native';
 import MarkedList from '@jsamr/react-native-li';
 import Disc from '@jsamr/counter-style/presets/disc';
 import Decimal from '@jsamr/counter-style/presets/decimal';
 import MDImage from './../components/MDImage';
 import { generateRandomString } from '../utils/string';
 import type { TextStyleProp, ViewStyleProp } from './types';
+import { onLinkPress } from '../utils/handlers';
 
 class Renderer {
-  private onLinkPress = (href: string) => () => Linking.openURL(href);
-
-  getTextNode = (
-    children: string | React.ReactNode[],
-    styles: TextStyleProp
-  ) => {
+  getTextNode = (children: string | ReactNode[], styles: TextStyleProp) => {
     return (
       <Text key={generateRandomString()} style={styles}>
         {children}
@@ -21,20 +17,23 @@ class Renderer {
     );
   };
 
-  // TODO: validate href
-  getLinkNode = (text: string, href: string, styles: TextStyleProp) => {
+  getLinkNode = (
+    children: string | ReactNode[],
+    href: string,
+    styles: TextStyleProp
+  ) => {
     return (
       <Text
         key={generateRandomString()}
-        onPress={this.onLinkPress(href)}
+        onPress={onLinkPress(href)}
         style={styles}
       >
-        {text}
+        {children}
       </Text>
     );
   };
 
-  getViewNode(children: React.ReactNode[] | null, styles: ViewStyleProp) {
+  getViewNode(children: ReactNode[] | null, styles: ViewStyleProp) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -48,13 +47,17 @@ class Renderer {
     textStyle: TextStyleProp
   ) {
     return (
-      <ScrollView contentContainerStyle={containerStyle} horizontal>
+      <ScrollView
+        key={generateRandomString()}
+        contentContainerStyle={containerStyle}
+        horizontal
+      >
         <Text style={textStyle}>{text}</Text>
       </ScrollView>
     );
   }
 
-  getBlockquoteNode(children: React.ReactNode[], styles: ViewStyleProp) {
+  getBlockquoteNode(children: ReactNode[], styles: ViewStyleProp) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -69,7 +72,7 @@ class Renderer {
 
   getListNode(
     ordered: boolean,
-    li: React.ReactNode[],
+    li: ReactNode[],
     listStyle: ViewStyleProp,
     textStyle: TextStyleProp
   ) {
@@ -78,6 +81,7 @@ class Renderer {
         counterRenderer={ordered ? Decimal : Disc}
         markerTextStyle={textStyle}
         markerBoxStyle={listStyle}
+        key={generateRandomString()}
       >
         {li.map((node) => node)}
       </MarkedList>
