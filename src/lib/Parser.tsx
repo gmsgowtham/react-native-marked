@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { marked } from 'marked';
 import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
@@ -27,29 +28,11 @@ class Parser {
           return null;
         }
         case 'paragraph': {
-          let tempTokens: marked.Token[] = [];
-          const paragraphChildren: React.ReactNode[] = [];
-          token.tokens.forEach((t) => {
-            /* To avoid inlining of image */
-            if (t.type === 'image') {
-              paragraphChildren.push(
-                this.renderer.getTextNode(
-                  this.parseInline(tempTokens),
-                  this.styles.text
-                )
-              );
-              paragraphChildren.push(this.parseInline([t]));
-              tempTokens = [];
-              return;
-            }
-            tempTokens = [...tempTokens, t];
-          });
-
-          if (tempTokens.length > 0) {
-            paragraphChildren.push(
-              this.renderer.getTextNode(this.parseInline(tempTokens), {})
+          const paragraphChildren =
+            this.getNormalizedSiblingNodesForBlockAndInlineTokens(
+              token.tokens,
+              this.styles.text
             );
-          }
 
           return this.renderer.getViewNode(
             paragraphChildren,
@@ -84,11 +67,13 @@ class Parser {
             const children = item.tokens.map((cItem) => {
               if (cItem.type === 'text') {
                 /* getViewNode since tokens could contain a block like elements (i.e. img) */
-                return this.renderer.getViewNode(
-                  // @ts-ignore
-                  this.parseInline(cItem.tokens),
-                  this.styles.li
-                );
+                const listChildren =
+                  this.getNormalizedSiblingNodesForBlockAndInlineTokens(
+                    // @ts-ignore
+                    cItem.tokens,
+                    this.styles.li
+                  );
+                return this.renderer.getViewNode(listChildren, this.styles.li);
               }
 
               /* Parse the nested token */
@@ -170,8 +155,42 @@ class Parser {
         }
       }
     });
-    return elements;
+    return elements.filter((element) => element !== null);
   }
+
+  private getNormalizedSiblingNodesForBlockAndInlineTokens = (
+    tokens: marked.Token[],
+    textStyle: TextStyleProp
+  ): ReactNode[] => {
+    let tempTokens: marked.Token[] = [];
+    const siblingNodes: ReactNode[] = [];
+    tokens.forEach((t) => {
+      /**
+       * To avoid inlining images
+       * Note: to be extend for other token types
+       */
+      if (t.type === 'image') {
+        const parsed = this.parseInline(tempTokens);
+        if (parsed.length > 0) {
+          siblingNodes.push(
+            this.renderer.getTextNode(this.parseInline(tempTokens), textStyle)
+          );
+        }
+        siblingNodes.push(this.parseInline([t]));
+        tempTokens = [];
+        return;
+      }
+      tempTokens = [...tempTokens, t];
+    });
+
+    /* Remaining temp tokens if any */
+    if (tempTokens.length > 0) {
+      siblingNodes.push(
+        this.renderer.getTextNode(this.parseInline(tempTokens), {})
+      );
+    }
+    return siblingNodes;
+  };
 }
 
 export default Parser;
