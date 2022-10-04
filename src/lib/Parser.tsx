@@ -83,6 +83,7 @@ class Parser {
           const li = token.items.map((item) => {
             const children = item.tokens.map((cItem) => {
               if (cItem.type === 'text') {
+                /* getViewNode since tokens could contain a block like elements (i.e. img) */
                 return this.renderer.getViewNode(
                   // @ts-ignore
                   this.parseInline(cItem.tokens),
