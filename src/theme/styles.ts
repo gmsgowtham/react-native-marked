@@ -34,7 +34,9 @@ const getStyles = (
       ...fontStyle.regular,
       fontWeight: 'bold',
     },
-    text: { ...fontStyle.regular },
+    text: {
+      ...fontStyle.regular,
+    },
     paragraph: {
       ...fontStyle.regular,
       paddingVertical: 8,
