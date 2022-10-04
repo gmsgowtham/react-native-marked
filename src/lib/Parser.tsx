@@ -92,7 +92,7 @@ class Parser {
           return this.parseInline([token]);
       }
     });
-    return elements;
+    return elements.filter((element) => element !== null);
   }
 
   parseInline(tokens: marked.Token[], styles?: CustomStyleProp) {
