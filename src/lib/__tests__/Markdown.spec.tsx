@@ -318,3 +318,165 @@ describe('Lists', () => {
     expect(tree).toMatchSnapshot();
   });
 });
+
+// https://www.markdownguide.org/basic-syntax/#code
+describe('Code', () => {
+  it('Code Span', () => {
+    const r = render(
+      <Markdown value={'At the command prompt, type `nano`.'} />
+    );
+    expect(screen.queryByText('At the command prompt, type')).toBeTruthy();
+    expect(screen.queryByText('nano')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Code Blocks', () => {
+    const r = render(
+      <Markdown
+        value={'    <html>\n      <head>\n      </head>\n    </html>'}
+      />
+    );
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Code Blocks (backtick)', () => {
+    const r = render(
+      <Markdown
+        value={'```<html>\n      <head>\n      </head>\n    </html>```'}
+      />
+    );
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+// https://www.markdownguide.org/basic-syntax/#horizontal-rules
+describe('Horizontal Rules', () => {
+  it('Asterisks', () => {
+    const r = render(<Markdown value={'***'} />);
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Dashes', () => {
+    const r = render(<Markdown value={'---'} />);
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Underscores', () => {
+    const r = render(<Markdown value={'_________________'} />);
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Horizontal Rule with Paragraph', () => {
+    const r = render(
+      <Markdown
+        value={
+          'Try to put a blank line before...\n\n---\n\n...and after a horizontal rule.'
+        }
+      />
+    );
+    expect(
+      screen.queryByText('Try to put a blank line before...')
+    ).toBeTruthy();
+    expect(screen.queryByText('...and after a horizontal rule.')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+// https://www.markdownguide.org/basic-syntax/#links
+describe('Links', () => {
+  it('Basic', () => {
+    const r = render(
+      <Markdown
+        value={
+          'My favorite search engine is [Duck Duck Go](https://duckduckgo.com).'
+        }
+      />
+    );
+    expect(screen.queryByText('My favorite search engine is')).toBeTruthy();
+    expect(screen.queryByText('Duck Duck Go')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Titles', () => {
+    const r = render(
+      <Markdown
+        value={
+          'My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").'
+        }
+      />
+    );
+    expect(screen.queryByText('My favorite search engine is')).toBeTruthy();
+    expect(screen.queryByText('Duck Duck Go')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  // TODO: https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses
+  // eslint-disable-next-line jest/no-disabled-tests
+  it.skip('URLs and Email Addresses', () => {
+    const r = render(
+      <Markdown value={'<https://www.markdownguide.org>\n<fake@example.com>'} />
+    );
+    expect(screen.queryByText('https://www.markdownguide.org')).toBeTruthy();
+    expect(screen.queryByText('fake@example.com')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Formatting Links', () => {
+    const r = render(
+      <Markdown
+        value={
+          'I love supporting the **[EFF](https://eff.org)**.\nThis is the *[Markdown Guide](https://www.markdownguide.org)*.\nSee the section on [`code`](#code).'
+        }
+      />
+    );
+    expect(screen.queryByText('EFF')).toBeTruthy();
+    expect(screen.queryByText('Markdown Guide')).toBeTruthy();
+    expect(screen.queryByText('code')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+// https://www.markdownguide.org/basic-syntax/#images-1
+describe('Images', () => {
+  it('Render', () => {
+    const r = render(
+      <Markdown
+        value={
+          '![The San Juan Mountains are beautiful!](https://dummyimage.com/100x100/fff/aaa "San Juan Mountains")'
+        }
+      />
+    );
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  // TODO: https://www.markdownguide.org/basic-syntax/#linking-images
+  // eslint-disable-next-line jest/no-disabled-tests
+  it.skip('URLs and Email Addresses', () => {
+    const r = render(
+      <Markdown
+        value={
+          '[![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://dummyimage.com/100x100/fff/aaa)'
+        }
+      />
+    );
+    expect(screen.queryByText('https://www.markdownguide.org')).toBeTruthy();
+    expect(screen.queryByText('fake@example.com')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+describe('HTML', () => {
+  it('Render', () => {
+    const r = render(
+      <Markdown
+        value={'This **word** is bold. This <em>word</em> is italic.'}
+      />
+    );
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

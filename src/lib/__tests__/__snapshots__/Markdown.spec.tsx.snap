@@ -1024,6 +1024,337 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
 </RCTScrollView>
 `;
 
+exports[`Code Code Blocks (backtick) 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "backgroundColor": "#f6f8fa",
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "fontWeight": "300",
+                "lineHeight": 24,
+              }
+            }
+          >
+            &lt;html&gt;       &lt;head&gt;       &lt;/head&gt;     &lt;/html&gt;
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "backgroundColor": "#f6f8fa",
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "fontWeight": "300",
+                "lineHeight": 24,
+              }
+            }
+          >
+            &lt;html&gt;       &lt;head&gt;       &lt;/head&gt;     &lt;/html&gt;
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Code Code Blocks 1`] = `
+<RCTScrollView
+  data={
+    [
+      <ScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "fontStyle": "italic",
+              "lineHeight": 24,
+            }
+          }
+        >
+          &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+        </Text>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <View>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+          </Text>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Code Code Span 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            At the command prompt, type 
+          </Text>
+          <Text
+            style={
+              {
+                "backgroundColor": "#f6f8fa",
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "fontWeight": "300",
+                "lineHeight": 24,
+              }
+            }
+          >
+            nano
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            At the command prompt, type 
+          </Text>
+          <Text
+            style={
+              {
+                "backgroundColor": "#f6f8fa",
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "fontWeight": "300",
+                "lineHeight": 24,
+              }
+            }
+          >
+            nano
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
 exports[`Emphasis Bold 1`] = `
 <RCTScrollView
   data={
@@ -1519,6 +1850,253 @@ exports[`Emphasis Italic 1`] = `
             }
           >
              meow
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`HTML Render 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            This 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              word
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             is bold. This 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            &lt;em&gt;
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            word
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            &lt;/em&gt;
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             is italic.
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            This 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              word
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             is bold. This 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            &lt;em&gt;
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            word
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            &lt;/em&gt;
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             is italic.
           </Text>
         </Text>
       </View>
@@ -2443,6 +3021,1136 @@ exports[`Headings Heading level 6 1`] = `
           Heading level 6
         </Text>
       </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Horizontal Rules Asterisks 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Horizontal Rules Dashes 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Try to put a blank line before...
+          </Text>
+        </Text>
+      </View>,
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            ...and after a horizontal rule.
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Try to put a blank line before...
+          </Text>
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            ...and after a horizontal rule.
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Horizontal Rules Underscores 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "marginVertical": 4,
+          }
+        }
+      />
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Images Render 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Memo(MDImage)
+          uri="https://dummyimage.com/100x100/fff/aaa"
+        />
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <View
+          accessibilityIgnoresInvertColors={true}
+          style={
+            [
+              undefined,
+              {},
+              {
+                "height": 0,
+              },
+              {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <Image
+            onError={[Function]}
+            onLayout={[Function]}
+            onLoad={[Function]}
+            onLoadStart={[Function]}
+            resizeMode="cover"
+            source={
+              {
+                "uri": "https://dummyimage.com/100x100/fff/aaa",
+              }
+            }
+            style={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "height": 0,
+                  "width": undefined,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Links Basic 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            My favorite search engine is 
+          </Text>
+          <Text
+            onPress={[Function]}
+            style={
+              {
+                "color": "#58a6ff",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Duck Duck Go
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            My favorite search engine is 
+          </Text>
+          <Text
+            onPress={[Function]}
+            style={
+              {
+                "color": "#58a6ff",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Duck Duck Go
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Links Formatting Links 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            I love supporting the 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#58a6ff",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "fontWeight": "bold",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                EFF
+              </Text>
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+This is the 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#58a6ff",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Markdown Guide
+              </Text>
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+See the section on 
+          </Text>
+          <Text
+            onPress={[Function]}
+            style={
+              {
+                "color": "#58a6ff",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "backgroundColor": "#f6f8fa",
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "300",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              code
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            I love supporting the 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#58a6ff",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "fontWeight": "bold",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                EFF
+              </Text>
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+This is the 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              onPress={[Function]}
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#58a6ff",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Markdown Guide
+              </Text>
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+See the section on 
+          </Text>
+          <Text
+            onPress={[Function]}
+            style={
+              {
+                "color": "#58a6ff",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "backgroundColor": "#f6f8fa",
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "300",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              code
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Links Titles 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            My favorite search engine is 
+          </Text>
+          <Text
+            onPress={[Function]}
+            style={
+              {
+                "color": "#58a6ff",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Duck Duck Go
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            My favorite search engine is 
+          </Text>
+          <Text
+            onPress={[Function]}
+            style={
+              {
+                "color": "#58a6ff",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Duck Duck Go
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            .
+          </Text>
+        </Text>
+      </View>
     </View>
   </View>
 </RCTScrollView>
