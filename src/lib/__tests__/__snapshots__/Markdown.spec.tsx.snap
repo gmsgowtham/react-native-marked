@@ -1,6 +1,1030 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Markdown simple markdown with image, list and blockquote 1`] = `
+exports[`Blockquotes Blockquote 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Dorothy followed her through many of the beautiful rooms in her castle.
+            </Text>
+          </Text>
+        </View>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Dorothy followed her through many of the beautiful rooms in her castle.
+            </Text>
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Dorothy followed her through many of the beautiful rooms in her castle.
+            </Text>
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+            </Text>
+          </Text>
+        </View>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Dorothy followed her through many of the beautiful rooms in her castle.
+            </Text>
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+            </Text>
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Blockquotes Blockquotes with Other Elements 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 22,
+              "fontWeight": "500",
+              "lineHeight": 28,
+              "marginVertical": 4,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 22,
+                "fontWeight": "500",
+                "lineHeight": 28,
+                "marginVertical": 4,
+              }
+            }
+          >
+            The quarterly results look great!
+          </Text>
+        </Text>
+        <MarkedList
+          counterRenderer={
+            {
+              "engine": {
+                "specs": {
+                  "fallback": {
+                    "maxCounterLenInRange": [Function],
+                    "renderCounter": [Function],
+                  },
+                  "negative": null,
+                  "padding": null,
+                  "prefix": null,
+                  "range": {
+                    "max": Infinity,
+                    "min": -Infinity,
+                  },
+                  "reversedCounter": false,
+                  "reversedMarker": false,
+                  "suffix": " ",
+                },
+              },
+            }
+          }
+          markerTextStyle={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={{}}
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Revenue was off the chart.
+                </Text>
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={{}}
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Profits were higher than ever.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </MarkedList>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Everything
+              </Text>
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+               is going according to 
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontWeight": "bold",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                plan
+              </Text>
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              .
+            </Text>
+          </Text>
+        </View>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 22,
+              "fontWeight": "500",
+              "lineHeight": 28,
+              "marginVertical": 4,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 22,
+                "fontWeight": "500",
+                "lineHeight": 28,
+                "marginVertical": 4,
+              }
+            }
+          >
+            The quarterly results look great!
+          </Text>
+        </Text>
+        <View
+          style={
+            [
+              {
+                "alignSelf": "stretch",
+                "flexDirection": "row",
+                "flexWrap": "nowrap",
+              },
+              undefined,
+            ]
+          }
+          testID="marked-list-item"
+        >
+          <View>
+            <Text
+              style={
+                [
+                  {
+                    "alignSelf": "flex-end",
+                    "color": "#333333",
+                    "flexGrow": 0,
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "right",
+                  },
+                  {
+                    "width": 19.2,
+                  },
+                ]
+              }
+              testID="marker-box"
+            >
+              • 
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={{}}
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Revenue was off the chart.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "alignSelf": "stretch",
+                "flexDirection": "row",
+                "flexWrap": "nowrap",
+              },
+              undefined,
+            ]
+          }
+          testID="marked-list-item"
+        >
+          <View>
+            <Text
+              style={
+                [
+                  {
+                    "alignSelf": "flex-end",
+                    "color": "#333333",
+                    "flexGrow": 0,
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "right",
+                  },
+                  {
+                    "width": 19.2,
+                  },
+                ]
+              }
+              testID="marker-box"
+            >
+              • 
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={{}}
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Profits were higher than ever.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Everything
+              </Text>
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+               is going according to 
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontWeight": "bold",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                plan
+              </Text>
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              .
+            </Text>
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Blockquotes Nested Blockquotes 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Dorothy followed her through many of the beautiful rooms in her castle.
+            </Text>
+          </Text>
+        </View>
+      </View>,
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "borderLeftColor": "#d0d7de",
+              "borderLeftWidth": 5,
+              "opacity": 0.8,
+              "paddingLeft": 16,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+                "paddingVertical": 8,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Dorothy followed her through many of the beautiful rooms in her castle.
+            </Text>
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "borderLeftColor": "#d0d7de",
+            "borderLeftWidth": 5,
+            "opacity": 0.8,
+            "paddingLeft": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "borderLeftColor": "#d0d7de",
+              "borderLeftWidth": 5,
+              "opacity": 0.8,
+              "paddingLeft": 16,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+                "paddingVertical": 8,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Emphasis Bold 1`] = `
 <RCTScrollView
   data={
     [
@@ -14,20 +1038,6 @@ exports[`Markdown simple markdown with image, list and blockquote 1`] = `
           }
         }
       >
-        <Memo(MDImage)
-          uri="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/973qsby2fdhznx9yuzdw.jpg"
-        />
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
         <Text
           style={{}}
         >
@@ -40,327 +1050,31 @@ exports[`Markdown simple markdown with image, list and blockquote 1`] = `
               }
             }
           >
-            There is a fun anime serie called "One Punch Man".
-And surprisingly, it has some great lessons for mastering Python.
+            Love 
           </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "borderBottomColor": "#d0d7de",
-            "borderBottomWidth": 1,
-            "marginVertical": 4,
-          }
-        }
-      />,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
           <Text
             style={
               {
                 "color": "#333333",
                 "fontSize": 16,
+                "fontWeight": "bold",
                 "lineHeight": 24,
               }
             }
-          >
-            The story takes place in a slightly more modern world than ours, where heroes defend the modern cityscape from regularly invading monsters. 
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            Imagine a parade of mini-Godzilla or Mothra-like critters, but more diverse and colorful and intelligent, and ranging widely in their size and threat level.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            This goes on to the point where a formal league of heroes gets formed, with ranks for different perceived skills. 
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "borderBottomColor": "#d0d7de",
-            "borderBottomWidth": 1,
-            "marginVertical": 4,
-          }
-        }
-      />,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            Enter the protagonist, named Saitama.
-He is not as flashy as the other heroes.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            If anything, at first glance he looks harmless.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            But it turns out he is so effective as a martial artist, so unparalleled in his skill, he can knock out massive powerful beasts with a single punch, every time. Hence the name.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "borderBottomColor": "#d0d7de",
-            "borderBottomWidth": 1,
-            "marginVertical": 4,
-          }
-        }
-      />,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            This show is a comedy, filled with hilarious situations created by the hero-managing institutions failing to recognize his super-talent over and over. I am leaving a lot out here - it is worth digging up and watching.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            But the show has a powerful lesson for us Pythonistas.
-Because the source of Saitama's mastery is revealed in the first season. Every day, without fail, he did
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            -100 pushups.
--100 situps.
--100 squats.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
-            "opacity": 0.8,
-            "paddingLeft": 16,
-          }
-        }
-      >
-        <View
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
-              "paddingVertical": 8,
-            }
-          }
-        >
-          <Text
-            style={{}}
           >
             <Text
               style={
                 {
                   "color": "#333333",
                   "fontSize": 16,
+                  "fontWeight": "bold",
                   "lineHeight": 24,
                 }
               }
             >
-              And then ran ten kilometers.
-Notice how SIMPLE this is.
+              is
             </Text>
           </Text>
-        </View>
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
           <Text
             style={
               {
@@ -370,283 +1084,9 @@ Notice how SIMPLE this is.
               }
             }
           >
-            He's drilling these fundamental exercises with relentless consistency. And somehow, it manages to unlock the superhuman skill.
+             bold
           </Text>
         </Text>
-      </View>,
-      <View
-        style={
-          {
-            "borderBottomColor": "#d0d7de",
-            "borderBottomWidth": 1,
-            "marginVertical": 4,
-          }
-        }
-      />,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            That reminds me of what happens when you deeply master the basics of Python programming.
-OOP, for example. Because OOP is the critical foundation ALL complex software is built on. A little OOP knowledge goes a long way... but greater understanding unlocks ENTIRE NEW UNIVERSES of software to you.
-Or automated tests, like unit tests. When you master writing those, you can suddenly create shockingly powerful software systems that non-test-writers cannot touch. Writing tests is a legit superpower.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "borderBottomColor": "#d0d7de",
-            "borderBottomWidth": 1,
-            "marginVertical": 4,
-          }
-        }
-      />,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            Another interesting point: when you master both, you find they ratchet up the power of each other. OOP amplifies what you can do with tests, and vice versa, in exponential ways that suddenly make the kind of programming you did before seem primitive and simple.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            And then you have scalability patterns that leverage Python's memory model... Or the higher-level function abstractions forming the bedrock of a dozen famous Python libraries you use every day... and so on.
-Each of these is like the pushups or squats Saitama does religiously.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            And all that is just one lesson we can learn from our friend Saitama. There are many others: like how he always goes directly for the monster's weak point (I know you can see a parallel for complex software "beasts")... Or how he is constantly seeking out a greater challenge to test himself and grow... and quite a few lessons more.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "borderBottomColor": "#d0d7de",
-            "borderBottomWidth": 1,
-            "marginVertical": 4,
-          }
-        }
-      />,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            So dig up this show, or read the manga it is based on. And look for what other lessons you can draw on, to improve your coding craft.
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            The Powerful Python Newsletter is just for you. Like reader Charles Hayden puts it:
-          </Text>
-        </Text>
-      </View>,
-      <View
-        style={
-          {
-            "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
-            "opacity": 0.8,
-            "paddingLeft": 16,
-          }
-        }
-      >
-        <View
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
-              "paddingVertical": 8,
-            }
-          }
-        >
-          <Text
-            style={{}}
-          >
-            <Text
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              "I have seen a lot of books, articles, and newsletters over the years and yours is one of the best. Not just what you say about Python, but how to go about learning.
-"
-IG : 
-            </Text>
-            <Text
-              onPress={[Function]}
-              style={
-                {
-                  "color": "#58a6ff",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              <Text
-                style={
-                  {
-                    "color": "#58a6ff",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                Salah Ihoum
-              </Text>
-            </Text>
-            <Text
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              <Text
-                style={
-                  {
-                    "backgroundColor": "#f6f8fa",
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "fontWeight": "300",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                Aaron Maxwell
-              </Text>
-            </Text>
-          </Text>
-        </View>
       </View>,
     ]
   }
@@ -688,53 +1128,5575 @@ IG :
           }
         }
       >
-        <View
-          accessibilityIgnoresInvertColors={true}
-          style={
-            [
-              undefined,
-              {},
-              {
-                "height": 0,
-              },
-              {
-                "alignItems": "center",
-                "justifyContent": "center",
-              },
-            ]
-          }
+        <Text
+          style={{}}
         >
-          <Image
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            onLoadStart={[Function]}
-            resizeMode="cover"
-            source={
+          <Text
+            style={
               {
-                "uri": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/973qsby2fdhznx9yuzdw.jpg",
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
               }
             }
+          >
+            Love 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              is
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             bold
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Emphasis Bold and Italic 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            This is really 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "fontWeight": "bold",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                very
+              </Text>
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             important text.
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            This is really 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "fontWeight": "bold",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                very
+              </Text>
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             important text.
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Emphasis Italic 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            A 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              cat
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             meow
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            A 
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              cat
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             meow
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Alternate Syntax: Heading level 1 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        style={
+          {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "letterSpacing": 0,
+            "lineHeight": 40,
+            "marginVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 32,
+              "fontWeight": "bold",
+              "letterSpacing": 0,
+              "lineHeight": 40,
+              "marginVertical": 8,
+            }
+          }
+        >
+          Heading level 1
+        </Text>
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        style={
+          {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "letterSpacing": 0,
+            "lineHeight": 40,
+            "marginVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 32,
+              "fontWeight": "bold",
+              "letterSpacing": 0,
+              "lineHeight": 40,
+              "marginVertical": 8,
+            }
+          }
+        >
+          Heading level 1
+        </Text>
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Alternate Syntax: Heading level 2 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 28,
+            "fontWeight": "500",
+            "lineHeight": 36,
+            "marginVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "lineHeight": 36,
+              "marginVertical": 8,
+            }
+          }
+        >
+          Heading level 2
+        </Text>
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 28,
+            "fontWeight": "500",
+            "lineHeight": 36,
+            "marginVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "lineHeight": 36,
+              "marginVertical": 8,
+            }
+          }
+        >
+          Heading level 2
+        </Text>
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Best Practice 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Try to put a blank line before...
+          </Text>
+        </Text>
+      </View>,
+      <Text
+        style={
+          {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "letterSpacing": 0,
+            "lineHeight": 40,
+            "marginVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 32,
+              "fontWeight": "bold",
+              "letterSpacing": 0,
+              "lineHeight": 40,
+              "marginVertical": 8,
+            }
+          }
+        >
+          Heading
+        </Text>
+      </Text>,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            ...and after a heading.
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Try to put a blank line before...
+          </Text>
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        style={
+          {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "letterSpacing": 0,
+            "lineHeight": 40,
+            "marginVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 32,
+              "fontWeight": "bold",
+              "letterSpacing": 0,
+              "lineHeight": 40,
+              "marginVertical": 8,
+            }
+          }
+        >
+          Heading
+        </Text>
+      </Text>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            ...and after a heading.
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading level 1 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        style={
+          {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "letterSpacing": 0,
+            "lineHeight": 40,
+            "marginVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 32,
+              "fontWeight": "bold",
+              "letterSpacing": 0,
+              "lineHeight": 40,
+              "marginVertical": 8,
+            }
+          }
+        >
+          Heading level 1
+        </Text>
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        style={
+          {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "letterSpacing": 0,
+            "lineHeight": 40,
+            "marginVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 32,
+              "fontWeight": "bold",
+              "letterSpacing": 0,
+              "lineHeight": 40,
+              "marginVertical": 8,
+            }
+          }
+        >
+          Heading level 1
+        </Text>
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading level 2 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 28,
+            "fontWeight": "500",
+            "lineHeight": 36,
+            "marginVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "lineHeight": 36,
+              "marginVertical": 8,
+            }
+          }
+        >
+          Heading level 2
+        </Text>
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 28,
+            "fontWeight": "500",
+            "lineHeight": 36,
+            "marginVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "lineHeight": 36,
+              "marginVertical": 8,
+            }
+          }
+        >
+          Heading level 2
+        </Text>
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading level 3 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 24,
+            "fontWeight": "500",
+            "lineHeight": 32,
+            "marginVertical": 4,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 24,
+              "fontWeight": "500",
+              "lineHeight": 32,
+              "marginVertical": 4,
+            }
+          }
+        >
+          Heading level 3
+        </Text>
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 24,
+            "fontWeight": "500",
+            "lineHeight": 32,
+            "marginVertical": 4,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 24,
+              "fontWeight": "500",
+              "lineHeight": 32,
+              "marginVertical": 4,
+            }
+          }
+        >
+          Heading level 3
+        </Text>
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading level 4 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 22,
+            "fontWeight": "500",
+            "lineHeight": 28,
+            "marginVertical": 4,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 22,
+              "fontWeight": "500",
+              "lineHeight": 28,
+              "marginVertical": 4,
+            }
+          }
+        >
+          Heading level 4
+        </Text>
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 22,
+            "fontWeight": "500",
+            "lineHeight": 28,
+            "marginVertical": 4,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 22,
+              "fontWeight": "500",
+              "lineHeight": 28,
+              "marginVertical": 4,
+            }
+          }
+        >
+          Heading level 4
+        </Text>
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading level 5 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+            "marginVertical": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "lineHeight": 24,
+              "marginVertical": 2,
+            }
+          }
+        >
+          Heading level 5
+        </Text>
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+            "marginVertical": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "lineHeight": 24,
+              "marginVertical": 2,
+            }
+          }
+        >
+          Heading level 5
+        </Text>
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading level 6 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "lineHeight": 20,
+            "marginVertical": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "lineHeight": 20,
+              "marginVertical": 2,
+            }
+          }
+        >
+          Heading level 6
+        </Text>
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "lineHeight": 20,
+            "marginVertical": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "lineHeight": 20,
+              "marginVertical": 2,
+            }
+          }
+        >
+          Heading level 6
+        </Text>
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Lists Elements in Lists: Blockquotes 1`] = `
+<RCTScrollView
+  data={
+    [
+      <MarkedList
+        counterRenderer={
+          {
+            "engine": {
+              "specs": {
+                "fallback": {
+                  "maxCounterLenInRange": [Function],
+                  "renderCounter": [Function],
+                },
+                "negative": null,
+                "padding": null,
+                "prefix": null,
+                "range": {
+                  "max": Infinity,
+                  "min": -Infinity,
+                },
+                "reversedCounter": false,
+                "reversedMarker": false,
+                "suffix": " ",
+              },
+            },
+          }
+        }
+        markerTextStyle={
+          {
+            "color": "#333333",
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                This is the first list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Here's the second list item.
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "borderLeftColor": "#d0d7de",
+                "borderLeftWidth": 5,
+                "opacity": 0.8,
+                "paddingLeft": 16,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              A blockquote would look great below the second list item.
+
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                And here's the third list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </MarkedList>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
             style={
               [
                 {
-                  "bottom": 0,
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
                 },
                 {
-                  "height": 0,
-                  "width": undefined,
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                This is the first list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Here's the second list item.
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "borderLeftColor": "#d0d7de",
+                "borderLeftWidth": 5,
+                "opacity": 0.8,
+                "paddingLeft": 16,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              A blockquote would look great below the second list item.
+
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                And here's the third list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Lists Elements in Lists: Code Blocks 1`] = `
+<RCTScrollView
+  data={
+    [
+      <MarkedList
+        counterRenderer={
+          {
+            "engine": {
+              "specs": {
+                "fallback": {
+                  "maxCounterLenInRange": [Function],
+                  "renderCounter": [Function],
+                },
+                "negative": null,
+                "padding": null,
+                "prefix": null,
+                "range": {
+                  "max": Infinity,
+                  "min": -Infinity,
+                },
+                "reversedCounter": false,
+                "reversedMarker": false,
+                "suffix": " ",
+              },
+            },
+          }
+        }
+        markerTextStyle={
+          {
+            "color": "#333333",
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                This is the first list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Here's the second list item.
+              </Text>
+            </Text>
+          </View>
+          <ScrollView
+            contentContainerStyle={
+              {
+                "backgroundColor": "#f6f8fa",
+                "minWidth": "100%",
+                "padding": 16,
+              }
+            }
+            horizontal={true}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+                &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;/html&gt;
+            </Text>
+          </ScrollView>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                And here's the third list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </MarkedList>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                This is the first list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Here's the second list item.
+              </Text>
+            </Text>
+          </View>
+          <RCTScrollView
+            contentContainerStyle={
+              {
+                "backgroundColor": "#f6f8fa",
+                "minWidth": "100%",
+                "padding": 16,
+              }
+            }
+            horizontal={true}
+          >
+            <View>
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                  &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;/html&gt;
+              </Text>
+            </View>
+          </RCTScrollView>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                And here's the third list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Lists Elements in Lists: Images 1`] = `
+<RCTScrollView
+  data={
+    [
+      <MarkedList
+        counterRenderer={
+          {
+            "engine": {
+              "specs": {
+                "fallback": {
+                  "maxCounterLenInRange": [Function],
+                  "renderCounter": [Function],
+                },
+                "negative": {
+                  "prefix": "-",
+                  "suffix": "",
+                },
+                "padding": null,
+                "prefix": null,
+                "range": {
+                  "max": Infinity,
+                  "min": -Infinity,
+                },
+                "reversedCounter": false,
+                "reversedMarker": false,
+                "suffix": ". ",
+              },
+            },
+          }
+        }
+        markerTextStyle={
+          {
+            "color": "#333333",
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Open the file containing the Linux mascot.
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Marvel at its beauty.
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Memo(MDImage)
+              uri="https://dummyimage.com/100x100/fff/aaa"
+            />
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Close the file.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </MarkedList>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            1. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Open the file containing the Linux mascot.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            2. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Marvel at its beauty.
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <View
+              accessibilityIgnoresInvertColors={true}
+              style={
+                [
+                  undefined,
+                  {},
+                  {
+                    "height": 0,
+                  },
+                  {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Image
+                onError={[Function]}
+                onLayout={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                resizeMode="cover"
+                source={
+                  {
+                    "uri": "https://dummyimage.com/100x100/fff/aaa",
+                  }
+                }
+                style={
+                  [
+                    {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    {
+                      "height": 0,
+                      "width": undefined,
+                    },
+                    undefined,
+                  ]
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            3. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Close the file.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Lists Elements in Lists: Lists 1`] = `
+<RCTScrollView
+  data={
+    [
+      <MarkedList
+        counterRenderer={
+          {
+            "engine": {
+              "specs": {
+                "fallback": {
+                  "maxCounterLenInRange": [Function],
+                  "renderCounter": [Function],
+                },
+                "negative": {
+                  "prefix": "-",
+                  "suffix": "",
+                },
+                "padding": null,
+                "prefix": null,
+                "range": {
+                  "max": Infinity,
+                  "min": -Infinity,
+                },
+                "reversedCounter": false,
+                "reversedMarker": false,
+                "suffix": ". ",
+              },
+            },
+          }
+        }
+        markerTextStyle={
+          {
+            "color": "#333333",
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                First item
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Second item
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Third item
+              </Text>
+            </Text>
+          </View>
+          <MarkedList
+            counterRenderer={
+              {
+                "engine": {
+                  "specs": {
+                    "fallback": {
+                      "maxCounterLenInRange": [Function],
+                      "renderCounter": [Function],
+                    },
+                    "negative": null,
+                    "padding": null,
+                    "prefix": null,
+                    "range": {
+                      "max": Infinity,
+                      "min": -Infinity,
+                    },
+                    "reversedCounter": false,
+                    "reversedMarker": false,
+                    "suffix": " ",
+                  },
+                },
+              }
+            }
+            markerTextStyle={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item1
+                  </Text>
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item2
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </MarkedList>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Fourth item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </MarkedList>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            1. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                First item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            2. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Second item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            3. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Third item
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "stretch",
+                  "flexDirection": "row",
+                  "flexWrap": "nowrap",
                 },
                 undefined,
               ]
             }
-          />
+            testID="marked-list-item"
+          >
+            <View>
+              <Text
+                style={
+                  [
+                    {
+                      "alignSelf": "flex-end",
+                      "color": "#333333",
+                      "flexGrow": 0,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
+                    },
+                    {
+                      "width": 19.2,
+                    },
+                  ]
+                }
+                testID="marker-box"
+              >
+                • 
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item1
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "stretch",
+                  "flexDirection": "row",
+                  "flexWrap": "nowrap",
+                },
+                undefined,
+              ]
+            }
+            testID="marked-list-item"
+          >
+            <View>
+              <Text
+                style={
+                  [
+                    {
+                      "alignSelf": "flex-end",
+                      "color": "#333333",
+                      "flexGrow": 0,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
+                    },
+                    {
+                      "width": 19.2,
+                    },
+                  ]
+                }
+                testID="marker-box"
+              >
+                • 
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item2
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            4. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Fourth item
+              </Text>
+            </Text>
+          </View>
         </View>
       </View>
     </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Lists Elements in Lists: Paragraphs 1`] = `
+<RCTScrollView
+  data={
+    [
+      <MarkedList
+        counterRenderer={
+          {
+            "engine": {
+              "specs": {
+                "fallback": {
+                  "maxCounterLenInRange": [Function],
+                  "renderCounter": [Function],
+                },
+                "negative": null,
+                "padding": null,
+                "prefix": null,
+                "range": {
+                  "max": Infinity,
+                  "min": -Infinity,
+                },
+                "reversedCounter": false,
+                "reversedMarker": false,
+                "suffix": " ",
+              },
+            },
+          }
+        }
+        markerTextStyle={
+          {
+            "color": "#333333",
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                This is the first list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Here's the second list item.
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                  I need to add another paragraph below the second list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                And here's the third list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </MarkedList>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                This is the first list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Here's the second list item.
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                  I need to add another paragraph below the second list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                And here's the third list item.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Lists Ordered Lists 1`] = `
+<RCTScrollView
+  data={
+    [
+      <MarkedList
+        counterRenderer={
+          {
+            "engine": {
+              "specs": {
+                "fallback": {
+                  "maxCounterLenInRange": [Function],
+                  "renderCounter": [Function],
+                },
+                "negative": {
+                  "prefix": "-",
+                  "suffix": "",
+                },
+                "padding": null,
+                "prefix": null,
+                "range": {
+                  "max": Infinity,
+                  "min": -Infinity,
+                },
+                "reversedCounter": false,
+                "reversedMarker": false,
+                "suffix": ". ",
+              },
+            },
+          }
+        }
+        markerTextStyle={
+          {
+            "color": "#333333",
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                First item
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Second item
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Third item
+              </Text>
+            </Text>
+          </View>
+          <MarkedList
+            counterRenderer={
+              {
+                "engine": {
+                  "specs": {
+                    "fallback": {
+                      "maxCounterLenInRange": [Function],
+                      "renderCounter": [Function],
+                    },
+                    "negative": {
+                      "prefix": "-",
+                      "suffix": "",
+                    },
+                    "padding": null,
+                    "prefix": null,
+                    "range": {
+                      "max": Infinity,
+                      "min": -Infinity,
+                    },
+                    "reversedCounter": false,
+                    "reversedMarker": false,
+                    "suffix": ". ",
+                  },
+                },
+              }
+            }
+            markerTextStyle={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item1
+                  </Text>
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item2
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </MarkedList>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Fourth item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </MarkedList>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            1. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                First item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            2. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Second item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            3. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Third item
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "stretch",
+                  "flexDirection": "row",
+                  "flexWrap": "nowrap",
+                },
+                undefined,
+              ]
+            }
+            testID="marked-list-item"
+          >
+            <View>
+              <Text
+                style={
+                  [
+                    {
+                      "alignSelf": "flex-end",
+                      "color": "#333333",
+                      "flexGrow": 0,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
+                    },
+                    {
+                      "width": 28.799999999999997,
+                    },
+                  ]
+                }
+                testID="marker-box"
+              >
+                1. 
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item1
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "stretch",
+                  "flexDirection": "row",
+                  "flexWrap": "nowrap",
+                },
+                undefined,
+              ]
+            }
+            testID="marked-list-item"
+          >
+            <View>
+              <Text
+                style={
+                  [
+                    {
+                      "alignSelf": "flex-end",
+                      "color": "#333333",
+                      "flexGrow": 0,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
+                    },
+                    {
+                      "width": 28.799999999999997,
+                    },
+                  ]
+                }
+                testID="marker-box"
+              >
+                2. 
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item2
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 28.799999999999997,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            4. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Fourth item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Lists Unordered Lists 1`] = `
+<RCTScrollView
+  data={
+    [
+      <MarkedList
+        counterRenderer={
+          {
+            "engine": {
+              "specs": {
+                "fallback": {
+                  "maxCounterLenInRange": [Function],
+                  "renderCounter": [Function],
+                },
+                "negative": null,
+                "padding": null,
+                "prefix": null,
+                "range": {
+                  "max": Infinity,
+                  "min": -Infinity,
+                },
+                "reversedCounter": false,
+                "reversedMarker": false,
+                "suffix": " ",
+              },
+            },
+          }
+        }
+        markerTextStyle={
+          {
+            "color": "#333333",
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                First item
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Second item
+              </Text>
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Third item
+              </Text>
+            </Text>
+          </View>
+          <MarkedList
+            counterRenderer={
+              {
+                "engine": {
+                  "specs": {
+                    "fallback": {
+                      "maxCounterLenInRange": [Function],
+                      "renderCounter": [Function],
+                    },
+                    "negative": null,
+                    "padding": null,
+                    "prefix": null,
+                    "range": {
+                      "max": Infinity,
+                      "min": -Infinity,
+                    },
+                    "reversedCounter": false,
+                    "reversedMarker": false,
+                    "suffix": " ",
+                  },
+                },
+              }
+            }
+            markerTextStyle={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item1
+                  </Text>
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item2
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </MarkedList>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Fourth item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </MarkedList>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                First item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Second item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Third item
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "stretch",
+                  "flexDirection": "row",
+                  "flexWrap": "nowrap",
+                },
+                undefined,
+              ]
+            }
+            testID="marked-list-item"
+          >
+            <View>
+              <Text
+                style={
+                  [
+                    {
+                      "alignSelf": "flex-end",
+                      "color": "#333333",
+                      "flexGrow": 0,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
+                    },
+                    {
+                      "width": 19.2,
+                    },
+                  ]
+                }
+                testID="marker-box"
+              >
+                • 
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item1
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "stretch",
+                  "flexDirection": "row",
+                  "flexWrap": "nowrap",
+                },
+                undefined,
+              ]
+            }
+            testID="marked-list-item"
+          >
+            <View>
+              <Text
+                style={
+                  [
+                    {
+                      "alignSelf": "flex-end",
+                      "color": "#333333",
+                      "flexGrow": 0,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
+                    },
+                    {
+                      "width": 19.2,
+                    },
+                  ]
+                }
+                testID="marker-box"
+              >
+                • 
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  style={{}}
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Indented item2
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 19.2,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            • 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "color": "#333333",
+                "flexShrink": 1,
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              style={{}}
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Fourth item
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Paragraphs Paragraph 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            I really like using Markdown.
+          </Text>
+        </Text>
+      </View>,
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            I think I'll use it to format all of my documents from now on.
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
     <View
       onLayout={[Function]}
       style={null}
@@ -761,53 +6723,7 @@ IG :
               }
             }
           >
-            There is a fun anime serie called "One Punch Man".
-And surprisingly, it has some great lessons for mastering Python.
-          </Text>
-        </Text>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View
-        style={
-          {
-            "borderBottomColor": "#d0d7de",
-            "borderBottomWidth": 1,
-            "marginVertical": 4,
-          }
-        }
-      />
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            The story takes place in a slightly more modern world than ours, where heroes defend the modern cityscape from regularly invading monsters. 
+            I really like using Markdown.
           </Text>
         </Text>
       </View>
@@ -838,95 +6754,11 @@ And surprisingly, it has some great lessons for mastering Python.
               }
             }
           >
-            Imagine a parade of mini-Godzilla or Mothra-like critters, but more diverse and colorful and intelligent, and ranging widely in their size and threat level.
+            I think I'll use it to format all of my documents from now on.
           </Text>
         </Text>
       </View>
     </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            This goes on to the point where a formal league of heroes gets formed, with ranks for different perceived skills. 
-          </Text>
-        </Text>
-      </View>
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View
-        style={
-          {
-            "borderBottomColor": "#d0d7de",
-            "borderBottomWidth": 1,
-            "marginVertical": 4,
-          }
-        }
-      />
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
-            "paddingVertical": 8,
-          }
-        }
-      >
-        <Text
-          style={{}}
-        >
-          <Text
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            Enter the protagonist, named Saitama.
-He is not as flashy as the other heroes.
-          </Text>
-        </Text>
-      </View>
-    </View>
-    <View
-      style={
-        {
-          "height": 0,
-        }
-      }
-    />
   </View>
 </RCTScrollView>
 `;

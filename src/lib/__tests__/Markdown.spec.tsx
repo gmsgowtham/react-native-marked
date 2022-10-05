@@ -1,14 +1,319 @@
 import React from 'react';
-import { render } from '@testing-library/react-native';
+import { render, screen } from '@testing-library/react-native';
 import Markdown from '../Markdown';
 
-// ref: https://dev.to/saaaa_/one-punch-python-3ngi
-const md =
-  '\n\n![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/973qsby2fdhznx9yuzdw.jpg)\n\nThere is a fun anime serie called "One Punch Man".\nAnd surprisingly, it has some great lessons for mastering Python.\n\n---\n\nThe story takes place in a slightly more modern world than ours, where heroes defend the modern cityscape from regularly invading monsters. \n\nImagine a parade of mini-Godzilla or Mothra-like critters, but more diverse and colorful and intelligent, and ranging widely in their size and threat level.\n\nThis goes on to the point where a formal league of heroes gets formed, with ranks for different perceived skills. \n\n---\n\nEnter the protagonist, named Saitama.\nHe is not as flashy as the other heroes.\n\nIf anything, at first glance he looks harmless.\n\nBut it turns out he is so effective as a martial artist, so unparalleled in his skill, he can knock out massive powerful beasts with a single punch, every time. Hence the name.\n\n---\n\nThis show is a comedy, filled with hilarious situations created by the hero-managing institutions failing to recognize his super-talent over and over. I am leaving a lot out here - it is worth digging up and watching.\n\nBut the show has a powerful lesson for us Pythonistas.\nBecause the source of Saitama\'s mastery is revealed in the first season. Every day, without fail, he did\n\n-100 pushups.\n-100 situps.\n-100 squats.\n\n> And then ran ten kilometers.\n> Notice how SIMPLE this is.\n\nHe\'s drilling these fundamental exercises with relentless consistency. And somehow, it manages to unlock the superhuman skill.\n\n---\n\nThat reminds me of what happens when you deeply master the basics of Python programming.\nOOP, for example. Because OOP is the critical foundation ALL complex software is built on. A little OOP knowledge goes a long way... but greater understanding unlocks ENTIRE NEW UNIVERSES of software to you.\nOr automated tests, like unit tests. When you master writing those, you can suddenly create shockingly powerful software systems that non-test-writers cannot touch. Writing tests is a legit superpower.\n\n---\n\nAnother interesting point: when you master both, you find they ratchet up the power of each other. OOP amplifies what you can do with tests, and vice versa, in exponential ways that suddenly make the kind of programming you did before seem primitive and simple.\n\nAnd then you have scalability patterns that leverage Python\'s memory model... Or the higher-level function abstractions forming the bedrock of a dozen famous Python libraries you use every day... and so on.\nEach of these is like the pushups or squats Saitama does religiously.\n\nAnd all that is just one lesson we can learn from our friend Saitama. There are many others: like how he always goes directly for the monster\'s weak point (I know you can see a parallel for complex software "beasts")... Or how he is constantly seeking out a greater challenge to test himself and grow... and quite a few lessons more.\n\n---\n\nSo dig up this show, or read the manga it is based on. And look for what other lessons you can draw on, to improve your coding craft.\n\nThe Powerful Python Newsletter is just for you. Like reader Charles Hayden puts it:\n\n> "I have seen a lot of books, articles, and newsletters over the years and yours is one of the best. Not just what you say about Python, but how to go about learning.\n"\nIG : [Salah Ihoum](https://www.instagram.com/onesalah_/)\n_`Aaron Maxwell`_';
+// https://www.markdownguide.org/basic-syntax/#headings
+describe('Headings', () => {
+  it('Heading level 1', () => {
+    const r = render(<Markdown value={'# Heading level 1'} />);
+    expect(screen.queryByText('Heading level 1')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Heading level 2', () => {
+    const r = render(<Markdown value={'## Heading level 2'} />);
+    expect(screen.queryByText('Heading level 2')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Heading level 3', () => {
+    const r = render(<Markdown value={'### Heading level 3'} />);
+    expect(screen.queryByText('Heading level 3')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Heading level 4', () => {
+    const r = render(<Markdown value={'#### Heading level 4'} />);
+    expect(screen.queryByText('Heading level 4')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Heading level 5', () => {
+    const r = render(<Markdown value={'##### Heading level 5'} />);
+    expect(screen.queryByText('Heading level 5')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Heading level 6', () => {
+    const r = render(<Markdown value={'###### Heading level 6'} />);
+    expect(screen.queryByText('Heading level 6')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Alternate Syntax: Heading level 1', () => {
+    const r = render(<Markdown value={'Heading level 1\n==============='} />);
+    expect(screen.queryByText('Heading level 1')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Alternate Syntax: Heading level 2', () => {
+    const r = render(<Markdown value={'Heading level 2\n---------------'} />);
+    expect(screen.queryByText('Heading level 2')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Best Practice', () => {
+    const r = render(
+      <Markdown
+        value={
+          'Try to put a blank line before...\n\n# Heading\n\n...and after a heading.'
+        }
+      />
+    );
+    expect(screen.queryByText('Heading')).toBeTruthy();
+    expect(
+      screen.queryByText('Try to put a blank line before...')
+    ).toBeTruthy();
+    expect(screen.queryByText('...and after a heading.')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
 
-describe('Markdown', () => {
-  it('simple markdown with image, list and blockquote', () => {
-    const r = render(<Markdown value={md} />);
+// https://www.markdownguide.org/basic-syntax/#paragraphs-1
+describe('Paragraphs', () => {
+  it('Paragraph', () => {
+    const r = render(
+      <Markdown
+        value={
+          "I really like using Markdown.\n\nI think I'll use it to format all of my documents from now on."
+        }
+      />
+    );
+    expect(screen.queryByText('I really like using Markdown.')).toBeTruthy();
+    expect(
+      screen.queryByText(
+        "I think I'll use it to format all of my documents from now on."
+      )
+    ).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+// https://www.markdownguide.org/basic-syntax/#emphasis
+describe('Emphasis', () => {
+  it('Bold', () => {
+    const r = render(<Markdown value={'Love **is** bold'} />);
+    expect(screen.queryByText('is')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Italic', () => {
+    const r = render(<Markdown value={'A *cat* meow'} />);
+    expect(screen.queryByText('cat')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Bold and Italic', () => {
+    const r = render(
+      <Markdown value={'This is really ***very*** important text.'} />
+    );
+    expect(screen.queryByText('very')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+// https://www.markdownguide.org/basic-syntax/#blockquotes-1
+describe('Blockquotes', () => {
+  it('Blockquote', () => {
+    const r = render(
+      <Markdown
+        value={
+          '> Dorothy followed her through many of the beautiful rooms in her castle.'
+        }
+      />
+    );
+    expect(
+      screen.queryByText(
+        'Dorothy followed her through many of the beautiful rooms in her castle.'
+      )
+    ).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Blockquotes with Multiple Paragraphs', () => {
+    const r = render(
+      <Markdown
+        value={
+          '> Dorothy followed her through many of the beautiful rooms in her castle.\n>\n> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.'
+        }
+      />
+    );
+    expect(
+      screen.queryByText(
+        'Dorothy followed her through many of the beautiful rooms in her castle.'
+      )
+    ).toBeTruthy();
+    expect(
+      screen.queryByText(
+        'The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.'
+      )
+    ).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Nested Blockquotes', () => {
+    const r = render(
+      <Markdown
+        value={
+          '> Dorothy followed her through many of the beautiful rooms in her castle.\n>\n\n>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.'
+        }
+      />
+    );
+    expect(
+      screen.queryByText(
+        'Dorothy followed her through many of the beautiful rooms in her castle.'
+      )
+    ).toBeTruthy();
+    expect(
+      screen.queryByText(
+        'The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.'
+      )
+    ).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Blockquotes with Other Elements', () => {
+    const r = render(
+      <Markdown
+        value={
+          '> #### The quarterly results look great!\n>\n> - Revenue was off the chart.\n> - Profits were higher than ever.\n>\n>  *Everything* is going according to **plan**.'
+        }
+      />
+    );
+    expect(
+      screen.queryByText('The quarterly results look great!')
+    ).toBeTruthy();
+    expect(screen.queryByText('Revenue was off the chart.')).toBeTruthy();
+    expect(screen.queryByText('Profits were higher than ever.')).toBeTruthy();
+    expect(screen.queryByText('Everything')).toBeTruthy();
+    expect(screen.queryByText('is going according to')).toBeTruthy();
+    expect(screen.queryByText('plan')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+// https://www.markdownguide.org/basic-syntax/#lists-1
+describe('Lists', () => {
+  it('Ordered Lists', () => {
+    const r = render(
+      <Markdown
+        value={
+          '1. First item\n2. Second item\n3. Third item\n    1. Indented item1\n    2. Indented item2\n4. Fourth item'
+        }
+      />
+    );
+    expect(screen.queryByText('First item')).toBeTruthy();
+    expect(screen.queryByText('Second item')).toBeTruthy();
+    expect(screen.queryByText('Third item')).toBeTruthy();
+    expect(screen.queryByText('Indented item1')).toBeTruthy();
+    expect(screen.queryByText('Indented item2')).toBeTruthy();
+    expect(screen.queryByText('Fourth item')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Unordered Lists', () => {
+    const r = render(
+      <Markdown
+        value={
+          '- First item\n- Second item\n- Third item\n    - Indented item1\n    - Indented item2\n- Fourth item'
+        }
+      />
+    );
+    expect(screen.queryByText('First item')).toBeTruthy();
+    expect(screen.queryByText('Second item')).toBeTruthy();
+    expect(screen.queryByText('Third item')).toBeTruthy();
+    expect(screen.queryByText('Indented item1')).toBeTruthy();
+    expect(screen.queryByText('Indented item2')).toBeTruthy();
+    expect(screen.queryByText('Fourth item')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Elements in Lists: Paragraphs', () => {
+    const r = render(
+      <Markdown
+        value={
+          "- This is the first list item.\n- Here's the second list item.\n\n    I need to add another paragraph below the second list item.\n\n- And here's the third list item."
+        }
+      />
+    );
+    expect(screen.queryByText('This is the first list item.')).toBeTruthy();
+    expect(screen.queryByText("Here's the second list item.")).toBeTruthy();
+    expect(
+      screen.queryByText(
+        'I need to add another paragraph below the second list item.'
+      )
+    ).toBeTruthy();
+    expect(screen.queryByText("And here's the third list item.")).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Elements in Lists: Blockquotes', () => {
+    const r = render(
+      <Markdown
+        value={
+          "- This is the first list item.\n- Here's the second list item.\n\n    > A blockquote would look great below the second list item.\n\n- And here's the third list item."
+        }
+      />
+    );
+    expect(screen.queryByText('This is the first list item.')).toBeTruthy();
+    expect(screen.queryByText("Here's the second list item.")).toBeTruthy();
+    expect(
+      screen.queryByText(
+        'A blockquote would look great below the second list item.'
+      )
+    ).toBeTruthy();
+    expect(screen.queryByText("And here's the third list item.")).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Elements in Lists: Code Blocks', () => {
+    const r = render(
+      <Markdown
+        value={
+          "* This is the first list item.\n* Here's the second list item.\n\n        <html>\n        <head>\n        </head>\n        </html>\n\n* And here's the third list item."
+        }
+      />
+    );
+    expect(screen.queryByText('This is the first list item.')).toBeTruthy();
+    expect(screen.queryByText("Here's the second list item.")).toBeTruthy();
+    expect(screen.queryByText("And here's the third list item.")).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Elements in Lists: Images', () => {
+    const r = render(
+      <Markdown
+        value={
+          '1. Open the file containing the Linux mascot.\n2. Marvel at its beauty.\n\n    ![Tux, the Linux mascot](https://dummyimage.com/100x100/fff/aaa)\n\n3. Close the file.'
+        }
+      />
+    );
+    expect(
+      screen.queryByText('Open the file containing the Linux mascot.')
+    ).toBeTruthy();
+    expect(screen.queryByText('Marvel at its beauty.')).toBeTruthy();
+    expect(screen.queryByText('Close the file.')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Elements in Lists: Lists', () => {
+    const r = render(
+      <Markdown
+        value={
+          '1. First item\n2. Second item\n3. Third item\n    - Indented item1\n    - Indented item2\n4. Fourth item'
+        }
+      />
+    );
+    expect(screen.queryByText('First item')).toBeTruthy();
+    expect(screen.queryByText('Second item')).toBeTruthy();
+    expect(screen.queryByText('Third item')).toBeTruthy();
+    expect(screen.queryByText('Indented item1')).toBeTruthy();
+    expect(screen.queryByText('Indented item2')).toBeTruthy();
+    expect(screen.queryByText('Fourth item')).toBeTruthy();
     const tree = r.toJSON();
     expect(tree).toMatchSnapshot();
   });
