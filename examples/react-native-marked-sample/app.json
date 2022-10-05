@@ -9,8 +9,7 @@
     "version": "1.0.0",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "ios": {
       "supportsTablet": true,
