@@ -20,7 +20,7 @@ const Markdown = ({
     const parser = new Parser({
       styles,
     });
-    const tokens = marked.lexer(value.trim());
+    const tokens = marked.lexer(value);
 
     return parser.parse(tokens);
   }, [value, styles]);
