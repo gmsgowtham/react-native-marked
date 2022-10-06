@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { marked } from 'marked';
+import { decode } from 'html-entities';
 import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
 import type { CustomStyleProp, ParserOptions, TextStyleProp } from './types';
@@ -67,12 +68,10 @@ class Parser {
             const children = item.tokens.map((cItem) => {
               if (cItem.type === 'text') {
                 /* getViewNode since tokens could contain a block like elements (i.e. img) */
+                const childTokens = (cItem as marked.Tokens.Text).tokens || [];
                 const listChildren =
                   this.getNormalizedSiblingNodesForBlockAndInlineTokens(
-                    // Note: Upstream types aren't available for this specific use-case
-                    // @types/marked (https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/marked/index.d.ts)
-                    // @ts-ignore
-                    cItem.tokens,
+                    childTokens,
                     this.styles.li
                   );
                 return this.renderer.getViewNode(listChildren, this.styles.li);
@@ -109,11 +108,22 @@ class Parser {
           });
         }
         case 'link': {
+          if (
+            token.tokens &&
+            token.tokens[0] &&
+            token.tokens[0].type === 'image'
+          ) {
+            return this.renderer.getImageLinkNode(
+              token.href,
+              token.tokens[0]?.href
+            );
+          }
+
           const linkStyle = {
             ...styles,
             ...this.styles.link, // To override color property
           };
-          return this.renderer.getLinkNode(
+          return this.renderer.getTextLinkNode(
             this.parseInline(token.tokens, linkStyle),
             token.href,
             linkStyle
@@ -160,7 +170,7 @@ class Parser {
             return null;
           }
 
-          return this.renderer.getTextNode(token.raw, {
+          return this.renderer.getTextNode(decode(token.raw), {
             ...this.styles.text,
             ...styles,
           });
@@ -183,16 +193,30 @@ class Parser {
     tokens.forEach((t) => {
       /**
        * To avoid inlining images
+       * Currently supports images, link images
        * Note: to be extend for other token types
        */
-      if (t.type === 'image') {
+      if (
+        t.type === 'image' ||
+        (t.type === 'link' &&
+          t.tokens &&
+          t.tokens[0] &&
+          t.tokens[0].type === 'image')
+      ) {
         const parsed = this.parseInline(tempTokens);
         if (parsed.length > 0) {
+          siblingNodes.push(this.renderer.getTextNode(parsed, textStyle));
+        }
+
+        if (t.type === 'image') {
+          siblingNodes.push(this.parseInline([t]));
+        } else if (t.type === 'link') {
+          const imageToken = t.tokens[0] as marked.Tokens.Image;
           siblingNodes.push(
-            this.renderer.getTextNode(this.parseInline(tempTokens), textStyle)
+            this.renderer.getImageLinkNode(t.href, imageToken.href)
           );
         }
-        siblingNodes.push(this.parseInline([t]));
+
         tempTokens = [];
         return;
       }
@@ -205,6 +229,7 @@ class Parser {
         this.renderer.getTextNode(this.parseInline(tempTokens), {})
       );
     }
+
     return siblingNodes;
   };
 }

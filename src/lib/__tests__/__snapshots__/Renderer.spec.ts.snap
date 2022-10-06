@@ -64,6 +64,66 @@ exports[`Renderer dark theme getCodeBlockNode returns a Code block (horizontal S
 </RCTScrollView>
 `;
 
+exports[`Renderer dark theme getImageLinkNode returns a Image Link node 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      [
+        undefined,
+        {},
+        {
+          "height": 0,
+        },
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Image
+      onError={[Function]}
+      onLayout={[Function]}
+      onLoad={[Function]}
+      onLoadStart={[Function]}
+      resizeMode="cover"
+      source={
+        {
+          "uri": "https://dummyimage.com/100x100/fff/aaa",
+        }
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "height": 0,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
 exports[`Renderer dark theme getImageNode returns a Image 1`] = `
 <View
   accessibilityIgnoresInvertColors={true}
@@ -110,22 +170,6 @@ exports[`Renderer dark theme getImageNode returns a Image 1`] = `
     }
   />
 </View>
-`;
-
-exports[`Renderer dark theme getLinkNode returns a Link node 1`] = `
-<Text
-  onPress={[Function]}
-  style={
-    {
-      "color": "#58a6ff",
-      "fontSize": 16,
-      "fontStyle": "italic",
-      "lineHeight": 24,
-    }
-  }
->
-  Link
-</Text>
 `;
 
 exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
@@ -468,6 +512,22 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
 ]
 `;
 
+exports[`Renderer dark theme getTextLinkNode returns a Text Link node 1`] = `
+<Text
+  onPress={[Function]}
+  style={
+    {
+      "color": "#58a6ff",
+      "fontSize": 16,
+      "fontStyle": "italic",
+      "lineHeight": 24,
+    }
+  }
+>
+  Link
+</Text>
+`;
+
 exports[`Renderer dark theme getTextNode returns a Text node 1`] = `
 <Text
   style={
@@ -628,6 +688,66 @@ exports[`Renderer light theme getCodeBlockNode returns a Code block (horizontal 
 </RCTScrollView>
 `;
 
+exports[`Renderer light theme getImageLinkNode returns a Image Link node 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      [
+        undefined,
+        {},
+        {
+          "height": 0,
+        },
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Image
+      onError={[Function]}
+      onLayout={[Function]}
+      onLoad={[Function]}
+      onLoadStart={[Function]}
+      resizeMode="cover"
+      source={
+        {
+          "uri": "https://dummyimage.com/100x100/fff/aaa",
+        }
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "height": 0,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
 exports[`Renderer light theme getImageNode returns a Image 1`] = `
 <View
   accessibilityIgnoresInvertColors={true}
@@ -674,22 +794,6 @@ exports[`Renderer light theme getImageNode returns a Image 1`] = `
     }
   />
 </View>
-`;
-
-exports[`Renderer light theme getLinkNode returns a Link node 1`] = `
-<Text
-  onPress={[Function]}
-  style={
-    {
-      "color": "#58a6ff",
-      "fontSize": 16,
-      "fontStyle": "italic",
-      "lineHeight": 24,
-    }
-  }
->
-  Link
-</Text>
 `;
 
 exports[`Renderer light theme getListNode returns Ordered List 1`] = `
@@ -1030,6 +1134,22 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
     </Text>
   </View>,
 ]
+`;
+
+exports[`Renderer light theme getTextLinkNode returns a Text Link node 1`] = `
+<Text
+  onPress={[Function]}
+  style={
+    {
+      "color": "#58a6ff",
+      "fontSize": 16,
+      "fontStyle": "italic",
+      "lineHeight": 24,
+    }
+  }
+>
+  Link
+</Text>
 `;
 
 exports[`Renderer light theme getTextNode returns a Text node 1`] = `

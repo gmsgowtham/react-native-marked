@@ -50,9 +50,9 @@ describe('Renderer', () => {
           expect(tree).toMatchSnapshot();
         });
       });
-      describe('getLinkNode', () => {
-        it('returns a Link node', () => {
-          const LinkNode = renderer.getLinkNode(
+      describe('getTextLinkNode', () => {
+        it('returns a Text Link node', () => {
+          const LinkNode = renderer.getTextLinkNode(
             'Link',
             'https://example.com',
             styles.link
@@ -64,10 +64,20 @@ describe('Renderer', () => {
           expect(tree).toMatchSnapshot();
         });
       });
+      describe('getImageLinkNode', () => {
+        it('returns a Image Link node', () => {
+          const LinkNode = renderer.getImageLinkNode(
+            'https://example.com',
+            'https://dummyimage.com/100x100/fff/aaa'
+          );
+          const tree = render(LinkNode).toJSON();
+          expect(tree).toMatchSnapshot();
+        });
+      });
       describe('getViewNode', () => {
         it('returns a paragraph View node', () => {
           const TextNode = renderer.getTextNode('Hello world', styles.text);
-          const LinkNode = renderer.getLinkNode(
+          const LinkNode = renderer.getTextLinkNode(
             'Link',
             'https://example.com',
             styles.link
@@ -107,7 +117,7 @@ describe('Renderer', () => {
       describe('getBlockquoteNode', () => {
         it('returns a Blockquote', () => {
           const TextNode = renderer.getTextNode('Hello world', styles.text);
-          const LinkNode = renderer.getLinkNode(
+          const LinkNode = renderer.getTextLinkNode(
             'Link',
             'https://example.com',
             styles.link

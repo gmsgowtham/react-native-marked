@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { ScrollView, View, Text } from 'react-native';
+import { ScrollView, View, Text, TouchableHighlight } from 'react-native';
 import MarkedList from '@jsamr/react-native-li';
 import Disc from '@jsamr/counter-style/presets/disc';
 import Decimal from '@jsamr/counter-style/presets/decimal';
@@ -17,7 +17,7 @@ class Renderer {
     );
   };
 
-  getLinkNode = (
+  getTextLinkNode = (
     children: string | ReactNode[],
     href: string,
     styles: TextStyleProp
@@ -30,6 +30,17 @@ class Renderer {
       >
         {children}
       </Text>
+    );
+  };
+
+  getImageLinkNode = (href: string, imageUrl: string) => {
+    return (
+      <TouchableHighlight
+        onPress={onLinkPress(href)}
+        key={generateRandomString()}
+      >
+        <MDImage uri={imageUrl} />
+      </TouchableHighlight>
     );
   };
 
