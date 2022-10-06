@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { marked } from 'marked';
+import { decode } from 'html-entities';
 import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
 import type { CustomStyleProp, ParserOptions, TextStyleProp } from './types';
@@ -169,7 +170,7 @@ class Parser {
             return null;
           }
 
-          return this.renderer.getTextNode(token.raw, {
+          return this.renderer.getTextNode(decode(token.raw), {
             ...this.styles.text,
             ...styles,
           });
