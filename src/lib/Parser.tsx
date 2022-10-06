@@ -67,12 +67,10 @@ class Parser {
             const children = item.tokens.map((cItem) => {
               if (cItem.type === 'text') {
                 /* getViewNode since tokens could contain a block like elements (i.e. img) */
+                const childTokens = (cItem as marked.Tokens.Text).tokens || [];
                 const listChildren =
                   this.getNormalizedSiblingNodesForBlockAndInlineTokens(
-                    // Note: Upstream types aren't available for this specific use-case
-                    // @types/marked (https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/marked/index.d.ts)
-                    // @ts-ignore
-                    cItem.tokens,
+                    childTokens,
                     this.styles.li
                   );
                 return this.renderer.getViewNode(listChildren, this.styles.li);
