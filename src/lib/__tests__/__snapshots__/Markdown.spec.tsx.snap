@@ -3368,6 +3368,131 @@ exports[`Horizontal Rules Underscores 1`] = `
 </RCTScrollView>
 `;
 
+exports[`Images Linking Images 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <TouchableHighlight
+          onPress={[Function]}
+        >
+          <Memo(MDImage)
+            uri="/assets/images/shiprock.jpg"
+          />
+        </TouchableHighlight>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+        >
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              [
+                undefined,
+                {},
+                {
+                  "height": 0,
+                },
+                {
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Image
+              onError={[Function]}
+              onLayout={[Function]}
+              onLoad={[Function]}
+              onLoadStart={[Function]}
+              resizeMode="cover"
+              source={
+                {
+                  "uri": "/assets/images/shiprock.jpg",
+                }
+              }
+              style={
+                [
+                  {
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  },
+                  {
+                    "height": 0,
+                    "width": undefined,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
 exports[`Images Render 1`] = `
 <RCTScrollView
   data={

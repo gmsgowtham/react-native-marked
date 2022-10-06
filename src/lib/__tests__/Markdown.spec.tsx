@@ -452,19 +452,14 @@ describe('Images', () => {
     const tree = r.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  // TODO: https://www.markdownguide.org/basic-syntax/#linking-images
-  // eslint-disable-next-line jest/no-disabled-tests
-  it.skip('URLs and Email Addresses', () => {
-    const r = render(
+  it('Linking Images', () => {
+    const tree = render(
       <Markdown
         value={
           '[![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://dummyimage.com/100x100/fff/aaa)'
         }
       />
-    );
-    expect(screen.queryByText('https://www.markdownguide.org')).toBeTruthy();
-    expect(screen.queryByText('fake@example.com')).toBeTruthy();
-    const tree = r.toJSON();
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
