@@ -412,11 +412,11 @@ describe('Links', () => {
     const tree = r.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  // TODO: https://www.markdownguide.org/basic-syntax/#urls-and-email-addresses
-  // eslint-disable-next-line jest/no-disabled-tests
-  it.skip('URLs and Email Addresses', () => {
+  it('URLs and Email Addresses', () => {
     const r = render(
-      <Markdown value={'<https://www.markdownguide.org>\n<fake@example.com>'} />
+      <Markdown
+        value={'<https://www.markdownguide.org>\n\n<fake@example.com>'}
+      />
     );
     expect(screen.queryByText('https://www.markdownguide.org')).toBeTruthy();
     expect(screen.queryByText('fake@example.com')).toBeTruthy();
