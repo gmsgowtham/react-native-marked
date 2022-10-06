@@ -109,11 +109,22 @@ class Parser {
           });
         }
         case 'link': {
+          if (
+            token.tokens &&
+            token.tokens[0] &&
+            token.tokens[0].type === 'image'
+          ) {
+            return this.renderer.getImageLinkNode(
+              token.href,
+              token.tokens[0]?.href
+            );
+          }
+
           const linkStyle = {
             ...styles,
             ...this.styles.link, // To override color property
           };
-          return this.renderer.getLinkNode(
+          return this.renderer.getTextLinkNode(
             this.parseInline(token.tokens, linkStyle),
             token.href,
             linkStyle
@@ -183,16 +194,30 @@ class Parser {
     tokens.forEach((t) => {
       /**
        * To avoid inlining images
+       * Currently supports images, link images
        * Note: to be extend for other token types
        */
-      if (t.type === 'image') {
+      if (
+        t.type === 'image' ||
+        (t.type === 'link' &&
+          t.tokens &&
+          t.tokens[0] &&
+          t.tokens[0].type === 'image')
+      ) {
         const parsed = this.parseInline(tempTokens);
         if (parsed.length > 0) {
+          siblingNodes.push(this.renderer.getTextNode(parsed, textStyle));
+        }
+
+        if (t.type === 'image') {
+          siblingNodes.push(this.parseInline([t]));
+        } else if (t.type === 'link') {
+          const imageToken = t.tokens[0] as marked.Tokens.Image;
           siblingNodes.push(
-            this.renderer.getTextNode(this.parseInline(tempTokens), textStyle)
+            this.renderer.getImageLinkNode(t.href, imageToken.href)
           );
         }
-        siblingNodes.push(this.parseInline([t]));
+
         tempTokens = [];
         return;
       }
@@ -205,6 +230,7 @@ class Parser {
         this.renderer.getTextNode(this.parseInline(tempTokens), {})
       );
     }
+
     return siblingNodes;
   };
 }
