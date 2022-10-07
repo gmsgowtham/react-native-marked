@@ -3,8 +3,8 @@
 [![GitHub license](https://img.shields.io/github/license/gmsgowtham/react-native-marked)](https://github.com/gmsgowtham/react-native-marked/blob/main/LICENSE)
 [![CI](https://github.com/gmsgowtham/react-native-marked/actions/workflows/build.yml/badge.svg)](https://github.com/gmsgowtham/react-native-marked/actions/workflows/build.yml)
 [![Coverage Status](https://coveralls.io/repos/github/gmsgowtham/react-native-marked/badge.svg?branch=main)](https://coveralls.io/github/gmsgowtham/react-native-marked?branch=main)
-![npm](https://img.shields.io/npm/v/react-native-marked)
-![npm](https://img.shields.io/npm/dw/react-native-marked)
+[![npm](https://img.shields.io/npm/v/react-native-marked)](https://www.npmjs.com/package/react-native-marked)
+[![npm](https://img.shields.io/npm/dw/react-native-marked)](https://www.npmjs.com/package/react-native-marked)
 
 Markdown renderer for React Native powered by [marked.js](https://marked.js.org/) with built-in theming support
 
@@ -69,3 +69,4 @@ Made with [create-react-native-library](https://github.com/callstack/react-nativ
 - [Marked](https://marked.js.org/)
 - [React Native Fit Image](https://github.com/huiseoul/react-native-fit-image)
 - [@jsamr/react-native-li](https://github.com/jsamr/react-native-li)
+- [entities](https://github.com/fb55/entities)
