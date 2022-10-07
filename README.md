@@ -1,7 +1,10 @@
 # react-native-marked
 
+[![GitHub license](https://img.shields.io/github/license/gmsgowtham/react-native-marked)](https://github.com/gmsgowtham/react-native-marked/blob/main/LICENSE)
 [![CI](https://github.com/gmsgowtham/react-native-marked/actions/workflows/build.yml/badge.svg)](https://github.com/gmsgowtham/react-native-marked/actions/workflows/build.yml)
 [![Coverage Status](https://coveralls.io/repos/github/gmsgowtham/react-native-marked/badge.svg?branch=main)](https://coveralls.io/github/gmsgowtham/react-native-marked?branch=main)
+![npm](https://img.shields.io/npm/v/react-native-marked)
+![npm](https://img.shields.io/npm/dw/react-native-marked)
 
 Markdown renderer for React Native powered by [marked.js](https://marked.js.org/) with built-in theming support
 
@@ -32,6 +35,7 @@ export default ExampleComponent;
 ```
 
 ## Example
+
 https://snack.expo.dev/@gmsgowtham/react-native-marked
 
 ## Screenshots
