@@ -1,7 +1,7 @@
 # react-native-marked
 
 [![CI](https://github.com/gmsgowtham/react-native-marked/actions/workflows/build.yml/badge.svg)](https://github.com/gmsgowtham/react-native-marked/actions/workflows/build.yml)
-[![Coverage Status](https://coveralls.io/repos/github/gmsgowtham/react-native-marked/badge.svg)](https://coveralls.io/github/gmsgowtham/react-native-marked)
+[![Coverage Status](https://coveralls.io/repos/github/gmsgowtham/react-native-marked/badge.svg?branch=main)](https://coveralls.io/github/gmsgowtham/react-native-marked?branch=main)
 
 Markdown renderer for React Native powered by [marked.js](https://marked.js.org/) with built-in theming support
 
