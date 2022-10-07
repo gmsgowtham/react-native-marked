@@ -38,6 +38,14 @@ export default ExampleComponent;
 
 https://snack.expo.dev/@gmsgowtham/react-native-marked
 
+## [Props](https://github.com/gmsgowtham/react-native-marked/blob/4ef070931b7d309a7490c41e45129e12525d12d9/src/lib/types.ts#L18)
+
+| Prop          | Description                                        | Type                                                                                                                                                                           | Optional? |
+| ------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
+| value         | Markdown value                                     | string                                                                                                                                                                         | false     |
+| flatListProps | Props for customizing the underlying FlatList used | `Omit<FlatListProps<ReactNode>, 'data' \| 'renderItem' \| 'horizontal'>`<br><br><br>(`'data'`, `'renderItem'`, and `'horizontal'` props are omitted and cannot be overridden.) | true      |
+| styles        | Styles for parsed components                       | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/4ef070931b7d309a7490c41e45129e12525d12d9/src/theme/types.ts#L3)                                          | true      |
+
 ## Screenshots
 
 |                              Dark Theme                               |                               Light Theme                               |
