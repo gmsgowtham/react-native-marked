@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import type { marked } from 'marked';
-import { decode } from 'html-entities';
+import { decode } from 'entities';
 import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
 import type { CustomStyleProp, ParserOptions, TextStyleProp } from './types';
