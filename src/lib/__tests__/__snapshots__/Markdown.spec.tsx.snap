@@ -2112,23 +2112,29 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
       <Text
         style={
           {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
             "lineHeight": 40,
             "marginVertical": 8,
+            "paddingBottom": 4,
           }
         }
       >
         <Text
           style={
             {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
               "color": "#333333",
               "fontSize": 32,
               "fontWeight": "bold",
               "letterSpacing": 0,
               "lineHeight": 40,
               "marginVertical": 8,
+              "paddingBottom": 4,
             }
           }
         >
@@ -2168,23 +2174,29 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
       <Text
         style={
           {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
             "lineHeight": 40,
             "marginVertical": 8,
+            "paddingBottom": 4,
           }
         }
       >
         <Text
           style={
             {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
               "color": "#333333",
               "fontSize": 32,
               "fontWeight": "bold",
               "letterSpacing": 0,
               "lineHeight": 40,
               "marginVertical": 8,
+              "paddingBottom": 4,
             }
           }
         >
@@ -2203,22 +2215,28 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
       <Text
         style={
           {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
             "color": "#333333",
             "fontSize": 28,
             "fontWeight": "500",
             "lineHeight": 36,
             "marginVertical": 8,
+            "paddingBottom": 4,
           }
         }
       >
         <Text
           style={
             {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
               "color": "#333333",
               "fontSize": 28,
               "fontWeight": "500",
               "lineHeight": 36,
               "marginVertical": 8,
+              "paddingBottom": 4,
             }
           }
         >
@@ -2258,22 +2276,28 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
       <Text
         style={
           {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
             "color": "#333333",
             "fontSize": 28,
             "fontWeight": "500",
             "lineHeight": 36,
             "marginVertical": 8,
+            "paddingBottom": 4,
           }
         }
       >
         <Text
           style={
             {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
               "color": "#333333",
               "fontSize": 28,
               "fontWeight": "500",
               "lineHeight": 36,
               "marginVertical": 8,
+              "paddingBottom": 4,
             }
           }
         >
@@ -2318,23 +2342,29 @@ exports[`Headings Best Practice 1`] = `
       <Text
         style={
           {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
             "lineHeight": 40,
             "marginVertical": 8,
+            "paddingBottom": 4,
           }
         }
       >
         <Text
           style={
             {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
               "color": "#333333",
               "fontSize": 32,
               "fontWeight": "bold",
               "letterSpacing": 0,
               "lineHeight": 40,
               "marginVertical": 8,
+              "paddingBottom": 4,
             }
           }
         >
@@ -2431,23 +2461,29 @@ exports[`Headings Best Practice 1`] = `
       <Text
         style={
           {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
             "lineHeight": 40,
             "marginVertical": 8,
+            "paddingBottom": 4,
           }
         }
       >
         <Text
           style={
             {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
               "color": "#333333",
               "fontSize": 32,
               "fontWeight": "bold",
               "letterSpacing": 0,
               "lineHeight": 40,
               "marginVertical": 8,
+              "paddingBottom": 4,
             }
           }
         >
@@ -2497,23 +2533,29 @@ exports[`Headings Heading level 1 1`] = `
       <Text
         style={
           {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
             "lineHeight": 40,
             "marginVertical": 8,
+            "paddingBottom": 4,
           }
         }
       >
         <Text
           style={
             {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
               "color": "#333333",
               "fontSize": 32,
               "fontWeight": "bold",
               "letterSpacing": 0,
               "lineHeight": 40,
               "marginVertical": 8,
+              "paddingBottom": 4,
             }
           }
         >
@@ -2553,23 +2595,29 @@ exports[`Headings Heading level 1 1`] = `
       <Text
         style={
           {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
             "lineHeight": 40,
             "marginVertical": 8,
+            "paddingBottom": 4,
           }
         }
       >
         <Text
           style={
             {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
               "color": "#333333",
               "fontSize": 32,
               "fontWeight": "bold",
               "letterSpacing": 0,
               "lineHeight": 40,
               "marginVertical": 8,
+              "paddingBottom": 4,
             }
           }
         >
@@ -2588,22 +2636,28 @@ exports[`Headings Heading level 2 1`] = `
       <Text
         style={
           {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
             "color": "#333333",
             "fontSize": 28,
             "fontWeight": "500",
             "lineHeight": 36,
             "marginVertical": 8,
+            "paddingBottom": 4,
           }
         }
       >
         <Text
           style={
             {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
               "color": "#333333",
               "fontSize": 28,
               "fontWeight": "500",
               "lineHeight": 36,
               "marginVertical": 8,
+              "paddingBottom": 4,
             }
           }
         >
@@ -2643,22 +2697,28 @@ exports[`Headings Heading level 2 1`] = `
       <Text
         style={
           {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
             "color": "#333333",
             "fontSize": 28,
             "fontWeight": "500",
             "lineHeight": 36,
             "marginVertical": 8,
+            "paddingBottom": 4,
           }
         }
       >
         <Text
           style={
             {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
               "color": "#333333",
               "fontSize": 28,
               "fontWeight": "500",
               "lineHeight": 36,
               "marginVertical": 8,
+              "paddingBottom": 4,
             }
           }
         >
