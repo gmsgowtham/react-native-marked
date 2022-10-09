@@ -5612,7 +5612,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           >
             <Memo(MDImage)
-              alt="Tux, the Linux mascot"
+              alt={null}
               uri="https://dummyimage.com/100x100/fff/aaa"
             />
           </View>
@@ -5858,7 +5858,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
               }
             >
               <Image
-                accessibilityLabel="Tux, the Linux mascot"
+                accessibilityLabel="Image"
                 accessibilityRole="image"
                 onError={[Function]}
                 onLayout={[Function]}

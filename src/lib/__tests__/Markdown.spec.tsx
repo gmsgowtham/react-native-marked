@@ -288,7 +288,7 @@ describe('Lists', () => {
     const r = render(
       <Markdown
         value={
-          '1. Open the file containing the Linux mascot.\n2. Marvel at its beauty.\n\n    ![Tux, the Linux mascot](https://dummyimage.com/100x100/fff/aaa)\n\n3. Close the file.'
+          '1. Open the file containing the Linux mascot.\n2. Marvel at its beauty.\n\n    ![](https://dummyimage.com/100x100/fff/aaa)\n\n3. Close the file.'
         }
       />
     );
