@@ -97,7 +97,7 @@ exports[`Renderer dark theme getImageLinkNode returns a Image Link node 1`] = `
     }
   >
     <Image
-      accessibilityLabel=""
+      accessibilityLabel="Hello world"
       accessibilityRole="image"
       onError={[Function]}
       onLayout={[Function]}
@@ -148,7 +148,7 @@ exports[`Renderer dark theme getImageNode returns a Image 1`] = `
   }
 >
   <Image
-    accessibilityLabel=""
+    accessibilityLabel="Hello world"
     accessibilityRole="image"
     onError={[Function]}
     onLayout={[Function]}
@@ -733,7 +733,7 @@ exports[`Renderer light theme getImageLinkNode returns a Image Link node 1`] = `
     }
   >
     <Image
-      accessibilityLabel=""
+      accessibilityLabel="Hello world"
       accessibilityRole="image"
       onError={[Function]}
       onLayout={[Function]}
@@ -784,7 +784,7 @@ exports[`Renderer light theme getImageNode returns a Image 1`] = `
   }
 >
   <Image
-    accessibilityLabel=""
+    accessibilityLabel="Hello world"
     accessibilityRole="image"
     onError={[Function]}
     onLayout={[Function]}
