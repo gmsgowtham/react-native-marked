@@ -113,9 +113,11 @@ class Parser {
             token.tokens[0] &&
             token.tokens[0].type === 'image'
           ) {
+            const imageToken = token.tokens[0];
             return this.renderer.getImageLinkNode(
               token.href,
-              token.tokens[0]?.href
+              imageToken.href,
+              imageToken.text || imageToken.title
             );
           }
 
@@ -130,7 +132,10 @@ class Parser {
           );
         }
         case 'image': {
-          return this.renderer.getImageNode(token.href);
+          return this.renderer.getImageNode(
+            token.href,
+            token.text || token.title
+          );
         }
         case 'strong': {
           const boldStyle = {
@@ -213,7 +218,11 @@ class Parser {
         } else if (t.type === 'link') {
           const imageToken = t.tokens[0] as marked.Tokens.Image;
           siblingNodes.push(
-            this.renderer.getImageLinkNode(t.href, imageToken.href)
+            this.renderer.getImageLinkNode(
+              t.href,
+              imageToken.href,
+              imageToken.text || imageToken.title
+            )
           );
         }
 

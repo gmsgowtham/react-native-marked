@@ -68,7 +68,8 @@ describe('Renderer', () => {
         it('returns a Image Link node', () => {
           const LinkNode = renderer.getImageLinkNode(
             'https://example.com',
-            'https://dummyimage.com/100x100/fff/aaa'
+            'https://dummyimage.com/100x100/fff/aaa',
+            'Hello world'
           );
           const tree = render(LinkNode).toJSON();
           expect(tree).toMatchSnapshot();
@@ -137,7 +138,8 @@ describe('Renderer', () => {
       describe('getImageNode', () => {
         it('returns a Image', () => {
           const ImageNode = renderer.getImageNode(
-            'https://picsum.photos/100/100'
+            'https://picsum.photos/100/100',
+            'Hello world'
           );
           const tree = render(ImageNode).toJSON();
           expect(tree).toMatchSnapshot();

@@ -3383,9 +3383,12 @@ exports[`Images Linking Images 1`] = `
         }
       >
         <TouchableHighlight
+          accessibilityHint="Opens in a new window"
+          accessibilityRole="link"
           onPress={[Function]}
         >
           <Memo(MDImage)
+            alt="An old rock in the desert"
             uri="/assets/images/shiprock.jpg"
           />
         </TouchableHighlight>
@@ -3431,6 +3434,8 @@ exports[`Images Linking Images 1`] = `
         }
       >
         <View
+          accessibilityHint="Opens in a new window"
+          accessibilityRole="link"
           accessible={true}
           focusable={true}
           onClick={[Function]}
@@ -3458,6 +3463,8 @@ exports[`Images Linking Images 1`] = `
             }
           >
             <Image
+              accessibilityLabel="An old rock in the desert"
+              accessibilityRole="image"
               onError={[Function]}
               onLayout={[Function]}
               onLoad={[Function]}
@@ -3508,6 +3515,7 @@ exports[`Images Render 1`] = `
         }
       >
         <Memo(MDImage)
+          alt="The San Juan Mountains are beautiful!"
           uri="https://dummyimage.com/100x100/fff/aaa"
         />
       </View>,
@@ -3568,6 +3576,8 @@ exports[`Images Render 1`] = `
           }
         >
           <Image
+            accessibilityLabel="The San Juan Mountains are beautiful!"
+            accessibilityRole="image"
             onError={[Function]}
             onLayout={[Function]}
             onLoad={[Function]}
@@ -3631,6 +3641,8 @@ exports[`Links Basic 1`] = `
             My favorite search engine is 
           </Text>
           <Text
+            accessibilityHint="Opens in a new window"
+            accessibilityRole="link"
             onPress={[Function]}
             style={
               {
@@ -3722,6 +3734,8 @@ exports[`Links Basic 1`] = `
             My favorite search engine is 
           </Text>
           <Text
+            accessibilityHint="Opens in a new window"
+            accessibilityRole="link"
             onPress={[Function]}
             style={
               {
@@ -3802,6 +3816,8 @@ exports[`Links Formatting Links 1`] = `
             }
           >
             <Text
+              accessibilityHint="Opens in a new window"
+              accessibilityRole="link"
               onPress={[Function]}
               style={
                 {
@@ -3851,6 +3867,8 @@ This is the
             }
           >
             <Text
+              accessibilityHint="Opens in a new window"
+              accessibilityRole="link"
               onPress={[Function]}
               style={
                 {
@@ -3888,6 +3906,8 @@ This is the
 See the section on 
           </Text>
           <Text
+            accessibilityHint="Opens in a new window"
+            accessibilityRole="link"
             onPress={[Function]}
             style={
               {
@@ -3991,6 +4011,8 @@ See the section on
             }
           >
             <Text
+              accessibilityHint="Opens in a new window"
+              accessibilityRole="link"
               onPress={[Function]}
               style={
                 {
@@ -4040,6 +4062,8 @@ This is the
             }
           >
             <Text
+              accessibilityHint="Opens in a new window"
+              accessibilityRole="link"
               onPress={[Function]}
               style={
                 {
@@ -4077,6 +4101,8 @@ This is the
 See the section on 
           </Text>
           <Text
+            accessibilityHint="Opens in a new window"
+            accessibilityRole="link"
             onPress={[Function]}
             style={
               {
@@ -4149,6 +4175,8 @@ exports[`Links Titles 1`] = `
             My favorite search engine is 
           </Text>
           <Text
+            accessibilityHint="Opens in a new window"
+            accessibilityRole="link"
             onPress={[Function]}
             style={
               {
@@ -4240,6 +4268,8 @@ exports[`Links Titles 1`] = `
             My favorite search engine is 
           </Text>
           <Text
+            accessibilityHint="Opens in a new window"
+            accessibilityRole="link"
             onPress={[Function]}
             style={
               {
@@ -4299,6 +4329,8 @@ exports[`Links URLs and Email Addresses 1`] = `
           style={{}}
         >
           <Text
+            accessibilityHint="Opens in a new window"
+            accessibilityRole="link"
             onPress={[Function]}
             style={
               {
@@ -4338,6 +4370,8 @@ exports[`Links URLs and Email Addresses 1`] = `
           style={{}}
         >
           <Text
+            accessibilityHint="Opens in a new window"
+            accessibilityRole="link"
             onPress={[Function]}
             style={
               {
@@ -4407,6 +4441,8 @@ exports[`Links URLs and Email Addresses 1`] = `
           style={{}}
         >
           <Text
+            accessibilityHint="Opens in a new window"
+            accessibilityRole="link"
             onPress={[Function]}
             style={
               {
@@ -4451,6 +4487,8 @@ exports[`Links URLs and Email Addresses 1`] = `
           style={{}}
         >
           <Text
+            accessibilityHint="Opens in a new window"
+            accessibilityRole="link"
             onPress={[Function]}
             style={
               {
@@ -5514,6 +5552,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           >
             <Memo(MDImage)
+              alt="Tux, the Linux mascot"
               uri="https://dummyimage.com/100x100/fff/aaa"
             />
           </View>
@@ -5759,6 +5798,8 @@ exports[`Lists Elements in Lists: Images 1`] = `
               }
             >
               <Image
+                accessibilityLabel="Tux, the Linux mascot"
+                accessibilityRole="image"
                 onError={[Function]}
                 onLayout={[Function]}
                 onLoad={[Function]}

@@ -21,6 +21,8 @@ exports[`Renderer dark theme getBlockquoteNode returns a Blockquote 1`] = `
     Hello world
   </Text>
   <Text
+    accessibilityHint="Opens in a new window"
+    accessibilityRole="link"
     onPress={[Function]}
     style={
       {
@@ -66,6 +68,8 @@ exports[`Renderer dark theme getCodeBlockNode returns a Code block (horizontal S
 
 exports[`Renderer dark theme getImageLinkNode returns a Image Link node 1`] = `
 <View
+  accessibilityHint="Opens in a new window"
+  accessibilityRole="link"
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -93,6 +97,8 @@ exports[`Renderer dark theme getImageLinkNode returns a Image Link node 1`] = `
     }
   >
     <Image
+      accessibilityLabel="Hello world"
+      accessibilityRole="image"
       onError={[Function]}
       onLayout={[Function]}
       onLoad={[Function]}
@@ -142,6 +148,8 @@ exports[`Renderer dark theme getImageNode returns a Image 1`] = `
   }
 >
   <Image
+    accessibilityLabel="Hello world"
+    accessibilityRole="image"
     onError={[Function]}
     onLayout={[Function]}
     onLoad={[Function]}
@@ -514,6 +522,8 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
 
 exports[`Renderer dark theme getTextLinkNode returns a Text Link node 1`] = `
 <Text
+  accessibilityHint="Opens in a new window"
+  accessibilityRole="link"
   onPress={[Function]}
   style={
     {
@@ -609,6 +619,8 @@ exports[`Renderer dark theme getViewNode returns a paragraph View node 1`] = `
     Hello world
   </Text>
   <Text
+    accessibilityHint="Opens in a new window"
+    accessibilityRole="link"
     onPress={[Function]}
     style={
       {
@@ -645,6 +657,8 @@ exports[`Renderer light theme getBlockquoteNode returns a Blockquote 1`] = `
     Hello world
   </Text>
   <Text
+    accessibilityHint="Opens in a new window"
+    accessibilityRole="link"
     onPress={[Function]}
     style={
       {
@@ -690,6 +704,8 @@ exports[`Renderer light theme getCodeBlockNode returns a Code block (horizontal 
 
 exports[`Renderer light theme getImageLinkNode returns a Image Link node 1`] = `
 <View
+  accessibilityHint="Opens in a new window"
+  accessibilityRole="link"
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -717,6 +733,8 @@ exports[`Renderer light theme getImageLinkNode returns a Image Link node 1`] = `
     }
   >
     <Image
+      accessibilityLabel="Hello world"
+      accessibilityRole="image"
       onError={[Function]}
       onLayout={[Function]}
       onLoad={[Function]}
@@ -766,6 +784,8 @@ exports[`Renderer light theme getImageNode returns a Image 1`] = `
   }
 >
   <Image
+    accessibilityLabel="Hello world"
+    accessibilityRole="image"
     onError={[Function]}
     onLayout={[Function]}
     onLoad={[Function]}
@@ -1138,6 +1158,8 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
 
 exports[`Renderer light theme getTextLinkNode returns a Text Link node 1`] = `
 <Text
+  accessibilityHint="Opens in a new window"
+  accessibilityRole="link"
   onPress={[Function]}
   style={
     {
@@ -1233,6 +1255,8 @@ exports[`Renderer light theme getViewNode returns a paragraph View node 1`] = `
     Hello world
   </Text>
   <Text
+    accessibilityHint="Opens in a new window"
+    accessibilityRole="link"
     onPress={[Function]}
     style={
       {
