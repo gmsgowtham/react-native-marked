@@ -24,6 +24,8 @@ class Renderer {
   ) => {
     return (
       <Text
+        accessibilityRole="link"
+        accessibilityHint="Opens in a new window"
         key={generateRandomString()}
         onPress={onLinkPress(href)}
         style={styles}
@@ -37,6 +39,8 @@ class Renderer {
     const imageNode = this.getImageNode(imageUrl);
     return (
       <TouchableHighlight
+        accessibilityRole="link"
+        accessibilityHint="Opens in a new window"
         onPress={onLinkPress(href)}
         key={generateRandomString()}
       >
