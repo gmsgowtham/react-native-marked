@@ -4,14 +4,22 @@ import FitImage from 'react-native-fit-image';
 
 interface MDImageProps {
   uri: string;
+  alt?: string;
 }
 
-const MDImage = ({ uri }: MDImageProps) => {
+const MDImage = ({ uri, alt = '' }: MDImageProps) => {
   useEffect(() => {
     Image.prefetch(uri);
   }, [uri]);
 
-  return <FitImage source={{ uri }} resizeMode="cover" />;
+  return (
+    <FitImage
+      accessibilityRole="image"
+      accessibilityLabel={alt}
+      source={{ uri }}
+      resizeMode="cover"
+    />
+  );
 };
 
 export default memo(MDImage);
