@@ -34,12 +34,13 @@ class Renderer {
   };
 
   getImageLinkNode = (href: string, imageUrl: string) => {
+    const imageNode = this.getImageNode(imageUrl);
     return (
       <TouchableHighlight
         onPress={onLinkPress(href)}
         key={generateRandomString()}
       >
-        <MDImage uri={imageUrl} />
+        {imageNode}
       </TouchableHighlight>
     );
   };
