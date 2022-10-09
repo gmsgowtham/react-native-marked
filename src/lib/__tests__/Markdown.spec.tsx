@@ -89,6 +89,22 @@ describe('Paragraphs', () => {
     const tree = r.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('Paragraph with Image', () => {
+    const r = render(
+      <Markdown
+        value={
+          "Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages.![Chat](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5kq947hwxmjvlmhrbnm6.png)"
+        }
+      />
+    );
+    expect(
+      screen.queryByText(
+        "Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages."
+      )
+    ).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
 
 describe('Line Breaks', () => {

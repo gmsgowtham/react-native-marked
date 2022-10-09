@@ -9390,3 +9390,157 @@ exports[`Paragraphs Paragraph 1`] = `
   </View>
 </RCTScrollView>
 `;
+
+exports[`Paragraphs Paragraph with Image 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages.
+          </Text>
+        </Text>
+        <Memo(MDImage)
+          alt="Chat"
+          uri="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5kq947hwxmjvlmhrbnm6.png"
+        />
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages.
+          </Text>
+        </Text>
+        <View
+          accessibilityIgnoresInvertColors={true}
+          style={
+            [
+              undefined,
+              {},
+              {
+                "height": 0,
+              },
+              {
+                "alignItems": "center",
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <Image
+            accessibilityLabel="Chat"
+            accessibilityRole="image"
+            onError={[Function]}
+            onLayout={[Function]}
+            onLoad={[Function]}
+            onLoadStart={[Function]}
+            resizeMode="cover"
+            source={
+              {
+                "uri": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5kq947hwxmjvlmhrbnm6.png",
+              }
+            }
+            style={
+              [
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                },
+                {
+                  "height": 0,
+                  "width": undefined,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
