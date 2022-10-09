@@ -464,6 +464,27 @@ describe('Images', () => {
   });
 });
 
+// https://www.markdownguide.org/basic-syntax/#escaping-characters
+describe('Escaping Characters', () => {
+  it('Render', () => {
+    const r = render(
+      <Markdown
+        value={
+          '\\* Without the backslash, this would be a bullet in an unordered list.'
+        }
+      />
+    );
+    expect(screen.queryByText('*')).toBeTruthy();
+    expect(
+      screen.queryByText(
+        'Without the backslash, this would be a bullet in an unordered list.'
+      )
+    ).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
 // https://www.markdownguide.org/basic-syntax/#html
 describe('HTML', () => {
   it('Render', () => {
