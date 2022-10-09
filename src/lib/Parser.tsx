@@ -108,19 +108,8 @@ class Parser {
           });
         }
         case 'link': {
-          if (
-            token.tokens &&
-            token.tokens[0] &&
-            token.tokens[0].type === 'image'
-          ) {
-            const imageToken = token.tokens[0];
-            return this.renderer.getImageLinkNode(
-              token.href,
-              imageToken.href,
-              imageToken.text || imageToken.title
-            );
-          }
-
+          // Note: Linking Images (https://www.markdownguide.org/basic-syntax/#linking-images) are wrapped
+          // in paragraph token, so will be handled via `getNormalizedSiblingNodesForBlockAndInlineTokens`
           const linkStyle = {
             ...styles,
             ...this.styles.link, // To override color property
