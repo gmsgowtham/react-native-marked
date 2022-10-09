@@ -156,7 +156,14 @@ class Parser {
           return this.renderer.getTextNode('\n', {});
         }
         case 'del': {
-          return null;
+          const strikethroughStyle = {
+            ...this.styles.strikethrough,
+            ...styles,
+          };
+          return this.renderer.getTextNode(
+            this.parseInline(token.tokens, strikethroughStyle),
+            strikethroughStyle
+          );
         }
         case 'text':
         case 'html': {

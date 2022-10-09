@@ -137,6 +137,12 @@ describe('Emphasis', () => {
     const tree = r.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('Strikethrough', () => {
+    const r = render(<Markdown value={'A ~~cat~~ meow'} />);
+    expect(screen.queryByText('cat')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   it('Bold and Italic', () => {
     const r = render(
       <Markdown value={'This is really ***very*** important text.'} />
