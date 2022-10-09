@@ -91,6 +91,38 @@ describe('Paragraphs', () => {
   });
 });
 
+describe('Line Breaks', () => {
+  it('Trailing New Line Character', () => {
+    const r = render(
+      <Markdown
+        value={'First line with a backslash after.\nAnd the next line.'}
+      />
+    );
+    expect(
+      screen.queryByText(
+        'First line with a backslash after. And the next line.'
+      )
+    ).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('Trailing slash', () => {
+    const r = render(
+      <Markdown
+        value={`First line with a backslash after.\\
+      And the next line.`}
+      />
+    );
+    expect(
+      screen.queryByText('First line with a backslash after.')
+    ).toBeTruthy();
+    expect(screen.queryByText('And the next line.')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
 // https://www.markdownguide.org/basic-syntax/#emphasis
 describe('Emphasis', () => {
   it('Bold', () => {
