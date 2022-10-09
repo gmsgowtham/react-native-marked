@@ -35,7 +35,7 @@ class Renderer {
     );
   };
 
-  getImageLinkNode = (href: string, imageUrl: string, alt: string) => {
+  getImageLinkNode = (href: string, imageUrl: string, alt?: string) => {
     const imageNode = this.getImageNode(imageUrl, alt);
     return (
       <TouchableHighlight
@@ -81,7 +81,7 @@ class Renderer {
     );
   }
 
-  getImageNode(uri: string, alt: string) {
+  getImageNode(uri: string, alt?: string) {
     return <MDImage key={generateRandomString()} uri={uri} alt={alt} />;
   }
 

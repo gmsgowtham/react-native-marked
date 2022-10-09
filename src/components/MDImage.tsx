@@ -7,7 +7,7 @@ interface MDImageProps {
   alt?: string;
 }
 
-const MDImage = ({ uri, alt = '' }: MDImageProps) => {
+const MDImage = ({ uri, alt }: MDImageProps) => {
   useEffect(() => {
     Image.prefetch(uri);
   }, [uri]);
@@ -15,7 +15,7 @@ const MDImage = ({ uri, alt = '' }: MDImageProps) => {
   return (
     <FitImage
       accessibilityRole="image"
-      accessibilityLabel={alt}
+      accessibilityLabel={alt || 'Image'}
       source={{ uri }}
       resizeMode="cover"
     />

@@ -108,19 +108,8 @@ class Parser {
           });
         }
         case 'link': {
-          if (
-            token.tokens &&
-            token.tokens[0] &&
-            token.tokens[0].type === 'image'
-          ) {
-            const imageToken = token.tokens[0];
-            return this.renderer.getImageLinkNode(
-              token.href,
-              imageToken.href,
-              imageToken.text || imageToken.title
-            );
-          }
-
+          // Note: Linking Images (https://www.markdownguide.org/basic-syntax/#linking-images) are wrapped
+          // in paragraph token, so will be handled via `getNormalizedSiblingNodesForBlockAndInlineTokens`
           const linkStyle = {
             ...styles,
             ...this.styles.link, // To override color property
@@ -167,7 +156,14 @@ class Parser {
           return this.renderer.getTextNode('\n', {});
         }
         case 'del': {
-          return null;
+          const strikethroughStyle = {
+            ...this.styles.strikethrough,
+            ...styles,
+          };
+          return this.renderer.getTextNode(
+            this.parseInline(token.tokens, strikethroughStyle),
+            strikethroughStyle
+          );
         }
         case 'text':
         case 'html': {
@@ -193,7 +189,7 @@ class Parser {
     tokens: marked.Token[],
     textStyle: TextStyleProp
   ): ReactNode[] => {
-    let tempTokens: marked.Token[] = [];
+    let tokenRenderQueue: marked.Token[] = [];
     const siblingNodes: ReactNode[] = [];
     tokens.forEach((t) => {
       /**
@@ -208,11 +204,13 @@ class Parser {
           t.tokens[0] &&
           t.tokens[0].type === 'image')
       ) {
-        const parsed = this.parseInline(tempTokens);
+        // Render existing inline tokens in the queue
+        const parsed = this.parseInline(tokenRenderQueue);
         if (parsed.length > 0) {
           siblingNodes.push(this.renderer.getTextNode(parsed, textStyle));
         }
 
+        // Render the current block token
         if (t.type === 'image') {
           siblingNodes.push(this.parseInline([t]));
         } else if (t.type === 'link') {
@@ -226,16 +224,16 @@ class Parser {
           );
         }
 
-        tempTokens = [];
+        tokenRenderQueue = [];
         return;
       }
-      tempTokens = [...tempTokens, t];
+      tokenRenderQueue = [...tokenRenderQueue, t];
     });
 
     /* Remaining temp tokens if any */
-    if (tempTokens.length > 0) {
+    if (tokenRenderQueue.length > 0) {
       siblingNodes.push(
-        this.renderer.getTextNode(this.parseInline(tempTokens), {})
+        this.renderer.getTextNode(this.parseInline(tokenRenderQueue), {})
       );
     }
 

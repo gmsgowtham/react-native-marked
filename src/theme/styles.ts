@@ -34,6 +34,11 @@ const getStyles = (
       ...fontStyle.regular,
       fontWeight: 'bold',
     },
+    strikethrough: {
+      ...fontStyle.regular,
+      textDecorationLine: 'line-through',
+      textDecorationStyle: 'solid',
+    },
     text: {
       ...fontStyle.regular,
     },

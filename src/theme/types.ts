@@ -4,6 +4,7 @@ export interface MarkedStyles {
   container?: ViewStyle;
   em?: TextStyle;
   strong?: TextStyle;
+  strikethrough?: TextStyle;
   text?: TextStyle;
   paragraph?: ViewStyle;
   link?: TextStyle;

@@ -89,6 +89,54 @@ describe('Paragraphs', () => {
     const tree = r.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('Paragraph with Image', () => {
+    const r = render(
+      <Markdown
+        value={
+          "Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages.![Chat](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5kq947hwxmjvlmhrbnm6.png)"
+        }
+      />
+    );
+    expect(
+      screen.queryByText(
+        "Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages."
+      )
+    ).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+describe('Line Breaks', () => {
+  it('Trailing New Line Character', () => {
+    const r = render(
+      <Markdown
+        value={'First line with a backslash after.\nAnd the next line.'}
+      />
+    );
+    expect(
+      screen.queryByText(
+        'First line with a backslash after. And the next line.'
+      )
+    ).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('Trailing slash', () => {
+    const r = render(
+      <Markdown
+        value={`First line with a backslash after.\\
+      And the next line.`}
+      />
+    );
+    expect(
+      screen.queryByText('First line with a backslash after.')
+    ).toBeTruthy();
+    expect(screen.queryByText('And the next line.')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
 
 // https://www.markdownguide.org/basic-syntax/#emphasis
@@ -101,6 +149,12 @@ describe('Emphasis', () => {
   });
   it('Italic', () => {
     const r = render(<Markdown value={'A *cat* meow'} />);
+    expect(screen.queryByText('cat')).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Strikethrough', () => {
+    const r = render(<Markdown value={'A ~~cat~~ meow'} />);
     expect(screen.queryByText('cat')).toBeTruthy();
     const tree = r.toJSON();
     expect(tree).toMatchSnapshot();
@@ -288,7 +342,7 @@ describe('Lists', () => {
     const r = render(
       <Markdown
         value={
-          '1. Open the file containing the Linux mascot.\n2. Marvel at its beauty.\n\n    ![Tux, the Linux mascot](https://dummyimage.com/100x100/fff/aaa)\n\n3. Close the file.'
+          '1. Open the file containing the Linux mascot.\n2. Marvel at its beauty.\n\n    ![](https://dummyimage.com/100x100/fff/aaa)\n\n3. Close the file.'
         }
       />
     );
@@ -464,6 +518,28 @@ describe('Images', () => {
   });
 });
 
+// https://www.markdownguide.org/basic-syntax/#escaping-characters
+describe('Escaping Characters', () => {
+  it('Render', () => {
+    const r = render(
+      <Markdown
+        value={
+          '\\* Without the backslash, this would be a bullet in an unordered list.'
+        }
+      />
+    );
+    expect(screen.queryByText('*')).toBeTruthy();
+    expect(
+      screen.queryByText(
+        'Without the backslash, this would be a bullet in an unordered list.'
+      )
+    ).toBeTruthy();
+    const tree = r.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+// https://www.markdownguide.org/basic-syntax/#html
 describe('HTML', () => {
   it('Render', () => {
     const r = render(
