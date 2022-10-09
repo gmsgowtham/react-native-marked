@@ -58,12 +58,18 @@ const getStyles = (
       fontWeight: 'bold',
       marginVertical: 8,
       letterSpacing: 0,
+      paddingBottom: 4,
+      borderBottomColor: theme.colors.border,
+      borderBottomWidth: 1,
     },
     h2: {
       ...fontStyle.heading,
       fontSize: 28,
       lineHeight: 36,
       marginVertical: 8,
+      paddingBottom: 4,
+      borderBottomColor: theme.colors.border,
+      borderBottomWidth: 1,
     },
     h3: {
       ...fontStyle.heading,
