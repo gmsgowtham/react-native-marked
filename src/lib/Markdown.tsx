@@ -29,7 +29,10 @@ const Markdown = ({
     return <>{item}</>;
   }, []);
 
-  const keyExtractor = useCallback((_, index) => index.toString(), []);
+  const keyExtractor = useCallback(
+    (_: ReactNode, index: number) => index.toString(),
+    []
+  );
 
   return (
     <FlatList
