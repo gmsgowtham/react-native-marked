@@ -57,7 +57,7 @@
     "@testing-library/react-native": "11.2.0",
     "@types/jest": "29.1.2",
     "@types/marked": "4.0.7",
-    "@types/react": "17.0.50",
+    "@types/react": "18.0.21",
     "@types/react-native": "0.70.4",
     "@typescript-eslint/eslint-plugin": "5.40.0",
     "@typescript-eslint/parser": "5.40.0",
@@ -78,7 +78,7 @@
     "typescript": "4.8.4"
   },
   "resolutions": {
-    "@types/react": "17.0.50"
+    "@types/react": "18.0.21"
   },
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0.0 || ^18.0.0",
