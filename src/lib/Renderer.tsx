@@ -1,15 +1,22 @@
 import React, { ReactNode } from 'react';
-import { ScrollView, View, Text, TouchableHighlight } from 'react-native';
+import {
+  ScrollView,
+  View,
+  Text,
+  TouchableHighlight,
+  TextStyle,
+  ViewStyle,
+  ImageStyle,
+} from 'react-native';
 import MarkedList from '@jsamr/react-native-li';
 import Disc from '@jsamr/counter-style/presets/disc';
 import Decimal from '@jsamr/counter-style/presets/decimal';
 import MDImage from './../components/MDImage';
 import { generateRandomString } from '../utils/string';
-import type { ImageStyleProp, TextStyleProp, ViewStyleProp } from './types';
 import { onLinkPress } from '../utils/handlers';
 
 class Renderer {
-  getTextNode = (children: string | ReactNode[], styles: TextStyleProp) => {
+  getTextNode = (children: string | ReactNode[], styles?: TextStyle) => {
     return (
       <Text key={generateRandomString()} style={styles}>
         {children}
@@ -20,7 +27,7 @@ class Renderer {
   getTextLinkNode = (
     children: string | ReactNode[],
     href: string,
-    styles: TextStyleProp
+    styles?: TextStyle
   ) => {
     return (
       <Text
@@ -38,10 +45,10 @@ class Renderer {
   getImageLinkNode = (
     href: string,
     imageUrl: string,
-    style: ImageStyleProp,
-    alt?: string
+    alt?: string,
+    style?: ImageStyle
   ) => {
-    const imageNode = this.getImageNode(imageUrl, style, alt);
+    const imageNode = this.getImageNode(imageUrl, alt, style);
     return (
       <TouchableHighlight
         accessibilityRole="link"
@@ -54,7 +61,7 @@ class Renderer {
     );
   };
 
-  getViewNode(children: ReactNode[] | null, styles?: ViewStyleProp) {
+  getViewNode(children: ReactNode[] | null, styles?: ViewStyle) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -64,8 +71,8 @@ class Renderer {
 
   getCodeBlockNode(
     text: string,
-    containerStyle: ViewStyleProp,
-    textStyle: TextStyleProp
+    containerStyle?: ViewStyle,
+    textStyle?: TextStyle
   ) {
     return (
       <ScrollView
@@ -78,7 +85,7 @@ class Renderer {
     );
   }
 
-  getBlockquoteNode(children: ReactNode[], styles: ViewStyleProp) {
+  getBlockquoteNode(children: ReactNode[], styles?: ViewStyle) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -86,7 +93,7 @@ class Renderer {
     );
   }
 
-  getImageNode(uri: string, style: ImageStyleProp, alt?: string) {
+  getImageNode(uri: string, alt?: string, style?: ImageStyle) {
     return (
       <MDImage key={generateRandomString()} uri={uri} alt={alt} style={style} />
     );
@@ -95,8 +102,8 @@ class Renderer {
   getListNode(
     ordered: boolean,
     li: ReactNode[],
-    listStyle: ViewStyleProp,
-    textStyle: TextStyleProp
+    listStyle?: ViewStyle,
+    textStyle?: TextStyle
   ) {
     return (
       <MarkedList

@@ -1,14 +1,15 @@
 import type { ReactNode } from 'react';
+import type { TextStyle, ViewStyle, ImageStyle } from 'react-native';
 import type { marked } from 'marked';
 import { decode } from 'entities';
 import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
-import type { CustomStyleProp, ParserOptions, TextStyleProp } from './types';
+import type { ParserOptions } from './types';
 
 class Parser {
   private renderer;
   private styles: MarkedStyles;
-  private headingStylesMap: Record<number, TextStyleProp>;
+  private headingStylesMap: Record<number, TextStyle | undefined>;
   constructor(options: ParserOptions) {
     this.styles = { ...options.styles };
     this.renderer = new Renderer();
@@ -96,7 +97,10 @@ class Parser {
     return elements.filter((element) => element !== null);
   }
 
-  parseInline(tokens: marked.Token[], styles?: CustomStyleProp) {
+  parseInline(
+    tokens: marked.Token[],
+    styles?: ViewStyle | TextStyle | ImageStyle
+  ) {
     const elements: ReactNode[] = tokens.map((token) => {
       if (!token) return null;
 
@@ -188,7 +192,7 @@ class Parser {
 
   private getNormalizedSiblingNodesForBlockAndInlineTokens = (
     tokens: marked.Token[],
-    textStyle: TextStyleProp
+    textStyle?: TextStyle
   ): ReactNode[] => {
     let tokenRenderQueue: marked.Token[] = [];
     const siblingNodes: ReactNode[] = [];
