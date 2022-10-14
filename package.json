@@ -146,7 +146,8 @@
     "extends": [
       "@react-native-community",
       "prettier",
-      "plugin:@typescript-eslint/recommended"
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react-native-a11y/all"
     ],
     "plugins": [
       "jest"
