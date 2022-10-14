@@ -123,6 +123,7 @@ class Parser {
         case 'image': {
           return this.renderer.getImageNode(
             token.href,
+            this.styles.image,
             token.text || token.title
           );
         }
@@ -219,6 +220,7 @@ class Parser {
             this.renderer.getImageLinkNode(
               t.href,
               imageToken.href,
+              this.styles.image,
               imageToken.text || imageToken.title
             )
           );

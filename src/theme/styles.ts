@@ -119,6 +119,9 @@ const getStyles = (
       ...fontStyle.regular,
       flexShrink: 1,
     },
+    image: {
+      resizeMode: 'cover',
+    },
   });
 
   return {

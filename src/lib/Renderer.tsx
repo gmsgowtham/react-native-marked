@@ -5,7 +5,7 @@ import Disc from '@jsamr/counter-style/presets/disc';
 import Decimal from '@jsamr/counter-style/presets/decimal';
 import MDImage from './../components/MDImage';
 import { generateRandomString } from '../utils/string';
-import type { TextStyleProp, ViewStyleProp } from './types';
+import type { ImageStyleProp, TextStyleProp, ViewStyleProp } from './types';
 import { onLinkPress } from '../utils/handlers';
 
 class Renderer {
@@ -35,8 +35,13 @@ class Renderer {
     );
   };
 
-  getImageLinkNode = (href: string, imageUrl: string, alt?: string) => {
-    const imageNode = this.getImageNode(imageUrl, alt);
+  getImageLinkNode = (
+    href: string,
+    imageUrl: string,
+    style: ImageStyleProp,
+    alt?: string
+  ) => {
+    const imageNode = this.getImageNode(imageUrl, style, alt);
     return (
       <TouchableHighlight
         accessibilityRole="link"
@@ -49,7 +54,7 @@ class Renderer {
     );
   };
 
-  getViewNode(children: ReactNode[] | null, styles: ViewStyleProp) {
+  getViewNode(children: ReactNode[] | null, styles?: ViewStyleProp) {
     return (
       <View key={generateRandomString()} style={styles}>
         {children}
@@ -81,8 +86,10 @@ class Renderer {
     );
   }
 
-  getImageNode(uri: string, alt?: string) {
-    return <MDImage key={generateRandomString()} uri={uri} alt={alt} />;
+  getImageNode(uri: string, style: ImageStyleProp, alt?: string) {
+    return (
+      <MDImage key={generateRandomString()} uri={uri} alt={alt} style={style} />
+    );
   }
 
   getListNode(
