@@ -16,6 +16,7 @@ const MDImage = ({ uri, alt }: MDImageProps) => {
     <FitImage
       accessibilityRole="image"
       accessibilityLabel={alt || 'Image'}
+      accessibilityHint={undefined}
       source={{ uri }}
       resizeMode="cover"
     />
