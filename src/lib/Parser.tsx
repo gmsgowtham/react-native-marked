@@ -127,7 +127,8 @@ class Parser {
         case 'image': {
           return this.renderer.getImageNode(
             token.href,
-            token.text || token.title
+            token.text || token.title,
+            this.styles.image
           );
         }
         case 'strong': {
@@ -223,7 +224,8 @@ class Parser {
             this.renderer.getImageLinkNode(
               t.href,
               imageToken.href,
-              imageToken.text || imageToken.title
+              imageToken.text || imageToken.title,
+              this.styles.image
             )
           );
         }

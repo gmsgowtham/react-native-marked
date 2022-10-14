@@ -3725,6 +3725,11 @@ exports[`Images Linking Images 1`] = `
         >
           <Memo(MDImage)
             alt="An old rock in the desert"
+            style={
+              {
+                "resizeMode": "cover",
+              }
+            }
             uri="/assets/images/shiprock.jpg"
           />
         </TouchableHighlight>
@@ -3786,8 +3791,12 @@ exports[`Images Linking Images 1`] = `
             accessibilityIgnoresInvertColors={true}
             style={
               [
-                undefined,
-                {},
+                {
+                  "resizeMode": "cover",
+                },
+                {
+                  "flexGrow": 1,
+                },
                 {
                   "height": 0,
                 },
@@ -3852,6 +3861,11 @@ exports[`Images Render 1`] = `
       >
         <Memo(MDImage)
           alt="The San Juan Mountains are beautiful!"
+          style={
+            {
+              "resizeMode": "cover",
+            }
+          }
           uri="https://dummyimage.com/100x100/fff/aaa"
         />
       </View>,
@@ -3899,8 +3913,12 @@ exports[`Images Render 1`] = `
           accessibilityIgnoresInvertColors={true}
           style={
             [
-              undefined,
-              {},
+              {
+                "resizeMode": "cover",
+              },
+              {
+                "flexGrow": 1,
+              },
               {
                 "height": 0,
               },
@@ -6107,6 +6125,11 @@ exports[`Lists Elements in Lists: Images 1`] = `
           >
             <Memo(MDImage)
               alt={null}
+              style={
+                {
+                  "resizeMode": "cover",
+                }
+              }
               uri="https://dummyimage.com/100x100/fff/aaa"
             />
           </View>
@@ -6339,8 +6362,12 @@ exports[`Lists Elements in Lists: Images 1`] = `
               accessibilityIgnoresInvertColors={true}
               style={
                 [
-                  undefined,
-                  {},
+                  {
+                    "resizeMode": "cover",
+                  },
+                  {
+                    "flexGrow": 1,
+                  },
                   {
                     "height": 0,
                   },
@@ -9428,6 +9455,11 @@ exports[`Paragraphs Paragraph with Image 1`] = `
         </Text>
         <Memo(MDImage)
           alt="Chat"
+          style={
+            {
+              "resizeMode": "cover",
+            }
+          }
           uri="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5kq947hwxmjvlmhrbnm6.png"
         />
       </View>,
@@ -9496,8 +9528,12 @@ exports[`Paragraphs Paragraph with Image 1`] = `
           accessibilityIgnoresInvertColors={true}
           style={
             [
-              undefined,
-              {},
+              {
+                "resizeMode": "cover",
+              },
+              {
+                "flexGrow": 1,
+              },
               {
                 "height": 0,
               },

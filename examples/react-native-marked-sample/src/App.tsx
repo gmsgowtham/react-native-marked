@@ -20,7 +20,7 @@ export default function App() {
       />
       <SafeAreaView>
         <Markdown
-          value={json.body_markdown_4}
+          value={json.body_markdown_1}
           flatListProps={{
             contentContainerStyle: styles.container,
           }}

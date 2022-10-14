@@ -6,6 +6,7 @@ import {
   TouchableHighlight,
   TextStyle,
   ViewStyle,
+  ImageStyle,
 } from 'react-native';
 import MarkedList from '@jsamr/react-native-li';
 import Disc from '@jsamr/counter-style/presets/disc';
@@ -41,8 +42,13 @@ class Renderer {
     );
   };
 
-  getImageLinkNode = (href: string, imageUrl: string, alt?: string) => {
-    const imageNode = this.getImageNode(imageUrl, alt);
+  getImageLinkNode = (
+    href: string,
+    imageUrl: string,
+    alt?: string,
+    style?: ImageStyle
+  ) => {
+    const imageNode = this.getImageNode(imageUrl, alt, style);
     return (
       <TouchableHighlight
         accessibilityRole="link"
@@ -87,8 +93,10 @@ class Renderer {
     );
   }
 
-  getImageNode(uri: string, alt?: string) {
-    return <MDImage key={generateRandomString()} uri={uri} alt={alt} />;
+  getImageNode(uri: string, alt?: string, style?: ImageStyle) {
+    return (
+      <MDImage key={generateRandomString()} uri={uri} alt={alt} style={style} />
+    );
   }
 
   getListNode(

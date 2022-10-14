@@ -1,4 +1,4 @@
-import type { TextStyle, ViewStyle } from 'react-native';
+import type { ImageStyle, TextStyle, ViewStyle } from 'react-native';
 
 export interface MarkedStyles {
   container?: ViewStyle;
@@ -20,6 +20,7 @@ export interface MarkedStyles {
   hr?: ViewStyle;
   list?: ViewStyle;
   li?: TextStyle;
+  image?: ImageStyle;
 }
 
 export type ColorKeys = 'background' | 'code' | 'link' | 'text' | 'border';
