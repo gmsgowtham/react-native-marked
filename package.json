@@ -172,7 +172,8 @@
   "eslintIgnore": [
     "node_modules/",
     "dist/",
-    "examples/*/node_modules"
+    "examples/*/node_modules",
+    "coverage"
   ],
   "prettier": {
     "quoteProps": "consistent",
