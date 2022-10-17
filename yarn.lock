@@ -1393,10 +1393,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@evilmartians/lefthook@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.1.2.tgz#4abe332d9b7a0b061eb8bf839315f66f626077d8"
-  integrity sha512-mxh0P9TktuwdY8SZ422/jzJB278z/4tjzBUvJONCSnZFcRJD3+BkLTLxuBVJZWuaO1D4Qmfdj6KBevNui23uSQ==
+"@evilmartians/lefthook@1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.1.3.tgz#de4fe3d20d992b64dfa0ba5b7251c09bba51230d"
+  integrity sha512-4bdWcVw2ImjpBIB+/rKLX8nkrQSO8kV0z1KyhiojCm/EI6hbqWiIlO9beXiAPVQgByNhuS6ACznvyE9TCt/8hg==
 
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
