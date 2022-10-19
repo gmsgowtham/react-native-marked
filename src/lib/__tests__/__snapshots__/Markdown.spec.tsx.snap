@@ -442,6 +442,17 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
                 {
                   "color": "#333333",
                   "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+               
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
                   "fontStyle": "italic",
                   "lineHeight": 24,
                 }
@@ -734,6 +745,17 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
           <Text
             style={{}}
           >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+               
+            </Text>
             <Text
               style={
                 {
@@ -6123,6 +6145,28 @@ exports[`Lists Elements in Lists: Images 1`] = `
               }
             }
           >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                 
+              </Text>
+            </Text>
             <Memo(MDImage)
               alt={null}
               style={
@@ -6358,6 +6402,28 @@ exports[`Lists Elements in Lists: Images 1`] = `
               }
             }
           >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                 
+              </Text>
+            </Text>
             <View
               accessibilityIgnoresInvertColors={true}
               style={
