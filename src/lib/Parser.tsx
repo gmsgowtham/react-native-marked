@@ -172,10 +172,6 @@ class Parser {
         }
         case 'text':
         case 'html': {
-          if (token.raw.trim().length < 1) {
-            return null;
-          }
-
           return this.renderer.getTextNode(decode(token.raw), {
             ...this.styles.text,
             ...styles,
