@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react';
 import type { TextStyle, ViewStyle, ImageStyle } from 'react-native';
 import type { marked } from 'marked';
-import { decode } from 'entities';
 import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
 import type { ParserOptions } from './types';
@@ -172,7 +171,7 @@ class Parser {
         }
         case 'text':
         case 'html': {
-          return this.renderer.getTextNode(decode(token.raw), {
+          return this.renderer.getTextNode(token.raw, {
             ...this.styles.text,
             ...styles,
           });

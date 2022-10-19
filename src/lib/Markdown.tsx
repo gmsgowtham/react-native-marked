@@ -20,7 +20,10 @@ const Markdown = ({
     const parser = new Parser({
       styles,
     });
-    const tokens = marked.lexer(value);
+    const tokens = marked.lexer(value, {
+      mangle: false,
+      gfm: true,
+    });
 
     return parser.parse(tokens);
   }, [value, styles]);
