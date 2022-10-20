@@ -4404,10 +4404,10 @@ eslint-plugin-react-hooks@^4.6.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz#4c3e697ad95b77e93f8646aaa1630c1ba607edd3"
   integrity sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==
 
-eslint-plugin-react-native-a11y@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native-a11y/-/eslint-plugin-react-native-a11y-3.2.1.tgz#6c3296f7c689ab2f8f89ad5bf6c0c8dafe029193"
-  integrity sha512-DNOCp2uKvW0I86CoEAOEljq7qe4MiZLlToSPiwu0X+Bgst0+d30sERvhIu5kyzY7XM3HD2xoJma7FW5XYGxRBA==
+eslint-plugin-react-native-a11y@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native-a11y/-/eslint-plugin-react-native-a11y-3.3.0.tgz#0485a8f18474bf54ec68d004b50167f75ffbf201"
+  integrity sha512-21bIs/0yROcMq7KtAG+OVNDWAh8M+6scII0iXcO3i9NYHe2xZ443yPs5KSUMSvQJeRLLjuKB7V5saqNjoMWDHA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ast-types-flow "^0.0.7"
