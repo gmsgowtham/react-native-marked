@@ -46,7 +46,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@babel/core": "7.19.3",
+    "@babel/core": "7.19.6",
     "@babel/eslint-parser": "7.19.1",
     "@babel/preset-env": "7.19.4",
     "@commitlint/config-conventional": "17.1.0",
