@@ -7044,7 +7044,7 @@ metro-react-native-babel-preset@0.72.3:
     "@babel/template" "^7.0.0"
     react-refresh "^0.4.0"
 
-metro-react-native-babel-preset@^0.73.2:
+metro-react-native-babel-preset@0.73.2:
   version "0.73.2"
   resolved "https://registry.yarnpkg.com/metro-react-native-babel-preset/-/metro-react-native-babel-preset-0.73.2.tgz#b80d0bdd3d64a10c14514bd4d73f9cf6277218e9"
   integrity sha512-Wb7nPaJRHpikZII565oLKylxmiyMFlTA/wSnCkJ7LDo6ICh0jSshfNk9+w5V5xAxSnpsEnvXPaGP5QFk4ZHXrg==
