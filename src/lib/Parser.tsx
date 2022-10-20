@@ -47,7 +47,7 @@ class Parser {
           );
         }
         case 'heading': {
-          const styles = this.headingStylesMap[token.depth] ?? this.styles.text;
+          const styles = this.headingStylesMap[token.depth];
           return this.renderer.getTextNode(
             this.parseInline(token.tokens, styles),
             styles
@@ -101,8 +101,6 @@ class Parser {
     styles?: ViewStyle | TextStyle | ImageStyle
   ) {
     const elements: ReactNode[] = tokens.map((token) => {
-      if (!token) return null;
-
       switch (token.type) {
         case 'escape': {
           return this.renderer.getTextNode(token.text, {
