@@ -1,8 +1,12 @@
-import type { ColorSchemeName } from 'react-native';
+import { Linking, type ColorSchemeName } from 'react-native';
 import { fireEvent, render, screen } from '@testing-library/react-native';
 import Renderer from '../Renderer';
 import getStyles from './../../theme/styles';
 import type { MarkedStyles } from './../../theme/types';
+
+jest.mock('react-native/Libraries/Linking/Linking', () => ({
+  openURL: jest.fn(() => Promise.resolve('mockResolve')),
+}));
 
 const renderer = new Renderer();
 const userStyles: MarkedStyles = {
@@ -60,6 +64,7 @@ describe('Renderer', () => {
           const r = render(LinkNode);
           expect(screen.queryByText('Link')).toBeTruthy();
           fireEvent.press(screen.queryByText('Link'));
+          expect(Linking.openURL).toHaveBeenCalled();
           const tree = r.toJSON();
           expect(tree).toMatchSnapshot();
         });
