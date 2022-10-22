@@ -40,11 +40,12 @@ https://snack.expo.dev/@gmsgowtham/react-native-marked
 
 ## [Props](https://github.com/gmsgowtham/react-native-marked/blob/4ef070931b7d309a7490c41e45129e12525d12d9/src/lib/types.ts#L18)
 
-| Prop          | Description                                        | Type                                                                                                                                                                           | Optional? |
-| ------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
-| value         | Markdown value                                     | string                                                                                                                                                                         | false     |
-| flatListProps | Props for customizing the underlying FlatList used | `Omit<FlatListProps<ReactNode>, 'data' \| 'renderItem' \| 'horizontal'>`<br><br><br>(`'data'`, `'renderItem'`, and `'horizontal'` props are omitted and cannot be overridden.) | true      |
-| styles        | Styles for parsed components                       | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/4ef070931b7d309a7490c41e45129e12525d12d9/src/theme/types.ts#L3)                                          | true      |
+| Prop          | Description                                                                                                         | Type                                                                                                                                                                           | Optional? |
+| ------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
+| value         | Markdown value                                                                                                      | string                                                                                                                                                                         | false     |
+| flatListProps | Props for customizing the underlying FlatList used                                                                  | `Omit<FlatListProps<ReactNode>, 'data' \| 'renderItem' \| 'horizontal'>`<br><br><br>(`'data'`, `'renderItem'`, and `'horizontal'` props are omitted and cannot be overridden.) | true      |
+| styles        | Styles for parsed components                                                                                        | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/4ef070931b7d309a7490c41e45129e12525d12d9/src/theme/types.ts#L3)                                          | true      |
+| theme         | Props for customizing colors and spacing, will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/ddda8f554fad01f8d6c17a51c26f6f3c2bdcf9fd/src/theme/types.ts#L28)                                            | true      |
 
 ## Screenshots
 
