@@ -8,12 +8,13 @@ import type { MarkdownProps } from './types';
 const Markdown = ({
   value,
   flatListProps,
+  theme,
   styles: userStyles,
 }: MarkdownProps) => {
-  const systemTheme = useColorScheme();
+  const colorScheme = useColorScheme();
   const styles = useMemo(
-    () => getStyles(userStyles, systemTheme),
-    [userStyles, systemTheme]
+    () => getStyles(userStyles, colorScheme, theme),
+    [userStyles, colorScheme, theme]
   );
 
   const rnElements = useMemo(() => {

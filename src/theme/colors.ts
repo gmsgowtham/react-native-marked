@@ -1,6 +1,7 @@
-import type { ColorKeys } from './types';
+export type ColorKeysType = 'background' | 'code' | 'link' | 'text' | 'border';
+export type ColorsPropType = Record<ColorKeysType, string>;
 
-const colors: Record<'light' | 'dark', Record<ColorKeys, string>> = {
+const colors: Record<'light' | 'dark', ColorsPropType> = {
   light: {
     background: '#ffffff',
     code: '#f6f8fa',

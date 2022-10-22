@@ -1,4 +1,6 @@
 import type { ImageStyle, TextStyle, ViewStyle } from 'react-native';
+import type { ColorKeysType } from './colors';
+import type { SpacingKeysType } from './spacing';
 
 export interface MarkedStyles {
   container?: ViewStyle;
@@ -23,8 +25,7 @@ export interface MarkedStyles {
   image?: ImageStyle;
 }
 
-export type ColorKeys = 'background' | 'code' | 'link' | 'text' | 'border';
-
-export interface Theme {
-  colors: Record<ColorKeys, string>;
+export interface UserTheme {
+  colors?: Record<ColorKeysType, string>;
+  spacing?: Record<SpacingKeysType, number>;
 }

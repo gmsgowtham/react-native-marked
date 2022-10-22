@@ -8,7 +8,7 @@ exports[`Blockquotes Blockquote 1`] = `
         style={
           {
             "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
+            "borderLeftWidth": 4,
             "opacity": 0.8,
             "paddingLeft": 16,
           }
@@ -75,7 +75,7 @@ exports[`Blockquotes Blockquote 1`] = `
         style={
           {
             "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
+            "borderLeftWidth": 4,
             "opacity": 0.8,
             "paddingLeft": 16,
           }
@@ -121,7 +121,7 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
         style={
           {
             "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
+            "borderLeftWidth": 4,
             "opacity": 0.8,
             "paddingLeft": 16,
           }
@@ -214,7 +214,7 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
         style={
           {
             "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
+            "borderLeftWidth": 4,
             "opacity": 0.8,
             "paddingLeft": 16,
           }
@@ -286,7 +286,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
         style={
           {
             "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
+            "borderLeftWidth": 4,
             "opacity": 0.8,
             "paddingLeft": 16,
           }
@@ -553,7 +553,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
         style={
           {
             "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
+            "borderLeftWidth": 4,
             "opacity": 0.8,
             "paddingLeft": 16,
           }
@@ -840,7 +840,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
         style={
           {
             "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
+            "borderLeftWidth": 4,
             "opacity": 0.8,
             "paddingLeft": 16,
           }
@@ -877,7 +877,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
         style={
           {
             "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
+            "borderLeftWidth": 4,
             "opacity": 0.8,
             "paddingLeft": 16,
           }
@@ -887,7 +887,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
           style={
             {
               "borderLeftColor": "#d0d7de",
-              "borderLeftWidth": 5,
+              "borderLeftWidth": 4,
               "opacity": 0.8,
               "paddingLeft": 16,
             }
@@ -955,7 +955,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
         style={
           {
             "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
+            "borderLeftWidth": 4,
             "opacity": 0.8,
             "paddingLeft": 16,
           }
@@ -997,7 +997,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
         style={
           {
             "borderLeftColor": "#d0d7de",
-            "borderLeftWidth": 5,
+            "borderLeftWidth": 4,
             "opacity": 0.8,
             "paddingLeft": 16,
           }
@@ -1007,7 +1007,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
           style={
             {
               "borderLeftColor": "#d0d7de",
-              "borderLeftWidth": 5,
+              "borderLeftWidth": 4,
               "opacity": 0.8,
               "paddingLeft": 16,
             }
@@ -5226,7 +5226,7 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             style={
               {
                 "borderLeftColor": "#d0d7de",
-                "borderLeftWidth": 5,
+                "borderLeftWidth": 4,
                 "opacity": 0.8,
                 "paddingLeft": 16,
               }
@@ -5464,7 +5464,7 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             style={
               {
                 "borderLeftColor": "#d0d7de",
-                "borderLeftWidth": 5,
+                "borderLeftWidth": 4,
                 "opacity": 0.8,
                 "paddingLeft": 16,
               }
