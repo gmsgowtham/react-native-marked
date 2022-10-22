@@ -5,7 +5,7 @@ exports[`Renderer dark theme getBlockquoteNode returns a Blockquote 1`] = `
   style={
     {
       "borderLeftColor": "#30363d",
-      "borderLeftWidth": 5,
+      "borderLeftWidth": 4,
       "opacity": 0.8,
       "paddingLeft": 16,
     }
@@ -641,7 +641,7 @@ exports[`Renderer light theme getBlockquoteNode returns a Blockquote 1`] = `
   style={
     {
       "borderLeftColor": "#d0d7de",
-      "borderLeftWidth": 5,
+      "borderLeftWidth": 4,
       "opacity": 0.8,
       "paddingLeft": 16,
     }

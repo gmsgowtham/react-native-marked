@@ -1,30 +1,34 @@
 import { ColorSchemeName, StyleSheet } from 'react-native';
-import { getTheme } from './theme';
-import type { MarkedStyles, Theme } from './types';
+import spacing from './spacing';
+import colors, { type ColorsPropType } from './colors';
+import type { MarkedStyles, UserTheme } from './types';
 
-const getFontStyles = (theme: Theme) => {
+const getFontStyles = (mdColors: ColorsPropType) => {
   return StyleSheet.create({
     regular: {
       fontSize: 16,
       lineHeight: 24,
-      color: theme.colors.text,
+      color: mdColors.text,
     },
     heading: {
       fontWeight: '500',
-      color: theme.colors.text,
+      color: mdColors.text,
     },
   });
 };
 
 const getStyles = (
   userStyles?: MarkedStyles,
-  colorScheme?: ColorSchemeName
+  colorScheme?: ColorSchemeName,
+  userTheme?: UserTheme
 ): MarkedStyles => {
-  const theme = getTheme(colorScheme || 'light');
-  const fontStyle = getFontStyles(theme);
+  const mdColors = { ...colors[colorScheme || 'light'], ...userTheme?.colors };
+  const mdSpacing = { ...spacing, ...userTheme?.spacing };
+
+  const fontStyle = getFontStyles(mdColors);
   const defaultStyles = StyleSheet.create<MarkedStyles>({
     container: {
-      backgroundColor: theme.colors.background,
+      backgroundColor: mdColors.background,
     },
     em: {
       ...fontStyle.regular,
@@ -44,76 +48,76 @@ const getStyles = (
     },
     paragraph: {
       ...fontStyle.regular,
-      paddingVertical: 8,
+      paddingVertical: mdSpacing.m,
     },
     link: {
       ...fontStyle.regular,
       fontStyle: 'italic',
-      color: theme.colors.link,
+      color: mdColors.link,
     },
     blockquote: {
-      borderLeftColor: theme.colors.border,
-      paddingLeft: 16,
-      borderLeftWidth: 5,
+      borderLeftColor: mdColors.border,
+      paddingLeft: mdSpacing.l,
+      borderLeftWidth: mdSpacing.s,
       opacity: 0.8,
     },
     h1: {
       fontSize: 32,
       lineHeight: 40,
       fontWeight: 'bold',
-      marginVertical: 8,
+      marginVertical: mdSpacing.m,
       letterSpacing: 0,
-      paddingBottom: 4,
-      borderBottomColor: theme.colors.border,
+      paddingBottom: mdSpacing.s,
+      borderBottomColor: mdColors.border,
       borderBottomWidth: 1,
     },
     h2: {
       ...fontStyle.heading,
       fontSize: 28,
       lineHeight: 36,
-      marginVertical: 8,
-      paddingBottom: 4,
-      borderBottomColor: theme.colors.border,
+      marginVertical: mdSpacing.m,
+      paddingBottom: mdSpacing.s,
+      borderBottomColor: mdColors.border,
       borderBottomWidth: 1,
     },
     h3: {
       ...fontStyle.heading,
       fontSize: 24,
       lineHeight: 32,
-      marginVertical: 4,
+      marginVertical: mdSpacing.s,
     },
     h4: {
       ...fontStyle.heading,
       fontSize: 22,
       lineHeight: 28,
-      marginVertical: 4,
+      marginVertical: mdSpacing.s,
     },
     h5: {
       ...fontStyle.regular,
       ...fontStyle.heading,
-      marginVertical: 2,
+      marginVertical: mdSpacing.xs,
     },
     h6: {
       ...fontStyle.heading,
       fontSize: 14,
       lineHeight: 20,
-      marginVertical: 2,
+      marginVertical: mdSpacing.xs,
     },
     codespan: {
       ...fontStyle.regular,
       fontStyle: 'italic',
-      backgroundColor: theme.colors.code,
+      backgroundColor: mdColors.code,
       fontWeight: '300',
     },
     code: {
-      padding: 16,
-      backgroundColor: theme.colors.code,
+      padding: mdSpacing.l,
+      backgroundColor: mdColors.code,
       minWidth: '100%',
     },
     hr: {
       borderBottomWidth: 1,
-      borderBottomColor: theme.colors.border,
-      marginVertical: 4,
+      borderBottomColor: mdColors.border,
+      marginVertical: mdSpacing.s,
     },
     li: {
       ...fontStyle.regular,
