@@ -49,9 +49,9 @@ https://snack.expo.dev/@gmsgowtham/react-native-marked
 
 ## Screenshots
 
-|                              Dark Theme                               |                               Light Theme                               |
-| :-------------------------------------------------------------------: | :---------------------------------------------------------------------: |
-| ![Dark theme](assets/Screenshot_1662875200.png?raw=true 'Dark Theme') | ![Light theme](assets/Screenshot_1662875206.png?raw=true 'Light Theme') |
+|                         Dark Theme                         |                          Light Theme                          |
+| :--------------------------------------------------------: | :-----------------------------------------------------------: |
+| ![Dark theme](assets/dark-theme.png?raw=true 'Dark Theme') | ![Light theme](assets/light-theme.png?raw=true 'Light Theme') |
 
 ## Contributing
 
