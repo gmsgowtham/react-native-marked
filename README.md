@@ -47,6 +47,25 @@ https://snack.expo.dev/@gmsgowtham/react-native-marked
 | styles        | Styles for parsed components                                                                                                                 | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/4ef070931b7d309a7490c41e45129e12525d12d9/src/theme/types.ts#L3)                                          | true      |
 | theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/6eba804c617099ffb574aa97c57a71ea3e0184fb/src/theme/types.ts#L28)                                            | true      |
 
+## Supported elements
+
+- [x] Headings (1 to 6)
+- [x] Paragraph
+- [x] Emphasis (bold, italic, and strikethrough)
+- [x] Link
+- [x] Image
+- [x] Blockquote
+- [x] Inline Code
+- [x] Code Block
+- [x] List (ordered, unordered)
+- [x] Horizontal Rule
+- [ ] Table
+- [ ] HTML
+
+Ref: [CommonMark](https://commonmark.org/help/)
+
+> HTML will be treated as plain text
+
 ## Screenshots
 
 |                         Dark Theme                         |                          Light Theme                          |
