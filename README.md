@@ -36,7 +36,8 @@ export default ExampleComponent;
 
 ## Example
 
-https://snack.expo.dev/@gmsgowtham/react-native-marked
+- RN App: https://github.com/gmsgowtham/react-native-marked-test
+- Snack: https://snack.expo.dev/@gmsgowtham/react-native-marked
 
 ## [Props](https://github.com/gmsgowtham/react-native-marked/blob/4ef070931b7d309a7490c41e45129e12525d12d9/src/lib/types.ts#L18)
 
