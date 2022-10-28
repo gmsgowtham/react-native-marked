@@ -34,7 +34,7 @@ const ExampleComponent = () => {
 export default ExampleComponent;
 ```
 
-## Example
+## Examples
 
 - RN App: https://github.com/gmsgowtham/react-native-marked-test
 - Snack: https://snack.expo.dev/@gmsgowtham/react-native-marked
