@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import Markdown from 'react-native-marked';
 
-import mdString from './const';
+import { MD_STRING } from './const';
 
 export default function App() {
   const theme = useColorScheme();
@@ -20,7 +20,7 @@ export default function App() {
       />
       <SafeAreaView>
         <Markdown
-          value={mdString}
+          value={MD_STRING}
           flatListProps={{
             contentContainerStyle: styles.container,
           }}
