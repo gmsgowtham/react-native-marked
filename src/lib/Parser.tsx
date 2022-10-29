@@ -4,13 +4,16 @@ import type { marked } from 'marked';
 import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
 import type { ParserOptions } from './types';
+import { getValidURL } from './../utils/url';
 
 class Parser {
   private renderer;
   private styles: MarkedStyles;
   private headingStylesMap: Record<number, TextStyle | undefined>;
+  private baseUrl: string;
   constructor(options: ParserOptions) {
     this.styles = { ...options.styles };
+    this.baseUrl = options.baseUrl ?? '';
     this.renderer = new Renderer();
     this.headingStylesMap = {
       1: this.styles.h1,
@@ -115,9 +118,10 @@ class Parser {
             ...styles,
             ...this.styles.link, // To override color property
           };
+          const href = getValidURL(this.baseUrl, token.href);
           return this.renderer.getTextLinkNode(
             this.parseInline(token.tokens, linkStyle),
-            token.href,
+            href,
             linkStyle
           );
         }
@@ -220,9 +224,10 @@ class Parser {
           siblingNodes.push(this.parseInline([t]));
         } else if (t.type === 'link') {
           const imageToken = t.tokens[0] as marked.Tokens.Image;
+          const href = getValidURL(this.baseUrl, t.href);
           siblingNodes.push(
             this.renderer.getImageLinkNode(
-              t.href,
+              href,
               imageToken.href,
               imageToken.text || imageToken.title,
               this.styles.image

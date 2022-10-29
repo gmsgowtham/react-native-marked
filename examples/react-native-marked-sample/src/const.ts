@@ -1,4 +1,4 @@
-const mdString = `
+const MD_STRING = `
 Markdown Quick Reference
 ========================
 
@@ -168,4 +168,4 @@ It is a pity, but markdown does **not** work in here for most markdown parsers.
 </div>
 `;
 
-export default mdString;
+export { MD_STRING };
