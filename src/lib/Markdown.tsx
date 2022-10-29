@@ -9,6 +9,7 @@ const Markdown = ({
   value,
   flatListProps,
   theme,
+  baseUrl,
   styles: userStyles,
 }: MarkdownProps) => {
   const colorScheme = useColorScheme();
@@ -18,16 +19,10 @@ const Markdown = ({
   );
 
   const rnElements = useMemo(() => {
-    const parser = new Parser({
-      styles,
-    });
-    const tokens = marked.lexer(value, {
-      mangle: false,
-      gfm: true,
-    });
-
+    const parser = new Parser({ styles, baseUrl });
+    const tokens = marked.lexer(value, { mangle: false, gfm: true });
     return parser.parse(tokens);
-  }, [value, styles]);
+  }, [value, styles, baseUrl]);
 
   const renderItem = useCallback(({ item }: { item: ReactNode }) => {
     return <>{item}</>;
