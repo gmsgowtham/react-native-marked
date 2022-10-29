@@ -4,6 +4,7 @@ import type { marked } from 'marked';
 import Renderer from './Renderer';
 import type { MarkedStyles } from '../theme/types';
 import type { ParserOptions } from './types';
+import { getValidURL } from './../utils/url';
 
 class Parser {
   private renderer;
@@ -117,7 +118,7 @@ class Parser {
             ...styles,
             ...this.styles.link, // To override color property
           };
-          const href = this.getAbsLink(token.href);
+          const href = getValidURL(this.baseUrl, token.href);
           return this.renderer.getTextLinkNode(
             this.parseInline(token.tokens, linkStyle),
             href,
@@ -223,7 +224,7 @@ class Parser {
           siblingNodes.push(this.parseInline([t]));
         } else if (t.type === 'link') {
           const imageToken = t.tokens[0] as marked.Tokens.Image;
-          const href = this.getAbsLink(t.href);
+          const href = getValidURL(this.baseUrl, t.href);
           siblingNodes.push(
             this.renderer.getImageLinkNode(
               href,
@@ -248,17 +249,6 @@ class Parser {
     }
 
     return siblingNodes;
-  };
-
-  private getAbsLink = (href: string): string => {
-    if (href.startsWith('http') || href.startsWith('https')) {
-      return href;
-    }
-    if (href.startsWith('/')) {
-      return `${this.baseUrl}${href}`;
-    }
-
-    return `${this.baseUrl}/${href}`;
   };
 }
 
