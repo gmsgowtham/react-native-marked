@@ -2247,12 +2247,12 @@
     pretty-format "^29.0.3"
     redent "^3.0.0"
 
-"@testing-library/react-native@11.3.0":
-  version "11.3.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-11.3.0.tgz#2fedc63ef3a01d80203471e54649c0192b56c965"
-  integrity sha512-wCbH7TJ2uVwtkQPRQTZbM3Y/mzwK5zxwkOPKfR2UdVdz/RtCC2UVyDnJMaBNwG/cNle5tc92sQDfp3Gn2oyftg==
+"@testing-library/react-native@11.4.0":
+  version "11.4.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-11.4.0.tgz#66546d4c2dd3af82d1ce0ada2c1a9ab0706bc27a"
+  integrity sha512-Pw1T3QoRyoPlnbDPI7pJCRChX/HquEVk6b9XfUuO/LrLJpqAOtZQDYz67eVJfVlhIlTu7hesm57ikIabOWKSlg==
   dependencies:
-    pretty-format "^29.0.3"
+    pretty-format "^29.0.0"
 
 "@tootallnate/once@1":
   version "1.1.2"
