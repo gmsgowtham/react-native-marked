@@ -51,7 +51,7 @@
     "@babel/preset-env": "7.19.4",
     "@commitlint/config-conventional": "17.2.0",
     "@evilmartians/lefthook": "1.1.4",
-    "@react-native-community/eslint-config": "3.1.0",
+    "@react-native-community/eslint-config": "3.2.0",
     "@release-it/conventional-changelog": "5.1.1",
     "@testing-library/jest-native": "5.1.2",
     "@testing-library/react-native": "11.4.0",
