@@ -70,9 +70,9 @@ Ref: [CommonMark](https://commonmark.org/help/)
 
 ## Screenshots
 
-|                         Dark Theme                         |                          Light Theme                          |
-| :--------------------------------------------------------: | :-----------------------------------------------------------: |
-| ![Dark theme](assets/dark-theme.png?raw=true 'Dark Theme') | ![Light theme](assets/light-theme.png?raw=true 'Light Theme') |
+|                          Dark Theme                           |                           Light Theme                            |
+| :-----------------------------------------------------------: | :--------------------------------------------------------------: |
+| ![Dark theme](assets/dark-theme-01.png?raw=true 'Dark Theme') | ![Light theme](assets/light-theme-01.png?raw=true 'Light Theme') |
 
 ## Contributing
 
