@@ -198,9 +198,9 @@
     ]
   },
   "dependencies": {
-    "@jsamr/counter-style": "^2.0.2",
-    "@jsamr/react-native-li": "^2.3.1",
-    "marked": "^4.0.18",
-    "react-native-fit-image": "^1.5.5"
+    "@jsamr/counter-style": "2.0.2",
+    "@jsamr/react-native-li": "2.3.1",
+    "marked": "4.0.18",
+    "react-native-fit-image": "1.5.5"
   }
 }
