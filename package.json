@@ -46,9 +46,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@babel/core": "7.19.6",
+    "@babel/core": "7.20.2",
     "@babel/eslint-parser": "7.19.1",
-    "@babel/preset-env": "7.19.4",
+    "@babel/preset-env": "7.20.2",
     "@commitlint/config-conventional": "17.2.0",
     "@evilmartians/lefthook": "1.1.4",
     "@react-native-community/eslint-config": "3.2.0",
