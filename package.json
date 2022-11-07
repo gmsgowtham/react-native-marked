@@ -50,7 +50,7 @@
     "@babel/eslint-parser": "7.19.1",
     "@babel/preset-env": "7.20.2",
     "@commitlint/config-conventional": "17.2.0",
-    "@evilmartians/lefthook": "1.1.4",
+    "@evilmartians/lefthook": "1.2.0",
     "@react-native-community/eslint-config": "3.2.0",
     "@release-it/conventional-changelog": "5.1.1",
     "@testing-library/jest-native": "5.1.2",

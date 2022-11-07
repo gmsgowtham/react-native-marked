@@ -1615,10 +1615,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@evilmartians/lefthook@1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.1.4.tgz#ce63b40a2c65a722add7db3547febfaa0b9bba13"
-  integrity sha512-ZES5c0zak/xLDvm01PrLZM1/PbfeUT0xZvEubZTrUv9FDr4FR6UAXVRzx3FWnoOlHwT1f7pniZE8HOrCZrOHtA==
+"@evilmartians/lefthook@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.2.0.tgz#48698a0f6bf01c94f23e1306a8fd8a658c1c1b1b"
+  integrity sha512-mvrv8oy9f0//R+I27kXl9PlBilhmcwO736vpFM0t359KqG0FN99rVw58rgCcu08XuOZ58mjjh9/vfdD4sbnn7g==
 
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
