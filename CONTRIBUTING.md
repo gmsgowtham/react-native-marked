@@ -33,7 +33,7 @@ To run the example app on iOS:
 yarn example ios
 ```
 
-Make sure your code passes TypeScript and ESLint. Run the following to verify:
+Make sure your code passes TypeScript and Lint. Run the following to verify:
 
 ```sh
 yarn typescript
@@ -43,7 +43,7 @@ yarn lint
 To fix formatting errors, run the following:
 
 ```sh
-yarn lint --fix
+yarn format
 ```
 
 Remember to add tests for your change if possible. Run the unit tests by:
