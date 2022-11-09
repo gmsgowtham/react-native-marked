@@ -3,7 +3,10 @@
     "enabled": true,
     "ignore": ["node_modules/", "coverage/", "dist/"],
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "correctness": {
+        "noRenderReturnValue": "off"
+      }
     }
   },
   "formatter": {
