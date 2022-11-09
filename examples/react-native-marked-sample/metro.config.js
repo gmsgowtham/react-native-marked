@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 const escapeString = require("escape-string-regexp");
 const { getDefaultConfig } = require("@expo/metro-config");
