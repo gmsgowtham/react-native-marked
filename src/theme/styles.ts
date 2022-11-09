@@ -1,6 +1,6 @@
 import { ColorSchemeName, StyleSheet } from "react-native";
 import spacing from "./spacing";
-import colors, { type ColorsPropType } from "./colors";
+import colors, { ColorsPropType } from "./colors";
 import type { MarkedStyles, UserTheme } from "./types";
 
 const getFontStyles = (mdColors: ColorsPropType) => {
