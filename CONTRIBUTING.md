@@ -33,7 +33,7 @@ To run the example app on iOS:
 yarn example ios
 ```
 
-Make sure your code passes TypeScript and ESLint. Run the following to verify:
+Make sure your code passes TypeScript and Lint. Run the following to verify:
 
 ```sh
 yarn typescript
@@ -43,7 +43,7 @@ yarn lint
 To fix formatting errors, run the following:
 
 ```sh
-yarn lint --fix
+yarn format
 ```
 
 Remember to add tests for your change if possible. Run the unit tests by:
@@ -67,9 +67,9 @@ Our pre-commit hooks verify that your commit message matches this format when co
 
 ### Linting and tests
 
-[ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [TypeScript](https://www.typescriptlang.org/)
+[Rome](https://rome.tools/), [TypeScript](https://www.typescriptlang.org/)
 
-We use [TypeScript](https://www.typescriptlang.org/) for type checking, [ESLint](https://eslint.org/) with [Prettier](https://prettier.io/) for linting and formatting the code, and [Jest](https://jestjs.io/) for testing.
+We use [TypeScript](https://www.typescriptlang.org/) for type checking, [Rome](https://rome.tools/) for linting and formatting the code, and [Jest](https://jestjs.io/) for testing.
 
 Our pre-commit hooks verify that the linter and tests pass when committing.
 
@@ -89,7 +89,8 @@ The `package.json` file contains various scripts for common tasks:
 
 - `yarn bootstrap`: setup project by installing all dependencies and pods.
 - `yarn typescript`: type-check files with TypeScript.
-- `yarn lint`: lint files with ESLint.
+- `yarn lint`: lint files with Rome.
+- `yarn format`: format files with Rome
 - `yarn test`: run unit tests with Jest.
 - `yarn example start`: start the Metro server for the example app.
 - `yarn example android`: run the example app on Android.
