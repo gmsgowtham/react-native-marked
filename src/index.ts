@@ -1,3 +1,3 @@
-import Markdown from './lib/Markdown';
+import Markdown from "./lib/Markdown";
 
 export default Markdown;
