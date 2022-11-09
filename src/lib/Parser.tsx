@@ -173,10 +173,11 @@ class Parser {
         }
         case 'text':
         case 'html': {
-          if (token.type === 'html')
+          if (token.type === 'html') {
             console.warn(
               'react-native-marked: rendering html from markdown is not supported'
             );
+          }
 
           return this.renderer.getTextNode(token.raw, {
             ...this.styles.text,

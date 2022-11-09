@@ -38,7 +38,7 @@ const Markdown = ({
       keyExtractor={keyExtractor}
       maxToRenderPerBatch={8}
       initialNumToRender={8}
-      removeClippedSubviews
+      removeClippedSubviews={true}
       style={styles.container}
       {...flatListProps}
       data={rnElements}

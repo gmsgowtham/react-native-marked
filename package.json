@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "typescript": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "lint": "rome check ./",
     "build": "bob build",
     "prepare": "yarn build",
     "release": "yarn build && release-it",
