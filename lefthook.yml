@@ -1,9 +1,11 @@
 pre-commit:
-  parallel: true
   commands:
     lint:
       glob: '*.{js,ts,jsx,tsx}'
       run: yarn run rome check {staged_files}
+    format:
+      glob: '*.{js,ts,jsx,tsx}'
+      run: yarn run rome format {staged_files} --write && git add {staged_files}
 commit-msg:
   parallel: true
   commands:
