@@ -108,6 +108,9 @@ When you're sending a pull request:
 - Follow the pull request template when opening a pull request.
 - For pull requests that change the API or implementation, discuss with maintainers first by opening an issue.
 
+### Repo visualization
+![Visualization of this repo](./diagram.svg)
+
 ## Code of Conduct
 
 ### Our Pledge
