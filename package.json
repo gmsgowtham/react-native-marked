@@ -63,16 +63,13 @@
     "jest-environment-jsdom": "29.3.1",
     "metro-react-native-babel-preset": "0.73.3",
     "pod-install": "0.1.38",
-    "react": "18.2.0",
+    "react": "18.1.0",
     "react-native": "0.70.5",
     "react-native-builder-bob": "0.20.1",
-    "react-test-renderer": "18.2.0",
+    "react-test-renderer": "18.1.0",
     "release-it": "15.5.0",
     "rome": "10.0.1",
     "typescript": "4.8.4"
-  },
-  "resolutions": {
-    "@types/react": "18.0.25"
   },
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0.0 || ^18.0.0",
