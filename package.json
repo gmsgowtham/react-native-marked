@@ -29,7 +29,8 @@
     "prepare": "yarn build",
     "release": "yarn build && release-it",
     "test": "jest --passWithNoTests",
-    "test:updateSnapshot": "jest --updateSnapshot"
+    "test:updateSnapshot": "jest --updateSnapshot",
+    "reassure": "reassure"
   },
   "keywords": [
     "react-native",
