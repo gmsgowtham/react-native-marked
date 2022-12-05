@@ -1672,10 +1672,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@evilmartians/lefthook@1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.2.3.tgz#08ceb828daab5ae5e5d8bbc30455710cfbe51044"
-  integrity sha512-kmB0+Wgj5cgvUG5mMnuaBWo8KI+eWJsL8XN/aRwmuW0/IsHqhJUfzc+9X7fgyTTjNC/QhUeU0BOs+auYF0AnzA==
+"@evilmartians/lefthook@1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.2.4.tgz#e592d603db5fbf587fea8d560895d31c247818e7"
+  integrity sha512-dZb/eleGFas3vs2qXtpcs85LzVUHt9f43D9MY6/DB1IFNIkFDhnTYzrZ25jTabqH1laiJ5hVHtpeH/xXOhMcnA==
 
 "@gitbeaker/core@^21.7.0":
   version "21.7.0"
