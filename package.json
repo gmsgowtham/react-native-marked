@@ -67,7 +67,7 @@
     "pod-install": "0.1.38",
     "react": "18.1.0",
     "react-native": "0.70.6",
-    "react-native-builder-bob": "0.20.2",
+    "react-native-builder-bob": "0.20.3",
     "react-test-renderer": "18.1.0",
     "reassure": "0.6.0",
     "release-it": "15.5.1",
