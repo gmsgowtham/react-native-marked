@@ -2576,10 +2576,10 @@
   dependencies:
     defer-to-connect "^2.0.1"
 
-"@testing-library/jest-native@5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/jest-native/-/jest-native-5.3.0.tgz#0f042f69206c84ef5f0c80c2ecc78c44a5c49567"
-  integrity sha512-ZvLVI2GMEepp8X91GnzVWC49T4gzOkbrzj8zXITDi6fVJEOTX/lpa6V/TE78p+IhQTya1wukXNfqVaoc5VD3DQ==
+"@testing-library/jest-native@5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/jest-native/-/jest-native-5.3.1.tgz#a21fcf3d92b7f5a554a824c48594ea8a2133b428"
+  integrity sha512-ET8IJScwsOPtuChFbIKNH54jpTz2PDyo8Dg22QNCotyTdCurHS6wO9klgRYan5i/lS/jjNh3HfCxnpK6bIbNiw==
   dependencies:
     chalk "^4.1.2"
     jest-diff "^29.0.1"
