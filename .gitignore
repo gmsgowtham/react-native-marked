@@ -68,3 +68,4 @@ dist/
 
 # test
 coverage
+.reassure/current.perf
