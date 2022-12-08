@@ -5232,18 +5232,32 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
               }
             }
           >
-            <Text
+            <View
               style={
                 {
                   "color": "#333333",
                   "fontSize": 16,
                   "lineHeight": 24,
+                  "paddingVertical": 8,
                 }
               }
             >
-              A blockquote would look great below the second list item.
-
-            </Text>
+              <Text
+                style={{}}
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  A blockquote would look great below the second list item.
+                </Text>
+              </Text>
+            </View>
           </View>
         </View>
         <View
@@ -5470,18 +5484,32 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
               }
             }
           >
-            <Text
+            <View
               style={
                 {
                   "color": "#333333",
                   "fontSize": 16,
                   "lineHeight": 24,
+                  "paddingVertical": 8,
                 }
               }
             >
-              A blockquote would look great below the second list item.
-
-            </Text>
+              <Text
+                style={{}}
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  A blockquote would look great below the second list item.
+                </Text>
+              </Text>
+            </View>
           </View>
         </View>
       </View>
