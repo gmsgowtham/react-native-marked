@@ -4,7 +4,7 @@
   "description": "Markdown renderer for React Native powered by marked.js",
   "main": "dist/commonjs/index",
   "module": "dist/module/index",
-  "types": "dist/typescript/index.d.ts",
+  "types": "dist/typescript/src/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
   "files": [
