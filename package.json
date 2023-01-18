@@ -61,7 +61,7 @@
     "@types/react": "18.0.26",
     "@types/react-native": "0.70.8",
     "commitlint": "17.4.2",
-    "danger": "11.2.1",
+    "danger": "11.2.2",
     "jest": "29.3.1",
     "jest-environment-jsdom": "29.3.1",
     "metro-react-native-babel-preset": "0.74.0",
