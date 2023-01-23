@@ -1796,10 +1796,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@evilmartians/lefthook@1.2.7":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.2.7.tgz#35c2925354979f5c28a8845bde4eed95afb5b1de"
-  integrity sha512-Y1zaYUUtScNIQnGm2it+mylIHS8AtMJkzmLb6QWpGpo8pmFE157yi0oZi4+7Iwy/GkT0FiPZsai/+NfU1FFxeA==
+"@evilmartians/lefthook@1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.2.8.tgz#b41406624a61ff32063344870c23694685e11079"
+  integrity sha512-M0QFRiX87SUBsPdS/vIOdauNTcLSgqh2iQzPVcsjkKapEFzBzQ5l3sGxeHVh20s/rrvCGZ3XpZ5M8+MCdho/sw==
 
 "@gitbeaker/core@^21.7.0":
   version "21.7.0"
