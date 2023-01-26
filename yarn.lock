@@ -1599,13 +1599,13 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@callstack/reassure-cli@0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-0.6.0.tgz#a39da8ff9c34f50d290c4d08798f56d303b220aa"
-  integrity sha512-KLn+jslgjx36F5BEQJvx6sdluuCvFvzVUHByw7l9mRuBSAFYtlvGfHTZceKguyuChP85bXex89UZ3Ims3fKc/A==
+"@callstack/reassure-cli@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-0.6.1.tgz#19d373e259d785aa5c94d34542fa9e13cd49fb77"
+  integrity sha512-c5Pihix9anX9hSLsN8Y5cpRUuB5vHSFeaGAHuiRyNLlEOAIEODjQIOCQ7MkxEiWd5rT5t00m9EMfANb1FcnfiA==
   dependencies:
     "@callstack/reassure-compare" "0.3.0"
-    simple-git "^3.15.1"
+    simple-git "^3.16.0"
     yargs "^17.6.2"
 
 "@callstack/reassure-compare@0.3.0":
@@ -9011,12 +9011,12 @@ readline@^1.3.0:
   resolved "https://registry.yarnpkg.com/readline/-/readline-1.3.0.tgz#c580d77ef2cfc8752b132498060dc9793a7ac01c"
   integrity sha512-k2d6ACCkiNYz222Fs/iNze30rRJ1iIicW7JuX/7/cozvih6YCkFZH+J6mAFDVgv0dRBaAyr4jDqC95R2y4IADg==
 
-reassure@0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/reassure/-/reassure-0.7.0.tgz#cc57fa86accd7ff6aa73a5474299f5ff2a3f28e4"
-  integrity sha512-qffDjBwYx/rf/11tQ8N4J5Ptq/n67JSaDZVtzeOsmfbQJJp3NeBayTqVwJmy86zwp0vQqUlH0l+9i0YOkOASvA==
+reassure@0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/reassure/-/reassure-0.7.1.tgz#b6cb5cf854a47ca4b1ed9549a286a5384007e261"
+  integrity sha512-dCDo4AInl48Q66PAbF3JzV5WVGIQu2AiCNAy+zhcZ0ESalb4zsVuAvhLdgXCsWr9DhPju63rEGgoNWl9noDVKg==
   dependencies:
-    "@callstack/reassure-cli" "0.6.0"
+    "@callstack/reassure-cli" "0.6.1"
     "@callstack/reassure-danger" "0.1.1"
     "@callstack/reassure-measure" "0.3.1"
 
@@ -9548,7 +9548,7 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3, signal-exit@^3.0.7:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-simple-git@^3.15.1:
+simple-git@^3.16.0:
   version "3.16.0"
   resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.16.0.tgz#421773e24680f5716999cc4a1d60127b4b6a9dec"
   integrity sha512-zuWYsOLEhbJRWVxpjdiXl6eyAyGo/KzVW+KFhhw9MqEEJttcq+32jTWSGyxTdf9e/YCohxRE+9xpWFj9FdiJNw==
