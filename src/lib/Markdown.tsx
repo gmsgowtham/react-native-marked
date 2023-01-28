@@ -11,6 +11,7 @@ const Markdown = ({
 	theme,
 	baseUrl,
 	styles: userStyles,
+	parser: customParser,
 }: MarkdownProps) => {
 	const colorScheme = useColorScheme();
 	const styles = useMemo(
@@ -21,6 +22,9 @@ const Markdown = ({
 	const rnElements = useMemo(() => {
 		const parser = new Parser({ styles, baseUrl });
 		const tokens = marked.lexer(value, { mangle: false, gfm: true });
+		if (customParser) {
+			return customParser(parser).parse(tokens);
+		}
 		return parser.parse(tokens);
 	}, [value, styles, baseUrl]);
 

@@ -3,10 +3,10 @@ import type { TextStyle, ViewStyle, ImageStyle } from "react-native";
 import type { marked } from "marked";
 import Renderer from "./Renderer";
 import type { MarkedStyles } from "../theme/types";
-import type { ParserOptions } from "./types";
+import type { IParser, ParserOptions } from "./types";
 import { getValidURL } from "./../utils/url";
 
-class Parser {
+class Parser implements IParser {
 	private renderer;
 	private styles: MarkedStyles;
 	private headingStylesMap: Record<number, TextStyle | undefined>;
