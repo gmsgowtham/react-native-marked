@@ -76,9 +76,9 @@ class Renderer {
 	) {
 		return (
 			<ScrollView
+				horizontal
 				key={generateRandomString()}
 				contentContainerStyle={containerStyle}
-				horizontal={true}
 			>
 				<Text style={textStyle}>{text}</Text>
 			</ScrollView>

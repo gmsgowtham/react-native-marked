@@ -1,4 +1,10 @@
-import React, { memo, ReactNode, useCallback, useMemo } from "react";
+import React, {
+	memo,
+	ReactElement,
+	ReactNode,
+	useCallback,
+	useMemo,
+} from "react";
 import { FlatList, useColorScheme } from "react-native";
 import { marked } from "marked";
 import Parser from "./Parser";
@@ -25,7 +31,7 @@ const Markdown = ({
 	}, [value, styles, baseUrl]);
 
 	const renderItem = useCallback(({ item }: { item: ReactNode }) => {
-		return <>{item}</>;
+		return item as ReactElement;
 	}, []);
 
 	const keyExtractor = useCallback(
@@ -35,10 +41,10 @@ const Markdown = ({
 
 	return (
 		<FlatList
+			removeClippedSubviews
 			keyExtractor={keyExtractor}
 			maxToRenderPerBatch={8}
 			initialNumToRender={8}
-			removeClippedSubviews={true}
 			style={styles.container}
 			{...flatListProps}
 			data={rnElements}
