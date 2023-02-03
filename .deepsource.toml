@@ -1,7 +1,10 @@
 version = 1
 
+test_patterns = ["*/src/*/__test__/**"]
+
 [[analyzers]]
 name = "javascript"
 
   [analyzers.meta]
   plugins = ["react"]
+  dialect = "typescript"
