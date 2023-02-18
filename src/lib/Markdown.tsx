@@ -24,8 +24,12 @@ const Markdown = ({
 		[userStyles, colorScheme, theme],
 	);
 
+	const parser = useMemo(
+		() => new Parser({ styles, baseUrl }),
+		[styles, baseUrl],
+	);
+
 	const rnElements = useMemo(() => {
-		const parser = new Parser({ styles, baseUrl });
 		const tokens = marked.lexer(value, { mangle: false, gfm: true });
 		return parser.parse(tokens);
 	}, [value, styles, baseUrl]);
