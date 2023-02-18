@@ -26,173 +26,174 @@ class Parser {
 	}
 
 	parse(tokens: marked.Token[]) {
-		const elements: ReactNode[] = tokens.map((token) => {
-			switch (token.type) {
-				case "space": {
-					return null;
-				}
-				case "paragraph": {
-					const paragraphChildren =
-						this.getNormalizedSiblingNodesForBlockAndInlineTokens(
-							token.tokens,
-							this.styles.text,
-						);
-
-					return this.renderer.getViewNode(
-						paragraphChildren,
-						this.styles.paragraph,
-					);
-				}
-				case "blockquote": {
-					return this.renderer.getBlockquoteNode(
-						this.parse(token.tokens),
-						this.styles.blockquote,
-					);
-				}
-				case "heading": {
-					const styles = this.headingStylesMap[token.depth];
-					return this.renderer.getTextNode(
-						this.parseInline(token.tokens, styles),
-						styles,
-					);
-				}
-				case "code": {
-					return this.renderer.getCodeBlockNode(
-						token.text,
-						this.styles.code,
-						this.styles.em,
-					);
-				}
-				case "hr": {
-					return this.renderer.getViewNode(null, this.styles.hr);
-				}
-				case "list": {
-					const li = token.items.map((item) => {
-						const children = item.tokens.map((cItem) => {
-							if (cItem.type === "text") {
-								/* getViewNode since tokens could contain a block like elements (i.e. img) */
-								const childTokens = (cItem as marked.Tokens.Text).tokens || [];
-								const listChildren =
-									this.getNormalizedSiblingNodesForBlockAndInlineTokens(
-										childTokens,
-										this.styles.li,
-									);
-								return this.renderer.getViewNode(listChildren, this.styles.li);
-							}
-
-							/* Parse the nested token */
-							return this.parse([cItem]);
-						});
-						return this.renderer.getViewNode(children, this.styles.li);
-					});
-					return this.renderer.getListNode(
-						token.ordered,
-						li,
-						this.styles.list,
-						this.styles.li,
-					);
-				}
-				default:
-					return this.parseInline([token]);
-			}
-		});
-		return elements.filter((element) => element !== null);
+		return this._parse(tokens);
 	}
 
-	parseInline(
+	private _parse(
 		tokens: marked.Token[],
 		styles?: ViewStyle | TextStyle | ImageStyle,
 	) {
 		const elements: ReactNode[] = tokens.map((token) => {
-			switch (token.type) {
-				case "escape": {
-					return this.renderer.getTextNode(token.text, {
-						...this.styles.text,
-						...styles,
-					});
-				}
-				case "link": {
-					// Note: Linking Images (https://www.markdownguide.org/basic-syntax/#linking-images) are wrapped
-					// in paragraph token, so will be handled via `getNormalizedSiblingNodesForBlockAndInlineTokens`
-					const linkStyle = {
-						...styles,
-						...this.styles.link, // To override color property
-					};
-					const href = getValidURL(this.baseUrl, token.href);
-					return this.renderer.getTextLinkNode(
-						this.parseInline(token.tokens, linkStyle),
-						href,
-						linkStyle,
-					);
-				}
-				case "image": {
-					return this.renderer.getImageNode(
-						token.href,
-						token.text || token.title,
-						this.styles.image,
-					);
-				}
-				case "strong": {
-					const boldStyle = {
-						...this.styles.strong,
-						...styles,
-					};
-					return this.renderer.getTextNode(
-						this.parseInline(token.tokens, boldStyle),
-						boldStyle,
-					);
-				}
-				case "em": {
-					const italicStyle = {
-						...this.styles.em,
-						...styles,
-					};
-					return this.renderer.getTextNode(
-						this.parseInline(token.tokens, italicStyle),
-						italicStyle,
-					);
-				}
-				case "codespan": {
-					return this.renderer.getTextNode(token.text, {
-						...this.styles.codespan,
-						...styles,
-					});
-				}
-				case "br": {
-					return this.renderer.getTextNode("\n", {});
-				}
-				case "del": {
-					const strikethroughStyle = {
-						...this.styles.strikethrough,
-						...styles,
-					};
-					return this.renderer.getTextNode(
-						this.parseInline(token.tokens, strikethroughStyle),
-						strikethroughStyle,
-					);
-				}
-				case "text":
-				case "html": {
-					if (token.type === "html") {
-						console.warn(
-							"react-native-marked: rendering html from markdown is not supported",
-						);
-					}
-
-					return this.renderer.getTextNode(token.raw, {
-						...this.styles.text,
-						...styles,
-					});
-				}
-				default: {
-					console.warn(
-						`react-native-marked: token with '${token.type}' type was not found.`,
-					);
-					return null;
-				}
-			}
+			return this._parseToken(token, styles);
 		});
 		return elements.filter((element) => element !== null);
+	}
+
+	private _parseToken(
+		token: marked.Token,
+		styles?: ViewStyle | TextStyle | ImageStyle,
+	): ReactNode {
+		switch (token.type) {
+			case "space": {
+				return null;
+			}
+			case "paragraph": {
+				const paragraphChildren =
+					this.getNormalizedSiblingNodesForBlockAndInlineTokens(
+						token.tokens,
+						this.styles.text,
+					);
+
+				return this.renderer.getViewNode(
+					paragraphChildren,
+					this.styles.paragraph,
+				);
+			}
+			case "blockquote": {
+				return this.renderer.getBlockquoteNode(
+					this._parse(token.tokens),
+					this.styles.blockquote,
+				);
+			}
+			case "heading": {
+				const styles = this.headingStylesMap[token.depth];
+				return this.renderer.getTextNode(
+					this._parse(token.tokens, styles),
+					styles,
+				);
+			}
+			case "code": {
+				return this.renderer.getCodeBlockNode(
+					token.text,
+					this.styles.code,
+					this.styles.em,
+				);
+			}
+			case "hr": {
+				return this.renderer.getViewNode(null, this.styles.hr);
+			}
+			case "list": {
+				const li = token.items.map((item) => {
+					const children = item.tokens.map((cItem) => {
+						if (cItem.type === "text") {
+							/* getViewNode since tokens could contain a block like elements (i.e. img) */
+							const childTokens = (cItem as marked.Tokens.Text).tokens || [];
+							const listChildren =
+								this.getNormalizedSiblingNodesForBlockAndInlineTokens(
+									childTokens,
+									this.styles.li,
+								);
+							return this.renderer.getViewNode(listChildren, this.styles.li);
+						}
+
+						/* Parse the nested token */
+						return this._parseToken(cItem);
+					});
+					return this.renderer.getViewNode(children, this.styles.li);
+				});
+				return this.renderer.getListNode(
+					token.ordered,
+					li,
+					this.styles.list,
+					this.styles.li,
+				);
+			}
+			case "escape": {
+				return this.renderer.getTextNode(token.text, {
+					...this.styles.text,
+					...styles,
+				});
+			}
+			case "link": {
+				// Note: Linking Images (https://www.markdownguide.org/basic-syntax/#linking-images) are wrapped
+				// in paragraph token, so will be handled via `getNormalizedSiblingNodesForBlockAndInlineTokens`
+				const linkStyle = {
+					...styles,
+					...this.styles.link, // To override color property
+				};
+				const href = getValidURL(this.baseUrl, token.href);
+				return this.renderer.getTextLinkNode(
+					this._parse(token.tokens, linkStyle),
+					href,
+					linkStyle,
+				);
+			}
+			case "image": {
+				return this.renderer.getImageNode(
+					token.href,
+					token.text || token.title,
+					this.styles.image,
+				);
+			}
+			case "strong": {
+				const boldStyle = {
+					...this.styles.strong,
+					...styles,
+				};
+				return this.renderer.getTextNode(
+					this._parse(token.tokens, boldStyle),
+					boldStyle,
+				);
+			}
+			case "em": {
+				const italicStyle = {
+					...this.styles.em,
+					...styles,
+				};
+				return this.renderer.getTextNode(
+					this._parse(token.tokens, italicStyle),
+					italicStyle,
+				);
+			}
+			case "codespan": {
+				return this.renderer.getTextNode(token.text, {
+					...this.styles.codespan,
+					...styles,
+				});
+			}
+			case "br": {
+				return this.renderer.getTextNode("\n", {});
+			}
+			case "del": {
+				const strikethroughStyle = {
+					...this.styles.strikethrough,
+					...styles,
+				};
+				return this.renderer.getTextNode(
+					this._parse(token.tokens, strikethroughStyle),
+					strikethroughStyle,
+				);
+			}
+			case "text":
+			case "html": {
+				if (token.type === "html") {
+					console.warn(
+						"react-native-marked: rendering html from markdown is not supported",
+					);
+				}
+
+				return this.renderer.getTextNode(token.raw, {
+					...this.styles.text,
+					...styles,
+				});
+			}
+			default: {
+				console.warn(
+					`react-native-marked: token with '${token.type}' type was not found.`,
+				);
+				return null;
+			}
+		}
 	}
 
 	private getNormalizedSiblingNodesForBlockAndInlineTokens = (
@@ -215,14 +216,14 @@ class Parser {
 					t.tokens[0].type === "image")
 			) {
 				// Render existing inline tokens in the queue
-				const parsed = this.parseInline(tokenRenderQueue);
+				const parsed = this._parse(tokenRenderQueue);
 				if (parsed.length > 0) {
 					siblingNodes.push(this.renderer.getTextNode(parsed, textStyle));
 				}
 
 				// Render the current block token
 				if (t.type === "image") {
-					siblingNodes.push(this.parseInline([t]));
+					siblingNodes.push(this._parseToken(t));
 				} else if (t.type === "link") {
 					const imageToken = t.tokens[0] as marked.Tokens.Image;
 					const href = getValidURL(this.baseUrl, t.href);
@@ -245,7 +246,7 @@ class Parser {
 		/* Remaining temp tokens if any */
 		if (tokenRenderQueue.length > 0) {
 			siblingNodes.push(
-				this.renderer.getTextNode(this.parseInline(tokenRenderQueue), {}),
+				this.renderer.getTextNode(this._parse(tokenRenderQueue), {}),
 			);
 		}
 
