@@ -51,7 +51,7 @@
     "@babel/core": "7.21.0",
     "@babel/preset-env": "7.20.2",
     "@commitlint/config-conventional": "17.4.4",
-    "@evilmartians/lefthook": "1.2.9",
+    "@evilmartians/lefthook": "1.3.0",
     "@release-it/conventional-changelog": "5.1.1",
     "@testing-library/jest-native": "5.4.2",
     "@testing-library/react-native": "11.5.2",
