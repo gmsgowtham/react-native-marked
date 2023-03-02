@@ -4328,10 +4328,10 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
-danger@11.2.3:
-  version "11.2.3"
-  resolved "https://registry.yarnpkg.com/danger/-/danger-11.2.3.tgz#2a0a6d3581478005d0f2abf5b3995a8409165067"
-  integrity sha512-NNDOUDZWCi1fqEicSWbnk8lOOoqY+vwekB8twUiknEyyvDDKypWEcUolq6SNg9Kd6HMqnX80K8U8nqzmDRC1QQ==
+danger@11.2.4:
+  version "11.2.4"
+  resolved "https://registry.yarnpkg.com/danger/-/danger-11.2.4.tgz#b11e2803350cd7e4695b44c525968d4d39ae5810"
+  integrity sha512-9tSrDm79+vWijG3zLXp6DQFmUqFLXg8Fl3jZmPhymlfsmAX0NaAc4HbC81pTOsSgOdiJfJHWpDwKu7fsTktFOQ==
   dependencies:
     "@gitbeaker/node" "^21.3.0"
     "@octokit/rest" "^18.12.0"
