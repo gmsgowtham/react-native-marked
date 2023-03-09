@@ -23,9 +23,9 @@ describe("Renderer", () => {
 	themes.forEach((theme) => {
 		const styles = getStyles(userStyles, theme);
 		describe(`${theme} theme`, () => {
-			describe("getTextNode", () => {
+			describe("Text Nodes", () => {
 				it("returns a Text node", () => {
-					const TextNode = renderer.getTextNode("Hello world", styles.text);
+					const TextNode = renderer.text("Hello world", styles.text);
 
 					const r = render(TextNode);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
@@ -34,8 +34,8 @@ describe("Renderer", () => {
 				});
 
 				it("returns a wrapped Text node", () => {
-					const TextNodeChild = renderer.getTextNode("Hello world", {});
-					const TextNode = renderer.getTextNode([TextNodeChild], styles.text);
+					const TextNodeChild = renderer.text("Hello world", {});
+					const TextNode = renderer.text([TextNodeChild], styles.text);
 					const r = render(TextNode);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					const tree = r.toJSON();
@@ -43,20 +43,17 @@ describe("Renderer", () => {
 				});
 
 				it("returns a wrapped Text node with styles", () => {
-					const TextNodeChild = renderer.getTextNode(
-						"Hello world",
-						styles.text,
-					);
-					const TextNode = renderer.getTextNode([TextNodeChild], styles.text);
+					const TextNodeChild = renderer.text("Hello world", styles.text);
+					const TextNode = renderer.text([TextNodeChild], styles.text);
 					const r = render(TextNode);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 			});
-			describe("getTextLinkNode", () => {
+			describe("Link Nodes", () => {
 				it("returns a Text Link node", () => {
-					const LinkNode = renderer.getTextLinkNode(
+					const LinkNode = renderer.link(
 						"Link",
 						"https://example.com",
 						styles.link,
@@ -71,7 +68,7 @@ describe("Renderer", () => {
 			});
 			describe("getImageLinkNode", () => {
 				it("returns a Image Link node", () => {
-					const LinkNode = renderer.getImageLinkNode(
+					const LinkNode = renderer.linkImage(
 						"https://example.com",
 						"https://dummyimage.com/100x100/fff/aaa",
 						"Hello world",
@@ -80,15 +77,15 @@ describe("Renderer", () => {
 					expect(tree).toMatchSnapshot();
 				});
 			});
-			describe("getViewNode", () => {
+			describe("View Nodes", () => {
 				it("returns a paragraph View node", () => {
-					const TextNode = renderer.getTextNode("Hello world", styles.text);
-					const LinkNode = renderer.getTextLinkNode(
+					const TextNode = renderer.text("Hello world", styles.text);
+					const LinkNode = renderer.link(
 						"Link",
 						"https://example.com",
 						styles.link,
 					);
-					const ViewNode = renderer.getViewNode(
+					const ViewNode = renderer.paragraph(
 						[TextNode, LinkNode],
 						styles.paragraph,
 					);
@@ -101,7 +98,7 @@ describe("Renderer", () => {
 				});
 
 				it("returns a hr View node", () => {
-					const ViewNode = renderer.getViewNode(null, styles.hr);
+					const ViewNode = renderer.hr(styles.hr);
 					const r = render(ViewNode);
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
@@ -109,7 +106,7 @@ describe("Renderer", () => {
 			});
 			describe("getCodeBlockNode", () => {
 				it("returns a Code block (horizontal ScrollView)", () => {
-					const CodeBlock = renderer.getCodeBlockNode(
+					const CodeBlock = renderer.code(
 						"print('hello')",
 						styles.code,
 						styles.em,
@@ -122,13 +119,13 @@ describe("Renderer", () => {
 			});
 			describe("getBlockquoteNode", () => {
 				it("returns a Blockquote", () => {
-					const TextNode = renderer.getTextNode("Hello world", styles.text);
-					const LinkNode = renderer.getTextLinkNode(
+					const TextNode = renderer.text("Hello world", styles.text);
+					const LinkNode = renderer.link(
 						"Link",
 						"https://example.com",
 						styles.link,
 					);
-					const Blockquote = renderer.getBlockquoteNode(
+					const Blockquote = renderer.blockquote(
 						[TextNode, LinkNode],
 						styles.blockquote,
 					);
@@ -142,7 +139,7 @@ describe("Renderer", () => {
 			});
 			describe("getImageNode", () => {
 				it("returns a Image", () => {
-					const ImageNode = renderer.getImageNode(
+					const ImageNode = renderer.image(
 						"https://picsum.photos/100/100",
 						"Hello world",
 					);
@@ -152,10 +149,10 @@ describe("Renderer", () => {
 			});
 			describe("getListNode", () => {
 				it("returns Ordered List", () => {
-					const TextNode1 = renderer.getTextNode("Hello world 1", styles.li);
-					const TextNode2 = renderer.getTextNode("Hello world 2", styles.li);
-					const TextNode3 = renderer.getTextNode("Hello world 3", styles.li);
-					const OL = renderer.getListNode(
+					const TextNode1 = renderer.text("Hello world 1", styles.li);
+					const TextNode2 = renderer.text("Hello world 2", styles.li);
+					const TextNode3 = renderer.text("Hello world 3", styles.li);
+					const OL = renderer.list(
 						true,
 						[TextNode1, TextNode2, TextNode3],
 						styles.list,
@@ -169,10 +166,10 @@ describe("Renderer", () => {
 					expect(tree).toMatchSnapshot();
 				});
 				it("returns Un-Ordered List", () => {
-					const TextNode1 = renderer.getTextNode("Hello world 1", styles.li);
-					const TextNode2 = renderer.getTextNode("Hello world 2", styles.li);
-					const TextNode3 = renderer.getTextNode("Hello world 3", styles.li);
-					const OL = renderer.getListNode(
+					const TextNode1 = renderer.text("Hello world 1", styles.li);
+					const TextNode2 = renderer.text("Hello world 2", styles.li);
+					const TextNode3 = renderer.text("Hello world 3", styles.li);
+					const OL = renderer.list(
 						false,
 						[TextNode1, TextNode2, TextNode3],
 						styles.list,

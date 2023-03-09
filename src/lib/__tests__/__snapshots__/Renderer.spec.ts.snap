@@ -1,5 +1,121 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Renderer dark theme Link Nodes returns a Text Link node 1`] = `
+<Text
+  accessibilityHint="Opens in a new window"
+  accessibilityRole="link"
+  onPress={[Function]}
+  style={
+    {
+      "color": "#58a6ff",
+      "fontSize": 16,
+      "fontStyle": "italic",
+      "lineHeight": 24,
+    }
+  }
+>
+  Link
+</Text>
+`;
+
+exports[`Renderer dark theme Text Nodes returns a Text node 1`] = `
+<Text
+  style={
+    {
+      "fontSize": 24,
+    }
+  }
+>
+  Hello world
+</Text>
+`;
+
+exports[`Renderer dark theme Text Nodes returns a wrapped Text node 1`] = `
+<Text
+  style={
+    {
+      "fontSize": 24,
+    }
+  }
+>
+  <Text
+    style={{}}
+  >
+    Hello world
+  </Text>
+</Text>
+`;
+
+exports[`Renderer dark theme Text Nodes returns a wrapped Text node with styles 1`] = `
+<Text
+  style={
+    {
+      "fontSize": 24,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "fontSize": 24,
+      }
+    }
+  >
+    Hello world
+  </Text>
+</Text>
+`;
+
+exports[`Renderer dark theme View Nodes returns a hr View node 1`] = `
+<View
+  style={
+    {
+      "borderBottomColor": "#30363d",
+      "borderBottomWidth": 1,
+      "marginVertical": 4,
+    }
+  }
+/>
+`;
+
+exports[`Renderer dark theme View Nodes returns a paragraph View node 1`] = `
+<View
+  style={
+    {
+      "color": "#ffffff",
+      "fontSize": 16,
+      "lineHeight": 24,
+      "paddingVertical": 8,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "fontSize": 24,
+      }
+    }
+  >
+    Hello world
+  </Text>
+  <Text
+    accessibilityHint="Opens in a new window"
+    accessibilityRole="link"
+    onPress={[Function]}
+    style={
+      {
+        "color": "#58a6ff",
+        "fontSize": 16,
+        "fontStyle": "italic",
+        "lineHeight": 24,
+      }
+    }
+  >
+    Link
+  </Text>
+</View>
+`;
+
 exports[`Renderer dark theme getBlockquoteNode returns a Blockquote 1`] = `
 <View
   style={
@@ -520,7 +636,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
 ]
 `;
 
-exports[`Renderer dark theme getTextLinkNode returns a Text Link node 1`] = `
+exports[`Renderer light theme Link Nodes returns a Text Link node 1`] = `
 <Text
   accessibilityHint="Opens in a new window"
   accessibilityRole="link"
@@ -538,7 +654,7 @@ exports[`Renderer dark theme getTextLinkNode returns a Text Link node 1`] = `
 </Text>
 `;
 
-exports[`Renderer dark theme getTextNode returns a Text node 1`] = `
+exports[`Renderer light theme Text Nodes returns a Text node 1`] = `
 <Text
   style={
     {
@@ -550,7 +666,7 @@ exports[`Renderer dark theme getTextNode returns a Text node 1`] = `
 </Text>
 `;
 
-exports[`Renderer dark theme getTextNode returns a wrapped Text node 1`] = `
+exports[`Renderer light theme Text Nodes returns a wrapped Text node 1`] = `
 <Text
   style={
     {
@@ -566,7 +682,7 @@ exports[`Renderer dark theme getTextNode returns a wrapped Text node 1`] = `
 </Text>
 `;
 
-exports[`Renderer dark theme getTextNode returns a wrapped Text node with styles 1`] = `
+exports[`Renderer light theme Text Nodes returns a wrapped Text node with styles 1`] = `
 <Text
   style={
     {
@@ -586,11 +702,11 @@ exports[`Renderer dark theme getTextNode returns a wrapped Text node with styles
 </Text>
 `;
 
-exports[`Renderer dark theme getViewNode returns a hr View node 1`] = `
+exports[`Renderer light theme View Nodes returns a hr View node 1`] = `
 <View
   style={
     {
-      "borderBottomColor": "#30363d",
+      "borderBottomColor": "#d0d7de",
       "borderBottomWidth": 1,
       "marginVertical": 4,
     }
@@ -598,11 +714,11 @@ exports[`Renderer dark theme getViewNode returns a hr View node 1`] = `
 />
 `;
 
-exports[`Renderer dark theme getViewNode returns a paragraph View node 1`] = `
+exports[`Renderer light theme View Nodes returns a paragraph View node 1`] = `
 <View
   style={
     {
-      "color": "#ffffff",
+      "color": "#333333",
       "fontSize": 16,
       "lineHeight": 24,
       "paddingVertical": 8,
@@ -1154,120 +1270,4 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
     </Text>
   </View>,
 ]
-`;
-
-exports[`Renderer light theme getTextLinkNode returns a Text Link node 1`] = `
-<Text
-  accessibilityHint="Opens in a new window"
-  accessibilityRole="link"
-  onPress={[Function]}
-  style={
-    {
-      "color": "#58a6ff",
-      "fontSize": 16,
-      "fontStyle": "italic",
-      "lineHeight": 24,
-    }
-  }
->
-  Link
-</Text>
-`;
-
-exports[`Renderer light theme getTextNode returns a Text node 1`] = `
-<Text
-  style={
-    {
-      "fontSize": 24,
-    }
-  }
->
-  Hello world
-</Text>
-`;
-
-exports[`Renderer light theme getTextNode returns a wrapped Text node 1`] = `
-<Text
-  style={
-    {
-      "fontSize": 24,
-    }
-  }
->
-  <Text
-    style={{}}
-  >
-    Hello world
-  </Text>
-</Text>
-`;
-
-exports[`Renderer light theme getTextNode returns a wrapped Text node with styles 1`] = `
-<Text
-  style={
-    {
-      "fontSize": 24,
-    }
-  }
->
-  <Text
-    style={
-      {
-        "fontSize": 24,
-      }
-    }
-  >
-    Hello world
-  </Text>
-</Text>
-`;
-
-exports[`Renderer light theme getViewNode returns a hr View node 1`] = `
-<View
-  style={
-    {
-      "borderBottomColor": "#d0d7de",
-      "borderBottomWidth": 1,
-      "marginVertical": 4,
-    }
-  }
-/>
-`;
-
-exports[`Renderer light theme getViewNode returns a paragraph View node 1`] = `
-<View
-  style={
-    {
-      "color": "#333333",
-      "fontSize": 16,
-      "lineHeight": 24,
-      "paddingVertical": 8,
-    }
-  }
->
-  <Text
-    style={
-      {
-        "fontSize": 24,
-      }
-    }
-  >
-    Hello world
-  </Text>
-  <Text
-    accessibilityHint="Opens in a new window"
-    accessibilityRole="link"
-    onPress={[Function]}
-    style={
-      {
-        "color": "#58a6ff",
-        "fontSize": 16,
-        "fontStyle": "italic",
-        "lineHeight": 24,
-      }
-    }
-  >
-    Link
-  </Text>
-</View>
 `;

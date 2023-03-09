@@ -16,39 +16,92 @@ import { generateRandomString } from "../utils/string";
 import { onLinkPress } from "../utils/handlers";
 
 class Renderer {
-	getTextNode = (children: string | ReactNode[], styles?: TextStyle) => {
-		return (
-			<Text key={generateRandomString()} style={styles}>
-				{children}
-			</Text>
-		);
-	};
+	paragraph = (children: ReactNode[], styles?: ViewStyle) =>
+		this._getViewNode(children, styles);
 
-	getTextLinkNode = (
-		children: string | ReactNode[],
-		href: string,
-		styles?: TextStyle,
-	) => {
-		return (
-			<Text
-				accessibilityRole="link"
-				accessibilityHint="Opens in a new window"
-				key={generateRandomString()}
-				onPress={onLinkPress(href)}
-				style={styles}
-			>
-				{children}
-			</Text>
-		);
-	};
+	blockquote = (children: ReactNode[], styles?: ViewStyle) =>
+		this._getBlockquoteNode(children, styles);
 
-	getImageLinkNode = (
+	heading = (text: string | ReactNode[], styles?: TextStyle) =>
+		this._getTextNode(text, styles);
+
+	code = (text: string, containerStyle?: ViewStyle, textStyle?: TextStyle) => (
+		<ScrollView
+			horizontal
+			key={generateRandomString()}
+			contentContainerStyle={containerStyle}
+		>
+			<Text style={textStyle}>{text}</Text>
+		</ScrollView>
+	);
+
+	hr = (styles?: ViewStyle) => this._getViewNode(null, styles);
+
+	listItem = (children: ReactNode[], styles?: ViewStyle) =>
+		this._getViewNode(children, styles);
+
+	list = (
+		ordered: boolean,
+		li: ReactNode[],
+		listStyle?: ViewStyle,
+		textStyle?: TextStyle,
+	) => (
+		<MarkedList
+			counterRenderer={ordered ? Decimal : Disc}
+			markerTextStyle={textStyle}
+			markerBoxStyle={listStyle}
+			key={generateRandomString()}
+		>
+			{li.map((node) => node)}
+		</MarkedList>
+	);
+
+	escape = (text: string, styles?: TextStyle) =>
+		this._getTextNode(text, styles);
+
+	link = (children: string | ReactNode[], href: string, styles?: TextStyle) => (
+		<Text
+			accessibilityRole="link"
+			accessibilityHint="Opens in a new window"
+			key={generateRandomString()}
+			onPress={onLinkPress(href)}
+			style={styles}
+		>
+			{children}
+		</Text>
+	);
+
+	image = (uri: string, alt?: string, style?: ImageStyle) => (
+		<MDImage key={generateRandomString()} uri={uri} alt={alt} style={style} />
+	);
+
+	strong = (children: ReactNode[], styles?: TextStyle) =>
+		this._getTextNode(children, styles);
+
+	em = (children: ReactNode[], styles?: TextStyle) =>
+		this._getTextNode(children, styles);
+
+	codespan = (text: string, styles?: TextStyle) =>
+		this._getTextNode(text, styles);
+
+	br = () => this._getTextNode("\n", {});
+
+	del = (children: ReactNode[], styles?: TextStyle) =>
+		this._getTextNode(children, styles);
+
+	text = (text: string | ReactNode[], styles?: TextStyle) =>
+		this._getTextNode(text, styles);
+
+	html = (text: string | ReactNode[], styles?: TextStyle) =>
+		this._getTextNode(text, styles);
+
+	linkImage = (
 		href: string,
 		imageUrl: string,
 		alt?: string,
 		style?: ImageStyle,
 	) => {
-		const imageNode = this.getImageNode(imageUrl, alt, style);
+		const imageNode = this.image(imageUrl, alt, style);
 		return (
 			<TouchableHighlight
 				accessibilityRole="link"
@@ -61,61 +114,32 @@ class Renderer {
 		);
 	};
 
-	getViewNode(children: ReactNode[] | null, styles?: ViewStyle) {
+	private _getTextNode = (
+		children: string | ReactNode[],
+		styles?: TextStyle,
+	) => {
+		return (
+			<Text key={generateRandomString()} style={styles}>
+				{children}
+			</Text>
+		);
+	};
+
+	private _getViewNode = (children: ReactNode[] | null, styles?: ViewStyle) => {
 		return (
 			<View key={generateRandomString()} style={styles}>
 				{children}
 			</View>
 		);
-	}
+	};
 
-	getCodeBlockNode(
-		text: string,
-		containerStyle?: ViewStyle,
-		textStyle?: TextStyle,
-	) {
-		return (
-			<ScrollView
-				horizontal
-				key={generateRandomString()}
-				contentContainerStyle={containerStyle}
-			>
-				<Text style={textStyle}>{text}</Text>
-			</ScrollView>
-		);
-	}
-
-	getBlockquoteNode(children: ReactNode[], styles?: ViewStyle) {
+	private _getBlockquoteNode = (children: ReactNode[], styles?: ViewStyle) => {
 		return (
 			<View key={generateRandomString()} style={styles}>
 				{children}
 			</View>
 		);
-	}
-
-	getImageNode(uri: string, alt?: string, style?: ImageStyle) {
-		return (
-			<MDImage key={generateRandomString()} uri={uri} alt={alt} style={style} />
-		);
-	}
-
-	getListNode(
-		ordered: boolean,
-		li: ReactNode[],
-		listStyle?: ViewStyle,
-		textStyle?: TextStyle,
-	) {
-		return (
-			<MarkedList
-				counterRenderer={ordered ? Decimal : Disc}
-				markerTextStyle={textStyle}
-				markerBoxStyle={listStyle}
-				key={generateRandomString()}
-			>
-				{li.map((node) => node)}
-			</MarkedList>
-		);
-	}
+	};
 }
 
 export default Renderer;
