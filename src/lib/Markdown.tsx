@@ -8,6 +8,7 @@ import React, {
 import { FlatList, useColorScheme } from "react-native";
 import { marked } from "marked";
 import Parser from "./Parser";
+import Renderer from "./Renderer";
 import getStyles from "../theme/styles";
 import type { MarkdownProps } from "./types";
 
@@ -16,6 +17,7 @@ const Markdown = ({
 	flatListProps,
 	theme,
 	baseUrl,
+	renderer: customRenderer,
 	styles: userStyles,
 }: MarkdownProps) => {
 	const colorScheme = useColorScheme();
@@ -25,7 +27,7 @@ const Markdown = ({
 	);
 
 	const parser = useMemo(
-		() => new Parser({ styles, baseUrl }),
+		() => new Parser({ styles, baseUrl, renderer: customRenderer ?? Renderer }),
 		[styles, baseUrl],
 	);
 

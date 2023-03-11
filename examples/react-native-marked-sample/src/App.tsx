@@ -1,13 +1,34 @@
-import * as React from "react";
+import React, { ReactNode } from "react";
 import {
 	SafeAreaView,
 	StyleSheet,
 	StatusBar,
 	useColorScheme,
+	Text,
+	TextStyle,
 } from "react-native";
-import Markdown from "react-native-marked";
+import Markdown, { Renderer } from "react-native-marked";
 
 import { MD_STRING } from "./const";
+
+class CustomRenderer extends Renderer {
+	constructor() {
+		super();
+	}
+
+	link = (
+		children: ReactNode[] | string,
+		_href: string,
+		styles?: TextStyle,
+	) => {
+		console.log("child");
+		return (
+			<Text key={this.getKey()} style={styles}>
+				{children}
+			</Text>
+		);
+	};
+}
 
 export default function App() {
 	const theme = useColorScheme();
@@ -23,6 +44,12 @@ export default function App() {
 					value={MD_STRING}
 					flatListProps={{
 						contentContainerStyle: styles.container,
+					}}
+					renderer={CustomRenderer}
+					styles={{
+						link: {
+							color: "#ff0000",
+						},
 					}}
 				/>
 			</SafeAreaView>

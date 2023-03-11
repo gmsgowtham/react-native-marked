@@ -11,34 +11,39 @@ import {
 import MarkedList from "@jsamr/react-native-li";
 import Disc from "@jsamr/counter-style/presets/disc";
 import Decimal from "@jsamr/counter-style/presets/decimal";
+import { Slugger } from "marked";
 import MDImage from "./../components/MDImage";
-import { generateRandomString } from "../utils/string";
 import { onLinkPress } from "../utils/handlers";
 
 class Renderer {
+	#slugger: Slugger;
+	constructor() {
+		this.#slugger = new Slugger();
+	}
+
 	paragraph = (children: ReactNode[], styles?: ViewStyle) =>
-		this._getViewNode(children, styles);
+		this.#getViewNode(children, styles);
 
 	blockquote = (children: ReactNode[], styles?: ViewStyle) =>
-		this._getBlockquoteNode(children, styles);
+		this.#getBlockquoteNode(children, styles);
 
 	heading = (text: string | ReactNode[], styles?: TextStyle) =>
-		this._getTextNode(text, styles);
+		this.#getTextNode(text, styles);
 
 	code = (text: string, containerStyle?: ViewStyle, textStyle?: TextStyle) => (
 		<ScrollView
 			horizontal
-			key={generateRandomString()}
+			key={this.getKey()}
 			contentContainerStyle={containerStyle}
 		>
 			<Text style={textStyle}>{text}</Text>
 		</ScrollView>
 	);
 
-	hr = (styles?: ViewStyle) => this._getViewNode(null, styles);
+	hr = (styles?: ViewStyle) => this.#getViewNode(null, styles);
 
 	listItem = (children: ReactNode[], styles?: ViewStyle) =>
-		this._getViewNode(children, styles);
+		this.#getViewNode(children, styles);
 
 	list = (
 		ordered: boolean,
@@ -50,50 +55,52 @@ class Renderer {
 			counterRenderer={ordered ? Decimal : Disc}
 			markerTextStyle={textStyle}
 			markerBoxStyle={listStyle}
-			key={generateRandomString()}
+			key={this.getKey()}
 		>
 			{li.map((node) => node)}
 		</MarkedList>
 	);
 
 	escape = (text: string, styles?: TextStyle) =>
-		this._getTextNode(text, styles);
+		this.#getTextNode(text, styles);
 
-	link = (children: string | ReactNode[], href: string, styles?: TextStyle) => (
-		<Text
-			accessibilityRole="link"
-			accessibilityHint="Opens in a new window"
-			key={generateRandomString()}
-			onPress={onLinkPress(href)}
-			style={styles}
-		>
-			{children}
-		</Text>
-	);
+	link = (children: string | ReactNode[], href: string, styles?: TextStyle) => {
+		return (
+			<Text
+				accessibilityRole="link"
+				accessibilityHint="Opens in a new window"
+				key={this.getKey()}
+				onPress={onLinkPress(href)}
+				style={styles}
+			>
+				{children}
+			</Text>
+		);
+	};
 
 	image = (uri: string, alt?: string, style?: ImageStyle) => (
-		<MDImage key={generateRandomString()} uri={uri} alt={alt} style={style} />
+		<MDImage key={this.getKey()} uri={uri} alt={alt} style={style} />
 	);
 
 	strong = (children: ReactNode[], styles?: TextStyle) =>
-		this._getTextNode(children, styles);
+		this.#getTextNode(children, styles);
 
 	em = (children: ReactNode[], styles?: TextStyle) =>
-		this._getTextNode(children, styles);
+		this.#getTextNode(children, styles);
 
 	codespan = (text: string, styles?: TextStyle) =>
-		this._getTextNode(text, styles);
+		this.#getTextNode(text, styles);
 
-	br = () => this._getTextNode("\n", {});
+	br = () => this.#getTextNode("\n", {});
 
 	del = (children: ReactNode[], styles?: TextStyle) =>
-		this._getTextNode(children, styles);
+		this.#getTextNode(children, styles);
 
 	text = (text: string | ReactNode[], styles?: TextStyle) =>
-		this._getTextNode(text, styles);
+		this.#getTextNode(text, styles);
 
 	html = (text: string | ReactNode[], styles?: TextStyle) =>
-		this._getTextNode(text, styles);
+		this.#getTextNode(text, styles);
 
 	linkImage = (
 		href: string,
@@ -107,35 +114,36 @@ class Renderer {
 				accessibilityRole="link"
 				accessibilityHint="Opens in a new window"
 				onPress={onLinkPress(href)}
-				key={generateRandomString()}
+				key={this.getKey()}
 			>
 				{imageNode}
 			</TouchableHighlight>
 		);
 	};
 
-	private _getTextNode = (
-		children: string | ReactNode[],
-		styles?: TextStyle,
-	) => {
+	getKey = () => {
+		return this.#slugger.slug("react-native-marked-ele");
+	};
+
+	#getTextNode = (children: string | ReactNode[], styles?: TextStyle) => {
 		return (
-			<Text key={generateRandomString()} style={styles}>
+			<Text key={this.getKey()} style={styles}>
 				{children}
 			</Text>
 		);
 	};
 
-	private _getViewNode = (children: ReactNode[] | null, styles?: ViewStyle) => {
+	#getViewNode = (children: ReactNode[] | null, styles?: ViewStyle) => {
 		return (
-			<View key={generateRandomString()} style={styles}>
+			<View key={this.getKey()} style={styles}>
 				{children}
 			</View>
 		);
 	};
 
-	private _getBlockquoteNode = (children: ReactNode[], styles?: ViewStyle) => {
+	#getBlockquoteNode = (children: ReactNode[], styles?: ViewStyle) => {
 		return (
-			<View key={generateRandomString()} style={styles}>
+			<View key={this.getKey()} style={styles}>
 				{children}
 			</View>
 		);

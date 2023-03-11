@@ -1,10 +1,10 @@
 import type { ReactNode } from "react";
 import type { TextStyle, ViewStyle, ImageStyle } from "react-native";
 import type { marked } from "marked";
-import Renderer from "./Renderer";
 import type { MarkedStyles } from "../theme/types";
 import type { ParserOptions } from "./types";
 import { getValidURL } from "./../utils/url";
+import Renderer from "./Renderer";
 
 class Parser {
 	private renderer;
@@ -12,9 +12,16 @@ class Parser {
 	private headingStylesMap: Record<number, TextStyle | undefined>;
 	private baseUrl: string;
 	constructor(options: ParserOptions) {
+		if (
+			typeof options.renderer === "undefined" ||
+			!(options.renderer.prototype instanceof Renderer)
+		) {
+			throw new Error("Renderer provided is not valid");
+		}
+
 		this.styles = { ...options.styles };
 		this.baseUrl = options.baseUrl ?? "";
-		this.renderer = new Renderer();
+		this.renderer = new options.renderer();
 		this.headingStylesMap = {
 			1: this.styles.h1,
 			2: this.styles.h2,
@@ -172,6 +179,7 @@ class Parser {
 					...styles,
 				});
 			}
+			// TODO: add 'table' case for custom elements
 			default: {
 				console.warn(
 					`react-native-marked: token with '${token.type}' type was not found.`,
