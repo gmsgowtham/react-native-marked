@@ -14,14 +14,14 @@ class Parser {
 	constructor(options: ParserOptions) {
 		if (
 			typeof options.renderer === "undefined" ||
-			!(options.renderer.prototype instanceof Renderer)
+			!(options.renderer instanceof Renderer)
 		) {
 			throw new Error("Renderer provided is not valid");
 		}
 
 		this.styles = { ...options.styles };
 		this.baseUrl = options.baseUrl ?? "";
-		this.renderer = new options.renderer();
+		this.renderer = options.renderer;
 		this.headingStylesMap = {
 			1: this.styles.h1,
 			2: this.styles.h2,

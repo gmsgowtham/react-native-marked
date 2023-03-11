@@ -45,7 +45,7 @@ export default function App() {
 					flatListProps={{
 						contentContainerStyle: styles.container,
 					}}
-					renderer={CustomRenderer}
+					renderer={new CustomRenderer()}
 					styles={{
 						link: {
 							color: "#ff0000",

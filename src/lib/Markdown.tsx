@@ -27,7 +27,12 @@ const Markdown = ({
 	);
 
 	const parser = useMemo(
-		() => new Parser({ styles, baseUrl, renderer: customRenderer ?? Renderer }),
+		() =>
+			new Parser({
+				styles,
+				baseUrl,
+				renderer: customRenderer ?? new Renderer(),
+			}),
 		[styles, baseUrl],
 	);
 
