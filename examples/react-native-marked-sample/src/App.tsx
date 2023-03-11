@@ -30,6 +30,8 @@ class CustomRenderer extends Renderer {
 	};
 }
 
+const renderer = new CustomRenderer();
+
 export default function App() {
 	const theme = useColorScheme();
 	const isLightTheme = theme === "light";
@@ -45,7 +47,7 @@ export default function App() {
 					flatListProps={{
 						contentContainerStyle: styles.container,
 					}}
-					renderer={new CustomRenderer()}
+					renderer={renderer}
 					styles={{
 						link: {
 							color: "#ff0000",
