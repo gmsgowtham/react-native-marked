@@ -21,13 +21,13 @@ class Renderer {
 		this.#slugger = new Slugger();
 	}
 
-	paragraph = (children: ReactNode[], styles?: ViewStyle) =>
+	paragraph = (children: ReactNode[], styles?: ViewStyle): ReactNode =>
 		this.#getViewNode(children, styles);
 
-	blockquote = (children: ReactNode[], styles?: ViewStyle) =>
+	blockquote = (children: ReactNode[], styles?: ViewStyle): ReactNode =>
 		this.#getBlockquoteNode(children, styles);
 
-	heading = (text: string | ReactNode[], styles?: TextStyle) =>
+	heading = (text: string | ReactNode[], styles?: TextStyle): ReactNode =>
 		this.#getTextNode(text, styles);
 
 	code = (
@@ -35,7 +35,7 @@ class Renderer {
 		_language?: string,
 		containerStyle?: ViewStyle,
 		textStyle?: TextStyle,
-	) => (
+	): ReactNode => (
 		<ScrollView
 			horizontal
 			key={this.getKey()}
@@ -45,9 +45,9 @@ class Renderer {
 		</ScrollView>
 	);
 
-	hr = (styles?: ViewStyle) => this.#getViewNode(null, styles);
+	hr = (styles?: ViewStyle): ReactNode => this.#getViewNode(null, styles);
 
-	listItem = (children: ReactNode[], styles?: ViewStyle) =>
+	listItem = (children: ReactNode[], styles?: ViewStyle): ReactNode =>
 		this.#getViewNode(children, styles);
 
 	list = (
@@ -55,7 +55,7 @@ class Renderer {
 		li: ReactNode[],
 		listStyle?: ViewStyle,
 		textStyle?: TextStyle,
-	) => (
+	): ReactNode => (
 		<MarkedList
 			counterRenderer={ordered ? Decimal : Disc}
 			markerTextStyle={textStyle}
@@ -66,10 +66,14 @@ class Renderer {
 		</MarkedList>
 	);
 
-	escape = (text: string, styles?: TextStyle) =>
+	escape = (text: string, styles?: TextStyle): ReactNode =>
 		this.#getTextNode(text, styles);
 
-	link = (children: string | ReactNode[], href: string, styles?: TextStyle) => {
+	link = (
+		children: string | ReactNode[],
+		href: string,
+		styles?: TextStyle,
+	): ReactNode => {
 		return (
 			<Text
 				accessibilityRole="link"
@@ -83,28 +87,28 @@ class Renderer {
 		);
 	};
 
-	image = (uri: string, alt?: string, style?: ImageStyle) => (
+	image = (uri: string, alt?: string, style?: ImageStyle): ReactNode => (
 		<MDImage key={this.getKey()} uri={uri} alt={alt} style={style} />
 	);
 
-	strong = (children: ReactNode[], styles?: TextStyle) =>
+	strong = (children: ReactNode[], styles?: TextStyle): ReactNode =>
 		this.#getTextNode(children, styles);
 
-	em = (children: ReactNode[], styles?: TextStyle) =>
+	em = (children: ReactNode[], styles?: TextStyle): ReactNode =>
 		this.#getTextNode(children, styles);
 
-	codespan = (text: string, styles?: TextStyle) =>
+	codespan = (text: string, styles?: TextStyle): ReactNode =>
 		this.#getTextNode(text, styles);
 
-	br = () => this.#getTextNode("\n", {});
+	br = (): ReactNode => this.#getTextNode("\n", {});
 
-	del = (children: ReactNode[], styles?: TextStyle) =>
+	del = (children: ReactNode[], styles?: TextStyle): ReactNode =>
 		this.#getTextNode(children, styles);
 
-	text = (text: string | ReactNode[], styles?: TextStyle) =>
+	text = (text: string | ReactNode[], styles?: TextStyle): ReactNode =>
 		this.#getTextNode(text, styles);
 
-	html = (text: string | ReactNode[], styles?: TextStyle) =>
+	html = (text: string | ReactNode[], styles?: TextStyle): ReactNode =>
 		this.#getTextNode(text, styles);
 
 	linkImage = (
@@ -112,7 +116,7 @@ class Renderer {
 		imageUrl: string,
 		alt?: string,
 		style?: ImageStyle,
-	) => {
+	): ReactNode => {
 		const imageNode = this.image(imageUrl, alt, style);
 		return (
 			<TouchableHighlight
@@ -130,7 +134,10 @@ class Renderer {
 		return this.#slugger.slug("react-native-marked-ele");
 	};
 
-	#getTextNode = (children: string | ReactNode[], styles?: TextStyle) => {
+	#getTextNode = (
+		children: string | ReactNode[],
+		styles?: TextStyle,
+	): ReactNode => {
 		return (
 			<Text key={this.getKey()} style={styles}>
 				{children}
@@ -138,7 +145,10 @@ class Renderer {
 		);
 	};
 
-	#getViewNode = (children: ReactNode[] | null, styles?: ViewStyle) => {
+	#getViewNode = (
+		children: ReactNode[] | null,
+		styles?: ViewStyle,
+	): ReactNode => {
 		return (
 			<View key={this.getKey()} style={styles}>
 				{children}
@@ -146,7 +156,10 @@ class Renderer {
 		);
 	};
 
-	#getBlockquoteNode = (children: ReactNode[], styles?: ViewStyle) => {
+	#getBlockquoteNode = (
+		children: ReactNode[],
+		styles?: ViewStyle,
+	): ReactNode => {
 		return (
 			<View key={this.getKey()} style={styles}>
 				{children}
