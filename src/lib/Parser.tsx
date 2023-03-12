@@ -75,6 +75,7 @@ class Parser {
 			case "code": {
 				return this.#renderer.code(
 					token.text,
+					token.lang,
 					this.#styles.code,
 					this.#styles.em,
 				);

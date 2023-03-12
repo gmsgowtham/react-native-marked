@@ -30,7 +30,12 @@ class Renderer {
 	heading = (text: string | ReactNode[], styles?: TextStyle) =>
 		this.#getTextNode(text, styles);
 
-	code = (text: string, containerStyle?: ViewStyle, textStyle?: TextStyle) => (
+	code = (
+		text: string,
+		_language?: string,
+		containerStyle?: ViewStyle,
+		textStyle?: TextStyle,
+	) => (
 		<ScrollView
 			horizontal
 			key={this.getKey()}
