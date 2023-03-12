@@ -21,7 +21,6 @@ class CustomRenderer extends Renderer {
 		_href: string,
 		styles?: TextStyle,
 	) => {
-		console.log("child");
 		return (
 			<Text key={this.getKey()} style={styles}>
 				{children}
