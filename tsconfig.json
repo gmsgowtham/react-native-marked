@@ -30,6 +30,7 @@
     "target": "esnext"
   },
   "exclude": [
-    "examples"
+    "examples",
+    "dangerfile.ts"
   ]
 }
