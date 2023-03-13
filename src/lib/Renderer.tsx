@@ -16,6 +16,7 @@ import MDImage from "./../components/MDImage";
 import { onLinkPress } from "../utils/handlers";
 
 class Renderer {
+	#slugPrefix = "react-native-marked-ele";
 	#slugger: Slugger;
 	constructor() {
 		this.#slugger = new Slugger();
@@ -131,7 +132,7 @@ class Renderer {
 	};
 
 	getKey = () => {
-		return this.#slugger.slug("react-native-marked-ele");
+		return this.#slugger.slug(this.#slugPrefix);
 	};
 
 	#getTextNode = (
