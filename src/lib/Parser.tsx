@@ -185,7 +185,6 @@ class Parser {
 					...styles,
 				});
 			}
-			// TODO: add 'table' case for custom elements
 			default: {
 				console.warn(
 					`react-native-marked: token with '${token.type}' type was not found.`,
