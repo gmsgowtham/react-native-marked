@@ -2801,10 +2801,10 @@
     pretty-format "^29.0.3"
     redent "^3.0.0"
 
-"@testing-library/react-native@11.5.4":
-  version "11.5.4"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-11.5.4.tgz#5c57c0c5afc3f1960ff491aba68f66adc899e1cc"
-  integrity sha512-6DRzMHqili5pp1JRm7fh80SAP48aR25b37gohlLoKbqGBpDw8BbZTad7Luzktm9MU5DQUm7xyzg07Z1CyveVFA==
+"@testing-library/react-native@12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-12.0.0.tgz#6604b9daa9a32b1a4287c3b501658768adaf11c3"
+  integrity sha512-Wa7TsEbsduLaLNK9sycgIpSqC4v3tt0zzH5BIDqqNEVN+LQqeX9UdWxD6JFcKgbXJVqWvPq5Y3fzQbYqOaf9zw==
   dependencies:
     pretty-format "^29.0.0"
 
