@@ -14,67 +14,79 @@ import Decimal from "@jsamr/counter-style/presets/decimal";
 import { Slugger } from "marked";
 import MDImage from "./../components/MDImage";
 import { onLinkPress } from "../utils/handlers";
+import type { IRenderer } from "./types";
 
-class Renderer {
-	#slugPrefix = "react-native-marked-ele";
-	#slugger: Slugger;
+class Renderer implements IRenderer {
+	private slugPrefix = "react-native-marked-ele";
+	private slugger: Slugger;
 	constructor() {
-		this.#slugger = new Slugger();
+		this.slugger = new Slugger();
 	}
 
-	paragraph = (children: ReactNode[], styles?: ViewStyle): ReactNode =>
-		this.#getViewNode(children, styles);
+	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode {
+		return this.getViewNode(children, styles);
+	}
 
-	blockquote = (children: ReactNode[], styles?: ViewStyle): ReactNode =>
-		this.#getBlockquoteNode(children, styles);
+	blockquote(children: ReactNode[], styles?: ViewStyle): ReactNode {
+		return this.getBlockquoteNode(children, styles);
+	}
 
-	heading = (text: string | ReactNode[], styles?: TextStyle): ReactNode =>
-		this.#getTextNode(text, styles);
+	heading(text: string | ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(text, styles);
+	}
 
-	code = (
+	code(
 		text: string,
 		_language?: string,
 		containerStyle?: ViewStyle,
 		textStyle?: TextStyle,
-	): ReactNode => (
-		<ScrollView
-			horizontal
-			key={this.getKey()}
-			contentContainerStyle={containerStyle}
-		>
-			<Text style={textStyle}>{text}</Text>
-		</ScrollView>
-	);
+	): ReactNode {
+		return (
+			<ScrollView
+				horizontal
+				key={this.getKey()}
+				contentContainerStyle={containerStyle}
+			>
+				<Text style={textStyle}>{text}</Text>
+			</ScrollView>
+		);
+	}
 
-	hr = (styles?: ViewStyle): ReactNode => this.#getViewNode(null, styles);
+	hr(styles?: ViewStyle): ReactNode {
+		return this.getViewNode(null, styles);
+	}
 
-	listItem = (children: ReactNode[], styles?: ViewStyle): ReactNode =>
-		this.#getViewNode(children, styles);
+	listItem(children: ReactNode[], styles?: ViewStyle): ReactNode {
+		return this.getViewNode(children, styles);
+	}
 
-	list = (
+	list(
 		ordered: boolean,
 		li: ReactNode[],
 		listStyle?: ViewStyle,
 		textStyle?: TextStyle,
-	): ReactNode => (
-		<MarkedList
-			counterRenderer={ordered ? Decimal : Disc}
-			markerTextStyle={textStyle}
-			markerBoxStyle={listStyle}
-			key={this.getKey()}
-		>
-			{li.map((node) => node)}
-		</MarkedList>
-	);
+	): ReactNode {
+		return (
+			<MarkedList
+				counterRenderer={ordered ? Decimal : Disc}
+				markerTextStyle={textStyle}
+				markerBoxStyle={listStyle}
+				key={this.getKey()}
+			>
+				{li.map((node) => node)}
+			</MarkedList>
+		);
+	}
 
-	escape = (text: string, styles?: TextStyle): ReactNode =>
-		this.#getTextNode(text, styles);
+	escape(text: string, styles?: TextStyle): ReactNode {
+		return this.getTextNode(text, styles);
+	}
 
-	link = (
+	link(
 		children: string | ReactNode[],
 		href: string,
 		styles?: TextStyle,
-	): ReactNode => {
+	): ReactNode {
 		return (
 			<Text
 				accessibilityRole="link"
@@ -86,38 +98,46 @@ class Renderer {
 				{children}
 			</Text>
 		);
-	};
+	}
 
-	image = (uri: string, alt?: string, style?: ImageStyle): ReactNode => (
-		<MDImage key={this.getKey()} uri={uri} alt={alt} style={style} />
-	);
+	image(uri: string, alt?: string, style?: ImageStyle): ReactNode {
+		return <MDImage key={this.getKey()} uri={uri} alt={alt} style={style} />;
+	}
 
-	strong = (children: ReactNode[], styles?: TextStyle): ReactNode =>
-		this.#getTextNode(children, styles);
+	strong(children: ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(children, styles);
+	}
 
-	em = (children: ReactNode[], styles?: TextStyle): ReactNode =>
-		this.#getTextNode(children, styles);
+	em(children: ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(children, styles);
+	}
 
-	codespan = (text: string, styles?: TextStyle): ReactNode =>
-		this.#getTextNode(text, styles);
+	codespan(text: string, styles?: TextStyle): ReactNode {
+		return this.getTextNode(text, styles);
+	}
 
-	br = (): ReactNode => this.#getTextNode("\n", {});
+	br(): ReactNode {
+		return this.getTextNode("\n", {});
+	}
 
-	del = (children: ReactNode[], styles?: TextStyle): ReactNode =>
-		this.#getTextNode(children, styles);
+	del(children: ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(children, styles);
+	}
 
-	text = (text: string | ReactNode[], styles?: TextStyle): ReactNode =>
-		this.#getTextNode(text, styles);
+	text(text: string | ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(text, styles);
+	}
 
-	html = (text: string | ReactNode[], styles?: TextStyle): ReactNode =>
-		this.#getTextNode(text, styles);
+	html(text: string | ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(text, styles);
+	}
 
-	linkImage = (
+	linkImage(
 		href: string,
 		imageUrl: string,
 		alt?: string,
 		style?: ImageStyle,
-	): ReactNode => {
+	): ReactNode {
 		const imageNode = this.image(imageUrl, alt, style);
 		return (
 			<TouchableHighlight
@@ -129,44 +149,48 @@ class Renderer {
 				{imageNode}
 			</TouchableHighlight>
 		);
-	};
+	}
 
-	getKey = () => {
-		return this.#slugger.slug(this.#slugPrefix);
-	};
+	getKey(): string {
+		return this.slugger.slug(this.slugPrefix);
+	}
 
-	#getTextNode = (
+	private getTextNode(
 		children: string | ReactNode[],
 		styles?: TextStyle,
-	): ReactNode => {
+	): ReactNode {
 		return (
 			<Text key={this.getKey()} style={styles}>
 				{children}
 			</Text>
 		);
-	};
+	}
 
-	#getViewNode = (
+	private getViewNode(
 		children: ReactNode[] | null,
 		styles?: ViewStyle,
-	): ReactNode => {
-		return (
-			<View key={this.getKey()} style={styles}>
-				{children}
-			</View>
-		);
-	};
+	): ReactNode {
+		{
+			return (
+				<View key={this.getKey()} style={styles}>
+					{children}
+				</View>
+			);
+		}
+	}
 
-	#getBlockquoteNode = (
+	private getBlockquoteNode(
 		children: ReactNode[],
 		styles?: ViewStyle,
-	): ReactNode => {
-		return (
-			<View key={this.getKey()} style={styles}>
-				{children}
-			</View>
-		);
-	};
+	): ReactNode {
+		{
+			return (
+				<View key={this.getKey()} style={styles}>
+					{children}
+				</View>
+			);
+		}
+	}
 }
 
 export default Renderer;
