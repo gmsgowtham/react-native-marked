@@ -17,7 +17,7 @@ const Markdown = ({
 	flatListProps,
 	theme,
 	baseUrl,
-	renderer: customRenderer,
+	renderer,
 	styles: userStyles,
 }: MarkdownProps) => {
 	const colorScheme = useColorScheme();
@@ -31,7 +31,7 @@ const Markdown = ({
 			new Parser({
 				styles,
 				baseUrl,
-				renderer: customRenderer ?? new Renderer(),
+				renderer: renderer ?? new Renderer(),
 			}),
 		[styles, baseUrl],
 	);
