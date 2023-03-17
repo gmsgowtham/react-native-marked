@@ -1,4 +1,4 @@
-import { Linking, ColorSchemeName } from "react-native";
+import { Linking, type ColorSchemeName } from "react-native";
 import { fireEvent, render, screen } from "@testing-library/react-native";
 import Renderer from "../Renderer";
 import getStyles from "./../../theme/styles";
