@@ -186,6 +186,14 @@ exports[`Renderer dark theme getImageLinkNode returns a Image Link node 1`] = `
 <View
   accessibilityHint="Opens in a new window"
   accessibilityRole="link"
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -822,6 +830,14 @@ exports[`Renderer light theme getImageLinkNode returns a Image Link node 1`] = `
 <View
   accessibilityHint="Opens in a new window"
   accessibilityRole="link"
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
