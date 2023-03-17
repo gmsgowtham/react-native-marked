@@ -1,5 +1,5 @@
 import React, { memo, useEffect } from "react";
-import { Image, ImageStyle } from "react-native";
+import { Image, type ImageStyle } from "react-native";
 import FitImage from "react-native-fit-image";
 
 interface MDImageProps {

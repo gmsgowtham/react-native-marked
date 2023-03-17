@@ -1,12 +1,12 @@
-import React, { ReactNode } from "react";
+import React, { type ReactNode } from "react";
 import {
 	ScrollView,
 	View,
 	Text,
 	TouchableHighlight,
-	TextStyle,
-	ViewStyle,
-	ImageStyle,
+	type TextStyle,
+	type ViewStyle,
+	type ImageStyle,
 } from "react-native";
 import MarkedList from "@jsamr/react-native-li";
 import Disc from "@jsamr/counter-style/presets/disc";

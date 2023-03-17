@@ -1,9 +1,9 @@
 import React, {
 	memo,
-	ReactElement,
-	ReactNode,
 	useCallback,
 	useMemo,
+	type ReactElement,
+	type ReactNode,
 } from "react";
 import { FlatList, useColorScheme } from "react-native";
 import { marked } from "marked";
