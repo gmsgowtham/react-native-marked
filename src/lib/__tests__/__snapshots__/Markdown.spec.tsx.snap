@@ -68,6 +68,7 @@ exports[`Blockquotes Blockquote 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -207,6 +208,7 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -546,6 +548,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -948,6 +951,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -990,6 +994,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
       </View>
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -1106,6 +1111,7 @@ exports[`Code Code Blocks (backtick) 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -1200,6 +1206,7 @@ exports[`Code Code Blocks 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -1318,6 +1325,7 @@ exports[`Code Code Span 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -1468,6 +1476,7 @@ exports[`Emphasis Bold 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -1640,6 +1649,7 @@ exports[`Emphasis Bold and Italic 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -1812,6 +1822,7 @@ exports[`Emphasis Italic 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -1973,6 +1984,7 @@ exports[`Emphasis Strikethrough 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -2111,6 +2123,7 @@ exports[`Escaping Characters Render 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -2291,6 +2304,7 @@ exports[`HTML Render 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -2466,6 +2480,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -2568,6 +2583,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -2722,6 +2738,7 @@ exports[`Headings Best Practice 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -2753,6 +2770,7 @@ exports[`Headings Best Practice 1`] = `
       </View>
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -2790,6 +2808,7 @@ exports[`Headings Best Practice 1`] = `
       </Text>
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -2887,6 +2906,7 @@ exports[`Headings Heading level 1 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -2989,6 +3009,7 @@ exports[`Headings Heading level 2 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3084,6 +3105,7 @@ exports[`Headings Heading level 3 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3173,6 +3195,7 @@ exports[`Headings Heading level 4 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3262,6 +3285,7 @@ exports[`Headings Heading level 5 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3351,6 +3375,7 @@ exports[`Headings Heading level 6 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3424,6 +3449,7 @@ exports[`Horizontal Rules Asterisks 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3481,6 +3507,7 @@ exports[`Horizontal Rules Dashes 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3590,6 +3617,7 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3621,6 +3649,7 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
       </View>
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3635,6 +3664,7 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
       />
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3709,6 +3739,7 @@ exports[`Horizontal Rules Underscores 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3783,6 +3814,7 @@ exports[`Images Linking Images 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -3799,6 +3831,14 @@ exports[`Images Linking Images 1`] = `
         <View
           accessibilityHint="Opens in a new window"
           accessibilityRole="link"
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
           accessible={true}
           focusable={true}
           onClick={[Function]}
@@ -3918,6 +3958,7 @@ exports[`Images Render 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -4046,6 +4087,7 @@ And the next line.
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -4155,6 +4197,7 @@ exports[`Line Breaks Trailing slash 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -4300,6 +4343,7 @@ exports[`Links Basic 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -4567,6 +4611,7 @@ See the section on
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -4834,6 +4879,7 @@ exports[`Links Titles 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -5018,6 +5064,7 @@ exports[`Links URLs and Email Addresses 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -5064,6 +5111,7 @@ exports[`Links URLs and Email Addresses 1`] = `
       </View>
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -5325,6 +5373,7 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -5793,6 +5842,7 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -6271,6 +6321,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -6907,6 +6958,7 @@ exports[`Lists Elements in Lists: Lists 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -7560,6 +7612,7 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -8141,6 +8194,7 @@ exports[`Lists Ordered Lists 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -8912,6 +8966,7 @@ exports[`Lists Unordered Lists 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -9447,6 +9502,7 @@ exports[`Paragraphs Paragraph 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -9478,6 +9534,7 @@ exports[`Paragraphs Paragraph 1`] = `
       </View>
     </View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
@@ -9584,6 +9641,7 @@ exports[`Paragraphs Paragraph with Image 1`] = `
 >
   <View>
     <View
+      onFocusCapture={[Function]}
       onLayout={[Function]}
       style={null}
     >
