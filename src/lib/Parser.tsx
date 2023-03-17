@@ -2,24 +2,16 @@ import type { ReactNode } from "react";
 import type { TextStyle, ViewStyle, ImageStyle } from "react-native";
 import type { marked } from "marked";
 import type { MarkedStyles } from "../theme/types";
-import type { ParserOptions } from "./types";
+import type { IRenderer, ParserOptions } from "./types";
 import { getValidURL } from "./../utils/url";
-import Renderer from "./Renderer";
 
 class Parser {
-	private renderer: Renderer;
+	private renderer: IRenderer;
 	private styles: MarkedStyles;
 	private headingStylesMap: Record<number, TextStyle | undefined>;
 	private baseUrl: string;
 
 	constructor(options: ParserOptions) {
-		if (
-			typeof options.renderer === "undefined" ||
-			!(options.renderer instanceof Renderer)
-		) {
-			throw new Error("Renderer provided is not valid");
-		}
-
 		this.styles = { ...options.styles };
 		this.baseUrl = options.baseUrl ?? "";
 		this.renderer = options.renderer;
