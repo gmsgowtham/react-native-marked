@@ -1,13 +1,30 @@
-import React from "react";
+import React, { type ReactNode } from "react";
 import {
 	SafeAreaView,
 	StyleSheet,
 	StatusBar,
 	useColorScheme,
+	Text,
+	type TextStyle,
 } from "react-native";
-import Markdown from "react-native-marked";
-
+import Markdown, { Renderer } from "react-native-marked";
 import { MD_STRING } from "./const";
+import type { IRenderer } from "./../../../src/lib/types";
+
+class CustomRenderer extends Renderer implements IRenderer {
+	constructor() {
+		super();
+	}
+	codespan(text: string, _styles?: TextStyle): ReactNode {
+		return (
+			<Text key={this.getKey()} style={{ backgroundColor: "#ff0000" }}>
+				{text}
+			</Text>
+		);
+	}
+}
+
+const renderer = new CustomRenderer();
 
 export default function App() {
 	const theme = useColorScheme();
@@ -24,6 +41,7 @@ export default function App() {
 					flatListProps={{
 						contentContainerStyle: styles.container,
 					}}
+					renderer={renderer}
 				/>
 			</SafeAreaView>
 		</>
