@@ -3739,7 +3739,7 @@ exports[`Images Linking Images 1`] = `
                 "resizeMode": "cover",
               }
             }
-            uri="/assets/images/shiprock.jpg"
+            uri="https://dummyimage.com/100x100/fff/aaa"
           />
         </TouchableHighlight>
       </View>,
@@ -3835,7 +3835,7 @@ exports[`Images Linking Images 1`] = `
               resizeMode="cover"
               source={
                 {
-                  "uri": "/assets/images/shiprock.jpg",
+                  "uri": "https://dummyimage.com/100x100/fff/aaa",
                 }
               }
               style={
@@ -8982,5 +8982,35 @@ exports[`Paragraphs Paragraph with Image 1`] = `
       </View>
     </View>
   </View>
+</RCTScrollView>
+`;
+
+exports[`Unsupported Table 1`] = `
+<RCTScrollView
+  data={[]}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View />
 </RCTScrollView>
 `;

@@ -510,7 +510,7 @@ describe("Images", () => {
 		const tree = render(
 			<Markdown
 				value={
-					'[![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://dummyimage.com/100x100/fff/aaa)'
+					'[![An old rock in the desert](https://dummyimage.com/100x100/fff/aaa "Shiprock, New Mexico by Beau Rogers")](https://dummyimage.com/100x100/fff/aaa)'
 				}
 			/>,
 		).toJSON();
@@ -549,5 +549,27 @@ describe("HTML", () => {
 		);
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
+	});
+});
+
+// Unsupported items test
+describe("Unsupported", () => {
+	it("Table", () => {
+		console.warn = jest.fn();
+		const r = render(
+			<Markdown
+				value={`
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+				`}
+			/>,
+		);
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
+		expect(console.warn).toHaveBeenCalledWith(
+			"react-native-marked: token with 'table' type was not found.",
+		);
 	});
 });
