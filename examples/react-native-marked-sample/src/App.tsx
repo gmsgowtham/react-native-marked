@@ -7,9 +7,8 @@ import {
 	Text,
 	type TextStyle,
 } from "react-native";
-import Markdown, { Renderer } from "react-native-marked";
+import Markdown, { Renderer, type IRenderer } from "react-native-marked";
 import { MD_STRING } from "./const";
-import type { IRenderer } from "./../../../src/lib/types";
 
 class CustomRenderer extends Renderer implements IRenderer {
 	constructor() {
