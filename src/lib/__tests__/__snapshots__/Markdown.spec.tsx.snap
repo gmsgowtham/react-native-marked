@@ -361,32 +361,21 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               }
             }
           >
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+            <Text
+              style={{}}
             >
               <Text
-                style={{}}
-              >
-                <Text
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
                   }
-                >
-                  Revenue was off the chart.
-                </Text>
+                }
+              >
+                Revenue was off the chart.
               </Text>
-            </View>
+            </Text>
           </View>
           <View
             style={
@@ -398,32 +387,21 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               }
             }
           >
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+            <Text
+              style={{}}
             >
               <Text
-                style={{}}
-              >
-                <Text
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
                   }
-                >
-                  Profits were higher than ever.
-                </Text>
+                }
+              >
+                Profits were higher than ever.
               </Text>
-            </View>
+            </Text>
           </View>
         </MarkedList>
         <View
@@ -633,32 +611,21 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               }
             }
           >
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+            <Text
+              style={{}}
             >
               <Text
-                style={{}}
-              >
-                <Text
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
                   }
-                >
-                  Revenue was off the chart.
-                </Text>
+                }
+              >
+                Revenue was off the chart.
               </Text>
-            </View>
+            </Text>
           </View>
         </View>
         <View
@@ -707,32 +674,21 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               }
             }
           >
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+            <Text
+              style={{}}
             >
               <Text
-                style={{}}
-              >
-                <Text
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
                   }
-                >
-                  Profits were higher than ever.
-                </Text>
+                }
+              >
+                Profits were higher than ever.
               </Text>
-            </View>
+            </Text>
           </View>
         </View>
         <View
@@ -3869,7 +3825,7 @@ exports[`Images Linking Images 1`] = `
                 "resizeMode": "cover",
               }
             }
-            uri="/assets/images/shiprock.jpg"
+            uri="https://dummyimage.com/100x100/fff/aaa"
           />
         </TouchableHighlight>
       </View>,
@@ -3965,7 +3921,7 @@ exports[`Images Linking Images 1`] = `
               resizeMode="cover"
               source={
                 {
-                  "uri": "/assets/images/shiprock.jpg",
+                  "uri": "https://dummyimage.com/100x100/fff/aaa",
                 }
               }
               style={
@@ -5293,32 +5249,21 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                This is the first list item.
-              </Text>
+              }
+            >
+              This is the first list item.
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -5330,32 +5275,21 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Here's the second list item.
-              </Text>
+              }
+            >
+              Here's the second list item.
             </Text>
-          </View>
+          </Text>
           <View
             style={
               {
@@ -5404,32 +5338,21 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                And here's the third list item.
-              </Text>
+              }
+            >
+              And here's the third list item.
             </Text>
-          </View>
+          </Text>
         </View>
       </MarkedList>,
     ]
@@ -5509,32 +5432,21 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                This is the first list item.
-              </Text>
+              }
+            >
+              This is the first list item.
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -5583,32 +5495,21 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Here's the second list item.
-              </Text>
+              }
+            >
+              Here's the second list item.
             </Text>
-          </View>
+          </Text>
           <View
             style={
               {
@@ -5694,32 +5595,21 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                And here's the third list item.
-              </Text>
+              }
+            >
+              And here's the third list item.
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -5773,32 +5663,21 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                This is the first list item.
-              </Text>
+              }
+            >
+              This is the first list item.
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -5810,32 +5689,21 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Here's the second list item.
-              </Text>
+              }
+            >
+              Here's the second list item.
             </Text>
-          </View>
+          </Text>
           <ScrollView
             contentContainerStyle={
               {
@@ -5873,32 +5741,21 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                And here's the third list item.
-              </Text>
+              }
+            >
+              And here's the third list item.
             </Text>
-          </View>
+          </Text>
         </View>
       </MarkedList>,
     ]
@@ -5978,32 +5835,21 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                This is the first list item.
-              </Text>
+              }
+            >
+              This is the first list item.
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -6052,32 +5898,21 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Here's the second list item.
-              </Text>
+              }
+            >
+              Here's the second list item.
             </Text>
-          </View>
+          </Text>
           <RCTScrollView
             contentContainerStyle={
               {
@@ -6154,32 +5989,21 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                And here's the third list item.
-              </Text>
+              }
+            >
+              And here's the third list item.
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -6236,32 +6060,21 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Open the file containing the Linux mascot.
-              </Text>
+              }
+            >
+              Open the file containing the Linux mascot.
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -6273,33 +6086,22 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Marvel at its beauty.
-              </Text>
+              }
+            >
+              Marvel at its beauty.
             </Text>
-          </View>
-          <View
+          </Text>
+          <Text
             style={
               {
                 "color": "#333333",
@@ -6313,34 +6115,23 @@ exports[`Lists Elements in Lists: Images 1`] = `
               style={
                 {
                   "color": "#333333",
-                  "flexShrink": 1,
                   "fontSize": 16,
                   "lineHeight": 24,
                 }
               }
             >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                 
-              </Text>
+               
             </Text>
-            <Memo(MDImage)
-              alt={null}
-              style={
-                {
-                  "resizeMode": "cover",
-                }
+          </Text>
+          <Memo(MDImage)
+            alt={null}
+            style={
+              {
+                "resizeMode": "cover",
               }
-              uri="https://dummyimage.com/100x100/fff/aaa"
-            />
-          </View>
+            }
+            uri="https://dummyimage.com/100x100/fff/aaa"
+          />
         </View>
         <View
           style={
@@ -6352,32 +6143,21 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Close the file.
-              </Text>
+              }
+            >
+              Close the file.
             </Text>
-          </View>
+          </Text>
         </View>
       </MarkedList>,
     ]
@@ -6457,32 +6237,21 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Open the file containing the Linux mascot.
-              </Text>
+              }
+            >
+              Open the file containing the Linux mascot.
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -6531,33 +6300,22 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Marvel at its beauty.
-              </Text>
+              }
+            >
+              Marvel at its beauty.
             </Text>
-          </View>
-          <View
+          </Text>
+          <Text
             style={
               {
                 "color": "#333333",
@@ -6571,75 +6329,64 @@ exports[`Lists Elements in Lists: Images 1`] = `
               style={
                 {
                   "color": "#333333",
-                  "flexShrink": 1,
                   "fontSize": 16,
                   "lineHeight": 24,
                 }
               }
             >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                 
-              </Text>
+               
             </Text>
-            <View
-              accessibilityIgnoresInvertColors={true}
+          </Text>
+          <View
+            accessibilityIgnoresInvertColors={true}
+            style={
+              [
+                {
+                  "resizeMode": "cover",
+                },
+                {
+                  "flexGrow": 1,
+                },
+                {
+                  "height": 0,
+                },
+                {
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Image
+              accessibilityLabel="Image"
+              accessibilityRole="image"
+              onError={[Function]}
+              onLayout={[Function]}
+              onLoad={[Function]}
+              onLoadStart={[Function]}
+              resizeMode="cover"
+              source={
+                {
+                  "uri": "https://dummyimage.com/100x100/fff/aaa",
+                }
+              }
               style={
                 [
                   {
-                    "resizeMode": "cover",
-                  },
-                  {
-                    "flexGrow": 1,
+                    "bottom": 0,
+                    "left": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
                   },
                   {
                     "height": 0,
+                    "width": undefined,
                   },
-                  {
-                    "alignItems": "center",
-                    "justifyContent": "center",
-                  },
+                  undefined,
                 ]
               }
-            >
-              <Image
-                accessibilityLabel="Image"
-                accessibilityRole="image"
-                onError={[Function]}
-                onLayout={[Function]}
-                onLoad={[Function]}
-                onLoadStart={[Function]}
-                resizeMode="cover"
-                source={
-                  {
-                    "uri": "https://dummyimage.com/100x100/fff/aaa",
-                  }
-                }
-                style={
-                  [
-                    {
-                      "bottom": 0,
-                      "left": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                    },
-                    {
-                      "height": 0,
-                      "width": undefined,
-                    },
-                    undefined,
-                  ]
-                }
-              />
-            </View>
+            />
           </View>
         </View>
       </View>
@@ -6689,32 +6436,21 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Close the file.
-              </Text>
+              }
+            >
+              Close the file.
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -6771,32 +6507,21 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                First item
-              </Text>
+              }
+            >
+              First item
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -6808,32 +6533,21 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Second item
-              </Text>
+              }
+            >
+              Second item
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -6845,32 +6559,21 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Third item
-              </Text>
+              }
+            >
+              Third item
             </Text>
-          </View>
+          </Text>
           <MarkedList
             counterRenderer={
               {
@@ -6913,32 +6616,21 @@ exports[`Lists Elements in Lists: Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
                     }
-                  >
-                    Indented item1
-                  </Text>
+                  }
+                >
+                  Indented item1
                 </Text>
-              </View>
+              </Text>
             </View>
             <View
               style={
@@ -6950,32 +6642,21 @@ exports[`Lists Elements in Lists: Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
                     }
-                  >
-                    Indented item2
-                  </Text>
+                  }
+                >
+                  Indented item2
                 </Text>
-              </View>
+              </Text>
             </View>
           </MarkedList>
         </View>
@@ -6989,32 +6670,21 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Fourth item
-              </Text>
+              }
+            >
+              Fourth item
             </Text>
-          </View>
+          </Text>
         </View>
       </MarkedList>,
     ]
@@ -7094,32 +6764,21 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                First item
-              </Text>
+              }
+            >
+              First item
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -7168,32 +6827,21 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Second item
-              </Text>
+              }
+            >
+              Second item
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -7242,31 +6890,83 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Third item
-              </Text>
+              }
+            >
+              Third item
             </Text>
+          </Text>
+          <View
+            style={
+              [
+                {
+                  "alignSelf": "stretch",
+                  "flexDirection": "row",
+                  "flexWrap": "nowrap",
+                },
+                undefined,
+              ]
+            }
+            testID="marked-list-item"
+          >
+            <View>
+              <Text
+                style={
+                  [
+                    {
+                      "alignSelf": "flex-end",
+                      "color": "#333333",
+                      "flexGrow": 0,
+                      "flexShrink": 1,
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
+                    },
+                    {
+                      "width": 19.2,
+                    },
+                  ]
+                }
+                testID="marker-box"
+              >
+                • 
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                style={{}}
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Indented item1
+                </Text>
+              </Text>
+            </View>
           </View>
           <View
             style={
@@ -7314,106 +7014,21 @@ exports[`Lists Elements in Lists: Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
-                    }
-                  >
-                    Indented item1
-                  </Text>
-                </Text>
-              </View>
-            </View>
-          </View>
-          <View
-            style={
-              [
-                {
-                  "alignSelf": "stretch",
-                  "flexDirection": "row",
-                  "flexWrap": "nowrap",
-                },
-                undefined,
-              ]
-            }
-            testID="marked-list-item"
-          >
-            <View>
-              <Text
-                style={
-                  [
+                  style={
                     {
-                      "alignSelf": "flex-end",
                       "color": "#333333",
-                      "flexGrow": 0,
-                      "flexShrink": 1,
                       "fontSize": 16,
                       "lineHeight": 24,
-                      "textAlign": "right",
-                    },
-                    {
-                      "width": 19.2,
-                    },
-                  ]
-                }
-                testID="marker-box"
-              >
-                • 
-              </Text>
-            </View>
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
                     }
-                  >
-                    Indented item2
-                  </Text>
+                  }
+                >
+                  Indented item2
                 </Text>
-              </View>
+              </Text>
             </View>
           </View>
         </View>
@@ -7464,32 +7079,21 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Fourth item
-              </Text>
+              }
+            >
+              Fourth item
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -7543,32 +7147,21 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                This is the first list item.
-              </Text>
+              }
+            >
+              This is the first list item.
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -7580,58 +7173,36 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Here's the second list item.
-              </Text>
-            </Text>
-          </View>
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
               }
-            }
+            >
+              Here's the second list item.
+            </Text>
+          </Text>
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                  I need to add another paragraph below the second list item.
-              </Text>
+              }
+            >
+                I need to add another paragraph below the second list item.
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -7643,32 +7214,21 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                And here's the third list item.
-              </Text>
+              }
+            >
+              And here's the third list item.
             </Text>
-          </View>
+          </Text>
         </View>
       </MarkedList>,
     ]
@@ -7748,32 +7308,21 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                This is the first list item.
-              </Text>
+              }
+            >
+              This is the first list item.
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -7822,58 +7371,36 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Here's the second list item.
-              </Text>
-            </Text>
-          </View>
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
               }
-            }
+            >
+              Here's the second list item.
+            </Text>
+          </Text>
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                  I need to add another paragraph below the second list item.
-              </Text>
+              }
+            >
+                I need to add another paragraph below the second list item.
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -7922,32 +7449,21 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                And here's the third list item.
-              </Text>
+              }
+            >
+              And here's the third list item.
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -8004,32 +7520,21 @@ exports[`Lists Ordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                First item
-              </Text>
+              }
+            >
+              First item
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -8041,32 +7546,21 @@ exports[`Lists Ordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Second item
-              </Text>
+              }
+            >
+              Second item
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -8078,32 +7572,21 @@ exports[`Lists Ordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Third item
-              </Text>
+              }
+            >
+              Third item
             </Text>
-          </View>
+          </Text>
           <MarkedList
             counterRenderer={
               {
@@ -8149,32 +7632,21 @@ exports[`Lists Ordered Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
                     }
-                  >
-                    Indented item1
-                  </Text>
+                  }
+                >
+                  Indented item1
                 </Text>
-              </View>
+              </Text>
             </View>
             <View
               style={
@@ -8186,32 +7658,21 @@ exports[`Lists Ordered Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
                     }
-                  >
-                    Indented item2
-                  </Text>
+                  }
+                >
+                  Indented item2
                 </Text>
-              </View>
+              </Text>
             </View>
           </MarkedList>
         </View>
@@ -8225,32 +7686,21 @@ exports[`Lists Ordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Fourth item
-              </Text>
+              }
+            >
+              Fourth item
             </Text>
-          </View>
+          </Text>
         </View>
       </MarkedList>,
     ]
@@ -8330,32 +7780,21 @@ exports[`Lists Ordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                First item
-              </Text>
+              }
+            >
+              First item
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -8404,32 +7843,21 @@ exports[`Lists Ordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Second item
-              </Text>
+              }
+            >
+              Second item
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -8478,32 +7906,21 @@ exports[`Lists Ordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Third item
-              </Text>
+              }
+            >
+              Third item
             </Text>
-          </View>
+          </Text>
           <View
             style={
               [
@@ -8550,32 +7967,21 @@ exports[`Lists Ordered Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
                     }
-                  >
-                    Indented item1
-                  </Text>
+                  }
+                >
+                  Indented item1
                 </Text>
-              </View>
+              </Text>
             </View>
           </View>
           <View
@@ -8624,32 +8030,21 @@ exports[`Lists Ordered Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
                     }
-                  >
-                    Indented item2
-                  </Text>
+                  }
+                >
+                  Indented item2
                 </Text>
-              </View>
+              </Text>
             </View>
           </View>
         </View>
@@ -8700,32 +8095,21 @@ exports[`Lists Ordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Fourth item
-              </Text>
+              }
+            >
+              Fourth item
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -8779,32 +8163,21 @@ exports[`Lists Unordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                First item
-              </Text>
+              }
+            >
+              First item
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -8816,32 +8189,21 @@ exports[`Lists Unordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Second item
-              </Text>
+              }
+            >
+              Second item
             </Text>
-          </View>
+          </Text>
         </View>
         <View
           style={
@@ -8853,32 +8215,21 @@ exports[`Lists Unordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Third item
-              </Text>
+              }
+            >
+              Third item
             </Text>
-          </View>
+          </Text>
           <MarkedList
             counterRenderer={
               {
@@ -8921,32 +8272,21 @@ exports[`Lists Unordered Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
                     }
-                  >
-                    Indented item1
-                  </Text>
+                  }
+                >
+                  Indented item1
                 </Text>
-              </View>
+              </Text>
             </View>
             <View
               style={
@@ -8958,32 +8298,21 @@ exports[`Lists Unordered Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
                     }
-                  >
-                    Indented item2
-                  </Text>
+                  }
+                >
+                  Indented item2
                 </Text>
-              </View>
+              </Text>
             </View>
           </MarkedList>
         </View>
@@ -8997,32 +8326,21 @@ exports[`Lists Unordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Fourth item
-              </Text>
+              }
+            >
+              Fourth item
             </Text>
-          </View>
+          </Text>
         </View>
       </MarkedList>,
     ]
@@ -9102,32 +8420,21 @@ exports[`Lists Unordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                First item
-              </Text>
+              }
+            >
+              First item
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -9176,32 +8483,21 @@ exports[`Lists Unordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Second item
-              </Text>
+              }
+            >
+              Second item
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
       <View
@@ -9250,32 +8546,21 @@ exports[`Lists Unordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Third item
-              </Text>
+              }
+            >
+              Third item
             </Text>
-          </View>
+          </Text>
           <View
             style={
               [
@@ -9322,32 +8607,21 @@ exports[`Lists Unordered Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
                     }
-                  >
-                    Indented item1
-                  </Text>
+                  }
+                >
+                  Indented item1
                 </Text>
-              </View>
+              </Text>
             </View>
           </View>
           <View
@@ -9396,32 +8670,21 @@ exports[`Lists Unordered Lists 1`] = `
                 }
               }
             >
-              <View
-                style={
-                  {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
+              <Text
+                style={{}}
               >
                 <Text
-                  style={{}}
-                >
-                  <Text
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                      }
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
                     }
-                  >
-                    Indented item2
-                  </Text>
+                  }
+                >
+                  Indented item2
                 </Text>
-              </View>
+              </Text>
             </View>
           </View>
         </View>
@@ -9472,32 +8735,21 @@ exports[`Lists Unordered Lists 1`] = `
             }
           }
         >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
+          <Text
+            style={{}}
           >
             <Text
-              style={{}}
-            >
-              <Text
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
-              >
-                Fourth item
-              </Text>
+              }
+            >
+              Fourth item
             </Text>
-          </View>
+          </Text>
         </View>
       </View>
     </View>
@@ -9816,5 +9068,123 @@ exports[`Paragraphs Paragraph with Image 1`] = `
       </View>
     </View>
   </View>
+</RCTScrollView>
+`;
+
+exports[`Renderer override Custom 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#ff0000",
+              }
+            }
+          >
+            hello
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          style={{}}
+        >
+          <Text
+            style={
+              {
+                "color": "#ff0000",
+              }
+            }
+          >
+            hello
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Unsupported Table 1`] = `
+<RCTScrollView
+  data={[]}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View />
 </RCTScrollView>
 `;

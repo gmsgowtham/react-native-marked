@@ -27,9 +27,11 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "declaration": true
   },
   "exclude": [
-    "examples"
+    "examples",
+    "dangerfile.ts"
   ]
 }

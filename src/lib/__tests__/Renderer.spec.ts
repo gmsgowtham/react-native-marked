@@ -3,6 +3,7 @@ import { fireEvent, render, screen } from "@testing-library/react-native";
 import Renderer from "../Renderer";
 import getStyles from "./../../theme/styles";
 import type { MarkedStyles } from "./../../theme/types";
+import type { ReactElement } from "react";
 
 jest.mock("react-native/Libraries/Linking/Linking", () => ({
 	openURL: jest.fn(() => Promise.resolve("mockResolve")),
@@ -23,45 +24,42 @@ describe("Renderer", () => {
 	themes.forEach((theme) => {
 		const styles = getStyles(userStyles, theme);
 		describe(`${theme} theme`, () => {
-			describe("getTextNode", () => {
+			describe("Text Nodes", () => {
 				it("returns a Text node", () => {
-					const TextNode = renderer.getTextNode("Hello world", styles.text);
+					const TextNode = renderer.text("Hello world", styles.text);
 
-					const r = render(TextNode);
+					const r = render(TextNode as ReactElement);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 
 				it("returns a wrapped Text node", () => {
-					const TextNodeChild = renderer.getTextNode("Hello world", {});
-					const TextNode = renderer.getTextNode([TextNodeChild], styles.text);
-					const r = render(TextNode);
+					const TextNodeChild = renderer.text("Hello world", {});
+					const TextNode = renderer.text([TextNodeChild], styles.text);
+					const r = render(TextNode as ReactElement);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 
 				it("returns a wrapped Text node with styles", () => {
-					const TextNodeChild = renderer.getTextNode(
-						"Hello world",
-						styles.text,
-					);
-					const TextNode = renderer.getTextNode([TextNodeChild], styles.text);
-					const r = render(TextNode);
+					const TextNodeChild = renderer.text("Hello world", styles.text);
+					const TextNode = renderer.text([TextNodeChild], styles.text);
+					const r = render(TextNode as ReactElement);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 			});
-			describe("getTextLinkNode", () => {
+			describe("Link Nodes", () => {
 				it("returns a Text Link node", () => {
-					const LinkNode = renderer.getTextLinkNode(
+					const LinkNode = renderer.link(
 						"Link",
 						"https://example.com",
 						styles.link,
 					);
-					const r = render(LinkNode);
+					const r = render(LinkNode as ReactElement);
 					expect(screen.queryByText("Link")).toBeTruthy();
 					fireEvent.press(screen.queryByText("Link"));
 					expect(Linking.openURL).toHaveBeenCalled();
@@ -71,29 +69,29 @@ describe("Renderer", () => {
 			});
 			describe("getImageLinkNode", () => {
 				it("returns a Image Link node", () => {
-					const LinkNode = renderer.getImageLinkNode(
+					const LinkNode = renderer.linkImage(
 						"https://example.com",
 						"https://dummyimage.com/100x100/fff/aaa",
 						"Hello world",
 					);
-					const tree = render(LinkNode).toJSON();
+					const tree = render(LinkNode as ReactElement).toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 			});
-			describe("getViewNode", () => {
+			describe("View Nodes", () => {
 				it("returns a paragraph View node", () => {
-					const TextNode = renderer.getTextNode("Hello world", styles.text);
-					const LinkNode = renderer.getTextLinkNode(
+					const TextNode = renderer.text("Hello world", styles.text);
+					const LinkNode = renderer.link(
 						"Link",
 						"https://example.com",
 						styles.link,
 					);
-					const ViewNode = renderer.getViewNode(
+					const ViewNode = renderer.paragraph(
 						[TextNode, LinkNode],
 						styles.paragraph,
 					);
 
-					const r = render(ViewNode);
+					const r = render(ViewNode as ReactElement);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					expect(screen.queryByText("Link")).toBeTruthy();
 					const tree = r.toJSON();
@@ -101,20 +99,21 @@ describe("Renderer", () => {
 				});
 
 				it("returns a hr View node", () => {
-					const ViewNode = renderer.getViewNode(null, styles.hr);
-					const r = render(ViewNode);
+					const ViewNode = renderer.hr(styles.hr);
+					const r = render(ViewNode as ReactElement);
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 			});
 			describe("getCodeBlockNode", () => {
 				it("returns a Code block (horizontal ScrollView)", () => {
-					const CodeBlock = renderer.getCodeBlockNode(
+					const CodeBlock = renderer.code(
 						"print('hello')",
+						"",
 						styles.code,
 						styles.em,
 					);
-					const r = render(CodeBlock);
+					const r = render(CodeBlock as ReactElement);
 					expect(screen.queryByText("print('hello')")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
@@ -122,18 +121,18 @@ describe("Renderer", () => {
 			});
 			describe("getBlockquoteNode", () => {
 				it("returns a Blockquote", () => {
-					const TextNode = renderer.getTextNode("Hello world", styles.text);
-					const LinkNode = renderer.getTextLinkNode(
+					const TextNode = renderer.text("Hello world", styles.text);
+					const LinkNode = renderer.link(
 						"Link",
 						"https://example.com",
 						styles.link,
 					);
-					const Blockquote = renderer.getBlockquoteNode(
+					const Blockquote = renderer.blockquote(
 						[TextNode, LinkNode],
 						styles.blockquote,
 					);
 
-					const r = render(Blockquote);
+					const r = render(Blockquote as ReactElement);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					expect(screen.queryByText("Link")).toBeTruthy();
 					const tree = r.toJSON();
@@ -142,26 +141,26 @@ describe("Renderer", () => {
 			});
 			describe("getImageNode", () => {
 				it("returns a Image", () => {
-					const ImageNode = renderer.getImageNode(
+					const ImageNode = renderer.image(
 						"https://picsum.photos/100/100",
 						"Hello world",
 					);
-					const tree = render(ImageNode).toJSON();
+					const tree = render(ImageNode as ReactElement).toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 			});
 			describe("getListNode", () => {
 				it("returns Ordered List", () => {
-					const TextNode1 = renderer.getTextNode("Hello world 1", styles.li);
-					const TextNode2 = renderer.getTextNode("Hello world 2", styles.li);
-					const TextNode3 = renderer.getTextNode("Hello world 3", styles.li);
-					const OL = renderer.getListNode(
+					const TextNode1 = renderer.text("Hello world 1", styles.li);
+					const TextNode2 = renderer.text("Hello world 2", styles.li);
+					const TextNode3 = renderer.text("Hello world 3", styles.li);
+					const OL = renderer.list(
 						true,
 						[TextNode1, TextNode2, TextNode3],
 						styles.list,
 						styles.li,
 					);
-					const r = render(OL);
+					const r = render(OL as ReactElement);
 					expect(screen.queryByText("Hello world 1")).toBeTruthy();
 					expect(screen.queryByText("Hello world 2")).toBeTruthy();
 					expect(screen.queryByText("Hello world 3")).toBeTruthy();
@@ -169,16 +168,16 @@ describe("Renderer", () => {
 					expect(tree).toMatchSnapshot();
 				});
 				it("returns Un-Ordered List", () => {
-					const TextNode1 = renderer.getTextNode("Hello world 1", styles.li);
-					const TextNode2 = renderer.getTextNode("Hello world 2", styles.li);
-					const TextNode3 = renderer.getTextNode("Hello world 3", styles.li);
-					const OL = renderer.getListNode(
+					const TextNode1 = renderer.text("Hello world 1", styles.li);
+					const TextNode2 = renderer.text("Hello world 2", styles.li);
+					const TextNode3 = renderer.text("Hello world 3", styles.li);
+					const OL = renderer.list(
 						false,
 						[TextNode1, TextNode2, TextNode3],
 						styles.list,
 						styles.li,
 					);
-					const r = render(OL);
+					const r = render(OL as ReactElement);
 					expect(screen.queryByText("Hello world 1")).toBeTruthy();
 					expect(screen.queryByText("Hello world 2")).toBeTruthy();
 					expect(screen.queryByText("Hello world 3")).toBeTruthy();

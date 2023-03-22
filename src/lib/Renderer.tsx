@@ -11,73 +11,40 @@ import {
 import MarkedList from "@jsamr/react-native-li";
 import Disc from "@jsamr/counter-style/presets/disc";
 import Decimal from "@jsamr/counter-style/presets/decimal";
+import { Slugger } from "marked";
 import MDImage from "./../components/MDImage";
-import { generateRandomString } from "../utils/string";
 import { onLinkPress } from "../utils/handlers";
+import type { RendererInterface } from "./types";
 
-class Renderer {
-	getTextNode = (children: string | ReactNode[], styles?: TextStyle) => {
-		return (
-			<Text key={generateRandomString()} style={styles}>
-				{children}
-			</Text>
-		);
-	};
-
-	getTextLinkNode = (
-		children: string | ReactNode[],
-		href: string,
-		styles?: TextStyle,
-	) => {
-		return (
-			<Text
-				accessibilityRole="link"
-				accessibilityHint="Opens in a new window"
-				key={generateRandomString()}
-				onPress={onLinkPress(href)}
-				style={styles}
-			>
-				{children}
-			</Text>
-		);
-	};
-
-	getImageLinkNode = (
-		href: string,
-		imageUrl: string,
-		alt?: string,
-		style?: ImageStyle,
-	) => {
-		const imageNode = this.getImageNode(imageUrl, alt, style);
-		return (
-			<TouchableHighlight
-				accessibilityRole="link"
-				accessibilityHint="Opens in a new window"
-				onPress={onLinkPress(href)}
-				key={generateRandomString()}
-			>
-				{imageNode}
-			</TouchableHighlight>
-		);
-	};
-
-	getViewNode(children: ReactNode[] | null, styles?: ViewStyle) {
-		return (
-			<View key={generateRandomString()} style={styles}>
-				{children}
-			</View>
-		);
+class Renderer implements RendererInterface {
+	private slugPrefix = "react-native-marked-ele";
+	private slugger: Slugger;
+	constructor() {
+		this.slugger = new Slugger();
 	}
 
-	getCodeBlockNode(
+	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode {
+		return this.getViewNode(children, styles);
+	}
+
+	blockquote(children: ReactNode[], styles?: ViewStyle): ReactNode {
+		return this.getBlockquoteNode(children, styles);
+	}
+
+	heading(text: string | ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(text, styles);
+	}
+
+	code(
 		text: string,
+		_language?: string,
 		containerStyle?: ViewStyle,
 		textStyle?: TextStyle,
-	) {
+	): ReactNode {
 		return (
 			<ScrollView
 				horizontal
-				key={generateRandomString()}
+				key={this.getKey()}
 				contentContainerStyle={containerStyle}
 			>
 				<Text style={textStyle}>{text}</Text>
@@ -85,36 +52,144 @@ class Renderer {
 		);
 	}
 
-	getBlockquoteNode(children: ReactNode[], styles?: ViewStyle) {
-		return (
-			<View key={generateRandomString()} style={styles}>
-				{children}
-			</View>
-		);
+	hr(styles?: ViewStyle): ReactNode {
+		return this.getViewNode(null, styles);
 	}
 
-	getImageNode(uri: string, alt?: string, style?: ImageStyle) {
-		return (
-			<MDImage key={generateRandomString()} uri={uri} alt={alt} style={style} />
-		);
+	listItem(children: ReactNode[], styles?: ViewStyle): ReactNode {
+		return this.getViewNode(children, styles);
 	}
 
-	getListNode(
+	list(
 		ordered: boolean,
 		li: ReactNode[],
 		listStyle?: ViewStyle,
 		textStyle?: TextStyle,
-	) {
+	): ReactNode {
 		return (
 			<MarkedList
 				counterRenderer={ordered ? Decimal : Disc}
 				markerTextStyle={textStyle}
 				markerBoxStyle={listStyle}
-				key={generateRandomString()}
+				key={this.getKey()}
 			>
 				{li.map((node) => node)}
 			</MarkedList>
 		);
+	}
+
+	escape(text: string, styles?: TextStyle): ReactNode {
+		return this.getTextNode(text, styles);
+	}
+
+	link(
+		children: string | ReactNode[],
+		href: string,
+		styles?: TextStyle,
+	): ReactNode {
+		return (
+			<Text
+				accessibilityRole="link"
+				accessibilityHint="Opens in a new window"
+				key={this.getKey()}
+				onPress={onLinkPress(href)}
+				style={styles}
+			>
+				{children}
+			</Text>
+		);
+	}
+
+	image(uri: string, alt?: string, style?: ImageStyle): ReactNode {
+		return <MDImage key={this.getKey()} uri={uri} alt={alt} style={style} />;
+	}
+
+	strong(children: ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(children, styles);
+	}
+
+	em(children: ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(children, styles);
+	}
+
+	codespan(text: string, styles?: TextStyle): ReactNode {
+		return this.getTextNode(text, styles);
+	}
+
+	br(): ReactNode {
+		return this.getTextNode("\n", {});
+	}
+
+	del(children: ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(children, styles);
+	}
+
+	text(text: string | ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(text, styles);
+	}
+
+	html(text: string | ReactNode[], styles?: TextStyle): ReactNode {
+		return this.getTextNode(text, styles);
+	}
+
+	linkImage(
+		href: string,
+		imageUrl: string,
+		alt?: string,
+		style?: ImageStyle,
+	): ReactNode {
+		const imageNode = this.image(imageUrl, alt, style);
+		return (
+			<TouchableHighlight
+				accessibilityRole="link"
+				accessibilityHint="Opens in a new window"
+				onPress={onLinkPress(href)}
+				key={this.getKey()}
+			>
+				{imageNode}
+			</TouchableHighlight>
+		);
+	}
+
+	getKey(): string {
+		return this.slugger.slug(this.slugPrefix);
+	}
+
+	private getTextNode(
+		children: string | ReactNode[],
+		styles?: TextStyle,
+	): ReactNode {
+		return (
+			<Text key={this.getKey()} style={styles}>
+				{children}
+			</Text>
+		);
+	}
+
+	private getViewNode(
+		children: ReactNode[] | null,
+		styles?: ViewStyle,
+	): ReactNode {
+		{
+			return (
+				<View key={this.getKey()} style={styles}>
+					{children}
+				</View>
+			);
+		}
+	}
+
+	private getBlockquoteNode(
+		children: ReactNode[],
+		styles?: ViewStyle,
+	): ReactNode {
+		{
+			return (
+				<View key={this.getKey()} style={styles}>
+					{children}
+				</View>
+			);
+		}
 	}
 }
 
