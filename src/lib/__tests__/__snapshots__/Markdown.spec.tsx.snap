@@ -1143,6 +1143,98 @@ exports[`Code Code Blocks (backtick) 1`] = `
 </RCTScrollView>
 `;
 
+exports[`Code Code Blocks (backtick), no ending backtick 1`] = `
+<RCTScrollView
+  data={
+    [
+      <ScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <Text
+          style={
+            {
+              "color": "#333333",
+              "fontSize": 16,
+              "fontStyle": "italic",
+              "lineHeight": 24,
+            }
+          }
+        >
+                &lt;head&gt;
+      &lt;/head&gt;
+    &lt;/html&gt;
+        </Text>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <View>
+          <Text
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+                  &lt;head&gt;
+      &lt;/head&gt;
+    &lt;/html&gt;
+          </Text>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
 exports[`Code Code Blocks 1`] = `
 <RCTScrollView
   data={

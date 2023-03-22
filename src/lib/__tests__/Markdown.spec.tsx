@@ -402,6 +402,16 @@ describe("Code", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
+	it("Code Blocks (backtick), no ending backtick", () => {
+		const r = render(
+			<Markdown
+				value={"```<html>\n      <head>\n      </head>\n    </html>"}
+			/>,
+		);
+
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
+	});
 });
 
 // https://www.markdownguide.org/basic-syntax/#horizontal-rules
