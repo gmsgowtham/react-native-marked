@@ -1,6 +1,9 @@
-import React from "react";
+import React, { type ReactNode } from "react";
 import { render, screen } from "@testing-library/react-native";
+import { Text, type TextStyle } from "react-native";
 import Markdown from "../Markdown";
+import Renderer from "../Renderer";
+import type { IRenderer } from "../types";
 
 // https://www.markdownguide.org/basic-syntax/#headings
 describe("Headings", () => {
@@ -571,5 +574,37 @@ describe("Unsupported", () => {
 		expect(console.warn).toHaveBeenCalledWith(
 			"react-native-marked: token with 'table' type was not found.",
 		);
+	});
+});
+
+describe("Renderer override", () => {
+	it("Custom", () => {
+		const fn = jest.fn(
+			(text: string, styles?: TextStyle): ReactNode => (
+				<Text style={styles} key={"key-1"}>
+					{text}
+				</Text>
+			),
+		);
+		const style: TextStyle = {
+			color: "#ff0000",
+		};
+		class CustomRenderer extends Renderer implements IRenderer {
+			constructor() {
+				super();
+			}
+			codespan = fn;
+		}
+
+		const r = render(
+			<Markdown
+				value={"`hello`"}
+				renderer={new CustomRenderer()}
+				styles={{ codespan: { ...style } }}
+			/>,
+		);
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
+		expect(fn).toHaveBeenCalledWith("hello", style);
 	});
 });
