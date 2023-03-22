@@ -396,7 +396,7 @@ describe("Code", () => {
 	it("Code Blocks (backtick)", () => {
 		const r = render(
 			<Markdown
-				value={"```<html>\n      <head>\n      </head>\n    </html>```"}
+				value={"```<html>\n      <head>\n      </head>\n    </html>\n```"}
 			/>,
 		);
 		const tree = r.toJSON();
