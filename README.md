@@ -6,7 +6,8 @@
 [![npm](https://img.shields.io/npm/v/react-native-marked)](https://www.npmjs.com/package/react-native-marked)
 [![npm](https://img.shields.io/npm/dw/react-native-marked)](https://www.npmjs.com/package/react-native-marked)
 
-Markdown renderer for React Native powered by [marked.js](https://marked.js.org/) with built-in theming support
+Markdown renderer for React Native powered by
+[marked.js](https://marked.js.org/) with built-in theming support
 
 ## Installation
 
@@ -16,9 +17,9 @@ yarn add react-native-marked
 
 ## Usage
 
-```jsx
-import * as React from 'react';
-import Markdown from 'react-native-marked';
+```tsx
+import * as React from "react";
+import Markdown from "react-native-marked";
 
 const ExampleComponent = () => {
   return (
@@ -45,9 +46,10 @@ export default ExampleComponent;
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
 | value         | Markdown value                                                                                                                               | string                                                                                                                                                                         | false     |
 | flatListProps | Props for customizing the underlying FlatList used                                                                                           | `Omit<FlatListProps<ReactNode>, 'data' \| 'renderItem' \| 'horizontal'>`<br><br><br>(`'data'`, `'renderItem'`, and `'horizontal'` props are omitted and cannot be overridden.) | true      |
-| styles        | Styles for parsed components                                                                                                                 | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/4ef070931b7d309a7490c41e45129e12525d12d9/src/theme/types.ts#L3)                                          | true      |
-| theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/6eba804c617099ffb574aa97c57a71ea3e0184fb/src/theme/types.ts#L28)                                            | true      |
+| styles        | Styles for parsed components                                                                                                                 | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L5)                                                                              | true      |
+| theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L28)                                                                                | true      |
 | baseUrl       | A prefix url for any relative link                                                                                                           | string                                                                                                                                                                         | true      |
+| renderer      | Custom component Renderer                                                                                                                    | [IRenderer](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L25)                                                                                  | true      |
 
 ## Supported elements
 
@@ -68,6 +70,58 @@ Ref: [CommonMark](https://commonmark.org/help/)
 
 > HTML will be treated as plain text
 
+## Using custom components
+
+```tsx
+import React, { ReactNode } from "react";
+import { Text } from "react-native";
+import type { ImageStyle, TextStyle } from "react-native";
+import Markdown, { Renderer } from "react-native-marked";
+import type { IRenderer } from "react-native-marked";
+import FastImage from "react-native-fast-image";
+
+class CustomRenderer extends Renderer implements IRenderer {
+  constructor() {
+    super();
+  }
+
+  codespan(text: string, _styles?: TextStyle): ReactNode {
+    return (
+      <Text key={this.getKey()} style={{ backgroundColor: "#ff0000" }}>
+        {text}
+      </Text>
+    );
+  }
+
+  image(uri: string, _alt?: string, _style?: ImageStyle): ReactNode {
+    return (
+      <FastImage
+        key={this.getKey()}
+        style={{ width: 200, height: 200 }}
+        source={{ uri: uri }}
+        resizeMode={FastImage.resizeMode.contain}
+      />
+    );
+  }
+}
+
+const renderer = new CustomRenderer();
+
+const ExampleComponent = () => {
+  return (
+    <Markdown
+      value={"`Hello world`"}
+      flatListProps={{
+        initialNumToRender: 8,
+      }}
+      renderer={renderer}
+    />
+  );
+};
+
+export default ExampleComponent;
+```
+
 ## Screenshots
 
 |                          Dark Theme                           |                           Light Theme                            |
@@ -76,7 +130,8 @@ Ref: [CommonMark](https://commonmark.org/help/)
 
 ## Contributing
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the
+repository and the development workflow.
 
 ## License
 
@@ -84,7 +139,8 @@ MIT
 
 ---
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+Made with
+[create-react-native-library](https://github.com/callstack/react-native-builder-bob)
 
 ## Built with
 
