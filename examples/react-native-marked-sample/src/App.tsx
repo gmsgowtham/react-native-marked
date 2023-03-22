@@ -7,10 +7,13 @@ import {
 	Text,
 	type TextStyle,
 } from "react-native";
-import Markdown, { Renderer, type IRenderer } from "react-native-marked";
+import Markdown, {
+	Renderer,
+	type RendererInterface,
+} from "react-native-marked";
 import { MD_STRING } from "./const";
 
-class CustomRenderer extends Renderer implements IRenderer {
+class CustomRenderer extends Renderer implements RendererInterface {
 	constructor() {
 		super();
 	}

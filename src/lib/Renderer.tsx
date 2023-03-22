@@ -14,9 +14,9 @@ import Decimal from "@jsamr/counter-style/presets/decimal";
 import { Slugger } from "marked";
 import MDImage from "./../components/MDImage";
 import { onLinkPress } from "../utils/handlers";
-import type { IRenderer } from "./types";
+import type { RendererInterface } from "./types";
 
-class Renderer implements IRenderer {
+class Renderer implements RendererInterface {
 	private slugPrefix = "react-native-marked-ele";
 	private slugger: Slugger;
 	constructor() {

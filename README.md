@@ -49,7 +49,7 @@ export default ExampleComponent;
 | styles        | Styles for parsed components                                                                                                                 | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L5)                                                                              | true      |
 | theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L28)                                                                                | true      |
 | baseUrl       | A prefix url for any relative link                                                                                                           | string                                                                                                                                                                         | true      |
-| renderer      | Custom component Renderer                                                                                                                    | [IRenderer](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L25)                                                                                  | true      |
+| renderer      | Custom component Renderer                                                                                                                    | [RendererInterface](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L25)                                                                          | true      |
 
 ## Supported elements
 
@@ -77,10 +77,10 @@ import React, { ReactNode } from "react";
 import { Text } from "react-native";
 import type { ImageStyle, TextStyle } from "react-native";
 import Markdown, { Renderer } from "react-native-marked";
-import type { IRenderer } from "react-native-marked";
+import type { RendererInterface } from "react-native-marked";
 import FastImage from "react-native-fast-image";
 
-class CustomRenderer extends Renderer implements IRenderer {
+class CustomRenderer extends Renderer implements RendererInterface {
   constructor() {
     super();
   }

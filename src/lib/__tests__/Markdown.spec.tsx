@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react-native";
 import { Text, type TextStyle } from "react-native";
 import Markdown from "../Markdown";
 import Renderer from "../Renderer";
-import type { IRenderer } from "../types";
+import type { RendererInterface } from "../types";
 
 // https://www.markdownguide.org/basic-syntax/#headings
 describe("Headings", () => {
@@ -599,7 +599,7 @@ describe("Renderer override", () => {
 		const style: TextStyle = {
 			color: "#ff0000",
 		};
-		class CustomRenderer extends Renderer implements IRenderer {
+		class CustomRenderer extends Renderer implements RendererInterface {
 			constructor() {
 				super();
 			}

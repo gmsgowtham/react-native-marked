@@ -10,7 +10,7 @@ import type { MarkedStyles, UserTheme } from "./../theme/types";
 export interface ParserOptions {
 	styles?: MarkedStyles;
 	baseUrl?: string;
-	renderer: IRenderer;
+	renderer: RendererInterface;
 }
 
 export interface MarkdownProps extends Partial<ParserOptions> {
@@ -22,7 +22,7 @@ export interface MarkdownProps extends Partial<ParserOptions> {
 	theme?: UserTheme;
 }
 
-export interface IRenderer {
+export interface RendererInterface {
 	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode;
 	blockquote(children: ReactNode[], styles?: ViewStyle): ReactNode;
 	heading(text: string | ReactNode[], styles?: TextStyle): ReactNode;
