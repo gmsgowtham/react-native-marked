@@ -165,6 +165,10 @@ export interface RendererInterface {
 }
 ```
 
+> Note:
+>
+> For `key` property for a component, use `getKey` method from Renderer class.
+
 ## Screenshots
 
 |                          Dark Theme                           |                           Light Theme                            |
