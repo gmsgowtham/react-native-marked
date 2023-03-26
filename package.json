@@ -71,7 +71,7 @@
     "react-native-builder-bob": "0.20.4",
     "react-test-renderer": "18.2.0",
     "reassure": "0.7.2",
-    "release-it": "15.9.1",
+    "release-it": "15.9.3",
     "rome": "11.0.0",
     "typescript": "5.0.2"
   },
