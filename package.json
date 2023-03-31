@@ -73,7 +73,7 @@
     "reassure": "0.7.2",
     "release-it": "15.9.3",
     "rome": "12.0.0",
-    "typescript": "5.0.2"
+    "typescript": "5.0.3"
   },
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0.0 || ^18.0.0",
