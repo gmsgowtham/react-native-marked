@@ -76,6 +76,10 @@ class Parser {
 				return this.renderer.hr(this.styles.hr);
 			}
 			case "list": {
+				let startIndex = parseInt(token.start.toString());
+				if (Number.isNaN(startIndex)) {
+					startIndex = 1;
+				}
 				const li = token.items.map((item) => {
 					const children = item.tokens.flatMap((cItem) => {
 						if (cItem.type === "text") {
@@ -102,6 +106,7 @@ class Parser {
 					li,
 					this.styles.list,
 					this.styles.li,
+					startIndex,
 				);
 			}
 			case "escape": {

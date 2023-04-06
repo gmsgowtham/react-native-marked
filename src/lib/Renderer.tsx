@@ -65,6 +65,7 @@ class Renderer implements RendererInterface {
 		li: ReactNode[],
 		listStyle?: ViewStyle,
 		textStyle?: TextStyle,
+		startIndex?: number,
 	): ReactNode {
 		return (
 			<MarkedList
@@ -72,6 +73,7 @@ class Renderer implements RendererInterface {
 				markerTextStyle={textStyle}
 				markerBoxStyle={listStyle}
 				key={this.getKey()}
+				startIndex={startIndex}
 			>
 				{li.map((node) => node)}
 			</MarkedList>

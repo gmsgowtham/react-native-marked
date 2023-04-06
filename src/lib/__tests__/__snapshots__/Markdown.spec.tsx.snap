@@ -350,6 +350,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               "lineHeight": 24,
             }
           }
+          startIndex={1}
         >
           <View
             style={
@@ -5238,6 +5239,7 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             "lineHeight": 24,
           }
         }
+        startIndex={1}
       >
         <View
           style={
@@ -5652,6 +5654,7 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             "lineHeight": 24,
           }
         }
+        startIndex={1}
       >
         <View
           style={
@@ -6049,6 +6052,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
             "lineHeight": 24,
           }
         }
+        startIndex={1}
       >
         <View
           style={
@@ -6496,6 +6500,7 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             "lineHeight": 24,
           }
         }
+        startIndex={1}
       >
         <View
           style={
@@ -6605,6 +6610,7 @@ exports[`Lists Elements in Lists: Lists 1`] = `
                 "lineHeight": 24,
               }
             }
+            startIndex={1}
           >
             <View
               style={
@@ -7136,6 +7142,7 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             "lineHeight": 24,
           }
         }
+        startIndex={1}
       >
         <View
           style={
@@ -7509,6 +7516,7 @@ exports[`Lists Ordered Lists 1`] = `
             "lineHeight": 24,
           }
         }
+        startIndex={1}
       >
         <View
           style={
@@ -7621,6 +7629,7 @@ exports[`Lists Ordered Lists 1`] = `
                 "lineHeight": 24,
               }
             }
+            startIndex={1}
           >
             <View
               style={
@@ -8117,6 +8126,350 @@ exports[`Lists Ordered Lists 1`] = `
 </RCTScrollView>
 `;
 
+exports[`Lists Ordered Lists: With Start Offset 1`] = `
+<RCTScrollView
+  data={
+    [
+      <MarkedList
+        counterRenderer={
+          {
+            "engine": {
+              "specs": {
+                "fallback": {
+                  "maxCounterLenInRange": [Function],
+                  "renderCounter": [Function],
+                },
+                "negative": {
+                  "prefix": "-",
+                  "suffix": "",
+                },
+                "padding": null,
+                "prefix": null,
+                "range": {
+                  "max": Infinity,
+                  "min": -Infinity,
+                },
+                "reversedCounter": false,
+                "reversedMarker": false,
+                "suffix": ". ",
+              },
+            },
+          }
+        }
+        markerTextStyle={
+          {
+            "color": "#333333",
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+          }
+        }
+        startIndex={57}
+      >
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              foo
+            </Text>
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              bar
+            </Text>
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              baz
+            </Text>
+          </Text>
+        </View>
+      </MarkedList>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 38.4,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            57. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              foo
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 38.4,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            58. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              bar
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View>
+          <Text
+            style={
+              [
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#333333",
+                  "flexGrow": 0,
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                  "textAlign": "right",
+                },
+                {
+                  "width": 38.4,
+                },
+              ]
+            }
+            testID="marker-box"
+          >
+            59. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "color": "#333333",
+              "flexShrink": 1,
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          <Text
+            style={{}}
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              baz
+            </Text>
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
 exports[`Lists Unordered Lists 1`] = `
 <RCTScrollView
   data={
@@ -8152,6 +8505,7 @@ exports[`Lists Unordered Lists 1`] = `
             "lineHeight": 24,
           }
         }
+        startIndex={1}
       >
         <View
           style={
@@ -8261,6 +8615,7 @@ exports[`Lists Unordered Lists 1`] = `
                 "lineHeight": 24,
               }
             }
+            startIndex={1}
           >
             <View
               style={
