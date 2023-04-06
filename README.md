@@ -141,6 +141,7 @@ export interface RendererInterface {
     li: ReactNode[],
     listStyle?: ViewStyle,
     textStyle?: TextStyle,
+    startIndex?: number,
   ): ReactNode;
   escape(text: string, styles?: TextStyle): ReactNode;
   link(
