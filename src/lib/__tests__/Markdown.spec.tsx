@@ -272,6 +272,17 @@ describe("Lists", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
+	it("Ordered Lists: With Start Offset", () => {
+		const r = render(<Markdown value={"57. foo\n1. bar\n2. baz"} />);
+		expect(screen.queryByText("foo")).toBeTruthy();
+		expect(screen.queryByText("bar")).toBeTruthy();
+		expect(screen.queryByText("baz")).toBeTruthy();
+		expect(screen.queryByText("57.")).toBeTruthy();
+		expect(screen.queryByText("58.")).toBeTruthy();
+		expect(screen.queryByText("59.")).toBeTruthy();
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
+	});
 	it("Unordered Lists", () => {
 		const r = render(
 			<Markdown
