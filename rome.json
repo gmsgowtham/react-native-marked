@@ -1,17 +1,17 @@
 {
-  "$schema": "./node_modules/rome/configuration_schema.json",
-  "linter": {
-    "enabled": true,
-    "ignore": ["node_modules/", "coverage/", "dist/"],
-    "rules": {
-      "recommended": true,
-      "correctness": {
-        "noRenderReturnValue": "off"
-      }
-    }
-  },
-  "formatter": {
-    "enabled": true,
-    "ignore": ["node_modules/", "coverage/", "dist/"]
-  }
+	"$schema": "./node_modules/rome/configuration_schema.json",
+	"linter": {
+		"enabled": true,
+		"ignore": ["node_modules/", "coverage/", "dist/"],
+		"rules": {
+			"recommended": true,
+			"correctness": {
+				"noRenderReturnValue": "off"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"ignore": ["node_modules/", "coverage/", "dist/"]
+	}
 }
