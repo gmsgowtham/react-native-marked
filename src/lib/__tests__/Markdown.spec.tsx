@@ -576,10 +576,9 @@ describe("HTML", () => {
 	});
 });
 
-// Unsupported items test
-describe("Unsupported", () => {
-	it("Table", () => {
-		console.warn = jest.fn();
+// https://www.markdownguide.org/extended-syntax/#tables
+describe("Tables", () => {
+	it("Basic", () => {
 		const r = render(
 			<Markdown
 				value={`
@@ -591,10 +590,118 @@ describe("Unsupported", () => {
 			/>,
 		);
 		const tree = r.toJSON();
+		expect(screen.queryByText("Syntax")).toBeTruthy();
+		expect(screen.queryByText("Description")).toBeTruthy();
+		expect(screen.queryByText("Header")).toBeTruthy();
+		expect(screen.queryByText("Title")).toBeTruthy();
+		expect(screen.queryByText("Paragraph")).toBeTruthy();
+		expect(screen.queryByText("Text")).toBeTruthy();
 		expect(tree).toMatchSnapshot();
-		expect(console.warn).toHaveBeenCalledWith(
-			"react-native-marked: token with 'table' type was not found.",
+	});
+	it("Different Cell Widths", () => {
+		const r = render(
+			<Markdown
+				value={`
+| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+				`}
+			/>,
 		);
+		const tree = r.toJSON();
+		expect(screen.queryByText("Syntax")).toBeTruthy();
+		expect(screen.queryByText("Description")).toBeTruthy();
+		expect(screen.queryByText("Header")).toBeTruthy();
+		expect(screen.queryByText("Title")).toBeTruthy();
+		expect(screen.queryByText("Paragraph")).toBeTruthy();
+		expect(screen.queryByText("Text")).toBeTruthy();
+		expect(tree).toMatchSnapshot();
+	});
+	it("Alignment", () => {
+		const r = render(
+			<Markdown
+				value={`
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+				`}
+			/>,
+		);
+		const tree = r.toJSON();
+		expect(screen.queryByText("Syntax")).toBeTruthy();
+		expect(screen.queryByText("Description")).toBeTruthy();
+		expect(screen.queryByText("Test Text")).toBeTruthy();
+		expect(screen.queryByText("Header")).toBeTruthy();
+		expect(screen.queryByText("Title")).toBeTruthy();
+		expect(screen.queryByText("Here's this")).toBeTruthy();
+		expect(screen.queryByText("Paragraph")).toBeTruthy();
+		expect(screen.queryByText("Text")).toBeTruthy();
+		expect(screen.queryByText("And more")).toBeTruthy();
+		expect(tree).toMatchSnapshot();
+	});
+	it("Pipe Character", () => {
+		const r = render(
+			<Markdown
+				value={`
+| Syntax    | Description |       Test Text |
+| :-------- | :---------: | --------------: |
+| Header    |    Title    | Here's \\| this |
+| Paragraph |    Text     |        And more |
+				`}
+			/>,
+		);
+		const tree = r.toJSON();
+		expect(screen.queryByText("Syntax")).toBeTruthy();
+		expect(screen.queryByText("Description")).toBeTruthy();
+		expect(screen.queryByText("Test Text")).toBeTruthy();
+		expect(screen.queryByText("Header")).toBeTruthy();
+		expect(screen.queryByText("Title")).toBeTruthy();
+		expect(screen.queryByText("Here's | this")).toBeTruthy();
+		expect(screen.queryByText("Paragraph")).toBeTruthy();
+		expect(screen.queryByText("Text")).toBeTruthy();
+		expect(screen.queryByText("And more")).toBeTruthy();
+		expect(tree).toMatchSnapshot();
+	});
+	it("Emphasis, Code, Links", () => {
+		const r = render(
+			<Markdown
+				value={`
+| _This will also be italic_ |      _You **can** combine them_       |
+| -------------------------- | :-----------------------------------: |
+| **left foo**               |              _right foo_              |
+| \`left bar\`               |               right bar               |
+| ~~left baz~~               | right [link](https://duckduckgo.com). |
+				`}
+			/>,
+		);
+		const tree = r.toJSON();
+		expect(screen.queryByText("This will also be italic")).toBeTruthy();
+		expect(screen.queryByText("You can combine them")).toBeTruthy();
+		expect(screen.queryByText("left foo")).toBeTruthy();
+		expect(screen.queryByText("right foo")).toBeTruthy();
+		expect(screen.queryByText("left bar")).toBeTruthy();
+		expect(screen.queryByText("right bar")).toBeTruthy();
+		expect(screen.queryByText("left baz")).toBeTruthy();
+		expect(screen.queryByText("link")).toBeTruthy();
+		expect(tree).toMatchSnapshot();
+	});
+	it("Images", () => {
+		const r = render(
+			<Markdown
+				value={`
+|                                Hello                                |
+| :-----------------------------------------------------------------: |
+| Bingo ![](https://goo.gl/1R3T6h "Tonejito") This also works for me. |
+				`}
+			/>,
+		);
+		const tree = r.toJSON();
+		expect(screen.queryByText("Hello")).toBeTruthy();
+		expect(screen.queryByText("Bingo")).toBeTruthy();
+		expect(screen.queryByText("This also works for me.")).toBeTruthy();
+		expect(tree).toMatchSnapshot();
 	});
 });
 

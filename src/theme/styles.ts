@@ -126,6 +126,16 @@ const getStyles = (
 		image: {
 			resizeMode: "cover",
 		},
+		table: {
+			borderWidth: 1,
+			borderColor: mdColors.border,
+		},
+		tableRow: {
+			flexDirection: "row",
+		},
+		tableCell: {
+			padding: mdSpacing.s,
+		},
 	});
 
 	return {

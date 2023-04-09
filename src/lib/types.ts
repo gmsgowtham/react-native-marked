@@ -22,6 +22,8 @@ export interface MarkdownProps extends Partial<ParserOptions> {
 	theme?: UserTheme;
 }
 
+export type TableColAlignment = "center" | "left" | "right" | null;
+
 export interface RendererInterface {
 	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode;
 	blockquote(children: ReactNode[], styles?: ViewStyle): ReactNode;
@@ -60,5 +62,12 @@ export interface RendererInterface {
 		imageUrl: string,
 		alt?: string,
 		style?: ImageStyle,
+	): ReactNode;
+	table(
+		header: ReactNode[][],
+		rows: ReactNode[][][],
+		tableStyle?: ViewStyle,
+		rowStyle?: ViewStyle,
+		cellStyle?: ViewStyle,
 	): ReactNode;
 }

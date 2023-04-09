@@ -105,6 +105,50 @@ describe("Renderer", () => {
 					expect(tree).toMatchSnapshot();
 				});
 			});
+			describe("Table Nodes", () => {
+				it("returns a Table", () => {
+					const TextNode1 = renderer.text("Hello world 1");
+					const TextNode2 = renderer.text("Hello world 2", styles.strong);
+					const TextNode3 = renderer.text("Hello world 3", styles.em);
+					const TextNode4 = renderer.text("Hello world 4", styles.text);
+					const TextNode5 = renderer.text("Hello world 5", styles.link);
+					const headers = [[TextNode1], [TextNode2]];
+					const rows = [[[TextNode3]], [[TextNode4, TextNode5]]];
+					const Table = renderer.table(
+						headers,
+						rows,
+						styles.table,
+						styles.tableRow,
+						styles.tableCell,
+					);
+					const r = render(Table as ReactElement);
+					expect(screen.queryByText("Hello world 1")).toBeTruthy();
+					expect(screen.queryByText("Hello world 2")).toBeTruthy();
+					expect(screen.queryByText("Hello world 3")).toBeTruthy();
+					expect(screen.queryByText("Hello world 4")).toBeTruthy();
+					expect(screen.queryByText("Hello world 5")).toBeTruthy();
+					const tree = r.toJSON();
+					expect(tree).toMatchSnapshot();
+				});
+				it("returns a Table without styles", () => {
+					const TextNode1 = renderer.text("Hello world 1");
+					const TextNode2 = renderer.text("Hello world 2", styles.strong);
+					const TextNode3 = renderer.text("Hello world 3", styles.em);
+					const TextNode4 = renderer.text("Hello world 4", styles.text);
+					const TextNode5 = renderer.text("Hello world 5", styles.link);
+					const headers = [[TextNode1], [TextNode2]];
+					const rows = [[[TextNode3]], [[TextNode4, TextNode5]]];
+					const Table = renderer.table(headers, rows);
+					const r = render(Table as ReactElement);
+					expect(screen.queryByText("Hello world 1")).toBeTruthy();
+					expect(screen.queryByText("Hello world 2")).toBeTruthy();
+					expect(screen.queryByText("Hello world 3")).toBeTruthy();
+					expect(screen.queryByText("Hello world 4")).toBeTruthy();
+					expect(screen.queryByText("Hello world 5")).toBeTruthy();
+					const tree = r.toJSON();
+					expect(tree).toMatchSnapshot();
+				});
+			});
 			describe("getCodeBlockNode", () => {
 				it("returns a Code block (horizontal ScrollView)", () => {
 					const CodeBlock = renderer.code(

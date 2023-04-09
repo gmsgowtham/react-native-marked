@@ -7,20 +7,26 @@ import {
 	type TextStyle,
 	type ViewStyle,
 	type ImageStyle,
+	Dimensions,
 } from "react-native";
 import MarkedList from "@jsamr/react-native-li";
 import Disc from "@jsamr/counter-style/presets/disc";
 import Decimal from "@jsamr/counter-style/presets/decimal";
 import { Slugger } from "marked";
+import { Table, Cell, TableWrapper } from "react-native-table-component";
 import MDImage from "./../components/MDImage";
 import { onLinkPress } from "../utils/handlers";
 import type { RendererInterface } from "./types";
+import { getTableWidthArr } from "../utils/table";
 
 class Renderer implements RendererInterface {
 	private slugPrefix = "react-native-marked-ele";
 	private slugger: Slugger;
+	private windowWidth: number;
 	constructor() {
 		this.slugger = new Slugger();
+		const { width } = Dimensions.get("window");
+		this.windowWidth = width;
 	}
 
 	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode {
@@ -150,6 +156,52 @@ class Renderer implements RendererInterface {
 			>
 				{imageNode}
 			</TouchableHighlight>
+		);
+	}
+
+	table(
+		header: ReactNode[][],
+		rows: ReactNode[][][],
+		tableStyle?: ViewStyle,
+		rowStyle?: ViewStyle,
+		cellStyle?: ViewStyle,
+	): React.ReactNode {
+		const widthArr = getTableWidthArr(header.length, this.windowWidth);
+		const { borderWidth, borderColor, ...tableStyleRest } = tableStyle || {};
+		return (
+			<ScrollView horizontal={true}>
+				<Table
+					borderStyle={{ borderWidth, borderColor }}
+					style={tableStyleRest}
+				>
+					<TableWrapper style={rowStyle}>
+						{header.map((headerCol, index) => {
+							return (
+								<Cell
+									width={widthArr[index]}
+									key={`${index}`}
+									data={<View style={cellStyle}>{headerCol}</View>}
+								/>
+							);
+						})}
+					</TableWrapper>
+					{rows.map((rowData, index) => {
+						return (
+							<TableWrapper key={`${index}`} style={rowStyle}>
+								{rowData.map((cellData, cellIndex) => {
+									return (
+										<Cell
+											width={widthArr[cellIndex]}
+											key={`${cellIndex}`}
+											data={<View style={cellStyle}>{cellData}</View>}
+										/>
+									);
+								})}
+							</TableWrapper>
+						);
+					})}
+				</Table>
+			</ScrollView>
 		);
 	}
 

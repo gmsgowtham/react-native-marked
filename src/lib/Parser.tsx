@@ -4,6 +4,7 @@ import type { marked } from "marked";
 import type { MarkedStyles } from "../theme/types";
 import type { RendererInterface, ParserOptions } from "./types";
 import { getValidURL } from "./../utils/url";
+import { getTableColAlignmentStyle } from "./../utils/table";
 
 class Parser {
 	private renderer: RendererInterface;
@@ -180,6 +181,28 @@ class Parser {
 					...styles,
 				});
 			}
+			case "table":
+				const header = token.header.map((row, i) =>
+					this._parse(row.tokens, {
+						...getTableColAlignmentStyle(token.align[i]),
+					}),
+				);
+
+				const rows = token.rows.map((cols) =>
+					cols.map((col, i) =>
+						this._parse(col.tokens, {
+							...getTableColAlignmentStyle(token.align[i]),
+						}),
+					),
+				);
+
+				return this.renderer.table(
+					header,
+					rows,
+					this.styles.table,
+					this.styles.tableRow,
+					this.styles.tableCell,
+				);
 			default: {
 				console.warn(
 					`react-native-marked: token with '${token.type}' type was not found.`,

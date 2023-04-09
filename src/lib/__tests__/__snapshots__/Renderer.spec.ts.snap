@@ -18,6 +18,392 @@ exports[`Renderer dark theme Link Nodes returns a Text Link node 1`] = `
 </Text>
 `;
 
+exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
+<RCTScrollView
+  horizontal={true}
+>
+  <View>
+    <View
+      style={
+        [
+          {},
+          {
+            "borderBottomWidth": 1,
+            "borderColor": "#30363d",
+            "borderLeftWidth": 1,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "borderColor": "#30363d",
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "padding": 4,
+              }
+            }
+          >
+            <Text>
+              Hello world 1
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "borderColor": "#30363d",
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "padding": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#ffffff",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 2
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "borderColor": "#30363d",
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "padding": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#ffffff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 3
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "borderColor": "#30363d",
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "padding": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "fontSize": 24,
+                }
+              }
+            >
+              Hello world 4
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 5
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
+<RCTScrollView
+  horizontal={true}
+>
+  <View>
+    <View
+      style={
+        [
+          {},
+          {
+            "borderBottomWidth": 0,
+            "borderColor": "#000",
+            "borderLeftWidth": 0,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          style={
+            [
+              {
+                "borderColor": "#000",
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <Text>
+              Hello world 1
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "borderColor": "#000",
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <Text
+              style={
+                {
+                  "color": "#ffffff",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 2
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            [
+              {
+                "borderColor": "#000",
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <Text
+              style={
+                {
+                  "color": "#ffffff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 3
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            [
+              {
+                "borderColor": "#000",
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <Text
+              style={
+                {
+                  "fontSize": 24,
+                }
+              }
+            >
+              Hello world 4
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 5
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
 exports[`Renderer dark theme Text Nodes returns a Text node 1`] = `
 <Text
   style={
@@ -660,6 +1046,392 @@ exports[`Renderer light theme Link Nodes returns a Text Link node 1`] = `
 >
   Link
 </Text>
+`;
+
+exports[`Renderer light theme Table Nodes returns a Table 1`] = `
+<RCTScrollView
+  horizontal={true}
+>
+  <View>
+    <View
+      style={
+        [
+          {},
+          {
+            "borderBottomWidth": 1,
+            "borderColor": "#d0d7de",
+            "borderLeftWidth": 1,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "borderColor": "#d0d7de",
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "padding": 4,
+              }
+            }
+          >
+            <Text>
+              Hello world 1
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "borderColor": "#d0d7de",
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "padding": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 2
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "borderColor": "#d0d7de",
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "padding": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 3
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "borderColor": "#d0d7de",
+                "borderRightWidth": 1,
+                "borderTopWidth": 1,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "padding": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "fontSize": 24,
+                }
+              }
+            >
+              Hello world 4
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 5
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
+<RCTScrollView
+  horizontal={true}
+>
+  <View>
+    <View
+      style={
+        [
+          {},
+          {
+            "borderBottomWidth": 0,
+            "borderColor": "#000",
+            "borderLeftWidth": 0,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          style={
+            [
+              {
+                "borderColor": "#000",
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <Text>
+              Hello world 1
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "borderColor": "#000",
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 2
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            [
+              {
+                "borderColor": "#000",
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <Text
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 3
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            [
+              {
+                "borderColor": "#000",
+                "borderRightWidth": 0,
+                "borderTopWidth": 0,
+              },
+              {
+                "justifyContent": "center",
+              },
+              {
+                "width": 325,
+              },
+              undefined,
+              undefined,
+              false,
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <Text
+              style={
+                {
+                  "fontSize": 24,
+                }
+              }
+            >
+              Hello world 4
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#58a6ff",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Hello world 5
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
 `;
 
 exports[`Renderer light theme Text Nodes returns a Text node 1`] = `

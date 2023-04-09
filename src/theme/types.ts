@@ -23,6 +23,9 @@ export interface MarkedStyles {
 	list?: ViewStyle;
 	li?: TextStyle;
 	image?: ImageStyle;
+	table?: ViewStyle;
+	tableRow?: ViewStyle;
+	tableCell?: ViewStyle;
 }
 
 export interface UserTheme {

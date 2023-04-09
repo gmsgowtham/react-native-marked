@@ -62,7 +62,7 @@ export default ExampleComponent;
 - [x] Code Block
 - [x] List (ordered, unordered)
 - [x] Horizontal Rule
-- [ ] Table
+- [x] Table
 - [ ] HTML
 
 Ref: [CommonMark](https://commonmark.org/help/)
@@ -163,6 +163,13 @@ export interface RendererInterface {
     alt?: string,
     style?: ImageStyle,
   ): ReactNode;
+  table(
+    header: ReactNode[][],
+    rows: ReactNode[][][],
+    tableStyle?: ViewStyle,
+    rowStyle?: ViewStyle,
+    cellStyle?: ViewStyle,
+  ): ReactNode;
 }
 ```
 
@@ -195,3 +202,4 @@ Made with
 - [Marked](https://marked.js.org/)
 - [React Native Fit Image](https://github.com/huiseoul/react-native-fit-image)
 - [@jsamr/react-native-li](https://github.com/jsamr/react-native-li)
+- [react-native-table-component](https://github.com/Gil2015/react-native-table-component)
