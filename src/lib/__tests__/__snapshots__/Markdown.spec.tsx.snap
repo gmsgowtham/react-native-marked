@@ -9514,9 +9514,275 @@ exports[`Renderer override Custom 1`] = `
 </RCTScrollView>
 `;
 
-exports[`Unsupported Table 1`] = `
+exports[`Tables Alignment 1`] = `
 <RCTScrollView
-  data={[]}
+  data={
+    [
+      <ScrollView
+        horizontal={true}
+      >
+        <Table
+          borderStyle={
+            {
+              "borderColor": "#d0d7de",
+              "borderWidth": 1,
+            }
+          }
+          style={{}}
+        >
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Syntax
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Description
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Test Text
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Header
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Title
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Here's this
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Paragraph
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Text
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    And more
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+        </Table>
+      </ScrollView>,
+    ]
+  }
   getItem={[Function]}
   getItemCount={[Function]}
   initialNumToRender={8}
@@ -9540,6 +9806,3500 @@ exports[`Unsupported Table 1`] = `
   }
   viewabilityConfigCallbackPairs={[]}
 >
-  <View />
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        horizontal={true}
+      >
+        <View>
+          <View
+            style={
+              [
+                {},
+                {
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d0d7de",
+                  "borderLeftWidth": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Syntax
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Description
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Test Text
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Header
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Title
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Here's this
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Paragraph
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Text
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    And more
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Tables Basic 1`] = `
+<RCTScrollView
+  data={
+    [
+      <ScrollView
+        horizontal={true}
+      >
+        <Table
+          borderStyle={
+            {
+              "borderColor": "#d0d7de",
+              "borderWidth": 1,
+            }
+          }
+          style={{}}
+        >
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Syntax
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Description
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Header
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Title
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Paragraph
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Text
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+        </Table>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        horizontal={true}
+      >
+        <View>
+          <View
+            style={
+              [
+                {},
+                {
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d0d7de",
+                  "borderLeftWidth": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Syntax
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Description
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Header
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Title
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Paragraph
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Text
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Tables Different Cell Widths 1`] = `
+<RCTScrollView
+  data={
+    [
+      <ScrollView
+        horizontal={true}
+      >
+        <Table
+          borderStyle={
+            {
+              "borderColor": "#d0d7de",
+              "borderWidth": 1,
+            }
+          }
+          style={{}}
+        >
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Syntax
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Description
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Header
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Title
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Paragraph
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Text
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+        </Table>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        horizontal={true}
+      >
+        <View>
+          <View
+            style={
+              [
+                {},
+                {
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d0d7de",
+                  "borderLeftWidth": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Syntax
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Description
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Header
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Title
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Paragraph
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Text
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Tables Emphasis, Code, Links 1`] = `
+<RCTScrollView
+  data={
+    [
+      <ScrollView
+        horizontal={true}
+      >
+        <Table
+          borderStyle={
+            {
+              "borderColor": "#d0d7de",
+              "borderWidth": 1,
+            }
+          }
+          style={{}}
+        >
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "lineHeight": 24,
+                          "textAlign": "left",
+                        }
+                      }
+                    >
+                      This will also be italic
+                    </Text>
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "lineHeight": 24,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      You 
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "fontWeight": "bold",
+                          "lineHeight": 24,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#333333",
+                            "fontSize": 16,
+                            "fontStyle": "italic",
+                            "fontWeight": "bold",
+                            "lineHeight": 24,
+                            "textAlign": "center",
+                          }
+                        }
+                      >
+                        can
+                      </Text>
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "lineHeight": 24,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                       combine them
+                    </Text>
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontWeight": "bold",
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "bold",
+                          "lineHeight": 24,
+                          "textAlign": "left",
+                        }
+                      }
+                    >
+                      left foo
+                    </Text>
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "lineHeight": 24,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      right foo
+                    </Text>
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "backgroundColor": "#f6f8fa",
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "fontWeight": "300",
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    left bar
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    right bar
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                        "textDecorationLine": "line-through",
+                        "textDecorationStyle": "solid",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                          "textAlign": "left",
+                          "textDecorationLine": "line-through",
+                          "textDecorationStyle": "solid",
+                        }
+                      }
+                    >
+                      left baz
+                    </Text>
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    right 
+                  </Text>
+                  <Text
+                    accessibilityHint="Opens in a new window"
+                    accessibilityRole="link"
+                    onPress={[Function]}
+                    style={
+                      {
+                        "color": "#58a6ff",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#58a6ff",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "lineHeight": 24,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      link
+                    </Text>
+                  </Text>
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    .
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+        </Table>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        horizontal={true}
+      >
+        <View>
+          <View
+            style={
+              [
+                {},
+                {
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d0d7de",
+                  "borderLeftWidth": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "lineHeight": 24,
+                          "textAlign": "left",
+                        }
+                      }
+                    >
+                      This will also be italic
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "lineHeight": 24,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      You 
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "fontWeight": "bold",
+                          "lineHeight": 24,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#333333",
+                            "fontSize": 16,
+                            "fontStyle": "italic",
+                            "fontWeight": "bold",
+                            "lineHeight": 24,
+                            "textAlign": "center",
+                          }
+                        }
+                      >
+                        can
+                      </Text>
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "lineHeight": 24,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                       combine them
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontWeight": "bold",
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontWeight": "bold",
+                          "lineHeight": 24,
+                          "textAlign": "left",
+                        }
+                      }
+                    >
+                      left foo
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "lineHeight": 24,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      right foo
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "backgroundColor": "#f6f8fa",
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "fontWeight": "300",
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    left bar
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    right bar
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                        "textDecorationLine": "line-through",
+                        "textDecorationStyle": "solid",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                          "textAlign": "left",
+                          "textDecorationLine": "line-through",
+                          "textDecorationStyle": "solid",
+                        }
+                      }
+                    >
+                      left baz
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    right 
+                  </Text>
+                  <Text
+                    accessibilityHint="Opens in a new window"
+                    accessibilityRole="link"
+                    onPress={[Function]}
+                    style={
+                      {
+                        "color": "#58a6ff",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#58a6ff",
+                          "fontSize": 16,
+                          "fontStyle": "italic",
+                          "lineHeight": 24,
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      link
+                    </Text>
+                  </Text>
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    .
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Tables Images 1`] = `
+<RCTScrollView
+  data={
+    [
+      <ScrollView
+        horizontal={true}
+      >
+        <Table
+          borderStyle={
+            {
+              "borderColor": "#d0d7de",
+              "borderWidth": 1,
+            }
+          }
+          style={{}}
+        >
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Hello
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Bingo 
+                  </Text>
+                  <Memo(MDImage)
+                    alt="Tonejito"
+                    style={
+                      {
+                        "resizeMode": "cover",
+                      }
+                    }
+                    uri="https://goo.gl/1R3T6h"
+                  />
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                     This also works for me.
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+        </Table>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        horizontal={true}
+      >
+        <View>
+          <View
+            style={
+              [
+                {},
+                {
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d0d7de",
+                  "borderLeftWidth": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Hello
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Bingo 
+                  </Text>
+                  <View
+                    accessibilityIgnoresInvertColors={true}
+                    style={
+                      [
+                        {
+                          "resizeMode": "cover",
+                        },
+                        {
+                          "flexGrow": 1,
+                        },
+                        {
+                          "height": 0,
+                        },
+                        {
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                        },
+                      ]
+                    }
+                  >
+                    <Image
+                      accessibilityLabel="Tonejito"
+                      accessibilityRole="image"
+                      onError={[Function]}
+                      onLayout={[Function]}
+                      onLoad={[Function]}
+                      onLoadStart={[Function]}
+                      resizeMode="cover"
+                      source={
+                        {
+                          "uri": "https://goo.gl/1R3T6h",
+                        }
+                      }
+                      style={
+                        [
+                          {
+                            "bottom": 0,
+                            "left": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                          },
+                          {
+                            "height": 0,
+                            "width": undefined,
+                          },
+                          undefined,
+                        ]
+                      }
+                    />
+                  </View>
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                     This also works for me.
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Tables Pipe Character 1`] = `
+<RCTScrollView
+  data={
+    [
+      <ScrollView
+        horizontal={true}
+      >
+        <Table
+          borderStyle={
+            {
+              "borderColor": "#d0d7de",
+              "borderWidth": 1,
+            }
+          }
+          style={{}}
+        >
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Syntax
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Description
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Test Text
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Header
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Title
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Here's | this
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+          <TableWrapper
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Paragraph
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Text
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+            <Cell
+              data={
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    And more
+                  </Text>
+                </View>
+              }
+              width={325}
+            />
+          </TableWrapper>
+        </Table>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={true}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        horizontal={true}
+      >
+        <View>
+          <View
+            style={
+              [
+                {},
+                {
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d0d7de",
+                  "borderLeftWidth": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Syntax
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Description
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Test Text
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Header
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Title
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    Here's | this
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "left",
+                      }
+                    }
+                  >
+                    Paragraph
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Text
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "borderColor": "#d0d7de",
+                      "borderRightWidth": 1,
+                      "borderTopWidth": 1,
+                    },
+                    {
+                      "justifyContent": "center",
+                    },
+                    {
+                      "width": 325,
+                    },
+                    undefined,
+                    undefined,
+                    false,
+                    undefined,
+                  ]
+                }
+              >
+                <View
+                  style={
+                    {
+                      "padding": 4,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                        "textAlign": "right",
+                      }
+                    }
+                  >
+                    And more
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
 </RCTScrollView>
 `;

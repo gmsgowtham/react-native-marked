@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-table-component/components/rows.js b/node_modules/react-native-table-component/components/rows.js
+index 40cecc6..2dd8e0b 100644
+--- a/node_modules/react-native-table-component/components/rows.js
++++ b/node_modules/react-native-table-component/components/rows.js
+@@ -26,7 +26,7 @@ export class Row extends Component {
+               width={wth}
+               height={height}
+               flex={flex}
+-              textStyle={[cellTextStyle && cellTextStyle(item), textStyle]}
++              textStyle={{ ...(cellTextStyle ? cellTextStyle(item) : {}), ...textStyle }}
+               {...props}
+             />
+           );
