@@ -59,7 +59,7 @@
     "@types/jest": "29.5.0",
     "@types/marked": "4.0.8",
     "@types/node": "18.15.11",
-    "@types/react": "18.0.36",
+    "@types/react": "18.0.37",
     "@types/react-native": "0.71.6",
     "@types/react-native-table-component": "1.2.4",
     "commitlint": "17.6.1",
