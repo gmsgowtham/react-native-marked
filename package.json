@@ -49,8 +49,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@babel/core": "7.21.4",
-    "@babel/preset-env": "7.21.4",
+    "@babel/core": "7.21.5",
+    "@babel/preset-env": "7.21.5",
     "@commitlint/config-conventional": "17.6.1",
     "@evilmartians/lefthook": "1.3.12",
     "@release-it/conventional-changelog": "5.1.1",
