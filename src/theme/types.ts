@@ -3,7 +3,6 @@ import type { ColorKeysType } from "./colors";
 import type { SpacingKeysType } from "./spacing";
 
 export interface MarkedStyles {
-	container?: ViewStyle;
 	em?: TextStyle;
 	strong?: TextStyle;
 	strikethrough?: TextStyle;

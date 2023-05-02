@@ -17,6 +17,8 @@ yarn add react-native-marked
 
 ## Usage
 
+### Using Component
+
 ```tsx
 import * as React from "react";
 import Markdown from "react-native-marked";
@@ -35,11 +37,7 @@ const ExampleComponent = () => {
 export default ExampleComponent;
 ```
 
-## Examples
-
-- RN App: https://github.com/gmsgowtham/react-native-marked-test
-
-## [Props](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L9)
+#### [Props](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L9)
 
 | Prop          | Description                                                                                                                                  | Type                                                                                                                                                                           | Optional? |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
@@ -49,6 +47,46 @@ export default ExampleComponent;
 | theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L28)                                                                                | true      |
 | baseUrl       | A prefix url for any relative link                                                                                                           | string                                                                                                                                                                         | true      |
 | renderer      | Custom component Renderer                                                                                                                    | [RendererInterface](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L25)                                                                          | true      |
+
+
+### Using hook
+
+`useMarkdown` hook will return list of elements that can be rendered using a list component of your choice.
+
+```tsx
+import React, { Fragment } from "react";
+import { ScrollView, useColorScheme } from "react-native";
+import { useMarkdown, type useMarkdownHookOptions } from "react-native-marked";
+
+const CustomComponent = () => {
+  const colorScheme = useColorScheme();
+  const options: useMarkdownHookOptions = {
+    colorScheme
+  }
+  const elements = useMarkdown("# Hello world", options);
+  return (
+    <ScrollView>
+      {elements.map((element, index) => {
+        return <Fragment key={`demo_${index}`}>{element}</Fragment>
+      })}
+    </ScrollView>
+  );
+};
+```
+
+#### Options
+
+| Option      | Description                                                                                                                                  | Type                                                                                                  | Optional? |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------- |
+| colorScheme | Device color scheme ("dark" or "light")                                                                                                      | ColorSchemeName                                                                                       | false     |
+| styles      | Styles for parsed components                                                                                                                 | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L5)     | true      |
+| theme       | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L28)       | true      |
+| baseUrl     | A prefix url for any relative link                                                                                                           | string                                                                                                | true      |
+| renderer    | Custom component Renderer                                                                                                                    | [RendererInterface](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L25) | true      |
+
+## Examples
+
+- RN App: https://github.com/gmsgowtham/react-native-marked-test
 
 ## Supported elements
 
@@ -68,14 +106,15 @@ export default ExampleComponent;
 Ref: [CommonMark](https://commonmark.org/help/)
 
 > HTML will be treated as plain text
+> Please refer [issue#290](https://github.com/gmsgowtham/react-native-marked/issues/290) for a potential solution
 
 ## Using custom components
 
 ```tsx
-import React, { ReactNode } from "react";
-import { Text } from "react-native";
+import React, { ReactNode, Fragment } from "react";
+import { Text, ScrollView } from "react-native";
 import type { ImageStyle, TextStyle } from "react-native";
-import Markdown, { Renderer } from "react-native-marked";
+import Markdown, { Renderer, useMarkdown } from "react-native-marked";
 import type { RendererInterface } from "react-native-marked";
 import FastImage from "react-native-fast-image";
 
@@ -117,6 +156,19 @@ const ExampleComponent = () => {
     />
   );
 };
+
+// Alternate using hook
+const ExampleComponentWithHook = () => {
+  const elements = useMarkdown("`Hello world`", { renderer });
+
+  return (
+    <ScrollView>
+      {elements.map((element, index) => {
+        return <Fragment key={`demo_${index}`}>{element}</Fragment>
+      })}
+    </ScrollView>
+  )
+}
 
 export default ExampleComponent;
 ```

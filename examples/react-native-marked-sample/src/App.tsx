@@ -1,4 +1,4 @@
-import React, { type ReactNode } from "react";
+import React, { useState, type ReactNode } from "react";
 import {
 	SafeAreaView,
 	StyleSheet,
@@ -6,6 +6,7 @@ import {
 	useColorScheme,
 	Text,
 	type TextStyle,
+	TouchableOpacity,
 } from "react-native";
 import Markdown, {
 	Renderer,

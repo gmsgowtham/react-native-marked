@@ -5,54 +5,54 @@ import getStyles from "./../styles";
 describe("getStyles", () => {
 	it("light scheme", () => {
 		const styles = getStyles({}, "light");
-		expect(styles.container?.backgroundColor).toBe(colors.light.background);
+		expect(styles.text?.color).toBe(colors.light.text);
 	});
 	it("dark scheme", () => {
 		const styles = getStyles({}, "dark");
-		expect(styles.container?.backgroundColor).toBe(colors.dark.background);
+		expect(styles.text?.color).toBe(colors.dark.text);
 	});
 	it("default scheme", () => {
 		const styles = getStyles({}, null);
-		expect(styles.container?.backgroundColor).toBe(colors.light.background);
+		expect(styles.text?.color).toBe(colors.light.text);
 	});
 	it("user styles, light scheme", () => {
 		const styles = getStyles(
 			{
-				container: {
-					backgroundColor: "#aaa",
+				text: {
+					color: "#aaa",
 					padding: 2,
 				},
 			},
 			"light",
 		);
-		expect(styles.container?.backgroundColor).toBe("#aaa");
-		expect(styles.container?.padding).toBe(2);
+		expect(styles.text?.color).toBe("#aaa");
+		expect(styles.text?.padding).toBe(2);
 	});
 	it("user styles, dark scheme", () => {
 		const styles = getStyles(
 			{
-				container: {
-					backgroundColor: "#aaa",
+				text: {
+					color: "#aaa",
 					padding: 2,
 				},
 			},
 			"dark",
 		);
-		expect(styles.container?.backgroundColor).toBe("#aaa");
-		expect(styles.container?.padding).toBe(2);
+		expect(styles.text?.color).toBe("#aaa");
+		expect(styles.text?.padding).toBe(2);
 	});
 	it("user styles, default scheme", () => {
 		const styles = getStyles(
 			{
-				container: {
-					backgroundColor: "#aaa",
+				text: {
+					color: "#aaa",
 					padding: 2,
 				},
 			},
 			null,
 		);
-		expect(styles.container?.backgroundColor).toBe("#aaa");
-		expect(styles.container?.padding).toBe(2);
+		expect(styles.text?.color).toBe("#aaa");
+		expect(styles.text?.padding).toBe(2);
 	});
 	it("light scheme, custom theme", () => {
 		const customColors = {
@@ -63,7 +63,6 @@ describe("getStyles", () => {
 			border: "#eee",
 		};
 		const styles = getStyles({}, "light", { colors: customColors });
-		expect(styles.container?.backgroundColor).toBe(customColors.background);
 		expect(styles.code?.backgroundColor).toBe(customColors.code);
 		expect(styles.text?.color).toBe(customColors.text);
 		expect(styles.link?.color).toBe(customColors.link);
@@ -78,7 +77,6 @@ describe("getStyles", () => {
 			border: "#eee",
 		};
 		const styles = getStyles({}, "dark", { colors: customColors });
-		expect(styles.container?.backgroundColor).toBe(customColors.background);
 		expect(styles.code?.backgroundColor).toBe(customColors.code);
 		expect(styles.text?.color).toBe(customColors.text);
 		expect(styles.link?.color).toBe(customColors.link);
@@ -93,7 +91,6 @@ describe("getStyles", () => {
 			border: "#eee",
 		};
 		const styles = getStyles({}, null, { colors: customColors });
-		expect(styles.container?.backgroundColor).toBe(customColors.background);
 		expect(styles.code?.backgroundColor).toBe(customColors.code);
 		expect(styles.text?.color).toBe(customColors.text);
 		expect(styles.link?.color).toBe(customColors.link);
@@ -109,7 +106,6 @@ describe("getStyles", () => {
 		};
 		const spacing = { xs: 10, s: 20, m: 30, l: 40 };
 		const styles = getStyles({}, "light", { spacing, colors: customColors });
-		expect(styles.container?.backgroundColor).toBe(customColors.background);
 		expect(styles.code?.backgroundColor).toBe(customColors.code);
 		expect(styles.text?.color).toBe(customColors.text);
 		expect(styles.link?.color).toBe(customColors.link);
@@ -130,7 +126,6 @@ describe("getStyles", () => {
 		};
 		const spacing = { xs: 10, s: 20, m: 30, l: 40 };
 		const styles = getStyles({}, "dark", { spacing, colors: customColors });
-		expect(styles.container?.backgroundColor).toBe(customColors.background);
 		expect(styles.code?.backgroundColor).toBe(customColors.code);
 		expect(styles.text?.color).toBe(customColors.text);
 		expect(styles.link?.color).toBe(customColors.link);
@@ -151,7 +146,6 @@ describe("getStyles", () => {
 		};
 		const spacing = { xs: 10, s: 20, m: 30, l: 40 };
 		const styles = getStyles({}, null, { spacing, colors: customColors });
-		expect(styles.container?.backgroundColor).toBe(customColors.background);
 		expect(styles.code?.backgroundColor).toBe(customColors.code);
 		expect(styles.text?.color).toBe(customColors.text);
 		expect(styles.link?.color).toBe(customColors.link);
@@ -173,9 +167,6 @@ describe("getStyles", () => {
 		const spacing = { xs: 10, s: 20, m: 30, l: 40 };
 
 		const userStyles: MarkedStyles = {
-			container: {
-				backgroundColor: "#111",
-			},
 			code: {
 				backgroundColor: "#222",
 				padding: 4,
@@ -202,7 +193,6 @@ describe("getStyles", () => {
 			spacing,
 			colors: customColors,
 		});
-		expect(styles.container?.backgroundColor).toBe("#111");
 		expect(styles.code?.backgroundColor).toBe("#222");
 		expect(styles.text?.color).toBe("#333");
 		expect(styles.link?.color).toBe("#444");

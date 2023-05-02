@@ -27,9 +27,6 @@ const getStyles = (
 
 	const fontStyle = getFontStyles(mdColors);
 	const defaultStyles = StyleSheet.create<MarkedStyles>({
-		container: {
-			backgroundColor: mdColors.background,
-		},
 		em: {
 			...fontStyle.regular,
 			fontStyle: "italic",

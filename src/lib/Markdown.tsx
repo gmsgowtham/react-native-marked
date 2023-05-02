@@ -1,16 +1,13 @@
 import React, {
 	memo,
 	useCallback,
-	useMemo,
 	type ReactElement,
 	type ReactNode,
 } from "react";
 import { FlatList, useColorScheme } from "react-native";
-import { marked } from "marked";
-import Parser from "./Parser";
-import Renderer from "./Renderer";
-import getStyles from "../theme/styles";
 import type { MarkdownProps } from "./types";
+import useMarkdown from "../hooks/useMarkdown";
+import colors from "../theme/colors";
 
 const Markdown = ({
 	value,
@@ -18,28 +15,17 @@ const Markdown = ({
 	theme,
 	baseUrl,
 	renderer,
-	styles: userStyles,
+	styles,
 }: MarkdownProps) => {
 	const colorScheme = useColorScheme();
-	const styles = useMemo(
-		() => getStyles(userStyles, colorScheme, theme),
-		[userStyles, colorScheme, theme],
-	);
 
-	const parser = useMemo(
-		() =>
-			new Parser({
-				styles,
-				baseUrl,
-				renderer: renderer ?? new Renderer(),
-			}),
-		[styles, baseUrl],
-	);
-
-	const rnElements = useMemo(() => {
-		const tokens = marked.lexer(value, { mangle: false, gfm: true });
-		return parser.parse(tokens);
-	}, [value, styles, baseUrl]);
+	const rnElements = useMarkdown(value, {
+		theme,
+		baseUrl,
+		renderer,
+		colorScheme,
+		styles,
+	});
 
 	const renderItem = useCallback(({ item }: { item: ReactNode }) => {
 		return item as ReactElement;
@@ -56,7 +42,12 @@ const Markdown = ({
 			keyExtractor={keyExtractor}
 			maxToRenderPerBatch={8}
 			initialNumToRender={8}
-			style={styles.container}
+			style={{
+				backgroundColor:
+					colorScheme === "light"
+						? colors.light.background
+						: colors.dark.background,
+			}}
 			{...flatListProps}
 			data={rnElements}
 			renderItem={renderItem}
