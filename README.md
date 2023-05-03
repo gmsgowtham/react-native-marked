@@ -105,8 +105,7 @@ const CustomComponent = () => {
 
 Ref: [CommonMark](https://commonmark.org/help/)
 
-> HTML will be treated as plain text
-> Please refer [issue#290](https://github.com/gmsgowtham/react-native-marked/issues/290) for a potential solution
+> HTML will be treated as plain text. Please refer [issue#290](https://github.com/gmsgowtham/react-native-marked/issues/290) for a potential solution
 
 ## Using custom components
 
