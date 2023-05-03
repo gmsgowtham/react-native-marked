@@ -87,6 +87,7 @@ const CustomComponent = () => {
 ## Examples
 
 - RN App: https://github.com/gmsgowtham/react-native-marked-test
+- CodeSandbox: https://codesandbox.io/s/react-native-marked-l2hpi3?file=/src/App.js
 
 ## Supported elements
 
