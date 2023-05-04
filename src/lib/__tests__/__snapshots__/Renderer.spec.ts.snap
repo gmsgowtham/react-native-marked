@@ -5,6 +5,7 @@ exports[`Renderer dark theme Link Nodes returns a Text Link node 1`] = `
   accessibilityHint="Opens in a new window"
   accessibilityRole="link"
   onPress={[Function]}
+  selectable={true}
   style={
     {
       "color": "#58a6ff",
@@ -70,7 +71,9 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
               }
             }
           >
-            <Text>
+            <Text
+              selectable={true}
+            >
               Hello world 1
             </Text>
           </View>
@@ -104,6 +107,7 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#ffffff",
@@ -154,6 +158,7 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#ffffff",
@@ -204,6 +209,7 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "fontSize": 24,
@@ -213,6 +219,7 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
               Hello world 4
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -272,7 +279,9 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
           }
         >
           <View>
-            <Text>
+            <Text
+              selectable={true}
+            >
               Hello world 1
             </Text>
           </View>
@@ -300,6 +309,7 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
         >
           <View>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#ffffff",
@@ -338,6 +348,7 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
         >
           <View>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#ffffff",
@@ -376,6 +387,7 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
         >
           <View>
             <Text
+              selectable={true}
               style={
                 {
                   "fontSize": 24,
@@ -385,6 +397,7 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
               Hello world 4
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -406,6 +419,7 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
 
 exports[`Renderer dark theme Text Nodes returns a Text node 1`] = `
 <Text
+  selectable={true}
   style={
     {
       "fontSize": 24,
@@ -418,6 +432,7 @@ exports[`Renderer dark theme Text Nodes returns a Text node 1`] = `
 
 exports[`Renderer dark theme Text Nodes returns a wrapped Text node 1`] = `
 <Text
+  selectable={true}
   style={
     {
       "fontSize": 24,
@@ -425,6 +440,7 @@ exports[`Renderer dark theme Text Nodes returns a wrapped Text node 1`] = `
   }
 >
   <Text
+    selectable={true}
     style={{}}
   >
     Hello world
@@ -434,6 +450,7 @@ exports[`Renderer dark theme Text Nodes returns a wrapped Text node 1`] = `
 
 exports[`Renderer dark theme Text Nodes returns a wrapped Text node with styles 1`] = `
 <Text
+  selectable={true}
   style={
     {
       "fontSize": 24,
@@ -441,6 +458,7 @@ exports[`Renderer dark theme Text Nodes returns a wrapped Text node with styles 
   }
 >
   <Text
+    selectable={true}
     style={
       {
         "fontSize": 24,
@@ -476,6 +494,7 @@ exports[`Renderer dark theme View Nodes returns a paragraph View node 1`] = `
   }
 >
   <Text
+    selectable={true}
     style={
       {
         "fontSize": 24,
@@ -488,6 +507,7 @@ exports[`Renderer dark theme View Nodes returns a paragraph View node 1`] = `
     accessibilityHint="Opens in a new window"
     accessibilityRole="link"
     onPress={[Function]}
+    selectable={true}
     style={
       {
         "color": "#58a6ff",
@@ -514,6 +534,7 @@ exports[`Renderer dark theme getBlockquoteNode returns a Blockquote 1`] = `
   }
 >
   <Text
+    selectable={true}
     style={
       {
         "fontSize": 24,
@@ -526,6 +547,7 @@ exports[`Renderer dark theme getBlockquoteNode returns a Blockquote 1`] = `
     accessibilityHint="Opens in a new window"
     accessibilityRole="link"
     onPress={[Function]}
+    selectable={true}
     style={
       {
         "color": "#58a6ff",
@@ -553,6 +575,7 @@ exports[`Renderer dark theme getCodeBlockNode returns a Code block (horizontal S
 >
   <View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#ffffff",
@@ -735,6 +758,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#ffffff",
@@ -790,6 +814,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#ffffff",
@@ -845,6 +870,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#ffffff",
@@ -905,6 +931,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#ffffff",
@@ -960,6 +987,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#ffffff",
@@ -1015,6 +1043,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#ffffff",
@@ -1035,6 +1064,7 @@ exports[`Renderer light theme Link Nodes returns a Text Link node 1`] = `
   accessibilityHint="Opens in a new window"
   accessibilityRole="link"
   onPress={[Function]}
+  selectable={true}
   style={
     {
       "color": "#58a6ff",
@@ -1100,7 +1130,9 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
               }
             }
           >
-            <Text>
+            <Text
+              selectable={true}
+            >
               Hello world 1
             </Text>
           </View>
@@ -1134,6 +1166,7 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1184,6 +1217,7 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1234,6 +1268,7 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "fontSize": 24,
@@ -1243,6 +1278,7 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
               Hello world 4
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -1302,7 +1338,9 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
           }
         >
           <View>
-            <Text>
+            <Text
+              selectable={true}
+            >
               Hello world 1
             </Text>
           </View>
@@ -1330,6 +1368,7 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
         >
           <View>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1368,6 +1407,7 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
         >
           <View>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1406,6 +1446,7 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
         >
           <View>
             <Text
+              selectable={true}
               style={
                 {
                   "fontSize": 24,
@@ -1415,6 +1456,7 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
               Hello world 4
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -1436,6 +1478,7 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
 
 exports[`Renderer light theme Text Nodes returns a Text node 1`] = `
 <Text
+  selectable={true}
   style={
     {
       "fontSize": 24,
@@ -1448,6 +1491,7 @@ exports[`Renderer light theme Text Nodes returns a Text node 1`] = `
 
 exports[`Renderer light theme Text Nodes returns a wrapped Text node 1`] = `
 <Text
+  selectable={true}
   style={
     {
       "fontSize": 24,
@@ -1455,6 +1499,7 @@ exports[`Renderer light theme Text Nodes returns a wrapped Text node 1`] = `
   }
 >
   <Text
+    selectable={true}
     style={{}}
   >
     Hello world
@@ -1464,6 +1509,7 @@ exports[`Renderer light theme Text Nodes returns a wrapped Text node 1`] = `
 
 exports[`Renderer light theme Text Nodes returns a wrapped Text node with styles 1`] = `
 <Text
+  selectable={true}
   style={
     {
       "fontSize": 24,
@@ -1471,6 +1517,7 @@ exports[`Renderer light theme Text Nodes returns a wrapped Text node with styles
   }
 >
   <Text
+    selectable={true}
     style={
       {
         "fontSize": 24,
@@ -1506,6 +1553,7 @@ exports[`Renderer light theme View Nodes returns a paragraph View node 1`] = `
   }
 >
   <Text
+    selectable={true}
     style={
       {
         "fontSize": 24,
@@ -1518,6 +1566,7 @@ exports[`Renderer light theme View Nodes returns a paragraph View node 1`] = `
     accessibilityHint="Opens in a new window"
     accessibilityRole="link"
     onPress={[Function]}
+    selectable={true}
     style={
       {
         "color": "#58a6ff",
@@ -1544,6 +1593,7 @@ exports[`Renderer light theme getBlockquoteNode returns a Blockquote 1`] = `
   }
 >
   <Text
+    selectable={true}
     style={
       {
         "fontSize": 24,
@@ -1556,6 +1606,7 @@ exports[`Renderer light theme getBlockquoteNode returns a Blockquote 1`] = `
     accessibilityHint="Opens in a new window"
     accessibilityRole="link"
     onPress={[Function]}
+    selectable={true}
     style={
       {
         "color": "#58a6ff",
@@ -1583,6 +1634,7 @@ exports[`Renderer light theme getCodeBlockNode returns a Code block (horizontal 
 >
   <View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#333333",
@@ -1765,6 +1817,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#333333",
@@ -1820,6 +1873,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#333333",
@@ -1875,6 +1929,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#333333",
@@ -1935,6 +1990,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#333333",
@@ -1990,6 +2046,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#333333",
@@ -2045,6 +2102,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
       </Text>
     </View>
     <Text
+      selectable={true}
       style={
         {
           "color": "#333333",
