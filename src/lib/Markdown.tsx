@@ -38,7 +38,7 @@ const Markdown = ({
 
 	return (
 		<FlatList
-			removeClippedSubviews
+			removeClippedSubviews={false}
 			keyExtractor={keyExtractor}
 			maxToRenderPerBatch={8}
 			initialNumToRender={8}
