@@ -25,9 +25,11 @@ exports[`Blockquotes Blockquote 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -93,9 +95,11 @@ exports[`Blockquotes Blockquote 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -139,9 +143,11 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -165,9 +171,11 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -233,9 +241,11 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -259,9 +269,11 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -295,6 +307,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -306,6 +319,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -363,9 +377,11 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={{}}
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -389,9 +405,11 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={{}}
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -416,9 +434,11 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -430,6 +450,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
                
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -440,6 +461,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -453,6 +475,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               </Text>
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -464,6 +487,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
                is going according to 
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -474,6 +498,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -487,6 +512,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               </Text>
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -542,6 +568,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -553,6 +580,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -613,9 +641,11 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={{}}
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -676,9 +706,11 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={{}}
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -703,9 +735,11 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -717,6 +751,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
                
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -727,6 +762,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -740,6 +776,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               </Text>
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -751,6 +788,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
                is going according to 
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -761,6 +799,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -774,6 +813,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               </Text>
             </Text>
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -817,9 +857,11 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -864,9 +906,11 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={{}}
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -933,9 +977,11 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -986,9 +1032,11 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={{}}
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -1023,6 +1071,7 @@ exports[`Code Code Blocks (backtick) 1`] = `
         horizontal={true}
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -1080,6 +1129,7 @@ exports[`Code Code Blocks (backtick) 1`] = `
       >
         <View>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1115,6 +1165,7 @@ exports[`Code Code Blocks (backtick), no ending backtick 1`] = `
         horizontal={true}
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -1172,6 +1223,7 @@ exports[`Code Code Blocks (backtick), no ending backtick 1`] = `
       >
         <View>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1207,6 +1259,7 @@ exports[`Code Code Blocks 1`] = `
         horizontal={true}
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -1265,6 +1318,7 @@ exports[`Code Code Blocks 1`] = `
       >
         <View>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1301,9 +1355,11 @@ exports[`Code Code Span 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1315,6 +1371,7 @@ exports[`Code Code Span 1`] = `
             At the command prompt, type 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "backgroundColor": "#f6f8fa",
@@ -1329,6 +1386,7 @@ exports[`Code Code Span 1`] = `
             nano
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1383,9 +1441,11 @@ exports[`Code Code Span 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1397,6 +1457,7 @@ exports[`Code Code Span 1`] = `
             At the command prompt, type 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "backgroundColor": "#f6f8fa",
@@ -1411,6 +1472,7 @@ exports[`Code Code Span 1`] = `
             nano
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1443,9 +1505,11 @@ exports[`Emphasis Bold 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1457,6 +1521,7 @@ exports[`Emphasis Bold 1`] = `
             Love 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1467,6 +1532,7 @@ exports[`Emphasis Bold 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1480,6 +1546,7 @@ exports[`Emphasis Bold 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1534,9 +1601,11 @@ exports[`Emphasis Bold 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1548,6 +1617,7 @@ exports[`Emphasis Bold 1`] = `
             Love 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1558,6 +1628,7 @@ exports[`Emphasis Bold 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1571,6 +1642,7 @@ exports[`Emphasis Bold 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1603,9 +1675,11 @@ exports[`Emphasis Bold and Italic 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1617,6 +1691,7 @@ exports[`Emphasis Bold and Italic 1`] = `
             This is really 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1627,6 +1702,7 @@ exports[`Emphasis Bold and Italic 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1638,6 +1714,7 @@ exports[`Emphasis Bold and Italic 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -1653,6 +1730,7 @@ exports[`Emphasis Bold and Italic 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1707,9 +1785,11 @@ exports[`Emphasis Bold and Italic 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1721,6 +1801,7 @@ exports[`Emphasis Bold and Italic 1`] = `
             This is really 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1731,6 +1812,7 @@ exports[`Emphasis Bold and Italic 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1742,6 +1824,7 @@ exports[`Emphasis Bold and Italic 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -1757,6 +1840,7 @@ exports[`Emphasis Bold and Italic 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1789,9 +1873,11 @@ exports[`Emphasis Italic 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1803,6 +1889,7 @@ exports[`Emphasis Italic 1`] = `
             A 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1813,6 +1900,7 @@ exports[`Emphasis Italic 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1826,6 +1914,7 @@ exports[`Emphasis Italic 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1880,9 +1969,11 @@ exports[`Emphasis Italic 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1894,6 +1985,7 @@ exports[`Emphasis Italic 1`] = `
             A 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1904,6 +1996,7 @@ exports[`Emphasis Italic 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1917,6 +2010,7 @@ exports[`Emphasis Italic 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1949,9 +2043,11 @@ exports[`Emphasis Strikethrough 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1963,6 +2059,7 @@ exports[`Emphasis Strikethrough 1`] = `
             A 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -1974,6 +2071,7 @@ exports[`Emphasis Strikethrough 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -1988,6 +2086,7 @@ exports[`Emphasis Strikethrough 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2042,9 +2141,11 @@ exports[`Emphasis Strikethrough 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2056,6 +2157,7 @@ exports[`Emphasis Strikethrough 1`] = `
             A 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2067,6 +2169,7 @@ exports[`Emphasis Strikethrough 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -2081,6 +2184,7 @@ exports[`Emphasis Strikethrough 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2113,9 +2217,11 @@ exports[`Escaping Characters Render 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2127,6 +2233,7 @@ exports[`Escaping Characters Render 1`] = `
             *
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2181,9 +2288,11 @@ exports[`Escaping Characters Render 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2195,6 +2304,7 @@ exports[`Escaping Characters Render 1`] = `
             *
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2227,9 +2337,11 @@ exports[`HTML Render 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2241,6 +2353,7 @@ exports[`HTML Render 1`] = `
             This 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2251,6 +2364,7 @@ exports[`HTML Render 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -2264,6 +2378,7 @@ exports[`HTML Render 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2275,6 +2390,7 @@ exports[`HTML Render 1`] = `
              is bold. This 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2286,6 +2402,7 @@ exports[`HTML Render 1`] = `
             &lt;em&gt;
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2297,6 +2414,7 @@ exports[`HTML Render 1`] = `
             word
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2308,6 +2426,7 @@ exports[`HTML Render 1`] = `
             &lt;/em&gt;
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2362,9 +2481,11 @@ exports[`HTML Render 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2376,6 +2497,7 @@ exports[`HTML Render 1`] = `
             This 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2386,6 +2508,7 @@ exports[`HTML Render 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -2399,6 +2522,7 @@ exports[`HTML Render 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2410,6 +2534,7 @@ exports[`HTML Render 1`] = `
              is bold. This 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2421,6 +2546,7 @@ exports[`HTML Render 1`] = `
             &lt;em&gt;
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2432,6 +2558,7 @@ exports[`HTML Render 1`] = `
             word
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2443,6 +2570,7 @@ exports[`HTML Render 1`] = `
             &lt;/em&gt;
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2465,6 +2593,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
   data={
     [
       <Text
+        selectable={true}
         style={
           {
             "borderBottomColor": "#d0d7de",
@@ -2479,6 +2608,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "borderBottomColor": "#d0d7de",
@@ -2528,6 +2658,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
       style={null}
     >
       <Text
+        selectable={true}
         style={
           {
             "borderBottomColor": "#d0d7de",
@@ -2542,6 +2673,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "borderBottomColor": "#d0d7de",
@@ -2569,6 +2701,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
   data={
     [
       <Text
+        selectable={true}
         style={
           {
             "borderBottomColor": "#d0d7de",
@@ -2583,6 +2716,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "borderBottomColor": "#d0d7de",
@@ -2631,6 +2765,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
       style={null}
     >
       <Text
+        selectable={true}
         style={
           {
             "borderBottomColor": "#d0d7de",
@@ -2645,6 +2780,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "borderBottomColor": "#d0d7de",
@@ -2681,9 +2817,11 @@ exports[`Headings Best Practice 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2697,6 +2835,7 @@ exports[`Headings Best Practice 1`] = `
         </Text>
       </View>,
       <Text
+        selectable={true}
         style={
           {
             "borderBottomColor": "#d0d7de",
@@ -2711,6 +2850,7 @@ exports[`Headings Best Practice 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "borderBottomColor": "#d0d7de",
@@ -2739,9 +2879,11 @@ exports[`Headings Best Practice 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2796,9 +2938,11 @@ exports[`Headings Best Practice 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2818,6 +2962,7 @@ exports[`Headings Best Practice 1`] = `
       style={null}
     >
       <Text
+        selectable={true}
         style={
           {
             "borderBottomColor": "#d0d7de",
@@ -2832,6 +2977,7 @@ exports[`Headings Best Practice 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "borderBottomColor": "#d0d7de",
@@ -2866,9 +3012,11 @@ exports[`Headings Best Practice 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -2891,6 +3039,7 @@ exports[`Headings Heading level 1 1`] = `
   data={
     [
       <Text
+        selectable={true}
         style={
           {
             "borderBottomColor": "#d0d7de",
@@ -2905,6 +3054,7 @@ exports[`Headings Heading level 1 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "borderBottomColor": "#d0d7de",
@@ -2954,6 +3104,7 @@ exports[`Headings Heading level 1 1`] = `
       style={null}
     >
       <Text
+        selectable={true}
         style={
           {
             "borderBottomColor": "#d0d7de",
@@ -2968,6 +3119,7 @@ exports[`Headings Heading level 1 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "borderBottomColor": "#d0d7de",
@@ -2995,6 +3147,7 @@ exports[`Headings Heading level 2 1`] = `
   data={
     [
       <Text
+        selectable={true}
         style={
           {
             "borderBottomColor": "#d0d7de",
@@ -3009,6 +3162,7 @@ exports[`Headings Heading level 2 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "borderBottomColor": "#d0d7de",
@@ -3057,6 +3211,7 @@ exports[`Headings Heading level 2 1`] = `
       style={null}
     >
       <Text
+        selectable={true}
         style={
           {
             "borderBottomColor": "#d0d7de",
@@ -3071,6 +3226,7 @@ exports[`Headings Heading level 2 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "borderBottomColor": "#d0d7de",
@@ -3097,6 +3253,7 @@ exports[`Headings Heading level 3 1`] = `
   data={
     [
       <Text
+        selectable={true}
         style={
           {
             "color": "#333333",
@@ -3108,6 +3265,7 @@ exports[`Headings Heading level 3 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -3153,6 +3311,7 @@ exports[`Headings Heading level 3 1`] = `
       style={null}
     >
       <Text
+        selectable={true}
         style={
           {
             "color": "#333333",
@@ -3164,6 +3323,7 @@ exports[`Headings Heading level 3 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -3187,6 +3347,7 @@ exports[`Headings Heading level 4 1`] = `
   data={
     [
       <Text
+        selectable={true}
         style={
           {
             "color": "#333333",
@@ -3198,6 +3359,7 @@ exports[`Headings Heading level 4 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -3243,6 +3405,7 @@ exports[`Headings Heading level 4 1`] = `
       style={null}
     >
       <Text
+        selectable={true}
         style={
           {
             "color": "#333333",
@@ -3254,6 +3417,7 @@ exports[`Headings Heading level 4 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -3277,6 +3441,7 @@ exports[`Headings Heading level 5 1`] = `
   data={
     [
       <Text
+        selectable={true}
         style={
           {
             "color": "#333333",
@@ -3288,6 +3453,7 @@ exports[`Headings Heading level 5 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -3333,6 +3499,7 @@ exports[`Headings Heading level 5 1`] = `
       style={null}
     >
       <Text
+        selectable={true}
         style={
           {
             "color": "#333333",
@@ -3344,6 +3511,7 @@ exports[`Headings Heading level 5 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -3367,6 +3535,7 @@ exports[`Headings Heading level 6 1`] = `
   data={
     [
       <Text
+        selectable={true}
         style={
           {
             "color": "#333333",
@@ -3378,6 +3547,7 @@ exports[`Headings Heading level 6 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -3423,6 +3593,7 @@ exports[`Headings Heading level 6 1`] = `
       style={null}
     >
       <Text
+        selectable={true}
         style={
           {
             "color": "#333333",
@@ -3434,6 +3605,7 @@ exports[`Headings Heading level 6 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -3583,9 +3755,11 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -3618,9 +3792,11 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -3675,9 +3851,11 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -3722,9 +3900,11 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4087,9 +4267,11 @@ exports[`Line Breaks Trailing New Line Character 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4145,9 +4327,11 @@ And the next line.
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4181,9 +4365,11 @@ exports[`Line Breaks Trailing slash 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4195,12 +4381,14 @@ exports[`Line Breaks Trailing slash 1`] = `
             First line with a backslash after.
           </Text>
           <Text
+            selectable={true}
             style={{}}
           >
             
 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4255,9 +4443,11 @@ exports[`Line Breaks Trailing slash 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4269,12 +4459,14 @@ exports[`Line Breaks Trailing slash 1`] = `
             First line with a backslash after.
           </Text>
           <Text
+            selectable={true}
             style={{}}
           >
             
 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4307,9 +4499,11 @@ exports[`Links Basic 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4324,6 +4518,7 @@ exports[`Links Basic 1`] = `
             accessibilityHint="Opens in a new window"
             accessibilityRole="link"
             onPress={[Function]}
+            selectable={true}
             style={
               {
                 "color": "#58a6ff",
@@ -4334,6 +4529,7 @@ exports[`Links Basic 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -4347,6 +4543,7 @@ exports[`Links Basic 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4401,9 +4598,11 @@ exports[`Links Basic 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4418,6 +4617,7 @@ exports[`Links Basic 1`] = `
             accessibilityHint="Opens in a new window"
             accessibilityRole="link"
             onPress={[Function]}
+            selectable={true}
             style={
               {
                 "color": "#58a6ff",
@@ -4428,6 +4628,7 @@ exports[`Links Basic 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -4441,6 +4642,7 @@ exports[`Links Basic 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4473,9 +4675,11 @@ exports[`Links Formatting Links 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4487,6 +4691,7 @@ exports[`Links Formatting Links 1`] = `
             I love supporting the 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4500,6 +4705,7 @@ exports[`Links Formatting Links 1`] = `
               accessibilityHint="Opens in a new window"
               accessibilityRole="link"
               onPress={[Function]}
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -4511,6 +4717,7 @@ exports[`Links Formatting Links 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#58a6ff",
@@ -4526,6 +4733,7 @@ exports[`Links Formatting Links 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4538,6 +4746,7 @@ exports[`Links Formatting Links 1`] = `
 This is the 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4551,6 +4760,7 @@ This is the
               accessibilityHint="Opens in a new window"
               accessibilityRole="link"
               onPress={[Function]}
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -4561,6 +4771,7 @@ This is the
               }
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#58a6ff",
@@ -4575,6 +4786,7 @@ This is the
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4590,6 +4802,7 @@ See the section on
             accessibilityHint="Opens in a new window"
             accessibilityRole="link"
             onPress={[Function]}
+            selectable={true}
             style={
               {
                 "color": "#58a6ff",
@@ -4600,6 +4813,7 @@ See the section on
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "backgroundColor": "#f6f8fa",
@@ -4615,6 +4829,7 @@ See the section on
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4669,9 +4884,11 @@ See the section on
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4683,6 +4900,7 @@ See the section on
             I love supporting the 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4696,6 +4914,7 @@ See the section on
               accessibilityHint="Opens in a new window"
               accessibilityRole="link"
               onPress={[Function]}
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -4707,6 +4926,7 @@ See the section on
               }
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#58a6ff",
@@ -4722,6 +4942,7 @@ See the section on
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4734,6 +4955,7 @@ See the section on
 This is the 
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4747,6 +4969,7 @@ This is the
               accessibilityHint="Opens in a new window"
               accessibilityRole="link"
               onPress={[Function]}
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -4757,6 +4980,7 @@ This is the
               }
             >
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#58a6ff",
@@ -4771,6 +4995,7 @@ This is the
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4786,6 +5011,7 @@ See the section on
             accessibilityHint="Opens in a new window"
             accessibilityRole="link"
             onPress={[Function]}
+            selectable={true}
             style={
               {
                 "color": "#58a6ff",
@@ -4796,6 +5022,7 @@ See the section on
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "backgroundColor": "#f6f8fa",
@@ -4811,6 +5038,7 @@ See the section on
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4843,9 +5071,11 @@ exports[`Links Titles 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4860,6 +5090,7 @@ exports[`Links Titles 1`] = `
             accessibilityHint="Opens in a new window"
             accessibilityRole="link"
             onPress={[Function]}
+            selectable={true}
             style={
               {
                 "color": "#58a6ff",
@@ -4870,6 +5101,7 @@ exports[`Links Titles 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -4883,6 +5115,7 @@ exports[`Links Titles 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4937,9 +5170,11 @@ exports[`Links Titles 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -4954,6 +5189,7 @@ exports[`Links Titles 1`] = `
             accessibilityHint="Opens in a new window"
             accessibilityRole="link"
             onPress={[Function]}
+            selectable={true}
             style={
               {
                 "color": "#58a6ff",
@@ -4964,6 +5200,7 @@ exports[`Links Titles 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -4977,6 +5214,7 @@ exports[`Links Titles 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -5009,12 +5247,14 @@ exports[`Links URLs and Email Addresses 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
             accessibilityHint="Opens in a new window"
             accessibilityRole="link"
             onPress={[Function]}
+            selectable={true}
             style={
               {
                 "color": "#58a6ff",
@@ -5025,6 +5265,7 @@ exports[`Links URLs and Email Addresses 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -5050,12 +5291,14 @@ exports[`Links URLs and Email Addresses 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
             accessibilityHint="Opens in a new window"
             accessibilityRole="link"
             onPress={[Function]}
+            selectable={true}
             style={
               {
                 "color": "#58a6ff",
@@ -5066,6 +5309,7 @@ exports[`Links URLs and Email Addresses 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -5122,12 +5366,14 @@ exports[`Links URLs and Email Addresses 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
             accessibilityHint="Opens in a new window"
             accessibilityRole="link"
             onPress={[Function]}
+            selectable={true}
             style={
               {
                 "color": "#58a6ff",
@@ -5138,6 +5384,7 @@ exports[`Links URLs and Email Addresses 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -5169,12 +5416,14 @@ exports[`Links URLs and Email Addresses 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
             accessibilityHint="Opens in a new window"
             accessibilityRole="link"
             onPress={[Function]}
+            selectable={true}
             style={
               {
                 "color": "#58a6ff",
@@ -5185,6 +5434,7 @@ exports[`Links URLs and Email Addresses 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#58a6ff",
@@ -5252,9 +5502,11 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5278,9 +5530,11 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5313,9 +5567,11 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -5341,9 +5597,11 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5435,9 +5693,11 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5498,9 +5758,11 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5533,9 +5795,11 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -5598,9 +5862,11 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5667,9 +5933,11 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5693,9 +5961,11 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5718,6 +5988,7 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             horizontal={true}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5745,9 +6016,11 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5839,9 +6112,11 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5902,9 +6177,11 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -5928,6 +6205,7 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
           >
             <View>
               <Text
+                selectable={true}
                 style={
                   {
                     "color": "#333333",
@@ -5993,9 +6271,11 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6065,9 +6345,11 @@ exports[`Lists Elements in Lists: Images 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6091,9 +6373,11 @@ exports[`Lists Elements in Lists: Images 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6106,6 +6390,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -6116,6 +6401,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6148,9 +6434,11 @@ exports[`Lists Elements in Lists: Images 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6242,9 +6530,11 @@ exports[`Lists Elements in Lists: Images 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6305,9 +6595,11 @@ exports[`Lists Elements in Lists: Images 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6320,6 +6612,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -6330,6 +6623,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6441,9 +6735,11 @@ exports[`Lists Elements in Lists: Images 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6513,9 +6809,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6539,9 +6837,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6565,9 +6865,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6623,9 +6925,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -6649,9 +6953,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -6677,9 +6983,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6771,9 +7079,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6834,9 +7144,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6897,9 +7209,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -6958,9 +7272,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -7021,9 +7337,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -7086,9 +7404,11 @@ exports[`Lists Elements in Lists: Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7155,9 +7475,11 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7181,9 +7503,11 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7196,9 +7520,11 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7222,9 +7548,11 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7316,9 +7644,11 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7379,9 +7709,11 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7394,9 +7726,11 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             </Text>
           </Text>
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7457,9 +7791,11 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7529,9 +7865,11 @@ exports[`Lists Ordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7555,9 +7893,11 @@ exports[`Lists Ordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7581,9 +7921,11 @@ exports[`Lists Ordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7642,9 +7984,11 @@ exports[`Lists Ordered Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -7668,9 +8012,11 @@ exports[`Lists Ordered Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -7696,9 +8042,11 @@ exports[`Lists Ordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7790,9 +8138,11 @@ exports[`Lists Ordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7853,9 +8203,11 @@ exports[`Lists Ordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7916,9 +8268,11 @@ exports[`Lists Ordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -7977,9 +8331,11 @@ exports[`Lists Ordered Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -8040,9 +8396,11 @@ exports[`Lists Ordered Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -8105,9 +8463,11 @@ exports[`Lists Ordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8177,9 +8537,11 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8203,9 +8565,11 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8229,9 +8593,11 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8323,9 +8689,11 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8386,9 +8754,11 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8449,9 +8819,11 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8518,9 +8890,11 @@ exports[`Lists Unordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8544,9 +8918,11 @@ exports[`Lists Unordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8570,9 +8946,11 @@ exports[`Lists Unordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8628,9 +9006,11 @@ exports[`Lists Unordered Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -8654,9 +9034,11 @@ exports[`Lists Unordered Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -8682,9 +9064,11 @@ exports[`Lists Unordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8776,9 +9160,11 @@ exports[`Lists Unordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8839,9 +9225,11 @@ exports[`Lists Unordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8902,9 +9290,11 @@ exports[`Lists Unordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -8963,9 +9353,11 @@ exports[`Lists Unordered Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -9026,9 +9418,11 @@ exports[`Lists Unordered Lists 1`] = `
               }
             >
               <Text
+                selectable={true}
                 style={{}}
               >
                 <Text
+                  selectable={true}
                   style={
                     {
                       "color": "#333333",
@@ -9091,9 +9485,11 @@ exports[`Lists Unordered Lists 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={{}}
           >
             <Text
+              selectable={true}
               style={
                 {
                   "color": "#333333",
@@ -9127,9 +9523,11 @@ exports[`Paragraphs Paragraph 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -9153,9 +9551,11 @@ exports[`Paragraphs Paragraph 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -9210,9 +9610,11 @@ exports[`Paragraphs Paragraph 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -9242,9 +9644,11 @@ exports[`Paragraphs Paragraph 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -9277,6 +9681,7 @@ exports[`Paragraphs Paragraph with Image 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -9286,6 +9691,7 @@ exports[`Paragraphs Paragraph with Image 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -9349,6 +9755,7 @@ exports[`Paragraphs Paragraph with Image 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={
             {
               "color": "#333333",
@@ -9358,6 +9765,7 @@ exports[`Paragraphs Paragraph with Image 1`] = `
           }
         >
           <Text
+            selectable={true}
             style={
               {
                 "color": "#333333",
@@ -9441,6 +9849,7 @@ exports[`Renderer override Custom 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
@@ -9496,6 +9905,7 @@ exports[`Renderer override Custom 1`] = `
         }
       >
         <Text
+          selectable={true}
           style={{}}
         >
           <Text
@@ -9547,6 +9957,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9572,6 +9983,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9597,6 +10009,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9630,6 +10043,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9655,6 +10069,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9680,6 +10095,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9713,6 +10129,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9738,6 +10155,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9763,6 +10181,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9864,6 +10283,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9906,6 +10326,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9948,6 +10369,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -9998,6 +10420,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10040,6 +10463,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10082,6 +10506,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10132,6 +10557,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10174,6 +10600,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10216,6 +10643,7 @@ exports[`Tables Alignment 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10271,6 +10699,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10296,6 +10725,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10329,6 +10759,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10354,6 +10785,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10387,6 +10819,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10412,6 +10845,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10513,6 +10947,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10555,6 +10990,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10605,6 +11041,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10647,6 +11084,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10697,6 +11135,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10739,6 +11178,7 @@ exports[`Tables Basic 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10794,6 +11234,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10819,6 +11260,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10852,6 +11294,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10877,6 +11320,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10910,6 +11354,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -10935,6 +11380,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11036,6 +11482,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11078,6 +11525,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11128,6 +11576,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11170,6 +11619,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11220,6 +11670,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11262,6 +11713,7 @@ exports[`Tables Different Cell Widths 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11317,6 +11769,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11328,6 +11781,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11355,6 +11809,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11366,6 +11821,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11379,6 +11835,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       You 
                     </Text>
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11391,6 +11848,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     >
                       <Text
+                        selectable={true}
                         style={
                           {
                             "color": "#333333",
@@ -11406,6 +11864,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       </Text>
                     </Text>
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11441,6 +11900,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11452,6 +11912,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11479,6 +11940,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11490,6 +11952,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11525,6 +11988,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "backgroundColor": "#f6f8fa",
@@ -11553,6 +12017,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11586,6 +12051,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11598,6 +12064,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11626,6 +12093,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11641,6 +12109,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     accessibilityHint="Opens in a new window"
                     accessibilityRole="link"
                     onPress={[Function]}
+                    selectable={true}
                     style={
                       {
                         "color": "#58a6ff",
@@ -11652,6 +12121,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#58a6ff",
@@ -11666,6 +12136,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     </Text>
                   </Text>
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11767,6 +12238,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11778,6 +12250,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11822,6 +12295,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11833,6 +12307,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11846,6 +12321,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       You 
                     </Text>
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11858,6 +12334,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     >
                       <Text
+                        selectable={true}
                         style={
                           {
                             "color": "#333333",
@@ -11873,6 +12350,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       </Text>
                     </Text>
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11925,6 +12403,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11936,6 +12415,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -11980,6 +12460,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -11991,6 +12472,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -12043,6 +12525,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "backgroundColor": "#f6f8fa",
@@ -12088,6 +12571,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12138,6 +12622,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12150,6 +12635,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#333333",
@@ -12195,6 +12681,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12210,6 +12697,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     accessibilityHint="Opens in a new window"
                     accessibilityRole="link"
                     onPress={[Function]}
+                    selectable={true}
                     style={
                       {
                         "color": "#58a6ff",
@@ -12221,6 +12709,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     }
                   >
                     <Text
+                      selectable={true}
                       style={
                         {
                           "color": "#58a6ff",
@@ -12235,6 +12724,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                     </Text>
                   </Text>
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12290,6 +12780,7 @@ exports[`Tables Images 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12323,6 +12814,7 @@ exports[`Tables Images 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12344,6 +12836,7 @@ exports[`Tables Images 1`] = `
                     uri="https://goo.gl/1R3T6h"
                   />
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12445,6 +12938,7 @@ exports[`Tables Images 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12495,6 +12989,7 @@ exports[`Tables Images 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12558,6 +13053,7 @@ exports[`Tables Images 1`] = `
                     />
                   </View>
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12613,6 +13109,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12638,6 +13135,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12663,6 +13161,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12696,6 +13195,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12721,6 +13221,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12746,6 +13247,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12779,6 +13281,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12804,6 +13307,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12829,6 +13333,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12930,6 +13435,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -12972,6 +13478,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -13014,6 +13521,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -13064,6 +13572,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -13106,6 +13615,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -13148,6 +13658,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -13198,6 +13709,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -13240,6 +13752,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",
@@ -13282,6 +13795,7 @@ exports[`Tables Pipe Character 1`] = `
                   }
                 >
                   <Text
+                    selectable={true}
                     style={
                       {
                         "color": "#333333",

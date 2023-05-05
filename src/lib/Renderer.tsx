@@ -53,7 +53,9 @@ class Renderer implements RendererInterface {
 				key={this.getKey()}
 				contentContainerStyle={containerStyle}
 			>
-				<Text style={textStyle}>{text}</Text>
+				<Text selectable style={textStyle}>
+					{text}
+				</Text>
 			</ScrollView>
 		);
 	}
@@ -97,6 +99,7 @@ class Renderer implements RendererInterface {
 	): ReactNode {
 		return (
 			<Text
+				selectable
 				accessibilityRole="link"
 				accessibilityHint="Opens in a new window"
 				key={this.getKey()}
@@ -214,7 +217,7 @@ class Renderer implements RendererInterface {
 		styles?: TextStyle,
 	): ReactNode {
 		return (
-			<Text key={this.getKey()} style={styles}>
+			<Text selectable key={this.getKey()} style={styles}>
 				{children}
 			</Text>
 		);
