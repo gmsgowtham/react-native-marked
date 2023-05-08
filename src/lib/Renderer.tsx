@@ -15,9 +15,11 @@ import Decimal from "@jsamr/counter-style/presets/decimal";
 import { Slugger } from "marked";
 import { Table, Cell, TableWrapper } from "react-native-table-component";
 import MDImage from "./../components/MDImage";
+import MDSvgImage from "./../components/MDSvgImage";
 import { onLinkPress } from "../utils/handlers";
 import type { RendererInterface } from "./types";
 import { getTableWidthArr } from "../utils/table";
+import { isSVGUri } from "../utils/image";
 
 class Renderer implements RendererInterface {
 	private slugPrefix = "react-native-marked-ele";
@@ -112,6 +114,9 @@ class Renderer implements RendererInterface {
 	}
 
 	image(uri: string, alt?: string, style?: ImageStyle): ReactNode {
+		if (isSVGUri(uri)) {
+			return <MDSvgImage uri={uri} />;
+		}
 		return <MDImage key={this.getKey()} uri={uri} alt={alt} style={style} />;
 	}
 
