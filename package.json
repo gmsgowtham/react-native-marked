@@ -60,7 +60,7 @@
     "@types/marked": "4.0.8",
     "@types/node": "18.16.6",
     "@types/react": "18.2.6",
-    "@types/react-native": "0.71.6",
+    "@types/react-native": "0.72.0",
     "@types/react-native-table-component": "1.2.4",
     "commitlint": "17.6.3",
     "danger": "11.2.6",
