@@ -181,7 +181,7 @@ class Parser {
 					...styles,
 				});
 			}
-			case "table":
+			case "table": {
 				const header = token.header.map((row, i) =>
 					this._parse(row.tokens, {
 						...getTableColAlignmentStyle(token.align[i]),
@@ -203,6 +203,7 @@ class Parser {
 					this.styles.tableRow,
 					this.styles.tableCell,
 				);
+			}
 			default: {
 				console.warn(
 					`react-native-marked: token with '${token.type}' type was not found.`,
