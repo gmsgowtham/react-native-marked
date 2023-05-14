@@ -1,7 +1,8 @@
 export const getValidURL = (prefix: string, path: string) => {
+	let _prefix = prefix;
 	// remove trailing slash from prefix
-	if (prefix.endsWith("/")) {
-		prefix = prefix.slice(0, -1);
+	if (_prefix.endsWith("/")) {
+		_prefix = _prefix.slice(0, -1);
 	}
 
 	// path is valid url
@@ -11,9 +12,9 @@ export const getValidURL = (prefix: string, path: string) => {
 
 	// absolute path
 	if (path.startsWith("/")) {
-		return `${prefix}${path}`;
+		return `${_prefix}${path}`;
 	}
 
 	// relative path
-	return `${prefix}/${path}`;
+	return `${_prefix}/${path}`;
 };

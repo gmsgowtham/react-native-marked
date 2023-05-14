@@ -1,4 +1,4 @@
-import React, { useState, type ReactNode } from "react";
+import React, { type ReactNode } from "react";
 import {
 	SafeAreaView,
 	StyleSheet,
@@ -6,7 +6,6 @@ import {
 	useColorScheme,
 	Text,
 	type TextStyle,
-	TouchableOpacity,
 } from "react-native";
 import Markdown, {
 	Renderer,
@@ -15,9 +14,6 @@ import Markdown, {
 import { MD_STRING } from "./const";
 
 class CustomRenderer extends Renderer implements RendererInterface {
-	constructor() {
-		super();
-	}
 	codespan(text: string, _styles?: TextStyle): ReactNode {
 		return (
 			<Text key={this.getKey()} style={{ backgroundColor: "#ff0000" }}>

@@ -718,9 +718,6 @@ describe("Renderer override", () => {
 			color: "#ff0000",
 		};
 		class CustomRenderer extends Renderer implements RendererInterface {
-			constructor() {
-				super();
-			}
 			codespan = fn;
 		}
 
