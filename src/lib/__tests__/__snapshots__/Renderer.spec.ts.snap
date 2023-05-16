@@ -616,27 +616,15 @@ exports[`Renderer dark theme getImageLinkNode returns a Image Link node 1`] = `
   <View
     accessibilityIgnoresInvertColors={true}
     style={
-      [
-        undefined,
-        {},
-        {
-          "height": 0,
-        },
-        {
-          "alignItems": "center",
-          "justifyContent": "center",
-        },
-      ]
+      {
+        "aspectRatio": 0,
+        "width": "100%",
+      }
     }
   >
     <Image
       accessibilityLabel="Hello world"
       accessibilityRole="image"
-      onError={[Function]}
-      onLayout={[Function]}
-      onLoad={[Function]}
-      onLoadStart={[Function]}
-      resizeMode="cover"
       source={
         {
           "uri": "https://dummyimage.com/100x100/fff/aaa",
@@ -652,12 +640,15 @@ exports[`Renderer dark theme getImageLinkNode returns a Image Link node 1`] = `
             "top": 0,
           },
           {
-            "height": 0,
-            "width": undefined,
+            "height": undefined,
+            "width": "100%",
           },
           undefined,
         ]
       }
+    />
+    <ActivityIndicator
+      size="small"
     />
   </View>
 </View>
@@ -667,27 +658,15 @@ exports[`Renderer dark theme getImageNode returns a Image 1`] = `
 <View
   accessibilityIgnoresInvertColors={true}
   style={
-    [
-      undefined,
-      {},
-      {
-        "height": 0,
-      },
-      {
-        "alignItems": "center",
-        "justifyContent": "center",
-      },
-    ]
+    {
+      "aspectRatio": 0,
+      "width": "100%",
+    }
   }
 >
   <Image
     accessibilityLabel="Hello world"
     accessibilityRole="image"
-    onError={[Function]}
-    onLayout={[Function]}
-    onLoad={[Function]}
-    onLoadStart={[Function]}
-    resizeMode="cover"
     source={
       {
         "uri": "https://picsum.photos/100/100",
@@ -703,12 +682,15 @@ exports[`Renderer dark theme getImageNode returns a Image 1`] = `
           "top": 0,
         },
         {
-          "height": 0,
-          "width": undefined,
+          "height": undefined,
+          "width": "100%",
         },
         undefined,
       ]
     }
+  />
+  <ActivityIndicator
+    size="small"
   />
 </View>
 `;
@@ -1675,27 +1657,15 @@ exports[`Renderer light theme getImageLinkNode returns a Image Link node 1`] = `
   <View
     accessibilityIgnoresInvertColors={true}
     style={
-      [
-        undefined,
-        {},
-        {
-          "height": 0,
-        },
-        {
-          "alignItems": "center",
-          "justifyContent": "center",
-        },
-      ]
+      {
+        "aspectRatio": 0,
+        "width": "100%",
+      }
     }
   >
     <Image
       accessibilityLabel="Hello world"
       accessibilityRole="image"
-      onError={[Function]}
-      onLayout={[Function]}
-      onLoad={[Function]}
-      onLoadStart={[Function]}
-      resizeMode="cover"
       source={
         {
           "uri": "https://dummyimage.com/100x100/fff/aaa",
@@ -1711,12 +1681,15 @@ exports[`Renderer light theme getImageLinkNode returns a Image Link node 1`] = `
             "top": 0,
           },
           {
-            "height": 0,
-            "width": undefined,
+            "height": undefined,
+            "width": "100%",
           },
           undefined,
         ]
       }
+    />
+    <ActivityIndicator
+      size="small"
     />
   </View>
 </View>
@@ -1726,27 +1699,15 @@ exports[`Renderer light theme getImageNode returns a Image 1`] = `
 <View
   accessibilityIgnoresInvertColors={true}
   style={
-    [
-      undefined,
-      {},
-      {
-        "height": 0,
-      },
-      {
-        "alignItems": "center",
-        "justifyContent": "center",
-      },
-    ]
+    {
+      "aspectRatio": 0,
+      "width": "100%",
+    }
   }
 >
   <Image
     accessibilityLabel="Hello world"
     accessibilityRole="image"
-    onError={[Function]}
-    onLayout={[Function]}
-    onLoad={[Function]}
-    onLoadStart={[Function]}
-    resizeMode="cover"
     source={
       {
         "uri": "https://picsum.photos/100/100",
@@ -1762,12 +1723,15 @@ exports[`Renderer light theme getImageNode returns a Image 1`] = `
           "top": 0,
         },
         {
-          "height": 0,
-          "width": undefined,
+          "height": undefined,
+          "width": "100%",
         },
         undefined,
       ]
     }
+  />
+  <ActivityIndicator
+    size="small"
   />
 </View>
 `;

@@ -1,5 +1,10 @@
 import { Linking, type ColorSchemeName } from "react-native";
-import { fireEvent, render, screen } from "@testing-library/react-native";
+import {
+	fireEvent,
+	render,
+	screen,
+	waitFor,
+} from "@testing-library/react-native";
 import Renderer from "../Renderer";
 import getStyles from "./../../theme/styles";
 import type { MarkedStyles } from "./../../theme/types";
@@ -68,14 +73,16 @@ describe("Renderer", () => {
 				});
 			});
 			describe("getImageLinkNode", () => {
-				it("returns a Image Link node", () => {
+				it("returns a Image Link node", async () => {
 					const LinkNode = renderer.linkImage(
 						"https://example.com",
 						"https://dummyimage.com/100x100/fff/aaa",
 						"Hello world",
 					);
-					const tree = render(LinkNode as ReactElement).toJSON();
-					expect(tree).toMatchSnapshot();
+					await waitFor(() => {
+						const tree = render(LinkNode as ReactElement).toJSON();
+						expect(tree).toMatchSnapshot();
+					});
 				});
 			});
 			describe("View Nodes", () => {
@@ -184,13 +191,15 @@ describe("Renderer", () => {
 				});
 			});
 			describe("getImageNode", () => {
-				it("returns a Image", () => {
+				it("returns a Image", async () => {
 					const ImageNode = renderer.image(
 						"https://picsum.photos/100/100",
 						"Hello world",
 					);
-					const tree = render(ImageNode as ReactElement).toJSON();
-					expect(tree).toMatchSnapshot();
+					await waitFor(() => {
+						const tree = render(ImageNode as ReactElement).toJSON();
+						expect(tree).toMatchSnapshot();
+					});
 				});
 			});
 			describe("getListNode", () => {

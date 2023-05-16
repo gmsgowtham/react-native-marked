@@ -1,5 +1,5 @@
 import React, { type ReactNode } from "react";
-import { render, screen } from "@testing-library/react-native";
+import { render, screen, waitFor } from "@testing-library/react-native";
 import { Text, type TextStyle } from "react-native";
 import Markdown from "../Markdown";
 import Renderer from "../Renderer";
@@ -92,7 +92,7 @@ describe("Paragraphs", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Paragraph with Image", () => {
+	it("Paragraph with Image", async () => {
 		const r = render(
 			<Markdown
 				value={
@@ -100,13 +100,15 @@ describe("Paragraphs", () => {
 				}
 			/>,
 		);
-		expect(
-			screen.queryByText(
-				"Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages.",
-			),
-		).toBeTruthy();
-		const tree = r.toJSON();
-		expect(tree).toMatchSnapshot();
+		await waitFor(() => {
+			expect(
+				screen.queryByText(
+					"Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages.",
+				),
+			).toBeTruthy();
+			const tree = r.toJSON();
+			expect(tree).toMatchSnapshot();
+		});
 	});
 });
 
@@ -352,7 +354,7 @@ describe("Lists", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Elements in Lists: Images", () => {
+	it("Elements in Lists: Images", async () => {
 		const r = render(
 			<Markdown
 				value={
@@ -360,13 +362,15 @@ describe("Lists", () => {
 				}
 			/>,
 		);
-		expect(
-			screen.queryByText("Open the file containing the Linux mascot."),
-		).toBeTruthy();
-		expect(screen.queryByText("Marvel at its beauty.")).toBeTruthy();
-		expect(screen.queryByText("Close the file.")).toBeTruthy();
-		const tree = r.toJSON();
-		expect(tree).toMatchSnapshot();
+		await waitFor(() => {
+			expect(
+				screen.queryByText("Open the file containing the Linux mascot."),
+			).toBeTruthy();
+			expect(screen.queryByText("Marvel at its beauty.")).toBeTruthy();
+			expect(screen.queryByText("Close the file.")).toBeTruthy();
+			const tree = r.toJSON();
+			expect(tree).toMatchSnapshot();
+		});
 	});
 	it("Elements in Lists: Lists", () => {
 		const r = render(
@@ -519,7 +523,7 @@ describe("Links", () => {
 
 // https://www.markdownguide.org/basic-syntax/#images-1
 describe("Images", () => {
-	it("Render", () => {
+	it("Render", async () => {
 		const r = render(
 			<Markdown
 				value={
@@ -527,18 +531,23 @@ describe("Images", () => {
 				}
 			/>,
 		);
-		const tree = r.toJSON();
-		expect(tree).toMatchSnapshot();
+		await waitFor(() => {
+			const tree = r.toJSON();
+			expect(tree).toMatchSnapshot();
+		});
 	});
-	it("Linking Images", () => {
-		const tree = render(
+	it("Linking Images", async () => {
+		const r = render(
 			<Markdown
 				value={
 					'[![An old rock in the desert](https://dummyimage.com/100x100/fff/aaa "Shiprock, New Mexico by Beau Rogers")](https://dummyimage.com/100x100/fff/aaa)'
 				}
 			/>,
-		).toJSON();
-		expect(tree).toMatchSnapshot();
+		);
+		await waitFor(() => {
+			const tree = r.toJSON();
+			expect(tree).toMatchSnapshot();
+		});
 	});
 });
 
@@ -687,7 +696,7 @@ describe("Tables", () => {
 		expect(screen.queryByText("link")).toBeTruthy();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Images", () => {
+	it("Images", async () => {
 		const r = render(
 			<Markdown
 				value={`
@@ -697,11 +706,13 @@ describe("Tables", () => {
 				`}
 			/>,
 		);
-		const tree = r.toJSON();
-		expect(screen.queryByText("Hello")).toBeTruthy();
-		expect(screen.queryByText("Bingo")).toBeTruthy();
-		expect(screen.queryByText("This also works for me.")).toBeTruthy();
-		expect(tree).toMatchSnapshot();
+		await waitFor(() => {
+			const tree = r.toJSON();
+			expect(screen.queryByText("Hello")).toBeTruthy();
+			expect(screen.queryByText("Bingo")).toBeTruthy();
+			expect(screen.queryByText("This also works for me.")).toBeTruthy();
+			expect(tree).toMatchSnapshot();
+		});
 	});
 });
 
