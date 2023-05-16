@@ -4075,31 +4075,15 @@ exports[`Images Linking Images 1`] = `
           <View
             accessibilityIgnoresInvertColors={true}
             style={
-              [
-                {
-                  "resizeMode": "cover",
-                },
-                {
-                  "flexGrow": 1,
-                },
-                {
-                  "height": 0,
-                },
-                {
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                },
-              ]
+              {
+                "aspectRatio": 0,
+                "width": "100%",
+              }
             }
           >
             <Image
               accessibilityLabel="An old rock in the desert"
               accessibilityRole="image"
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              resizeMode="cover"
               source={
                 {
                   "uri": "https://dummyimage.com/100x100/fff/aaa",
@@ -4115,12 +4099,17 @@ exports[`Images Linking Images 1`] = `
                     "top": 0,
                   },
                   {
-                    "height": 0,
-                    "width": undefined,
+                    "height": undefined,
+                    "width": "100%",
                   },
-                  undefined,
+                  {
+                    "resizeMode": "cover",
+                  },
                 ]
               }
+            />
+            <ActivityIndicator
+              size="small"
             />
           </View>
         </View>
@@ -4198,31 +4187,15 @@ exports[`Images Render 1`] = `
         <View
           accessibilityIgnoresInvertColors={true}
           style={
-            [
-              {
-                "resizeMode": "cover",
-              },
-              {
-                "flexGrow": 1,
-              },
-              {
-                "height": 0,
-              },
-              {
-                "alignItems": "center",
-                "justifyContent": "center",
-              },
-            ]
+            {
+              "aspectRatio": 0,
+              "width": "100%",
+            }
           }
         >
           <Image
             accessibilityLabel="The San Juan Mountains are beautiful!"
             accessibilityRole="image"
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            onLoadStart={[Function]}
-            resizeMode="cover"
             source={
               {
                 "uri": "https://dummyimage.com/100x100/fff/aaa",
@@ -4238,12 +4211,17 @@ exports[`Images Render 1`] = `
                   "top": 0,
                 },
                 {
-                  "height": 0,
-                  "width": undefined,
+                  "height": undefined,
+                  "width": "100%",
                 },
-                undefined,
+                {
+                  "resizeMode": "cover",
+                },
               ]
             }
+          />
+          <ActivityIndicator
+            size="small"
           />
         </View>
       </View>
@@ -6638,31 +6616,15 @@ exports[`Lists Elements in Lists: Images 1`] = `
           <View
             accessibilityIgnoresInvertColors={true}
             style={
-              [
-                {
-                  "resizeMode": "cover",
-                },
-                {
-                  "flexGrow": 1,
-                },
-                {
-                  "height": 0,
-                },
-                {
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                },
-              ]
+              {
+                "aspectRatio": 0,
+                "width": "100%",
+              }
             }
           >
             <Image
-              accessibilityLabel="Image"
+              accessibilityLabel={null}
               accessibilityRole="image"
-              onError={[Function]}
-              onLayout={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              resizeMode="cover"
               source={
                 {
                   "uri": "https://dummyimage.com/100x100/fff/aaa",
@@ -6678,12 +6640,17 @@ exports[`Lists Elements in Lists: Images 1`] = `
                     "top": 0,
                   },
                   {
-                    "height": 0,
-                    "width": undefined,
+                    "height": undefined,
+                    "width": "100%",
                   },
-                  undefined,
+                  {
+                    "resizeMode": "cover",
+                  },
                 ]
               }
+            />
+            <ActivityIndicator
+              size="small"
             />
           </View>
         </View>
@@ -9780,31 +9747,15 @@ exports[`Paragraphs Paragraph with Image 1`] = `
         <View
           accessibilityIgnoresInvertColors={true}
           style={
-            [
-              {
-                "resizeMode": "cover",
-              },
-              {
-                "flexGrow": 1,
-              },
-              {
-                "height": 0,
-              },
-              {
-                "alignItems": "center",
-                "justifyContent": "center",
-              },
-            ]
+            {
+              "aspectRatio": 0,
+              "width": "100%",
+            }
           }
         >
           <Image
             accessibilityLabel="Chat"
             accessibilityRole="image"
-            onError={[Function]}
-            onLayout={[Function]}
-            onLoad={[Function]}
-            onLoadStart={[Function]}
-            resizeMode="cover"
             source={
               {
                 "uri": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5kq947hwxmjvlmhrbnm6.png",
@@ -9820,12 +9771,17 @@ exports[`Paragraphs Paragraph with Image 1`] = `
                   "top": 0,
                 },
                 {
-                  "height": 0,
-                  "width": undefined,
+                  "height": undefined,
+                  "width": "100%",
                 },
-                undefined,
+                {
+                  "resizeMode": "cover",
+                },
               ]
             }
+          />
+          <ActivityIndicator
+            size="small"
           />
         </View>
       </View>
@@ -13004,31 +12960,15 @@ exports[`Tables Images 1`] = `
                   <View
                     accessibilityIgnoresInvertColors={true}
                     style={
-                      [
-                        {
-                          "resizeMode": "cover",
-                        },
-                        {
-                          "flexGrow": 1,
-                        },
-                        {
-                          "height": 0,
-                        },
-                        {
-                          "alignItems": "center",
-                          "justifyContent": "center",
-                        },
-                      ]
+                      {
+                        "aspectRatio": 0,
+                        "width": "100%",
+                      }
                     }
                   >
                     <Image
                       accessibilityLabel="Tonejito"
                       accessibilityRole="image"
-                      onError={[Function]}
-                      onLayout={[Function]}
-                      onLoad={[Function]}
-                      onLoadStart={[Function]}
-                      resizeMode="cover"
                       source={
                         {
                           "uri": "https://goo.gl/1R3T6h",
@@ -13044,12 +12984,17 @@ exports[`Tables Images 1`] = `
                             "top": 0,
                           },
                           {
-                            "height": 0,
-                            "width": undefined,
+                            "height": undefined,
+                            "width": "100%",
                           },
-                          undefined,
+                          {
+                            "resizeMode": "cover",
+                          },
                         ]
                       }
+                    />
+                    <ActivityIndicator
+                      size="small"
                     />
                   </View>
                   <Text

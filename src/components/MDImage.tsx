@@ -1,27 +1,76 @@
-import React, { memo, useEffect } from "react";
-import { Image, type ImageStyle } from "react-native";
-import FitImage from "react-native-fit-image";
+import React, {
+	type FunctionComponent,
+	memo,
+	useEffect,
+	useState,
+} from "react";
+import {
+	ActivityIndicator,
+	ImageBackground,
+	Image,
+	type ImageStyle,
+} from "react-native";
 
-interface MDImageProps {
+type MDImageProps = {
 	uri: string;
+	label?: string;
 	alt?: string;
 	style?: ImageStyle;
-}
+};
 
-const MDImage = ({ uri, alt, style }: MDImageProps) => {
+type MDImageState = {
+	isLoading: boolean;
+	aspectRatio: number;
+};
+
+const MDImage: FunctionComponent<MDImageProps> = ({
+	uri,
+	label,
+	alt = "Image",
+	style,
+}) => {
+	const [imageState, setImageState] = useState<MDImageState>({
+		isLoading: true,
+		aspectRatio: 0,
+	});
+
 	useEffect(() => {
-		Image.prefetch(uri);
-	}, [uri]);
+		fetchOriginalSizeFromRemoteImage();
+	}, []);
+
+	/**
+	 * Fetches image dimension
+	 * Sets aspect ratio if resolved
+	 */
+	const fetchOriginalSizeFromRemoteImage = () => {
+		Image.getSize(
+			uri,
+			(width: number, height: number) => {
+				setImageState({ isLoading: false, aspectRatio: width / height });
+			},
+			() => {
+				setImageState((current) => {
+					return {
+						...current,
+						isLoading: false,
+					};
+				});
+			},
+		);
+	};
 
 	return (
-		<FitImage
+		<ImageBackground
+			source={{ uri: uri }}
+			style={{ width: "100%", aspectRatio: imageState.aspectRatio }}
+			aria-label={label}
 			accessibilityRole="image"
-			accessibilityLabel={alt || "Image"}
+			accessibilityLabel={alt}
 			accessibilityHint={undefined}
-			source={{ uri }}
-			resizeMode="cover"
-			style={style}
-		/>
+			imageStyle={style}
+		>
+			{imageState.isLoading ? <ActivityIndicator size={"small"} /> : null}
+		</ImageBackground>
 	);
 };
 
