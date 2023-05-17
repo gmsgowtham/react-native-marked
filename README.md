@@ -252,6 +252,5 @@ Made with
 ## Built with
 
 - [Marked](https://marked.js.org/)
-- [React Native Fit Image](https://github.com/huiseoul/react-native-fit-image)
 - [@jsamr/react-native-li](https://github.com/jsamr/react-native-li)
 - [react-native-table-component](https://github.com/Gil2015/react-native-table-component)
