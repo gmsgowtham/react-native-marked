@@ -20,7 +20,7 @@ type MDImageProps = {
 
 type MDImageState = {
 	isLoading: boolean;
-	aspectRatio: number;
+	aspectRatio: number | undefined;
 };
 
 const MDImage: FunctionComponent<MDImageProps> = ({
@@ -31,7 +31,7 @@ const MDImage: FunctionComponent<MDImageProps> = ({
 }) => {
 	const [imageState, setImageState] = useState<MDImageState>({
 		isLoading: true,
-		aspectRatio: 0,
+		aspectRatio: undefined,
 	});
 
 	useEffect(() => {
@@ -68,8 +68,14 @@ const MDImage: FunctionComponent<MDImageProps> = ({
 			accessibilityLabel={alt}
 			accessibilityHint={undefined}
 			imageStyle={style}
+			testID="react-native-marked-md-image"
 		>
-			{imageState.isLoading ? <ActivityIndicator size={"small"} /> : null}
+			{imageState.isLoading ? (
+				<ActivityIndicator
+					testID="react-native-marked-md-image-activity-indicator"
+					size={"small"}
+				/>
+			) : null}
 		</ImageBackground>
 	);
 };

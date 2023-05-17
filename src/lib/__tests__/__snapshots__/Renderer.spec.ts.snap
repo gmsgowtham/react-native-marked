@@ -617,7 +617,7 @@ exports[`Renderer dark theme getImageLinkNode returns a Image Link node 1`] = `
     accessibilityIgnoresInvertColors={true}
     style={
       {
-        "aspectRatio": 0,
+        "aspectRatio": undefined,
         "width": "100%",
       }
     }
@@ -646,9 +646,11 @@ exports[`Renderer dark theme getImageLinkNode returns a Image Link node 1`] = `
           undefined,
         ]
       }
+      testID="react-native-marked-md-image"
     />
     <ActivityIndicator
       size="small"
+      testID="react-native-marked-md-image-activity-indicator"
     />
   </View>
 </View>
@@ -659,7 +661,7 @@ exports[`Renderer dark theme getImageNode returns a Image 1`] = `
   accessibilityIgnoresInvertColors={true}
   style={
     {
-      "aspectRatio": 0,
+      "aspectRatio": undefined,
       "width": "100%",
     }
   }
@@ -688,9 +690,11 @@ exports[`Renderer dark theme getImageNode returns a Image 1`] = `
         undefined,
       ]
     }
+    testID="react-native-marked-md-image"
   />
   <ActivityIndicator
     size="small"
+    testID="react-native-marked-md-image-activity-indicator"
   />
 </View>
 `;
@@ -1658,7 +1662,7 @@ exports[`Renderer light theme getImageLinkNode returns a Image Link node 1`] = `
     accessibilityIgnoresInvertColors={true}
     style={
       {
-        "aspectRatio": 0,
+        "aspectRatio": undefined,
         "width": "100%",
       }
     }
@@ -1687,9 +1691,11 @@ exports[`Renderer light theme getImageLinkNode returns a Image Link node 1`] = `
           undefined,
         ]
       }
+      testID="react-native-marked-md-image"
     />
     <ActivityIndicator
       size="small"
+      testID="react-native-marked-md-image-activity-indicator"
     />
   </View>
 </View>
@@ -1700,7 +1706,7 @@ exports[`Renderer light theme getImageNode returns a Image 1`] = `
   accessibilityIgnoresInvertColors={true}
   style={
     {
-      "aspectRatio": 0,
+      "aspectRatio": undefined,
       "width": "100%",
     }
   }
@@ -1729,9 +1735,11 @@ exports[`Renderer light theme getImageNode returns a Image 1`] = `
         undefined,
       ]
     }
+    testID="react-native-marked-md-image"
   />
   <ActivityIndicator
     size="small"
+    testID="react-native-marked-md-image-activity-indicator"
   />
 </View>
 `;
