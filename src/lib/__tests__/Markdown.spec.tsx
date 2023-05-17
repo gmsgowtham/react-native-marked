@@ -106,6 +106,9 @@ describe("Paragraphs", () => {
 					"Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages.",
 				),
 			).toBeTruthy();
+			expect(
+				screen.queryAllByTestId("react-native-marked-md-image"),
+			).toBeDefined();
 			const tree = r.toJSON();
 			expect(tree).toMatchSnapshot();
 		});
@@ -368,6 +371,9 @@ describe("Lists", () => {
 			).toBeTruthy();
 			expect(screen.queryByText("Marvel at its beauty.")).toBeTruthy();
 			expect(screen.queryByText("Close the file.")).toBeTruthy();
+			expect(
+				screen.queryAllByTestId("react-native-marked-md-image"),
+			).toBeDefined();
 			const tree = r.toJSON();
 			expect(tree).toMatchSnapshot();
 		});
@@ -532,6 +538,9 @@ describe("Images", () => {
 			/>,
 		);
 		await waitFor(() => {
+			expect(
+				screen.queryAllByTestId("react-native-marked-md-image"),
+			).toBeDefined();
 			const tree = r.toJSON();
 			expect(tree).toMatchSnapshot();
 		});
@@ -545,6 +554,9 @@ describe("Images", () => {
 			/>,
 		);
 		await waitFor(() => {
+			expect(
+				screen.queryAllByTestId("react-native-marked-md-image"),
+			).toBeDefined();
 			const tree = r.toJSON();
 			expect(tree).toMatchSnapshot();
 		});
@@ -707,6 +719,9 @@ describe("Tables", () => {
 			/>,
 		);
 		await waitFor(() => {
+			expect(
+				screen.queryAllByTestId("react-native-marked-md-image"),
+			).toBeDefined();
 			const tree = r.toJSON();
 			expect(screen.queryByText("Hello")).toBeTruthy();
 			expect(screen.queryByText("Bingo")).toBeTruthy();
