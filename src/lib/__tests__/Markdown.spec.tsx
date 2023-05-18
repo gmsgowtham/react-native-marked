@@ -561,6 +561,36 @@ describe("Images", () => {
 			expect(tree).toMatchSnapshot();
 		});
 	});
+	it("SVG images", async () => {
+		const r = render(
+			<Markdown
+				value={"![svg](https://www.svgrepo.com/show/513268/beer.svg)"}
+			/>,
+		);
+		await waitFor(() => {
+			expect(
+				screen.queryAllByTestId("react-native-marked-md-svg"),
+			).toBeDefined();
+			const tree = r.toJSON();
+			expect(tree).toMatchSnapshot();
+		});
+	});
+	it("SVG Linking", async () => {
+		const r = render(
+			<Markdown
+				value={
+					'[![SVG Repo](https://www.svgrepo.com/show/513268/beer.svg "SVG Repo")](https://www.svgrepo.com)'
+				}
+			/>,
+		);
+		await waitFor(() => {
+			expect(
+				screen.queryAllByTestId("react-native-marked-md-svg"),
+			).toBeDefined();
+			const tree = r.toJSON();
+			expect(tree).toMatchSnapshot();
+		});
+	});
 });
 
 // https://www.markdownguide.org/basic-syntax/#escaping-characters

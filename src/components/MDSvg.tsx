@@ -98,6 +98,7 @@ const MDSvg: FunctionComponent<MDSvgProps> = ({ uri, alt = "image" }) => {
 					accessibilityRole="image"
 					accessibilityLabel={alt}
 					accessibilityHint={undefined}
+					testID="react-native-marked-md-svg"
 				/>
 			)}
 		</View>
