@@ -5038,6 +5038,112 @@ See the section on
 </RCTScrollView>
 `;
 
+exports[`Links Links without text, (no render) 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        selectable={true}
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "color": "#333333",
+            "fontSize": 28,
+            "fontWeight": "500",
+            "lineHeight": 36,
+            "marginVertical": 8,
+            "paddingBottom": 4,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={
+            {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
+              "color": "#333333",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "lineHeight": 36,
+              "marginVertical": 8,
+              "paddingBottom": 4,
+            }
+          }
+        >
+          Table of Contents
+        </Text>
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        selectable={true}
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "color": "#333333",
+            "fontSize": 28,
+            "fontWeight": "500",
+            "lineHeight": 36,
+            "marginVertical": 8,
+            "paddingBottom": 4,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={
+            {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
+              "color": "#333333",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "lineHeight": 36,
+              "marginVertical": 8,
+              "paddingBottom": 4,
+            }
+          }
+        >
+          Table of Contents
+        </Text>
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
 exports[`Links Titles 1`] = `
 <RCTScrollView
   data={

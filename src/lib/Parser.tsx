@@ -117,6 +117,11 @@ class Parser {
 				});
 			}
 			case "link": {
+				// Don't render anchors without text and children
+				if (token.text.trim.length < 1 && token.tokens.length < 1) {
+					return null;
+				}
+
 				// Note: Linking Images (https://www.markdownguide.org/basic-syntax/#linking-images) are wrapped
 				// in paragraph token, so will be handled via `getNormalizedSiblingNodesForBlockAndInlineTokens`
 				const linkStyle = {
