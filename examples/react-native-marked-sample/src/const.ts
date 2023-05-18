@@ -119,7 +119,7 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 
 ## Images
-
+![svg](https://www.svgrepo.com/show/513268/beer.svg)
 ![Minion](https://octodex.github.com/images/minion.png)
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
