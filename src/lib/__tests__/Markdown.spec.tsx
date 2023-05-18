@@ -525,6 +525,18 @@ describe("Links", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
+	it("Links without text, (no render)", () => {
+		const r = render(
+			<Markdown
+				value={
+					"Table of Contents[](https://mastersoftwaretesting.com/testing-fundamentals/software-testing-101-what-is-software-testing#table-of-contents)\n-------------------------------------------------------------------------------------------------------------------------------------------\n"
+				}
+			/>,
+		);
+		expect(screen.queryByText("Table of Contents")).toBeTruthy();
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
+	});
 });
 
 // https://www.markdownguide.org/basic-syntax/#images-1
