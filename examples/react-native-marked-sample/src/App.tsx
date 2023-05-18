@@ -36,7 +36,11 @@ export default function App() {
 			/>
 			<SafeAreaView>
 				<Markdown
-					value={MD_STRING}
+					// value={MD_STRING}
+					value="
+![jwt_log](https://jwt.io/img/badge-compatible.svg)
+![svg](https://www.svgrepo.com/show/513268/beer.svg)
+"
 					flatListProps={{
 						contentContainerStyle: styles.container,
 					}}

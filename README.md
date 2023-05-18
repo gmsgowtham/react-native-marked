@@ -12,7 +12,7 @@ Markdown renderer for React Native powered by
 ## Installation
 
 ```sh
-yarn add react-native-marked
+yarn add react-native-marked react-native-svg
 ```
 
 ## Usage
