@@ -249,8 +249,10 @@ MIT
 Made with
 [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
 
-## Built with
+## Built using
 
 - [Marked](https://marked.js.org/)
 - [@jsamr/react-native-li](https://github.com/jsamr/react-native-li)
 - [react-native-table-component](https://github.com/Gil2015/react-native-table-component)
+- [react-native-svg](https://github.com/software-mansion/react-native-svg)
+
