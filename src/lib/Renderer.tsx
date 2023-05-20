@@ -18,6 +18,7 @@ import MDImage from "./../components/MDImage";
 import { onLinkPress } from "../utils/handlers";
 import type { RendererInterface } from "./types";
 import { getTableWidthArr } from "../utils/table";
+import MDSvg from "./../components/MDSvg";
 
 class Renderer implements RendererInterface {
 	private slugPrefix = "react-native-marked-ele";
@@ -112,7 +113,11 @@ class Renderer implements RendererInterface {
 	}
 
 	image(uri: string, alt?: string, style?: ImageStyle): ReactNode {
-		return <MDImage key={this.getKey()} uri={uri} alt={alt} style={style} />;
+		const key = this.getKey();
+		if (uri.endsWith(".svg")) {
+			return <MDSvg uri={uri} key={key} />;
+		}
+		return <MDImage key={key} uri={uri} alt={alt} style={style} />;
 	}
 
 	strong(children: ReactNode[], styles?: TextStyle): ReactNode {
