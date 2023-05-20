@@ -82,7 +82,7 @@
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0.0 || ^18.0.0",
     "react-native": ">=0.60.0",
-    "react-native-svg": ">=13.0.0"
+    "react-native-svg": ">=12.3.0"
   },
   "jest": {
     "preset": "react-native",
