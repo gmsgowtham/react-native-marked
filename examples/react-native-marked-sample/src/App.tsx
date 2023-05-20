@@ -9,9 +9,36 @@ import {
 } from "react-native";
 import Markdown, {
 	Renderer,
+	MarkedTokenizer,
 	type RendererInterface,
+	type CustomToken,
+	MarkedLexer,
 } from "react-native-marked";
 import { MD_STRING } from "./const";
+
+class CustomTokenizer extends MarkedTokenizer<CustomToken> {
+	paragraph(this: MarkedTokenizer<CustomToken>, src: string) {
+		const match = src.match(/^{%(.*?)%}$/);
+		if (match?.[1]) {
+			const value = match[1].trim();
+			const [identifier = "", text = ""] = value.split(" ");
+			const token: CustomToken = {
+				text,
+				identifier,
+				type: "custom",
+				raw: src,
+				tokens: MarkedLexer(text, {
+					tokenizer: this as MarkedTokenizer<never>,
+				}),
+			};
+			return token;
+		}
+
+		return super.paragraph(src);
+	}
+}
+
+const tokenizer = new CustomTokenizer();
 
 class CustomRenderer extends Renderer implements RendererInterface {
 	codespan(text: string, _styles?: TextStyle): ReactNode {
@@ -41,6 +68,7 @@ export default function App() {
 						contentContainerStyle: styles.container,
 					}}
 					renderer={renderer}
+					tokenizer={tokenizer}
 				/>
 			</SafeAreaView>
 		</>

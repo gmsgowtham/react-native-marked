@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import type { TextStyle, ViewStyle, ImageStyle } from "react-native";
 import type { marked } from "marked";
 import type { MarkedStyles } from "../theme/types";
-import type { RendererInterface, ParserOptions } from "./types";
+import type { RendererInterface, ParserOptions, Token } from "./types";
 import { getValidURL } from "./../utils/url";
 import { getTableColAlignmentStyle } from "./../utils/table";
 
@@ -26,14 +26,11 @@ class Parser {
 		};
 	}
 
-	parse(tokens: marked.Token[]) {
+	parse(tokens: Token[]) {
 		return this._parse(tokens);
 	}
 
-	private _parse(
-		tokens: marked.Token[],
-		styles?: ViewStyle | TextStyle | ImageStyle,
-	) {
+	private _parse(tokens: Token[], styles?: ViewStyle | TextStyle | ImageStyle) {
 		const elements: ReactNode[] = tokens.map((token) => {
 			return this._parseToken(token, styles);
 		});
@@ -41,13 +38,10 @@ class Parser {
 	}
 
 	private _parseToken(
-		token: marked.Token,
+		token: Token,
 		styles?: ViewStyle | TextStyle | ImageStyle,
 	): ReactNode {
 		switch (token.type) {
-			case "space": {
-				return null;
-			}
 			case "paragraph": {
 				const children = this.getNormalizedSiblingNodesForBlockAndInlineTokens(
 					token.tokens,
@@ -209,20 +203,26 @@ class Parser {
 					this.styles.tableCell,
 				);
 			}
-			default: {
-				console.warn(
-					`react-native-marked: token with '${token.type}' type was not found.`,
+			case "custom": {
+				const children = this._parse(token.tokens ?? []);
+				return this.renderer.custom(
+					token.identifier,
+					token.text,
+					token.raw,
+					children,
 				);
+			}
+			default: {
 				return null;
 			}
 		}
 	}
 
 	private getNormalizedSiblingNodesForBlockAndInlineTokens(
-		tokens: marked.Token[],
+		tokens: Token[],
 		textStyle?: TextStyle,
 	): ReactNode[] {
-		let tokenRenderQueue: marked.Token[] = [];
+		let tokenRenderQueue: Token[] = [];
 		const siblingNodes: ReactNode[] = [];
 		tokens.forEach((t) => {
 			/**
@@ -238,7 +238,7 @@ class Parser {
 					t.tokens[0].type === "image")
 			) {
 				// Render existing inline tokens in the queue
-				const parsed = this.parse(tokenRenderQueue);
+				const parsed = this._parse(tokenRenderQueue);
 				if (parsed.length > 0) {
 					siblingNodes.push(this.renderer.text(parsed, textStyle));
 				}

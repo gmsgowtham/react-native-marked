@@ -208,6 +208,16 @@ class Renderer implements RendererInterface {
 		);
 	}
 
+	custom(
+		identifier: string,
+		text: string,
+		raw: string,
+		_children: ReactNode[],
+	): ReactNode {
+		console.log(identifier, text, raw);
+		return null;
+	}
+
 	getKey(): string {
 		return this.slugger.slug(this.slugPrefix);
 	}
