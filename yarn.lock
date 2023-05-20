@@ -2081,10 +2081,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@evilmartians/lefthook@1.3.13":
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.3.13.tgz#16acdfdafb5d35a8f024de43f3d91866c8e58bbb"
-  integrity sha512-+rtlCtx/1LseNGnBZFtebDPKVl8gBnxR1cgfRB/70Gc1IR/DjzfFnN06Qwex77aytlf6/p4+7zKrXslOJJA0Bw==
+"@evilmartians/lefthook@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.4.0.tgz#cef7bbef569a63a1b50f4af798053efd578eb889"
+  integrity sha512-1Wppuw/Vi0F+HfTm5n9TykzTIHphFUl+nNlHc15rFlFSGm+l0mo7zi9Y1AE4+9Z9Bx3eK6Tes98MLojiSreL5Q==
 
 "@gitbeaker/core@^21.7.0":
   version "21.7.0"
@@ -2939,35 +2939,35 @@
     conventional-recommended-bump "^6.1.0"
     semver "7.3.8"
 
-"@rometools/cli-darwin-arm64@12.1.1":
-  version "12.1.1"
-  resolved "https://registry.yarnpkg.com/@rometools/cli-darwin-arm64/-/cli-darwin-arm64-12.1.1.tgz#11bd36581ffd0074f2dffbb736ddb0c00960ac3a"
-  integrity sha512-9ohLIjRnZtgvgBizhZPHzJ3hXR+cTI1v9TmBO7hgUyScnyMrmqr3G3INl4FVFdyjgOWf8y6IT9mvkbCOvHNncQ==
+"@rometools/cli-darwin-arm64@12.1.2":
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-darwin-arm64/-/cli-darwin-arm64-12.1.2.tgz#e08b29f6fbfc84dce00bb3c3c9e26ab25b1bc1d0"
+  integrity sha512-9QxtAwNyX9n7ysxo+9qWczl70I1opulmX7LFNsRJKS9qqyTNc5K++btnNK07vWAIeQsMx4QYwr7241thuBMlFw==
 
-"@rometools/cli-darwin-x64@12.1.1":
-  version "12.1.1"
-  resolved "https://registry.yarnpkg.com/@rometools/cli-darwin-x64/-/cli-darwin-x64-12.1.1.tgz#1d53f5e7df3a929365e2c6cca5a36fd5803ee844"
-  integrity sha512-5H7vWFofuU5qLxgzIaSCHVpc5mcXfs0HCluXhoX9yxeVVxnMEJkwFT6RrXzpud9j82BHiDOFaQmrNUeT1fc+KQ==
+"@rometools/cli-darwin-x64@12.1.2":
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-darwin-x64/-/cli-darwin-x64-12.1.2.tgz#900e5a12a754f5872b99abd6baae7b184ab0526f"
+  integrity sha512-w28NkGYK/rSmQU2WkNzw1h7ec8IR5a7LzYwPHDvG2ogY5sTcygkg0TGKOF/MHUvixU6EBPrFobua2gPhpr/m5A==
 
-"@rometools/cli-linux-arm64@12.1.1":
-  version "12.1.1"
-  resolved "https://registry.yarnpkg.com/@rometools/cli-linux-arm64/-/cli-linux-arm64-12.1.1.tgz#bea4dde7b53521c8d7d578a316f8bb163cdde1ad"
-  integrity sha512-jKJeT6SI1d9bkAlMOYl3dQtzvTi98dsJAzEM91SVXLl5Onjk55Z9QG9f1E4nbS76LK4eZaNMcKqs7F2hSyVedQ==
+"@rometools/cli-linux-arm64@12.1.2":
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-linux-arm64/-/cli-linux-arm64-12.1.2.tgz#3d81d8b1f6e87d04a99a0d54ccf14a3ecf69053c"
+  integrity sha512-7BPGqPtnJy1O8B/ucJ5Vg+p6EUvJJ9DazrT1UEdVR/4inPqAVac9PIZDjjHXyMrt/3IngnetPyn5EXNTAqpJVw==
 
-"@rometools/cli-linux-x64@12.1.1":
-  version "12.1.1"
-  resolved "https://registry.yarnpkg.com/@rometools/cli-linux-x64/-/cli-linux-x64-12.1.1.tgz#7526f1428761ee8a6eeb4667fa0c2a5a8550ccbf"
-  integrity sha512-CsLjZYtLQdKoMcroXXKUmZdyFQfgVl7C8oIIDcJNzmHZKdVwRhI1M+nK/0vpiFtVjCt6j+Cw2gDYkoQSihTt0w==
+"@rometools/cli-linux-x64@12.1.2":
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-linux-x64/-/cli-linux-x64-12.1.2.tgz#166d49f12872942b8ead7d484a29745e99d3efea"
+  integrity sha512-qH2iJKPLp34D0GFK1gLolHGkTA8q2vGKh2Ae1AwoTh87g0mXyyeQf4mAtxJtf4/ydMgjEkAZdEwyaevbTX8gnQ==
 
-"@rometools/cli-win32-arm64@12.1.1":
-  version "12.1.1"
-  resolved "https://registry.yarnpkg.com/@rometools/cli-win32-arm64/-/cli-win32-arm64-12.1.1.tgz#38d21876c8eac9518014ba15421447155c819f78"
-  integrity sha512-HHaBZNTIup5xEZRwgAdH15oMBQVnVWG54BizqGJn4oR6zlXkf8S012MNOfgVdEIWW+KDhyfX6vxAH/SBf1Yp1w==
+"@rometools/cli-win32-arm64@12.1.2":
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-win32-arm64/-/cli-win32-arm64-12.1.2.tgz#09ecdde94a38b1e133b2e8c1393d6a891323dfc7"
+  integrity sha512-iIdqss2R8bni7C7isA9OLBj1UAA3MeKfca0aHNZr+2gSRdiSxO/47j6s3Tpebso99xsJBAFdWBOruG+l/C+LQg==
 
-"@rometools/cli-win32-x64@12.1.1":
-  version "12.1.1"
-  resolved "https://registry.yarnpkg.com/@rometools/cli-win32-x64/-/cli-win32-x64-12.1.1.tgz#7987581d69a0e53246ab290c2efedcfca5da3d8e"
-  integrity sha512-yPQPEvaBp/uCulnwl5d5xOxWsb/DtccmBPGg5A8TOm0Lfcts4zSUgEaq3yZ9vwXw1KepMS5NHnZ+zuDjzdtV/Q==
+"@rometools/cli-win32-x64@12.1.2":
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/@rometools/cli-win32-x64/-/cli-win32-x64-12.1.2.tgz#cd8d547da3c446caeb099423375d71ed1bcf213a"
+  integrity sha512-MKOd02sSnd/Biogh3rIKpLFZzYbDSVvRNAxbFHJOpyGLbeQHfAg7QxjKwz0PqyrHVjZaTEEPlswrf4IFii0GNg==
 
 "@sideway/address@^4.1.3":
   version "4.1.4"
@@ -3180,10 +3180,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/marked@4.0.8":
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-4.0.8.tgz#b316887ab3499d0a8f4c70b7bd8508f92d477955"
-  integrity sha512-HVNzMT5QlWCOdeuBsgXP8EZzKUf0+AXzN+sLmjvaB3ZlLqO+e4u0uXrdw9ub69wBKFs+c6/pA4r9sy6cCDvImw==
+"@types/marked@4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-4.3.1.tgz#45fb6dfd47afb595766c71ed7749ead23f137de3"
+  integrity sha512-vSSbKZFbNktrQ15v7o1EaH78EbWV+sPQbPjHG+Cp8CaNcPFUEfjZ0Iml/V0bFDwsTlYe8o6XC5Hfdp91cqPV2g==
 
 "@types/minimist@^1.2.0":
   version "1.2.2"
@@ -3195,10 +3195,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.2.tgz#17d42c6322d917764dd3d2d3a10d7884925de067"
   integrity sha512-cRMwIgdDN43GO4xMWAfJAecYn8wV4JbsOGHNfNUIDiuYkUYAR5ec4Rj7IO2SAhFPEfpPtLtUTbbny/TCT7aDwA==
 
-"@types/node@18.16.12":
-  version "18.16.12"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.12.tgz#f11e19055c5b3daeb79dc6eb7ccdd3d036313034"
-  integrity sha512-tIRrjbY9C277MOfP8M3zjMIhtMlUJ6YVqkGgLjz+74jVsdf4/UjC6Hku4+1N0BS0qyC0JAS6tJLUk9H6JUKviQ==
+"@types/node@18.16.13":
+  version "18.16.13"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.13.tgz#984c48275c718b5b3e47371938f3cff482790598"
+  integrity sha512-uZRomboV1vBL61EBXneL4j9/hEn+1Yqa4LQdpGrKmXFyJmVfWc9JV9+yb2AlnOnuaDnb2PDO3hC6/LKmzJxP1A==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -9967,17 +9967,17 @@ rimraf@~2.6.2:
   dependencies:
     glob "^7.1.3"
 
-rome@12.1.1:
-  version "12.1.1"
-  resolved "https://registry.yarnpkg.com/rome/-/rome-12.1.1.tgz#c933588032fbce9dc9e55e4dc3a29f8250224c25"
-  integrity sha512-pUUAf8KHHzzxYCXja80wIlPNvHeU2TEFmxapKOXLfYr4C5XmAjGj3ial4cJOk1JzBGZmd8fgBU3y/mxP3XqiYA==
+rome@12.1.2:
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/rome/-/rome-12.1.2.tgz#15d35b5a5abfce698b595913b71f26ef47a2a0c1"
+  integrity sha512-ObyDevKRU6k3R9fAK9hDvrX9FSPEJ0JWNv5i65enknV+epWjEIL0jnDuijPUX7MSVS6M/ngTiKUaeF3w63SJXw==
   optionalDependencies:
-    "@rometools/cli-darwin-arm64" "12.1.1"
-    "@rometools/cli-darwin-x64" "12.1.1"
-    "@rometools/cli-linux-arm64" "12.1.1"
-    "@rometools/cli-linux-x64" "12.1.1"
-    "@rometools/cli-win32-arm64" "12.1.1"
-    "@rometools/cli-win32-x64" "12.1.1"
+    "@rometools/cli-darwin-arm64" "12.1.2"
+    "@rometools/cli-darwin-x64" "12.1.2"
+    "@rometools/cli-linux-arm64" "12.1.2"
+    "@rometools/cli-linux-x64" "12.1.2"
+    "@rometools/cli-win32-arm64" "12.1.2"
+    "@rometools/cli-win32-x64" "12.1.2"
 
 run-applescript@^5.0.0:
   version "5.0.0"
