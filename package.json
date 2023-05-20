@@ -1,6 +1,6 @@
 {
   "name": "react-native-marked",
-  "version": "4.0.4",
+  "version": "4.1.0",
   "description": "Markdown renderer for React Native powered by marked.js",
   "main": "dist/commonjs/index",
   "module": "dist/module/index",
@@ -62,6 +62,7 @@
     "@types/react": "18.2.6",
     "@types/react-native": "0.72.0",
     "@types/react-native-table-component": "1.2.4",
+    "@types/svg-parser": "^2.0.3",
     "commitlint": "17.6.3",
     "danger": "11.2.6",
     "jest": "29.5.0",
@@ -80,7 +81,8 @@
   },
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0.0 || ^18.0.0",
-    "react-native": ">=0.60.0"
+    "react-native": ">=0.60.0",
+    "react-native-svg": ">=13.0.0"
   },
   "jest": {
     "preset": "react-native",
@@ -159,6 +161,9 @@
     "@jsamr/counter-style": "2.0.2",
     "@jsamr/react-native-li": "2.3.1",
     "marked": "4.3.0",
-    "react-native-table-component": "1.2.2"
+    "react-native-svg": "13.9.0",
+    "react-native-table-component": "1.2.2",
+    "svg-parser": "^2.0.4",
+    "svgps": "0.8.0"
   }
 }
