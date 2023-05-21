@@ -36,6 +36,21 @@ class CustomTokenizer extends MarkedTokenizer<CustomToken> {
 
 		return super.paragraph(src);
 	}
+
+	codespan(this: MarkedTokenizer<CustomToken>, src: string) {
+		const match = src.match(/^\$+([^\$\n]+?)\$+/);
+		if (match?.[1]) {
+			const token: CustomToken = {
+				type: "custom",
+				raw: src,
+				text: match[1].trim(),
+				identifier: "latex",
+			};
+			return token;
+		}
+
+		return super.codespan(src);
+	}
 }
 
 const tokenizer = new CustomTokenizer();
@@ -47,6 +62,23 @@ class CustomRenderer extends Renderer implements RendererInterface {
 				{text}
 			</Text>
 		);
+	}
+	custom(
+		identifier: string,
+		text: string,
+		_raw: string,
+		_children: ReactNode[],
+	): ReactNode {
+		if (identifier === "latex") {
+			return this.code(text.trim(), "latex", {
+				flex: 1,
+				width: "100%",
+				padding: 16,
+				minWidth: "100%",
+				backgroundColor: "#f6f8fa",
+			});
+		}
+		return null;
 	}
 }
 

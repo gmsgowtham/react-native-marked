@@ -133,6 +133,8 @@ With a reference later in the document defining the URL location:
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
 [![SVG Repo](https://www.svgrepo.com/show/513268/beer.svg "SVG Repo")](https://www.svgrepo.com)
+
+$ latex code $\n\n\` other code\`
 `;
 
 export { MD_STRING };
