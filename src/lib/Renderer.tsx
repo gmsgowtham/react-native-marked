@@ -54,9 +54,12 @@ class Renderer implements RendererInterface {
 				key={this.getKey()}
 				contentContainerStyle={containerStyle}
 			>
-				<Text selectable style={textStyle}>
-					{text}
-				</Text>
+				{/*
+					Wrapped in View node to avoid the following error
+					Error: Cannot add a child that doesn't have a YogaNode to a parent without a measure function!
+					ref: https://github.com/facebook/react-native/issues/18773
+				*/}
+				<View>{this.getTextNode(text, textStyle)}</View>
 			</ScrollView>
 		);
 	}
