@@ -217,12 +217,11 @@ class Renderer implements RendererInterface {
 	}
 
 	custom(
-		identifier: string,
-		text: string,
-		raw: string,
+		_identifier: string,
+		_text: string,
+		_raw: string,
 		_children: ReactNode[],
 	): ReactNode {
-		console.log(identifier, text, raw);
 		return null;
 	}
 
