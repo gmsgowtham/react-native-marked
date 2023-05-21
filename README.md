@@ -37,7 +37,7 @@ const ExampleComponent = () => {
 export default ExampleComponent;
 ```
 
-#### [Props](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L9)
+#### [Props](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L17)
 
 | Prop          | Description                                                                                                                                  | Type                                                                                                                                                                           | Optional? |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
@@ -76,13 +76,15 @@ const CustomComponent = () => {
 
 #### Options
 
-| Option      | Description                                                                                                                                  | Type                                                                                                  | Optional? |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------- |
-| colorScheme | Device color scheme ("dark" or "light")                                                                                                      | ColorSchemeName                                                                                       | false     |
-| styles      | Styles for parsed components                                                                                                                 | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L5)     | true      |
-| theme       | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L28)       | true      |
-| baseUrl     | A prefix url for any relative link                                                                                                           | string                                                                                                | true      |
-| renderer    | Custom component Renderer                                                                                                                    | [RendererInterface](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L25) | true      |
+| Option      | Description                                                                                                                                  | Type                                                                                                             | Optional? |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | --------- |
+| colorScheme | Device color scheme ("dark" or "light")                                                                                                      | ColorSchemeName                                                                                                  | false     |
+| styles      | Styles for parsed components                                                                                                                 | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L5)                | true      |
+| theme       | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L28)                  | true      |
+| baseUrl     | A prefix url for any relative link                                                                                                           | string                                                                                                           | true      |
+| renderer    | Custom component Renderer                                                                                                                    | [RendererInterface](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L29)            | true      |
+| tokenizer   | Generate custom tokens                                                                                                                       | [MarkedTokenizer<CustomToken>](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L24) | true      |
+
 
 ## Examples
 
@@ -178,7 +180,7 @@ const ExampleComponentWithHook = () => {
 export default ExampleComponent;
 ```
 
-> Please refer to [RendererInterface](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L27) for all the overrides
+> Please refer to [RendererInterface](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L2) for all the overrides
 
 > Note:
 >

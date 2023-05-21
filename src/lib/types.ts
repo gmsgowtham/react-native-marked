@@ -6,7 +6,7 @@ import type {
 	ImageStyle,
 } from "react-native";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
-import { Tokenizer, marked } from "marked";
+import { Tokenizer as MarkedTokenizer, marked } from "marked";
 
 export interface ParserOptions {
 	styles?: MarkedStyles;
@@ -21,7 +21,7 @@ export interface MarkdownProps extends Partial<ParserOptions> {
 		"data" | "renderItem" | "horizontal"
 	>;
 	theme?: UserTheme;
-	tokenizer?: Tokenizer<CustomToken>;
+	tokenizer?: MarkedTokenizer<CustomToken>;
 }
 
 export type TableColAlignment = "center" | "left" | "right" | null;
