@@ -1070,21 +1070,23 @@ exports[`Code Code Blocks (backtick) 1`] = `
         }
         horizontal={true}
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "fontStyle": "italic",
-              "lineHeight": 24,
+        <View>
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
             }
-          }
-        >
-                &lt;head&gt;
+          >
+                  &lt;head&gt;
       &lt;/head&gt;
     &lt;/html&gt;
-        </Text>
+          </Text>
+        </View>
       </ScrollView>,
     ]
   }
@@ -1128,21 +1130,23 @@ exports[`Code Code Blocks (backtick) 1`] = `
         horizontal={true}
       >
         <View>
-          <Text
-            selectable={true}
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "fontStyle": "italic",
-                "lineHeight": 24,
+          <View>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
               }
-            }
-          >
-                  &lt;head&gt;
+            >
+                    &lt;head&gt;
       &lt;/head&gt;
     &lt;/html&gt;
-          </Text>
+            </Text>
+          </View>
         </View>
       </RCTScrollView>
     </View>
@@ -1164,21 +1168,23 @@ exports[`Code Code Blocks (backtick), no ending backtick 1`] = `
         }
         horizontal={true}
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "fontStyle": "italic",
-              "lineHeight": 24,
+        <View>
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
             }
-          }
-        >
-                &lt;head&gt;
+          >
+                  &lt;head&gt;
       &lt;/head&gt;
     &lt;/html&gt;
-        </Text>
+          </Text>
+        </View>
       </ScrollView>,
     ]
   }
@@ -1222,21 +1228,23 @@ exports[`Code Code Blocks (backtick), no ending backtick 1`] = `
         horizontal={true}
       >
         <View>
-          <Text
-            selectable={true}
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 16,
-                "fontStyle": "italic",
-                "lineHeight": 24,
+          <View>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
               }
-            }
-          >
-                  &lt;head&gt;
+            >
+                    &lt;head&gt;
       &lt;/head&gt;
     &lt;/html&gt;
-          </Text>
+            </Text>
+          </View>
         </View>
       </RCTScrollView>
     </View>
@@ -1249,64 +1257,6 @@ exports[`Code Code Blocks 1`] = `
   data={
     [
       <ScrollView
-        contentContainerStyle={
-          {
-            "backgroundColor": "#f6f8fa",
-            "minWidth": "100%",
-            "padding": 16,
-          }
-        }
-        horizontal={true}
-      >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "fontStyle": "italic",
-              "lineHeight": 24,
-            }
-          }
-        >
-          &lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-&lt;/html&gt;
-        </Text>
-      </ScrollView>,
-    ]
-  }
-  getItem={[Function]}
-  getItemCount={[Function]}
-  initialNumToRender={8}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={8}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  removeClippedSubviews={false}
-  renderItem={[Function]}
-  scrollEventThrottle={50}
-  stickyHeaderIndices={[]}
-  style={
-    {
-      "backgroundColor": "#ffffff",
-    }
-  }
-  viewabilityConfigCallbackPairs={[]}
->
-  <View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <RCTScrollView
         contentContainerStyle={
           {
             "backgroundColor": "#f6f8fa",
@@ -1333,6 +1283,68 @@ exports[`Code Code Blocks 1`] = `
   &lt;/head&gt;
 &lt;/html&gt;
           </Text>
+        </View>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <View>
+          <View>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+            </Text>
+          </View>
         </View>
       </RCTScrollView>
     </View>
@@ -6251,22 +6263,24 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             }
             horizontal={true}
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
+            <View>
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "lineHeight": 24,
+                  }
                 }
-              }
-            >
-                &lt;html&gt;
+              >
+                  &lt;html&gt;
   &lt;head&gt;
   &lt;/head&gt;
   &lt;/html&gt;
-            </Text>
+              </Text>
+            </View>
           </ScrollView>
         </View>
         <View
@@ -6468,22 +6482,24 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             horizontal={true}
           >
             <View>
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "lineHeight": 24,
+              <View>
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "fontStyle": "italic",
+                      "lineHeight": 24,
+                    }
                   }
-                }
-              >
-                  &lt;html&gt;
+                >
+                    &lt;html&gt;
   &lt;head&gt;
   &lt;/head&gt;
   &lt;/html&gt;
-              </Text>
+                </Text>
+              </View>
             </View>
           </RCTScrollView>
         </View>
