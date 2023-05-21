@@ -3,7 +3,8 @@ import { render, screen, waitFor } from "@testing-library/react-native";
 import { Text, type TextStyle } from "react-native";
 import Markdown from "../Markdown";
 import Renderer from "../Renderer";
-import type { RendererInterface } from "../types";
+import { MarkedTokenizer } from "../../index";
+import type { CustomToken, RendererInterface } from "../types";
 
 // https://www.markdownguide.org/basic-syntax/#headings
 describe("Headings", () => {
@@ -799,5 +800,69 @@ describe("Renderer override", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 		expect(fn).toHaveBeenCalledWith("hello", style);
+		expect(screen.queryByText("hello")).toBeTruthy();
+	});
+});
+describe("Tokenizer", () => {
+	it("Custom", () => {
+		const codespanFn = jest.fn(
+			(text: string, styles?: TextStyle): ReactNode => (
+				<Text style={styles} key={"key-1"}>
+					{text}
+				</Text>
+			),
+		);
+		const customFn = jest.fn(
+			(
+				_identifier: string,
+				text: string,
+				_raw: string,
+				_children: React.ReactNode[],
+			): ReactNode => <Text>{text}</Text>,
+		);
+		const style: TextStyle = {
+			color: "#ff0000",
+		};
+		class CustomRenderer extends Renderer implements RendererInterface {
+			codespan = codespanFn;
+			custom = customFn;
+		}
+
+		class CustomTokenizer extends MarkedTokenizer<CustomToken> {
+			codespan(this: MarkedTokenizer<CustomToken>, src: string) {
+				const match = src.match(/^\$+([^\$\n]+?)\$+/);
+				if (match?.[1]) {
+					const token: CustomToken = {
+						type: "custom",
+						raw: src,
+						text: match[1].trim(),
+						identifier: "latex",
+					};
+					return token;
+				}
+
+				return super.codespan(src);
+			}
+		}
+
+		const r = render(
+			<Markdown
+				value={"$ latex code $\n\n`hello`"}
+				renderer={new CustomRenderer()}
+				styles={{ codespan: { ...style } }}
+				tokenizer={new CustomTokenizer()}
+			/>,
+		);
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
+		expect(codespanFn).toHaveBeenCalledWith("hello", style);
+		expect(customFn).toHaveBeenCalledWith(
+			"latex",
+			"latex code",
+			"$ latex code $",
+			[],
+		);
+		expect(screen.queryByText("hello")).toBeTruthy();
+		expect(screen.queryByText("latex code")).toBeTruthy();
 	});
 });
