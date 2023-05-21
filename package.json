@@ -163,7 +163,6 @@
     "marked": "4.3.0",
     "react-native-svg": "13.9.0",
     "react-native-table-component": "1.2.2",
-    "svg-parser": "^2.0.4",
-    "svgps": "0.8.0"
+    "svg-parser": "2.0.4"
   }
 }

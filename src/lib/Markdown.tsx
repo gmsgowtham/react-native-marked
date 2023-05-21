@@ -16,6 +16,7 @@ const Markdown = ({
 	baseUrl,
 	renderer,
 	styles,
+	tokenizer,
 }: MarkdownProps) => {
 	const colorScheme = useColorScheme();
 
@@ -25,6 +26,7 @@ const Markdown = ({
 		renderer,
 		colorScheme,
 		styles,
+		tokenizer,
 	});
 
 	const renderItem = useCallback(({ item }: { item: ReactNode }) => {

@@ -574,19 +574,21 @@ exports[`Renderer dark theme getCodeBlockNode returns a Code block (horizontal S
   horizontal={true}
 >
   <View>
-    <Text
-      selectable={true}
-      style={
-        {
-          "color": "#ffffff",
-          "fontSize": 16,
-          "fontStyle": "italic",
-          "lineHeight": 24,
+    <View>
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#ffffff",
+            "fontSize": 16,
+            "fontStyle": "italic",
+            "lineHeight": 24,
+          }
         }
-      }
-    >
-      print('hello')
-    </Text>
+      >
+        print('hello')
+      </Text>
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -1619,19 +1621,21 @@ exports[`Renderer light theme getCodeBlockNode returns a Code block (horizontal 
   horizontal={true}
 >
   <View>
-    <Text
-      selectable={true}
-      style={
-        {
-          "color": "#333333",
-          "fontSize": 16,
-          "fontStyle": "italic",
-          "lineHeight": 24,
+    <View>
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "fontStyle": "italic",
+            "lineHeight": 24,
+          }
         }
-      }
-    >
-      print('hello')
-    </Text>
+      >
+        print('hello')
+      </Text>
+    </View>
   </View>
 </RCTScrollView>
 `;

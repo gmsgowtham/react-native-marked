@@ -6,6 +6,7 @@ import type {
 	ImageStyle,
 } from "react-native";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
+import { Tokenizer as MarkedTokenizer, marked } from "marked";
 
 export interface ParserOptions {
 	styles?: MarkedStyles;
@@ -20,6 +21,7 @@ export interface MarkdownProps extends Partial<ParserOptions> {
 		"data" | "renderItem" | "horizontal"
 	>;
 	theme?: UserTheme;
+	tokenizer?: MarkedTokenizer<CustomToken>;
 }
 
 export type TableColAlignment = "center" | "left" | "right" | null;
@@ -70,4 +72,42 @@ export interface RendererInterface {
 		rowStyle?: ViewStyle,
 		cellStyle?: ViewStyle,
 	): ReactNode;
+	custom(
+		identifier: string,
+		text: string,
+		raw: string,
+		children: ReactNode[],
+	): ReactNode;
 }
+
+export interface CustomToken {
+	type: "custom";
+	identifier: string;
+	raw: string;
+	text: string;
+	tokens?: Token[];
+}
+
+export type Token =
+	| marked.Tokens.Space
+	| marked.Tokens.Code
+	| marked.Tokens.Heading
+	| marked.Tokens.Table
+	| marked.Tokens.Hr
+	| marked.Tokens.Blockquote
+	| marked.Tokens.List
+	| marked.Tokens.ListItem
+	| marked.Tokens.Paragraph
+	| marked.Tokens.HTML
+	| marked.Tokens.Text
+	| marked.Tokens.Def
+	| marked.Tokens.Escape
+	| marked.Tokens.Tag
+	| marked.Tokens.Image
+	| marked.Tokens.Link
+	| marked.Tokens.Strong
+	| marked.Tokens.Em
+	| marked.Tokens.Codespan
+	| marked.Tokens.Br
+	| marked.Tokens.Del
+	| CustomToken;
