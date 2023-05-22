@@ -214,10 +214,10 @@ class CustomTokenizer extends MarkedTokenizer<CustomToken> {
 		if (match?.[1]) {
 			const token: CustomToken = {
 				type: 'custom',
-				raw: src,
+				raw: match[0], // should be the exact regex pattern match
 				text: match[1].trim(),
 				identifier: "latex",
-        tokens: MarkedLexer(text, { tokenizer: this as MarkedTokenizer<never> }), // Optional, can be used if the markdown contains children
+        tokens: MarkedLexer(text), // optional, can be used if the markdown contains children
 			};
 			return token;
 		}

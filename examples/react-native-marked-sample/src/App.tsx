@@ -26,10 +26,8 @@ class CustomTokenizer extends MarkedTokenizer<CustomToken> {
 				text,
 				identifier,
 				type: "custom",
-				raw: src,
-				tokens: MarkedLexer(text, {
-					tokenizer: this as MarkedTokenizer<never>,
-				}),
+				raw: match[0],
+				tokens: MarkedLexer(text),
 			};
 			return token;
 		}
@@ -42,7 +40,7 @@ class CustomTokenizer extends MarkedTokenizer<CustomToken> {
 		if (match?.[1]) {
 			const token: CustomToken = {
 				type: "custom",
-				raw: src,
+				raw: match[0],
 				text: match[1].trim(),
 				identifier: "latex",
 			};
