@@ -201,23 +201,23 @@ Refer [marked](https://marked.js.org/using_pro#tokenizer)
 Overriding default codespan tokenizer to include LaTeX.
 
 ```tsx
-import React, { ReactNode, Fragment } from "react";
-import { Text, ScrollView } from "react-native";
-import type { ImageStyle, TextStyle } from "react-native";
-import Markdown, { Renderer, useMarkdown, MarkedTokenizer, MarkedLexer } from "react-native-marked";
+import React, { ReactNode } from "react";
+import Markdown, { Renderer, MarkedTokenizer, MarkedLexer } from "react-native-marked";
 import type { RendererInterface, type CustomToken, } from "react-native-marked";
 
 class CustomTokenizer extends MarkedTokenizer<CustomToken> {
-  // Override
+	// Override
 	codespan(this: MarkedTokenizer<CustomToken>, src: string) {
 		const match = src.match(/^\$+([^\$\n]+?)\$+/);
 		if (match?.[1]) {
+			const text = match[1].trim();
+			const raw = match[0];
 			const token: CustomToken = {
 				type: 'custom',
-				raw: match[0], // should be the exact regex pattern match
-				text: match[1].trim(),
+				raw: raw, // should be the exact regex pattern match
+				text: text,
 				identifier: "latex",
-        tokens: MarkedLexer(text), // optional, can be used if the markdown contains children
+				tokens: MarkedLexer(text), // optional, can be used if the markdown contains children
 			};
 			return token;
 		}
@@ -227,10 +227,14 @@ class CustomTokenizer extends MarkedTokenizer<CustomToken> {
 }
 
 class CustomRenderer extends Renderer implements RendererInterface {
-  // Custom Token implementation
-  custom(identifier: string, text: string, _raw: string, _children: ReactNode[]): ReactNode {
+	// Custom Token implementation
+	custom(identifier: string, text: string, _raw: string, _children: ReactNode[]): ReactNode {
 		if (identifier === "latex") {
-      const styles = { padding: 16, minWidth: "100%", backgroundColor: "#f6f8fa" };
+			const styles = {
+				padding: 16,
+				minWidth: "100%",
+				backgroundColor: "#f6f8fa"
+			};
 			return this.code(text.trim(), "latex", styles);
 		}
 		return null;
@@ -241,16 +245,16 @@ const renderer = new CustomRenderer();
 const tokenizer = new CustomTokenizer();
 
 const ExampleComponent = () => {
-  return (
-    <Markdown
-      value={"$ latex code $\n\n` other code `"}
-      flatListProps={{
-        initialNumToRender: 8,
-      }}
-      renderer={renderer}
-      tokenizer={tokenizer}
-    />
-  );
+	return (
+		<Markdown
+			value={"$ latex code $\n\n` other code `"}
+			flatListProps={{
+				initialNumToRender: 8,
+			}}
+			renderer={renderer}
+			tokenizer={tokenizer}
+		/>
+	);
 };
 ```
 
