@@ -77,6 +77,7 @@ export interface RendererInterface {
 		text: string,
 		raw: string,
 		children: ReactNode[],
+		args?: Record<string, unknown>,
 	): ReactNode;
 }
 
@@ -86,7 +87,7 @@ export interface CustomToken {
 	raw: string;
 	text: string;
 	tokens?: Token[];
-	args?: {};
+	args?: Record<string, unknown>;
 }
 
 export type Token =

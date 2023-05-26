@@ -221,6 +221,7 @@ class Renderer implements RendererInterface {
 		_text: string,
 		_raw: string,
 		_children: ReactNode[],
+		_args: Record<string, unknown>,
 	): ReactNode {
 		return null;
 	}

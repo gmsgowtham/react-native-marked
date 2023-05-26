@@ -210,6 +210,7 @@ class Parser {
 					token.text,
 					token.raw,
 					children,
+					token.args,
 				);
 			}
 			default: {
