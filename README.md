@@ -201,61 +201,62 @@ Refer [marked](https://marked.js.org/using_pro#tokenizer)
 Overriding default codespan tokenizer to include LaTeX.
 
 ```tsx
+
 import React, { ReactNode } from "react";
 import Markdown, { Renderer, MarkedTokenizer, MarkedLexer } from "react-native-marked";
 import type { RendererInterface, type CustomToken, } from "react-native-marked";
 
 class CustomTokenizer extends MarkedTokenizer<CustomToken> {
-	// Override
-	codespan(this: MarkedTokenizer<CustomToken>, src: string) {
-		const match = src.match(/^\$+([^\$\n]+?)\$+/);
-		if (match?.[1]) {
-			const text = match[1].trim();
-			const token: CustomToken = {
-				type: 'custom',
-				raw: match[0], // should be the exact regex pattern match
-				identifier: "latex", // Uniq identifier for the token
-				tokens: MarkedLexer(text), // optional, can be used if the markdown contains children
-				args: { // optional, can be used to send more information to the renderer
-					text: text,
-				}
-			};
-			return token;
-		}
+  // Override
+  codespan(this: MarkedTokenizer<CustomToken>, src: string) {
+    const match = src.match(/^\$+([^\$\n]+?)\$+/);
+    if (match?.[1]) {
+      const text = match[1].trim();
+      const token: CustomToken = {
+        type: 'custom',
+        raw: match[0], // should be the exact regex pattern match
+        identifier: "latex", // Uniq identifier for the token
+        tokens: MarkedLexer(text), // optional, can be used if the markdown contains children
+        args: { // optional, can be used to send more information to the renderer
+          text: text,
+        }
+      };
+      return token;
+    }
 
-		return super.codespan(src)
-	}
+    return super.codespan(src)
+  }
 }
 
 class CustomRenderer extends Renderer implements RendererInterface {
-	// Custom Token implementation
-	custom(identifier: string, _raw: string, _children?: ReactNode[], args?: Record<string, unknown>): ReactNode {
-		if (identifier === "latex") {
-			const styles = {
-				padding: 16,
-				minWidth: "100%",
-				backgroundColor: "#f6f8fa"
-			};
-			return this.code(text.trim(), "latex", styles);
-		}
-		return null;
-	}
+  // Custom Token implementation
+  custom(identifier: string, _raw: string, _children?: ReactNode[], args?: Record<string, unknown>): ReactNode {
+    if (identifier === "latex") {
+      const styles = {
+        padding: 16,
+        minWidth: "100%",
+        backgroundColor: "#f6f8fa"
+      };
+      return this.code(text.trim(), "latex", styles);
+    }
+    return null;
+  }
 }
 
 const renderer = new CustomRenderer();
 const tokenizer = new CustomTokenizer();
 
 const ExampleComponent = () => {
-	return (
-		<Markdown
-			value={"$ latex code $\n\n` other code `"}
-			flatListProps={{
-				initialNumToRender: 8,
-			}}
-			renderer={renderer}
-			tokenizer={tokenizer}
-		/>
-	);
+  return (
+    <Markdown
+      value={"$ latex code $\n\n` other code `"}
+      flatListProps={{
+        initialNumToRender: 8,
+      }}
+      renderer={renderer}
+      tokenizer={tokenizer}
+    />
+  );
 };
 ```
 
