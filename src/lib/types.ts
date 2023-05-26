@@ -86,6 +86,7 @@ export interface CustomToken {
 	raw: string;
 	text: string;
 	tokens?: Token[];
+	args?: {};
 }
 
 export type Token =
