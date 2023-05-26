@@ -815,10 +815,13 @@ describe("Tokenizer", () => {
 		const customFn = jest.fn(
 			(
 				_identifier: string,
-				text: string,
 				_raw: string,
 				_children: React.ReactNode[],
-			): ReactNode => <Text>{text}</Text>,
+				args: Record<string, unknown> = {},
+			): ReactNode => {
+				const text = (args.text as string) ?? "";
+				return <Text key={"custom-token"}>{text}</Text>;
+			},
 		);
 		const style: TextStyle = {
 			color: "#ff0000",
@@ -835,8 +838,10 @@ describe("Tokenizer", () => {
 					const token: CustomToken = {
 						type: "custom",
 						raw: src,
-						text: match[1].trim(),
 						identifier: "latex",
+						args: {
+							text: match[1].trim(),
+						},
 					};
 					return token;
 				}
@@ -856,12 +861,9 @@ describe("Tokenizer", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 		expect(codespanFn).toHaveBeenCalledWith("hello", style);
-		expect(customFn).toHaveBeenCalledWith(
-			"latex",
-			"latex code",
-			"$ latex code $",
-			[],
-		);
+		expect(customFn).toHaveBeenCalledWith("latex", "$ latex code $", [], {
+			text: "latex code",
+		});
 		expect(screen.queryByText("hello")).toBeTruthy();
 		expect(screen.queryByText("latex code")).toBeTruthy();
 	});

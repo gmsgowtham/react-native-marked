@@ -211,13 +211,14 @@ class CustomTokenizer extends MarkedTokenizer<CustomToken> {
 		const match = src.match(/^\$+([^\$\n]+?)\$+/);
 		if (match?.[1]) {
 			const text = match[1].trim();
-			const raw = match[0];
 			const token: CustomToken = {
 				type: 'custom',
-				raw: raw, // should be the exact regex pattern match
-				text: text,
-				identifier: "latex",
+				raw: match[0], // should be the exact regex pattern match
+				identifier: "latex", // Uniq identifier for the token
 				tokens: MarkedLexer(text), // optional, can be used if the markdown contains children
+				args: { // optional, can be used to send more information to the renderer
+					text: text,
+				}
 			};
 			return token;
 		}
@@ -228,7 +229,7 @@ class CustomTokenizer extends MarkedTokenizer<CustomToken> {
 
 class CustomRenderer extends Renderer implements RendererInterface {
 	// Custom Token implementation
-	custom(identifier: string, text: string, _raw: string, _children: ReactNode[]): ReactNode {
+	custom(identifier: string, _raw: string, _children?: ReactNode[], args?: Record<string, unknown>): ReactNode {
 		if (identifier === "latex") {
 			const styles = {
 				padding: 16,
