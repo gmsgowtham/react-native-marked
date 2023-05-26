@@ -207,7 +207,6 @@ class Parser {
 				const children = this._parse(token.tokens ?? []);
 				return this.renderer.custom(
 					token.identifier,
-					token.text,
 					token.raw,
 					children,
 					token.args,

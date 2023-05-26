@@ -218,7 +218,6 @@ class Renderer implements RendererInterface {
 
 	custom(
 		_identifier: string,
-		_text: string,
 		_raw: string,
 		_children: ReactNode[],
 		_args: Record<string, unknown>,

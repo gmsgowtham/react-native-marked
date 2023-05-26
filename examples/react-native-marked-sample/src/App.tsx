@@ -17,32 +17,16 @@ import Markdown, {
 import { MD_STRING } from "./const";
 
 class CustomTokenizer extends MarkedTokenizer<CustomToken> {
-	paragraph(this: MarkedTokenizer<CustomToken>, src: string) {
-		const match = src.match(/^{%(.*?)%}$/);
-		if (match?.[1]) {
-			const value = match[1].trim();
-			const [identifier = "", text = ""] = value.split(" ");
-			const token: CustomToken = {
-				text,
-				identifier,
-				type: "custom",
-				raw: match[0],
-				tokens: MarkedLexer(text),
-			};
-			return token;
-		}
-
-		return super.paragraph(src);
-	}
-
 	codespan(this: MarkedTokenizer<CustomToken>, src: string) {
 		const match = src.match(/^\$+([^\$\n]+?)\$+/);
 		if (match?.[1]) {
 			const token: CustomToken = {
 				type: "custom",
 				raw: match[0],
-				text: match[1].trim(),
 				identifier: "latex",
+				args: {
+					text: match[1].trim(),
+				},
 			};
 			return token;
 		}
@@ -63,12 +47,12 @@ class CustomRenderer extends Renderer implements RendererInterface {
 	}
 	custom(
 		identifier: string,
-		text: string,
 		_raw: string,
-		_children: ReactNode[],
+		_children: ReactNode[] = [],
+		args: Record<string, unknown> = {},
 	): ReactNode {
-		if (identifier === "latex") {
-			return this.code(text.trim(), "latex", {
+		if (identifier === "latex" && args.text) {
+			return this.code(args.text as string, "latex", {
 				flex: 1,
 				width: "100%",
 				padding: 16,
