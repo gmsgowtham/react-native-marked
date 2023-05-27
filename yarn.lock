@@ -1679,10 +1679,10 @@
     "@babel/helper-create-regexp-features-plugin" "^7.22.0"
     "@babel/helper-plugin-utils" "^7.21.5"
 
-"@babel/preset-env@7.22.1":
-  version "7.22.1"
-  resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.22.1.tgz#4cbce15b97a279f206aee9d85bb77263c8f35d46"
-  integrity sha512-jAKppxizRS4oCSxC8RU/5By5fAzaQHuCy4vpZ55FM+iN7Fc7PQrpY9f1uTDL1hTgevU2TUbhUcKHXpqMYTzw9w==
+"@babel/preset-env@7.22.2":
+  version "7.22.2"
+  resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.22.2.tgz#cefeabcb22abb098f6dda52b8b9b107374892cfd"
+  integrity sha512-UPNK9pgphMULvA2EMKIWHU90C47PKyuvQ8pE1MzH7l9PgFcRabdrHhlePpBuWxYZQ+TziP2nycKoI5C1Yhdm9Q==
   dependencies:
     "@babel/compat-data" "^7.22.0"
     "@babel/helper-compilation-targets" "^7.22.1"
@@ -1759,7 +1759,7 @@
     "@babel/plugin-transform-unicode-sets-regex" "^7.22.0"
     "@babel/preset-modules" "^0.1.5"
     "@babel/types" "^7.22.0"
-    babel-plugin-polyfill-corejs2 "^0.4.1"
+    babel-plugin-polyfill-corejs2 "^0.4.2"
     babel-plugin-polyfill-corejs3 "^0.8.1"
     babel-plugin-polyfill-regenerator "^0.5.0"
     core-js-compat "^3.30.2"
@@ -3946,10 +3946,10 @@ babel-plugin-polyfill-corejs2@^0.3.3:
     "@babel/helper-define-polyfill-provider" "^0.3.3"
     semver "^6.1.1"
 
-babel-plugin-polyfill-corejs2@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-corejs2/-/babel-plugin-polyfill-corejs2-0.4.1.tgz#65daabf234f7e3e2368a5d566b32a6c4d1714edc"
-  integrity sha512-7gKaNF3qkEt1w2p3Q2D2f+UofAKtjWT5B82VXKdDlPqJI8eLT8phBKHq6uLEOCAEtnAWW3lomu3+X6VJrFMoSg==
+babel-plugin-polyfill-corejs2@^0.4.2:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-corejs2/-/babel-plugin-polyfill-corejs2-0.4.3.tgz#75044d90ba5043a5fb559ac98496f62f3eb668fd"
+  integrity sha512-bM3gHc337Dta490gg+/AseNB9L4YLHxq1nGKZZSHbhXv4aTYU2MD2cjza1Ru4S6975YLTaL1K8uJf6ukJhhmtw==
   dependencies:
     "@babel/compat-data" "^7.17.7"
     "@babel/helper-define-polyfill-provider" "^0.4.0"
