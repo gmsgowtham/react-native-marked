@@ -37,7 +37,6 @@ const useMarkdown = (
 
 	const elements = useMemo(() => {
 		const tokens = marked.lexer(value, {
-			mangle: false,
 			gfm: true,
 			tokenizer: options?.tokenizer as Tokenizer<never>,
 		});
