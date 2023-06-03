@@ -289,3 +289,6 @@ Made with
 - [react-native-table-component](https://github.com/Gil2015/react-native-table-component)
 - [react-native-svg](https://github.com/software-mansion/react-native-svg)
 - [svg-parser](https://github.com/Rich-Harris/svg-parser)
+
+  
+<a href="https://www.buymeacoffee.com/gmsgowtham" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="width: 120px !important;" ></a>
