@@ -11,9 +11,6 @@
 			"recommended": true,
 			"correctness": {
 				"noRenderReturnValue": "off"
-			},
-			"suspicious": {
-				"noArrayIndexKey": "off"
 			}
 		}
 	},

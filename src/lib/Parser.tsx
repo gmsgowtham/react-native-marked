@@ -30,6 +30,10 @@ class Parser {
 		return this._parse(tokens);
 	}
 
+	parseToken(token: Token) {
+		return this._parseToken(token);
+	}
+
 	private _parse(tokens: Token[], styles?: ViewStyle | TextStyle | ImageStyle) {
 		const elements: ReactNode[] = tokens.map((token) => {
 			return this._parseToken(token, styles);
