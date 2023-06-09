@@ -17,7 +17,7 @@ export interface ParserOptions {
 export interface MarkdownProps extends Partial<ParserOptions> {
 	value: string;
 	flatListProps?: Omit<
-		FlatListProps<ReactNode>,
+		FlatListProps<Token>,
 		"data" | "renderItem" | "horizontal"
 	>;
 	theme?: UserTheme;

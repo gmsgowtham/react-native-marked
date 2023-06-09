@@ -1,11 +1,11 @@
-import { useMemo, type ReactNode } from "react";
+import { useMemo } from "react";
 import { Tokenizer, marked } from "marked";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
 import Parser from "../lib/Parser";
 import Renderer from "../lib/Renderer";
 import getStyles from "./../theme/styles";
 import { type ColorSchemeName } from "react-native";
-import type { CustomToken, RendererInterface } from "../lib/types";
+import type { CustomToken, RendererInterface, Token } from "../lib/types";
 
 export interface useMarkdownHookOptions {
 	colorScheme?: ColorSchemeName;
@@ -16,10 +16,15 @@ export interface useMarkdownHookOptions {
 	tokenizer?: Tokenizer<CustomToken>;
 }
 
+export interface useMarkdownHook {
+	parser: Parser;
+	tokens: Token[];
+}
+
 const useMarkdown = (
 	value: string,
 	options?: useMarkdownHookOptions,
-): ReactNode[] => {
+): useMarkdownHook => {
 	const styles = useMemo(
 		() => getStyles(options?.styles, options?.colorScheme, options?.theme),
 		[options?.styles, options?.theme, options?.colorScheme],
@@ -35,15 +40,15 @@ const useMarkdown = (
 		[options?.renderer, options?.baseUrl, styles],
 	);
 
-	const elements = useMemo(() => {
+	const tokens = useMemo(() => {
 		const tokens = marked.lexer(value, {
 			gfm: true,
 			tokenizer: options?.tokenizer as Tokenizer<never>,
 		});
-		return parser.parse(tokens);
+		return tokens;
 	}, [value, parser]);
 
-	return elements;
+	return { parser, tokens };
 };
 
 export default useMarkdown;
