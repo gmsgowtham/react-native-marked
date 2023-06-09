@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, type ReactNode } from "react";
 import { Tokenizer, marked } from "marked";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
 import Parser from "../lib/Parser";
@@ -21,7 +21,7 @@ export interface useMarkdownHook {
 	tokens: Token[];
 }
 
-const useMarkdown = (
+export const useMarkdownBase = (
 	value: string,
 	options?: useMarkdownHookOptions,
 ): useMarkdownHook => {
@@ -49,6 +49,16 @@ const useMarkdown = (
 	}, [value, parser]);
 
 	return { parser, tokens };
+};
+
+const useMarkdown = (
+	value: string,
+	options?: useMarkdownHookOptions,
+): ReactNode[] => {
+	const { parser, tokens } = useMarkdownBase(value, options);
+	const elements = useMemo(() => parser.parse(tokens), [tokens, parser]);
+
+	return elements;
 };
 
 export default useMarkdown;

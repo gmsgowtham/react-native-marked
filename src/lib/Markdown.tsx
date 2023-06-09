@@ -1,7 +1,7 @@
 import React, { memo, useCallback } from "react";
 import { FlatList, useColorScheme } from "react-native";
 import type { MarkdownProps, Token } from "./types";
-import useMarkdown from "../hooks/useMarkdown";
+import { useMarkdownBase } from "../hooks/useMarkdown";
 import colors from "../theme/colors";
 import type Parser from "./Parser";
 
@@ -27,7 +27,7 @@ const Markdown = ({
 }: MarkdownProps) => {
 	const colorScheme = useColorScheme();
 
-	const { tokens, parser } = useMarkdown(value, {
+	const { tokens, parser } = useMarkdownBase(value, {
 		theme,
 		baseUrl,
 		renderer,
