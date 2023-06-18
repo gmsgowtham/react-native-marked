@@ -17,8 +17,6 @@ jobs:
         with:
           node-version: 18.15.0
           cache: "yarn"
-      - name: Install dependencies and Build
-        run: yarn install --frozen-lockfile
       - name: Run performance tests
         run: ./reassure-tests.sh
       - name: Run Danger.js
