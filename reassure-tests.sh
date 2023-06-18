@@ -8,10 +8,10 @@ git fetch origin
 
 # Gather baseline perf measurements
 git switch "$BASELINE_BRANCH"
-yarn install --force
-yarn reassure --baseline
+yarn install --frozen-lockfile
+TEST_RUNNER_ARG="--silent" yarn reassure --baseline
 
 # Gather current perf measurements & compare results
 git switch --detach -
-yarn install --force
-yarn reassure
+yarn install --frozen-lockfile
+TEST_RUNNER_ARG="--silent" yarn reassure
