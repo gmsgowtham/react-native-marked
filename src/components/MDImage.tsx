@@ -46,7 +46,11 @@ const MDImage: FunctionComponent<MDImageProps> = ({
 		Image.getSize(
 			uri,
 			(width: number, height: number) => {
-				setImageState({ isLoading: false, aspectRatio: width / height });
+				if (width > 0 && height > 0) {
+					setImageState({ isLoading: false, aspectRatio: width / height });
+				} else {
+					setImageState({ isLoading: false, aspectRatio: undefined });
+				}
 			},
 			() => {
 				setImageState((current) => {
@@ -62,7 +66,10 @@ const MDImage: FunctionComponent<MDImageProps> = ({
 	return (
 		<ImageBackground
 			source={{ uri: uri }}
-			style={{ width: "100%", aspectRatio: imageState.aspectRatio }}
+			style={{
+				width: "100%",
+				aspectRatio: imageState.aspectRatio,
+			}}
 			aria-label={label}
 			accessibilityRole="image"
 			accessibilityLabel={alt}
