@@ -62,7 +62,12 @@ const MDImage: FunctionComponent<MDImageProps> = ({
 	return (
 		<ImageBackground
 			source={{ uri: uri }}
-			style={{ width: "100%", aspectRatio: imageState.aspectRatio }}
+			style={{
+				width: "100%",
+				aspectRatio: imageState.aspectRatio
+					? imageState.aspectRatio
+					: undefined,
+			}}
 			aria-label={label}
 			accessibilityRole="image"
 			accessibilityLabel={alt}
