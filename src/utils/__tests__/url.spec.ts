@@ -29,4 +29,18 @@ describe("getValidURL", () => {
 	it("empty prefix", () => {
 		expect(getValidURL("", "path")).toBe("/path");
 	});
+	it("ignores prefix value for non-http URLs", () => {
+		expect(getValidURL("", "mailto:example.com")).toBe("mailto:example.com");
+		expect(getValidURL("https://www.example.com", "mailto:example.com")).toBe(
+			"mailto:example.com",
+		);
+		expect(getValidURL("", "tel:0123456789")).toBe("tel:0123456789");
+		expect(getValidURL("https://www.example.com", "tel:0123456789")).toBe(
+			"tel:0123456789",
+		);
+		expect(getValidURL("", "slack://open")).toBe("slack://open");
+		expect(getValidURL("https://www.example.com", "slack://open")).toBe(
+			"slack://open",
+		);
+	});
 });

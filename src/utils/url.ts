@@ -5,8 +5,10 @@ export const getValidURL = (prefix: string, path: string) => {
 		_prefix = _prefix.slice(0, -1);
 	}
 
-	// path is valid url
-	if (path.startsWith("https") || path.startsWith("http")) {
+	// consider path a valid url if it starts with a scheme name followed by a semicolon
+	// i.e. https://example.com, mailto:person@example.com, tel:1234567, slack://open
+	const urlPattern = /^[a-z]+:/i;
+	if (urlPattern.test(path)) {
 		return path;
 	}
 
