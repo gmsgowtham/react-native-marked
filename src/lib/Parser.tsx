@@ -119,8 +119,11 @@ class Parser {
 				// Note: Linking Images (https://www.markdownguide.org/basic-syntax/#linking-images) are wrapped
 				// in paragraph token, so will be handled via `getNormalizedSiblingNodesForBlockAndInlineTokens`
 				const linkStyle = {
+					...this.styles.link,
 					...styles,
-					...this.styles.link, // To override color property
+					// To override color and fontStyle properties
+					color: this.styles.link?.color,
+					fontStyle: this.styles.link?.fontStyle,
 				};
 				const href = getValidURL(this.baseUrl, token.href);
 				const children = this._parse(token.tokens, linkStyle);
