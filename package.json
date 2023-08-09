@@ -1,6 +1,6 @@
 {
   "name": "react-native-marked",
-  "version": "5.0.9",
+  "version": "5.1.0",
   "description": "Markdown renderer for React Native powered by marked.js",
   "main": "dist/commonjs/index",
   "module": "dist/module/index",
