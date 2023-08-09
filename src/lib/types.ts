@@ -29,7 +29,11 @@ export type TableColAlignment = "center" | "left" | "right" | null;
 export interface RendererInterface {
 	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode;
 	blockquote(children: ReactNode[], styles?: ViewStyle): ReactNode;
-	heading(text: string | ReactNode[], styles?: TextStyle): ReactNode;
+	heading(
+		text: string | ReactNode[],
+		styles?: TextStyle,
+		depth?: number,
+	): ReactNode;
 	code(
 		text: string,
 		language?: string,
