@@ -57,7 +57,7 @@ class Parser {
 			case "heading": {
 				const styles = this.headingStylesMap[token.depth];
 				const children = this._parse(token.tokens, styles);
-				return this.renderer.heading(children, styles);
+				return this.renderer.heading(children, styles, token.depth);
 			}
 			case "code": {
 				return this.renderer.code(
