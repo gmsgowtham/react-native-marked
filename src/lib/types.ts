@@ -5,13 +5,14 @@ import type {
 	TextStyle,
 	ImageStyle,
 } from "react-native";
-import type { MarkedStyles, UserTheme } from "./../theme/types";
+import type { InlineRules, MarkedStyles, UserTheme } from "./../theme/types";
 import { Tokenizer as MarkedTokenizer, marked } from "marked";
 
 export interface ParserOptions {
 	styles?: MarkedStyles;
 	baseUrl?: string;
 	renderer: RendererInterface;
+	inlineRules?: InlineRules;
 }
 
 export interface MarkdownProps extends Partial<ParserOptions> {

@@ -1,6 +1,6 @@
 import { useMemo, type ReactNode } from "react";
 import { Tokenizer, marked } from "marked";
-import type { MarkedStyles, UserTheme } from "./../theme/types";
+import type { InlineRules, MarkedStyles, UserTheme } from "./../theme/types";
 import Parser from "../lib/Parser";
 import Renderer from "../lib/Renderer";
 import getStyles from "./../theme/styles";
@@ -14,6 +14,7 @@ export interface useMarkdownHookOptions {
 	styles?: MarkedStyles;
 	baseUrl?: string;
 	tokenizer?: Tokenizer<CustomToken>;
+	inlineRules?: InlineRules;
 }
 
 const useMarkdown = (
@@ -31,8 +32,9 @@ const useMarkdown = (
 				styles: styles,
 				baseUrl: options?.baseUrl,
 				renderer: options?.renderer ?? new Renderer(),
+				inlineRules: options?.inlineRules,
 			}),
-		[options?.renderer, options?.baseUrl, styles],
+		[options?.renderer, options?.baseUrl, styles, options?.inlineRules],
 	);
 
 	const elements = useMemo(() => {

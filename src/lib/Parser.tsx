@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import type { TextStyle, ViewStyle, ImageStyle } from "react-native";
 import type { marked } from "marked";
-import type { MarkedStyles } from "../theme/types";
+import type { InlineRules, MarkedStyles } from "../theme/types";
 import type { RendererInterface, ParserOptions, Token } from "./types";
 import { getValidURL } from "./../utils/url";
 import { getTableColAlignmentStyle } from "./../utils/table";
@@ -11,6 +11,7 @@ class Parser {
 	private styles: MarkedStyles;
 	private headingStylesMap: Record<number, TextStyle | undefined>;
 	private baseUrl: string;
+	private inlineRules: InlineRules;
 
 	constructor(options: ParserOptions) {
 		this.styles = { ...options.styles };
@@ -24,6 +25,8 @@ class Parser {
 			5: this.styles.h5,
 			6: this.styles.h6,
 		};
+
+		this.inlineRules = options.inlineRules ?? { link: true };
 	}
 
 	parse(tokens: Token[]) {
@@ -265,6 +268,14 @@ class Parser {
 				tokenRenderQueue = [];
 				return;
 			}
+
+			// Render link block
+			if (this.inlineRules.link === false && t.type === "link") {
+				siblingNodes.push(this._parseToken(t));
+				tokenRenderQueue = [];
+				return;
+			}
+
 			tokenRenderQueue = [...tokenRenderQueue, t];
 		});
 

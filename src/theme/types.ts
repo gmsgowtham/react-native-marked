@@ -31,3 +31,7 @@ export interface UserTheme {
 	colors?: Record<ColorKeysType, string>;
 	spacing?: Record<SpacingKeysType, number>;
 }
+
+export interface InlineRules {
+	link?: boolean;
+}
