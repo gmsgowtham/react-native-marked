@@ -6,6 +6,7 @@ import {
 	useColorScheme,
 	Text,
 	type TextStyle,
+	View,
 } from "react-native";
 import Markdown, {
 	Renderer,
@@ -61,6 +62,15 @@ class CustomRenderer extends Renderer implements RendererInterface {
 			});
 		}
 		return null;
+	}
+
+	link(uri: string) {
+		return (
+			<View style={{ width: "100%" }} key={this.getKey()}>
+				<Text style={{ textDecorationLine: "underline" }}>{uri}</Text>
+				<View style={{ width: "100%", height: 150, backgroundColor: "blue" }} />
+			</View>
+		);
 	}
 }
 
