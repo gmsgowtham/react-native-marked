@@ -9,6 +9,7 @@ exports[`Renderer dark theme Link Nodes returns a Text Link node 1`] = `
   style={
     {
       "color": "#58a6ff",
+      "fontFamily": undefined,
       "fontSize": 16,
       "fontStyle": "italic",
       "lineHeight": 24,
@@ -111,6 +112,7 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
               style={
                 {
                   "color": "#ffffff",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontWeight": "bold",
                   "lineHeight": 24,
@@ -162,6 +164,7 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
               style={
                 {
                   "color": "#ffffff",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontStyle": "italic",
                   "lineHeight": 24,
@@ -223,6 +226,7 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
               style={
                 {
                   "color": "#58a6ff",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontStyle": "italic",
                   "lineHeight": 24,
@@ -313,6 +317,7 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
               style={
                 {
                   "color": "#ffffff",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontWeight": "bold",
                   "lineHeight": 24,
@@ -352,6 +357,7 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
               style={
                 {
                   "color": "#ffffff",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontStyle": "italic",
                   "lineHeight": 24,
@@ -401,6 +407,7 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
               style={
                 {
                   "color": "#58a6ff",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontStyle": "italic",
                   "lineHeight": 24,
@@ -487,6 +494,7 @@ exports[`Renderer dark theme View Nodes returns a paragraph View node 1`] = `
   style={
     {
       "color": "#ffffff",
+      "fontFamily": undefined,
       "fontSize": 16,
       "lineHeight": 24,
       "paddingVertical": 8,
@@ -511,6 +519,7 @@ exports[`Renderer dark theme View Nodes returns a paragraph View node 1`] = `
     style={
       {
         "color": "#58a6ff",
+        "fontFamily": undefined,
         "fontSize": 16,
         "fontStyle": "italic",
         "lineHeight": 24,
@@ -551,6 +560,7 @@ exports[`Renderer dark theme getBlockquoteNode returns a Blockquote 1`] = `
     style={
       {
         "color": "#58a6ff",
+        "fontFamily": undefined,
         "fontSize": 16,
         "fontStyle": "italic",
         "lineHeight": 24,
@@ -580,6 +590,7 @@ exports[`Renderer dark theme getCodeBlockNode returns a Code block (horizontal S
         style={
           {
             "color": "#ffffff",
+            "fontFamily": undefined,
             "fontSize": 16,
             "fontStyle": "italic",
             "lineHeight": 24,
@@ -731,6 +742,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
               "color": "#ffffff",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -751,6 +763,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
         {
           "color": "#ffffff",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -787,6 +800,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
               "color": "#ffffff",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -807,6 +821,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
         {
           "color": "#ffffff",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -843,6 +858,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
               "color": "#ffffff",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -863,6 +879,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
         {
           "color": "#ffffff",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -904,6 +921,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
               "color": "#ffffff",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -924,6 +942,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
         {
           "color": "#ffffff",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -960,6 +979,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
               "color": "#ffffff",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -980,6 +1000,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
         {
           "color": "#ffffff",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -1016,6 +1037,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
               "color": "#ffffff",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -1036,6 +1058,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
         {
           "color": "#ffffff",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -1056,6 +1079,7 @@ exports[`Renderer light theme Link Nodes returns a Text Link node 1`] = `
   style={
     {
       "color": "#58a6ff",
+      "fontFamily": undefined,
       "fontSize": 16,
       "fontStyle": "italic",
       "lineHeight": 24,
@@ -1158,6 +1182,7 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
               style={
                 {
                   "color": "#333333",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontWeight": "bold",
                   "lineHeight": 24,
@@ -1209,6 +1234,7 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
               style={
                 {
                   "color": "#333333",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontStyle": "italic",
                   "lineHeight": 24,
@@ -1270,6 +1296,7 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
               style={
                 {
                   "color": "#58a6ff",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontStyle": "italic",
                   "lineHeight": 24,
@@ -1360,6 +1387,7 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
               style={
                 {
                   "color": "#333333",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontWeight": "bold",
                   "lineHeight": 24,
@@ -1399,6 +1427,7 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
               style={
                 {
                   "color": "#333333",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontStyle": "italic",
                   "lineHeight": 24,
@@ -1448,6 +1477,7 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
               style={
                 {
                   "color": "#58a6ff",
+                  "fontFamily": undefined,
                   "fontSize": 16,
                   "fontStyle": "italic",
                   "lineHeight": 24,
@@ -1534,6 +1564,7 @@ exports[`Renderer light theme View Nodes returns a paragraph View node 1`] = `
   style={
     {
       "color": "#333333",
+      "fontFamily": undefined,
       "fontSize": 16,
       "lineHeight": 24,
       "paddingVertical": 8,
@@ -1558,6 +1589,7 @@ exports[`Renderer light theme View Nodes returns a paragraph View node 1`] = `
     style={
       {
         "color": "#58a6ff",
+        "fontFamily": undefined,
         "fontSize": 16,
         "fontStyle": "italic",
         "lineHeight": 24,
@@ -1598,6 +1630,7 @@ exports[`Renderer light theme getBlockquoteNode returns a Blockquote 1`] = `
     style={
       {
         "color": "#58a6ff",
+        "fontFamily": undefined,
         "fontSize": 16,
         "fontStyle": "italic",
         "lineHeight": 24,
@@ -1627,6 +1660,7 @@ exports[`Renderer light theme getCodeBlockNode returns a Code block (horizontal 
         style={
           {
             "color": "#333333",
+            "fontFamily": undefined,
             "fontSize": 16,
             "fontStyle": "italic",
             "lineHeight": 24,
@@ -1778,6 +1812,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
               "color": "#333333",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -1798,6 +1833,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
         {
           "color": "#333333",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -1834,6 +1870,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
               "color": "#333333",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -1854,6 +1891,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
         {
           "color": "#333333",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -1890,6 +1928,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
               "color": "#333333",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -1910,6 +1949,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
         {
           "color": "#333333",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -1951,6 +1991,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
               "color": "#333333",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -1971,6 +2012,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
         {
           "color": "#333333",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -2007,6 +2049,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
               "color": "#333333",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -2027,6 +2070,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
         {
           "color": "#333333",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
@@ -2063,6 +2107,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
               "color": "#333333",
               "flexGrow": 0,
               "flexShrink": 1,
+              "fontFamily": undefined,
               "fontSize": 16,
               "lineHeight": 24,
               "textAlign": "right",
@@ -2083,6 +2128,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
         {
           "color": "#333333",
           "flexShrink": 1,
+          "fontFamily": undefined,
           "fontSize": 16,
           "lineHeight": 24,
         }
