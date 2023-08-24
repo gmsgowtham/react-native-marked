@@ -3,16 +3,14 @@ import spacing from "./spacing";
 import colors, { type ColorsPropType } from "./colors";
 import type { MarkedStyles, UserTheme } from "./types";
 
-const getFontStyles = (mdColors: ColorsPropType, fontFamily?: string) => {
+const getFontStyles = (mdColors: ColorsPropType) => {
 	return StyleSheet.create({
 		regular: {
-			fontFamily: fontFamily,
 			fontSize: 16,
 			lineHeight: 24,
 			color: mdColors.text,
 		},
 		heading: {
-			fontFamily: fontFamily,
 			fontWeight: "500",
 			color: mdColors.text,
 		},
@@ -27,7 +25,7 @@ const getStyles = (
 	const mdColors = { ...colors[colorScheme || "light"], ...userTheme?.colors };
 	const mdSpacing = { ...spacing, ...userTheme?.spacing };
 
-	const fontStyle = getFontStyles(mdColors, userTheme?.fontFamily);
+	const fontStyle = getFontStyles(mdColors);
 	const defaultStyles = StyleSheet.create<MarkedStyles>({
 		em: {
 			...fontStyle.regular,
@@ -61,7 +59,6 @@ const getStyles = (
 			opacity: 0.8,
 		},
 		h1: {
-			fontFamily: userTheme?.fontFamily,
 			fontSize: 32,
 			lineHeight: 40,
 			fontWeight: "bold",
