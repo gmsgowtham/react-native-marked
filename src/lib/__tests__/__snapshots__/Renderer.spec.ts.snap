@@ -212,7 +212,9 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
               selectable={true}
               style={
                 {
+                  "color": "#ffffff",
                   "fontSize": 24,
+                  "lineHeight": 24,
                 }
               }
             >
@@ -390,7 +392,9 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
               selectable={true}
               style={
                 {
+                  "color": "#ffffff",
                   "fontSize": 24,
+                  "lineHeight": 24,
                 }
               }
             >
@@ -422,7 +426,9 @@ exports[`Renderer dark theme Text Nodes returns a Text node 1`] = `
   selectable={true}
   style={
     {
+      "color": "#ffffff",
       "fontSize": 24,
+      "lineHeight": 24,
     }
   }
 >
@@ -435,7 +441,9 @@ exports[`Renderer dark theme Text Nodes returns a wrapped Text node 1`] = `
   selectable={true}
   style={
     {
+      "color": "#ffffff",
       "fontSize": 24,
+      "lineHeight": 24,
     }
   }
 >
@@ -453,7 +461,9 @@ exports[`Renderer dark theme Text Nodes returns a wrapped Text node with styles 
   selectable={true}
   style={
     {
+      "color": "#ffffff",
       "fontSize": 24,
+      "lineHeight": 24,
     }
   }
 >
@@ -461,7 +471,9 @@ exports[`Renderer dark theme Text Nodes returns a wrapped Text node with styles 
     selectable={true}
     style={
       {
+        "color": "#ffffff",
         "fontSize": 24,
+        "lineHeight": 24,
       }
     }
   >
@@ -497,7 +509,9 @@ exports[`Renderer dark theme View Nodes returns a paragraph View node 1`] = `
     selectable={true}
     style={
       {
+        "color": "#ffffff",
         "fontSize": 24,
+        "lineHeight": 24,
       }
     }
   >
@@ -537,7 +551,9 @@ exports[`Renderer dark theme getBlockquoteNode returns a Blockquote 1`] = `
     selectable={true}
     style={
       {
+        "color": "#ffffff",
         "fontSize": 24,
+        "lineHeight": 24,
       }
     }
   >
@@ -716,13 +732,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -772,13 +782,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -828,13 +832,7 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -889,13 +887,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -945,13 +937,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -1001,13 +987,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -1259,7 +1239,9 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
               selectable={true}
               style={
                 {
+                  "color": "#333333",
                   "fontSize": 24,
+                  "lineHeight": 24,
                 }
               }
             >
@@ -1437,7 +1419,9 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
               selectable={true}
               style={
                 {
+                  "color": "#333333",
                   "fontSize": 24,
+                  "lineHeight": 24,
                 }
               }
             >
@@ -1469,7 +1453,9 @@ exports[`Renderer light theme Text Nodes returns a Text node 1`] = `
   selectable={true}
   style={
     {
+      "color": "#333333",
       "fontSize": 24,
+      "lineHeight": 24,
     }
   }
 >
@@ -1482,7 +1468,9 @@ exports[`Renderer light theme Text Nodes returns a wrapped Text node 1`] = `
   selectable={true}
   style={
     {
+      "color": "#333333",
       "fontSize": 24,
+      "lineHeight": 24,
     }
   }
 >
@@ -1500,7 +1488,9 @@ exports[`Renderer light theme Text Nodes returns a wrapped Text node with styles
   selectable={true}
   style={
     {
+      "color": "#333333",
       "fontSize": 24,
+      "lineHeight": 24,
     }
   }
 >
@@ -1508,7 +1498,9 @@ exports[`Renderer light theme Text Nodes returns a wrapped Text node with styles
     selectable={true}
     style={
       {
+        "color": "#333333",
         "fontSize": 24,
+        "lineHeight": 24,
       }
     }
   >
@@ -1544,7 +1536,9 @@ exports[`Renderer light theme View Nodes returns a paragraph View node 1`] = `
     selectable={true}
     style={
       {
+        "color": "#333333",
         "fontSize": 24,
+        "lineHeight": 24,
       }
     }
   >
@@ -1584,7 +1578,9 @@ exports[`Renderer light theme getBlockquoteNode returns a Blockquote 1`] = `
     selectable={true}
     style={
       {
+        "color": "#333333",
         "fontSize": 24,
+        "lineHeight": 24,
       }
     }
   >
@@ -1763,13 +1759,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -1819,13 +1809,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -1875,13 +1859,7 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -1936,13 +1914,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -1992,13 +1964,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [
@@ -2048,13 +2014,7 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
+    <View>
       <Text
         style={
           [

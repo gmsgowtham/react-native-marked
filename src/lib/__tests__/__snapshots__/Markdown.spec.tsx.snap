@@ -10117,7 +10117,12 @@ exports[`Renderer override Custom 1`] = `
           <Text
             style={
               {
+                "backgroundColor": "#f6f8fa",
                 "color": "#ff0000",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "fontWeight": "300",
+                "lineHeight": 24,
               }
             }
           >
@@ -10173,7 +10178,12 @@ exports[`Renderer override Custom 1`] = `
           <Text
             style={
               {
+                "backgroundColor": "#f6f8fa",
                 "color": "#ff0000",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "fontWeight": "300",
+                "lineHeight": 24,
               }
             }
           >
@@ -14111,7 +14121,12 @@ exports[`Tokenizer Custom 1`] = `
           <Text
             style={
               {
+                "backgroundColor": "#f6f8fa",
                 "color": "#ff0000",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "fontWeight": "300",
+                "lineHeight": 24,
               }
             }
           >
@@ -14192,7 +14207,12 @@ exports[`Tokenizer Custom 1`] = `
           <Text
             style={
               {
+                "backgroundColor": "#f6f8fa",
                 "color": "#ff0000",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "fontWeight": "300",
+                "lineHeight": 24,
               }
             }
           >
