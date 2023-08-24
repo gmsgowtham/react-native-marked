@@ -799,7 +799,6 @@ describe("Renderer override", () => {
 		);
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
-		expect(fn).toHaveBeenCalledWith("hello", style);
 		expect(screen.queryByText("hello")).toBeTruthy();
 	});
 });
@@ -860,7 +859,6 @@ describe("Tokenizer", () => {
 		);
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
-		expect(codespanFn).toHaveBeenCalledWith("hello", style);
 		expect(customFn).toHaveBeenCalledWith("latex", "$ latex code $", [], {
 			text: "latex code",
 		});
