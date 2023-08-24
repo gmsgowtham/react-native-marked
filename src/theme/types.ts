@@ -30,5 +30,4 @@ export interface MarkedStyles {
 export interface UserTheme {
 	colors?: Record<ColorKeysType, string>;
 	spacing?: Record<SpacingKeysType, number>;
-	fontFamily?: string | undefined;
 }
