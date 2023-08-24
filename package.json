@@ -67,7 +67,7 @@
     "@types/svg-parser": "^2.0.3",
     "commitlint": "17.7.1",
     "danger": "11.2.8",
-    "jest": "29.6.3",
+    "jest": "29.6.4",
     "jest-environment-jsdom": "29.6.4",
     "metro-react-native-babel-preset": "0.77.0",
     "pod-install": "0.1.38",
