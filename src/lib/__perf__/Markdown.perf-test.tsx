@@ -1,7 +1,9 @@
 import React from "react";
+import { StyleSheet } from "react-native";
 import { screen } from "@testing-library/react-native";
 import { measurePerformance } from "reassure";
 import Markdown from "../Markdown";
+import type { MarkedStyles, UserTheme } from "../../theme/types";
 
 const mdString = `Markdown Quick Reference
 ========================
@@ -172,6 +174,91 @@ It is a pity, but markdown does **not** work in here for most markdown parsers.
 </div>
 `;
 
+const styles = StyleSheet.create<MarkedStyles>({
+	em: {
+		fontSize: 12,
+	},
+	strong: {
+		fontSize: 12,
+	},
+	strikethrough: {
+		fontSize: 12,
+	},
+	text: {
+		fontSize: 12,
+	},
+	paragraph: {
+		borderWidth: 1,
+	},
+	link: {
+		fontSize: 12,
+	},
+	blockquote: {
+		borderWidth: 1,
+	},
+	h1: {
+		fontSize: 12,
+	},
+	h2: {
+		fontSize: 12,
+	},
+	h3: {
+		fontSize: 12,
+	},
+	h4: {
+		fontSize: 12,
+	},
+	h5: {
+		fontSize: 12,
+	},
+	h6: {
+		fontSize: 12,
+	},
+	codespan: {
+		fontSize: 12,
+	},
+	code: {
+		borderWidth: 1,
+	},
+	hr: {
+		borderWidth: 1,
+	},
+	list: {
+		borderWidth: 1,
+	},
+	li: {
+		fontSize: 12,
+	},
+	image: {
+		width: "100%",
+	},
+	table: {
+		borderWidth: 1,
+	},
+	tableRow: {
+		borderWidth: 1,
+	},
+	tableCell: {
+		borderWidth: 1,
+	},
+});
+
+const theme: UserTheme = {
+	colors: {
+		background: "#ffffff",
+		link: "#58a6ff",
+		border: "#d0d7de",
+		code: "#161b22",
+		text: "#ffffff",
+	},
+	spacing: {
+		xs: 3,
+		s: 6,
+		m: 9,
+		l: 18,
+	},
+};
+
 describe("Perf test", () => {
 	it("Renders markdown", async () => {
 		const scenario = async () => {
@@ -181,6 +268,11 @@ describe("Perf test", () => {
 				"If markdown is too limiting, you can just insert your own <strike>crazy</strike> HTML. Span-level HTML <u>can *still* use markdown</u>. Block level elements must be separated from text by a blank line and must not have any spaces before the opening and closing HTML.",
 			);
 		};
-		measurePerformance(<Markdown value={mdString} />, { scenario });
+		measurePerformance(
+			<Markdown value={mdString} styles={styles} theme={theme} />,
+			{
+				scenario,
+			},
+		);
 	});
 });
