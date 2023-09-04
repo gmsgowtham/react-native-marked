@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.22.11",
-    "@babel/preset-env": "7.22.14",
+    "@babel/preset-env": "7.22.15",
     "@commitlint/config-conventional": "17.7.0",
     "@evilmartians/lefthook": "1.4.9",
     "@release-it/conventional-changelog": "7.0.0",
