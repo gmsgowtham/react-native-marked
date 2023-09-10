@@ -162,7 +162,7 @@
   "dependencies": {
     "@jsamr/counter-style": "2.0.2",
     "@jsamr/react-native-li": "2.3.1",
-    "marked": "5.0.5",
+    "marked": "9.0.0",
     "react-native-svg": "13.13.0",
     "react-native-table-component": "1.2.2",
     "svg-parser": "2.0.4"
