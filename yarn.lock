@@ -7949,11 +7949,6 @@ jest@29.7.0:
     import-local "^3.0.2"
     jest-cli "^29.7.0"
 
-jetifier@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/jetifier/-/jetifier-2.0.0.tgz#699391367ca1fe7bc4da5f8bf691eb117758e4cb"
-  integrity sha512-J4Au9KuT74te+PCCCHKgAjyLlEa+2VyIAEPNCdE5aNkAJ6FAJcAqcdzEkSnzNksIa9NkGmC4tPiClk2e7tCJuQ==
-
 joi@^17.2.1:
   version "17.6.2"
   resolved "https://registry.yarnpkg.com/joi/-/joi-17.6.2.tgz#00ac55ce6495596545cce45309f38738cfbd7cd3"
@@ -9891,10 +9886,10 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-native-builder-bob@0.21.3:
-  version "0.21.3"
-  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.21.3.tgz#6cdef5a020bae60286e72c6941df9a2d410e3f19"
-  integrity sha512-ZlEXWzgIRfRvQEDEYnoTeJ2og5zDbORB0BMGzpE34TxO22+DZeXH4yFYUtZLrUxvUi5WVo/1V2sVjjnUNZL85Q==
+react-native-builder-bob@0.22.0:
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.22.0.tgz#6b55e073888c0f69421c024e7e524d194a887df6"
+  integrity sha512-dp4CmeF5rC9iehQaSZaZAfMyE3QWeU4xjsJ05oOty09qQB7PzC5bwo1RLlP1dCb+TbQqRcoP2gDoUQW1m+f4Mw==
   dependencies:
     "@babel/core" "^7.18.5"
     "@babel/plugin-proposal-class-properties" "^7.17.12"
@@ -9915,8 +9910,6 @@ react-native-builder-bob@0.21.3:
     prompts "^2.4.2"
     which "^2.0.2"
     yargs "^17.5.1"
-  optionalDependencies:
-    jetifier "^2.0.0"
 
 react-native-svg@13.13.0:
   version "13.13.0"
