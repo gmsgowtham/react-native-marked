@@ -58,7 +58,7 @@
     "@release-it/conventional-changelog": "7.0.1",
     "@testing-library/jest-native": "5.4.3",
     "@testing-library/react-native": "12.3.0",
-    "@types/jest": "29.5.4",
+    "@types/jest": "29.5.5",
     "@types/marked": "5.0.0",
     "@types/node": "18.17.17",
     "@types/react": "18.2.21",
