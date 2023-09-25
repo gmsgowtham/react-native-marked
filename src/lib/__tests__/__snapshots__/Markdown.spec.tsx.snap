@@ -3340,6 +3340,192 @@ exports[`Headings Heading level 6 1`] = `
 </RCTScrollView>
 `;
 
+exports[`Headings Heading with text emphasis 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        selectable={true}
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "color": "#333333",
+            "fontSize": 28,
+            "fontWeight": "500",
+            "lineHeight": 36,
+            "marginVertical": 8,
+            "paddingBottom": 4,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={
+            {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
+              "color": "#333333",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "lineHeight": 36,
+              "marginVertical": 8,
+              "paddingBottom": 4,
+              "textDecorationLine": "line-through",
+              "textDecorationStyle": "solid",
+            }
+          }
+        >
+          <Text
+            selectable={true}
+            style={
+              {
+                "borderBottomColor": "#d0d7de",
+                "borderBottomWidth": 1,
+                "color": "#333333",
+                "fontSize": 28,
+                "fontStyle": "italic",
+                "fontWeight": "500",
+                "lineHeight": 36,
+                "marginVertical": 8,
+                "paddingBottom": 4,
+                "textDecorationLine": "line-through",
+                "textDecorationStyle": "solid",
+              }
+            }
+          >
+            <Text
+              selectable={true}
+              style={
+                {
+                  "borderBottomColor": "#d0d7de",
+                  "borderBottomWidth": 1,
+                  "color": "#333333",
+                  "fontSize": 28,
+                  "fontStyle": "italic",
+                  "fontWeight": "500",
+                  "lineHeight": 36,
+                  "marginVertical": 8,
+                  "paddingBottom": 4,
+                  "textDecorationLine": "line-through",
+                  "textDecorationStyle": "solid",
+                }
+              }
+            >
+              Heading level 2
+            </Text>
+          </Text>
+        </Text>
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        selectable={true}
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "color": "#333333",
+            "fontSize": 28,
+            "fontWeight": "500",
+            "lineHeight": 36,
+            "marginVertical": 8,
+            "paddingBottom": 4,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={
+            {
+              "borderBottomColor": "#d0d7de",
+              "borderBottomWidth": 1,
+              "color": "#333333",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "lineHeight": 36,
+              "marginVertical": 8,
+              "paddingBottom": 4,
+              "textDecorationLine": "line-through",
+              "textDecorationStyle": "solid",
+            }
+          }
+        >
+          <Text
+            selectable={true}
+            style={
+              {
+                "borderBottomColor": "#d0d7de",
+                "borderBottomWidth": 1,
+                "color": "#333333",
+                "fontSize": 28,
+                "fontStyle": "italic",
+                "fontWeight": "500",
+                "lineHeight": 36,
+                "marginVertical": 8,
+                "paddingBottom": 4,
+                "textDecorationLine": "line-through",
+                "textDecorationStyle": "solid",
+              }
+            }
+          >
+            <Text
+              selectable={true}
+              style={
+                {
+                  "borderBottomColor": "#d0d7de",
+                  "borderBottomWidth": 1,
+                  "color": "#333333",
+                  "fontSize": 28,
+                  "fontStyle": "italic",
+                  "fontWeight": "500",
+                  "lineHeight": 36,
+                  "marginVertical": 8,
+                  "paddingBottom": 4,
+                  "textDecorationLine": "line-through",
+                  "textDecorationStyle": "solid",
+                }
+              }
+            >
+              Heading level 2
+            </Text>
+          </Text>
+        </Text>
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
 exports[`Horizontal Rules Asterisks 1`] = `
 <RCTScrollView
   data={
