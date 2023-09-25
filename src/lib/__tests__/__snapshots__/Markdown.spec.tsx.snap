@@ -318,20 +318,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 22,
-                "fontWeight": "500",
-                "lineHeight": 28,
-                "marginVertical": 4,
-              }
-            }
-          >
-            The quarterly results look great!
-          </Text>
+          The quarterly results look great!
         </Text>
         <MarkedList
           counterRenderer={
@@ -579,20 +566,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 22,
-                "fontWeight": "500",
-                "lineHeight": 28,
-                "marginVertical": 4,
-              }
-            }
-          >
-            The quarterly results look great!
-          </Text>
+          The quarterly results look great!
         </Text>
         <View
           style={
@@ -2619,24 +2593,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 1
-        </Text>
+        Heading level 1
       </Text>,
     ]
   }
@@ -2684,24 +2641,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 1
-        </Text>
+        Heading level 1
       </Text>
     </View>
   </View>
@@ -2727,23 +2667,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 28,
-              "fontWeight": "500",
-              "lineHeight": 36,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 2
-        </Text>
+        Heading level 2
       </Text>,
     ]
   }
@@ -2791,23 +2715,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 28,
-              "fontWeight": "500",
-              "lineHeight": 36,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 2
-        </Text>
+        Heading level 2
       </Text>
     </View>
   </View>
@@ -2861,24 +2769,7 @@ exports[`Headings Best Practice 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading
-        </Text>
+        Heading
       </Text>,
       <View
         style={
@@ -2988,24 +2879,7 @@ exports[`Headings Best Practice 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading
-        </Text>
+        Heading
       </Text>
     </View>
     <View
@@ -3065,24 +2939,7 @@ exports[`Headings Heading level 1 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 1
-        </Text>
+        Heading level 1
       </Text>,
     ]
   }
@@ -3130,24 +2987,7 @@ exports[`Headings Heading level 1 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 1
-        </Text>
+        Heading level 1
       </Text>
     </View>
   </View>
@@ -3173,23 +3013,7 @@ exports[`Headings Heading level 2 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 28,
-              "fontWeight": "500",
-              "lineHeight": 36,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 2
-        </Text>
+        Heading level 2
       </Text>,
     ]
   }
@@ -3237,23 +3061,7 @@ exports[`Headings Heading level 2 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 28,
-              "fontWeight": "500",
-              "lineHeight": 36,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 2
-        </Text>
+        Heading level 2
       </Text>
     </View>
   </View>
@@ -3276,20 +3084,7 @@ exports[`Headings Heading level 3 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 24,
-              "fontWeight": "500",
-              "lineHeight": 32,
-              "marginVertical": 4,
-            }
-          }
-        >
-          Heading level 3
-        </Text>
+        Heading level 3
       </Text>,
     ]
   }
@@ -3334,20 +3129,7 @@ exports[`Headings Heading level 3 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 24,
-              "fontWeight": "500",
-              "lineHeight": 32,
-              "marginVertical": 4,
-            }
-          }
-        >
-          Heading level 3
-        </Text>
+        Heading level 3
       </Text>
     </View>
   </View>
@@ -3370,20 +3152,7 @@ exports[`Headings Heading level 4 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 22,
-              "fontWeight": "500",
-              "lineHeight": 28,
-              "marginVertical": 4,
-            }
-          }
-        >
-          Heading level 4
-        </Text>
+        Heading level 4
       </Text>,
     ]
   }
@@ -3428,20 +3197,7 @@ exports[`Headings Heading level 4 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 22,
-              "fontWeight": "500",
-              "lineHeight": 28,
-              "marginVertical": 4,
-            }
-          }
-        >
-          Heading level 4
-        </Text>
+        Heading level 4
       </Text>
     </View>
   </View>
@@ -3464,20 +3220,7 @@ exports[`Headings Heading level 5 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "fontWeight": "500",
-              "lineHeight": 24,
-              "marginVertical": 2,
-            }
-          }
-        >
-          Heading level 5
-        </Text>
+        Heading level 5
       </Text>,
     ]
   }
@@ -3522,20 +3265,7 @@ exports[`Headings Heading level 5 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "fontWeight": "500",
-              "lineHeight": 24,
-              "marginVertical": 2,
-            }
-          }
-        >
-          Heading level 5
-        </Text>
+        Heading level 5
       </Text>
     </View>
   </View>
@@ -3558,20 +3288,7 @@ exports[`Headings Heading level 6 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 14,
-              "fontWeight": "500",
-              "lineHeight": 20,
-              "marginVertical": 2,
-            }
-          }
-        >
-          Heading level 6
-        </Text>
+        Heading level 6
       </Text>,
     ]
   }
@@ -3616,20 +3333,7 @@ exports[`Headings Heading level 6 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 14,
-              "fontWeight": "500",
-              "lineHeight": 20,
-              "marginVertical": 2,
-            }
-          }
-        >
-          Heading level 6
-        </Text>
+        Heading level 6
       </Text>
     </View>
   </View>

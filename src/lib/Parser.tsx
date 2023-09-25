@@ -56,6 +56,13 @@ class Parser {
 			}
 			case "heading": {
 				const styles = this.headingStylesMap[token.depth];
+
+				// To avoid duplicate text node nesting when there are no child tokens with text emphasis (i.e., italic)
+				// ref: https://github.com/gmsgowtham/react-native-marked/issues/522
+				if (token.tokens.length === 1 && token.tokens[0]?.type === "text") {
+					return this.renderer.heading(token.text, styles, token.depth);
+				}
+
 				const children = this._parse(token.tokens, styles);
 				return this.renderer.heading(children, styles, token.depth);
 			}
