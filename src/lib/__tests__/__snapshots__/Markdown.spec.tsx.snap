@@ -318,20 +318,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 22,
-                "fontWeight": "500",
-                "lineHeight": 28,
-                "marginVertical": 4,
-              }
-            }
-          >
-            The quarterly results look great!
-          </Text>
+          The quarterly results look great!
         </Text>
         <MarkedList
           counterRenderer={
@@ -579,20 +566,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={
-              {
-                "color": "#333333",
-                "fontSize": 22,
-                "fontWeight": "500",
-                "lineHeight": 28,
-                "marginVertical": 4,
-              }
-            }
-          >
-            The quarterly results look great!
-          </Text>
+          The quarterly results look great!
         </Text>
         <View
           style={
@@ -2619,24 +2593,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 1
-        </Text>
+        Heading level 1
       </Text>,
     ]
   }
@@ -2684,24 +2641,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 1
-        </Text>
+        Heading level 1
       </Text>
     </View>
   </View>
@@ -2727,23 +2667,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 28,
-              "fontWeight": "500",
-              "lineHeight": 36,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 2
-        </Text>
+        Heading level 2
       </Text>,
     ]
   }
@@ -2791,23 +2715,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 28,
-              "fontWeight": "500",
-              "lineHeight": 36,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 2
-        </Text>
+        Heading level 2
       </Text>
     </View>
   </View>
@@ -2861,24 +2769,7 @@ exports[`Headings Best Practice 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading
-        </Text>
+        Heading
       </Text>,
       <View
         style={
@@ -2988,24 +2879,7 @@ exports[`Headings Best Practice 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading
-        </Text>
+        Heading
       </Text>
     </View>
     <View
@@ -3065,24 +2939,7 @@ exports[`Headings Heading level 1 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 1
-        </Text>
+        Heading level 1
       </Text>,
     ]
   }
@@ -3130,24 +2987,7 @@ exports[`Headings Heading level 1 1`] = `
           }
         }
       >
-        <Text
-          selectable={true}
-          style={
-            {
-              "borderBottomColor": "#d0d7de",
-              "borderBottomWidth": 1,
-              "color": "#333333",
-              "fontSize": 32,
-              "fontWeight": "bold",
-              "letterSpacing": 0,
-              "lineHeight": 40,
-              "marginVertical": 8,
-              "paddingBottom": 4,
-            }
-          }
-        >
-          Heading level 1
-        </Text>
+        Heading level 1
       </Text>
     </View>
   </View>
@@ -3173,6 +3013,352 @@ exports[`Headings Heading level 2 1`] = `
           }
         }
       >
+        Heading level 2
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        selectable={true}
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "color": "#333333",
+            "fontSize": 28,
+            "fontWeight": "500",
+            "lineHeight": 36,
+            "marginVertical": 8,
+            "paddingBottom": 4,
+          }
+        }
+      >
+        Heading level 2
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading level 3 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 24,
+            "fontWeight": "500",
+            "lineHeight": 32,
+            "marginVertical": 4,
+          }
+        }
+      >
+        Heading level 3
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 24,
+            "fontWeight": "500",
+            "lineHeight": 32,
+            "marginVertical": 4,
+          }
+        }
+      >
+        Heading level 3
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading level 4 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 22,
+            "fontWeight": "500",
+            "lineHeight": 28,
+            "marginVertical": 4,
+          }
+        }
+      >
+        Heading level 4
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 22,
+            "fontWeight": "500",
+            "lineHeight": 28,
+            "marginVertical": 4,
+          }
+        }
+      >
+        Heading level 4
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading level 5 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+            "marginVertical": 2,
+          }
+        }
+      >
+        Heading level 5
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+            "marginVertical": 2,
+          }
+        }
+      >
+        Heading level 5
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading level 6 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "lineHeight": 20,
+            "marginVertical": 2,
+          }
+        }
+      >
+        Heading level 6
+      </Text>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "lineHeight": 20,
+            "marginVertical": 2,
+          }
+        }
+      >
+        Heading level 6
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Headings Heading with text emphasis 1`] = `
+<RCTScrollView
+  data={
+    [
+      <Text
+        selectable={true}
+        style={
+          {
+            "borderBottomColor": "#d0d7de",
+            "borderBottomWidth": 1,
+            "color": "#333333",
+            "fontSize": 28,
+            "fontWeight": "500",
+            "lineHeight": 36,
+            "marginVertical": 8,
+            "paddingBottom": 4,
+          }
+        }
+      >
         <Text
           selectable={true}
           style={
@@ -3185,10 +3371,50 @@ exports[`Headings Heading level 2 1`] = `
               "lineHeight": 36,
               "marginVertical": 8,
               "paddingBottom": 4,
+              "textDecorationLine": "line-through",
+              "textDecorationStyle": "solid",
             }
           }
         >
-          Heading level 2
+          <Text
+            selectable={true}
+            style={
+              {
+                "borderBottomColor": "#d0d7de",
+                "borderBottomWidth": 1,
+                "color": "#333333",
+                "fontSize": 28,
+                "fontStyle": "italic",
+                "fontWeight": "500",
+                "lineHeight": 36,
+                "marginVertical": 8,
+                "paddingBottom": 4,
+                "textDecorationLine": "line-through",
+                "textDecorationStyle": "solid",
+              }
+            }
+          >
+            <Text
+              selectable={true}
+              style={
+                {
+                  "borderBottomColor": "#d0d7de",
+                  "borderBottomWidth": 1,
+                  "color": "#333333",
+                  "fontSize": 28,
+                  "fontStyle": "italic",
+                  "fontWeight": "500",
+                  "lineHeight": 36,
+                  "marginVertical": 8,
+                  "paddingBottom": 4,
+                  "textDecorationLine": "line-through",
+                  "textDecorationStyle": "solid",
+                }
+              }
+            >
+              Heading level 2
+            </Text>
+          </Text>
         </Text>
       </Text>,
     ]
@@ -3249,386 +3475,50 @@ exports[`Headings Heading level 2 1`] = `
               "lineHeight": 36,
               "marginVertical": 8,
               "paddingBottom": 4,
+              "textDecorationLine": "line-through",
+              "textDecorationStyle": "solid",
             }
           }
         >
-          Heading level 2
-        </Text>
-      </Text>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`Headings Heading level 3 1`] = `
-<RCTScrollView
-  data={
-    [
-      <Text
-        selectable={true}
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 24,
-            "fontWeight": "500",
-            "lineHeight": 32,
-            "marginVertical": 4,
-          }
-        }
-      >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 24,
-              "fontWeight": "500",
-              "lineHeight": 32,
-              "marginVertical": 4,
+          <Text
+            selectable={true}
+            style={
+              {
+                "borderBottomColor": "#d0d7de",
+                "borderBottomWidth": 1,
+                "color": "#333333",
+                "fontSize": 28,
+                "fontStyle": "italic",
+                "fontWeight": "500",
+                "lineHeight": 36,
+                "marginVertical": 8,
+                "paddingBottom": 4,
+                "textDecorationLine": "line-through",
+                "textDecorationStyle": "solid",
+              }
             }
-          }
-        >
-          Heading level 3
-        </Text>
-      </Text>,
-    ]
-  }
-  getItem={[Function]}
-  getItemCount={[Function]}
-  initialNumToRender={8}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={8}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  removeClippedSubviews={false}
-  renderItem={[Function]}
-  scrollEventThrottle={50}
-  stickyHeaderIndices={[]}
-  style={
-    {
-      "backgroundColor": "#ffffff",
-    }
-  }
-  viewabilityConfigCallbackPairs={[]}
->
-  <View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <Text
-        selectable={true}
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 24,
-            "fontWeight": "500",
-            "lineHeight": 32,
-            "marginVertical": 4,
-          }
-        }
-      >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 24,
-              "fontWeight": "500",
-              "lineHeight": 32,
-              "marginVertical": 4,
-            }
-          }
-        >
-          Heading level 3
-        </Text>
-      </Text>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`Headings Heading level 4 1`] = `
-<RCTScrollView
-  data={
-    [
-      <Text
-        selectable={true}
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 22,
-            "fontWeight": "500",
-            "lineHeight": 28,
-            "marginVertical": 4,
-          }
-        }
-      >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 22,
-              "fontWeight": "500",
-              "lineHeight": 28,
-              "marginVertical": 4,
-            }
-          }
-        >
-          Heading level 4
-        </Text>
-      </Text>,
-    ]
-  }
-  getItem={[Function]}
-  getItemCount={[Function]}
-  initialNumToRender={8}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={8}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  removeClippedSubviews={false}
-  renderItem={[Function]}
-  scrollEventThrottle={50}
-  stickyHeaderIndices={[]}
-  style={
-    {
-      "backgroundColor": "#ffffff",
-    }
-  }
-  viewabilityConfigCallbackPairs={[]}
->
-  <View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <Text
-        selectable={true}
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 22,
-            "fontWeight": "500",
-            "lineHeight": 28,
-            "marginVertical": 4,
-          }
-        }
-      >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 22,
-              "fontWeight": "500",
-              "lineHeight": 28,
-              "marginVertical": 4,
-            }
-          }
-        >
-          Heading level 4
-        </Text>
-      </Text>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`Headings Heading level 5 1`] = `
-<RCTScrollView
-  data={
-    [
-      <Text
-        selectable={true}
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "fontWeight": "500",
-            "lineHeight": 24,
-            "marginVertical": 2,
-          }
-        }
-      >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "fontWeight": "500",
-              "lineHeight": 24,
-              "marginVertical": 2,
-            }
-          }
-        >
-          Heading level 5
-        </Text>
-      </Text>,
-    ]
-  }
-  getItem={[Function]}
-  getItemCount={[Function]}
-  initialNumToRender={8}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={8}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  removeClippedSubviews={false}
-  renderItem={[Function]}
-  scrollEventThrottle={50}
-  stickyHeaderIndices={[]}
-  style={
-    {
-      "backgroundColor": "#ffffff",
-    }
-  }
-  viewabilityConfigCallbackPairs={[]}
->
-  <View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <Text
-        selectable={true}
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 16,
-            "fontWeight": "500",
-            "lineHeight": 24,
-            "marginVertical": 2,
-          }
-        }
-      >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 16,
-              "fontWeight": "500",
-              "lineHeight": 24,
-              "marginVertical": 2,
-            }
-          }
-        >
-          Heading level 5
-        </Text>
-      </Text>
-    </View>
-  </View>
-</RCTScrollView>
-`;
-
-exports[`Headings Heading level 6 1`] = `
-<RCTScrollView
-  data={
-    [
-      <Text
-        selectable={true}
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "lineHeight": 20,
-            "marginVertical": 2,
-          }
-        }
-      >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 14,
-              "fontWeight": "500",
-              "lineHeight": 20,
-              "marginVertical": 2,
-            }
-          }
-        >
-          Heading level 6
-        </Text>
-      </Text>,
-    ]
-  }
-  getItem={[Function]}
-  getItemCount={[Function]}
-  initialNumToRender={8}
-  keyExtractor={[Function]}
-  maxToRenderPerBatch={8}
-  onContentSizeChange={[Function]}
-  onLayout={[Function]}
-  onMomentumScrollBegin={[Function]}
-  onMomentumScrollEnd={[Function]}
-  onScroll={[Function]}
-  onScrollBeginDrag={[Function]}
-  onScrollEndDrag={[Function]}
-  removeClippedSubviews={false}
-  renderItem={[Function]}
-  scrollEventThrottle={50}
-  stickyHeaderIndices={[]}
-  style={
-    {
-      "backgroundColor": "#ffffff",
-    }
-  }
-  viewabilityConfigCallbackPairs={[]}
->
-  <View>
-    <View
-      onFocusCapture={[Function]}
-      onLayout={[Function]}
-      style={null}
-    >
-      <Text
-        selectable={true}
-        style={
-          {
-            "color": "#333333",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "lineHeight": 20,
-            "marginVertical": 2,
-          }
-        }
-      >
-        <Text
-          selectable={true}
-          style={
-            {
-              "color": "#333333",
-              "fontSize": 14,
-              "fontWeight": "500",
-              "lineHeight": 20,
-              "marginVertical": 2,
-            }
-          }
-        >
-          Heading level 6
+          >
+            <Text
+              selectable={true}
+              style={
+                {
+                  "borderBottomColor": "#d0d7de",
+                  "borderBottomWidth": 1,
+                  "color": "#333333",
+                  "fontSize": 28,
+                  "fontStyle": "italic",
+                  "fontWeight": "500",
+                  "lineHeight": 36,
+                  "marginVertical": 8,
+                  "paddingBottom": 4,
+                  "textDecorationLine": "line-through",
+                  "textDecorationStyle": "solid",
+                }
+              }
+            >
+              Heading level 2
+            </Text>
+          </Text>
         </Text>
       </Text>
     </View>

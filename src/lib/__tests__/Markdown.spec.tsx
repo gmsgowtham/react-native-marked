@@ -72,6 +72,12 @@ describe("Headings", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
+	it("Heading with text emphasis", () => {
+		const r = render(<Markdown value={"## ~~_Heading level 2_~~"} />);
+		expect(screen.queryByText("Heading level 2")).toBeTruthy();
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
+	});
 });
 
 // https://www.markdownguide.org/basic-syntax/#paragraphs-1
