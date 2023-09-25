@@ -1,6 +1,7 @@
 const MD_STRING = `
 # h1 Heading
 ## h2 Heading
+## ~~_h2 Heading with Emphasis_~~
 ### h3 Heading
 #### h4 Heading
 ##### h5 Heading
