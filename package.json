@@ -24,8 +24,8 @@
   ],
   "scripts": {
     "typescript": "tsc --noEmit",
-    "lint": "rome check ./",
-    "format": "rome format ./ --write",
+    "lint": "biome check ./",
+    "format": "biome format ./ --write",
     "build": "bob build",
     "prepare": "yarn build",
     "release": "yarn build && release-it",
@@ -53,6 +53,7 @@
   "devDependencies": {
     "@babel/core": "7.23.0",
     "@babel/preset-env": "7.22.20",
+    "@biomejs/biome": "1.2.2",
     "@commitlint/config-conventional": "17.7.0",
     "@evilmartians/lefthook": "1.5.0",
     "@release-it/conventional-changelog": "7.0.2",
@@ -78,7 +79,6 @@
     "react-test-renderer": "18.2.0",
     "reassure": "0.9.1",
     "release-it": "16.2.0",
-    "rome": "12.1.3",
     "typescript": "5.2.2"
   },
   "peerDependencies": {
