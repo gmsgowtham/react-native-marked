@@ -1,8 +1,10 @@
 {
-	"$schema": "./node_modules/rome/configuration_schema.json",
+	"$schema": "https://biomejs.dev/schemas/1.2.2/schema.json",
+	"organizeImports": {
+		"enabled": false
+	},
 	"linter": {
 		"enabled": true,
-		"ignore": ["node_modules/", "coverage/", "dist/"],
 		"rules": {
 			"recommended": true,
 			"correctness": {
@@ -11,7 +13,9 @@
 		}
 	},
 	"formatter": {
-		"enabled": true,
+		"enabled": true
+	},
+	"files": {
 		"ignore": ["node_modules/", "coverage/", "dist/"]
 	}
 }
