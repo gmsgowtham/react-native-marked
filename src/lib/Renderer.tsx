@@ -123,11 +123,11 @@ class Renderer implements RendererInterface {
 		return <MDImage key={key} uri={uri} alt={alt} style={style} />;
 	}
 
-	strong(children: ReactNode[], styles?: TextStyle): ReactNode {
+	strong(children: string | ReactNode[], styles?: TextStyle): ReactNode {
 		return this.getTextNode(children, styles);
 	}
 
-	em(children: ReactNode[], styles?: TextStyle): ReactNode {
+	em(children: string | ReactNode[], styles?: TextStyle): ReactNode {
 		return this.getTextNode(children, styles);
 	}
 
@@ -139,7 +139,7 @@ class Renderer implements RendererInterface {
 		return this.getTextNode("\n", {});
 	}
 
-	del(children: ReactNode[], styles?: TextStyle): ReactNode {
+	del(children: string | ReactNode[], styles?: TextStyle): ReactNode {
 		return this.getTextNode(children, styles);
 	}
 

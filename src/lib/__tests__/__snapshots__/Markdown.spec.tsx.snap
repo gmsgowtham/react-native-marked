@@ -447,19 +447,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                Everything
-              </Text>
+              Everything
             </Text>
             <Text
               selectable={true}
@@ -484,19 +472,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontWeight": "bold",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                plan
-              </Text>
+              plan
             </Text>
             <Text
               selectable={true}
@@ -735,19 +711,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                Everything
-              </Text>
+              Everything
             </Text>
             <Text
               selectable={true}
@@ -772,19 +736,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontWeight": "bold",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                plan
-              </Text>
+              plan
             </Text>
             <Text
               selectable={true}
@@ -1517,19 +1469,7 @@ exports[`Emphasis Bold 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "fontWeight": "bold",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              is
-            </Text>
+            is
           </Text>
           <Text
             selectable={true}
@@ -1613,19 +1553,7 @@ exports[`Emphasis Bold 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "fontWeight": "bold",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              is
-            </Text>
+            is
           </Text>
           <Text
             selectable={true}
@@ -1699,20 +1627,7 @@ exports[`Emphasis Bold and Italic 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "fontWeight": "bold",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                very
-              </Text>
+              very
             </Text>
           </Text>
           <Text
@@ -1809,20 +1724,7 @@ exports[`Emphasis Bold and Italic 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "fontWeight": "bold",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                very
-              </Text>
+              very
             </Text>
           </Text>
           <Text
@@ -1885,19 +1787,7 @@ exports[`Emphasis Italic 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              cat
-            </Text>
+            cat
           </Text>
           <Text
             selectable={true}
@@ -1981,19 +1871,7 @@ exports[`Emphasis Italic 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              cat
-            </Text>
+            cat
           </Text>
           <Text
             selectable={true}
@@ -2056,20 +1934,7 @@ exports[`Emphasis Strikethrough 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                  "textDecorationLine": "line-through",
-                  "textDecorationStyle": "solid",
-                }
-              }
-            >
-              cat
-            </Text>
+            cat
           </Text>
           <Text
             selectable={true}
@@ -2154,20 +2019,7 @@ exports[`Emphasis Strikethrough 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                  "textDecorationLine": "line-through",
-                  "textDecorationStyle": "solid",
-                }
-              }
-            >
-              cat
-            </Text>
+            cat
           </Text>
           <Text
             selectable={true}
@@ -2349,19 +2201,7 @@ exports[`HTML Render 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "fontWeight": "bold",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              word
-            </Text>
+            word
           </Text>
           <Text
             selectable={true}
@@ -2493,19 +2333,7 @@ exports[`HTML Render 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "fontWeight": "bold",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              word
-            </Text>
+            word
           </Text>
           <Text
             selectable={true}
@@ -3394,26 +3222,7 @@ exports[`Headings Heading with text emphasis 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "borderBottomColor": "#d0d7de",
-                  "borderBottomWidth": 1,
-                  "color": "#333333",
-                  "fontSize": 28,
-                  "fontStyle": "italic",
-                  "fontWeight": "500",
-                  "lineHeight": 36,
-                  "marginVertical": 8,
-                  "paddingBottom": 4,
-                  "textDecorationLine": "line-through",
-                  "textDecorationStyle": "solid",
-                }
-              }
-            >
-              Heading level 2
-            </Text>
+            Heading level 2
           </Text>
         </Text>
       </Text>,
@@ -3498,26 +3307,7 @@ exports[`Headings Heading with text emphasis 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "borderBottomColor": "#d0d7de",
-                  "borderBottomWidth": 1,
-                  "color": "#333333",
-                  "fontSize": 28,
-                  "fontStyle": "italic",
-                  "fontWeight": "500",
-                  "lineHeight": 36,
-                  "marginVertical": 8,
-                  "paddingBottom": 4,
-                  "textDecorationLine": "line-through",
-                  "textDecorationStyle": "solid",
-                }
-              }
-            >
-              Heading level 2
-            </Text>
+            Heading level 2
           </Text>
         </Text>
       </Text>
@@ -4588,19 +4378,7 @@ exports[`Links Basic 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#58a6ff",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Duck Duck Go
-            </Text>
+            Duck Duck Go
           </Text>
           <Text
             selectable={true}
@@ -4687,19 +4465,7 @@ exports[`Links Basic 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#58a6ff",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Duck Duck Go
-            </Text>
+            Duck Duck Go
           </Text>
           <Text
             selectable={true}
@@ -4776,20 +4542,7 @@ exports[`Links Formatting Links 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#58a6ff",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "fontWeight": "bold",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                EFF
-              </Text>
+              EFF
             </Text>
           </Text>
           <Text
@@ -4830,19 +4583,7 @@ This is the
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#58a6ff",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                Markdown Guide
-              </Text>
+              Markdown Guide
             </Text>
           </Text>
           <Text
@@ -4985,20 +4726,7 @@ See the section on
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#58a6ff",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "fontWeight": "bold",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                EFF
-              </Text>
+              EFF
             </Text>
           </Text>
           <Text
@@ -5039,19 +4767,7 @@ This is the
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#58a6ff",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                Markdown Guide
-              </Text>
+              Markdown Guide
             </Text>
           </Text>
           <Text
@@ -5266,19 +4982,7 @@ exports[`Links Titles 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#58a6ff",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Duck Duck Go
-            </Text>
+            Duck Duck Go
           </Text>
           <Text
             selectable={true}
@@ -5365,19 +5069,7 @@ exports[`Links Titles 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#58a6ff",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Duck Duck Go
-            </Text>
+            Duck Duck Go
           </Text>
           <Text
             selectable={true}
@@ -5430,19 +5122,7 @@ exports[`Links URLs and Email Addresses 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#58a6ff",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              https://www.markdownguide.org
-            </Text>
+            https://www.markdownguide.org
           </Text>
         </Text>
       </View>,
@@ -5474,19 +5154,7 @@ exports[`Links URLs and Email Addresses 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#58a6ff",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              fake@example.com
-            </Text>
+            fake@example.com
           </Text>
         </Text>
       </View>,
@@ -5549,19 +5217,7 @@ exports[`Links URLs and Email Addresses 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#58a6ff",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              https://www.markdownguide.org
-            </Text>
+            https://www.markdownguide.org
           </Text>
         </Text>
       </View>
@@ -5599,19 +5255,7 @@ exports[`Links URLs and Email Addresses 1`] = `
               }
             }
           >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#58a6ff",
-                  "fontSize": 16,
-                  "fontStyle": "italic",
-                  "lineHeight": 24,
-                }
-              }
-            >
-              fake@example.com
-            </Text>
+            fake@example.com
           </Text>
         </Text>
       </View>
@@ -11942,20 +11586,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     }
                   >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontStyle": "italic",
-                          "lineHeight": 24,
-                          "textAlign": "left",
-                        }
-                      }
-                    >
-                      This will also be italic
-                    </Text>
+                    This will also be italic
                   </Text>
                 </View>
               }
@@ -12009,21 +11640,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                         }
                       }
                     >
-                      <Text
-                        selectable={true}
-                        style={
-                          {
-                            "color": "#333333",
-                            "fontSize": 16,
-                            "fontStyle": "italic",
-                            "fontWeight": "bold",
-                            "lineHeight": 24,
-                            "textAlign": "center",
-                          }
-                        }
-                      >
-                        can
-                      </Text>
+                      can
                     </Text>
                     <Text
                       selectable={true}
@@ -12073,20 +11690,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     }
                   >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "bold",
-                          "lineHeight": 24,
-                          "textAlign": "left",
-                        }
-                      }
-                    >
-                      left foo
-                    </Text>
+                    left foo
                   </Text>
                 </View>
               }
@@ -12113,20 +11717,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     }
                   >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontStyle": "italic",
-                          "lineHeight": 24,
-                          "textAlign": "center",
-                        }
-                      }
-                    >
-                      right foo
-                    </Text>
+                    right foo
                   </Text>
                 </View>
               }
@@ -12225,21 +11816,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     }
                   >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "lineHeight": 24,
-                          "textAlign": "left",
-                          "textDecorationLine": "line-through",
-                          "textDecorationStyle": "solid",
-                        }
-                      }
-                    >
-                      left baz
-                    </Text>
+                    left baz
                   </Text>
                 </View>
               }
@@ -12282,20 +11859,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     }
                   >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#58a6ff",
-                          "fontSize": 16,
-                          "fontStyle": "italic",
-                          "lineHeight": 24,
-                          "textAlign": "center",
-                        }
-                      }
-                    >
-                      link
-                    </Text>
+                    link
                   </Text>
                   <Text
                     selectable={true}
@@ -12411,20 +11975,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     }
                   >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontStyle": "italic",
-                          "lineHeight": 24,
-                          "textAlign": "left",
-                        }
-                      }
-                    >
-                      This will also be italic
-                    </Text>
+                    This will also be italic
                   </Text>
                 </View>
               </View>
@@ -12495,21 +12046,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                         }
                       }
                     >
-                      <Text
-                        selectable={true}
-                        style={
-                          {
-                            "color": "#333333",
-                            "fontSize": 16,
-                            "fontStyle": "italic",
-                            "fontWeight": "bold",
-                            "lineHeight": 24,
-                            "textAlign": "center",
-                          }
-                        }
-                      >
-                        can
-                      </Text>
+                      can
                     </Text>
                     <Text
                       selectable={true}
@@ -12576,20 +12113,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     }
                   >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontWeight": "bold",
-                          "lineHeight": 24,
-                          "textAlign": "left",
-                        }
-                      }
-                    >
-                      left foo
-                    </Text>
+                    left foo
                   </Text>
                 </View>
               </View>
@@ -12633,20 +12157,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     }
                   >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontStyle": "italic",
-                          "lineHeight": 24,
-                          "textAlign": "center",
-                        }
-                      }
-                    >
-                      right foo
-                    </Text>
+                    right foo
                   </Text>
                 </View>
               </View>
@@ -12796,21 +12307,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     }
                   >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "lineHeight": 24,
-                          "textAlign": "left",
-                          "textDecorationLine": "line-through",
-                          "textDecorationStyle": "solid",
-                        }
-                      }
-                    >
-                      left baz
-                    </Text>
+                    left baz
                   </Text>
                 </View>
               </View>
@@ -12870,20 +12367,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                       }
                     }
                   >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#58a6ff",
-                          "fontSize": 16,
-                          "fontStyle": "italic",
-                          "lineHeight": 24,
-                          "textAlign": "center",
-                        }
-                      }
-                    >
-                      link
-                    </Text>
+                    link
                   </Text>
                   <Text
                     selectable={true}

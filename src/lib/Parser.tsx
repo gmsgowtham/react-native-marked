@@ -57,9 +57,7 @@ class Parser {
 			case "heading": {
 				const styles = this.headingStylesMap[token.depth];
 
-				// To avoid duplicate text node nesting when there are no child tokens with text emphasis (i.e., italic)
-				// ref: https://github.com/gmsgowtham/react-native-marked/issues/522
-				if (token.tokens.length === 1 && token.tokens[0]?.type === "text") {
+				if (this.hasDuplicateTextChildToken(token)) {
 					return this.renderer.heading(token.text, styles, token.depth);
 				}
 
@@ -133,6 +131,11 @@ class Parser {
 					fontStyle: this.styles.link?.fontStyle,
 				};
 				const href = getValidURL(this.baseUrl, token.href);
+
+				if (this.hasDuplicateTextChildToken(token)) {
+					return this.renderer.link(token.text, href, linkStyle);
+				}
+
 				const children = this._parse(token.tokens, linkStyle);
 				return this.renderer.link(children, href, linkStyle);
 			}
@@ -148,6 +151,10 @@ class Parser {
 					...this.styles.strong,
 					...styles,
 				};
+				if (this.hasDuplicateTextChildToken(token)) {
+					return this.renderer.strong(token.text, boldStyle);
+				}
+
 				const children = this._parse(token.tokens, boldStyle);
 				return this.renderer.strong(children, boldStyle);
 			}
@@ -156,6 +163,10 @@ class Parser {
 					...this.styles.em,
 					...styles,
 				};
+				if (this.hasDuplicateTextChildToken(token)) {
+					return this.renderer.em(token.text, italicStyle);
+				}
+
 				const children = this._parse(token.tokens, italicStyle);
 				return this.renderer.em(children, italicStyle);
 			}
@@ -173,6 +184,10 @@ class Parser {
 					...this.styles.strikethrough,
 					...styles,
 				};
+				if (this.hasDuplicateTextChildToken(token)) {
+					return this.renderer.del(token.text, strikethroughStyle);
+				}
+
 				const children = this._parse(token.tokens, strikethroughStyle);
 				return this.renderer.del(children, strikethroughStyle);
 			}
@@ -281,6 +296,24 @@ class Parser {
 		}
 
 		return siblingNodes;
+	}
+
+	// To avoid duplicate text node nesting when there are no child tokens with text emphasis (i.e., italic)
+	// ref: https://github.com/gmsgowtham/react-native-marked/issues/522
+	private hasDuplicateTextChildToken(token: Token): boolean {
+		if (!("tokens" in token)) {
+			return false;
+		}
+
+		if (
+			token.tokens &&
+			token.tokens.length === 1 &&
+			token.tokens[0]?.type === "text"
+		) {
+			return true;
+		}
+
+		return false;
 	}
 }
 

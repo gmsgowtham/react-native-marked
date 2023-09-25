@@ -56,11 +56,11 @@ export interface RendererInterface {
 		styles?: TextStyle,
 	): ReactNode;
 	image(uri: string, alt?: string, style?: ImageStyle): ReactNode;
-	strong(children: ReactNode[], styles?: TextStyle): ReactNode;
-	em(children: ReactNode[], styles?: TextStyle): ReactNode;
+	strong(children: string | ReactNode[], styles?: TextStyle): ReactNode;
+	em(children: string | ReactNode[], styles?: TextStyle): ReactNode;
 	codespan(text: string, styles?: TextStyle): ReactNode;
 	br(): ReactNode;
-	del(children: ReactNode[], styles?: TextStyle): ReactNode;
+	del(children: string | ReactNode[], styles?: TextStyle): ReactNode;
 	text(text: string | ReactNode[], styles?: TextStyle): ReactNode;
 	html(text: string | ReactNode[], styles?: TextStyle): ReactNode;
 	linkImage(
