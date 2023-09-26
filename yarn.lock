@@ -3986,24 +3986,24 @@
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
 "@types/svg-parser@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@types/svg-parser/-/svg-parser-2.0.3.tgz#a840615540e96e3b5819a9ce31e077efadfdefe2"
-  integrity sha512-PKEmDmVWO8f4wwSZDHKHtdnYRM5NI4dCB0lawtUYpxfGhhuQ0qUky80qk6CR8SZhFrRcJmNnWOpN+8uh/X9qgg==
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@types/svg-parser/-/svg-parser-2.0.4.tgz#92e2479b68813261eea0799f1276d63a830731ad"
+  integrity sha512-X0Ji9m4wCrQCdvWSUUhsHqh5GnT1ffeqwCt69uEsdc4Nk/xiiZQMrZdxPdtEB8QTQFOY70m5LAEqaLt3N9alZA==
 
 "@types/tough-cookie@*":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.2.tgz#6286b4c7228d58ab7866d19716f3696e03a09397"
-  integrity sha512-Q5vtl1W5ue16D+nIaW8JWebSSraJVlK+EthKn7e7UcD4KWsaSJ8BqGPXNaPghgtcn/fhvrN17Tv8ksUsQpiplw==
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.3.tgz#3d06b6769518450871fbc40770b7586334bdfd90"
+  integrity sha512-THo502dA5PzG/sfQH+42Lw3fvmYkceefOspdCwpHRul8ik2Jv1K8I5OZz1AT3/rs46kwgMCe9bSBmDLYkkOMGg==
 
 "@types/yargs-parser@*":
-  version "21.0.0"
-  resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.0.tgz#0c60e537fa790f5f9472ed2776c2b71ec117351b"
-  integrity sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.1.tgz#07773d7160494d56aa882d7531aac7319ea67c3b"
+  integrity sha512-axdPBuLuEJt0c4yI5OZssC19K2Mq1uKdrfZBzuxLvaztgqUtFYZUNw7lETExPYJR9jdEoIg4mb7RQKRQzOkeGQ==
 
 "@types/yargs@^15.0.0":
-  version "15.0.14"
-  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-15.0.14.tgz#26d821ddb89e70492160b66d10a0eb6df8f6fb06"
-  integrity sha512-yEJzHoxf6SyQGhBhIYGXQDSCkJjB6HohDShto7m8vaKg9Yp0Yn8+71J9eakh2bnPg6BfsH9PRMhiRTZnd4eXGQ==
+  version "15.0.16"
+  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-15.0.16.tgz#258009dc52907e8f03041eb64ffdac297ba4b208"
+  integrity sha512-2FeD5qezW3FvLpZ0JpfuaEWepgNLl9b2gQYiz/ce0NhoB1W/D+VZu98phITXkADYerfr/jb7JcDcVhITsc9bwg==
   dependencies:
     "@types/yargs-parser" "*"
 
