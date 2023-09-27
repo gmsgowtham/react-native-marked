@@ -3942,10 +3942,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
 
-"@types/react-native-table-component@1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@types/react-native-table-component/-/react-native-table-component-1.2.4.tgz#0bc22c740de3b15a4c6833550cfcea8dc2190cba"
-  integrity sha512-JxTc3HXkBPxY/aFJpb4XFot+CM8ismemFCcPy7GlguX9C7Xc+kCmVOmFmA/o1jX2BNPuM45OS264QL6BMlPa6Q==
+"@types/react-native-table-component@1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@types/react-native-table-component/-/react-native-table-component-1.2.5.tgz#cf0a2bf8b6d82a38e3938afe957869f3c4f8d929"
+  integrity sha512-k/eEueXRCMF1C+NugH+IFEuQWdCa6y0tjmleG52ADWfhtvvAzWvDYVwAKkV8I6ODBFQ9F3CFZpl+sQFv+p+YxA==
   dependencies:
     "@types/react" "*"
     "@types/react-native" "*"
