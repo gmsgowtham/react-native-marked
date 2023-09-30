@@ -2412,6 +2412,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
           {
             "borderBottomColor": "#d0d7de",
             "borderBottomWidth": 1,
+            "color": "#333333",
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
@@ -2460,6 +2461,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
           {
             "borderBottomColor": "#d0d7de",
             "borderBottomWidth": 1,
+            "color": "#333333",
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
@@ -2588,6 +2590,7 @@ exports[`Headings Best Practice 1`] = `
           {
             "borderBottomColor": "#d0d7de",
             "borderBottomWidth": 1,
+            "color": "#333333",
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
@@ -2698,6 +2701,7 @@ exports[`Headings Best Practice 1`] = `
           {
             "borderBottomColor": "#d0d7de",
             "borderBottomWidth": 1,
+            "color": "#333333",
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
@@ -2758,6 +2762,7 @@ exports[`Headings Heading level 1 1`] = `
           {
             "borderBottomColor": "#d0d7de",
             "borderBottomWidth": 1,
+            "color": "#333333",
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,
@@ -2806,6 +2811,7 @@ exports[`Headings Heading level 1 1`] = `
           {
             "borderBottomColor": "#d0d7de",
             "borderBottomWidth": 1,
+            "color": "#333333",
             "fontSize": 32,
             "fontWeight": "bold",
             "letterSpacing": 0,

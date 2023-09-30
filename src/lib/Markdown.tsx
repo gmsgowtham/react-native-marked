@@ -7,7 +7,6 @@ import React, {
 import { FlatList, useColorScheme } from "react-native";
 import type { MarkdownProps } from "./types";
 import useMarkdown from "../hooks/useMarkdown";
-import colors from "../theme/colors";
 
 const Markdown = ({
 	value,
@@ -45,10 +44,7 @@ const Markdown = ({
 			maxToRenderPerBatch={8}
 			initialNumToRender={8}
 			style={{
-				backgroundColor:
-					colorScheme === "light"
-						? colors.light.background
-						: colors.dark.background,
+				backgroundColor: colorScheme === "light" ? "#ffffff" : "#000000",
 			}}
 			{...flatListProps}
 			data={rnElements}
