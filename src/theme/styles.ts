@@ -75,6 +75,7 @@ const getStyles = (
 			userStyles?.blockquote,
 		]),
 		h1: StyleSheet.flatten([
+			fontStyle.heading,
 			{
 				fontSize: 32,
 				lineHeight: 40,
