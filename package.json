@@ -62,7 +62,7 @@
     "@types/jest": "29.5.5",
     "@types/marked": "5.0.0",
     "@types/node": "18.18.3",
-    "@types/react": "18.2.24",
+    "@types/react": "18.2.25",
     "@types/react-native": "0.72.3",
     "@types/react-native-table-component": "1.2.5",
     "@types/svg-parser": "^2.0.3",
@@ -171,7 +171,7 @@
     "node": ">=18"
   },
   "resolutions": {
-    "@types/react": "18.2.24",
+    "@types/react": "18.2.25",
     "@types/react-native": "0.72.3"
   }
 }
