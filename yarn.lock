@@ -3964,14 +3964,14 @@
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
 "@types/svg-parser@^2.0.3":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@types/svg-parser/-/svg-parser-2.0.4.tgz#92e2479b68813261eea0799f1276d63a830731ad"
-  integrity sha512-X0Ji9m4wCrQCdvWSUUhsHqh5GnT1ffeqwCt69uEsdc4Nk/xiiZQMrZdxPdtEB8QTQFOY70m5LAEqaLt3N9alZA==
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@types/svg-parser/-/svg-parser-2.0.5.tgz#d40eb7124b59961fc223cbba5f53fdc629987394"
+  integrity sha512-TAMLKY/NBQxviEFdEiJrarnpPRmltbW6vFAZLzPvH25DamUy8H8EKceBEt86xMdRVDQY3V/8uaucslMbbgQfUg==
 
 "@types/tough-cookie@*":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.3.tgz#3d06b6769518450871fbc40770b7586334bdfd90"
-  integrity sha512-THo502dA5PzG/sfQH+42Lw3fvmYkceefOspdCwpHRul8ik2Jv1K8I5OZz1AT3/rs46kwgMCe9bSBmDLYkkOMGg==
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.4.tgz#cf2f0c7c51b985b6afecea73eb2cd65421ecb717"
+  integrity sha512-95Sfz4nvMAb0Nl9DTxN3j64adfwfbBPEYq14VN7zT5J5O2M9V6iZMIIQU1U+pJyl9agHYHNCqhCXgyEtIRRa5A==
 
 "@types/yargs-parser@*":
   version "21.0.1"
