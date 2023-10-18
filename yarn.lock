@@ -3929,10 +3929,10 @@
     "@types/react-native" "*"
     csstype "^3.0.3"
 
-"@types/react-native@*", "@types/react-native@0.72.3":
-  version "0.72.3"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.72.3.tgz#eb5726eb3ec6b79a10db7a295cc0346eb5e9331a"
-  integrity sha512-9+g+DBJIY3bG7+ZlYzKPr9kxTQxUuZQgLWZhYK4RlIcrsm3qaJhL2PU2e/K4CjnzznWCo2Islgec94x2z1pG4Q==
+"@types/react-native@*", "@types/react-native@0.72.4":
+  version "0.72.4"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.72.4.tgz#4e5bd9794e603ac395e7c6d692c348005f6ec3bf"
+  integrity sha512-tE4L5i8jW95uJGGhblQQrPSKJUnnUINBuyHKj15B1Fo6BenVbbqUPbcrPLgDKetR9/A2p35d0plkApJwWkXDmw==
   dependencies:
     "@react-native/virtualized-lists" "^0.72.4"
     "@types/react" "*"
