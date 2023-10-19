@@ -65,7 +65,7 @@ const MDSvg: FunctionComponent<MDSvgProps> = ({ uri, alt = "image" }) => {
 		};
 
 		fetchSvg();
-	}, []);
+	}, [uri]);
 
 	const onLayout = (event: LayoutChangeEvent) => {
 		if (!isFirstLoad.current) {

@@ -249,7 +249,7 @@ class Parser {
 	): ReactNode[] {
 		let tokenRenderQueue: Token[] = [];
 		const siblingNodes: ReactNode[] = [];
-		tokens.forEach((t) => {
+		for (const t of tokens) {
 			/**
 			 * To avoid inlining images
 			 * Currently supports images, link images
@@ -285,10 +285,10 @@ class Parser {
 				}
 
 				tokenRenderQueue = [];
-				return;
+				continue;
 			}
 			tokenRenderQueue = [...tokenRenderQueue, t];
-		});
+		}
 
 		/* Remaining temp tokens if any */
 		if (tokenRenderQueue.length > 0) {

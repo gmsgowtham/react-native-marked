@@ -41,7 +41,7 @@ const useMarkdown = (
 			tokenizer: options?.tokenizer as Tokenizer<never>,
 		});
 		return parser.parse(tokens);
-	}, [value, parser]);
+	}, [value, parser, options?.tokenizer]);
 
 	return elements;
 };

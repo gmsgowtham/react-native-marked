@@ -26,7 +26,7 @@ const userStyles: MarkedStyles = {
 
 describe("Renderer", () => {
 	const themes: ColorSchemeName[] = ["light", "dark"];
-	themes.forEach((theme) => {
+	for (const theme of themes) {
 		const styles = getStyles(userStyles, theme);
 		describe(`${theme} theme`, () => {
 			describe("Text Nodes", () => {
@@ -239,5 +239,5 @@ describe("Renderer", () => {
 				});
 			});
 		});
-	});
+	}
 });
