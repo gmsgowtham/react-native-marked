@@ -64,7 +64,7 @@
     "@types/node": "20.8.9",
     "@types/react": "18.2.33",
     "@types/react-native": "0.72.5",
-    "@types/react-native-table-component": "1.2.6",
+    "@types/react-native-table-component": "1.2.7",
     "@types/svg-parser": "^2.0.3",
     "commitlint": "18.2.0",
     "danger": "11.3.0",
