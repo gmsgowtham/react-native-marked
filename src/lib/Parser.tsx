@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { TextStyle, ViewStyle, ImageStyle } from "react-native";
 import type { marked } from "marked";
+import { decode } from "html-entities";
 import type { MarkedStyles } from "../theme/types";
 import type { RendererInterface, ParserOptions, Token } from "./types";
 import { getValidURL } from "./../utils/url";
@@ -171,7 +172,7 @@ class Parser {
 				return this.renderer.em(children, italicStyle);
 			}
 			case "codespan": {
-				return this.renderer.codespan(token.text, {
+				return this.renderer.codespan(decode(token.text), {
 					...this.styles.codespan,
 					...styles,
 				});

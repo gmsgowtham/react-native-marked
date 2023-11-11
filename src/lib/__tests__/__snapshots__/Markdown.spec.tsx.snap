@@ -1321,7 +1321,7 @@ exports[`Code Code Span 1`] = `
               }
             }
           >
-            nano
+            'nano'
           </Text>
           <Text
             selectable={true}
@@ -1407,7 +1407,7 @@ exports[`Code Code Span 1`] = `
               }
             }
           >
-            nano
+            'nano'
           </Text>
           <Text
             selectable={true}
