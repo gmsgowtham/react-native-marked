@@ -408,10 +408,10 @@ describe("Lists", () => {
 describe("Code", () => {
 	it("Code Span", () => {
 		const r = render(
-			<Markdown value={"At the command prompt, type `nano`."} />,
+			<Markdown value={"At the command prompt, type `'nano'`."} />,
 		);
 		expect(screen.queryByText("At the command prompt, type")).toBeTruthy();
-		expect(screen.queryByText("nano")).toBeTruthy();
+		expect(screen.queryByText("'nano'")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
