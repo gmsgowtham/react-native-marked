@@ -2368,7 +2368,7 @@
     "@callstack/reassure-logger" "0.3.1"
     mathjs "^11.5.0"
 
-"@commitlint/cli@^17.8.0":
+"@commitlint/cli@^17.8.1":
   version "17.8.1"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-17.8.1.tgz#10492114a022c91dcfb1d84dac773abb3db76d33"
   integrity sha512-ay+WbzQesE0Rv4EQKfNbSMiJJ12KdKTDzIt0tcK4k11FdsWmtwP0Kp1NWMOUswfIWo6Eb7p7Ln721Nx9FLNBjg==
@@ -2384,10 +2384,10 @@
     resolve-global "1.0.0"
     yargs "^17.0.0"
 
-"@commitlint/config-conventional@17.8.0":
-  version "17.8.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-17.8.0.tgz#3bb030ea4133d3ea57fe1042318e669b929205cb"
-  integrity sha512-MgiFXujmqAvi7M33C7OSMTznwrVkckrbXe/aZWQ/+KFGLLF6IE50XIcjGrW0/uiDGb/im5qbqF2dh1dCFNa+sQ==
+"@commitlint/config-conventional@17.8.1":
+  version "17.8.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-17.8.1.tgz#e5bcf0cfec8da7ac50bc04dc92e0a4ea74964ce0"
+  integrity sha512-NxCOHx1kgneig3VLauWJcDWS40DVjg7nKOpBEEK9E5fjJpQqLCilcnKkIIjdBH98kEO1q3NpE5NSrZ2kl/QGJg==
   dependencies:
     conventional-changelog-conventionalcommits "^6.1.0"
 
@@ -2522,7 +2522,7 @@
   dependencies:
     find-up "^5.0.0"
 
-"@commitlint/types@^17.4.4", "@commitlint/types@^17.8.1":
+"@commitlint/types@^17.8.1":
   version "17.8.1"
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-17.8.1.tgz#883a0ad35c5206d5fef7bc6ce1bbe648118af44e"
   integrity sha512-PXDQXkAmiMEG162Bqdh9ChML/GJZo6vU+7F03ALKDK8zYc6SuAr47LjG7hGYRqUOz+WK0dU7bQ0xzuqFMdxzeQ==
@@ -4797,13 +4797,13 @@ commander@~2.13.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
   integrity sha512-MVuS359B+YzaWqjCL/c+22gfryv+mCBPHAv3zyVI2GN8EY6IRP8VwtasXn8jyyhvvq84R4ImN1OKRtcbIasjYA==
 
-commitlint@17.8.0:
-  version "17.8.0"
-  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-17.8.0.tgz#510ec00d7ff35601885fda7fd5acdfe58e290755"
-  integrity sha512-xo0F0n4/W4Yq1BAmyICA+1ivPzILAPBQ/fx2PAn5uUQwzTXMdN8URE3P4YzMl6ey/1mRa6NsnW5yV9HJd5NMmA==
+commitlint@17.8.1:
+  version "17.8.1"
+  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-17.8.1.tgz#0a0b9b952f34d9718f06502ee8496785bf3dd8a3"
+  integrity sha512-X+VPJwZsQDeGj/DG1NsxhZEl+oMHKNC+1myZ/zauNDoo+7OuLHfTOUU1C1a4CjKW4b6T7NuoFcYfK0kRCjCtbA==
   dependencies:
-    "@commitlint/cli" "^17.8.0"
-    "@commitlint/types" "^17.4.4"
+    "@commitlint/cli" "^17.8.1"
+    "@commitlint/types" "^17.8.1"
 
 commondir@^1.0.1:
   version "1.0.1"
