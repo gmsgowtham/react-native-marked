@@ -59,7 +59,7 @@
     "@release-it/conventional-changelog": "8.0.1",
     "@testing-library/jest-native": "5.4.3",
     "@testing-library/react-native": "12.4.0",
-    "@types/jest": "29.5.8",
+    "@types/jest": "29.5.10",
     "@types/marked": "5.0.0",
     "@types/node": "20.10.3",
     "@types/react": "18.2.37",
