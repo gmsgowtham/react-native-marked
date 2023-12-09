@@ -2368,10 +2368,10 @@
   resolved "https://registry.yarnpkg.com/@biomejs/cli-win32-x64/-/cli-win32-x64-1.3.3.tgz#0186fba137dc4c4d12680d93ab7e3d6bd3e8f57c"
   integrity sha512-PMkMhS4smmmTMflxuZUx3REFSazEL9xsGscvZO1dKWI4ET23la+KxEM4TlSpjOyO66UerqSkuUlZecn0QhD63A==
 
-"@callstack/reassure-cli@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-0.10.0.tgz#35d80044fa3e439e173935eaac36d70662eeed8e"
-  integrity sha512-CYgOGOAWcFgA2GrJw6RJAvImCpHCpPbtPoYMDol7esjlRCX2QwIKG7/9byq47hML57w94fhFAa76KD84YlgMBg==
+"@callstack/reassure-cli@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-0.10.2.tgz#9af3422fd8976108209cb7c5dc97aca13271571c"
+  integrity sha512-tVkgCWG1SggQLigb99Gx9et4YGfni6ek0wF4ZN7UfC9rNS8KGGgMSGwr3TdvYRW1y5tFgBQHHx4wQVt6NmEQZQ==
   dependencies:
     "@callstack/reassure-compare" "0.6.0"
     "@callstack/reassure-logger" "0.3.1"
@@ -10078,12 +10078,12 @@ readline@^1.3.0:
   resolved "https://registry.yarnpkg.com/readline/-/readline-1.3.0.tgz#c580d77ef2cfc8752b132498060dc9793a7ac01c"
   integrity sha512-k2d6ACCkiNYz222Fs/iNze30rRJ1iIicW7JuX/7/cozvih6YCkFZH+J6mAFDVgv0dRBaAyr4jDqC95R2y4IADg==
 
-reassure@0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/reassure/-/reassure-0.10.1.tgz#0e9f0a8d2e4867fcd0835bd1ffb908d5fa8e2112"
-  integrity sha512-+GANr5ojh32NZu1YGfa6W8vIJm3iOIZJUvXT5Gc9fQyre7okYsCzyBq9WsHbnAQDjNq1g9SsM/4bwcVET9OIqA==
+reassure@0.10.2:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/reassure/-/reassure-0.10.2.tgz#b1e0e993175f75bc00269bb3ec3f7174e3573b87"
+  integrity sha512-r8sxn3C4p2Qi1Jo7yTAW/HeUoZ4j4vxYo/3LQ/edlIquLZ6vsvk/VRcSyjs3Pymx3ZLm3Iy4YOFxjB3oH1WC7A==
   dependencies:
-    "@callstack/reassure-cli" "0.10.0"
+    "@callstack/reassure-cli" "0.10.2"
     "@callstack/reassure-danger" "0.1.1"
     "@callstack/reassure-measure" "0.6.0"
 
