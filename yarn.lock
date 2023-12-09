@@ -5238,10 +5238,10 @@ csstype@^3.0.2, csstype@^3.0.3:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
-danger@11.3.0:
-  version "11.3.0"
-  resolved "https://registry.yarnpkg.com/danger/-/danger-11.3.0.tgz#5a2cbe3e45f367ed0899156c480c7d7e40d90b3d"
-  integrity sha512-h4zkvmEfRVZp2EIKlQSky0IotxrDbJZtXgMTvyN1nwPCfg0JgvQVmVbvOZXrOgNVlgL+42ZDjNL2qAwVmJypNw==
+danger@11.3.1:
+  version "11.3.1"
+  resolved "https://registry.yarnpkg.com/danger/-/danger-11.3.1.tgz#9df659fb58c15a82d9880231ba3f676c934e565d"
+  integrity sha512-+slkGnbf0czY7g4LSuYpYkKJgFrb9YIXFJvV5JAuLLF39CXLlUw0iebgeL3ASK1t6RDb8xe+Rk2F5ilh2Hdv2w==
   dependencies:
     "@gitbeaker/core" "^35.8.1"
     "@gitbeaker/node" "^35.8.1"
