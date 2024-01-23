@@ -2599,10 +2599,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@evilmartians/lefthook@1.5.5":
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.5.5.tgz#54d6de466d90c9486a97143ce0f3185f56a1cec6"
-  integrity sha512-vSJQ3rt52kHMqv4DpTf48jzZap5Q+X5C/qeYMBW58KkB+0a7jmMVy611CUfr/cUXeliZOqbSaOi2/kRYsLiSfQ==
+"@evilmartians/lefthook@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.6.0.tgz#ad0191223022d8ba8b00e6074cd618cda6d33431"
+  integrity sha512-vmpQuxYnimUkDEn4UzJsAJ32tNJ5OwQuWG9tX+/5F6OuBFDi62guqOLiflpLBiH7WFVBTOefCQ/DJgubjE8WrA==
 
 "@gitbeaker/core@^35.8.1":
   version "35.8.1"
