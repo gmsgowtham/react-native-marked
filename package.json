@@ -164,7 +164,7 @@
     "@jsamr/react-native-li": "2.3.1",
     "html-entities": "2.4.0",
     "marked": "5.0.5",
-    "react-native-svg": "13.14.0",
+    "react-native-svg": "14.1.0",
     "react-native-table-component": "1.2.2",
     "svg-parser": "2.0.4"
   },
