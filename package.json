@@ -62,7 +62,7 @@
     "@types/jest": "29.5.12",
     "@types/marked": "5.0.0",
     "@types/node": "20.12.7",
-    "@types/react": "18.2.62",
+    "@types/react": "18.3.1",
     "@types/react-native": "0.72.6",
     "@types/react-native-table-component": "1.2.8",
     "@types/svg-parser": "^2.0.3",
@@ -73,10 +73,10 @@
     "metro-react-native-babel-preset": "0.77.0",
     "pod-install": "0.2.0",
     "postinstall-postinstall": "2.1.0",
-    "react": "18.2.0",
+    "react": "18.3.1",
     "react-native": "0.72.6",
     "react-native-builder-bob": "0.23.2",
-    "react-test-renderer": "18.2.0",
+    "react-test-renderer": "18.3.1",
     "reassure": "0.11.0",
     "release-it": "17.1.1",
     "typescript": "5.4.5"
@@ -172,7 +172,7 @@
     "node": ">=18"
   },
   "resolutions": {
-    "@types/react": "18.2.62",
+    "@types/react": "18.3.1",
     "@types/react-native": "0.72.6"
   }
 }
