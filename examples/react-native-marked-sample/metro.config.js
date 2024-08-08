@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("node:path");
 const escapeString = require("escape-string-regexp");
 const { getDefaultConfig } = require("@expo/metro-config");
 const exclusionList = require("metro-config/src/defaults/exclusionList");

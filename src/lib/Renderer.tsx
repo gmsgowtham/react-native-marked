@@ -244,26 +244,22 @@ class Renderer implements RendererInterface {
 		children: ReactNode[] | null,
 		styles?: ViewStyle,
 	): ReactNode {
-		{
-			return (
-				<View key={this.getKey()} style={styles}>
-					{children}
-				</View>
-			);
-		}
+		return (
+			<View key={this.getKey()} style={styles}>
+				{children}
+			</View>
+		);
 	}
 
 	private getBlockquoteNode(
 		children: ReactNode[],
 		styles?: ViewStyle,
 	): ReactNode {
-		{
-			return (
-				<View key={this.getKey()} style={styles}>
-					{children}
-				</View>
-			);
-		}
+		return (
+			<View key={this.getKey()} style={styles}>
+				{children}
+			</View>
+		);
 	}
 }
 

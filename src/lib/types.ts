@@ -6,7 +6,7 @@ import type {
 	ImageStyle,
 } from "react-native";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
-import { Tokenizer as MarkedTokenizer, marked } from "marked";
+import type { Tokenizer as MarkedTokenizer, marked } from "marked";
 
 export interface ParserOptions {
 	styles?: MarkedStyles;
