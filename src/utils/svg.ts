@@ -7,8 +7,8 @@ export const getSvgDimensions = (svg: string) => {
 	const rootChild = parsed.children[0] as ElementNode;
 
 	return {
-		width: parseInt(String(rootChild.properties?.width ?? "0")),
-		height: parseInt(String(rootChild.properties?.height ?? "0")),
+		width: Number.parseInt(String(rootChild.properties?.width ?? "0")),
+		height: Number.parseInt(String(rootChild.properties?.height ?? "0")),
 		viewBox: String(rootChild.properties?.viewBox ?? ""),
 	};
 };
