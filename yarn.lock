@@ -2635,10 +2635,10 @@
     "@types/conventional-commits-parser" "^5.0.0"
     chalk "^5.3.0"
 
-"@evilmartians/lefthook@1.7.11":
-  version "1.7.11"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.7.11.tgz#42b260808d305fb28d5d60c0384d8178858e5e14"
-  integrity sha512-zlpiLMfO5CmCRgRPq7gJiQ0yr5gt/O0QVefj9o6pMZPc83jpeA2Cjt/z3MZpxkKqRObwBjeekLFi8SUonD6BdQ==
+"@evilmartians/lefthook@1.7.12":
+  version "1.7.12"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.7.12.tgz#211c8b4e6c0e8d03a4afe59ce9e1892a1ffda6e7"
+  integrity sha512-YW8tSpL3/KdQbNgXVNdm7DH8Sc8btp5NCX2J9MGIbJCGSEZENDI9mUC61jaClALNlx/dzEGGzdoM9WGSLa18Og==
 
 "@gitbeaker/core@^38.12.1":
   version "38.12.1"
