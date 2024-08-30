@@ -29,6 +29,6 @@
 		"babel-plugin-module-resolver": "^4.0.0",
 		"babel-preset-expo": "~9.2.0",
 		"expo-modules-autolinking": "^0.10.3",
-		"webpack": "^5.76.0"
+		"webpack": "^5.94.0"
 	}
 }
