@@ -57,7 +57,7 @@
 		"@testing-library/react-native": "12.6.1",
 		"@types/jest": "29.5.12",
 		"@types/marked": "5.0.0",
-		"@types/node": "20.16.3",
+		"@types/node": "20.16.4",
 		"@types/react": "18.3.5",
 		"@types/react-native": "0.72.6",
 		"@types/react-native-table-component": "1.2.8",
