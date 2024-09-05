@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
 import type { TextStyle, ViewStyle, ImageStyle } from "react-native";
-import type { marked } from "marked";
+import type { Token, Tokens } from "marked";
 import { decode } from "html-entities";
 import type { MarkedStyles } from "../theme/types";
-import type { RendererInterface, ParserOptions, Token } from "./types";
+import type { RendererInterface, ParserOptions } from "./types";
 import { getValidURL } from "./../utils/url";
 import { getTableColAlignmentStyle } from "./../utils/table";
 
@@ -27,11 +27,16 @@ class Parser {
 		};
 	}
 
-	parse(tokens: Token[]) {
+	parse(tokens?: Token[]) {
 		return this._parse(tokens);
 	}
 
-	private _parse(tokens: Token[], styles?: ViewStyle | TextStyle | ImageStyle) {
+	private _parse(
+		tokens?: Token[],
+		styles?: ViewStyle | TextStyle | ImageStyle,
+	): ReactNode[] {
+		if (!tokens) return [];
+
 		const elements: ReactNode[] = tokens.map((token) => {
 			return this._parseToken(token, styles);
 		});
@@ -45,7 +50,7 @@ class Parser {
 		switch (token.type) {
 			case "paragraph": {
 				const children = this.getNormalizedSiblingNodesForBlockAndInlineTokens(
-					token.tokens,
+					token.tokens ?? [],
 					this.styles.text,
 				);
 
@@ -81,11 +86,11 @@ class Parser {
 				if (Number.isNaN(startIndex)) {
 					startIndex = 1;
 				}
-				const li = token.items.map((item) => {
+				const li = (token as Tokens.List).items.map((item) => {
 					const children = item.tokens.flatMap((cItem) => {
 						if (cItem.type === "text") {
 							/* getViewNode since tokens could contain a block like elements (i.e. img) */
-							const childTokens = (cItem as marked.Tokens.Text).tokens || [];
+							const childTokens = (cItem as Tokens.Text).tokens || [];
 							const listChildren =
 								this.getNormalizedSiblingNodesForBlockAndInlineTokens(
 									childTokens,
@@ -118,7 +123,7 @@ class Parser {
 			}
 			case "link": {
 				// Don't render anchors without text and children
-				if (token.text.trim.length < 1 && token.tokens.length < 1) {
+				if (token.text.trim.length < 1 || !token.tokens) {
 					return null;
 				}
 
@@ -207,13 +212,13 @@ class Parser {
 				});
 			}
 			case "table": {
-				const header = token.header.map((row, i) =>
+				const header = (token as Tokens.Table).header.map((row, i) =>
 					this._parse(row.tokens, {
 						...getTableColAlignmentStyle(token.align[i]),
 					}),
 				);
 
-				const rows = token.rows.map((cols) =>
+				const rows = (token as Tokens.Table).rows.map((cols) =>
 					cols.map((col, i) =>
 						this._parse(col.tokens, {
 							...getTableColAlignmentStyle(token.align[i]),
@@ -272,14 +277,14 @@ class Parser {
 				// Render the current block token
 				if (t.type === "image") {
 					siblingNodes.push(this._parseToken(t));
-				} else if (t.type === "link") {
-					const imageToken = t.tokens[0] as marked.Tokens.Image;
+				} else if (t.type === "link" && t.tokens && t.tokens[0]) {
+					const imageToken = t.tokens[0] as Tokens.Image;
 					const href = getValidURL(this.baseUrl, t.href);
 					siblingNodes.push(
 						this.renderer.linkImage(
 							href,
 							imageToken.href,
-							imageToken.text || imageToken.title,
+							imageToken.text ?? imageToken.title ?? "",
 							this.styles.image,
 						),
 					);

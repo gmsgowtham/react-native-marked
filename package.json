@@ -35,7 +35,11 @@
 		"test:updateSnapshot": "jest --updateSnapshot",
 		"reassure": "reassure"
 	},
-	"keywords": ["react-native", "markdown", "react-native markdown"],
+	"keywords": [
+		"react-native",
+		"markdown",
+		"react-native markdown"
+	],
 	"repository": "https://github.com/gmsgowtham/react-native-marked",
 	"author": "Gowtham G <webappsbygowtham@gmail.com> (https://github.com/gmsgowtham)",
 	"license": "MIT",
@@ -57,7 +61,6 @@
 		"@testing-library/jest-native": "5.4.3",
 		"@testing-library/react-native": "12.6.1",
 		"@types/jest": "29.5.12",
-		"@types/marked": "5.0.0",
 		"@types/node": "20.16.5",
 		"@types/react": "18.3.5",
 		"@types/react-native": "0.72.6",
@@ -91,13 +94,17 @@
 			"<rootDir>/examples/*/node_modules",
 			"<rootDir>/dist/"
 		],
-		"setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"],
+		"setupFilesAfterEnv": [
+			"@testing-library/jest-native/extend-expect"
+		],
 		"transformIgnorePatterns": [
 			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|react-native-table-component)"
 		]
 	},
 	"commitlint": {
-		"extends": ["@commitlint/config-conventional"],
+		"extends": [
+			"@commitlint/config-conventional"
+		],
 		"rules": {
 			"type-enum": [
 				2,
@@ -156,8 +163,9 @@
 	"dependencies": {
 		"@jsamr/counter-style": "2.0.2",
 		"@jsamr/react-native-li": "2.3.1",
+		"github-slugger": "2.0.0",
 		"html-entities": "2.5.2",
-		"marked": "5.0.5",
+		"marked": "14.1.1",
 		"react-native-svg": "13.14.1",
 		"react-native-table-component": "1.2.2",
 		"svg-parser": "2.0.4"
