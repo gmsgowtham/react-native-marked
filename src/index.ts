@@ -6,7 +6,7 @@ import type {
 	MarkdownProps,
 	ParserOptions,
 	RendererInterface,
-	CustomToken,
+	// CustomToken,
 } from "./lib/types";
 
 const MarkedLexer = marked.lexer;
@@ -16,7 +16,7 @@ export type {
 	ParserOptions,
 	RendererInterface,
 	useMarkdownHookOptions,
-	CustomToken,
+	// CustomToken,
 };
 
 export { Renderer, useMarkdown, Tokenizer as MarkedTokenizer, MarkedLexer };
