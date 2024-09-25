@@ -204,7 +204,7 @@ Overriding default codespan tokenizer to include LaTeX.
 
 import React, { ReactNode } from "react";
 import Markdown, { Renderer, MarkedTokenizer, MarkedLexer } from "react-native-marked";
-import type { RendererInterface, type CustomToken, } from "react-native-marked";
+import type { RendererInterface, CustomToken } from "react-native-marked";
 
 class CustomTokenizer extends MarkedTokenizer<CustomToken> {
   // Override
@@ -231,6 +231,7 @@ class CustomTokenizer extends MarkedTokenizer<CustomToken> {
 class CustomRenderer extends Renderer implements RendererInterface {
   // Custom Token implementation
   custom(identifier: string, _raw: string, _children?: ReactNode[], args?: Record<string, unknown>): ReactNode {
+    const text = args?.text as string;
     if (identifier === "latex") {
       const styles = {
         padding: 16,
