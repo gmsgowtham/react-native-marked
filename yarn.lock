@@ -2509,10 +2509,10 @@
     "@types/semver" "^7.5.5"
     semver "^7.5.2"
 
-"@evilmartians/lefthook@1.7.15":
-  version "1.7.15"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.7.15.tgz#7f02e49df8315efec276f82b8d2cfa481a1c42e5"
-  integrity sha512-YgKTw9noH/SG0aOaPgrZNRgY7iJ0FuIVfvdB/aGsNulYLqiFnJyID2sfCaQ7PsGaFng2wdFBhmK/wbnb8+qPcA==
+"@evilmartians/lefthook@1.7.17":
+  version "1.7.17"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.7.17.tgz#000b560dcc21fb17a68ab913dba67512652f7e86"
+  integrity sha512-Al1Enc/AXzp66zzIQ9WonXAaWXutVPJCePqnTFBiaYMKErNAgYYvuFGyNh9zlmirD6TTp3gCdT21BBePLAHl9A==
 
 "@gitbeaker/core@^38.12.1":
   version "38.12.1"
