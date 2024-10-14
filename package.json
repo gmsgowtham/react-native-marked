@@ -76,7 +76,7 @@
 		"react-native-builder-bob": "0.30.2",
 		"react-test-renderer": "18.3.1",
 		"reassure": "1.2.1",
-		"release-it": "17.8.2",
+		"release-it": "17.9.0",
 		"typescript": "5.6.3"
 	},
 	"peerDependencies": {
