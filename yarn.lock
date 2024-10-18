@@ -3284,10 +3284,10 @@
     "@types/semver" "^7.5.5"
     semver "^7.5.2"
 
-"@evilmartians/lefthook@1.7.18":
-  version "1.7.18"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.7.18.tgz#f8712965f6d39e60332d191da832a2c5c8e3980d"
-  integrity sha512-BIJBQtC7xKOedxESlB0wVG6M32ftjK+5vnID9I5CjRDE/6KcCpcK366AyG0eHGdPK1TVty81QalxZqSTxWRXPw==
+"@evilmartians/lefthook@1.7.22":
+  version "1.7.22"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.7.22.tgz#26facae79370a6c20cc095fed3a003e667ad3f66"
+  integrity sha512-u9TGizr8jzrsO5YCQTx4GmM5bzqTckdR9DXp1Qzv5GJQTUU7T8Z83YU+28RKd7eRQvfVGWdyzoolZYb6eLNXdA==
 
 "@gitbeaker/core@^38.12.1":
   version "38.12.1"
