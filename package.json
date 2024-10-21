@@ -53,7 +53,7 @@
 		"@biomejs/biome": "1.9.4",
 		"@commitlint/config-conventional": "19.5.0",
 		"@evilmartians/lefthook": "1.7.22",
-		"@release-it/conventional-changelog": "9.0.0",
+		"@release-it/conventional-changelog": "9.0.1",
 		"@testing-library/jest-native": "5.4.3",
 		"@testing-library/react-native": "12.7.2",
 		"@types/jest": "29.5.13",
