@@ -4530,10 +4530,10 @@
     invariant "^2.2.4"
     nullthrows "^1.1.1"
 
-"@release-it/conventional-changelog@9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-9.0.0.tgz#5a2e5bbead22cb00e75a09477a38c75880b0a26d"
-  integrity sha512-jISIZ3kFR/xxBlDlbLBdQJsIDaml6NzTueAps3uZV2GDnQhe6FytCAmztiyEXRvCBXIvVV4X/O9S2l5zt2vmbA==
+"@release-it/conventional-changelog@9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-9.0.1.tgz#021986e90d9b570459e7f54a766abdc1a73bd1ed"
+  integrity sha512-7vGLMLcj/MaQjktNPR0rI6fdFVvVDXpOqk/fVTaFSeMVd9vjpVGrvRg5+Ko82Z/dOsiLGLEMFMQ9Xu31YjvJ5g==
   dependencies:
     concat-stream "^2.0.0"
     conventional-changelog "^6.0.0"
