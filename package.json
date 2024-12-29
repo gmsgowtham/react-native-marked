@@ -55,7 +55,7 @@
 		"@evilmartians/lefthook": "1.8.2",
 		"@release-it/conventional-changelog": "9.0.3",
 		"@testing-library/jest-native": "5.4.3",
-		"@testing-library/react-native": "12.8.1",
+		"@testing-library/react-native": "12.9.0",
 		"@types/jest": "29.5.14",
 		"@types/marked": "5.0.0",
 		"@types/node": "22.9.0",
