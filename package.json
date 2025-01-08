@@ -1,6 +1,6 @@
 {
 	"name": "react-native-marked",
-	"version": "6.0.5",
+	"version": "6.0.6",
 	"description": "Markdown renderer for React Native powered by marked.js",
 	"main": "dist/commonjs/index",
 	"module": "dist/module/index",
@@ -158,7 +158,7 @@
 		"@jsamr/react-native-li": "2.3.1",
 		"html-entities": "2.5.2",
 		"marked": "5.0.5",
-		"react-native-svg": "13.14.1",
+		"react-native-svg": "15.10.1",
 		"react-native-table-component": "1.2.2",
 		"svg-parser": "2.0.4"
 	},
