@@ -1,41 +1,49 @@
 const path = require("node:path");
-const fs = require("node:fs");
-const blacklist = require("metro-config/src/defaults/exclusionList");
 const escapeString = require("escape-string-regexp");
+const { getDefaultConfig } = require("@expo/metro-config");
+const exclusionList = require("metro-config/src/defaults/exclusionList");
+const pak = require("../../package.json");
 
 const root = path.resolve(__dirname, "../..");
-const pak = JSON.parse(
-	fs.readFileSync(path.join(root, "package.json"), "utf8"),
-);
 
-const modules = [
-	"@babel/runtime",
-	"react-native-web",
-	...Object.keys(pak.dependencies),
-	...Object.keys(pak.peerDependencies),
-];
+const modules = Object.keys({
+	...pak.peerDependencies,
+});
+
+const defaultConfig = getDefaultConfig(__dirname);
 
 module.exports = {
+	...defaultConfig,
+
 	projectRoot: __dirname,
 	watchFolders: [root],
 
+	// We need to make sure that only one version is loaded for peerDependencies
+	// So we block them at the root, and alias them to the versions in example's node_modules
 	resolver: {
-		blacklistRE: blacklist([
-			new RegExp(`^${escapeString(path.join(root, "node_modules"))}\\/.*$`),
-		]),
+		...defaultConfig.resolver,
 
-		extraNodeModules: modules.reduce((acc, name) => {
-			acc[name] = path.join(__dirname, "node_modules", name);
-			return acc;
-		}, {}),
-	},
+		blacklistRE: exclusionList(
+			modules.map(
+				(m) =>
+					new RegExp(
+						`^${escapeString(path.join(root, "node_modules", m))}\\/.*$`,
+					),
+			),
+		),
 
-	transformer: {
-		getTransformOptions: async () => ({
-			transform: {
-				experimentalImportSupport: false,
-				inlineRequires: true,
+		extraNodeModules: modules.reduce(
+			(acc, name) => {
+				acc[name] = path.join(__dirname, "node_modules", name);
+				return acc;
 			},
-		}),
+			{
+				"react-native-web": path.join(
+					__dirname,
+					"node_modules",
+					"react-native-web",
+				),
+			},
+		),
 	},
 };
