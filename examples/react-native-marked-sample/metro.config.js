@@ -6,9 +6,12 @@ const pak = require("../../package.json");
 
 const root = path.resolve(__dirname, "../..");
 
-const modules = Object.keys({
-	...pak.peerDependencies,
-});
+const modules = [
+	"react-native-web",
+	...Object.keys({
+		...pak.peerDependencies,
+	}),
+];
 
 const defaultConfig = getDefaultConfig(__dirname);
 
