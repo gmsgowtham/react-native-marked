@@ -7,7 +7,7 @@ const pak = require("../../package.json");
 const root = path.resolve(__dirname, "../..");
 
 const modules = Object.keys({
-	...["react-native-web", ...pak.peerDependencies],
+	...pak.peerDependencies,
 });
 
 const defaultConfig = getDefaultConfig(__dirname);
@@ -32,9 +32,18 @@ module.exports = {
 			),
 		),
 
-		extraNodeModules: modules.reduce((acc, name) => {
-			acc[name] = path.join(__dirname, "node_modules", name);
-			return acc;
-		}, {}),
+		extraNodeModules: modules.reduce(
+			(acc, name) => {
+				acc[name] = path.join(__dirname, "node_modules", name);
+				return acc;
+			},
+			{
+				"react-native-web": path.join(
+					__dirname,
+					"node_modules",
+					"react-native-web",
+				),
+			},
+		),
 	},
 };
