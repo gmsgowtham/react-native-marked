@@ -24,13 +24,19 @@ yarn install
 To run the example app on Android:
 
 ```sh
-yarn example android
+yarn android
 ```
 
 To run the example app on iOS:
 
 ```sh
-yarn example ios
+yarn ios
+```
+
+To run the example app on web:
+
+```sh
+yarn web
 ```
 
 Make sure your code passes TypeScript and Lint. Run the following to verify:
@@ -109,6 +115,7 @@ When you're sending a pull request:
 - For pull requests that change the API or implementation, discuss with maintainers first by opening an issue.
 
 ### Repo visualization
+
 ![Visualization of this repo](./diagram.svg)
 
 ## Code of Conduct
