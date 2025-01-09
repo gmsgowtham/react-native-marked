@@ -13,11 +13,11 @@
   "dependencies": {
     "@expo/metro-runtime": "~4.0.0",
     "babel-plugin-module-resolver": "^5.0.2",
-    "expo": "~52.0.17",
+    "expo": "~52.0.24",
     "expo-status-bar": "~2.0.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-native": "0.76.3",
+    "react-native": "0.76.5",
     "react-native-svg": "15.8.0",
     "react-native-web": "~0.19.13"
   },
