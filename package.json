@@ -1,6 +1,6 @@
 {
 	"name": "react-native-marked",
-	"version": "6.0.6",
+	"version": "6.0.7",
 	"description": "Markdown renderer for React Native powered by marked.js",
 	"main": "dist/commonjs/index",
 	"module": "dist/module/index",
@@ -35,7 +35,11 @@
 		"test:updateSnapshot": "jest --updateSnapshot",
 		"reassure": "reassure"
 	},
-	"keywords": ["react-native", "markdown", "react-native markdown"],
+	"keywords": [
+		"react-native",
+		"markdown",
+		"react-native markdown"
+	],
 	"repository": "https://github.com/gmsgowtham/react-native-marked",
 	"author": "Gowtham G <webappsbygowtham@gmail.com> (https://github.com/gmsgowtham)",
 	"license": "MIT",
@@ -92,13 +96,17 @@
 			"<rootDir>/examples/*/node_modules",
 			"<rootDir>/dist/"
 		],
-		"setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"],
+		"setupFilesAfterEnv": [
+			"@testing-library/jest-native/extend-expect"
+		],
 		"transformIgnorePatterns": [
 			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|react-native-table-component)"
 		]
 	},
 	"commitlint": {
-		"extends": ["@commitlint/config-conventional"],
+		"extends": [
+			"@commitlint/config-conventional"
+		],
 		"rules": {
 			"type-enum": [
 				2,
