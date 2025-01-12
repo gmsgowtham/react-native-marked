@@ -1,7 +1,7 @@
 {
-	"extends": "../../tsconfig",
-	"compilerOptions": {
-		// Avoid expo-cli auto-generating a tsconfig
-	},
-	"exclude": []
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    // Avoid expo-cli auto-generating a tsconfig
+  },
+  "exclude": []
 }
