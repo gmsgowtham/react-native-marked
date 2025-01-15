@@ -6,6 +6,7 @@ import type { MarkedStyles } from "../theme/types";
 import type { RendererInterface, ParserOptions, Token } from "./types";
 import { getValidURL } from "./../utils/url";
 import { getTableColAlignmentStyle } from "./../utils/table";
+import React from "react";
 
 class Parser {
 	private renderer: RendererInterface;
@@ -32,9 +33,14 @@ class Parser {
 	}
 
 	private _parse(tokens: Token[], styles?: ViewStyle | TextStyle | ImageStyle) {
-		const elements: ReactNode[] = tokens.map((token) => {
-			return this._parseToken(token, styles);
+		const elements: ReactNode[] = tokens.map((token, index) => {
+			const element = this._parseToken(token, styles);
+			if (React.isValidElement(element)) {
+				return React.cloneElement(element, { key: `token-${index}` });
+			}
+			return element;
 		});
+
 		return elements.filter((element) => element !== null);
 	}
 
