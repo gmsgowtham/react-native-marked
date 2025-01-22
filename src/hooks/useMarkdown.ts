@@ -5,7 +5,7 @@ import Parser from "../lib/Parser";
 import Renderer from "../lib/Renderer";
 import getStyles from "./../theme/styles";
 import type { ColorSchemeName } from "react-native";
-import type { CustomToken, RendererInterface } from "../lib/types";
+import type { RendererInterface } from "../lib/types";
 
 export interface useMarkdownHookOptions {
 	colorScheme?: ColorSchemeName;
@@ -13,7 +13,11 @@ export interface useMarkdownHookOptions {
 	theme?: UserTheme;
 	styles?: MarkedStyles;
 	baseUrl?: string;
-	tokenizer?: Tokenizer<CustomToken>;
+	tokenizer?: Tokenizer;
+	extensions?: {
+		inline?: Tokenizer[];
+		block?: Tokenizer[];
+	};
 }
 
 const useMarkdown = (
@@ -38,7 +42,8 @@ const useMarkdown = (
 	const elements = useMemo(() => {
 		const tokens = marked.lexer(value, {
 			gfm: true,
-			tokenizer: options?.tokenizer as Tokenizer<never>,
+			tokenizer: options?.tokenizer as Tokenizer,
+			extensions: options?.extensions,
 		});
 		return parser.parse(tokens);
 	}, [value, parser, options?.tokenizer]);

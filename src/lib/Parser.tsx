@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { TextStyle, ViewStyle, ImageStyle } from "react-native";
-import type { marked } from "marked";
+import type { marked, Tokens } from "marked";
 import { decode } from "html-entities";
 import type { MarkedStyles } from "../theme/types";
 import type { RendererInterface, ParserOptions, Token } from "./types";
@@ -85,7 +85,7 @@ class Parser {
 					const children = item.tokens.flatMap((cItem) => {
 						if (cItem.type === "text") {
 							/* getViewNode since tokens could contain a block like elements (i.e. img) */
-							const childTokens = (cItem as marked.Tokens.Text).tokens || [];
+							const childTokens = (cItem as Tokens.Text).tokens || [];
 							const listChildren =
 								this.getNormalizedSiblingNodesForBlockAndInlineTokens(
 									childTokens,
@@ -273,7 +273,7 @@ class Parser {
 				if (t.type === "image") {
 					siblingNodes.push(this._parseToken(t));
 				} else if (t.type === "link") {
-					const imageToken = t.tokens[0] as marked.Tokens.Image;
+					const imageToken = t.tokens[0] as Tokens.Image;
 					const href = getValidURL(this.baseUrl, t.href);
 					siblingNodes.push(
 						this.renderer.linkImage(
