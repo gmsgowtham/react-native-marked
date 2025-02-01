@@ -160,6 +160,7 @@ const getStyles = (
 			},
 			userStyles?.hr,
 		]),
+		list: StyleSheet.flatten([userStyles?.list]),
 		li: StyleSheet.flatten([
 			fontStyle.regular,
 			{

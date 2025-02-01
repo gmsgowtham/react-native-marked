@@ -732,7 +732,13 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -782,7 +788,13 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -832,7 +844,13 @@ exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -887,7 +905,13 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -937,7 +961,13 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -987,7 +1017,13 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -1759,7 +1795,13 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -1809,7 +1851,13 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -1859,7 +1907,13 @@ exports[`Renderer light theme getListNode returns Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -1914,7 +1968,13 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -1964,7 +2024,13 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
@@ -2014,7 +2080,13 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
     }
     testID="marked-list-item"
   >
-    <View>
+    <View
+      style={
+        {
+          "padding": 24,
+        }
+      }
+    >
       <Text
         style={
           [
