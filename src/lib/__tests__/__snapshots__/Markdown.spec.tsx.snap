@@ -343,6 +343,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               },
             }
           }
+          markerBoxStyle={{}}
           markerTextStyle={
             {
               "color": "#333333",
@@ -557,7 +558,9 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
           }
           testID="marked-list-item"
         >
-          <View>
+          <View
+            style={{}}
+          >
             <Text
               style={
                 [
@@ -622,7 +625,9 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
           }
           testID="marked-list-item"
         >
-          <View>
+          <View
+            style={{}}
+          >
             <Text
               style={
                 [
@@ -5297,6 +5302,7 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             },
           }
         }
+        markerBoxStyle={{}}
         markerTextStyle={
           {
             "color": "#333333",
@@ -5475,7 +5481,9 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -5540,7 +5548,9 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -5644,7 +5654,9 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -5728,6 +5740,7 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             },
           }
         }
+        markerBoxStyle={{}}
         markerTextStyle={
           {
             "color": "#333333",
@@ -5896,7 +5909,9 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -5961,7 +5976,9 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -6057,7 +6074,9 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -6144,6 +6163,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
             },
           }
         }
+        markerBoxStyle={{}}
         markerTextStyle={
           {
             "color": "#333333",
@@ -6316,7 +6336,9 @@ exports[`Lists Elements in Lists: Images 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -6381,7 +6403,9 @@ exports[`Lists Elements in Lists: Images 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -6512,7 +6536,9 @@ exports[`Lists Elements in Lists: Images 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -6599,6 +6625,7 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             },
           }
         }
+        markerBoxStyle={{}}
         markerTextStyle={
           {
             "color": "#333333",
@@ -6715,6 +6742,7 @@ exports[`Lists Elements in Lists: Lists 1`] = `
                 },
               }
             }
+            markerBoxStyle={{}}
             markerTextStyle={
               {
                 "color": "#333333",
@@ -6856,7 +6884,9 @@ exports[`Lists Elements in Lists: Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -6921,7 +6951,9 @@ exports[`Lists Elements in Lists: Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -6986,7 +7018,9 @@ exports[`Lists Elements in Lists: Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -7049,7 +7083,9 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             }
             testID="marked-list-item"
           >
-            <View>
+            <View
+              style={{}}
+            >
               <Text
                 style={
                   [
@@ -7114,7 +7150,9 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             }
             testID="marked-list-item"
           >
-            <View>
+            <View
+              style={{}}
+            >
               <Text
                 style={
                   [
@@ -7181,7 +7219,9 @@ exports[`Lists Elements in Lists: Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -7265,6 +7305,7 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             },
           }
         }
+        markerBoxStyle={{}}
         markerTextStyle={
           {
             "color": "#333333",
@@ -7421,7 +7462,9 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -7486,7 +7529,9 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -7568,7 +7613,9 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -7655,6 +7702,7 @@ exports[`Lists Ordered Lists 1`] = `
             },
           }
         }
+        markerBoxStyle={{}}
         markerTextStyle={
           {
             "color": "#333333",
@@ -7774,6 +7822,7 @@ exports[`Lists Ordered Lists 1`] = `
                 },
               }
             }
+            markerBoxStyle={{}}
             markerTextStyle={
               {
                 "color": "#333333",
@@ -7915,7 +7964,9 @@ exports[`Lists Ordered Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -7980,7 +8031,9 @@ exports[`Lists Ordered Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -8045,7 +8098,9 @@ exports[`Lists Ordered Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -8108,7 +8163,9 @@ exports[`Lists Ordered Lists 1`] = `
             }
             testID="marked-list-item"
           >
-            <View>
+            <View
+              style={{}}
+            >
               <Text
                 style={
                   [
@@ -8173,7 +8230,9 @@ exports[`Lists Ordered Lists 1`] = `
             }
             testID="marked-list-item"
           >
-            <View>
+            <View
+              style={{}}
+            >
               <Text
                 style={
                   [
@@ -8240,7 +8299,9 @@ exports[`Lists Ordered Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -8327,6 +8388,7 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
             },
           }
         }
+        markerBoxStyle={{}}
         markerTextStyle={
           {
             "color": "#333333",
@@ -8466,7 +8528,9 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -8531,7 +8595,9 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -8596,7 +8662,9 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -8680,6 +8748,7 @@ exports[`Lists Unordered Lists 1`] = `
             },
           }
         }
+        markerBoxStyle={{}}
         markerTextStyle={
           {
             "color": "#333333",
@@ -8796,6 +8865,7 @@ exports[`Lists Unordered Lists 1`] = `
                 },
               }
             }
+            markerBoxStyle={{}}
             markerTextStyle={
               {
                 "color": "#333333",
@@ -8937,7 +9007,9 @@ exports[`Lists Unordered Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -9002,7 +9074,9 @@ exports[`Lists Unordered Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -9067,7 +9141,9 @@ exports[`Lists Unordered Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
@@ -9130,7 +9206,9 @@ exports[`Lists Unordered Lists 1`] = `
             }
             testID="marked-list-item"
           >
-            <View>
+            <View
+              style={{}}
+            >
               <Text
                 style={
                   [
@@ -9195,7 +9273,9 @@ exports[`Lists Unordered Lists 1`] = `
             }
             testID="marked-list-item"
           >
-            <View>
+            <View
+              style={{}}
+            >
               <Text
                 style={
                   [
@@ -9262,7 +9342,9 @@ exports[`Lists Unordered Lists 1`] = `
         }
         testID="marked-list-item"
       >
-        <View>
+        <View
+          style={{}}
+        >
           <Text
             style={
               [
