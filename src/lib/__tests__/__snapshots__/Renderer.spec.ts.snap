@@ -418,9 +418,6 @@ exports[`Renderer dark theme View Nodes returns a paragraph View node 1`] = `
 <View
   style={
     {
-      "color": "#ffffff",
-      "fontSize": 16,
-      "lineHeight": 24,
       "paddingVertical": 8,
     }
   }
@@ -1401,9 +1398,6 @@ exports[`Renderer light theme View Nodes returns a paragraph View node 1`] = `
 <View
   style={
     {
-      "color": "#333333",
-      "fontSize": 16,
-      "lineHeight": 24,
       "paddingVertical": 8,
     }
   }
