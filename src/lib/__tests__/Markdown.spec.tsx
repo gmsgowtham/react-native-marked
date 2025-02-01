@@ -4,7 +4,7 @@ import { Text, type TextStyle } from "react-native";
 import Markdown from "../Markdown";
 import Renderer from "../Renderer";
 import type { RendererInterface } from "../types";
-import { Tokenizer, type Token, type Tokens } from "marked";
+import { Tokenizer, type Tokens } from "marked";
 
 // https://www.markdownguide.org/basic-syntax/#headings
 describe("Headings", () => {
