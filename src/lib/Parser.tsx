@@ -123,7 +123,7 @@ class Parser {
 			}
 			case "link": {
 				// Don't render anchors without text and children
-				if (token.text.trim.length < 1 || !token.tokens) {
+				if (token.text.trim().length < 1 || !token.tokens) {
 					return null;
 				}
 
@@ -198,7 +198,6 @@ class Parser {
 				return this.renderer.del(children, strikethroughStyle);
 			}
 			case "text":
-			case "space":
 				return this.renderer.text(token.raw, {
 					...this.styles.text,
 					...styles,
@@ -236,7 +235,7 @@ class Parser {
 				);
 			}
 			default: {
-				return this.renderer.custom(token);
+				return null;
 			}
 		}
 	}

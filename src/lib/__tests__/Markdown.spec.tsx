@@ -4,7 +4,7 @@ import { Text, type TextStyle } from "react-native";
 import Markdown from "../Markdown";
 import Renderer from "../Renderer";
 import type { RendererInterface } from "../types";
-import { Tokenizer, type Tokens } from "marked";
+import { Tokenizer, type Token, type Tokens } from "marked";
 
 // https://www.markdownguide.org/basic-syntax/#headings
 describe("Headings", () => {
@@ -817,16 +817,11 @@ describe("Tokenizer", () => {
 				</Text>
 			),
 		);
-		const customFn = jest.fn((token: Tokens.Generic): ReactNode => {
-			const text = (token.raw as string) ?? "";
-			return <Text key={"custom-token"}>{text}</Text>;
-		});
 		const style: TextStyle = {
 			color: "#ff0000",
 		};
 		class CustomRenderer extends Renderer implements RendererInterface {
 			codespan = codespanFn;
-			custom = customFn;
 		}
 
 		class CustomTokenizer extends Tokenizer {
@@ -854,9 +849,6 @@ describe("Tokenizer", () => {
 		);
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
-		expect(customFn).toHaveBeenCalledWith("latex", "$ latex code $", [], {
-			text: "latex code",
-		});
 		expect(screen.queryByText("hello")).toBeTruthy();
 		expect(screen.queryByText("latex code")).toBeTruthy();
 	});

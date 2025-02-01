@@ -76,5 +76,4 @@ export interface RendererInterface {
 		rowStyle?: ViewStyle,
 		cellStyle?: ViewStyle,
 	): ReactNode;
-	custom: (token: Tokens.Generic) => ReactNode;
 }

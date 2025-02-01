@@ -217,10 +217,6 @@ class Renderer implements RendererInterface {
 		);
 	}
 
-	custom(_token: Tokens.Generic): ReactNode {
-		return null;
-	}
-
 	getKey(): string {
 		return this.slugger.slug(this.slugPrefix);
 	}

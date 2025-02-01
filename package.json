@@ -93,7 +93,7 @@
 		],
 		"setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"],
 		"transformIgnorePatterns": [
-			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|react-native-table-component)"
+			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|react-native-table-component|github-slugger)"
 		]
 	},
 	"commitlint": {
