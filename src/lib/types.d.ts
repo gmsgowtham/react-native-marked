@@ -7,13 +7,11 @@ import type {
 } from "react-native";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
 import type { Tokenizer } from "marked";
-
 export interface ParserOptions {
 	styles?: MarkedStyles;
 	baseUrl?: string;
 	renderer: RendererInterface;
 }
-
 export interface MarkdownProps extends Partial<ParserOptions> {
 	value: string;
 	flatListProps?: Omit<
@@ -23,9 +21,7 @@ export interface MarkdownProps extends Partial<ParserOptions> {
 	theme?: UserTheme;
 	tokenizer?: Tokenizer;
 }
-
 export type TableColAlignment = "center" | "left" | "right" | null;
-
 export interface RendererInterface {
 	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode;
 	blockquote(children: ReactNode[], styles?: ViewStyle): ReactNode;

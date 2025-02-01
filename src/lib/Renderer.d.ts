@@ -1,42 +1,17 @@
-import type { ReactNode } from "react";
-import type {
-	FlatListProps,
-	ViewStyle,
-	TextStyle,
-	ImageStyle,
-} from "react-native";
-import type { MarkedStyles, UserTheme } from "./../theme/types";
-import type { Tokenizer } from "marked";
-
-export interface ParserOptions {
-	styles?: MarkedStyles;
-	baseUrl?: string;
-	renderer: RendererInterface;
-}
-
-export interface MarkdownProps extends Partial<ParserOptions> {
-	value: string;
-	flatListProps?: Omit<
-		FlatListProps<ReactNode>,
-		"data" | "renderItem" | "horizontal"
-	>;
-	theme?: UserTheme;
-	tokenizer?: Tokenizer;
-}
-
-export type TableColAlignment = "center" | "left" | "right" | null;
-
-export interface RendererInterface {
+import React, { type ReactNode } from "react";
+import type { TextStyle, ViewStyle, ImageStyle } from "react-native";
+import type { RendererInterface } from "./types";
+declare class Renderer implements RendererInterface {
+	private slugPrefix;
+	private slugger;
+	private windowWidth;
+	constructor();
 	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode;
 	blockquote(children: ReactNode[], styles?: ViewStyle): ReactNode;
-	heading(
-		text: string | ReactNode[],
-		styles?: TextStyle,
-		depth?: number,
-	): ReactNode;
+	heading(text: string | ReactNode[], styles?: TextStyle): ReactNode;
 	code(
 		text: string,
-		language?: string,
+		_language?: string,
 		containerStyle?: ViewStyle,
 		textStyle?: TextStyle,
 	): ReactNode;
@@ -75,11 +50,16 @@ export interface RendererInterface {
 		tableStyle?: ViewStyle,
 		rowStyle?: ViewStyle,
 		cellStyle?: ViewStyle,
-	): ReactNode;
+	): React.ReactNode;
 	custom(
-		identifier: string,
-		raw: string,
-		children?: ReactNode[],
-		args?: Record<string, unknown>,
+		_identifier: string,
+		_raw: string,
+		_children: ReactNode[],
+		_args: Record<string, unknown>,
 	): ReactNode;
+	getKey(): string;
+	private getTextNode;
+	private getViewNode;
+	private getBlockquoteNode;
 }
+export default Renderer;
