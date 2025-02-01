@@ -60,7 +60,6 @@
 		"@types/node": "22.10.6",
 		"@types/react": "18.3.18",
 		"@types/react-native": "0.72.6",
-		"@types/react-native-table-component": "1.2.8",
 		"@types/svg-parser": "^2.0.3",
 		"commitlint": "19.6.1",
 		"danger": "12.3.3",
@@ -93,7 +92,7 @@
 		],
 		"setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"],
 		"transformIgnorePatterns": [
-			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|react-native-table-component|github-slugger)"
+			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|github-slugger)"
 		]
 	},
 	"commitlint": {
@@ -159,7 +158,7 @@
 		"github-slugger": "2.0.0",
 		"html-entities": "2.5.2",
 		"marked": "15.0.6",
-		"react-native-table-component": "1.2.2",
+		"react-native-reanimated-table": "^0.0.2",
 		"svg-parser": "2.0.4"
 	},
 	"engines": {
