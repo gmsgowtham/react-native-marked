@@ -817,17 +817,10 @@ describe("Tokenizer", () => {
 				</Text>
 			),
 		);
-		const customFn = jest.fn(
-			(
-				_identifier: string,
-				_raw: string,
-				_children: React.ReactNode[],
-				args: Record<string, unknown> = {},
-			): ReactNode => {
-				const text = (args.text as string) ?? "";
-				return <Text key={"custom-token"}>{text}</Text>;
-			},
-		);
+		const customFn = jest.fn((token: Tokens.Generic): ReactNode => {
+			const text = (token.raw as string) ?? "";
+			return <Text key={"custom-token"}>{text}</Text>;
+		});
 		const style: TextStyle = {
 			color: "#ff0000",
 		};

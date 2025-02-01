@@ -10,6 +10,7 @@ import {
 	Dimensions,
 } from "react-native";
 import MarkedList from "@jsamr/react-native-li";
+import type { Tokens } from "marked";
 import Disc from "@jsamr/counter-style/presets/disc";
 import Decimal from "@jsamr/counter-style/presets/decimal";
 import Slugger from "github-slugger";
@@ -216,12 +217,7 @@ class Renderer implements RendererInterface {
 		);
 	}
 
-	custom(
-		_identifier: string,
-		_raw: string,
-		_children: ReactNode[],
-		_args: Record<string, unknown>,
-	): ReactNode {
+	custom(_token: Tokens.Generic): ReactNode {
 		return null;
 	}
 

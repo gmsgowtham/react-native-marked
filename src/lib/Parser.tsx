@@ -198,6 +198,7 @@ class Parser {
 				return this.renderer.del(children, strikethroughStyle);
 			}
 			case "text":
+			case "space":
 				return this.renderer.text(token.raw, {
 					...this.styles.text,
 					...styles,
@@ -234,17 +235,8 @@ class Parser {
 					this.styles.tableCell,
 				);
 			}
-			case "custom": {
-				const children = this._parse(token.tokens ?? []);
-				return this.renderer.custom(
-					token.identifier,
-					token.raw,
-					children,
-					token.args,
-				);
-			}
 			default: {
-				return null;
+				return this.renderer.custom(token);
 			}
 		}
 	}

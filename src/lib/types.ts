@@ -6,7 +6,7 @@ import type {
 	ImageStyle,
 } from "react-native";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
-import type { Tokenizer } from "marked";
+import type { Tokenizer, Tokens } from "marked";
 
 export interface ParserOptions {
 	styles?: MarkedStyles;
@@ -76,10 +76,5 @@ export interface RendererInterface {
 		rowStyle?: ViewStyle,
 		cellStyle?: ViewStyle,
 	): ReactNode;
-	custom(
-		identifier: string,
-		raw: string,
-		children?: ReactNode[],
-		args?: Record<string, unknown>,
-	): ReactNode;
+	custom: (token: Tokens.Generic) => ReactNode;
 }
