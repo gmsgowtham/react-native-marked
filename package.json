@@ -35,7 +35,11 @@
 		"test:updateSnapshot": "jest --updateSnapshot",
 		"reassure": "reassure"
 	},
-	"keywords": ["react-native", "markdown", "react-native markdown"],
+	"keywords": [
+		"react-native",
+		"markdown",
+		"react-native markdown"
+	],
 	"repository": "https://github.com/gmsgowtham/react-native-marked",
 	"author": "Gowtham G <webappsbygowtham@gmail.com> (https://github.com/gmsgowtham)",
 	"license": "MIT",
@@ -59,7 +63,6 @@
 		"@types/jest": "29.5.14",
 		"@types/node": "22.10.6",
 		"@types/react": "18.3.18",
-		"@types/react-native": "0.72.6",
 		"@types/svg-parser": "^2.0.3",
 		"commitlint": "19.6.1",
 		"danger": "12.3.3",
@@ -70,7 +73,7 @@
 		"pod-install": "0.3.4",
 		"postinstall-postinstall": "2.1.0",
 		"react": "18.3.1",
-		"react-native": "0.72.6",
+		"react-native": "0.77.0",
 		"react-native-builder-bob": "0.36.0",
 		"react-native-svg": "15.11.1",
 		"react-test-renderer": "18.3.1",
@@ -80,7 +83,7 @@
 	},
 	"peerDependencies": {
 		"react": "^16.8.6 || ^17.0.0 || ^18.0.0",
-		"react-native": ">=0.60.0",
+		"react-native": ">=0.76.0",
 		"react-native-svg": ">=12.3.0"
 	},
 	"jest": {
@@ -90,13 +93,17 @@
 			"<rootDir>/examples/*/node_modules",
 			"<rootDir>/dist/"
 		],
-		"setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"],
+		"setupFilesAfterEnv": [
+			"@testing-library/jest-native/extend-expect"
+		],
 		"transformIgnorePatterns": [
 			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|github-slugger)"
 		]
 	},
 	"commitlint": {
-		"extends": ["@commitlint/config-conventional"],
+		"extends": [
+			"@commitlint/config-conventional"
+		],
 		"rules": {
 			"type-enum": [
 				2,
@@ -165,7 +172,6 @@
 		"node": ">=18"
 	},
 	"resolutions": {
-		"@types/react": "18.3.18",
-		"@types/react-native": "0.72.6"
+		"@types/react": "18.3.18"
 	}
 }
