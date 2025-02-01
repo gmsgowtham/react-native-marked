@@ -3211,10 +3211,10 @@
     "@types/semver" "^7.5.5"
     semver "^7.5.2"
 
-"@evilmartians/lefthook@1.10.4":
-  version "1.10.4"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.10.4.tgz#4d42d17e4976819d8a7d64afbd3e24f9e3e34756"
-  integrity sha512-4Kmt4VkOuzUhyU9Glfvcq3PXsXEPUI49aq5zCnGyThkQk9TgQKi0GKqAGotuItT/gKQQDbD+WFgxBS2OW9PC+Q==
+"@evilmartians/lefthook@1.10.10":
+  version "1.10.10"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.10.10.tgz#862c80eca5baa664cefb9b970500ea6d7f2d73dc"
+  integrity sha512-MRIA0zJzUBbmcbecI7QjI08li4ffpmZ6DeVydEiZSg0vSx5mElEMEjDEjkI60eSV0XOm7LRbQKz2rfW6NqH8Cw==
 
 "@gitbeaker/core@^38.12.1":
   version "38.12.1"
@@ -4199,11 +4199,12 @@
     pretty-format "^29.0.3"
     redent "^3.0.0"
 
-"@testing-library/react-native@13.0.0":
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-13.0.0.tgz#6e95e229344f3647065456ee6817258ca2afd644"
-  integrity sha512-NwwhIyMS+VD80KdDz9MS7iatCCgTGp+ZQd7EW+AKbJuWdMdDdopM042NLsp58haREzeFNAhVIPkm+1oSNw3Z5g==
+"@testing-library/react-native@13.0.1":
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-13.0.1.tgz#6ede604c505c8fc8672c34b9993c769cecf5c8f4"
+  integrity sha512-sKMRNNniSOZ68qe1OBQAWvK87WCEmbfLp/MXfn2JE3x3WrNU8OFCVL0z/YKqw0/JO/d44J8Wq6FmRSaod/+VAg==
   dependencies:
+    chalk "^4.1.2"
     jest-matcher-utils "^29.7.0"
     pretty-format "^29.7.0"
     redent "^3.0.0"
