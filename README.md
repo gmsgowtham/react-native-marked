@@ -11,8 +11,14 @@ Markdown renderer for React Native powered by
 
 ## Installation
 
+#### For React Native 0.76 and above, please use the latest version.
 ```sh
 yarn add react-native-marked react-native-svg
+```
+
+#### For React Native 0.75 and below, please use version 6.
+```sh
+yarn add react-native-marked@6.0.7 react-native-svg
 ```
 
 ## Usage
@@ -206,41 +212,28 @@ import React, { ReactNode } from "react";
 import Markdown, { Renderer, MarkedTokenizer, MarkedLexer } from "react-native-marked";
 import type { RendererInterface, CustomToken } from "react-native-marked";
 
-class CustomTokenizer extends MarkedTokenizer<CustomToken> {
-  // Override
-  codespan(this: MarkedTokenizer<CustomToken>, src: string) {
+class CustomTokenizer extends Tokenizer {
+  codespan(src: string): Tokens.Codespan | undefined {
     const match = src.match(/^\$+([^\$\n]+?)\$+/);
     if (match?.[1]) {
-      const text = match[1].trim();
-      const token: CustomToken = {
-        type: 'custom',
-        raw: match[0], // should be the exact regex pattern match
-        identifier: "latex", // Uniq identifier for the token
-        tokens: MarkedLexer(text), // optional, can be used if the markdown contains children
-        args: { // optional, can be used to send more information to the renderer
-          text: text,
-        }
+      return {
+        type: "codespan",
+        raw: match[0],
+        text: match[1].trim(),
       };
-      return token;
     }
 
-    return super.codespan(src)
+    return super.codespan(src);
   }
 }
 
 class CustomRenderer extends Renderer implements RendererInterface {
-  // Custom Token implementation
-  custom(identifier: string, _raw: string, _children?: ReactNode[], args?: Record<string, unknown>): ReactNode {
-    const text = args?.text as string;
-    if (identifier === "latex") {
-      const styles = {
-        padding: 16,
-        minWidth: "100%",
-        backgroundColor: "#f6f8fa"
-      };
-      return this.code(text.trim(), "latex", styles);
-    }
-    return null;
+  codespan(text: string, styles?: TextStyle): ReactNode {
+    return (
+      <Text style={styles} key={"key-1"}>
+        {text}
+      </Text>
+    )
   }
 }
 
