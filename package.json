@@ -35,11 +35,7 @@
 		"test:updateSnapshot": "jest --updateSnapshot",
 		"reassure": "reassure"
 	},
-	"keywords": [
-		"react-native",
-		"markdown",
-		"react-native markdown"
-	],
+	"keywords": ["react-native", "markdown", "react-native markdown"],
 	"repository": "https://github.com/gmsgowtham/react-native-marked",
 	"author": "Gowtham G <webappsbygowtham@gmail.com> (https://github.com/gmsgowtham)",
 	"license": "MIT",
@@ -93,17 +89,13 @@
 			"<rootDir>/examples/*/node_modules",
 			"<rootDir>/dist/"
 		],
-		"setupFilesAfterEnv": [
-			"@testing-library/jest-native/extend-expect"
-		],
+		"setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"],
 		"transformIgnorePatterns": [
 			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|github-slugger)"
 		]
 	},
 	"commitlint": {
-		"extends": [
-			"@commitlint/config-conventional"
-		],
+		"extends": ["@commitlint/config-conventional"],
 		"rules": {
 			"type-enum": [
 				2,
