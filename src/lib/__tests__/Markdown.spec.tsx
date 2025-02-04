@@ -3,8 +3,8 @@ import { render, screen, waitFor } from "@testing-library/react-native";
 import { Text, type TextStyle } from "react-native";
 import Markdown from "../Markdown";
 import Renderer from "../Renderer";
-import { MarkedTokenizer } from "../../index";
-import type { CustomToken, RendererInterface } from "../types";
+import type { RendererInterface } from "../types";
+import { Tokenizer, type Tokens } from "marked";
 
 // https://www.markdownguide.org/basic-syntax/#headings
 describe("Headings", () => {
@@ -817,38 +817,22 @@ describe("Tokenizer", () => {
 				</Text>
 			),
 		);
-		const customFn = jest.fn(
-			(
-				_identifier: string,
-				_raw: string,
-				_children: React.ReactNode[],
-				args: Record<string, unknown> = {},
-			): ReactNode => {
-				const text = (args.text as string) ?? "";
-				return <Text key={"custom-token"}>{text}</Text>;
-			},
-		);
 		const style: TextStyle = {
 			color: "#ff0000",
 		};
 		class CustomRenderer extends Renderer implements RendererInterface {
 			codespan = codespanFn;
-			custom = customFn;
 		}
 
-		class CustomTokenizer extends MarkedTokenizer<CustomToken> {
-			codespan(this: MarkedTokenizer<CustomToken>, src: string) {
+		class CustomTokenizer extends Tokenizer {
+			codespan(src: string): Tokens.Codespan | undefined {
 				const match = src.match(/^\$+([^\$\n]+?)\$+/);
 				if (match?.[1]) {
-					const token: CustomToken = {
-						type: "custom",
-						raw: src,
-						identifier: "latex",
-						args: {
-							text: match[1].trim(),
-						},
+					return {
+						type: "codespan",
+						raw: match[0],
+						text: match[1].trim(),
 					};
-					return token;
 				}
 
 				return super.codespan(src);
@@ -865,9 +849,6 @@ describe("Tokenizer", () => {
 		);
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
-		expect(customFn).toHaveBeenCalledWith("latex", "$ latex code $", [], {
-			text: "latex code",
-		});
 		expect(screen.queryByText("hello")).toBeTruthy();
 		expect(screen.queryByText("latex code")).toBeTruthy();
 	});

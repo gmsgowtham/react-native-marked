@@ -17,9 +17,6 @@ exports[`Blockquotes Blockquote 1`] = `
         <View
           style={
             {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
               "paddingVertical": 8,
             }
           }
@@ -59,7 +56,7 @@ exports[`Blockquotes Blockquote 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -87,9 +84,6 @@ exports[`Blockquotes Blockquote 1`] = `
         <View
           style={
             {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
               "paddingVertical": 8,
             }
           }
@@ -135,9 +129,6 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
         <View
           style={
             {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
               "paddingVertical": 8,
             }
           }
@@ -163,9 +154,6 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
         <View
           style={
             {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
               "paddingVertical": 8,
             }
           }
@@ -205,7 +193,7 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -233,9 +221,6 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
         <View
           style={
             {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
               "paddingVertical": 8,
             }
           }
@@ -261,9 +246,6 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
         <View
           style={
             {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
               "paddingVertical": 8,
             }
           }
@@ -414,9 +396,6 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
         <View
           style={
             {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
               "paddingVertical": 8,
             }
           }
@@ -506,7 +485,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -682,9 +661,6 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
         <View
           style={
             {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
               "paddingVertical": 8,
             }
           }
@@ -780,9 +756,6 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
         <View
           style={
             {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
               "paddingVertical": 8,
             }
           }
@@ -829,9 +802,6 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
           <View
             style={
               {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
                 "paddingVertical": 8,
               }
             }
@@ -872,7 +842,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -900,9 +870,6 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
         <View
           style={
             {
-              "color": "#333333",
-              "fontSize": 16,
-              "lineHeight": 24,
               "paddingVertical": 8,
             }
           }
@@ -955,9 +922,6 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
           <View
             style={
               {
-                "color": "#333333",
-                "fontSize": 16,
-                "lineHeight": 24,
                 "paddingVertical": 8,
               }
             }
@@ -1035,7 +999,7 @@ exports[`Code Code Blocks (backtick) 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -1133,7 +1097,7 @@ exports[`Code Code Blocks (backtick), no ending backtick 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -1232,7 +1196,7 @@ exports[`Code Code Blocks 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -1290,9 +1254,6 @@ exports[`Code Code Span 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -1358,7 +1319,7 @@ exports[`Code Code Span 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -1376,9 +1337,6 @@ exports[`Code Code Span 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -1440,9 +1398,6 @@ exports[`Emphasis Bold 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -1506,7 +1461,7 @@ exports[`Emphasis Bold 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -1524,9 +1479,6 @@ exports[`Emphasis Bold 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -1586,9 +1538,6 @@ exports[`Emphasis Bold and Italic 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -1665,7 +1614,7 @@ exports[`Emphasis Bold and Italic 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -1683,9 +1632,6 @@ exports[`Emphasis Bold and Italic 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -1758,9 +1704,6 @@ exports[`Emphasis Italic 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -1824,7 +1767,7 @@ exports[`Emphasis Italic 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -1842,9 +1785,6 @@ exports[`Emphasis Italic 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -1904,9 +1844,6 @@ exports[`Emphasis Strikethrough 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -1971,7 +1908,7 @@ exports[`Emphasis Strikethrough 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -1989,9 +1926,6 @@ exports[`Emphasis Strikethrough 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -2052,9 +1986,6 @@ exports[`Escaping Characters Render 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -2105,7 +2036,7 @@ exports[`Escaping Characters Render 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -2123,9 +2054,6 @@ exports[`Escaping Characters Render 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -2172,9 +2100,6 @@ exports[`HTML Render 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -2286,7 +2211,7 @@ exports[`HTML Render 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -2304,9 +2229,6 @@ exports[`HTML Render 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -2445,7 +2367,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -2520,7 +2442,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -2564,9 +2486,6 @@ exports[`Headings Best Practice 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -2610,9 +2529,6 @@ exports[`Headings Best Practice 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -2651,7 +2567,7 @@ exports[`Headings Best Practice 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -2669,9 +2585,6 @@ exports[`Headings Best Practice 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -2727,9 +2640,6 @@ exports[`Headings Best Practice 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -2795,7 +2705,7 @@ exports[`Headings Heading level 1 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -2870,7 +2780,7 @@ exports[`Headings Heading level 2 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -2941,7 +2851,7 @@ exports[`Headings Heading level 3 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3009,7 +2919,7 @@ exports[`Headings Heading level 4 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3077,7 +2987,7 @@ exports[`Headings Heading level 5 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3145,7 +3055,7 @@ exports[`Headings Heading level 6 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3253,7 +3163,7 @@ exports[`Headings Heading with text emphasis 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3356,7 +3266,7 @@ exports[`Horizontal Rules Asterisks 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3414,7 +3324,7 @@ exports[`Horizontal Rules Dashes 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3450,9 +3360,6 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -3487,9 +3394,6 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -3528,7 +3432,7 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3546,9 +3450,6 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -3595,9 +3496,6 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -3654,7 +3552,7 @@ exports[`Horizontal Rules Underscores 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3690,9 +3588,6 @@ exports[`Images Linking Images 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -3729,7 +3624,7 @@ exports[`Images Linking Images 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3747,9 +3642,6 @@ exports[`Images Linking Images 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -3831,9 +3723,6 @@ exports[`Images Render 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -3864,7 +3753,7 @@ exports[`Images Render 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3882,9 +3771,6 @@ exports[`Images Render 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -3944,9 +3830,6 @@ exports[`Images SVG Linking 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -3977,7 +3860,7 @@ exports[`Images SVG Linking 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -3995,9 +3878,6 @@ exports[`Images SVG Linking 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4046,9 +3926,6 @@ exports[`Images SVG images 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4073,7 +3950,7 @@ exports[`Images SVG images 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -4091,9 +3968,6 @@ exports[`Images SVG images 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4120,9 +3994,6 @@ exports[`Line Breaks Trailing New Line Character 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4162,7 +4033,7 @@ And the next line.
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -4180,9 +4051,6 @@ And the next line.
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4218,9 +4086,6 @@ exports[`Line Breaks Trailing slash 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4278,7 +4143,7 @@ exports[`Line Breaks Trailing slash 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -4296,9 +4161,6 @@ exports[`Line Breaks Trailing slash 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4352,9 +4214,6 @@ exports[`Links Basic 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4421,7 +4280,7 @@ exports[`Links Basic 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -4439,9 +4298,6 @@ exports[`Links Basic 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4504,9 +4360,6 @@ exports[`Links Formatting Links 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4670,7 +4523,7 @@ See the section on
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -4688,9 +4541,6 @@ See the section on
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -4896,7 +4746,7 @@ exports[`Links Links without text, (no render) 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -4956,9 +4806,6 @@ exports[`Links Titles 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -5025,7 +4872,7 @@ exports[`Links Titles 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -5043,9 +4890,6 @@ exports[`Links Titles 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -5108,9 +4952,6 @@ exports[`Links URLs and Email Addresses 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -5140,9 +4981,6 @@ exports[`Links URLs and Email Addresses 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -5185,7 +5023,7 @@ exports[`Links URLs and Email Addresses 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -5203,9 +5041,6 @@ exports[`Links URLs and Email Addresses 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -5241,9 +5076,6 @@ exports[`Links URLs and Email Addresses 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -5381,9 +5213,6 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             <View
               style={
                 {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
                   "paddingVertical": 8,
                 }
               }
@@ -5453,7 +5282,7 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -5613,9 +5442,6 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             <View
               style={
                 {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
                   "paddingVertical": 8,
                 }
               }
@@ -5881,7 +5707,7 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -6308,7 +6134,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -6856,7 +6682,7 @@ exports[`Lists Elements in Lists: Lists 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -7434,7 +7260,7 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -7936,7 +7762,7 @@ exports[`Lists Ordered Lists 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -8500,7 +8326,7 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -8979,7 +8805,7 @@ exports[`Lists Unordered Lists 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -9408,9 +9234,6 @@ exports[`Paragraphs Paragraph 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -9436,9 +9259,6 @@ exports[`Paragraphs Paragraph 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -9477,7 +9297,7 @@ exports[`Paragraphs Paragraph 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -9495,9 +9315,6 @@ exports[`Paragraphs Paragraph 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -9529,9 +9346,6 @@ exports[`Paragraphs Paragraph 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -9566,9 +9380,6 @@ exports[`Paragraphs Paragraph with Image 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -9622,7 +9433,7 @@ exports[`Paragraphs Paragraph with Image 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -9640,9 +9451,6 @@ exports[`Paragraphs Paragraph with Image 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -9725,9 +9533,6 @@ exports[`Renderer override Custom 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -9768,7 +9573,7 @@ exports[`Renderer override Custom 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -9786,9 +9591,6 @@ exports[`Renderer override Custom 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -9822,278 +9624,174 @@ exports[`Tables Alignment 1`] = `
 <RCTScrollView
   data={
     [
-      <ScrollView
-        horizontal={true}
-      >
-        <Table
-          borderStyle={
-            {
-              "borderColor": "#d0d7de",
-              "borderWidth": 1,
-            }
+      <Memo(MDTable)
+        borderColor="#d0d7de"
+        borderWidth={1}
+        cellStyle={
+          {
+            "padding": 4,
           }
-          style={{}}
-        >
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+        }
+        header={
+          [
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Syntax
+              </Text>,
+            ],
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Description
+              </Text>,
+            ],
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "right",
+                  }
+                }
+              >
+                Test Text
+              </Text>,
+            ],
+          ]
+        }
+        rowStyle={
+          {
+            "flexDirection": "row",
+          }
+        }
+        rows={
+          [
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Syntax
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Header
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    Description
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Title
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "right",
-                      }
-                    }
-                  >
-                    Test Text
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+                  Here's this
+                </Text>,
+              ],
+            ],
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Header
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Paragraph
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    Title
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Text
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "right",
-                      }
-                    }
-                  >
-                    Here's this
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
-                  style={
-                    {
-                      "padding": 4,
-                    }
-                  }
-                >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Paragraph
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
-                  style={
-                    {
-                      "padding": 4,
-                    }
-                  }
-                >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    Text
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
-                  style={
-                    {
-                      "padding": 4,
-                    }
-                  }
-                >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "right",
-                      }
-                    }
-                  >
-                    And more
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-        </Table>
-      </ScrollView>,
+                  And more
+                </Text>,
+              ],
+            ],
+          ]
+        }
+        widthArr={
+          [
+            325,
+            325,
+            325,
+          ]
+        }
+      />,
     ]
   }
   getItem={[Function]}
@@ -10110,7 +9808,7 @@ exports[`Tables Alignment 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -10132,7 +9830,7 @@ exports[`Tables Alignment 1`] = `
           <View
             style={
               [
-                {},
+                undefined,
                 {
                   "borderBottomWidth": 1,
                   "borderColor": "#d0d7de",
@@ -10150,23 +9848,13 @@ exports[`Tables Alignment 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10193,23 +9881,13 @@ exports[`Tables Alignment 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10236,23 +9914,13 @@ exports[`Tables Alignment 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10287,23 +9955,13 @@ exports[`Tables Alignment 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10330,23 +9988,13 @@ exports[`Tables Alignment 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10373,23 +10021,13 @@ exports[`Tables Alignment 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10424,23 +10062,13 @@ exports[`Tables Alignment 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10467,23 +10095,13 @@ exports[`Tables Alignment 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10510,23 +10128,13 @@ exports[`Tables Alignment 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10564,200 +10172,128 @@ exports[`Tables Basic 1`] = `
 <RCTScrollView
   data={
     [
-      <ScrollView
-        horizontal={true}
-      >
-        <Table
-          borderStyle={
-            {
-              "borderColor": "#d0d7de",
-              "borderWidth": 1,
-            }
+      <Memo(MDTable)
+        borderColor="#d0d7de"
+        borderWidth={1}
+        cellStyle={
+          {
+            "padding": 4,
           }
-          style={{}}
-        >
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+        }
+        header={
+          [
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Syntax
+              </Text>,
+            ],
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Description
+              </Text>,
+            ],
+          ]
+        }
+        rowStyle={
+          {
+            "flexDirection": "row",
+          }
+        }
+        rows={
+          [
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Syntax
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Header
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Description
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+                  Title
+                </Text>,
+              ],
+            ],
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Header
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Paragraph
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Title
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
-                  style={
-                    {
-                      "padding": 4,
-                    }
-                  }
-                >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Paragraph
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
-                  style={
-                    {
-                      "padding": 4,
-                    }
-                  }
-                >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Text
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-        </Table>
-      </ScrollView>,
+                  Text
+                </Text>,
+              ],
+            ],
+          ]
+        }
+        widthArr={
+          [
+            325,
+            325,
+          ]
+        }
+      />,
     ]
   }
   getItem={[Function]}
@@ -10774,7 +10310,7 @@ exports[`Tables Basic 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -10796,7 +10332,7 @@ exports[`Tables Basic 1`] = `
           <View
             style={
               [
-                {},
+                undefined,
                 {
                   "borderBottomWidth": 1,
                   "borderColor": "#d0d7de",
@@ -10814,23 +10350,13 @@ exports[`Tables Basic 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10857,23 +10383,13 @@ exports[`Tables Basic 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10908,23 +10424,13 @@ exports[`Tables Basic 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -10951,23 +10457,13 @@ exports[`Tables Basic 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -11002,23 +10498,13 @@ exports[`Tables Basic 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -11045,23 +10531,13 @@ exports[`Tables Basic 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -11099,200 +10575,128 @@ exports[`Tables Different Cell Widths 1`] = `
 <RCTScrollView
   data={
     [
-      <ScrollView
-        horizontal={true}
-      >
-        <Table
-          borderStyle={
-            {
-              "borderColor": "#d0d7de",
-              "borderWidth": 1,
-            }
+      <Memo(MDTable)
+        borderColor="#d0d7de"
+        borderWidth={1}
+        cellStyle={
+          {
+            "padding": 4,
           }
-          style={{}}
-        >
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+        }
+        header={
+          [
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Syntax
+              </Text>,
+            ],
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Description
+              </Text>,
+            ],
+          ]
+        }
+        rowStyle={
+          {
+            "flexDirection": "row",
+          }
+        }
+        rows={
+          [
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Syntax
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Header
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Description
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+                  Title
+                </Text>,
+              ],
+            ],
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Header
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Paragraph
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Title
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
-                  style={
-                    {
-                      "padding": 4,
-                    }
-                  }
-                >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Paragraph
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
-                  style={
-                    {
-                      "padding": 4,
-                    }
-                  }
-                >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Text
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-        </Table>
-      </ScrollView>,
+                  Text
+                </Text>,
+              ],
+            ],
+          ]
+        }
+        widthArr={
+          [
+            325,
+            325,
+          ]
+        }
+      />,
     ]
   }
   getItem={[Function]}
@@ -11309,7 +10713,7 @@ exports[`Tables Different Cell Widths 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -11331,7 +10735,7 @@ exports[`Tables Different Cell Widths 1`] = `
           <View
             style={
               [
-                {},
+                undefined,
                 {
                   "borderBottomWidth": 1,
                   "borderColor": "#d0d7de",
@@ -11349,23 +10753,13 @@ exports[`Tables Different Cell Widths 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -11392,23 +10786,13 @@ exports[`Tables Different Cell Widths 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -11443,23 +10827,13 @@ exports[`Tables Different Cell Widths 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -11486,23 +10860,13 @@ exports[`Tables Different Cell Widths 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -11537,23 +10901,13 @@ exports[`Tables Different Cell Widths 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -11580,23 +10934,13 @@ exports[`Tables Different Cell Widths 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -11634,341 +10978,241 @@ exports[`Tables Emphasis, Code, Links 1`] = `
 <RCTScrollView
   data={
     [
-      <ScrollView
-        horizontal={true}
-      >
-        <Table
-          borderStyle={
-            {
-              "borderColor": "#d0d7de",
-              "borderWidth": 1,
-            }
+      <Memo(MDTable)
+        borderColor="#d0d7de"
+        borderWidth={1}
+        cellStyle={
+          {
+            "padding": 4,
           }
-          style={{}}
-        >
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+        }
+        header={
+          [
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "lineHeight": 24,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                This will also be italic
+              </Text>,
+            ],
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "fontStyle": "italic",
+                    "lineHeight": 24,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "fontStyle": "italic",
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "fontStyle": "italic",
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    This will also be italic
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  You 
+                </Text>
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "fontStyle": "italic",
+                      "fontWeight": "bold",
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "fontStyle": "italic",
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontStyle": "italic",
-                          "lineHeight": 24,
-                          "textAlign": "center",
-                        }
-                      }
-                    >
-                      You 
-                    </Text>
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontStyle": "italic",
-                          "fontWeight": "bold",
-                          "lineHeight": 24,
-                          "textAlign": "center",
-                        }
-                      }
-                    >
-                      can
-                    </Text>
-                    <Text
-                      selectable={true}
-                      style={
-                        {
-                          "color": "#333333",
-                          "fontSize": 16,
-                          "fontStyle": "italic",
-                          "lineHeight": 24,
-                          "textAlign": "center",
-                        }
-                      }
-                    >
-                       combine them
-                    </Text>
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+                  can
+                </Text>
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "fontStyle": "italic",
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "fontWeight": "bold",
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    left foo
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                   combine them
+                </Text>
+              </Text>,
+            ],
+          ]
+        }
+        rowStyle={
+          {
+            "flexDirection": "row",
+          }
+        }
+        rows={
+          [
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "fontWeight": "bold",
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "fontStyle": "italic",
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    right foo
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+                  left foo
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "fontStyle": "italic",
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "backgroundColor": "#f6f8fa",
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "fontStyle": "italic",
-                        "fontWeight": "300",
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    left bar
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  right foo
+                </Text>,
+              ],
+            ],
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "backgroundColor": "#f6f8fa",
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "fontStyle": "italic",
+                      "fontWeight": "300",
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    right bar
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+                  left bar
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                        "textDecorationLine": "line-through",
-                        "textDecorationStyle": "solid",
-                      }
-                    }
-                  >
-                    left baz
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  right bar
+                </Text>,
+              ],
+            ],
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
+                      "textDecorationLine": "line-through",
+                      "textDecorationStyle": "solid",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
+                  left baz
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
-                  >
-                    right 
-                  </Text>
-                  <Text
-                    accessibilityHint="Opens in a new window"
-                    accessibilityRole="link"
-                    onPress={[Function]}
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#58a6ff",
-                        "fontSize": 16,
-                        "fontStyle": "italic",
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
+                  }
+                >
+                  right 
+                </Text>,
+                <Text
+                  accessibilityHint="Opens in a new window"
+                  accessibilityRole="link"
+                  onPress={[Function]}
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#58a6ff",
+                      "fontSize": 16,
+                      "fontStyle": "italic",
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
-                  >
-                    link
-                  </Text>
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
+                  }
+                >
+                  link
+                </Text>,
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
-                  >
-                    .
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-        </Table>
-      </ScrollView>,
+                  }
+                >
+                  .
+                </Text>,
+              ],
+            ],
+          ]
+        }
+        widthArr={
+          [
+            325,
+            325,
+          ]
+        }
+      />,
     ]
   }
   getItem={[Function]}
@@ -11985,7 +11229,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -12007,7 +11251,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
           <View
             style={
               [
-                {},
+                undefined,
                 {
                   "borderBottomWidth": 1,
                   "borderColor": "#d0d7de",
@@ -12025,23 +11269,13 @@ exports[`Tables Emphasis, Code, Links 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -12069,23 +11303,13 @@ exports[`Tables Emphasis, Code, Links 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -12163,23 +11387,13 @@ exports[`Tables Emphasis, Code, Links 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -12207,23 +11421,13 @@ exports[`Tables Emphasis, Code, Links 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -12259,23 +11463,13 @@ exports[`Tables Emphasis, Code, Links 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -12305,23 +11499,13 @@ exports[`Tables Emphasis, Code, Links 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -12356,23 +11540,13 @@ exports[`Tables Emphasis, Code, Links 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -12401,23 +11575,13 @@ exports[`Tables Emphasis, Code, Links 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -12485,110 +11649,87 @@ exports[`Tables Images 1`] = `
 <RCTScrollView
   data={
     [
-      <ScrollView
-        horizontal={true}
-      >
-        <Table
-          borderStyle={
-            {
-              "borderColor": "#d0d7de",
-              "borderWidth": 1,
-            }
+      <Memo(MDTable)
+        borderColor="#d0d7de"
+        borderWidth={1}
+        cellStyle={
+          {
+            "padding": 4,
           }
-          style={{}}
-        >
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+        }
+        header={
+          [
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Hello
+              </Text>,
+            ],
+          ]
+        }
+        rowStyle={
+          {
+            "flexDirection": "row",
+          }
+        }
+        rows={
+          [
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    Hello
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+                  Bingo 
+                </Text>,
+                <Memo(MDImage)
+                  alt="Tonejito"
                   style={
                     {
-                      "padding": 4,
+                      "resizeMode": "cover",
+                    }
+                  }
+                  uri="https://goo.gl/1R3T6h"
+                />,
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    Bingo 
-                  </Text>
-                  <Memo(MDImage)
-                    alt="Tonejito"
-                    style={
-                      {
-                        "resizeMode": "cover",
-                      }
-                    }
-                    uri="https://goo.gl/1R3T6h"
-                  />
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                     This also works for me.
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-        </Table>
-      </ScrollView>,
+                   This also works for me.
+                </Text>,
+              ],
+            ],
+          ]
+        }
+        widthArr={
+          [
+            325,
+          ]
+        }
+      />,
     ]
   }
   getItem={[Function]}
@@ -12605,7 +11746,7 @@ exports[`Tables Images 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -12627,7 +11768,7 @@ exports[`Tables Images 1`] = `
           <View
             style={
               [
-                {},
+                undefined,
                 {
                   "borderBottomWidth": 1,
                   "borderColor": "#d0d7de",
@@ -12645,23 +11786,13 @@ exports[`Tables Images 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -12696,23 +11827,13 @@ exports[`Tables Images 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -12805,278 +11926,174 @@ exports[`Tables Pipe Character 1`] = `
 <RCTScrollView
   data={
     [
-      <ScrollView
-        horizontal={true}
-      >
-        <Table
-          borderStyle={
-            {
-              "borderColor": "#d0d7de",
-              "borderWidth": 1,
-            }
+      <Memo(MDTable)
+        borderColor="#d0d7de"
+        borderWidth={1}
+        cellStyle={
+          {
+            "padding": 4,
           }
-          style={{}}
-        >
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+        }
+        header={
+          [
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Syntax
+              </Text>,
+            ],
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Description
+              </Text>,
+            ],
+            [
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                    "textAlign": "right",
+                  }
+                }
+              >
+                Test Text
+              </Text>,
+            ],
+          ]
+        }
+        rowStyle={
+          {
+            "flexDirection": "row",
+          }
+        }
+        rows={
+          [
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Syntax
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Header
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    Description
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Title
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "right",
-                      }
-                    }
-                  >
-                    Test Text
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
+                  Here's | this
+                </Text>,
+              ],
+            ],
+            [
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "left",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Header
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Paragraph
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "center",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    Title
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
+                  Text
+                </Text>,
+              ],
+              [
+                <Text
+                  selectable={true}
                   style={
                     {
-                      "padding": 4,
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                      "textAlign": "right",
                     }
                   }
                 >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "right",
-                      }
-                    }
-                  >
-                    Here's | this
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-          <TableWrapper
-            style={
-              {
-                "flexDirection": "row",
-              }
-            }
-          >
-            <Cell
-              data={
-                <View
-                  style={
-                    {
-                      "padding": 4,
-                    }
-                  }
-                >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "left",
-                      }
-                    }
-                  >
-                    Paragraph
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
-                  style={
-                    {
-                      "padding": 4,
-                    }
-                  }
-                >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "center",
-                      }
-                    }
-                  >
-                    Text
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-            <Cell
-              data={
-                <View
-                  style={
-                    {
-                      "padding": 4,
-                    }
-                  }
-                >
-                  <Text
-                    selectable={true}
-                    style={
-                      {
-                        "color": "#333333",
-                        "fontSize": 16,
-                        "lineHeight": 24,
-                        "textAlign": "right",
-                      }
-                    }
-                  >
-                    And more
-                  </Text>
-                </View>
-              }
-              width={325}
-            />
-          </TableWrapper>
-        </Table>
-      </ScrollView>,
+                  And more
+                </Text>,
+              ],
+            ],
+          ]
+        }
+        widthArr={
+          [
+            325,
+            325,
+            325,
+          ]
+        }
+      />,
     ]
   }
   getItem={[Function]}
@@ -13093,7 +12110,7 @@ exports[`Tables Pipe Character 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -13115,7 +12132,7 @@ exports[`Tables Pipe Character 1`] = `
           <View
             style={
               [
-                {},
+                undefined,
                 {
                   "borderBottomWidth": 1,
                   "borderColor": "#d0d7de",
@@ -13133,23 +12150,13 @@ exports[`Tables Pipe Character 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -13176,23 +12183,13 @@ exports[`Tables Pipe Character 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -13219,23 +12216,13 @@ exports[`Tables Pipe Character 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -13270,23 +12257,13 @@ exports[`Tables Pipe Character 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -13313,23 +12290,13 @@ exports[`Tables Pipe Character 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -13356,23 +12323,13 @@ exports[`Tables Pipe Character 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -13407,23 +12364,13 @@ exports[`Tables Pipe Character 1`] = `
             >
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -13450,23 +12397,13 @@ exports[`Tables Pipe Character 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -13493,23 +12430,13 @@ exports[`Tables Pipe Character 1`] = `
               </View>
               <View
                 style={
-                  [
-                    {
-                      "borderColor": "#d0d7de",
-                      "borderRightWidth": 1,
-                      "borderTopWidth": 1,
-                    },
-                    {
-                      "justifyContent": "center",
-                    },
-                    {
-                      "width": 325,
-                    },
-                    undefined,
-                    undefined,
-                    false,
-                    undefined,
-                  ]
+                  {
+                    "borderColor": "#d0d7de",
+                    "borderRightWidth": 1,
+                    "borderTopWidth": 1,
+                    "justifyContent": "center",
+                    "width": 325,
+                  }
                 }
               >
                 <View
@@ -13550,9 +12477,6 @@ exports[`Tokenizer Custom 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -13561,7 +12485,18 @@ exports[`Tokenizer Custom 1`] = `
           selectable={true}
           style={{}}
         >
-          <Text>
+          <Text
+            style={
+              {
+                "backgroundColor": "#f6f8fa",
+                "color": "#ff0000",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "fontWeight": "300",
+                "lineHeight": 24,
+              }
+            }
+          >
             latex code
           </Text>
         </Text>
@@ -13569,9 +12504,6 @@ exports[`Tokenizer Custom 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -13612,7 +12544,7 @@ exports[`Tokenizer Custom 1`] = `
   onScrollEndDrag={[Function]}
   removeClippedSubviews={false}
   renderItem={[Function]}
-  scrollEventThrottle={50}
+  scrollEventThrottle={0.0001}
   stickyHeaderIndices={[]}
   style={
     {
@@ -13630,9 +12562,6 @@ exports[`Tokenizer Custom 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }
@@ -13641,7 +12570,18 @@ exports[`Tokenizer Custom 1`] = `
           selectable={true}
           style={{}}
         >
-          <Text>
+          <Text
+            style={
+              {
+                "backgroundColor": "#f6f8fa",
+                "color": "#ff0000",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "fontWeight": "300",
+                "lineHeight": 24,
+              }
+            }
+          >
             latex code
           </Text>
         </Text>
@@ -13655,9 +12595,6 @@ exports[`Tokenizer Custom 1`] = `
       <View
         style={
           {
-            "color": "#333333",
-            "fontSize": 16,
-            "lineHeight": 24,
             "paddingVertical": 8,
           }
         }

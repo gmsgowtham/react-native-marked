@@ -51,7 +51,6 @@ const getStyles = (
 		]),
 		text: StyleSheet.flatten([fontStyle.regular, userStyles?.text]),
 		paragraph: StyleSheet.flatten([
-			fontStyle.regular,
 			{
 				paddingVertical: mdSpacing.m,
 			},

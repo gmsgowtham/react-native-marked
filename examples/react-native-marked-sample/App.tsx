@@ -11,24 +11,19 @@ import Markdown, {
 	Renderer,
 	MarkedTokenizer,
 	type RendererInterface,
-	type CustomToken,
-	MarkedLexer,
+	type Tokens,
 } from "react-native-marked";
 import { MD_STRING } from "./const";
 
-class CustomTokenizer extends MarkedTokenizer<CustomToken> {
-	codespan(this: MarkedTokenizer<CustomToken>, src: string) {
+class CustomTokenizer extends MarkedTokenizer {
+	codespan(this: MarkedTokenizer, src: string): Tokens.Codespan | undefined {
 		const match = src.match(/^\$+([^\$\n]+?)\$+/);
 		if (match?.[1]) {
-			const token: CustomToken = {
-				type: "custom",
+			return {
+				type: "codespan",
 				raw: match[0],
-				identifier: "latex",
-				args: {
-					text: match[1].trim(),
-				},
+				text: match[1].trim(),
 			};
-			return token;
 		}
 
 		return super.codespan(src);
@@ -44,23 +39,6 @@ class CustomRenderer extends Renderer implements RendererInterface {
 				{text}
 			</Text>
 		);
-	}
-	custom(
-		identifier: string,
-		_raw: string,
-		_children: ReactNode[] = [],
-		args: Record<string, unknown> = {},
-	): ReactNode {
-		if (identifier === "latex" && args.text) {
-			return this.code(args.text as string, "latex", {
-				flex: 1,
-				width: "100%",
-				padding: 16,
-				minWidth: "100%",
-				backgroundColor: "#f6f8fa",
-			});
-		}
-		return null;
 	}
 }
 
