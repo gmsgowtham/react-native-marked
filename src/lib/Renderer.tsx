@@ -12,7 +12,7 @@ import {
 import MarkedList from "@jsamr/react-native-li";
 import Disc from "@jsamr/counter-style/presets/disc";
 import Decimal from "@jsamr/counter-style/presets/decimal";
-import { Slugger } from "marked";
+import Slugger from 'github-slugger';
 import { Table, Cell, TableWrapper } from "react-native-table-component";
 import MDImage from "./../components/MDImage";
 import { onLinkPress } from "../utils/handlers";

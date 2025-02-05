@@ -6,7 +6,7 @@ import type {
 	ImageStyle,
 } from "react-native";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
-import type { Tokenizer as MarkedTokenizer, marked } from "marked";
+import type { Tokenizer as MarkedTokenizer, marked, MarkedToken } from "marked";
 
 export interface ParserOptions {
 	styles?: MarkedStyles;
@@ -92,26 +92,4 @@ export interface CustomToken {
 	args?: Record<string, unknown>;
 }
 
-export type Token =
-	| marked.Tokens.Space
-	| marked.Tokens.Code
-	| marked.Tokens.Heading
-	| marked.Tokens.Table
-	| marked.Tokens.Hr
-	| marked.Tokens.Blockquote
-	| marked.Tokens.List
-	| marked.Tokens.ListItem
-	| marked.Tokens.Paragraph
-	| marked.Tokens.HTML
-	| marked.Tokens.Text
-	| marked.Tokens.Def
-	| marked.Tokens.Escape
-	| marked.Tokens.Tag
-	| marked.Tokens.Image
-	| marked.Tokens.Link
-	| marked.Tokens.Strong
-	| marked.Tokens.Em
-	| marked.Tokens.Codespan
-	| marked.Tokens.Br
-	| marked.Tokens.Del
-	| CustomToken;
+export type Token = MarkedToken | CustomToken;
