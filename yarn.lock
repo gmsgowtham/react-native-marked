@@ -263,7 +263,7 @@
     "@jridgewell/trace-mapping" "^0.3.25"
     jsesc "^3.0.2"
 
-"@babel/generator@^7.26.5":
+"@babel/generator@^7.26.10", "@babel/generator@^7.26.5":
   version "7.26.10"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.26.10.tgz#a60d9de49caca16744e6340c3658dfef6138c3f7"
   integrity sha512-rRHT8siFIXQrAYOYqZQVsAr8vJ+cBNqcVAY6m5V8/4QqzaPl+zDBe6cLEPRDuNOUf3ww8RfJVlOyQMoSI+5Ang==
@@ -868,6 +868,14 @@
   dependencies:
     "@babel/template" "^7.25.0"
     "@babel/types" "^7.25.0"
+
+"@babel/helpers@^7.26.7":
+  version "7.26.10"
+  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.26.10.tgz#6baea3cd62ec2d0c1068778d63cb1314f6637384"
+  integrity sha512-UPYc3SauzZ3JGgj87GgZ89JVdC5dj0AoetR5Bw6wj4niittNyFh6+eOGonYvJ1ao6B8lEa3Q3klS7ADZ53bc5g==
+  dependencies:
+    "@babel/template" "^7.26.9"
+    "@babel/types" "^7.26.10"
 
 "@babel/helpers@^7.26.9":
   version "7.26.9"
@@ -2413,10 +2421,17 @@
   resolved "https://registry.yarnpkg.com/@babel/regjsgen/-/regjsgen-0.8.0.tgz#f0ba69b075e1f05fb2825b7fad991e7adbb18310"
   integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
-"@babel/runtime@^7.25.0", "@babel/runtime@^7.25.4":
+"@babel/runtime@^7.25.0":
   version "7.25.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.25.6.tgz#9afc3289f7184d8d7f98b099884c26317b9264d2"
   integrity sha512-VBj9MYyDb9tuLq7yzqjgzt6Q+IBQLrGZfdjOekyEirZPHxXWoTSGUTMrpsfi58Up73d13NfYLv8HT9vmznjzhQ==
+  dependencies:
+    regenerator-runtime "^0.14.0"
+
+"@babel/runtime@^7.25.7":
+  version "7.26.10"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.26.10.tgz#a07b4d8fa27af131a633d7b3524db803eb4764c2"
+  integrity sha512-2WJMeRQPHKSPemqk/awGrAiuFfzBmOIPXKizAsVhWH9YJqLZ0H+HS4c8loHGgW6utJ3E/ejXQUsiGaQy2NZ9Fw==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -2546,6 +2561,19 @@
     "@babel/parser" "^7.25.9"
     "@babel/template" "^7.25.9"
     "@babel/types" "^7.25.9"
+    debug "^4.3.1"
+    globals "^11.1.0"
+
+"@babel/traverse@^7.26.7":
+  version "7.26.10"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.26.10.tgz#43cca33d76005dbaa93024fae536cc1946a4c380"
+  integrity sha512-k8NuDrxr0WrPH5Aupqb2LCVURP/S0vBEn5mK6iH+GIYob66U5EtoZvcdudR2jQ4cmTwhEwW1DLB+Yyas9zjF6A==
+  dependencies:
+    "@babel/code-frame" "^7.26.2"
+    "@babel/generator" "^7.26.10"
+    "@babel/parser" "^7.26.10"
+    "@babel/template" "^7.26.9"
+    "@babel/types" "^7.26.10"
     debug "^4.3.1"
     globals "^11.1.0"
 
@@ -2747,46 +2775,46 @@
   resolved "https://registry.yarnpkg.com/@biomejs/cli-win32-x64/-/cli-win32-x64-1.9.4.tgz#4c7afa90e3970213599b4095e62f87e5972b2340"
   integrity sha512-8Y5wMhVIPaWe6jw2H+KlEm4wP/f7EW3810ZLmDlrEEy5KvBsb9ECEfu/kMWD484ijfQ8+nIi0giMgu9g1UAuuA==
 
-"@callstack/reassure-cli@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-1.3.2.tgz#a364045f23565db7dadd431ad55d3ed75baa79dd"
-  integrity sha512-8ArzeeSI4ZJaT6aOoXrpbhIHD4nOgpkzoldt7XxaCNkHfgDguyj1sov/Zg79Ykw+/pOWQ4doXr2iSqgztrtjKg==
+"@callstack/reassure-cli@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-1.4.0.tgz#a1638d41d5a04c2c905c3cc5785567e2f2e3642a"
+  integrity sha512-yX2b51qxi2+j2dbQud+UDZIsyd/kpHt1hXpI/E/l95Ku9XPB285tziED/639ew1LiUZk/7Q/G0KA9ccBxZGxIQ==
   dependencies:
-    "@callstack/reassure-compare" "1.3.2"
-    "@callstack/reassure-logger" "1.3.2"
+    "@callstack/reassure-compare" "1.4.0"
+    "@callstack/reassure-logger" "1.4.0"
     chalk "4.1.2"
-    simple-git "^3.26.0"
+    simple-git "^3.27.0"
     yargs "^17.7.2"
 
-"@callstack/reassure-compare@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-compare/-/reassure-compare-1.3.2.tgz#06a6279517b0957fe418f03cd633bca7692ec435"
-  integrity sha512-cpRM/LOqrhO0oSx+DuYo92fUDvNxumdp+h0GW0Jc+xVbXzv0lKqlhn4GHa/rmF+lqOQ7UX6D+j7dNVoQvP5E8Q==
+"@callstack/reassure-compare@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-compare/-/reassure-compare-1.4.0.tgz#3fbfc5385cab23926faf330447c94f71daec28dc"
+  integrity sha512-k7mJVvMepGT2jL4E+Gv42uwQllTtHZlUoWG7rDnnYVUCGmR6miICpqHAMOnKqM+T+jK9k5kFepSyqSWCkRxU2A==
   dependencies:
-    "@callstack/reassure-logger" "1.3.2"
-    ts-markdown-builder "0.4.0"
+    "@callstack/reassure-logger" "1.4.0"
+    ts-markdown-builder "0.4.1"
     ts-regex-builder "^1.8.2"
-    zod "^3.23.8"
+    zod "^3.24.2"
 
-"@callstack/reassure-danger@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-danger/-/reassure-danger-1.3.2.tgz#9950e25cd80f49f15d5250c1917f7901c9fe8f99"
-  integrity sha512-TLnWev5IzRpqc5iVUFd2eawTz8fAq2dGS7mbfDP6oNFNLfd7jQtF1hqvC1LST1vVFVot9amfznxkZqNYKqJ3jw==
+"@callstack/reassure-danger@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-danger/-/reassure-danger-1.4.0.tgz#ab845e5b817e61b7199181a5263fe829f43065f1"
+  integrity sha512-Hh0G3atml45ChjOLDhHAmmwKZzlFXnAHDc8/OkvZjxx3nrzR8PSqq6tsdO1E43hr8PbUfyCcNiuSFn3AQPDM5g==
 
-"@callstack/reassure-logger@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-logger/-/reassure-logger-1.3.2.tgz#a2f2ef1156ca9167a21f92e3f67bad1b845036bc"
-  integrity sha512-yVvODRnwVbdGWlrGGF6KCXmJqm3GOgyORSjOtWq31G7L2qPKVE4Q97vYhyjxAdPPe8FmYjL+EFv2CAKsRkJIgQ==
+"@callstack/reassure-logger@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-logger/-/reassure-logger-1.4.0.tgz#3a8996291c40cb17693291af057a7827875e24db"
+  integrity sha512-Ob1Na48fJz98XMiVbgTaQP8cTPUBgOWPv3j+c74qZIdNE7ufyd/qZrhZrhwhEoDNAqP1EcVumFVvSXUR/Z/p7A==
   dependencies:
     chalk "4.1.2"
 
-"@callstack/reassure-measure@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-measure/-/reassure-measure-1.3.2.tgz#b341b356683247dca85f7611ff871a3cea6f759e"
-  integrity sha512-ZWL6M6JdoCTdwnrlUj4EETBpt9z6huHO+CY3h42qlTOhF9EhTrK9aSlGebTkk9j/xmxU9q8FQDnfXV+jWaKDbA==
+"@callstack/reassure-measure@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-measure/-/reassure-measure-1.4.0.tgz#ba1f8064a500ecf5e64e3bfcf60bf2e1ca080cc1"
+  integrity sha512-RzqFRl00aJORoL4U2zWro+wpXjtRbC3SUxFqyq3e+nOgqcqryPHiWgjD5lvO4yI6nxiab7n3Suj+Gr7s1ISNRQ==
   dependencies:
-    "@callstack/reassure-logger" "1.3.2"
-    mathjs "^13.1.1"
+    "@callstack/reassure-logger" "1.4.0"
+    mathjs "^13.2.3"
     pretty-format "^29.7.0"
 
 "@commitlint/cli@^19.7.1":
@@ -4867,10 +4895,10 @@ compare-func@^2.0.0:
     array-ify "^1.0.0"
     dot-prop "^5.1.0"
 
-complex.js@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/complex.js/-/complex.js-2.1.1.tgz#0675dac8e464ec431fb2ab7d30f41d889fb25c31"
-  integrity sha512-8njCHOTtFFLtegk6zQo0kkVX1rngygb/KQI6z1qZxlFI3scluC+LVTCFbrkWjBv4vvLlbQ9t88IPMC6k95VTTg==
+complex.js@^2.2.5:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/complex.js/-/complex.js-2.4.2.tgz#76f260a9e7e232d8ad26348484a9b128c13fcc9a"
+  integrity sha512-qtx7HRhPGSCBtGiST4/WGHuW+zeaND/6Ld+db6PbrulIB1i2Ev/2UPiqcmpQNPSyfBKraC0EOvOKCB5dGZKt3g==
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -7759,13 +7787,13 @@ marky@^1.2.2:
   resolved "https://registry.yarnpkg.com/marky/-/marky-1.2.5.tgz#55796b688cbd72390d2d399eaaf1832c9413e3c0"
   integrity sha512-q9JtQJKjpsVxCRVgQ+WapguSbKC3SQ5HEzFGPAJMStgh3QjCawp00UKv3MTTAArTmGmmPUvllHZoNbZ3gs0I+Q==
 
-mathjs@^13.1.1:
-  version "13.1.1"
-  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-13.1.1.tgz#72318c390ec3314e817b584a80152f6f10d7405d"
-  integrity sha512-duaSAy7m4F+QtP1Dyv8MX2XuxcqpNDDlGly0SdVTCqpAmwdOFWilDdQKbLdo9RfD6IDNMOdo9tIsEaTXkconlQ==
+mathjs@^13.2.3:
+  version "13.2.3"
+  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-13.2.3.tgz#775a030684ee15a36ad29138f28707667bb623ed"
+  integrity sha512-I67Op0JU7gGykFK64bJexkSAmX498x0oybxfVXn1rroEMZTmfxppORhnk8mEUnPrbTfabDKCqvm18vJKMk2UJQ==
   dependencies:
-    "@babel/runtime" "^7.25.4"
-    complex.js "^2.1.1"
+    "@babel/runtime" "^7.25.7"
+    complex.js "^2.2.5"
     decimal.js "^10.4.3"
     escape-latex "^1.2.0"
     fraction.js "^4.3.7"
@@ -9216,15 +9244,15 @@ readline@^1.3.0:
   resolved "https://registry.yarnpkg.com/readline/-/readline-1.3.0.tgz#c580d77ef2cfc8752b132498060dc9793a7ac01c"
   integrity sha512-k2d6ACCkiNYz222Fs/iNze30rRJ1iIicW7JuX/7/cozvih6YCkFZH+J6mAFDVgv0dRBaAyr4jDqC95R2y4IADg==
 
-reassure@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/reassure/-/reassure-1.3.2.tgz#374fe45542f5f1e3359143a8abc0c17bc8bd454a"
-  integrity sha512-kmHctDX5/TD0It90OCFTbDTkxjNbC0gLiDnUpjD0lbM7WsCI4Bi++kYuV23NlN6/JgdLe69Y69IDPpgqRNEYWw==
+reassure@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/reassure/-/reassure-1.4.0.tgz#011ca39c8273ecf051ab3510bc876b1a941dcb13"
+  integrity sha512-eFTzcm+T3hp/wBic/7Gzssi5y0Jq0Sgx+CCnqttUM44b+D9ZUuH3p9CVzMBPnC5qWr0ps5kKSD1OW98Vgn5hPw==
   dependencies:
-    "@callstack/reassure-cli" "1.3.2"
-    "@callstack/reassure-compare" "1.3.2"
-    "@callstack/reassure-danger" "1.3.2"
-    "@callstack/reassure-measure" "1.3.2"
+    "@callstack/reassure-cli" "1.4.0"
+    "@callstack/reassure-compare" "1.4.0"
+    "@callstack/reassure-danger" "1.4.0"
+    "@callstack/reassure-measure" "1.4.0"
     import-local "^3.2.0"
 
 recast@^0.23.9:
@@ -9705,7 +9733,7 @@ signal-exit@^4.0.1, signal-exit@^4.1.0:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
 
-simple-git@^3.26.0:
+simple-git@^3.27.0:
   version "3.27.0"
   resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.27.0.tgz#f4b09e807bda56a4a3968f635c0e4888d3decbd5"
   integrity sha512-ivHoFS9Yi9GY49ogc6/YAi3Fl9ROnF4VyubNylgCkA+RVqLaKWnDSzXOVzya8csELIaWaYNutsEuAhZrtOjozA==
@@ -10114,10 +10142,10 @@ tr46@~0.0.3:
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
 
-ts-markdown-builder@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/ts-markdown-builder/-/ts-markdown-builder-0.4.0.tgz#7c204249d36145ed846a1063f38ae1f3f951eebf"
-  integrity sha512-qROpeF4m4L1t+k0+ahm6eFub6BEJQsT8vi57EnPSiEE/Z1siFovbOobPeJ1B1A3j86E5ym03e8DWDrmQ12nrBw==
+ts-markdown-builder@0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/ts-markdown-builder/-/ts-markdown-builder-0.4.1.tgz#e2de2331ba651fbc7452d4438dc38ef7eba7d25a"
+  integrity sha512-t3Xqhmgjmu9LtTqklZ9Y9E6v3lIMn9Ope0+eBCBbR844KFOXKyXBm4RSpRKxJXmkCLpnJMIvH1oXvU9H+okFeA==
 
 ts-regex-builder@^1.8.2:
   version "1.8.2"
@@ -10636,7 +10664,7 @@ yoctocolors@^2.0.0:
   resolved "https://registry.yarnpkg.com/yoctocolors/-/yoctocolors-2.1.1.tgz#e0167474e9fbb9e8b3ecca738deaa61dd12e56fc"
   integrity sha512-GQHQqAopRhwU8Kt1DDM8NjibDXHC8eoh1erhGAJPEyveY9qqVeXvVikNKrDz69sHowPMorbPUrH/mx8c50eiBQ==
 
-zod@^3.23.8:
-  version "3.23.8"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
-  integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
+zod@^3.24.2:
+  version "3.24.2"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.24.2.tgz#8efa74126287c675e92f46871cfc8d15c34372b3"
+  integrity sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==
