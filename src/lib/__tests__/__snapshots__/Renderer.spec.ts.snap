@@ -27,7 +27,7 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
     <View
       style={
         [
-          {},
+          undefined,
           {
             "borderBottomWidth": 1,
             "borderColor": "#30363d",
@@ -45,23 +45,13 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
       >
         <View
           style={
-            [
-              {
-                "borderColor": "#30363d",
-                "borderRightWidth": 1,
-                "borderTopWidth": 1,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#30363d",
+              "borderRightWidth": 1,
+              "borderTopWidth": 1,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View
@@ -80,23 +70,13 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
         </View>
         <View
           style={
-            [
-              {
-                "borderColor": "#30363d",
-                "borderRightWidth": 1,
-                "borderTopWidth": 1,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#30363d",
+              "borderRightWidth": 1,
+              "borderTopWidth": 1,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View
@@ -131,23 +111,13 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
       >
         <View
           style={
-            [
-              {
-                "borderColor": "#30363d",
-                "borderRightWidth": 1,
-                "borderTopWidth": 1,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#30363d",
+              "borderRightWidth": 1,
+              "borderTopWidth": 1,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View
@@ -182,23 +152,13 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
       >
         <View
           style={
-            [
-              {
-                "borderColor": "#30363d",
-                "borderRightWidth": 1,
-                "borderTopWidth": 1,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#30363d",
+              "borderRightWidth": 1,
+              "borderTopWidth": 1,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View
@@ -249,7 +209,7 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
     <View
       style={
         [
-          {},
+          undefined,
           {
             "borderBottomWidth": 0,
             "borderColor": "#000",
@@ -261,23 +221,13 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
       <View>
         <View
           style={
-            [
-              {
-                "borderColor": "#000",
-                "borderRightWidth": 0,
-                "borderTopWidth": 0,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#000",
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View>
@@ -290,23 +240,13 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
         </View>
         <View
           style={
-            [
-              {
-                "borderColor": "#000",
-                "borderRightWidth": 0,
-                "borderTopWidth": 0,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#000",
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View>
@@ -329,23 +269,13 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
       <View>
         <View
           style={
-            [
-              {
-                "borderColor": "#000",
-                "borderRightWidth": 0,
-                "borderTopWidth": 0,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#000",
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View>
@@ -368,23 +298,13 @@ exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
       <View>
         <View
           style={
-            [
-              {
-                "borderColor": "#000",
-                "borderRightWidth": 0,
-                "borderTopWidth": 0,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#000",
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View>
@@ -498,9 +418,6 @@ exports[`Renderer dark theme View Nodes returns a paragraph View node 1`] = `
 <View
   style={
     {
-      "color": "#ffffff",
-      "fontSize": 16,
-      "lineHeight": 24,
       "paddingVertical": 8,
     }
   }
@@ -1090,7 +1007,7 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
     <View
       style={
         [
-          {},
+          undefined,
           {
             "borderBottomWidth": 1,
             "borderColor": "#d0d7de",
@@ -1108,23 +1025,13 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
       >
         <View
           style={
-            [
-              {
-                "borderColor": "#d0d7de",
-                "borderRightWidth": 1,
-                "borderTopWidth": 1,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#d0d7de",
+              "borderRightWidth": 1,
+              "borderTopWidth": 1,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View
@@ -1143,23 +1050,13 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
         </View>
         <View
           style={
-            [
-              {
-                "borderColor": "#d0d7de",
-                "borderRightWidth": 1,
-                "borderTopWidth": 1,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#d0d7de",
+              "borderRightWidth": 1,
+              "borderTopWidth": 1,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View
@@ -1194,23 +1091,13 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
       >
         <View
           style={
-            [
-              {
-                "borderColor": "#d0d7de",
-                "borderRightWidth": 1,
-                "borderTopWidth": 1,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#d0d7de",
+              "borderRightWidth": 1,
+              "borderTopWidth": 1,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View
@@ -1245,23 +1132,13 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
       >
         <View
           style={
-            [
-              {
-                "borderColor": "#d0d7de",
-                "borderRightWidth": 1,
-                "borderTopWidth": 1,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#d0d7de",
+              "borderRightWidth": 1,
+              "borderTopWidth": 1,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View
@@ -1312,7 +1189,7 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
     <View
       style={
         [
-          {},
+          undefined,
           {
             "borderBottomWidth": 0,
             "borderColor": "#000",
@@ -1324,23 +1201,13 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
       <View>
         <View
           style={
-            [
-              {
-                "borderColor": "#000",
-                "borderRightWidth": 0,
-                "borderTopWidth": 0,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#000",
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View>
@@ -1353,23 +1220,13 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
         </View>
         <View
           style={
-            [
-              {
-                "borderColor": "#000",
-                "borderRightWidth": 0,
-                "borderTopWidth": 0,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#000",
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View>
@@ -1392,23 +1249,13 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
       <View>
         <View
           style={
-            [
-              {
-                "borderColor": "#000",
-                "borderRightWidth": 0,
-                "borderTopWidth": 0,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#000",
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View>
@@ -1431,23 +1278,13 @@ exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
       <View>
         <View
           style={
-            [
-              {
-                "borderColor": "#000",
-                "borderRightWidth": 0,
-                "borderTopWidth": 0,
-              },
-              {
-                "justifyContent": "center",
-              },
-              {
-                "width": 325,
-              },
-              undefined,
-              undefined,
-              false,
-              undefined,
-            ]
+            {
+              "borderColor": "#000",
+              "borderRightWidth": 0,
+              "borderTopWidth": 0,
+              "justifyContent": "center",
+              "width": 325,
+            }
           }
         >
           <View>
@@ -1561,9 +1398,6 @@ exports[`Renderer light theme View Nodes returns a paragraph View node 1`] = `
 <View
   style={
     {
-      "color": "#333333",
-      "fontSize": 16,
-      "lineHeight": 24,
       "paddingVertical": 8,
     }
   }

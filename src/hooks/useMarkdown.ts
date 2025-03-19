@@ -1,11 +1,11 @@
 import { useMemo, type ReactNode } from "react";
-import { type Tokenizer, marked } from "marked";
+import { lexer, type Tokenizer } from "marked";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
 import Parser from "../lib/Parser";
 import Renderer from "../lib/Renderer";
 import getStyles from "./../theme/styles";
 import type { ColorSchemeName } from "react-native";
-import type { CustomToken, RendererInterface } from "../lib/types";
+import type { RendererInterface } from "../lib/types";
 
 export interface useMarkdownHookOptions {
 	colorScheme?: ColorSchemeName;
@@ -13,7 +13,7 @@ export interface useMarkdownHookOptions {
 	theme?: UserTheme;
 	styles?: MarkedStyles;
 	baseUrl?: string;
-	tokenizer?: Tokenizer<CustomToken>;
+	tokenizer?: Tokenizer;
 }
 
 const useMarkdown = (
@@ -36,9 +36,9 @@ const useMarkdown = (
 	);
 
 	const elements = useMemo(() => {
-		const tokens = marked.lexer(value, {
+		const tokens = lexer(value, {
 			gfm: true,
-			tokenizer: options?.tokenizer as Tokenizer<never>,
+			tokenizer: options?.tokenizer,
 		});
 		return parser.parse(tokens);
 	}, [value, parser, options?.tokenizer]);

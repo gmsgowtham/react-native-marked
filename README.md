@@ -11,8 +11,14 @@ Markdown renderer for React Native powered by
 
 ## Installation
 
+#### For React Native 0.76 and above, please use the latest version.
 ```sh
 yarn add react-native-marked react-native-svg
+```
+
+#### For React Native 0.75 and below, please use version 6.
+```sh
+yarn add react-native-marked@6.0.7 react-native-svg
 ```
 
 ## Usage
@@ -40,13 +46,13 @@ export default ExampleComponent;
 #### [Props](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L17)
 
 | Prop          | Description                                                                                                                                  | Type                                                                                                                                                                           | Optional? |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | value         | Markdown value                                                                                                                               | string                                                                                                                                                                         | false     |
 | flatListProps | Props for customizing the underlying FlatList used                                                                                           | `Omit<FlatListProps<ReactNode>, 'data' \| 'renderItem' \| 'horizontal'>`<br><br><br>(`'data'`, `'renderItem'`, and `'horizontal'` props are omitted and cannot be overridden.) | true      |
-| styles        | Styles for parsed components                                                                                                                 | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L5)                                                                              | true      |
-| theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L28)                                                                                | true      |
+| styles        | Styles for parsed components                                                                                                                 | [MarkedStyles](src/theme/types.ts)                                                                                                                                             | true      |
+| theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](src/theme/types.ts)                                                                                                                                                | true      |
 | baseUrl       | A prefix url for any relative link                                                                                                           | string                                                                                                                                                                         | true      |
-| renderer      | Custom component Renderer                                                                                                                    | [RendererInterface](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L25)                                                                          | true      |
+| renderer      | Custom component Renderer                                                                                                                    | [RendererInterface](src/lib/types.ts)                                                                                                                                          | true      |
 
 
 ### Using hook
@@ -76,19 +82,18 @@ const CustomComponent = () => {
 
 #### Options
 
-| Option      | Description                                                                                                                                  | Type                                                                                                             | Optional? |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | --------- |
-| colorScheme | Device color scheme ("dark" or "light")                                                                                                      | ColorSchemeName                                                                                                  | false     |
-| styles      | Styles for parsed components                                                                                                                 | [MarkedStyles](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L5)                | true      |
-| theme       | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](https://github.com/gmsgowtham/react-native-marked/blob/main/src/theme/types.ts#L28)                  | true      |
-| baseUrl     | A prefix url for any relative link                                                                                                           | string                                                                                                           | true      |
-| renderer    | Custom component Renderer                                                                                                                    | [RendererInterface](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L29)            | true      |
-| tokenizer   | Generate custom tokens                                                                                                                       | [MarkedTokenizer<CustomToken>](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L24) | true      |
+| Option      | Description                                                                                                                                  | Type                                             | Optional? |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-----------|
+| colorScheme | Device color scheme ("dark" or "light")                                                                                                      | ColorSchemeName                                  | false     |
+| styles      | Styles for parsed components                                                                                                                 | [MarkedStyles](src/theme/types.ts)               | true      |
+| theme       | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](src/theme/types.ts)                  | true      |
+| baseUrl     | A prefix url for any relative link                                                                                                           | string                                           | true      |
+| renderer    | Custom component Renderer                                                                                                                    | [RendererInterface](src/lib/types.ts)            | true      |
+| tokenizer   | Generate custom tokens                                                                                                                       | [MarkedTokenizer<CustomToken>](src/lib/types.ts) | true      |
 
 
 ## Examples
 
-- RN App: https://github.com/gmsgowtham/react-native-marked-test
 - CodeSandbox: https://codesandbox.io/s/react-native-marked-l2hpi3?file=/src/App.js
 
 ## Supported elements
@@ -180,21 +185,11 @@ const ExampleComponentWithHook = () => {
 export default ExampleComponent;
 ```
 
-> Please refer to [RendererInterface](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L2) for all the overrides
+> Please refer to [RendererInterface](src/lib/types.ts) for all the overrides
 
 > Note:
 >
 > For `key` property for a component, you can use the `getKey` method from Renderer class.
-
-### Using tokenizer with custom components
-
-Refer [marked](https://marked.js.org/using_pro#tokenizer)
-> The tokenizer defines how to turn markdown text into tokens. If you supply a tokenizer object to the Marked options, it will be merged with the built-in tokenizer and any functions inside will override the default handling of that token type.
-
--------------
-
-> The implementation requires you to return a token of type 'custom' (ref: [CustomToken](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L83)) and the same needs to be implemented in the Renderer
-
 
 #### Example
 
@@ -206,41 +201,28 @@ import React, { ReactNode } from "react";
 import Markdown, { Renderer, MarkedTokenizer, MarkedLexer } from "react-native-marked";
 import type { RendererInterface, CustomToken } from "react-native-marked";
 
-class CustomTokenizer extends MarkedTokenizer<CustomToken> {
-  // Override
-  codespan(this: MarkedTokenizer<CustomToken>, src: string) {
+class CustomTokenizer extends Tokenizer {
+  codespan(src: string): Tokens.Codespan | undefined {
     const match = src.match(/^\$+([^\$\n]+?)\$+/);
     if (match?.[1]) {
-      const text = match[1].trim();
-      const token: CustomToken = {
-        type: 'custom',
-        raw: match[0], // should be the exact regex pattern match
-        identifier: "latex", // Uniq identifier for the token
-        tokens: MarkedLexer(text), // optional, can be used if the markdown contains children
-        args: { // optional, can be used to send more information to the renderer
-          text: text,
-        }
+      return {
+        type: "codespan",
+        raw: match[0],
+        text: match[1].trim(),
       };
-      return token;
     }
 
-    return super.codespan(src)
+    return super.codespan(src);
   }
 }
 
 class CustomRenderer extends Renderer implements RendererInterface {
-  // Custom Token implementation
-  custom(identifier: string, _raw: string, _children?: ReactNode[], args?: Record<string, unknown>): ReactNode {
-    const text = args?.text as string;
-    if (identifier === "latex") {
-      const styles = {
-        padding: 16,
-        minWidth: "100%",
-        backgroundColor: "#f6f8fa"
-      };
-      return this.code(text.trim(), "latex", styles);
-    }
-    return null;
+  codespan(text: string, styles?: TextStyle): ReactNode {
+    return (
+      <Text style={styles} key={"key-1"}>
+        {text}
+      </Text>
+    )
   }
 }
 
@@ -266,7 +248,7 @@ const ExampleComponent = () => {
 ## Screenshots
 
 |                          Dark Theme                           |                           Light Theme                            |
-| :-----------------------------------------------------------: | :--------------------------------------------------------------: |
+|:-------------------------------------------------------------:|:----------------------------------------------------------------:|
 | ![Dark theme](assets/dark-theme-01.png?raw=true 'Dark Theme') | ![Light theme](assets/light-theme-01.png?raw=true 'Light Theme') |
 
 ## Contributing
@@ -287,9 +269,11 @@ Made with
 
 - [Marked](https://marked.js.org/)
 - [@jsamr/react-native-li](https://github.com/jsamr/react-native-li)
-- [react-native-table-component](https://github.com/Gil2015/react-native-table-component)
+- [react-native-reanimated-table](https://github.com/dohooo/react-native-reanimated-table)
 - [react-native-svg](https://github.com/software-mansion/react-native-svg)
 - [svg-parser](https://github.com/Rich-Harris/svg-parser)
+- [github-slugger](https://github.com/Flet/github-slugger)
+- [html-entities](https://github.com/mdevils/html-entities)
 
-  
+
 <a href="https://www.buymeacoffee.com/gmsgowtham" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="width: 120px !important;" ></a>

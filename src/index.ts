@@ -1,4 +1,5 @@
-import { Tokenizer, marked } from "marked";
+import { Tokenizer as MarkedTokenizer, marked } from "marked";
+import type { Token, Tokens } from "marked";
 import Markdown from "./lib/Markdown";
 import Renderer from "./lib/Renderer";
 import useMarkdown, { type useMarkdownHookOptions } from "./hooks/useMarkdown";
@@ -6,7 +7,6 @@ import type {
 	MarkdownProps,
 	ParserOptions,
 	RendererInterface,
-	CustomToken,
 } from "./lib/types";
 
 const MarkedLexer = marked.lexer;
@@ -16,8 +16,10 @@ export type {
 	ParserOptions,
 	RendererInterface,
 	useMarkdownHookOptions,
-	CustomToken,
+	Token,
+	Tokens,
 };
 
-export { Renderer, useMarkdown, Tokenizer as MarkedTokenizer, MarkedLexer };
+export { useMarkdown, MarkedLexer, Renderer, MarkedTokenizer };
+
 export default Markdown;

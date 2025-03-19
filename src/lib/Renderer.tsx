@@ -12,13 +12,13 @@ import {
 import MarkedList from "@jsamr/react-native-li";
 import Disc from "@jsamr/counter-style/presets/disc";
 import Decimal from "@jsamr/counter-style/presets/decimal";
-import { Slugger } from "marked";
-import { Table, Cell, TableWrapper } from "react-native-table-component";
+import Slugger from "github-slugger";
 import MDImage from "./../components/MDImage";
 import { onLinkPress } from "../utils/handlers";
 import type { RendererInterface } from "./types";
 import { getTableWidthArr } from "../utils/table";
 import MDSvg from "./../components/MDSvg";
+import MDTable from "./../components/MDTable";
 
 class Renderer implements RendererInterface {
 	private slugPrefix = "react-native-marked-ele";
@@ -178,51 +178,18 @@ class Renderer implements RendererInterface {
 		cellStyle?: ViewStyle,
 	): React.ReactNode {
 		const widthArr = getTableWidthArr(header.length, this.windowWidth);
-		const { borderWidth, borderColor, ...tableStyleRest } = tableStyle || {};
+		const { borderWidth, borderColor } = tableStyle || {};
 		return (
-			<ScrollView horizontal={true}>
-				<Table
-					borderStyle={{ borderWidth, borderColor }}
-					style={tableStyleRest}
-				>
-					<TableWrapper style={rowStyle}>
-						{header.map((headerCol, index) => {
-							return (
-								<Cell
-									width={widthArr[index]}
-									key={`${index}`}
-									data={<View style={cellStyle}>{headerCol}</View>}
-								/>
-							);
-						})}
-					</TableWrapper>
-					{rows.map((rowData, index) => {
-						return (
-							<TableWrapper key={`${index}`} style={rowStyle}>
-								{rowData.map((cellData, cellIndex) => {
-									return (
-										<Cell
-											width={widthArr[cellIndex]}
-											key={`${cellIndex}`}
-											data={<View style={cellStyle}>{cellData}</View>}
-										/>
-									);
-								})}
-							</TableWrapper>
-						);
-					})}
-				</Table>
-			</ScrollView>
+			<MDTable
+				header={header}
+				rows={rows}
+				widthArr={widthArr}
+				rowStyle={rowStyle}
+				cellStyle={cellStyle}
+				borderColor={borderColor as string}
+				borderWidth={borderWidth}
+			/>
 		);
-	}
-
-	custom(
-		_identifier: string,
-		_raw: string,
-		_children: ReactNode[],
-		_args: Record<string, unknown>,
-	): ReactNode {
-		return null;
 	}
 
 	getKey(): string {
