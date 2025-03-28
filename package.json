@@ -154,7 +154,7 @@
 		"@jsamr/react-native-li": "2.3.1",
 		"github-slugger": "2.0.0",
 		"html-entities": "2.5.3",
-		"marked": "15.0.6",
+		"marked": "15.0.7",
 		"react-native-reanimated-table": "0.0.2",
 		"svg-parser": "2.0.4"
 	},
