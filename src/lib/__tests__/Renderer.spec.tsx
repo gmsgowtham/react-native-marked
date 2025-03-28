@@ -6,8 +6,8 @@ import {
 	waitFor,
 } from "@testing-library/react-native";
 import Renderer from "../Renderer";
-import getStyles from "./../../theme/styles";
-import type { MarkedStyles } from "./../../theme/types";
+import getStyles from "../../theme/styles";
+import type { MarkedStyles } from "../../theme/types";
 import type { ReactElement } from "react";
 
 jest.mock("react-native/Libraries/Linking/Linking", () => ({
