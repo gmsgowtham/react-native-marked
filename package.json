@@ -70,7 +70,7 @@
 		"postinstall-postinstall": "2.1.0",
 		"react": "18.3.1",
 		"react-native": "0.78.1",
-		"react-native-builder-bob": "0.37.0",
+		"react-native-builder-bob": "0.38.4",
 		"react-native-svg": "15.11.2",
 		"react-test-renderer": "18.3.1",
 		"reassure": "1.4.0",
