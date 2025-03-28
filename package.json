@@ -163,6 +163,6 @@
 	},
 	"resolutions": {
 		"@types/react": "19.0.12",
-		"**/pretty-format/react-is": "19.0.0"
+		"**/pretty-format/react-is": "19.1.0"
 	}
 }
