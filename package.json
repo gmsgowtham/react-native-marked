@@ -55,11 +55,10 @@
 		"@evilmartians/lefthook": "1.11.5",
 		"@react-native/babel-preset": "0.77.0",
 		"@release-it/conventional-changelog": "10.0.0",
-		"@testing-library/jest-native": "5.4.3",
-		"@testing-library/react-native": "13.2.0",
+		"@testing-library/react-native": "v14.0.0-alpha.1",
 		"@types/jest": "29.5.14",
 		"@types/node": "22.13.14",
-		"@types/react": "18.3.18",
+		"@types/react": "19.0.8",
 		"@types/svg-parser": "^2.0.3",
 		"commitlint": "19.8.0",
 		"danger": "12.3.4",
@@ -68,17 +67,17 @@
 		"jest-environment-jsdom": "29.7.0",
 		"pod-install": "0.3.4",
 		"postinstall-postinstall": "2.1.0",
-		"react": "18.3.1",
+		"react": "19.0.0",
 		"react-native": "0.78.1",
 		"react-native-builder-bob": "0.37.0",
 		"react-native-svg": "15.11.2",
-		"react-test-renderer": "18.3.1",
 		"reassure": "1.4.0",
 		"release-it": "18.1.2",
-		"typescript": "5.8.2"
+		"typescript": "5.8.2",
+		"universal-test-renderer": "0.6.0"
 	},
 	"peerDependencies": {
-		"react": "^16.8.6 || ^17.0.0 || ^18.0.0",
+		"react": ">=16.8.6",
 		"react-native": ">=0.76.0",
 		"react-native-svg": ">=12.3.0"
 	},
@@ -89,7 +88,6 @@
 			"<rootDir>/examples/*/node_modules",
 			"<rootDir>/dist/"
 		],
-		"setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"],
 		"transformIgnorePatterns": [
 			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|github-slugger)"
 		]
@@ -164,6 +162,7 @@
 		"node": ">=18"
 	},
 	"resolutions": {
-		"@types/react": "18.3.18"
+		"@types/react": "19.0.8",
+		"**/pretty-format/react-is": "19.0.0"
 	}
 }

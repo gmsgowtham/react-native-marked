@@ -6,8 +6,8 @@ import {
 	waitFor,
 } from "@testing-library/react-native";
 import Renderer from "../Renderer";
-import getStyles from "./../../theme/styles";
-import type { MarkedStyles } from "./../../theme/types";
+import getStyles from "../../theme/styles";
+import type { MarkedStyles } from "../../theme/types";
 import type { ReactElement } from "react";
 
 jest.mock("react-native/Libraries/Linking/Linking", () => ({
@@ -66,7 +66,10 @@ describe("Renderer", () => {
 					);
 					const r = render(LinkNode as ReactElement);
 					expect(screen.queryByText("Link")).toBeTruthy();
-					fireEvent.press(screen.queryByText("Link"));
+					const link = screen.queryByText("Link");
+					if (link) {
+						fireEvent.press(link);
+					}
 					expect(Linking.openURL).toHaveBeenCalled();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();

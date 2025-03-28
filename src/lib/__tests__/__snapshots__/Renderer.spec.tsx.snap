@@ -635,349 +635,121 @@ exports[`Renderer dark theme getImageNode returns a Image 1`] = `
 `;
 
 exports[`Renderer dark theme getListNode returns Ordered List 1`] = `
-[
+<View
+  style={
+    [
+      {
+        "alignSelf": "stretch",
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+      },
+      undefined,
+    ]
+  }
+  testID="marked-list-item"
+>
   <View
     style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
+      {
+        "padding": 24,
+      }
     }
-    testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#ffffff",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 28.799999999999997,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        1. 
-      </Text>
-    </View>
     <Text
-      selectable={true}
       style={
-        {
-          "color": "#ffffff",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
+        [
+          {
+            "alignSelf": "flex-end",
+            "color": "#ffffff",
+            "flexGrow": 0,
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "textAlign": "right",
+          },
+          {
+            "width": 28.799999999999997,
+          },
+        ]
       }
+      testID="marker-box"
     >
-      Hello world 1
+      1. 
     </Text>
-  </View>,
-  <View
+  </View>
+  <Text
+    selectable={true}
     style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
+      {
+        "color": "#ffffff",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "lineHeight": 24,
+      }
     }
-    testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#ffffff",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 28.799999999999997,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        2. 
-      </Text>
-    </View>
-    <Text
-      selectable={true}
-      style={
-        {
-          "color": "#ffffff",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
-      }
-    >
-      Hello world 2
-    </Text>
-  </View>,
-  <View
-    style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
-    }
-    testID="marked-list-item"
-  >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#ffffff",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 28.799999999999997,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        3. 
-      </Text>
-    </View>
-    <Text
-      selectable={true}
-      style={
-        {
-          "color": "#ffffff",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
-      }
-    >
-      Hello world 3
-    </Text>
-  </View>,
-]
+    Hello world 1
+  </Text>
+</View>
 `;
 
 exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
-[
+<View
+  style={
+    [
+      {
+        "alignSelf": "stretch",
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+      },
+      undefined,
+    ]
+  }
+  testID="marked-list-item"
+>
   <View
     style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
+      {
+        "padding": 24,
+      }
     }
-    testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#ffffff",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 19.2,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        • 
-      </Text>
-    </View>
     <Text
-      selectable={true}
       style={
-        {
-          "color": "#ffffff",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
+        [
+          {
+            "alignSelf": "flex-end",
+            "color": "#ffffff",
+            "flexGrow": 0,
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "textAlign": "right",
+          },
+          {
+            "width": 19.2,
+          },
+        ]
       }
+      testID="marker-box"
     >
-      Hello world 1
+      • 
     </Text>
-  </View>,
-  <View
+  </View>
+  <Text
+    selectable={true}
     style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
+      {
+        "color": "#ffffff",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "lineHeight": 24,
+      }
     }
-    testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#ffffff",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 19.2,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        • 
-      </Text>
-    </View>
-    <Text
-      selectable={true}
-      style={
-        {
-          "color": "#ffffff",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
-      }
-    >
-      Hello world 2
-    </Text>
-  </View>,
-  <View
-    style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
-    }
-    testID="marked-list-item"
-  >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#ffffff",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 19.2,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        • 
-      </Text>
-    </View>
-    <Text
-      selectable={true}
-      style={
-        {
-          "color": "#ffffff",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
-      }
-    >
-      Hello world 3
-    </Text>
-  </View>,
-]
+    Hello world 1
+  </Text>
+</View>
 `;
 
 exports[`Renderer light theme Link Nodes returns a Text Link node 1`] = `
@@ -1615,347 +1387,119 @@ exports[`Renderer light theme getImageNode returns a Image 1`] = `
 `;
 
 exports[`Renderer light theme getListNode returns Ordered List 1`] = `
-[
+<View
+  style={
+    [
+      {
+        "alignSelf": "stretch",
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+      },
+      undefined,
+    ]
+  }
+  testID="marked-list-item"
+>
   <View
     style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
+      {
+        "padding": 24,
+      }
     }
-    testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#333333",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 28.799999999999997,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        1. 
-      </Text>
-    </View>
     <Text
-      selectable={true}
       style={
-        {
-          "color": "#333333",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
+        [
+          {
+            "alignSelf": "flex-end",
+            "color": "#333333",
+            "flexGrow": 0,
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "textAlign": "right",
+          },
+          {
+            "width": 28.799999999999997,
+          },
+        ]
       }
+      testID="marker-box"
     >
-      Hello world 1
+      1. 
     </Text>
-  </View>,
-  <View
+  </View>
+  <Text
+    selectable={true}
     style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
+      {
+        "color": "#333333",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "lineHeight": 24,
+      }
     }
-    testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#333333",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 28.799999999999997,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        2. 
-      </Text>
-    </View>
-    <Text
-      selectable={true}
-      style={
-        {
-          "color": "#333333",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
-      }
-    >
-      Hello world 2
-    </Text>
-  </View>,
-  <View
-    style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
-    }
-    testID="marked-list-item"
-  >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#333333",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 28.799999999999997,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        3. 
-      </Text>
-    </View>
-    <Text
-      selectable={true}
-      style={
-        {
-          "color": "#333333",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
-      }
-    >
-      Hello world 3
-    </Text>
-  </View>,
-]
+    Hello world 1
+  </Text>
+</View>
 `;
 
 exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
-[
+<View
+  style={
+    [
+      {
+        "alignSelf": "stretch",
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+      },
+      undefined,
+    ]
+  }
+  testID="marked-list-item"
+>
   <View
     style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
+      {
+        "padding": 24,
+      }
     }
-    testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#333333",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 19.2,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        • 
-      </Text>
-    </View>
     <Text
-      selectable={true}
       style={
-        {
-          "color": "#333333",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
+        [
+          {
+            "alignSelf": "flex-end",
+            "color": "#333333",
+            "flexGrow": 0,
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "textAlign": "right",
+          },
+          {
+            "width": 19.2,
+          },
+        ]
       }
+      testID="marker-box"
     >
-      Hello world 1
+      • 
     </Text>
-  </View>,
-  <View
+  </View>
+  <Text
+    selectable={true}
     style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
+      {
+        "color": "#333333",
+        "flexShrink": 1,
+        "fontSize": 16,
+        "lineHeight": 24,
+      }
     }
-    testID="marked-list-item"
   >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#333333",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 19.2,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        • 
-      </Text>
-    </View>
-    <Text
-      selectable={true}
-      style={
-        {
-          "color": "#333333",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
-      }
-    >
-      Hello world 2
-    </Text>
-  </View>,
-  <View
-    style={
-      [
-        {
-          "alignSelf": "stretch",
-          "flexDirection": "row",
-          "flexWrap": "nowrap",
-        },
-        undefined,
-      ]
-    }
-    testID="marked-list-item"
-  >
-    <View
-      style={
-        {
-          "padding": 24,
-        }
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "alignSelf": "flex-end",
-              "color": "#333333",
-              "flexGrow": 0,
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-              "textAlign": "right",
-            },
-            {
-              "width": 19.2,
-            },
-          ]
-        }
-        testID="marker-box"
-      >
-        • 
-      </Text>
-    </View>
-    <Text
-      selectable={true}
-      style={
-        {
-          "color": "#333333",
-          "flexShrink": 1,
-          "fontSize": 16,
-          "lineHeight": 24,
-        }
-      }
-    >
-      Hello world 3
-    </Text>
-  </View>,
-]
+    Hello world 1
+  </Text>
+</View>
 `;
