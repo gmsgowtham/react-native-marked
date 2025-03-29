@@ -1,9 +1,4 @@
-import React, {
-	memo,
-	useCallback,
-	type ReactElement,
-	type ReactNode,
-} from "react";
+import React, { useCallback, type ReactElement, type ReactNode } from "react";
 import { FlatList, useColorScheme } from "react-native";
 import type { MarkdownProps } from "./types";
 import useMarkdown from "../hooks/useMarkdown";
@@ -53,4 +48,4 @@ const Markdown = ({
 	);
 };
 
-export default memo(Markdown);
+export default Markdown;
