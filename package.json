@@ -35,11 +35,7 @@
 		"test:updateSnapshot": "jest --updateSnapshot",
 		"reassure": "reassure"
 	},
-	"keywords": [
-		"react-native",
-		"markdown",
-		"react-native markdown"
-	],
+	"keywords": ["react-native", "markdown", "react-native markdown"],
 	"repository": "https://github.com/gmsgowtham/react-native-marked",
 	"author": "Gowtham G <webappsbygowtham@gmail.com> (https://github.com/gmsgowtham)",
 	"license": "MIT",
@@ -97,9 +93,7 @@
 		]
 	},
 	"commitlint": {
-		"extends": [
-			"@commitlint/config-conventional"
-		],
+		"extends": ["@commitlint/config-conventional"],
 		"rules": {
 			"type-enum": [
 				2,
