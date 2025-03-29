@@ -9061,10 +9061,10 @@ react-is@19.1.0, react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.1.0.tgz#805bce321546b7e14c084989c77022351bbdd11b"
   integrity sha512-Oe56aUPnkHyyDxxkvqtd7KkdQP5uIUfHxd5XTb3wE9d/kRnZLmKbDB0GWk919tdQ+mxxPtG6EAs6RMT6i1qtHg==
 
-react-native-builder-bob@0.38.4:
-  version "0.38.4"
-  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.38.4.tgz#50e58954eb90b3bb1721d186ca28bf88fb165e5f"
-  integrity sha512-mWQUM+zaBL3bjfhnSYTqo0fcm2vqItiBsSo2bUzkIZud+mHcJ+0unfWK6kn1JC9OV9LocxU7rRpKm7fE3dCkkw==
+react-native-builder-bob@0.39.0:
+  version "0.39.0"
+  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.39.0.tgz#315da61b49ac4b3264979b1500bafc98ee7ba29c"
+  integrity sha512-iSypV275h/0fv+ivzQqFKW2xxrJmf+wlfK/ocvTDNU4jjDK7+NaWSO609EBz4w4bIFk+cCkuDqDlpfCZg32x0g==
   dependencies:
     "@babel/core" "^7.25.2"
     "@babel/plugin-transform-strict-mode" "^7.24.7"
@@ -9074,7 +9074,6 @@ react-native-builder-bob@0.38.4:
     "@babel/preset-typescript" "^7.24.7"
     babel-plugin-module-resolver "^5.0.2"
     browserslist "^4.20.4"
-    cosmiconfig "^9.0.0"
     cross-spawn "^7.0.3"
     dedent "^0.7.0"
     del "^6.1.1"
