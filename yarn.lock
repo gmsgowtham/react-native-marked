@@ -10,6 +10,18 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
+"@ark/schema@0.45.7":
+  version "0.45.7"
+  resolved "https://registry.yarnpkg.com/@ark/schema/-/schema-0.45.7.tgz#9f3abbde4b906098c4ddb64720c2b17dc4f762bd"
+  integrity sha512-TS8jHOkAwRLviu84a7PQGebQ8PzGfxeAznJX3AzaXbb9bOYrtCiqo52/BWBwptc7pZJxL0ejN4Yufgb9YsNALw==
+  dependencies:
+    "@ark/util" "0.45.7"
+
+"@ark/util@0.45.7":
+  version "0.45.7"
+  resolved "https://registry.yarnpkg.com/@ark/util/-/util-0.45.7.tgz#0cc907292dc5f1bbb2b06641e268c31530f112d5"
+  integrity sha512-ymzzU8C8W+tQzkOIcaLWx4lLXSe5AnF3lpmAtc2FqkxLEVwRnyeKCYPOVXuttLjMwv8R4S/0D0E2cwmUUzim2Q==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.18.6":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
@@ -4318,6 +4330,14 @@ argparse@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
+
+arktype@^2.1.15:
+  version "2.1.17"
+  resolved "https://registry.yarnpkg.com/arktype/-/arktype-2.1.17.tgz#2d249ab0163e6b9538f08d157e176a65bbbeffb4"
+  integrity sha512-w1uDYt+5riOWhjLV7mho7UgofiXLyVWXpHC/Y6xkqVTi9ickuF8aNmEOne7fPN5eTT4Ub4HBfDD7JKJMSa4Htw==
+  dependencies:
+    "@ark/schema" "0.45.7"
+    "@ark/util" "0.45.7"
 
 array-ify@^1.0.0:
   version "1.0.0"
@@ -9061,10 +9081,10 @@ react-is@19.1.0, react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.1.0.tgz#805bce321546b7e14c084989c77022351bbdd11b"
   integrity sha512-Oe56aUPnkHyyDxxkvqtd7KkdQP5uIUfHxd5XTb3wE9d/kRnZLmKbDB0GWk919tdQ+mxxPtG6EAs6RMT6i1qtHg==
 
-react-native-builder-bob@0.39.1:
-  version "0.39.1"
-  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.39.1.tgz#45e02a4f188d3640eb76dbc1bdac3aaa48778aac"
-  integrity sha512-nEG9FB5a2Rxw0251dnlM9QtqvuM2os8avRhYDWDdvsZOnQJhQI4fGV5wF5FypAqHNWPQUNXmvhPUFrPSwiPnAQ==
+react-native-builder-bob@0.40.0:
+  version "0.40.0"
+  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.40.0.tgz#9b0d3bed68ec7f8d0c1d8c0613209bf62cf354d8"
+  integrity sha512-HHvEW0wHpUUZxIYIu4ZpoEJZCHyTgNsf3rJkNmxoZismncW+MXGNprOqau+BewI0FGMHk6C1Y+EYfLOz29u+gw==
   dependencies:
     "@babel/core" "^7.25.2"
     "@babel/plugin-transform-strict-mode" "^7.24.7"
@@ -9072,6 +9092,7 @@ react-native-builder-bob@0.39.1:
     "@babel/preset-flow" "^7.24.7"
     "@babel/preset-react" "^7.24.7"
     "@babel/preset-typescript" "^7.24.7"
+    arktype "^2.1.15"
     babel-plugin-module-resolver "^5.0.2"
     browserslist "^4.20.4"
     cross-spawn "^7.0.3"
