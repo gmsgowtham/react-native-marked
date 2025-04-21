@@ -8882,10 +8882,10 @@ pkg-up@^3.1.0:
   dependencies:
     find-up "^3.0.0"
 
-pod-install@0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.3.5.tgz#e9cf2c88783ac4b20b485a442b9bd24bd25f9b15"
-  integrity sha512-dtZGb0NYFMKd4DETfGgLt0m8mszlHfbijTJoslU4AZZe2JQe+HlDn489ieKr2WanidvfYPDEGJnJmIcab+vbOg==
+pod-install@0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.3.7.tgz#a29637880d433603289b21424341fea4547203bf"
+  integrity sha512-8/wF5c3phqqNZdKhdkGnoZu35ddUkxqLTyo9gpqs0LnNDTXTkNsrCBoBe1DTpmxqoTosX9PXKg0osr03/pKXyw==
 
 postinstall-postinstall@2.1.0:
   version "2.1.0"
