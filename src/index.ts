@@ -14,7 +14,7 @@ const MarkedLexer = marked.lexer;
 
 export type {
 	MarkdownProps,
-  MarkedStyles,
+	MarkedStyles,
 	ParserOptions,
 	RendererInterface,
 	useMarkdownHookOptions,
