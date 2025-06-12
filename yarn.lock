@@ -4079,10 +4079,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.2.tgz#17d42c6322d917764dd3d2d3a10d7884925de067"
   integrity sha512-cRMwIgdDN43GO4xMWAfJAecYn8wV4JbsOGHNfNUIDiuYkUYAR5ec4Rj7IO2SAhFPEfpPtLtUTbbny/TCT7aDwA==
 
-"@types/node@22.14.0":
-  version "22.14.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.14.0.tgz#d3bfa3936fef0dbacd79ea3eb17d521c628bb47e"
-  integrity sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA==
+"@types/node@22.15.31":
+  version "22.15.31"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.15.31.tgz#454f11e2061150135c8353d7f3b3b1823fca9f3f"
+  integrity sha512-jnVe5ULKl6tijxUhvQeNbQG/84fHfg+yMak02cT8QVhBx/F05rAVxCGBYYTh2EKz22D6JF5ktXuNwdx7b9iEGw==
   dependencies:
     undici-types "~6.21.0"
 
