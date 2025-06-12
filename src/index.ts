@@ -8,11 +8,13 @@ import type {
 	ParserOptions,
 	RendererInterface,
 } from "./lib/types";
+import type { MarkedStyles } from "./theme/types";
 
 const MarkedLexer = marked.lexer;
 
 export type {
 	MarkdownProps,
+	MarkedStyles,
 	ParserOptions,
 	RendererInterface,
 	useMarkdownHookOptions,
