@@ -70,7 +70,7 @@
 		"react": "19.1.0",
 		"react-native": "0.78.2",
 		"react-native-builder-bob": "0.39.1",
-		"react-native-svg": "15.11.2",
+		"react-native-svg": "15.12.0",
 		"reassure": "1.4.0",
 		"release-it": "19.0.1",
 		"typescript": "5.8.3",
