@@ -19,6 +19,8 @@ import type { RendererInterface } from "./types";
 import { getTableWidthArr } from "../utils/table";
 import MDSvg from "./../components/MDSvg";
 import MDTable from "./../components/MDTable";
+import type { Token } from "marked";
+import { superFastHash } from "../utils/hash";
 
 class Renderer implements RendererInterface {
 	private slugPrefix = "react-native-marked-ele";
@@ -30,16 +32,29 @@ class Renderer implements RendererInterface {
 		this.windowWidth = width;
 	}
 
-	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode {
-		return this.getViewNode(children, styles);
+	paragraph(
+		children: ReactNode[],
+		styles?: ViewStyle,
+		token?: Token,
+	): ReactNode {
+		return this.getViewNode(children, styles, token);
 	}
 
-	blockquote(children: ReactNode[], styles?: ViewStyle): ReactNode {
-		return this.getBlockquoteNode(children, styles);
+	blockquote(
+		children: ReactNode[],
+		styles?: ViewStyle,
+		token?: Token,
+	): ReactNode {
+		return this.getBlockquoteNode(children, styles, token);
 	}
 
-	heading(text: string | ReactNode[], styles?: TextStyle): ReactNode {
-		return this.getTextNode(text, styles);
+	heading(
+		text: string | ReactNode[],
+		styles?: TextStyle,
+		_depth?: number,
+		token?: Token,
+	): ReactNode {
+		return this.getTextNode(text, styles, token);
 	}
 
 	code(
@@ -47,11 +62,12 @@ class Renderer implements RendererInterface {
 		_language?: string,
 		containerStyle?: ViewStyle,
 		textStyle?: TextStyle,
+		token?: Token,
 	): ReactNode {
 		return (
 			<ScrollView
 				horizontal
-				key={this.getKey()}
+				key={this.getKey(token?.type, token?.raw)}
 				contentContainerStyle={containerStyle}
 			>
 				{/*
@@ -59,7 +75,7 @@ class Renderer implements RendererInterface {
 					Error: Cannot add a child that doesn't have a YogaNode to a parent without a measure function!
 					ref: https://github.com/facebook/react-native/issues/18773
 				*/}
-				<View>{this.getTextNode(text, textStyle)}</View>
+				<View>{this.getTextNode(text, textStyle, token)}</View>
 			</ScrollView>
 		);
 	}
@@ -68,8 +84,12 @@ class Renderer implements RendererInterface {
 		return this.getViewNode(null, styles);
 	}
 
-	listItem(children: ReactNode[], styles?: ViewStyle): ReactNode {
-		return this.getViewNode(children, styles);
+	listItem(
+		children: ReactNode[],
+		styles?: ViewStyle,
+		token?: Token,
+	): ReactNode {
+		return this.getViewNode(children, styles, token);
 	}
 
 	list(
@@ -100,13 +120,14 @@ class Renderer implements RendererInterface {
 		children: string | ReactNode[],
 		href: string,
 		styles?: TextStyle,
+		token?: Token,
 	): ReactNode {
 		return (
 			<Text
 				selectable
 				accessibilityRole="link"
 				accessibilityHint="Opens in a new window"
-				key={this.getKey()}
+				key={this.getKey(token?.type, token?.raw)}
 				onPress={onLinkPress(href)}
 				style={styles}
 			>
@@ -115,40 +136,65 @@ class Renderer implements RendererInterface {
 		);
 	}
 
-	image(uri: string, alt?: string, style?: ImageStyle): ReactNode {
-		const key = this.getKey();
+	image(
+		uri: string,
+		alt?: string,
+		style?: ImageStyle,
+		token?: Token,
+	): ReactNode {
+		const key = this.getKey(token?.type, token?.raw);
 		if (uri.endsWith(".svg")) {
 			return <MDSvg uri={uri} key={key} />;
 		}
 		return <MDImage key={key} uri={uri} alt={alt} style={style} />;
 	}
 
-	strong(children: string | ReactNode[], styles?: TextStyle): ReactNode {
-		return this.getTextNode(children, styles);
+	strong(
+		children: string | ReactNode[],
+		styles?: TextStyle,
+		token?: Token,
+	): ReactNode {
+		return this.getTextNode(children, styles, token);
 	}
 
-	em(children: string | ReactNode[], styles?: TextStyle): ReactNode {
-		return this.getTextNode(children, styles);
+	em(
+		children: string | ReactNode[],
+		styles?: TextStyle,
+		token?: Token,
+	): ReactNode {
+		return this.getTextNode(children, styles, token);
 	}
 
-	codespan(text: string, styles?: TextStyle): ReactNode {
-		return this.getTextNode(text, styles);
+	codespan(text: string, styles?: TextStyle, token?: Token): ReactNode {
+		return this.getTextNode(text, styles, token);
 	}
 
 	br(): ReactNode {
 		return this.getTextNode("\n", {});
 	}
 
-	del(children: string | ReactNode[], styles?: TextStyle): ReactNode {
-		return this.getTextNode(children, styles);
+	del(
+		children: string | ReactNode[],
+		styles?: TextStyle,
+		token?: Token,
+	): ReactNode {
+		return this.getTextNode(children, styles, token);
 	}
 
-	text(text: string | ReactNode[], styles?: TextStyle): ReactNode {
-		return this.getTextNode(text, styles);
+	text(
+		text: string | ReactNode[],
+		styles?: TextStyle,
+		token?: Token,
+	): ReactNode {
+		return this.getTextNode(text, styles, token);
 	}
 
-	html(text: string | ReactNode[], styles?: TextStyle): ReactNode {
-		return this.getTextNode(text, styles);
+	html(
+		text: string | ReactNode[],
+		styles?: TextStyle,
+		token?: Token,
+	): ReactNode {
+		return this.getTextNode(text, styles, token);
 	}
 
 	linkImage(
@@ -156,6 +202,7 @@ class Renderer implements RendererInterface {
 		imageUrl: string,
 		alt?: string,
 		style?: ImageStyle,
+		token?: Token,
 	): ReactNode {
 		const imageNode = this.image(imageUrl, alt, style);
 		return (
@@ -163,7 +210,7 @@ class Renderer implements RendererInterface {
 				accessibilityRole="link"
 				accessibilityHint="Opens in a new window"
 				onPress={onLinkPress(href)}
-				key={this.getKey()}
+				key={this.getKey(token?.type, token?.raw)}
 			>
 				{imageNode}
 			</TouchableHighlight>
@@ -192,16 +239,24 @@ class Renderer implements RendererInterface {
 		);
 	}
 
-	getKey(): string {
-		return this.slugger.slug(this.slugPrefix);
+	getKey(type = "", text = ""): string {
+		if (!type && !text) return this.slugger.slug(this.slugPrefix);
+
+		const hash = superFastHash(type + text);
+		return String(hash);
 	}
 
 	private getTextNode(
 		children: string | ReactNode[],
 		styles?: TextStyle,
+		token?: Token,
 	): ReactNode {
 		return (
-			<Text selectable key={this.getKey()} style={styles}>
+			<Text
+				selectable
+				key={this.getKey(token?.type, token?.raw)}
+				style={styles}
+			>
 				{children}
 			</Text>
 		);
@@ -210,9 +265,10 @@ class Renderer implements RendererInterface {
 	private getViewNode(
 		children: ReactNode[] | null,
 		styles?: ViewStyle,
+		token?: Token,
 	): ReactNode {
 		return (
-			<View key={this.getKey()} style={styles}>
+			<View key={this.getKey(token?.type, token?.raw)} style={styles}>
 				{children}
 			</View>
 		);
@@ -221,9 +277,10 @@ class Renderer implements RendererInterface {
 	private getBlockquoteNode(
 		children: ReactNode[],
 		styles?: ViewStyle,
+		token?: Token,
 	): ReactNode {
 		return (
-			<View key={this.getKey()} style={styles}>
+			<View key={this.getKey(token?.type, token?.raw)} style={styles}>
 				{children}
 			</View>
 		);
