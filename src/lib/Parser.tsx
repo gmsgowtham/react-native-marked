@@ -54,21 +54,25 @@ class Parser {
 					this.styles.text,
 				);
 
-				return this.renderer.paragraph(children, this.styles.paragraph);
+				return this.renderer.paragraph(children, this.styles.paragraph, token);
 			}
 			case "blockquote": {
 				const children = this.parse(token.tokens);
-				return this.renderer.blockquote(children, this.styles.blockquote);
+				return this.renderer.blockquote(
+					children,
+					this.styles.blockquote,
+					token,
+				);
 			}
 			case "heading": {
 				const styles = this.headingStylesMap[token.depth];
 
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.heading(token.text, styles, token.depth);
+					return this.renderer.heading(token.text, styles, token.depth, token);
 				}
 
 				const children = this._parse(token.tokens, styles);
-				return this.renderer.heading(children, styles, token.depth);
+				return this.renderer.heading(children, styles, token.depth, token);
 			}
 			case "code": {
 				return this.renderer.code(
@@ -76,6 +80,7 @@ class Parser {
 					token.lang,
 					this.styles.code,
 					this.styles.em,
+					token,
 				);
 			}
 			case "hr": {
@@ -104,7 +109,7 @@ class Parser {
 						return this._parseToken(cItem);
 					});
 
-					return this.renderer.listItem(children, this.styles.li);
+					return this.renderer.listItem(children, this.styles.li, token);
 				});
 
 				return this.renderer.list(
@@ -139,17 +144,18 @@ class Parser {
 				const href = getValidURL(this.baseUrl, token.href);
 
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.link(token.text, href, linkStyle);
+					return this.renderer.link(token.text, href, linkStyle, token);
 				}
 
 				const children = this._parse(token.tokens, linkStyle);
-				return this.renderer.link(children, href, linkStyle);
+				return this.renderer.link(children, href, linkStyle, token);
 			}
 			case "image": {
 				return this.renderer.image(
 					token.href,
 					token.text || token.title,
 					this.styles.image,
+					token,
 				);
 			}
 			case "strong": {
@@ -158,11 +164,11 @@ class Parser {
 					...styles,
 				};
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.strong(token.text, boldStyle);
+					return this.renderer.strong(token.text, boldStyle, token);
 				}
 
 				const children = this._parse(token.tokens, boldStyle);
-				return this.renderer.strong(children, boldStyle);
+				return this.renderer.strong(children, boldStyle, token);
 			}
 			case "em": {
 				const italicStyle = {
@@ -170,17 +176,21 @@ class Parser {
 					...styles,
 				};
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.em(token.text, italicStyle);
+					return this.renderer.em(token.text, italicStyle, token);
 				}
 
 				const children = this._parse(token.tokens, italicStyle);
-				return this.renderer.em(children, italicStyle);
+				return this.renderer.em(children, italicStyle, token);
 			}
 			case "codespan": {
-				return this.renderer.codespan(decode(token.text), {
-					...this.styles.codespan,
-					...styles,
-				});
+				return this.renderer.codespan(
+					decode(token.text),
+					{
+						...this.styles.codespan,
+						...styles,
+					},
+					token,
+				);
 			}
 			case "br": {
 				return this.renderer.br();
@@ -191,25 +201,33 @@ class Parser {
 					...styles,
 				};
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.del(token.text, strikethroughStyle);
+					return this.renderer.del(token.text, strikethroughStyle, token);
 				}
 
 				const children = this._parse(token.tokens, strikethroughStyle);
-				return this.renderer.del(children, strikethroughStyle);
+				return this.renderer.del(children, strikethroughStyle, token);
 			}
 			case "text":
-				return this.renderer.text(token.raw, {
-					...this.styles.text,
-					...styles,
-				});
+				return this.renderer.text(
+					token.raw,
+					{
+						...this.styles.text,
+						...styles,
+					},
+					token,
+				);
 			case "html": {
 				console.warn(
 					"react-native-marked: rendering html from markdown is not supported",
 				);
-				return this.renderer.html(token.raw, {
-					...this.styles.text,
-					...styles,
-				});
+				return this.renderer.html(
+					token.raw,
+					{
+						...this.styles.text,
+						...styles,
+					},
+					token,
+				);
 			}
 			case "table": {
 				const header = (token as Tokens.Table).header.map((row, i) =>
