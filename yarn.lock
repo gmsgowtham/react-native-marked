@@ -3004,10 +3004,10 @@
     "@types/semver" "^7.5.5"
     semver "^7.5.2"
 
-"@evilmartians/lefthook@1.11.13":
-  version "1.11.13"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.11.13.tgz#e46515545a1d3c69d2fc983346b39d10d83bace4"
-  integrity sha512-CcR9u7lb3uCKD+295S2GfhROI6q9npTsJ/E07XupZZFO8sdYHm3Uo3x8t+lzKmI/7rCFA2t0MWRggjNrxpjXFg==
+"@evilmartians/lefthook@1.11.14":
+  version "1.11.14"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.11.14.tgz#34d9544b605b3073b8552eb376ebdf7730d7595f"
+  integrity sha512-vh6lqXVwh7uhI5C/gKB7InW8RyMFYXN27U4Hlum8ZBcDrOviF9fmcBJf4C6ZboWkD3j8v1qp4psc3bwynhPlTQ==
 
 "@gitbeaker/core@^38.12.1":
   version "38.12.1"
