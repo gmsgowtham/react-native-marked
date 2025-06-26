@@ -17,7 +17,16 @@
 		"enabled": true
 	},
 	"files": {
-		"includes": ["src/**", "examples/**", "dangerfile.ts"]
+		"includes": [
+			"src/**",
+			"examples/**",
+			"dangerfile.ts",
+			"biome.json",
+			"package.json",
+			"renovate.json",
+			"tsconfig.json",
+			"babel.config.js"
+		]
 	},
 	"javascript": {
 		"jsxRuntime": "reactClassic"
