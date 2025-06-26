@@ -1,15 +1,15 @@
 import React, { type ReactNode } from "react";
 import {
 	SafeAreaView,
-	StyleSheet,
 	StatusBar,
-	useColorScheme,
+	StyleSheet,
 	Text,
 	type TextStyle,
+	useColorScheme,
 } from "react-native";
 import Markdown, {
-	Renderer,
 	MarkedTokenizer,
+	Renderer,
 	type RendererInterface,
 	type Tokens,
 } from "react-native-marked";
@@ -17,7 +17,7 @@ import { MD_STRING } from "./const";
 
 class CustomTokenizer extends MarkedTokenizer {
 	codespan(this: MarkedTokenizer, src: string): Tokens.Codespan | undefined {
-		const match = src.match(/^\$+([^\$\n]+?)\$+/);
+		const match = src.match(/^\$+([^$\n]+?)\$+/);
 		if (match?.[1]) {
 			return {
 				type: "codespan",

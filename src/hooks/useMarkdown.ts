@@ -1,11 +1,11 @@
-import { useMemo, type ReactNode } from "react";
 import { lexer, type Tokenizer } from "marked";
-import type { MarkedStyles, UserTheme } from "./../theme/types";
+import { type ReactNode, useMemo } from "react";
+import type { ColorSchemeName } from "react-native";
 import Parser from "../lib/Parser";
 import Renderer from "../lib/Renderer";
-import getStyles from "./../theme/styles";
-import type { ColorSchemeName } from "react-native";
 import type { RendererInterface } from "../lib/types";
+import getStyles from "./../theme/styles";
+import type { MarkedStyles, UserTheme } from "./../theme/types";
 
 export interface useMarkdownHookOptions {
 	colorScheme?: ColorSchemeName;

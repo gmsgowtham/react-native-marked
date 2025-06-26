@@ -1,6 +1,6 @@
 import colors from "../colors";
-import type { MarkedStyles } from "../types";
 import getStyles from "./../styles";
+import type { MarkedStyles } from "../types";
 
 describe("getStyles", () => {
 	it("light scheme", () => {

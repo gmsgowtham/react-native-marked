@@ -1,11 +1,11 @@
-import type { ReactNode } from "react";
-import type { TextStyle, ViewStyle, ImageStyle } from "react-native";
-import type { Token, Tokens } from "marked";
 import { decode } from "html-entities";
+import type { Token, Tokens } from "marked";
+import type { ReactNode } from "react";
+import type { ImageStyle, TextStyle, ViewStyle } from "react-native";
 import type { MarkedStyles } from "../theme/types";
-import type { RendererInterface, ParserOptions } from "./types";
-import { getValidURL } from "./../utils/url";
 import { getTableColAlignmentStyle } from "./../utils/table";
+import { getValidURL } from "./../utils/url";
+import type { ParserOptions, RendererInterface } from "./types";
 
 class Parser {
 	private renderer: RendererInterface;

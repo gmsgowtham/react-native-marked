@@ -1,14 +1,14 @@
-import { Linking, type ColorSchemeName } from "react-native";
 import {
 	fireEvent,
 	render,
 	screen,
 	waitFor,
 } from "@testing-library/react-native";
-import Renderer from "../Renderer";
+import type { ReactElement } from "react";
+import { type ColorSchemeName, Linking } from "react-native";
 import getStyles from "../../theme/styles";
 import type { MarkedStyles } from "../../theme/types";
-import type { ReactElement } from "react";
+import Renderer from "../Renderer";
 
 jest.mock("react-native/Libraries/Linking/Linking", () => ({
 	openURL: jest.fn(() => Promise.resolve("mockResolve")),

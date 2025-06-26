@@ -1,7 +1,7 @@
-import React, { useCallback, type ReactElement, type ReactNode } from "react";
+import React, { type ReactElement, type ReactNode, useCallback } from "react";
 import { FlatList, useColorScheme } from "react-native";
-import type { MarkdownProps } from "./types";
 import useMarkdown from "../hooks/useMarkdown";
+import type { MarkdownProps } from "./types";
 
 const Markdown = ({
 	value,

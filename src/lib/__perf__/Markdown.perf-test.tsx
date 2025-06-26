@@ -1,9 +1,9 @@
+import { screen } from "@testing-library/react-native";
 import React from "react";
 import { StyleSheet } from "react-native";
-import { screen } from "@testing-library/react-native";
 import { measureRenders } from "reassure";
-import Markdown from "../Markdown";
 import type { MarkedStyles, UserTheme } from "../../theme/types";
+import Markdown from "../Markdown";
 
 const mdString = `Markdown Quick Reference
 ========================

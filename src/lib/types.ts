@@ -1,12 +1,12 @@
+import type { Tokenizer } from "marked";
 import type { ReactNode } from "react";
 import type {
 	FlatListProps,
-	ViewStyle,
-	TextStyle,
 	ImageStyle,
+	TextStyle,
+	ViewStyle,
 } from "react-native";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
-import type { Tokenizer } from "marked";
 
 export interface ParserOptions {
 	styles?: MarkedStyles;

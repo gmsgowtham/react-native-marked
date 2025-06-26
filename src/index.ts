@@ -1,8 +1,8 @@
-import { Tokenizer as MarkedTokenizer, marked } from "marked";
 import type { Token, Tokens } from "marked";
+import { Tokenizer as MarkedTokenizer, marked } from "marked";
+import useMarkdown, { type useMarkdownHookOptions } from "./hooks/useMarkdown";
 import Markdown from "./lib/Markdown";
 import Renderer from "./lib/Renderer";
-import useMarkdown, { type useMarkdownHookOptions } from "./hooks/useMarkdown";
 import type {
 	MarkdownProps,
 	ParserOptions,

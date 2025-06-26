@@ -1,4 +1,4 @@
-import { getTableWidthArr, getTableColAlignmentStyle } from "./../table";
+import { getTableColAlignmentStyle, getTableWidthArr } from "./../table";
 
 describe("getTableWidthArr", () => {
 	const windowWidth = 360;
