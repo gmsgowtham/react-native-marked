@@ -1,11 +1,11 @@
 import React, {
-	memo,
 	type FunctionComponent,
+	memo,
 	useEffect,
-	useState,
 	useRef,
+	useState,
 } from "react";
-import { ActivityIndicator, View, type LayoutChangeEvent } from "react-native";
+import { ActivityIndicator, type LayoutChangeEvent, View } from "react-native";
 import { SvgFromXml } from "react-native-svg";
 import { getSvgDimensions } from "./../utils/svg";
 
@@ -55,7 +55,7 @@ const MDSvg: FunctionComponent<MDSvgProps> = ({ uri, alt = "image" }) => {
 					error: false,
 					aspectRatio: width / height,
 				});
-			} catch (e) {
+			} catch (_e) {
 				setSvgState((state) => ({
 					...state,
 					error: true,

@@ -1,24 +1,24 @@
+import Decimal from "@jsamr/counter-style/presets/decimal";
+import Disc from "@jsamr/counter-style/presets/disc";
+import MarkedList from "@jsamr/react-native-li";
+import Slugger from "github-slugger";
 import React, { type ReactNode } from "react";
 import {
-	ScrollView,
-	View,
-	Text,
-	TouchableHighlight,
-	type TextStyle,
-	type ViewStyle,
-	type ImageStyle,
 	Dimensions,
+	type ImageStyle,
+	ScrollView,
+	Text,
+	type TextStyle,
+	TouchableHighlight,
+	View,
+	type ViewStyle,
 } from "react-native";
-import MarkedList from "@jsamr/react-native-li";
-import Disc from "@jsamr/counter-style/presets/disc";
-import Decimal from "@jsamr/counter-style/presets/decimal";
-import Slugger from "github-slugger";
 import MDImage from "./../components/MDImage";
-import { onLinkPress } from "../utils/handlers";
-import type { RendererInterface } from "./types";
-import { getTableWidthArr } from "../utils/table";
 import MDSvg from "./../components/MDSvg";
 import MDTable from "./../components/MDTable";
+import { onLinkPress } from "../utils/handlers";
+import { getTableWidthArr } from "../utils/table";
+import type { RendererInterface } from "./types";
 
 class Renderer implements RendererInterface {
 	private slugPrefix = "react-native-marked-ele";

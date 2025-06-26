@@ -1,10 +1,10 @@
-import React, { type ReactNode } from "react";
 import { render, screen, waitFor } from "@testing-library/react-native";
+import { Tokenizer, type Tokens } from "marked";
+import React, { type ReactNode } from "react";
 import { Text, type TextStyle } from "react-native";
 import Markdown from "../Markdown";
 import Renderer from "../Renderer";
 import type { RendererInterface } from "../types";
-import { Tokenizer, type Tokens } from "marked";
 
 // https://www.markdownguide.org/basic-syntax/#headings
 describe("Headings", () => {
@@ -826,7 +826,7 @@ describe("Tokenizer", () => {
 
 		class CustomTokenizer extends Tokenizer {
 			codespan(src: string): Tokens.Codespan | undefined {
-				const match = src.match(/^\$+([^\$\n]+?)\$+/);
+				const match = src.match(/^\$+([^$\n]+?)\$+/);
 				if (match?.[1]) {
 					return {
 						type: "codespan",

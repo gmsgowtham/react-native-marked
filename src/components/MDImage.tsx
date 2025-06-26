@@ -6,8 +6,8 @@ import React, {
 } from "react";
 import {
 	ActivityIndicator,
-	ImageBackground,
 	Image,
+	ImageBackground,
 	type ImageStyle,
 } from "react-native";
 
@@ -34,10 +34,6 @@ const MDImage: FunctionComponent<MDImageProps> = ({
 		aspectRatio: undefined,
 	});
 
-	useEffect(() => {
-		fetchOriginalSizeFromRemoteImage();
-	}, []);
-
 	/**
 	 * Fetches image dimension
 	 * Sets aspect ratio if resolved
@@ -62,6 +58,10 @@ const MDImage: FunctionComponent<MDImageProps> = ({
 			},
 		);
 	};
+
+	useEffect(() => {
+		fetchOriginalSizeFromRemoteImage();
+	});
 
 	return (
 		<ImageBackground

@@ -1,6 +1,6 @@
-import React, { memo, type FunctionComponent, type ReactNode } from "react";
-import { View, ScrollView, type ViewStyle } from "react-native";
-import { Table, TableWrapper, Cell } from "react-native-reanimated-table";
+import React, { type FunctionComponent, memo, type ReactNode } from "react";
+import { ScrollView, View, type ViewStyle } from "react-native";
+import { Cell, Table, TableWrapper } from "react-native-reanimated-table";
 
 type MDTableProps = {
 	header: ReactNode[][];
