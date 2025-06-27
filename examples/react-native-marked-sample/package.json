@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"@expo/metro-runtime": "~5.0.4",
+		"babel-plugin-react-compiler": "^19.0.0-beta-af1b7da-20250417",
 		"expo": "^53.0.13",
 		"expo-status-bar": "~2.2.3",
 		"react": "19.0.0",
