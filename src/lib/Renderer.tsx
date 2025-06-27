@@ -1,6 +1,3 @@
-import Decimal from "@jsamr/counter-style/presets/decimal";
-import Disc from "@jsamr/counter-style/presets/disc";
-import MarkedList from "@jsamr/react-native-li";
 import Slugger from "github-slugger";
 import React, { type ReactNode } from "react";
 import {
@@ -14,6 +11,7 @@ import {
 	type ViewStyle,
 } from "react-native";
 import MDImage from "./../components/MDImage";
+import MDList from "./../components/MDList";
 import MDSvg from "./../components/MDSvg";
 import MDTable from "./../components/MDTable";
 import { onLinkPress } from "../utils/handlers";
@@ -80,15 +78,14 @@ class Renderer implements RendererInterface {
 		startIndex?: number,
 	): ReactNode {
 		return (
-			<MarkedList
-				counterRenderer={ordered ? Decimal : Disc}
-				markerTextStyle={textStyle}
-				markerBoxStyle={listStyle}
+			<MDList
 				key={this.getKey()}
+				ordered={ordered}
+				li={li}
+				listStyle={listStyle}
+				textStyle={textStyle}
 				startIndex={startIndex}
-			>
-				{li.map((node) => node)}
-			</MarkedList>
+			/>
 		);
 	}
 
