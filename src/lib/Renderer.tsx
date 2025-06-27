@@ -10,8 +10,8 @@ import {
 	View,
 	type ViewStyle,
 } from "react-native";
-import MDList from "src/components/MDList";
 import MDImage from "./../components/MDImage";
+import MDList from "./../components/MDList";
 import MDSvg from "./../components/MDSvg";
 import MDTable from "./../components/MDTable";
 import { onLinkPress } from "../utils/handlers";

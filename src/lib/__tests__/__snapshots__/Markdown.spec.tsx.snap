@@ -302,31 +302,71 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
         >
           The quarterly results look great!
         </Text>
-        <MarkedList
-          counterRenderer={
-            {
-              "engine": {
-                "specs": {
-                  "fallback": {
-                    "maxCounterLenInRange": [Function],
-                    "renderCounter": [Function],
-                  },
-                  "negative": null,
-                  "padding": null,
-                  "prefix": null,
-                  "range": {
-                    "max": Infinity,
-                    "min": -Infinity,
-                  },
-                  "reversedCounter": false,
-                  "reversedMarker": false,
-                  "suffix": " ",
-                },
-              },
-            }
+        <Memo(MDList)
+          li={
+            [
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  selectable={true}
+                  style={{}}
+                >
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Revenue was off the chart.
+                  </Text>
+                </Text>
+              </View>,
+              <View
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  selectable={true}
+                  style={{}}
+                >
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Profits were higher than ever.
+                  </Text>
+                </Text>
+              </View>,
+            ]
           }
-          markerBoxStyle={{}}
-          markerTextStyle={
+          listStyle={{}}
+          ordered={false}
+          startIndex={1}
+          textStyle={
             {
               "color": "#333333",
               "flexShrink": 1,
@@ -334,65 +374,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
               "lineHeight": 24,
             }
           }
-          startIndex={1}
-        >
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            <Text
-              selectable={true}
-              style={{}}
-            >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                Revenue was off the chart.
-              </Text>
-            </Text>
-          </View>
-          <View
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            <Text
-              selectable={true}
-              style={{}}
-            >
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                Profits were higher than ever.
-              </Text>
-            </Text>
-          </View>
-        </MarkedList>
+        />
         <View
           style={
             {
@@ -5111,109 +5093,16 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
 <RCTScrollView
   data={
     [
-      <MarkedList
-        counterRenderer={
-          {
-            "engine": {
-              "specs": {
-                "fallback": {
-                  "maxCounterLenInRange": [Function],
-                  "renderCounter": [Function],
-                },
-                "negative": null,
-                "padding": null,
-                "prefix": null,
-                "range": {
-                  "max": Infinity,
-                  "min": -Infinity,
-                },
-                "reversedCounter": false,
-                "reversedMarker": false,
-                "suffix": " ",
-              },
-            },
-          }
-        }
-        markerBoxStyle={{}}
-        markerTextStyle={
-          {
-            "color": "#333333",
-            "flexShrink": 1,
-            "fontSize": 16,
-            "lineHeight": 24,
-          }
-        }
-        startIndex={1}
-      >
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              This is the first list item.
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Here's the second list item.
-            </Text>
-          </Text>
-          <View
-            style={
-              {
-                "borderLeftColor": "#d0d7de",
-                "borderLeftWidth": 4,
-                "opacity": 0.8,
-                "paddingLeft": 16,
-              }
-            }
-          >
+      <Memo(MDList)
+        li={
+          [
             <View
               style={
                 {
-                  "paddingVertical": 8,
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
               }
             >
@@ -5231,41 +5120,116 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
                     }
                   }
                 >
-                  A blockquote would look great below the second list item.
+                  This is the first list item.
                 </Text>
               </Text>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
+            </View>,
+            <View
               style={
                 {
                   "color": "#333333",
+                  "flexShrink": 1,
                   "fontSize": 16,
                   "lineHeight": 24,
                 }
               }
             >
-              And here's the third list item.
-            </Text>
-          </Text>
-        </View>
-      </MarkedList>,
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Here's the second list item.
+                </Text>
+              </Text>
+              <View
+                style={
+                  {
+                    "borderLeftColor": "#d0d7de",
+                    "borderLeftWidth": 4,
+                    "opacity": 0.8,
+                    "paddingLeft": 16,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "paddingVertical": 8,
+                    }
+                  }
+                >
+                  <Text
+                    selectable={true}
+                    style={{}}
+                  >
+                    <Text
+                      selectable={true}
+                      style={
+                        {
+                          "color": "#333333",
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                        }
+                      }
+                    >
+                      A blockquote would look great below the second list item.
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  And here's the third list item.
+                </Text>
+              </Text>
+            </View>,
+          ]
+        }
+        listStyle={{}}
+        ordered={false}
+        startIndex={1}
+        textStyle={
+          {
+            "color": "#333333",
+            "flexShrink": 1,
+            "fontSize": 16,
+            "lineHeight": 24,
+          }
+        }
+      />,
     ]
   }
   getItem={[Function]}
@@ -5543,31 +5507,128 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
 <RCTScrollView
   data={
     [
-      <MarkedList
-        counterRenderer={
-          {
-            "engine": {
-              "specs": {
-                "fallback": {
-                  "maxCounterLenInRange": [Function],
-                  "renderCounter": [Function],
-                },
-                "negative": null,
-                "padding": null,
-                "prefix": null,
-                "range": {
-                  "max": Infinity,
-                  "min": -Infinity,
-                },
-                "reversedCounter": false,
-                "reversedMarker": false,
-                "suffix": " ",
-              },
-            },
-          }
+      <Memo(MDList)
+        li={
+          [
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  This is the first list item.
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Here's the second list item.
+                </Text>
+              </Text>
+              <ScrollView
+                contentContainerStyle={
+                  {
+                    "backgroundColor": "#f6f8fa",
+                    "minWidth": "100%",
+                    "padding": 16,
+                  }
+                }
+                horizontal={true}
+              >
+                <View>
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "fontStyle": "italic",
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                      &lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;/html&gt;
+                  </Text>
+                </View>
+              </ScrollView>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  And here's the third list item.
+                </Text>
+              </Text>
+            </View>,
+          ]
         }
-        markerBoxStyle={{}}
-        markerTextStyle={
+        listStyle={{}}
+        ordered={false}
+        startIndex={1}
+        textStyle={
           {
             "color": "#333333",
             "flexShrink": 1,
@@ -5575,122 +5636,7 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             "lineHeight": 24,
           }
         }
-        startIndex={1}
-      >
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              This is the first list item.
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Here's the second list item.
-            </Text>
-          </Text>
-          <ScrollView
-            contentContainerStyle={
-              {
-                "backgroundColor": "#f6f8fa",
-                "minWidth": "100%",
-                "padding": 16,
-              }
-            }
-            horizontal={true}
-          >
-            <View>
-              <Text
-                selectable={true}
-                style={
-                  {
-                    "color": "#333333",
-                    "fontSize": 16,
-                    "fontStyle": "italic",
-                    "lineHeight": 24,
-                  }
-                }
-              >
-                  &lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-  &lt;/html&gt;
-              </Text>
-            </View>
-          </ScrollView>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              And here's the third list item.
-            </Text>
-          </Text>
-        </View>
-      </MarkedList>,
+      />,
     ]
   }
   getItem={[Function]}
@@ -5963,34 +5909,132 @@ exports[`Lists Elements in Lists: Images 1`] = `
 <RCTScrollView
   data={
     [
-      <MarkedList
-        counterRenderer={
-          {
-            "engine": {
-              "specs": {
-                "fallback": {
-                  "maxCounterLenInRange": [Function],
-                  "renderCounter": [Function],
-                },
-                "negative": {
-                  "prefix": "-",
-                  "suffix": "",
-                },
-                "padding": null,
-                "prefix": null,
-                "range": {
-                  "max": Infinity,
-                  "min": -Infinity,
-                },
-                "reversedCounter": false,
-                "reversedMarker": false,
-                "suffix": ". ",
-              },
-            },
-          }
+      <Memo(MDList)
+        li={
+          [
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Open the file containing the Linux mascot.
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Marvel at its beauty.
+                </Text>
+              </Text>
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                   
+                </Text>
+              </Text>
+              <Memo(MDImage)
+                alt={null}
+                style={
+                  {
+                    "resizeMode": "cover",
+                  }
+                }
+                uri="https://dummyimage.com/100x100/fff/aaa"
+              />
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Close the file.
+                </Text>
+              </Text>
+            </View>,
+          ]
         }
-        markerBoxStyle={{}}
-        markerTextStyle={
+        listStyle={{}}
+        ordered={true}
+        startIndex={1}
+        textStyle={
           {
             "color": "#333333",
             "flexShrink": 1,
@@ -5998,126 +6042,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
             "lineHeight": 24,
           }
         }
-        startIndex={1}
-      >
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Open the file containing the Linux mascot.
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Marvel at its beauty.
-            </Text>
-          </Text>
-          <Text
-            selectable={true}
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-               
-            </Text>
-          </Text>
-          <Memo(MDImage)
-            alt={null}
-            style={
-              {
-                "resizeMode": "cover",
-              }
-            }
-            uri="https://dummyimage.com/100x100/fff/aaa"
-          />
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Close the file.
-            </Text>
-          </Text>
-        </View>
-      </MarkedList>,
+      />,
     ]
   }
   getItem={[Function]}
@@ -6425,34 +6350,200 @@ exports[`Lists Elements in Lists: Lists 1`] = `
 <RCTScrollView
   data={
     [
-      <MarkedList
-        counterRenderer={
-          {
-            "engine": {
-              "specs": {
-                "fallback": {
-                  "maxCounterLenInRange": [Function],
-                  "renderCounter": [Function],
-                },
-                "negative": {
-                  "prefix": "-",
-                  "suffix": "",
-                },
-                "padding": null,
-                "prefix": null,
-                "range": {
-                  "max": Infinity,
-                  "min": -Infinity,
-                },
-                "reversedCounter": false,
-                "reversedMarker": false,
-                "suffix": ". ",
-              },
-            },
-          }
+      <Memo(MDList)
+        li={
+          [
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  First item
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Second item
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Third item
+                </Text>
+              </Text>
+              <Memo(MDList)
+                li={
+                  [
+                    <View
+                      style={
+                        {
+                          "color": "#333333",
+                          "flexShrink": 1,
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                        }
+                      }
+                    >
+                      <Text
+                        selectable={true}
+                        style={{}}
+                      >
+                        <Text
+                          selectable={true}
+                          style={
+                            {
+                              "color": "#333333",
+                              "fontSize": 16,
+                              "lineHeight": 24,
+                            }
+                          }
+                        >
+                          Indented item1
+                        </Text>
+                      </Text>
+                    </View>,
+                    <View
+                      style={
+                        {
+                          "color": "#333333",
+                          "flexShrink": 1,
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                        }
+                      }
+                    >
+                      <Text
+                        selectable={true}
+                        style={{}}
+                      >
+                        <Text
+                          selectable={true}
+                          style={
+                            {
+                              "color": "#333333",
+                              "fontSize": 16,
+                              "lineHeight": 24,
+                            }
+                          }
+                        >
+                          Indented item2
+                        </Text>
+                      </Text>
+                    </View>,
+                  ]
+                }
+                listStyle={{}}
+                ordered={false}
+                startIndex={1}
+                textStyle={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              />
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Fourth item
+                </Text>
+              </Text>
+            </View>,
+          ]
         }
-        markerBoxStyle={{}}
-        markerTextStyle={
+        listStyle={{}}
+        ordered={true}
+        startIndex={1}
+        textStyle={
           {
             "color": "#333333",
             "flexShrink": 1,
@@ -6460,212 +6551,7 @@ exports[`Lists Elements in Lists: Lists 1`] = `
             "lineHeight": 24,
           }
         }
-        startIndex={1}
-      >
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              First item
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Second item
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Third item
-            </Text>
-          </Text>
-          <MarkedList
-            counterRenderer={
-              {
-                "engine": {
-                  "specs": {
-                    "fallback": {
-                      "maxCounterLenInRange": [Function],
-                      "renderCounter": [Function],
-                    },
-                    "negative": null,
-                    "padding": null,
-                    "prefix": null,
-                    "range": {
-                      "max": Infinity,
-                      "min": -Infinity,
-                    },
-                    "reversedCounter": false,
-                    "reversedMarker": false,
-                    "suffix": " ",
-                  },
-                },
-              }
-            }
-            markerBoxStyle={{}}
-            markerTextStyle={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-            startIndex={1}
-          >
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              <Text
-                selectable={true}
-                style={{}}
-              >
-                <Text
-                  selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
-                >
-                  Indented item1
-                </Text>
-              </Text>
-            </View>
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              <Text
-                selectable={true}
-                style={{}}
-              >
-                <Text
-                  selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
-                >
-                  Indented item2
-                </Text>
-              </Text>
-            </View>
-          </MarkedList>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Fourth item
-            </Text>
-          </Text>
-        </View>
-      </MarkedList>,
+      />,
     ]
   }
   getItem={[Function]}
@@ -7108,31 +6994,116 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
 <RCTScrollView
   data={
     [
-      <MarkedList
-        counterRenderer={
-          {
-            "engine": {
-              "specs": {
-                "fallback": {
-                  "maxCounterLenInRange": [Function],
-                  "renderCounter": [Function],
-                },
-                "negative": null,
-                "padding": null,
-                "prefix": null,
-                "range": {
-                  "max": Infinity,
-                  "min": -Infinity,
-                },
-                "reversedCounter": false,
-                "reversedMarker": false,
-                "suffix": " ",
-              },
-            },
-          }
+      <Memo(MDList)
+        li={
+          [
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  This is the first list item.
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Here's the second list item.
+                </Text>
+              </Text>
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                    I need to add another paragraph below the second list item.
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  And here's the third list item.
+                </Text>
+              </Text>
+            </View>,
+          ]
         }
-        markerBoxStyle={{}}
-        markerTextStyle={
+        listStyle={{}}
+        ordered={false}
+        startIndex={1}
+        textStyle={
           {
             "color": "#333333",
             "flexShrink": 1,
@@ -7140,110 +7111,7 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             "lineHeight": 24,
           }
         }
-        startIndex={1}
-      >
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              This is the first list item.
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Here's the second list item.
-            </Text>
-          </Text>
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-                I need to add another paragraph below the second list item.
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              And here's the third list item.
-            </Text>
-          </Text>
-        </View>
-      </MarkedList>,
+      />,
     ]
   }
   getItem={[Function]}
@@ -7502,34 +7370,200 @@ exports[`Lists Ordered Lists 1`] = `
 <RCTScrollView
   data={
     [
-      <MarkedList
-        counterRenderer={
-          {
-            "engine": {
-              "specs": {
-                "fallback": {
-                  "maxCounterLenInRange": [Function],
-                  "renderCounter": [Function],
-                },
-                "negative": {
-                  "prefix": "-",
-                  "suffix": "",
-                },
-                "padding": null,
-                "prefix": null,
-                "range": {
-                  "max": Infinity,
-                  "min": -Infinity,
-                },
-                "reversedCounter": false,
-                "reversedMarker": false,
-                "suffix": ". ",
-              },
-            },
-          }
+      <Memo(MDList)
+        li={
+          [
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  First item
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Second item
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Third item
+                </Text>
+              </Text>
+              <Memo(MDList)
+                li={
+                  [
+                    <View
+                      style={
+                        {
+                          "color": "#333333",
+                          "flexShrink": 1,
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                        }
+                      }
+                    >
+                      <Text
+                        selectable={true}
+                        style={{}}
+                      >
+                        <Text
+                          selectable={true}
+                          style={
+                            {
+                              "color": "#333333",
+                              "fontSize": 16,
+                              "lineHeight": 24,
+                            }
+                          }
+                        >
+                          Indented item1
+                        </Text>
+                      </Text>
+                    </View>,
+                    <View
+                      style={
+                        {
+                          "color": "#333333",
+                          "flexShrink": 1,
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                        }
+                      }
+                    >
+                      <Text
+                        selectable={true}
+                        style={{}}
+                      >
+                        <Text
+                          selectable={true}
+                          style={
+                            {
+                              "color": "#333333",
+                              "fontSize": 16,
+                              "lineHeight": 24,
+                            }
+                          }
+                        >
+                          Indented item2
+                        </Text>
+                      </Text>
+                    </View>,
+                  ]
+                }
+                listStyle={{}}
+                ordered={true}
+                startIndex={1}
+                textStyle={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              />
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Fourth item
+                </Text>
+              </Text>
+            </View>,
+          ]
         }
-        markerBoxStyle={{}}
-        markerTextStyle={
+        listStyle={{}}
+        ordered={true}
+        startIndex={1}
+        textStyle={
           {
             "color": "#333333",
             "flexShrink": 1,
@@ -7537,215 +7571,7 @@ exports[`Lists Ordered Lists 1`] = `
             "lineHeight": 24,
           }
         }
-        startIndex={1}
-      >
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              First item
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Second item
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Third item
-            </Text>
-          </Text>
-          <MarkedList
-            counterRenderer={
-              {
-                "engine": {
-                  "specs": {
-                    "fallback": {
-                      "maxCounterLenInRange": [Function],
-                      "renderCounter": [Function],
-                    },
-                    "negative": {
-                      "prefix": "-",
-                      "suffix": "",
-                    },
-                    "padding": null,
-                    "prefix": null,
-                    "range": {
-                      "max": Infinity,
-                      "min": -Infinity,
-                    },
-                    "reversedCounter": false,
-                    "reversedMarker": false,
-                    "suffix": ". ",
-                  },
-                },
-              }
-            }
-            markerBoxStyle={{}}
-            markerTextStyle={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-            startIndex={1}
-          >
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              <Text
-                selectable={true}
-                style={{}}
-              >
-                <Text
-                  selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
-                >
-                  Indented item1
-                </Text>
-              </Text>
-            </View>
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              <Text
-                selectable={true}
-                style={{}}
-              >
-                <Text
-                  selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
-                >
-                  Indented item2
-                </Text>
-              </Text>
-            </View>
-          </MarkedList>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Fourth item
-            </Text>
-          </Text>
-        </View>
-      </MarkedList>,
+      />,
     ]
   }
   getItem={[Function]}
@@ -8188,34 +8014,99 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
 <RCTScrollView
   data={
     [
-      <MarkedList
-        counterRenderer={
-          {
-            "engine": {
-              "specs": {
-                "fallback": {
-                  "maxCounterLenInRange": [Function],
-                  "renderCounter": [Function],
-                },
-                "negative": {
-                  "prefix": "-",
-                  "suffix": "",
-                },
-                "padding": null,
-                "prefix": null,
-                "range": {
-                  "max": Infinity,
-                  "min": -Infinity,
-                },
-                "reversedCounter": false,
-                "reversedMarker": false,
-                "suffix": ". ",
-              },
-            },
-          }
+      <Memo(MDList)
+        li={
+          [
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  foo
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  bar
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  baz
+                </Text>
+              </Text>
+            </View>,
+          ]
         }
-        markerBoxStyle={{}}
-        markerTextStyle={
+        listStyle={{}}
+        ordered={true}
+        startIndex={57}
+        textStyle={
           {
             "color": "#333333",
             "flexShrink": 1,
@@ -8223,93 +8114,7 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
             "lineHeight": 24,
           }
         }
-        startIndex={57}
-      >
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              foo
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              bar
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              baz
-            </Text>
-          </Text>
-        </View>
-      </MarkedList>,
+      />,
     ]
   }
   getItem={[Function]}
@@ -8551,31 +8356,200 @@ exports[`Lists Unordered Lists 1`] = `
 <RCTScrollView
   data={
     [
-      <MarkedList
-        counterRenderer={
-          {
-            "engine": {
-              "specs": {
-                "fallback": {
-                  "maxCounterLenInRange": [Function],
-                  "renderCounter": [Function],
-                },
-                "negative": null,
-                "padding": null,
-                "prefix": null,
-                "range": {
-                  "max": Infinity,
-                  "min": -Infinity,
-                },
-                "reversedCounter": false,
-                "reversedMarker": false,
-                "suffix": " ",
-              },
-            },
-          }
+      <Memo(MDList)
+        li={
+          [
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  First item
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Second item
+                </Text>
+              </Text>
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Third item
+                </Text>
+              </Text>
+              <Memo(MDList)
+                li={
+                  [
+                    <View
+                      style={
+                        {
+                          "color": "#333333",
+                          "flexShrink": 1,
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                        }
+                      }
+                    >
+                      <Text
+                        selectable={true}
+                        style={{}}
+                      >
+                        <Text
+                          selectable={true}
+                          style={
+                            {
+                              "color": "#333333",
+                              "fontSize": 16,
+                              "lineHeight": 24,
+                            }
+                          }
+                        >
+                          Indented item1
+                        </Text>
+                      </Text>
+                    </View>,
+                    <View
+                      style={
+                        {
+                          "color": "#333333",
+                          "flexShrink": 1,
+                          "fontSize": 16,
+                          "lineHeight": 24,
+                        }
+                      }
+                    >
+                      <Text
+                        selectable={true}
+                        style={{}}
+                      >
+                        <Text
+                          selectable={true}
+                          style={
+                            {
+                              "color": "#333333",
+                              "fontSize": 16,
+                              "lineHeight": 24,
+                            }
+                          }
+                        >
+                          Indented item2
+                        </Text>
+                      </Text>
+                    </View>,
+                  ]
+                }
+                listStyle={{}}
+                ordered={false}
+                startIndex={1}
+                textStyle={
+                  {
+                    "color": "#333333",
+                    "flexShrink": 1,
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              />
+            </View>,
+            <View
+              style={
+                {
+                  "color": "#333333",
+                  "flexShrink": 1,
+                  "fontSize": 16,
+                  "lineHeight": 24,
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={{}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    {
+                      "color": "#333333",
+                      "fontSize": 16,
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Fourth item
+                </Text>
+              </Text>
+            </View>,
+          ]
         }
-        markerBoxStyle={{}}
-        markerTextStyle={
+        listStyle={{}}
+        ordered={false}
+        startIndex={1}
+        textStyle={
           {
             "color": "#333333",
             "flexShrink": 1,
@@ -8583,212 +8557,7 @@ exports[`Lists Unordered Lists 1`] = `
             "lineHeight": 24,
           }
         }
-        startIndex={1}
-      >
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              First item
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Second item
-            </Text>
-          </Text>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Third item
-            </Text>
-          </Text>
-          <MarkedList
-            counterRenderer={
-              {
-                "engine": {
-                  "specs": {
-                    "fallback": {
-                      "maxCounterLenInRange": [Function],
-                      "renderCounter": [Function],
-                    },
-                    "negative": null,
-                    "padding": null,
-                    "prefix": null,
-                    "range": {
-                      "max": Infinity,
-                      "min": -Infinity,
-                    },
-                    "reversedCounter": false,
-                    "reversedMarker": false,
-                    "suffix": " ",
-                  },
-                },
-              }
-            }
-            markerBoxStyle={{}}
-            markerTextStyle={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-            startIndex={1}
-          >
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              <Text
-                selectable={true}
-                style={{}}
-              >
-                <Text
-                  selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
-                >
-                  Indented item1
-                </Text>
-              </Text>
-            </View>
-            <View
-              style={
-                {
-                  "color": "#333333",
-                  "flexShrink": 1,
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              <Text
-                selectable={true}
-                style={{}}
-              >
-                <Text
-                  selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
-                >
-                  Indented item2
-                </Text>
-              </Text>
-            </View>
-          </MarkedList>
-        </View>
-        <View
-          style={
-            {
-              "color": "#333333",
-              "flexShrink": 1,
-              "fontSize": 16,
-              "lineHeight": 24,
-            }
-          }
-        >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Fourth item
-            </Text>
-          </Text>
-        </View>
-      </MarkedList>,
+      />,
     ]
   }
   getItem={[Function]}
