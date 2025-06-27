@@ -11,20 +11,20 @@
 		"web": "expo start --web"
 	},
 	"dependencies": {
-		"@expo/metro-runtime": "~4.0.1",
-		"expo": "~52.0.41",
-		"expo-status-bar": "~2.0.1",
-		"react": "18.3.1",
-		"react-dom": "18.3.1",
-		"react-native": "0.76.7",
-		"react-native-svg": "15.8.0",
-		"react-native-web": "~0.19.13"
+		"@expo/metro-runtime": "~5.0.4",
+		"expo": "^53.0.13",
+		"expo-status-bar": "~2.2.3",
+		"react": "19.0.0",
+		"react-dom": "19.0.0",
+		"react-native": "0.79.4",
+		"react-native-svg": "15.11.2",
+		"react-native-web": "^0.20.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.25.2",
 		"@babel/runtime": "^7.26.0",
-		"@types/react": "~18.3.12",
+		"@types/react": "~19.0.10",
 		"babel-plugin-module-resolver": "^5.0.2",
-		"typescript": "^5.3.3"
+		"typescript": "~5.8.3"
 	}
 }
