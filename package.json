@@ -57,7 +57,7 @@
 		"@biomejs/biome": "2.2.4",
 		"@commitlint/config-conventional": "19.8.1",
 		"@evilmartians/lefthook": "1.13.4",
-		"@react-native/babel-preset": "0.78.2",
+		"@react-native/babel-preset": "0.82.1",
 		"@release-it/conventional-changelog": "10.0.1",
 		"@testing-library/react-native": "v14.0.0-alpha.1",
 		"@types/jest": "29.5.14",
