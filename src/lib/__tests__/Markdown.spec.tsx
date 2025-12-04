@@ -1,7 +1,14 @@
 import { render, screen, waitFor } from "@testing-library/react-native";
-import { Tokenizer, type Tokens } from "marked";
+import {
+	Hooks,
+	type Token,
+	Tokenizer,
+	type Tokens,
+	type TokensList,
+} from "marked";
 import React, { type ReactNode } from "react";
 import { Text, type TextStyle } from "react-native";
+import useMarkdown from "../../hooks/useMarkdown";
 import Markdown from "../Markdown";
 import Renderer from "../Renderer";
 import type { RendererInterface } from "../types";
@@ -851,5 +858,67 @@ describe("Tokenizer", () => {
 		expect(tree).toMatchSnapshot();
 		expect(screen.queryByText("hello")).toBeTruthy();
 		expect(screen.queryByText("latex code")).toBeTruthy();
+	});
+});
+
+describe("Hooks", () => {
+	it("applies hooks passed to the Markdown component", () => {
+		const preprocessSpy = jest.fn((markdown: string) =>
+			markdown.replace("world", "universe"),
+		);
+
+		class CustomHooks extends Hooks {
+			preprocess(markdown: string): string {
+				return preprocessSpy(markdown);
+			}
+		}
+
+		const hooks = new CustomHooks();
+
+		render(<Markdown value={"Hello world"} hooks={hooks} />);
+
+		expect(preprocessSpy).toHaveBeenCalledWith("Hello world");
+		expect(screen.queryByText("Hello universe")).toBeTruthy();
+	});
+
+	it("uses hooks when rendering via the useMarkdown hook", () => {
+		const processAllTokensSpy = jest.fn();
+
+		class CustomHooks extends Hooks {
+			processAllTokens(tokens: Token[] | TokensList): Token[] | TokensList {
+				processAllTokensSpy(tokens);
+
+				const appendedParagraph: Tokens.Paragraph = {
+					type: "paragraph",
+					raw: "Appended via hook",
+					text: "Appended via hook",
+					tokens: [
+						{
+							type: "text",
+							raw: "Appended via hook",
+							text: "Appended via hook",
+						},
+					],
+				};
+
+				tokens.push(appendedParagraph);
+
+				return tokens;
+			}
+		}
+
+		const hooks = new CustomHooks();
+
+		const TestRenderer = ({ value }: { value: string }) => {
+			const elements = useMarkdown(value, { hooks });
+
+			return <>{elements}</>;
+		};
+
+		render(<TestRenderer value={"Original paragraph"} />);
+
+		expect(processAllTokensSpy).toHaveBeenCalled();
+		expect(screen.queryByText("Original paragraph")).toBeTruthy();
+		expect(screen.queryByText("Appended via hook")).toBeTruthy();
 	});
 });
