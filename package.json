@@ -77,7 +77,7 @@
 		"react-native-svg": "15.13.0",
 		"reassure": "1.4.0",
 		"release-it": "19.0.5",
-		"typescript": "5.8.3",
+		"typescript": "5.9.3",
 		"universal-test-renderer": "0.6.0"
 	},
 	"peerDependencies": {
