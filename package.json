@@ -93,7 +93,7 @@
 			"<rootDir>/dist/"
 		],
 		"transformIgnorePatterns": [
-			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|github-slugger)"
+			"node_modules/(?!(jest-)?react-native|@react-native|@react-native-community|github-slugger|marked)"
 		]
 	},
 	"commitlint": {
