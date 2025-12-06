@@ -862,48 +862,37 @@ describe("Tokenizer", () => {
 });
 
 describe("Hooks", () => {
-	it("applies hooks passed to the Markdown component", () => {
-		const preprocessSpy = jest.fn((markdown: string) =>
-			markdown.replace("world", "universe"),
+	it("invokes hooks when rendering the Markdown component", () => {
+		const emStrongMaskSpy = jest.fn((src: string) =>
+			src.replace("$", "a").replace("_", "a"),
 		);
 
 		class CustomHooks extends Hooks {
-			preprocess(markdown: string): string {
-				return preprocessSpy(markdown);
+			emStrongMask(src: string): string {
+				return emStrongMaskSpy(src);
 			}
 		}
 
 		const hooks = new CustomHooks();
 
-		render(<Markdown value={"Hello world"} hooks={hooks} />);
+		const md = "Hello **_$$world$$_**";
+		const r = render(<Markdown value={md} hooks={hooks} />);
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
 
-		expect(preprocessSpy).toHaveBeenCalledWith("Hello world");
-		expect(screen.queryByText("Hello universe")).toBeTruthy();
+		expect(emStrongMaskSpy).toHaveBeenCalledWith(md);
+		expect(screen.queryByText("Hello")).toBeTruthy();
+		expect(screen.queryByText("$$world$$")).toBeTruthy();
 	});
 
-	it("uses hooks when rendering via the useMarkdown hook", () => {
-		const processAllTokensSpy = jest.fn();
+	it("invokes hooks when rendering via the useMarkdown hook", () => {
+		const emStrongMaskSpy = jest.fn((src: string) =>
+			src.replace("$", "a").replace("_", "a"),
+		);
 
 		class CustomHooks extends Hooks {
-			processAllTokens(tokens: Token[] | TokensList): Token[] | TokensList {
-				processAllTokensSpy(tokens);
-
-				const appendedParagraph: Tokens.Paragraph = {
-					type: "paragraph",
-					raw: "Appended via hook",
-					text: "Appended via hook",
-					tokens: [
-						{
-							type: "text",
-							raw: "Appended via hook",
-							text: "Appended via hook",
-						},
-					],
-				};
-
-				tokens.push(appendedParagraph);
-
-				return tokens;
+			emStrongMask(src: string): string {
+				return emStrongMaskSpy(src);
 			}
 		}
 
@@ -915,10 +904,13 @@ describe("Hooks", () => {
 			return <>{elements}</>;
 		};
 
-		render(<TestRenderer value={"Original paragraph"} />);
+		const md = "Hello **_$$world$$_**";
+		const r = render(<TestRenderer value={md} />);
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
 
-		expect(processAllTokensSpy).toHaveBeenCalled();
-		expect(screen.queryByText("Original paragraph")).toBeTruthy();
-		expect(screen.queryByText("Appended via hook")).toBeTruthy();
+		expect(emStrongMaskSpy).toHaveBeenCalledWith(md);
+		expect(screen.queryByText("Hello")).toBeTruthy();
+		expect(screen.queryByText("$$world$$")).toBeTruthy();
 	});
 });
