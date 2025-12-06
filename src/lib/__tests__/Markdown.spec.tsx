@@ -1,11 +1,5 @@
 import { render, screen, waitFor } from "@testing-library/react-native";
-import {
-	Hooks,
-	type Token,
-	Tokenizer,
-	type Tokens,
-	type TokensList,
-} from "marked";
+import { Hooks, Tokenizer, type Tokens } from "marked";
 import React, { type ReactNode } from "react";
 import { Text, type TextStyle } from "react-native";
 import useMarkdown from "../../hooks/useMarkdown";
