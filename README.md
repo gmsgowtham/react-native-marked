@@ -53,6 +53,7 @@ export default ExampleComponent;
 | theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](src/theme/types.ts)                                                                                                                                                | true      |
 | baseUrl       | A prefix url for any relative link                                                                                                           | string                                                                                                                                                                         | true      |
 | renderer      | Custom component Renderer                                                                                                                    | [RendererInterface](src/lib/types.ts)                                                                                                                                          | true      |
+| hooks         | Hooks run during parsing to transform tokens                                                                                                | [Marked Hooks](https://marked.js.org/using_pro#hooks)                                                                                                                            | true      |
 
 
 ### Using hook
@@ -90,6 +91,8 @@ const CustomComponent = () => {
 | baseUrl     | A prefix url for any relative link                                                                                                           | string                                           | true      |
 | renderer    | Custom component Renderer                                                                                                                    | [RendererInterface](src/lib/types.ts)            | true      |
 | tokenizer   | Generate custom tokens                                                                                                                       | [MarkedTokenizer<CustomToken>](src/lib/types.ts) | true      |
+| hooks       | Hooks run during parsing to transform tokens                                                                                                 |
+[Marked Hooks](https://marked.js.org/using_pro#hooks)   | true      |
 
 
 ## Examples

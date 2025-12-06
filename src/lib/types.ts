@@ -1,4 +1,4 @@
-import type { Tokenizer } from "marked";
+import type { Hooks, Tokenizer } from "marked";
 import type { ReactNode } from "react";
 import type {
 	FlatListProps,
@@ -22,6 +22,7 @@ export interface MarkdownProps extends Partial<ParserOptions> {
 	>;
 	theme?: UserTheme;
 	tokenizer?: Tokenizer;
+	hooks?: Hooks;
 }
 
 export type TableColAlignment = "center" | "left" | "right" | null;

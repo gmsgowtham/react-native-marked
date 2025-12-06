@@ -1,7 +1,8 @@
 import { render, screen, waitFor } from "@testing-library/react-native";
-import { Tokenizer, type Tokens } from "marked";
+import { Hooks, Tokenizer, type Tokens } from "marked";
 import React, { type ReactNode } from "react";
 import { Text, type TextStyle } from "react-native";
+import useMarkdown from "../../hooks/useMarkdown";
 import Markdown from "../Markdown";
 import Renderer from "../Renderer";
 import type { RendererInterface } from "../types";
@@ -851,5 +852,59 @@ describe("Tokenizer", () => {
 		expect(tree).toMatchSnapshot();
 		expect(screen.queryByText("hello")).toBeTruthy();
 		expect(screen.queryByText("latex code")).toBeTruthy();
+	});
+});
+
+describe("Hooks", () => {
+	it("invokes hooks when rendering the Markdown component", () => {
+		const emStrongMaskSpy = jest.fn((src: string) =>
+			src.replace("$", "a").replace("_", "a"),
+		);
+
+		class CustomHooks extends Hooks {
+			emStrongMask(src: string): string {
+				return emStrongMaskSpy(src);
+			}
+		}
+
+		const hooks = new CustomHooks();
+
+		const md = "Hello **_$$world$$_**";
+		const r = render(<Markdown value={md} hooks={hooks} />);
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
+
+		expect(emStrongMaskSpy).toHaveBeenCalledWith(md);
+		expect(screen.queryByText("Hello")).toBeTruthy();
+		expect(screen.queryByText("$$world$$")).toBeTruthy();
+	});
+
+	it("invokes hooks when rendering via the useMarkdown hook", () => {
+		const emStrongMaskSpy = jest.fn((src: string) =>
+			src.replace("$", "a").replace("_", "a"),
+		);
+
+		class CustomHooks extends Hooks {
+			emStrongMask(src: string): string {
+				return emStrongMaskSpy(src);
+			}
+		}
+
+		const hooks = new CustomHooks();
+
+		const TestRenderer = ({ value }: { value: string }) => {
+			const elements = useMarkdown(value, { hooks });
+
+			return <>{elements}</>;
+		};
+
+		const md = "Hello **_$$world$$_**";
+		const r = render(<TestRenderer value={md} />);
+		const tree = r.toJSON();
+		expect(tree).toMatchSnapshot();
+
+		expect(emStrongMaskSpy).toHaveBeenCalledWith(md);
+		expect(screen.queryByText("Hello")).toBeTruthy();
+		expect(screen.queryByText("$$world$$")).toBeTruthy();
 	});
 });

@@ -1,5 +1,9 @@
 import type { Token, Tokens } from "marked";
-import { Tokenizer as MarkedTokenizer, marked } from "marked";
+import {
+	Hooks as MarkedHooks,
+	Tokenizer as MarkedTokenizer,
+	marked,
+} from "marked";
 import useMarkdown, { type useMarkdownHookOptions } from "./hooks/useMarkdown";
 import Markdown from "./lib/Markdown";
 import Renderer from "./lib/Renderer";
@@ -22,6 +26,6 @@ export type {
 	Tokens,
 };
 
-export { useMarkdown, MarkedLexer, Renderer, MarkedTokenizer };
+export { useMarkdown, MarkedLexer, Renderer, MarkedTokenizer, MarkedHooks };
 
 export default Markdown;

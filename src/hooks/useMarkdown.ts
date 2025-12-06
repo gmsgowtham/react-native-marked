@@ -1,4 +1,4 @@
-import { lexer, type Tokenizer } from "marked";
+import { type Hooks, lexer, type Tokenizer } from "marked";
 import { type ReactNode, useMemo } from "react";
 import type { ColorSchemeName } from "react-native";
 import Parser from "../lib/Parser";
@@ -14,6 +14,7 @@ export interface useMarkdownHookOptions {
 	styles?: MarkedStyles;
 	baseUrl?: string;
 	tokenizer?: Tokenizer;
+	hooks?: Hooks;
 }
 
 const useMarkdown = (
@@ -39,9 +40,10 @@ const useMarkdown = (
 		const tokens = lexer(value, {
 			gfm: true,
 			tokenizer: options?.tokenizer,
+			hooks: options?.hooks,
 		});
 		return parser.parse(tokens);
-	}, [value, parser, options?.tokenizer]);
+	}, [value, parser, options?.tokenizer, options?.hooks]);
 
 	return elements;
 };

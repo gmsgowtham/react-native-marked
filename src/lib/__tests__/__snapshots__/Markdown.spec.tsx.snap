@@ -3219,6 +3219,202 @@ exports[`Headings Heading with text emphasis 1`] = `
 </RCTScrollView>
 `;
 
+exports[`Hooks invokes hooks when rendering the Markdown component 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={{}}
+        >
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Hello 
+          </Text>
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              $$world$$
+            </Text>
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={{}}
+        >
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Hello 
+          </Text>
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              $$world$$
+            </Text>
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Hooks invokes hooks when rendering via the useMarkdown hook 1`] = `
+<View
+  style={
+    {
+      "paddingVertical": 8,
+    }
+  }
+>
+  <Text
+    selectable={true}
+    style={{}}
+  >
+    <Text
+      selectable={true}
+      style={
+        {
+          "color": "#333333",
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      Hello 
+    </Text>
+    <Text
+      selectable={true}
+      style={
+        {
+          "color": "#333333",
+          "fontSize": 16,
+          "fontWeight": "bold",
+          "lineHeight": 24,
+        }
+      }
+    >
+      <Text
+        selectable={true}
+        style={
+          {
+            "color": "#333333",
+            "fontSize": 16,
+            "fontStyle": "italic",
+            "fontWeight": "bold",
+            "lineHeight": 24,
+          }
+        }
+      >
+        $$world$$
+      </Text>
+    </Text>
+  </Text>
+</View>
+`;
+
 exports[`Horizontal Rules Asterisks 1`] = `
 <RCTScrollView
   data={
@@ -5106,23 +5302,31 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  This is the first list item.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    This is the first list item.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
             </View>,
             <View
               style={
@@ -5134,23 +5338,31 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  Here's the second list item.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Here's the second list item.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
               <View
                 style={
                   {
@@ -5198,23 +5410,31 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  And here's the third list item.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    And here's the third list item.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
             </View>,
           ]
         }
@@ -5309,23 +5529,31 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              This is the first list item.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                This is the first list item.
+              </Text>
             </Text>
-          </Text>
+          </View>
         </View>
       </View>
       <View
@@ -5376,23 +5604,31 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              Here's the second list item.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Here's the second list item.
+              </Text>
             </Text>
-          </Text>
+          </View>
           <View
             style={
               {
@@ -5479,23 +5715,31 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              And here's the third list item.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                And here's the third list item.
+              </Text>
             </Text>
-          </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -5520,23 +5764,31 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  This is the first list item.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    This is the first list item.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
             </View>,
             <View
               style={
@@ -5548,23 +5800,31 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  Here's the second list item.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Here's the second list item.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
               <ScrollView
                 contentContainerStyle={
                   {
@@ -5605,23 +5865,31 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  And here's the third list item.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    And here's the third list item.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
             </View>,
           ]
         }
@@ -5716,23 +5984,31 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              This is the first list item.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                This is the first list item.
+              </Text>
             </Text>
-          </Text>
+          </View>
         </View>
       </View>
       <View
@@ -5783,23 +6059,31 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              Here's the second list item.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Here's the second list item.
+              </Text>
             </Text>
-          </Text>
+          </View>
           <RCTScrollView
             contentContainerStyle={
               {
@@ -5881,23 +6165,31 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              And here's the third list item.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                And here's the third list item.
+              </Text>
             </Text>
-          </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -5922,23 +6214,31 @@ exports[`Lists Elements in Lists: Images 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  Open the file containing the Linux mascot.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Open the file containing the Linux mascot.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
             </View>,
             <View
               style={
@@ -5950,31 +6250,35 @@ exports[`Lists Elements in Lists: Images 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  Marvel at its beauty.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Marvel at its beauty.
+                  </Text>
                 </Text>
-              </Text>
-              <Text
-                selectable={true}
+              </View>
+              <View
                 style={
                   {
-                    "color": "#333333",
-                    "flexShrink": 1,
-                    "fontSize": 16,
-                    "lineHeight": 24,
+                    "paddingVertical": 8,
                   }
                 }
               >
@@ -5988,18 +6292,29 @@ exports[`Lists Elements in Lists: Images 1`] = `
                     }
                   }
                 >
-                   
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                     
+                  </Text>
                 </Text>
-              </Text>
-              <Memo(MDImage)
-                alt={null}
-                style={
-                  {
-                    "resizeMode": "cover",
+                <Memo(MDImage)
+                  alt={null}
+                  style={
+                    {
+                      "resizeMode": "cover",
+                    }
                   }
-                }
-                uri="https://dummyimage.com/100x100/fff/aaa"
-              />
+                  uri="https://dummyimage.com/100x100/fff/aaa"
+                />
+              </View>
             </View>,
             <View
               style={
@@ -6011,23 +6326,31 @@ exports[`Lists Elements in Lists: Images 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  Close the file.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Close the file.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
             </View>,
           ]
         }
@@ -6122,23 +6445,31 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              Open the file containing the Linux mascot.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Open the file containing the Linux mascot.
+              </Text>
             </Text>
-          </Text>
+          </View>
         </View>
       </View>
       <View
@@ -6189,88 +6520,103 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-              Marvel at its beauty.
-            </Text>
-          </Text>
-          <Text
-            selectable={true}
-            style={
-              {
-                "color": "#333333",
-                "flexShrink": 1,
-                "fontSize": 16,
-                "lineHeight": 24,
-              }
-            }
-          >
-            <Text
-              selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
-            >
-               
-            </Text>
-          </Text>
           <View
-            accessibilityIgnoresInvertColors={true}
             style={
               {
-                "aspectRatio": undefined,
-                "width": "100%",
+                "paddingVertical": 8,
               }
             }
           >
-            <Image
-              accessibilityLabel={null}
-              accessibilityRole="image"
-              source={
+            <Text
+              selectable={true}
+              style={{}}
+            >
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Marvel at its beauty.
+              </Text>
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
+          >
+            <Text
+              selectable={true}
+              style={
                 {
-                  "uri": "https://dummyimage.com/100x100/fff/aaa",
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                 }
               }
+            >
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                 
+              </Text>
+            </Text>
+            <View
+              accessibilityIgnoresInvertColors={true}
               style={
-                [
-                  {
-                    "bottom": 0,
-                    "left": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                  },
-                  {
-                    "height": undefined,
-                    "width": "100%",
-                  },
-                  {
-                    "resizeMode": "cover",
-                  },
-                ]
+                {
+                  "aspectRatio": undefined,
+                  "width": "100%",
+                }
               }
-              testID="react-native-marked-md-image"
-            />
-            <ActivityIndicator
-              size="small"
-              testID="react-native-marked-md-image-activity-indicator"
-            />
+            >
+              <Image
+                accessibilityLabel={null}
+                accessibilityRole="image"
+                source={
+                  {
+                    "uri": "https://dummyimage.com/100x100/fff/aaa",
+                  }
+                }
+                style={
+                  [
+                    {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    {
+                      "height": undefined,
+                      "width": "100%",
+                    },
+                    {
+                      "resizeMode": "cover",
+                    },
+                  ]
+                }
+                testID="react-native-marked-md-image"
+              />
+              <ActivityIndicator
+                size="small"
+                testID="react-native-marked-md-image-activity-indicator"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -6322,23 +6668,31 @@ exports[`Lists Elements in Lists: Images 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              Close the file.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Close the file.
+              </Text>
             </Text>
-          </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -7007,23 +7361,31 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  This is the first list item.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    This is the first list item.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
             </View>,
             <View
               style={
@@ -7035,40 +7397,56 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  Here's the second list item.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    Here's the second list item.
+                  </Text>
                 </Text>
-              </Text>
-              <Text
-                selectable={true}
-                style={{}}
+              </View>
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                    I need to add another paragraph below the second list item.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                      I need to add another paragraph below the second list item.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
             </View>,
             <View
               style={
@@ -7080,23 +7458,31 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
                 }
               }
             >
-              <Text
-                selectable={true}
-                style={{}}
+              <View
+                style={
+                  {
+                    "paddingVertical": 8,
+                  }
+                }
               >
                 <Text
                   selectable={true}
-                  style={
-                    {
-                      "color": "#333333",
-                      "fontSize": 16,
-                      "lineHeight": 24,
-                    }
-                  }
+                  style={{}}
                 >
-                  And here's the third list item.
+                  <Text
+                    selectable={true}
+                    style={
+                      {
+                        "color": "#333333",
+                        "fontSize": 16,
+                        "lineHeight": 24,
+                      }
+                    }
+                  >
+                    And here's the third list item.
+                  </Text>
                 </Text>
-              </Text>
+              </View>
             </View>,
           ]
         }
@@ -7191,23 +7577,31 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              This is the first list item.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                This is the first list item.
+              </Text>
             </Text>
-          </Text>
+          </View>
         </View>
       </View>
       <View
@@ -7258,40 +7652,56 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              Here's the second list item.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Here's the second list item.
+              </Text>
             </Text>
-          </Text>
-          <Text
-            selectable={true}
-            style={{}}
+          </View>
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-                I need to add another paragraph below the second list item.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                  I need to add another paragraph below the second list item.
+              </Text>
             </Text>
-          </Text>
+          </View>
         </View>
       </View>
       <View
@@ -7342,23 +7752,31 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
             }
           }
         >
-          <Text
-            selectable={true}
-            style={{}}
+          <View
+            style={
+              {
+                "paddingVertical": 8,
+              }
+            }
           >
             <Text
               selectable={true}
-              style={
-                {
-                  "color": "#333333",
-                  "fontSize": 16,
-                  "lineHeight": 24,
-                }
-              }
+              style={{}}
             >
-              And here's the third list item.
+              <Text
+                selectable={true}
+                style={
+                  {
+                    "color": "#333333",
+                    "fontSize": 16,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                And here's the third list item.
+              </Text>
             </Text>
-          </Text>
+          </View>
         </View>
       </View>
     </View>

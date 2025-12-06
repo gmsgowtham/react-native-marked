@@ -8,6 +8,7 @@ import {
 	useColorScheme,
 } from "react-native";
 import Markdown, {
+	MarkedHooks,
 	MarkedTokenizer,
 	Renderer,
 	type RendererInterface,
@@ -44,6 +45,15 @@ class CustomRenderer extends Renderer implements RendererInterface {
 
 const renderer = new CustomRenderer();
 
+class CustomHooks extends MarkedHooks {
+	emStrongMask(src: string): string {
+		// mask part of the content that should not be interpreted as Markdown em/strong delimiters.
+		return src;
+	}
+}
+
+const hooks = new CustomHooks();
+
 export default function App() {
 	const theme = useColorScheme();
 	const isLightTheme = theme === "light";
@@ -61,6 +71,7 @@ export default function App() {
 					}}
 					renderer={renderer}
 					tokenizer={tokenizer}
+					hooks={hooks}
 				/>
 			</SafeAreaView>
 		</>
