@@ -8683,10 +8683,10 @@ react-native-reanimated-table@0.0.2:
   resolved "https://registry.yarnpkg.com/react-native-reanimated-table/-/react-native-reanimated-table-0.0.2.tgz#015392dbc12fb03fd872d5a7eea9bc84c4f3a685"
   integrity sha512-OeuqfU1AFEmHNTJlEOLWrV78JgAXnM0/ZrCm0Ab+9e5nwYJ+xab/UFXkNKz3Gyf08ZfLSNzwMQRjt3eZWPWoGA==
 
-react-native-svg@15.13.0:
-  version "15.13.0"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-15.13.0.tgz#5244b03ff6fa4c8ac7c8586d73cf8d1f4f665236"
-  integrity sha512-/YPK+PAAXg4T0x2d2vYPvqqAhOYid2bRKxUVT7STIyd1p2JxWmsGQkfZxXCkEFN7TwLfIyVlT5RimT91Pj/qXw==
+react-native-svg@15.15.1:
+  version "15.15.1"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-15.15.1.tgz#0b08716f5c389ef8550a73492c985c7b23849d65"
+  integrity sha512-ZUD1xwc3Hwo4cOmOLumjJVoc7lEf9oQFlHnLmgccLC19fNm6LVEdtB+Cnip6gEi0PG3wfvVzskViEtrySQP8Fw==
   dependencies:
     css-select "^5.1.0"
     css-tree "^1.1.3"
