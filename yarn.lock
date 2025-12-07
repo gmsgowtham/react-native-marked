@@ -8997,10 +8997,10 @@ pkg-types@^2.3.0:
     exsolve "^1.0.7"
     pathe "^2.0.3"
 
-pod-install@0.3.10:
-  version "0.3.10"
-  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.3.10.tgz#a5b66b6de21e23f7a073d45aa08b25fe27076d3d"
-  integrity sha512-eQRYCQFxcJe1kyd8G3F++yF56XbTj9fyAUJvc7FVIOv0IH+7f/r7h7qBnkfUYnRI1mMhWja6M5hlEyZ7lZT8og==
+pod-install@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-1.0.9.tgz#60b025cea5a585bd35b2d82972506f5e6483ed9a"
+  integrity sha512-wFkFwz2hXlhMV+3LHUoRRXL+SsI/stoDU9tv26i3F+FxublcGeGKl9JnrBuZh+qverMzxmEUW4dlLE/gviebNA==
 
 postinstall-postinstall@2.1.0:
   version "2.1.0"
