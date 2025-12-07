@@ -82,7 +82,7 @@ class Parser {
 				return this.renderer.hr(this.styles.hr);
 			}
 			case "list": {
-				let startIndex = Number.parseInt(token.start.toString());
+				let startIndex = Number.parseInt(token.start.toString(), 10);
 				if (Number.isNaN(startIndex)) {
 					startIndex = 1;
 				}
