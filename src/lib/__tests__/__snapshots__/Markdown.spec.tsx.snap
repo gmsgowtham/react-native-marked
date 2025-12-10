@@ -4414,6 +4414,7 @@ exports[`Links Basic 1`] = `
           </Text>
           <Text
             accessibilityHint="Opens in a new window"
+            accessibilityLabel="Link"
             accessibilityRole="link"
             onPress={[Function]}
             selectable={true}
@@ -4498,6 +4499,7 @@ exports[`Links Basic 1`] = `
           </Text>
           <Text
             accessibilityHint="Opens in a new window"
+            accessibilityLabel="Link"
             accessibilityRole="link"
             onPress={[Function]}
             selectable={true}
@@ -4571,6 +4573,7 @@ exports[`Links Formatting Links 1`] = `
           >
             <Text
               accessibilityHint="Opens in a new window"
+              accessibilityLabel="Link"
               accessibilityRole="link"
               onPress={[Function]}
               selectable={true}
@@ -4613,6 +4616,7 @@ This is the
           >
             <Text
               accessibilityHint="Opens in a new window"
+              accessibilityLabel="Link"
               accessibilityRole="link"
               onPress={[Function]}
               selectable={true}
@@ -4643,6 +4647,7 @@ See the section on
           </Text>
           <Text
             accessibilityHint="Opens in a new window"
+            accessibilityLabel="Link"
             accessibilityRole="link"
             onPress={[Function]}
             selectable={true}
@@ -4752,6 +4757,7 @@ See the section on
           >
             <Text
               accessibilityHint="Opens in a new window"
+              accessibilityLabel="Link"
               accessibilityRole="link"
               onPress={[Function]}
               selectable={true}
@@ -4794,6 +4800,7 @@ This is the
           >
             <Text
               accessibilityHint="Opens in a new window"
+              accessibilityLabel="Link"
               accessibilityRole="link"
               onPress={[Function]}
               selectable={true}
@@ -4824,6 +4831,7 @@ See the section on
           </Text>
           <Text
             accessibilityHint="Opens in a new window"
+            accessibilityLabel="Link"
             accessibilityRole="link"
             onPress={[Function]}
             selectable={true}
@@ -5006,6 +5014,7 @@ exports[`Links Titles 1`] = `
           </Text>
           <Text
             accessibilityHint="Opens in a new window"
+            accessibilityLabel="The best search engine for privacy"
             accessibilityRole="link"
             onPress={[Function]}
             selectable={true}
@@ -5090,6 +5099,7 @@ exports[`Links Titles 1`] = `
           </Text>
           <Text
             accessibilityHint="Opens in a new window"
+            accessibilityLabel="The best search engine for privacy"
             accessibilityRole="link"
             onPress={[Function]}
             selectable={true}
@@ -5140,6 +5150,7 @@ exports[`Links URLs and Email Addresses 1`] = `
         >
           <Text
             accessibilityHint="Opens in a new window"
+            accessibilityLabel="Link"
             accessibilityRole="link"
             onPress={[Function]}
             selectable={true}
@@ -5169,6 +5180,7 @@ exports[`Links URLs and Email Addresses 1`] = `
         >
           <Text
             accessibilityHint="Opens in a new window"
+            accessibilityLabel="Link"
             accessibilityRole="link"
             onPress={[Function]}
             selectable={true}
@@ -5229,6 +5241,7 @@ exports[`Links URLs and Email Addresses 1`] = `
         >
           <Text
             accessibilityHint="Opens in a new window"
+            accessibilityLabel="Link"
             accessibilityRole="link"
             onPress={[Function]}
             selectable={true}
@@ -5264,6 +5277,7 @@ exports[`Links URLs and Email Addresses 1`] = `
         >
           <Text
             accessibilityHint="Opens in a new window"
+            accessibilityLabel="Link"
             accessibilityRole="link"
             onPress={[Function]}
             selectable={true}
@@ -11361,6 +11375,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                 </Text>,
                 <Text
                   accessibilityHint="Opens in a new window"
+                  accessibilityLabel="Link"
                   accessibilityRole="link"
                   onPress={[Function]}
                   selectable={true}
@@ -11793,6 +11808,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
                   </Text>
                   <Text
                     accessibilityHint="Opens in a new window"
+                    accessibilityLabel="Link"
                     accessibilityRole="link"
                     onPress={[Function]}
                     selectable={true}

@@ -97,12 +97,14 @@ class Renderer implements RendererInterface {
 		children: string | ReactNode[],
 		href: string,
 		styles?: TextStyle,
+		title?: string,
 	): ReactNode {
 		return (
 			<Text
 				selectable
 				accessibilityRole="link"
 				accessibilityHint="Opens in a new window"
+				accessibilityLabel={title || "Link"}
 				key={this.getKey()}
 				onPress={onLinkPress(href)}
 				style={styles}
@@ -112,12 +114,17 @@ class Renderer implements RendererInterface {
 		);
 	}
 
-	image(uri: string, alt?: string, style?: ImageStyle): ReactNode {
+	image(
+		uri: string,
+		alt?: string,
+		style?: ImageStyle,
+		title?: string,
+	): ReactNode {
 		const key = this.getKey();
 		if (uri.endsWith(".svg")) {
 			return <MDSvg uri={uri} key={key} />;
 		}
-		return <MDImage key={key} uri={uri} alt={alt} style={style} />;
+		return <MDImage key={key} uri={uri} alt={alt || title} style={style} />;
 	}
 
 	strong(children: string | ReactNode[], styles?: TextStyle): ReactNode {
@@ -153,8 +160,9 @@ class Renderer implements RendererInterface {
 		imageUrl: string,
 		alt?: string,
 		style?: ImageStyle,
+		title?: string,
 	): ReactNode {
-		const imageNode = this.image(imageUrl, alt, style);
+		const imageNode = this.image(imageUrl, alt, style, title);
 		return (
 			<TouchableHighlight
 				accessibilityRole="link"
