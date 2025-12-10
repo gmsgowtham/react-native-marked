@@ -55,8 +55,14 @@ export interface RendererInterface {
 		children: string | ReactNode[],
 		href: string,
 		styles?: TextStyle,
+		title?: string,
 	): ReactNode;
-	image(uri: string, alt?: string, style?: ImageStyle): ReactNode;
+	image(
+		uri: string,
+		alt?: string,
+		style?: ImageStyle,
+		title?: string,
+	): ReactNode;
 	strong(children: string | ReactNode[], styles?: TextStyle): ReactNode;
 	em(children: string | ReactNode[], styles?: TextStyle): ReactNode;
 	codespan(text: string, styles?: TextStyle): ReactNode;
@@ -69,6 +75,7 @@ export interface RendererInterface {
 		imageUrl: string,
 		alt?: string,
 		style?: ImageStyle,
+		title?: string | null,
 	): ReactNode;
 	table(
 		header: ReactNode[][],

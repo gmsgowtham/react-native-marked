@@ -139,17 +139,18 @@ class Parser {
 				const href = getValidURL(this.baseUrl, token.href);
 
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.link(token.text, href, linkStyle);
+					return this.renderer.link(token.text, href, linkStyle, token.title);
 				}
 
 				const children = this._parse(token.tokens, linkStyle);
-				return this.renderer.link(children, href, linkStyle);
+				return this.renderer.link(children, href, linkStyle, token.title);
 			}
 			case "image": {
 				return this.renderer.image(
 					token.href,
-					token.text || token.title,
+					token.text,
 					this.styles.image,
+					token.title,
 				);
 			}
 			case "strong": {
@@ -277,6 +278,7 @@ class Parser {
 							imageToken.href,
 							imageToken.text ?? imageToken.title ?? "",
 							this.styles.image,
+							imageToken.title,
 						),
 					);
 				}

@@ -3,6 +3,7 @@
 exports[`Renderer dark theme Link Nodes returns a Text Link node 1`] = `
 <Text
   accessibilityHint="Opens in a new window"
+  accessibilityLabel="Link"
   accessibilityRole="link"
   onPress={[Function]}
   selectable={true}
@@ -436,6 +437,7 @@ exports[`Renderer dark theme View Nodes returns a paragraph View node 1`] = `
   </Text>
   <Text
     accessibilityHint="Opens in a new window"
+    accessibilityLabel="Link"
     accessibilityRole="link"
     onPress={[Function]}
     selectable={true}
@@ -478,6 +480,7 @@ exports[`Renderer dark theme getBlockquoteNode returns a Blockquote 1`] = `
   </Text>
   <Text
     accessibilityHint="Opens in a new window"
+    accessibilityLabel="Link"
     accessibilityRole="link"
     onPress={[Function]}
     selectable={true}
@@ -755,6 +758,7 @@ exports[`Renderer dark theme getListNode returns Un-Ordered List 1`] = `
 exports[`Renderer light theme Link Nodes returns a Text Link node 1`] = `
 <Text
   accessibilityHint="Opens in a new window"
+  accessibilityLabel="Link"
   accessibilityRole="link"
   onPress={[Function]}
   selectable={true}
@@ -1188,6 +1192,7 @@ exports[`Renderer light theme View Nodes returns a paragraph View node 1`] = `
   </Text>
   <Text
     accessibilityHint="Opens in a new window"
+    accessibilityLabel="Link"
     accessibilityRole="link"
     onPress={[Function]}
     selectable={true}
@@ -1230,6 +1235,7 @@ exports[`Renderer light theme getBlockquoteNode returns a Blockquote 1`] = `
   </Text>
   <Text
     accessibilityHint="Opens in a new window"
+    accessibilityLabel="Link"
     accessibilityRole="link"
     onPress={[Function]}
     selectable={true}
