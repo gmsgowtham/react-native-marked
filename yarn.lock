@@ -3073,10 +3073,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@evilmartians/lefthook@2.0.9":
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-2.0.9.tgz#4ebe23320bf2e4ed8a0a005f630abfd9c928825b"
-  integrity sha512-m7GTgpxBwHzqNbZpPmWnQVLp1mrkBgRo8Pq6kr+rEo+n2XhScmXEfCi9PBh5EU/8fzfqSjZkJLV9y63mV+qZaA==
+"@evilmartians/lefthook@2.0.11":
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-2.0.11.tgz#97ac71b3e6a369a1e46e2b8a0b6947103d7f2395"
+  integrity sha512-87SEpwRdnoMy0kA8vaRIaHQnRK97/5MKZhg8U6CcB1PviI7/mFtTO3rVbaMfHzSQkHn+gJJahvMA+kRYnQAbAg==
 
 "@gitbeaker/core@^38.12.1":
   version "38.12.1"
