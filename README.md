@@ -112,6 +112,7 @@ const CustomComponent = () => {
 - [x] List (ordered, unordered)
 - [x] Horizontal Rule
 - [x] Table
+- [x] React Components (via `useMarkdownWithComponents`)
 - [ ] HTML
 
 Ref: [CommonMark](https://commonmark.org/help/)
@@ -119,6 +120,77 @@ Ref: [CommonMark](https://commonmark.org/help/)
 > HTML will be treated as plain text. Please refer [issue#290](https://github.com/gmsgowtham/react-native-marked/issues/290) for a potential solution
 
 ## Advanced
+
+### Embedding React Components in Markdown
+
+You can embed React components directly in your markdown using JSX-style syntax. This is useful for adding interactive elements like buttons, custom info boxes, or any other React component.
+
+```tsx
+import React, { Fragment } from "react";
+import { Pressable, ScrollView, Text, View } from "react-native";
+import {
+  ReactComponentRegistryProvider,
+  useMarkdownWithComponents,
+  type ReactComponentRegistry,
+} from "react-native-marked";
+
+// Define your components
+const components: ReactComponentRegistry = {
+  Button: ({ props }) => (
+    <Pressable onPress={() => console.log("Pressed!")}>
+      <Text>{String(props.label ?? "Click me")}</Text>
+    </Pressable>
+  ),
+  InfoBox: ({ props, children }) => (
+    <View style={{ backgroundColor: "#E3F2FD", padding: 16 }}>
+      {props.title && <Text style={{ fontWeight: "bold" }}>{String(props.title)}</Text>}
+      <Text>{children}</Text>
+    </View>
+  ),
+};
+
+const markdown = `
+# Hello World
+
+Click the button below:
+
+<Button label="Get Started" />
+
+<InfoBox title="Note">
+This is an info box with **markdown** content.
+</InfoBox>
+`;
+
+function MarkdownContent() {
+  const elements = useMarkdownWithComponents(markdown);
+  return (
+    <ScrollView>
+      {elements.map((element, index) => (
+        <Fragment key={index}>{element}</Fragment>
+      ))}
+    </ScrollView>
+  );
+}
+
+export default function App() {
+  return (
+    <ReactComponentRegistryProvider components={components}>
+      <MarkdownContent />
+    </ReactComponentRegistryProvider>
+  );
+}
+```
+
+#### Component Syntax
+
+- **Self-closing:** `<ComponentName prop="value" />`
+- **With children:** `<ComponentName>content</ComponentName>`
+- **Props:** Supports string (`"value"`), number (`{42}`), and boolean (`{true}`) props
+
+#### Component Registry
+
+Components must be registered via `ReactComponentRegistryProvider`. Unregistered components are automatically removed from the output.
+
 ### Using custom components
 
 > Custom components can be used to override elements, i.e. Code Highlighting, Fast Image integration
