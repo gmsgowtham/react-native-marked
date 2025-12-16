@@ -138,4 +138,36 @@ With a reference later in the document defining the URL location:
 $ latex code $\n\n\` other code\`
 `;
 
-export { MD_STRING };
+const MARKDOWN_WITH_COMPONENTS = `
+# Markdown with React Components
+
+This example shows how to embed **React components** inside markdown.
+
+<Button label="Get Started" />
+
+You can create info boxes with custom content:
+
+<InfoBox title="Did you know?">
+Components can contain text and will be rendered inline with the rest of the content.
+</InfoBox>
+
+## More Examples
+
+Here's a highlight box:
+
+<Highlight>
+This is highlighted content that stands out from the rest.
+</Highlight>
+
+And another button:
+
+<Button label="Learn More" />
+
+Regular markdown continues after components.
+
+- List item 1
+- List item 2
+- List item 3
+`;
+
+export { MD_STRING, MARKDOWN_WITH_COMPONENTS };
