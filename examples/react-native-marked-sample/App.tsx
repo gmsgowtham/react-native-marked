@@ -1,20 +1,24 @@
-import React, { type ReactNode } from "react";
+import React, { Fragment, type ReactNode } from "react";
 import {
 	SafeAreaView,
+	ScrollView,
 	StatusBar,
 	StyleSheet,
 	Text,
 	type TextStyle,
 	useColorScheme,
+	View,
 } from "react-native";
-import Markdown, {
+import {
 	MarkedHooks,
 	MarkedTokenizer,
 	Renderer,
 	type RendererInterface,
 	type Tokens,
+	useMarkdown,
 } from "react-native-marked";
 import { MD_STRING } from "./const";
+import ReactComponentsExample from "./ReactComponentsExample";
 
 class CustomTokenizer extends MarkedTokenizer {
 	codespan(this: MarkedTokenizer, src: string): Tokens.Codespan | undefined {
@@ -26,7 +30,6 @@ class CustomTokenizer extends MarkedTokenizer {
 				text: match[1].trim(),
 			};
 		}
-
 		return super.codespan(src);
 	}
 }
@@ -47,39 +50,60 @@ const renderer = new CustomRenderer();
 
 class CustomHooks extends MarkedHooks {
 	emStrongMask(src: string): string {
-		// mask part of the content that should not be interpreted as Markdown em/strong delimiters.
 		return src;
 	}
 }
 
 const hooks = new CustomHooks();
 
+function StandardMarkdownSection() {
+	const elements = useMarkdown(MD_STRING, {
+		renderer,
+		tokenizer,
+		hooks,
+	});
+
+	return (
+		<>
+			{elements.map((element, index) => (
+				<Fragment key={`md_${index}`}>{element as ReactNode}</Fragment>
+			))}
+		</>
+	);
+}
+
 export default function App() {
 	const theme = useColorScheme();
 	const isLightTheme = theme === "light";
+
 	return (
 		<>
 			<StatusBar
 				barStyle={isLightTheme ? "dark-content" : "light-content"}
 				backgroundColor={isLightTheme ? "#fff" : "#000"}
 			/>
-			<SafeAreaView>
-				<Markdown
-					value={MD_STRING}
-					flatListProps={{
-						contentContainerStyle: styles.container,
-					}}
-					renderer={renderer}
-					tokenizer={tokenizer}
-					hooks={hooks}
-				/>
+			<SafeAreaView style={styles.safeArea}>
+				<ScrollView contentContainerStyle={styles.container}>
+					<StandardMarkdownSection />
+					<View style={styles.divider} />
+					<ReactComponentsExample />
+				</ScrollView>
 			</SafeAreaView>
 		</>
 	);
 }
 
 const styles = StyleSheet.create({
+	safeArea: {
+		flex: 1,
+	},
 	container: {
 		paddingHorizontal: 16,
+		paddingBottom: 32,
+	},
+	divider: {
+		borderTopColor: "#ccc",
+		borderTopWidth: 1,
+		marginVertical: 24,
 	},
 });
