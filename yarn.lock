@@ -4443,6 +4443,11 @@
   resolved "https://registry.yarnpkg.com/@types/parse-path/-/parse-path-7.0.3.tgz#cec2da2834ab58eb2eb579122d9a1fc13bd7ef36"
   integrity sha512-LriObC2+KYZD3FzCrgWGv/qufdUy4eXrxcLgQMfYXgPbLIecKIsVBaQgUPmxSSLcjmYbDTQbMgr6qr6l/eb7Bg==
 
+"@types/react-reconciler@~0.31.0":
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/@types/react-reconciler/-/react-reconciler-0.31.0.tgz#07ba9b4b1a522a739278f16308675c3ee56bdf81"
+  integrity sha512-wa1KtV3SHKnWeLHfZFg/7nrPSe/Ejdn+qbanNX4V6i9I7C3ECKPfBnC1KM3ef58KFWEohLmTvoTH5XuEIKGX2g==
+
 "@types/react@19.2.7":
   version "19.2.7"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-19.2.7.tgz#84e62c0f23e8e4e5ac2cadcea1ffeacccae7f62f"
@@ -10336,11 +10341,12 @@ unicorn-magic@^0.1.0:
   resolved "https://registry.yarnpkg.com/unicorn-magic/-/unicorn-magic-0.1.0.tgz#1bb9a51c823aaf9d73a8bfcd3d1a23dde94b0ce4"
   integrity sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==
 
-universal-test-renderer@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/universal-test-renderer/-/universal-test-renderer-0.6.0.tgz#72473a68ca7c21af316ba25d8b10eaa622ff8d60"
-  integrity sha512-o59TmDttl2yEz1yDgoNJn9W5C6+a/ud8/8G5kBoSEMOAFTC7WUGd4yRxhauyWC8g0lo5qf3JCfMHDXYH+wKpAw==
+universal-test-renderer@0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/universal-test-renderer/-/universal-test-renderer-0.10.1.tgz#706270a9e019e1f4a4ab917ba69319c57aa06999"
+  integrity sha512-u2iDRtY5bIwGRsAFD7q68XD4Mv/N6jTpQwirGvx3uTJxE+SzpBoMli1FL/1P7VKbmaSdDRdBbi0EDYIYbpj8Zw==
   dependencies:
+    "@types/react-reconciler" "~0.31.0"
     react-reconciler "~0.31.0"
 
 universal-user-agent@^6.0.0:
