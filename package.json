@@ -61,7 +61,7 @@
 		"@release-it/conventional-changelog": "10.0.4",
 		"@testing-library/react-native": "v14.0.0-alpha.1",
 		"@types/jest": "30.0.0",
-		"@types/node": "24.10.4",
+		"@types/node": "24.10.9",
 		"@types/react": "19.2.7",
 		"@types/svg-parser": "^2.0.3",
 		"commitlint": "20.2.0",
