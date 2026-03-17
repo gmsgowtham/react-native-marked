@@ -23,21 +23,21 @@ export type {
 	MarkdownProps,
 	MarkedStyles,
 	ParserOptions,
+	ReactComponentRegistry,
 	RendererInterface,
-	useMarkdownHookOptions,
 	Token,
 	Tokens,
-	ReactComponentRegistry,
+	useMarkdownHookOptions,
 };
 
 export {
+	MarkedHooks,
+	MarkedLexer,
+	MarkedTokenizer,
+	ReactComponentRegistryProvider,
+	Renderer,
 	useMarkdown,
 	useMarkdownWithComponents,
-	MarkedLexer,
-	Renderer,
-	MarkedTokenizer,
-	MarkedHooks,
-	ReactComponentRegistryProvider,
 };
 
 export default Markdown;

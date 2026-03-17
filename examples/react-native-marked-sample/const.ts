@@ -170,4 +170,4 @@ Regular markdown continues after components.
 - List item 3
 `;
 
-export { MD_STRING, MARKDOWN_WITH_COMPONENTS };
+export { MARKDOWN_WITH_COMPONENTS, MD_STRING };
