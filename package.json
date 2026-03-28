@@ -59,7 +59,7 @@
 		"@evilmartians/lefthook": "2.1.4",
 		"@react-native/babel-preset": "0.78.2",
 		"@release-it/conventional-changelog": "10.0.6",
-		"@testing-library/react-native": "v14.0.0-alpha.1",
+		"@testing-library/react-native": "14.0.0-beta.0",
 		"@types/jest": "30.0.0",
 		"@types/node": "24.12.0",
 		"@types/react": "19.2.14",
