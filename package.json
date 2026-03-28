@@ -72,7 +72,7 @@
 		"pod-install": "1.0.14",
 		"postinstall-postinstall": "2.1.0",
 		"react": "19.2.4",
-		"react-native": "0.78.2",
+		"react-native": "0.84.1",
 		"react-native-builder-bob": "0.40.18",
 		"react-native-svg": "15.15.3",
 		"reassure": "1.4.1",
