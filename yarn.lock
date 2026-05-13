@@ -9019,10 +9019,10 @@ pkg-types@^2.3.0:
     exsolve "^1.0.7"
     pathe "^2.0.3"
 
-pod-install@1.0.15:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-1.0.15.tgz#5c652abc373638dbced3789d9fd8f3acc16e13e4"
-  integrity sha512-9blWyUS3LvxEno3P9M0GG3aQQP4oK/srrG8hidnE0KBnRwdIC40tctOV547KFxgOTVbIQoPJeJsaTV9tVjjbEg==
+pod-install@1.0.18:
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-1.0.18.tgz#bf57ac1d626f32603b7af5ad82b63ce4d657620b"
+  integrity sha512-BTjv1p3pG/TWKVmm5+EiQUYWOru/x/TkOV++EaCvMpUMQVL3EfcZeUA7CSpIkVfNzmU+gzYl9DFP4YwqDyYwKA==
 
 postinstall-postinstall@2.1.0:
   version "2.1.0"
