@@ -4577,6 +4577,11 @@
   resolved "https://registry.yarnpkg.com/@types/parse-path/-/parse-path-7.0.3.tgz#cec2da2834ab58eb2eb579122d9a1fc13bd7ef36"
   integrity sha512-LriObC2+KYZD3FzCrgWGv/qufdUy4eXrxcLgQMfYXgPbLIecKIsVBaQgUPmxSSLcjmYbDTQbMgr6qr6l/eb7Bg==
 
+"@types/react-reconciler@~0.31.0":
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/@types/react-reconciler/-/react-reconciler-0.31.0.tgz#07ba9b4b1a522a739278f16308675c3ee56bdf81"
+  integrity sha512-wa1KtV3SHKnWeLHfZFg/7nrPSe/Ejdn+qbanNX4V6i9I7C3ECKPfBnC1KM3ef58KFWEohLmTvoTH5XuEIKGX2g==
+
 "@types/react@19.2.14":
   version "19.2.14"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-19.2.14.tgz#39604929b5e3957e3a6fa0001dafb17c7af70bad"
@@ -10330,11 +10335,12 @@ unicode-property-aliases-ecmascript@^2.0.0:
   resolved "https://registry.yarnpkg.com/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-2.1.0.tgz#43d41e3be698bd493ef911077c9b131f827e8ccd"
   integrity sha512-6t3foTQI9qne+OZoVQB/8x8rk2k1eVy1gRXhV3oFQ5T6R1dqQ1xtin3XqSlx3+ATBkliTaR/hHyJBm+LVPNM8w==
 
-universal-test-renderer@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/universal-test-renderer/-/universal-test-renderer-0.6.0.tgz#72473a68ca7c21af316ba25d8b10eaa622ff8d60"
-  integrity sha512-o59TmDttl2yEz1yDgoNJn9W5C6+a/ud8/8G5kBoSEMOAFTC7WUGd4yRxhauyWC8g0lo5qf3JCfMHDXYH+wKpAw==
+universal-test-renderer@0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/universal-test-renderer/-/universal-test-renderer-0.10.1.tgz#706270a9e019e1f4a4ab917ba69319c57aa06999"
+  integrity sha512-u2iDRtY5bIwGRsAFD7q68XD4Mv/N6jTpQwirGvx3uTJxE+SzpBoMli1FL/1P7VKbmaSdDRdBbi0EDYIYbpj8Zw==
   dependencies:
+    "@types/react-reconciler" "~0.31.0"
     react-reconciler "~0.31.0"
 
 universal-user-agent@^6.0.0:
