@@ -5865,6 +5865,7 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
   &lt;head&gt;
   &lt;/head&gt;
   &lt;/html&gt;
+
                   </Text>
                 </View>
               </ScrollView>
@@ -6125,6 +6126,7 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
   &lt;head&gt;
   &lt;/head&gt;
   &lt;/html&gt;
+
                 </Text>
               </View>
             </View>
