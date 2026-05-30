@@ -4045,10 +4045,10 @@
     invariant "^2.2.4"
     nullthrows "^1.1.1"
 
-"@release-it/conventional-changelog@11.0.0":
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-11.0.0.tgz#90e6aaefbe259fe50eda3d643602d94b3833133b"
-  integrity sha512-3/WyzObY+y+EejBt+J2vcojFPLUiGu14liRiaPWc0bNVluhRIsADeJ785Iq5ynnhdd1zcjMNh5lBmM/J6/KXig==
+"@release-it/conventional-changelog@11.0.1":
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-11.0.1.tgz#138b27f03228b3b9332d432fce987b16afdd9e86"
+  integrity sha512-SHAnHfOFhazpDeYuQSqH8Qm8RJa2oREn2ILSod+9s8dqiA18mBgpPyYlpvRaqISCVerSmLzEZghQBKphkrf4IQ==
   dependencies:
     "@conventional-changelog/git-client" "^2.7.0"
     concat-stream "^2.0.0"
