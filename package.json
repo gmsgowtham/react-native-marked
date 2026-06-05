@@ -62,7 +62,7 @@
 		"@testing-library/react-native": "v14.0.0-alpha.1",
 		"@types/jest": "30.0.0",
 		"@types/node": "24.12.4",
-		"@types/react": "19.2.16",
+		"@types/react": "19.2.17",
 		"@types/svg-parser": "^2.0.3",
 		"commitlint": "21.0.2",
 		"danger": "13.0.7",
@@ -169,7 +169,7 @@
 		"node": ">=18"
 	},
 	"resolutions": {
-		"@types/react": "19.2.16",
+		"@types/react": "19.2.17",
 		"**/pretty-format/react-is": "19.2.7"
 	}
 }
