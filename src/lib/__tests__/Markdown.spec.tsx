@@ -907,4 +907,124 @@ describe("Hooks", () => {
 		expect(screen.queryByText("Hello")).toBeTruthy();
 		expect(screen.queryByText("$$world$$")).toBeTruthy();
 	});
+
+	describe("selectableText prop", () => {
+		it("renders with selectable=true by default", () => {
+			const r = render(<Markdown value="Hello world" />);
+			const tree = r.toJSON();
+
+			expect(screen.queryByText("Hello world")).toBeTruthy();
+
+			// Check that Text elements have selectable=true
+			const findSelectableText = (node: any): boolean => {
+				if (!node) return false;
+				if (
+					node.type === "Text" &&
+					node.props &&
+					node.props.selectable === true
+				) {
+					return true;
+				}
+				if (Array.isArray(node.children)) {
+					return node.children.some((child: any) => findSelectableText(child));
+				}
+				if (node.children) {
+					return findSelectableText(node.children);
+				}
+				return false;
+			};
+
+			expect(findSelectableText(tree)).toBe(true);
+		});
+
+		it("renders with selectable=false when selectableText prop is false", () => {
+			const r = render(<Markdown value="Hello world" selectableText={false} />);
+			const tree = r.toJSON();
+
+			expect(screen.queryByText("Hello world")).toBeTruthy();
+
+			// Check that Text elements have selectable=false
+			const findNonSelectableText = (node: any): boolean => {
+				if (!node) return false;
+				if (
+					node.type === "Text" &&
+					node.props &&
+					node.props.selectable === false
+				) {
+					return true;
+				}
+				if (Array.isArray(node.children)) {
+					return node.children.some((child: any) =>
+						findNonSelectableText(child),
+					);
+				}
+				if (node.children) {
+					return findNonSelectableText(node.children);
+				}
+				return false;
+			};
+
+			expect(findNonSelectableText(tree)).toBe(true);
+		});
+
+		it("renders with selectable=true when selectableText prop is explicitly true", () => {
+			const r = render(<Markdown value="Hello world" selectableText={true} />);
+			const tree = r.toJSON();
+
+			expect(screen.queryByText("Hello world")).toBeTruthy();
+
+			// Check that Text elements have selectable=true
+			const findSelectableText = (node: any): boolean => {
+				if (!node) return false;
+				if (
+					node.type === "Text" &&
+					node.props &&
+					node.props.selectable === true
+				) {
+					return true;
+				}
+				if (Array.isArray(node.children)) {
+					return node.children.some((child: any) => findSelectableText(child));
+				}
+				if (node.children) {
+					return findSelectableText(node.children);
+				}
+				return false;
+			};
+
+			expect(findSelectableText(tree)).toBe(true);
+		});
+
+		it("renders links with selectable=false when selectableText prop is false", () => {
+			const r = render(
+				<Markdown value="[Link](https://example.com)" selectableText={false} />,
+			);
+			const tree = r.toJSON();
+
+			expect(screen.queryByText("Link")).toBeTruthy();
+
+			// Check that Text elements for links have selectable=false
+			const findNonSelectableText = (node: any): boolean => {
+				if (!node) return false;
+				if (
+					node.type === "Text" &&
+					node.props &&
+					node.props.selectable === false
+				) {
+					return true;
+				}
+				if (Array.isArray(node.children)) {
+					return node.children.some((child: any) =>
+						findNonSelectableText(child),
+					);
+				}
+				if (node.children) {
+					return findNonSelectableText(node.children);
+				}
+				return false;
+			};
+
+			expect(findNonSelectableText(tree)).toBe(true);
+		});
+	});
 });
