@@ -1,9 +1,10 @@
 {
 	"compilerOptions": {
-		"baseUrl": "./",
 		"paths": {
 			"react-native-marked": ["./src/index"]
 		},
+		"types": ["jest", "node"],
+		"rootDir": "./src",
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
 		"esModuleInterop": true,
@@ -12,7 +13,6 @@
 		"jsx": "react",
 		"lib": ["esnext"],
 		"module": "esnext",
-		"moduleResolution": "node",
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitReturns": true,
 		"noImplicitUseStrict": false,
