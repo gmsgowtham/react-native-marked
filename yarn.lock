@@ -2726,16 +2726,16 @@
     mathjs "^15.2.0"
     pretty-format "^30.4.1"
 
-"@commitlint/cli@^21.2.0":
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-21.2.0.tgz#49ba69a3a9466e7d571012943914109ef7a52287"
-  integrity sha512-4GLVIhUaT3c3GBlQ0GB80/5H3xXdn/Tgw4lrsuoOQVDu2wl4Xw0GuzSar8xZKSMv4H3xaKaQXmvH91GmdyYBZA==
+"@commitlint/cli@^21.2.1":
+  version "21.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-21.2.1.tgz#a1b4fa3d4366ac5d09e591218cb633f7fc031704"
+  integrity sha512-blsZGe29hJ72VGEFVl72IVYX+1vsfINpjA9yWQA6i7OKD/McGEOXg08sKIRKjFk4JvzhV/9n0l3i6NooPLTNfg==
   dependencies:
     "@commitlint/config-conventional" "^21.2.0"
     "@commitlint/format" "^21.2.0"
     "@commitlint/lint" "^21.2.0"
     "@commitlint/load" "^21.2.0"
-    "@commitlint/read" "^21.2.0"
+    "@commitlint/read" "^21.2.1"
     "@commitlint/types" "^21.2.0"
     tinyexec "^1.0.0"
     yargs "^18.0.0"
@@ -2824,14 +2824,14 @@
     conventional-changelog-angular "^9.0.0"
     conventional-commits-parser "^7.0.0"
 
-"@commitlint/read@^21.2.0":
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/read/-/read-21.2.0.tgz#2f2674ff670cf47aeed3f638b725b8145e36404f"
-  integrity sha512-ELx8Ovh/JoAw5lpvDgxc6Y0We9skf2IPI2RFN+gnYgDGjRdMSF8zeodxhZmcclLWzfUIF7hXLOa8gOlllYcvBA==
+"@commitlint/read@^21.2.1":
+  version "21.2.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/read/-/read-21.2.1.tgz#a39f19f73b45a604619831fdcbf93fa022feb870"
+  integrity sha512-hUW7EJQnNTL0vPOmVMNK4CrnrNBN0nN+JJHReFkdHO5y4iyHeEmTBwuC15OCqUTjxWo7idnH1LftfpWVIaPWIA==
   dependencies:
     "@commitlint/top-level" "^21.2.0"
     "@commitlint/types" "^21.2.0"
-    git-raw-commits "^5.0.0"
+    "@conventional-changelog/git-client" "^3.0.0"
     tinyexec "^1.0.0"
 
 "@commitlint/resolve-extends@^21.2.0":
@@ -2900,6 +2900,15 @@
   dependencies:
     "@simple-libs/child-process-utils" "^1.0.0"
     "@simple-libs/stream-utils" "^1.2.0"
+    semver "^7.5.2"
+
+"@conventional-changelog/git-client@^3.0.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@conventional-changelog/git-client/-/git-client-3.1.0.tgz#0d89e1d74ecc578ebe1bf46c09488beef41c58e8"
+  integrity sha512-Tqa/gHco2WJWa740NRjOrfKVvzIqxkZpecb8bemaQ8sKM5PXb1UK4uTyTb/1wIqNuOVaDOFxyBdhTIQZn6gdjQ==
+  dependencies:
+    "@simple-libs/child-process-utils" "^2.0.0"
+    "@simple-libs/stream-utils" "^2.0.0"
     semver "^7.5.2"
 
 "@conventional-changelog/template@^1.2.0":
@@ -4090,6 +4099,13 @@
   dependencies:
     "@simple-libs/stream-utils" "^1.1.0"
     "@types/node" "^22.0.0"
+
+"@simple-libs/child-process-utils@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@simple-libs/child-process-utils/-/child-process-utils-2.0.0.tgz#90ea8a9008ab622cc50cf94ed3469ce5144e9eb6"
+  integrity sha512-dvNoRKLijXnD0XoJAz94pbNuB5GQgDr55UhpSPhffDkTT0Cmcqh9jSCOtwfT2d4H6MI9E7c4SgtMuJXZ6F3c6A==
+  dependencies:
+    "@simple-libs/stream-utils" "^2.0.0"
 
 "@simple-libs/hosted-git-info@^1.0.2":
   version "1.0.2"
@@ -5291,12 +5307,12 @@ commander@^2.18.0, commander@^2.20.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
-commitlint@21.2.0:
-  version "21.2.0"
-  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-21.2.0.tgz#b05a971327c27847a3ca3770833aa13e4339dd89"
-  integrity sha512-MCxw4QenpFaWXatU9abColk3M/8iWk055aeXTY5bS99NYOC23k3GAp6f57KXAB0P/s3R9hJjXLn5Cw2bPRO9Ow==
+commitlint@21.2.1:
+  version "21.2.1"
+  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-21.2.1.tgz#7071162bba278d963187ff26c24966ac9a1a0794"
+  integrity sha512-Ki6U66eL6wXsZf/is2qCs/6W2fNeF/WL2GSiacnuf2wwmCPapjtOoUvwfwMoqUAwosKbJfXVwr2iLnV08J7JmA==
   dependencies:
-    "@commitlint/cli" "^21.2.0"
+    "@commitlint/cli" "^21.2.1"
     "@commitlint/types" "^21.2.0"
 
 commondir@^1.0.1:
@@ -6346,14 +6362,6 @@ giget@^2.0.0:
     node-fetch-native "^1.6.6"
     nypm "^0.6.0"
     pathe "^2.0.3"
-
-git-raw-commits@^5.0.0:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/git-raw-commits/-/git-raw-commits-5.0.1.tgz#e91d8fd4e3a264142166956fe1a23d08c069657e"
-  integrity sha512-Y+csSm2GD/PCSh6Isd/WiMjNAydu0VBiG9J7EdQsNA5P9uXvLayqjmTsNlK5Gs9IhblFZqOU0yid5Il5JPoLiQ==
-  dependencies:
-    "@conventional-changelog/git-client" "^2.6.0"
-    meow "^13.0.0"
 
 git-up@^8.1.0:
   version "8.1.1"
