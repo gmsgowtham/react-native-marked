@@ -54,6 +54,7 @@ export default ExampleComponent;
 | baseUrl       | A prefix url for any relative link                                                                                                           | string                                                                                                                                                                         | true      |
 | renderer      | Custom component Renderer                                                                                                                    | [RendererInterface](src/lib/types.ts)                                                                                                                                          | true      |
 | hooks         | Hooks run during parsing to transform tokens                                                                                                | [Marked Hooks](https://marked.js.org/using_pro#hooks)                                                                                                                            | true      |
+| selectableText| Whether text elements should be selectable (default: true)                                                                                     | boolean                                                                                                                                                                        | true      |
 
 
 ### Using hook
@@ -91,8 +92,8 @@ const CustomComponent = () => {
 | baseUrl     | A prefix url for any relative link                                                                                                           | string                                           | true      |
 | renderer    | Custom component Renderer                                                                                                                    | [RendererInterface](src/lib/types.ts)            | true      |
 | tokenizer   | Generate custom tokens                                                                                                                       | [MarkedTokenizer<CustomToken>](src/lib/types.ts) | true      |
-| hooks       | Hooks run during parsing to transform tokens                                                                                                 |
-[Marked Hooks](https://marked.js.org/using_pro#hooks)   | true      |
+| hooks       | Hooks run during parsing to transform tokens                                                                                                 | [Marked Hooks](https://marked.js.org/using_pro#hooks)   | true      |
+| selectableText | Whether text elements should be selectable (default: true)                                                                                | boolean                                          | true      |
 
 
 ## Examples
@@ -118,6 +119,40 @@ const CustomComponent = () => {
 Ref: [CommonMark](https://commonmark.org/help/)
 
 > HTML will be treated as plain text. Please refer [issue#290](https://github.com/gmsgowtham/react-native-marked/issues/290) for a potential solution
+
+## Text Selection
+
+By default, all text elements are selectable. You can disable text selection by setting the `selectableText` prop to `false`:
+
+```tsx
+import Markdown from "react-native-marked";
+
+// Component - disable text selection
+const ExampleComponent = () => {
+  return (
+    <Markdown
+      value={`# Hello world`}
+      selectableText={false}
+    />
+  );
+};
+
+// Hook - disable text selection
+const ExampleWithHook = () => {
+  const elements = useMarkdown("# Hello world", {
+    colorScheme: "light",
+    selectableText: false,
+  });
+
+  return (
+    <ScrollView>
+      {elements.map((element, index) => (
+        <Fragment key={index}>{element}</Fragment>
+      ))}
+    </ScrollView>
+  );
+};
+```
 
 ## Advanced
 
