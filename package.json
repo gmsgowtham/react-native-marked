@@ -78,7 +78,7 @@
 		"reassure": "1.5.1",
 		"release-it": "20.2.1",
 		"typescript": "6.0.3",
-		"universal-test-renderer": "0.6.0"
+		"universal-test-renderer": "0.10.1"
 	},
 	"peerDependencies": {
 		"react": ">=16.8.6",
