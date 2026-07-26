@@ -2684,47 +2684,49 @@
   resolved "https://registry.yarnpkg.com/@biomejs/cli-win32-x64/-/cli-win32-x64-2.5.5.tgz#922b281ea2b87e448d89f7bf592efc94b78d4221"
   integrity sha512-bIBFo+n6MIxdNcVFy5CrurbKiZQiUciK3bt8+O9I4wjFZNTfXLpi+giq47522eXqW5NBc9ulx7dR1SlZKi2J5g==
 
-"@callstack/reassure-cli@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-1.5.1.tgz#b88082a92d40ca0bb5a6433d1b48264a5ca59a74"
-  integrity sha512-ZUWPFVABh2Z5LQhdTCp7wbDx2x6Xv6sAASoxoI937r/Oa20QIO0/Xt2UTAAmFFYW08fWOGAqWYBe8LlSd+0nIg==
+"@callstack/reassure-cli@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-cli/-/reassure-cli-1.6.0.tgz#6f808c125659bc96f79425ae4ba447f647a4d0c8"
+  integrity sha512-GO32KZ295S4s2IBrfr4obQO7S4g/cAHtaFXCBHwfV7U2gyjGsFRM/4h1c4haxBbeky852TnEsZCPkudhs9F+zQ==
   dependencies:
-    "@callstack/reassure-compare" "1.5.1"
-    "@callstack/reassure-logger" "1.5.1"
+    "@callstack/reassure-compare" "1.6.0"
+    "@callstack/reassure-logger" "1.6.0"
     chalk "4.1.2"
     simple-git "^3.36.0"
     yargs "^17.7.2"
 
-"@callstack/reassure-compare@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-compare/-/reassure-compare-1.5.1.tgz#a4dbf5368cb09c0776fae3372c59a90509f0a7c3"
-  integrity sha512-NUEzG0EYX9TS6othtlW6ZpBgbHuGr86cA+ZevIP9qegCMvmXlqkaQphdaUWBarrQYD0QlGKxPJubzFmL79RtQA==
+"@callstack/reassure-compare@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-compare/-/reassure-compare-1.6.0.tgz#23d747be9577c09d4436f175cee9580d8a3d4152"
+  integrity sha512-wseMpUagjrd2T9uJ8gR7dACe0lvY7MibEZM4HzQ8Q3Tw7dLbQp25hnlFddv4YupCpE8uBiYknr/XbAmp49b5rw==
   dependencies:
-    "@callstack/reassure-logger" "1.5.1"
+    "@callstack/reassure-logger" "1.6.0"
+    mathjs "^15.2.0"
     ts-markdown-builder "0.6.0"
     ts-regex-builder "^1.8.2"
     zod "^4.4.3"
 
-"@callstack/reassure-danger@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-danger/-/reassure-danger-1.5.1.tgz#d5020a9949772b4e5d1326dacca0989f1a3f3fb2"
-  integrity sha512-QCXTHGCCMdBbfeO0ei6eyWvMUARHE8KWrj/r4nwd9fHTshsPgL/MSZL9Bv5AGdJe5ieS1YqejnYpb5sgacNVlw==
+"@callstack/reassure-danger@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-danger/-/reassure-danger-1.6.0.tgz#8182c57753abbe001145dc4c40e0f8d342ded5ee"
+  integrity sha512-m1/OXw6M12jtCmtokkPDE5qWm6tzzgWjH7Boa0y8YE8poirh7rMzum+/bF9HLfVPkvaY+MGdxQYjQXvtdIMUXQ==
 
-"@callstack/reassure-logger@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-logger/-/reassure-logger-1.5.1.tgz#83cdcf4e3fa94fc3407ec2bd9ad075ca7a687308"
-  integrity sha512-OrRO94q5yH/PS/GuOzqyjy1DmhdtlteYv22f+zYf17ZcN/KcUILX5f4SP7B+Iw+FMNdi33AD629ERkIi7r9Izg==
+"@callstack/reassure-logger@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-logger/-/reassure-logger-1.6.0.tgz#93941fee5d396cffc9c9060e2c49865e352cb2cc"
+  integrity sha512-cDcCkDUZB6Q4p37KViSKAeU5fDoAUbJN2OpcPm7Oddv9Iqh7FTs/kOphW9PrZoKHeaM7EJ9f+AQgW15/FFsSLg==
   dependencies:
     chalk "4.1.2"
 
-"@callstack/reassure-measure@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@callstack/reassure-measure/-/reassure-measure-1.5.1.tgz#010d64332c5a22a8d20dc9ad88e7698f946a27f9"
-  integrity sha512-jnCxnNWvzx64sei0j0STCwUBPPmmfcYB+9suWwUJuz4ib6fqgcwL1F1DkOUOHmN4bOOh9jv6ChX5HjvV/1Vebg==
+"@callstack/reassure-measure@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@callstack/reassure-measure/-/reassure-measure-1.6.0.tgz#52dafe93ff064c4d622edf734d77ddf8cbfedb94"
+  integrity sha512-05gIhKYk8/7Ka02hjiKYmE+9i0/Rz3NZGTnpjnK9IKRJ6819h12XGmNBsPkzZGqFUei3Vz8NSxoq4SA8kuz7SA==
   dependencies:
-    "@callstack/reassure-logger" "1.5.1"
+    "@callstack/reassure-logger" "1.6.0"
     mathjs "^15.2.0"
     pretty-format "^30.4.1"
+    react-test-config "^1.0.0"
 
 "@commitlint/cli@^21.2.1":
   version "21.2.1"
@@ -8995,6 +8997,11 @@ react-refresh@^0.14.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.2.tgz#3833da01ce32da470f1f936b9d477da5c7028bf9"
   integrity sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==
 
+react-test-config@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-test-config/-/react-test-config-1.0.0.tgz#bd20a471aaddaca1f3d4d1abf64f9af30790d4c7"
+  integrity sha512-uoYlGns8YSB/FS0aAzUVg/wgS4z882rygig4gcwf0hEzAWEM6O2zN2r3gYLyYwm8MMRuqwLUOBWWq60K5/pBPQ==
+
 react@19.2.7:
   version "19.2.7"
   resolved "https://registry.yarnpkg.com/react/-/react-19.2.7.tgz#1f47a1bfc06f8ec885752c6f4af14369a9f8260b"
@@ -9024,15 +9031,15 @@ readline@^1.3.0:
   resolved "https://registry.yarnpkg.com/readline/-/readline-1.3.0.tgz#c580d77ef2cfc8752b132498060dc9793a7ac01c"
   integrity sha512-k2d6ACCkiNYz222Fs/iNze30rRJ1iIicW7JuX/7/cozvih6YCkFZH+J6mAFDVgv0dRBaAyr4jDqC95R2y4IADg==
 
-reassure@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/reassure/-/reassure-1.5.1.tgz#c91a097a5673bdd97e12d3e5d8b03740fab83bf2"
-  integrity sha512-yfAXD+so2jDe8UprppozvvZpcWroCeYhGLCQ+dhltO57mMSqX2tPcFhMkdgncQtXeSVLbd09IY7d2wSd4Edpeg==
+reassure@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/reassure/-/reassure-1.6.0.tgz#b6d89abb12e1b951f04216f7ee7d651c4027742e"
+  integrity sha512-DjfhKCqIFcmb1zAkRFrM4eDtMG63kbs6/4tjP6QOqf+mnREfQIoUX4xM8D5sF6GfkjNnehRM5pk8Bi/vaW3eyA==
   dependencies:
-    "@callstack/reassure-cli" "1.5.1"
-    "@callstack/reassure-compare" "1.5.1"
-    "@callstack/reassure-danger" "1.5.1"
-    "@callstack/reassure-measure" "1.5.1"
+    "@callstack/reassure-cli" "1.6.0"
+    "@callstack/reassure-compare" "1.6.0"
+    "@callstack/reassure-danger" "1.6.0"
+    "@callstack/reassure-measure" "1.6.0"
 
 recast@^0.23.9:
   version "0.23.9"
