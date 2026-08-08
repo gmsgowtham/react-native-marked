@@ -12,6 +12,7 @@ export interface ParserOptions {
 	styles?: MarkedStyles;
 	baseUrl?: string;
 	renderer: RendererInterface;
+	selectableText?: boolean;
 }
 
 export interface MarkdownProps extends Partial<ParserOptions> {
@@ -23,6 +24,7 @@ export interface MarkdownProps extends Partial<ParserOptions> {
 	theme?: UserTheme;
 	tokenizer?: Tokenizer;
 	hooks?: Hooks;
+	selectableText?: boolean;
 }
 
 export type TableColAlignment = "center" | "left" | "right" | null;

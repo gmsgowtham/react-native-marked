@@ -244,3 +244,50 @@ describe("Renderer", () => {
 		});
 	}
 });
+
+describe("selectableText prop", () => {
+	it("renders Text nodes with selectable=true by default", () => {
+		const defaultRenderer = new Renderer();
+		const TextNode = defaultRenderer.text("Hello world");
+
+		const r = render(TextNode as ReactElement);
+		const tree = r.toJSON();
+		expect(tree).toHaveProperty("props.selectable", true);
+	});
+
+	it("renders Text nodes with selectable=false when selectableText is false", () => {
+		const nonSelectableRenderer = new Renderer(false);
+		const TextNode = nonSelectableRenderer.text("Hello world");
+
+		const r = render(TextNode as ReactElement);
+		const tree = r.toJSON();
+		expect(tree).toHaveProperty("props.selectable", false);
+	});
+
+	it("renders Text nodes with selectable=true when selectableText is explicitly true", () => {
+		const selectableRenderer = new Renderer(true);
+		const TextNode = selectableRenderer.text("Hello world");
+
+		const r = render(TextNode as ReactElement);
+		const tree = r.toJSON();
+		expect(tree).toHaveProperty("props.selectable", true);
+	});
+
+	it("renders Link nodes with selectable=false when selectableText is false", () => {
+		const nonSelectableRenderer = new Renderer(false);
+		const LinkNode = nonSelectableRenderer.link("Link", "https://example.com");
+
+		const r = render(LinkNode as ReactElement);
+		const tree = r.toJSON();
+		expect(tree).toHaveProperty("props.selectable", false);
+	});
+
+	it("renders Link nodes with selectable=true by default", () => {
+		const defaultRenderer = new Renderer();
+		const LinkNode = defaultRenderer.link("Link", "https://example.com");
+
+		const r = render(LinkNode as ReactElement);
+		const tree = r.toJSON();
+		expect(tree).toHaveProperty("props.selectable", true);
+	});
+});

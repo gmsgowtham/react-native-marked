@@ -22,8 +22,11 @@ class Renderer implements RendererInterface {
 	private slugPrefix = "react-native-marked-ele";
 	private slugger: Slugger;
 	private windowWidth: number;
-	constructor() {
+	private selectableText: boolean;
+
+	constructor(selectableText: boolean = true) {
 		this.slugger = new Slugger();
+		this.selectableText = selectableText;
 		const { width } = Dimensions.get("window");
 		this.windowWidth = width;
 	}
@@ -101,7 +104,7 @@ class Renderer implements RendererInterface {
 	): ReactNode {
 		return (
 			<Text
-				selectable
+				selectable={this.selectableText}
 				accessibilityRole="link"
 				accessibilityHint="Opens in a new window"
 				accessibilityLabel={title || "Link"}
@@ -206,7 +209,7 @@ class Renderer implements RendererInterface {
 		styles?: TextStyle,
 	): ReactNode {
 		return (
-			<Text selectable key={this.getKey()} style={styles}>
+			<Text selectable={this.selectableText} key={this.getKey()} style={styles}>
 				{children}
 			</Text>
 		);

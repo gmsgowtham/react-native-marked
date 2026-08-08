@@ -12,6 +12,7 @@ const Markdown = ({
 	styles,
 	tokenizer,
 	hooks,
+	selectableText,
 }: MarkdownProps) => {
 	const colorScheme = useColorScheme();
 
@@ -23,6 +24,7 @@ const Markdown = ({
 		styles,
 		tokenizer,
 		hooks,
+		selectableText,
 	});
 
 	const renderItem = useCallback(({ item }: { item: ReactNode }) => {
