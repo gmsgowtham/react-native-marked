@@ -1,6 +1,6 @@
 {
 	"name": "react-native-marked",
-	"version": "8.1.0",
+	"version": "8.1.1",
 	"description": "Markdown renderer for React Native powered by marked.js",
 	"main": "dist/commonjs/index",
 	"module": "dist/module/index",
@@ -54,30 +54,30 @@
 		"@babel/core": "7.29.7",
 		"@babel/helper-explode-assignable-expression": "7.18.6",
 		"@babel/preset-env": "7.29.7",
-		"@biomejs/biome": "2.4.16",
-		"@commitlint/config-conventional": "21.0.2",
-		"@evilmartians/lefthook": "2.1.9",
+		"@biomejs/biome": "2.5.8",
+		"@commitlint/config-conventional": "21.2.0",
+		"@evilmartians/lefthook": "2.1.10",
 		"@react-native/babel-preset": "0.78.2",
-		"@release-it/conventional-changelog": "11.0.1",
+		"@release-it/conventional-changelog": "12.0.0",
 		"@testing-library/react-native": "v14.0.0-alpha.1",
 		"@types/jest": "30.0.0",
-		"@types/node": "24.12.4",
-		"@types/react": "19.2.17",
+		"@types/node": "24.13.3",
+		"@types/react": "19.2.18",
 		"@types/svg-parser": "^2.0.3",
-		"commitlint": "21.0.2",
-		"danger": "13.0.7",
+		"commitlint": "21.2.1",
+		"danger": "13.0.10",
 		"husky": "9.1.7",
 		"jest": "30.2.0",
 		"jest-environment-jsdom": "29.7.0",
-		"pod-install": "1.0.19",
+		"pod-install": "1.1.0",
 		"postinstall-postinstall": "2.1.0",
-		"react": "19.2.7",
+		"react": "19.2.8",
 		"react-native": "0.78.2",
-		"react-native-builder-bob": "0.42.1",
+		"react-native-builder-bob": "0.43.0",
 		"react-native-svg": "15.15.5",
-		"reassure": "1.4.1",
-		"release-it": "20.2.0",
-		"typescript": "5.9.3",
+		"reassure": "1.6.0",
+		"release-it": "21.0.2",
+		"typescript": "6.0.3",
 		"universal-test-renderer": "0.6.0"
 	},
 	"peerDependencies": {
@@ -161,7 +161,7 @@
 		"@jsamr/react-native-li": "2.3.1",
 		"github-slugger": "2.0.0",
 		"html-entities": "2.6.0",
-		"marked": "18.0.5",
+		"marked": "18.0.9",
 		"react-native-reanimated-table": "0.0.2",
 		"svg-parser": "2.0.4"
 	},
@@ -169,7 +169,7 @@
 		"node": ">=18"
 	},
 	"resolutions": {
-		"@types/react": "19.2.17",
-		"**/pretty-format/react-is": "19.2.7"
+		"@types/react": "19.2.18",
+		"**/pretty-format/react-is": "19.2.8"
 	}
 }
