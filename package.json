@@ -163,7 +163,7 @@
 		"html-entities": "2.6.0",
 		"marked": "18.0.9",
 		"react-native-reanimated-table": "0.0.2",
-		"svg-parser": "2.0.4"
+		"svg-parser": "2.1.0"
 	},
 	"engines": {
 		"node": ">=18"
