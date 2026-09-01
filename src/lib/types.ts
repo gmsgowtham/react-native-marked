@@ -23,6 +23,12 @@ export interface MarkdownProps extends Partial<ParserOptions> {
 	theme?: UserTheme;
 	tokenizer?: Tokenizer;
 	hooks?: Hooks;
+	/**
+	 * Whether Text elements are selectable. Defaults to `true`.
+	 * When a custom `renderer` is provided this prop is ignored —
+	 * configure the renderer directly via `new Renderer({ selectable })`.
+	 */
+	selectable?: boolean;
 }
 
 export type TableColAlignment = "center" | "left" | "right" | null;

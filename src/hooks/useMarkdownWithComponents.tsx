@@ -46,11 +46,16 @@ export function useMarkdownWithComponents(
 	}, []);
 
 	const baseRenderer = useMemo(
-		() => options?.renderer ?? new Renderer(),
-		[options?.renderer],
+		() =>
+			options?.renderer ?? new Renderer({ selectable: options?.selectable }),
+		[options?.renderer, options?.selectable],
 	);
 
 	const renderer = useMemo<RendererInterface>(() => {
+		// Use prototype delegation so all Renderer methods (text, link, getTextNode -> selectable,
+		// getKey -> slugger) resolve via baseRenderer's prototype. Only `html` is overridden here
+		// for component registry handling. Avoids copying private fields and keeps `this` binding
+		// consistent. If Renderer ever uses #private fields this pattern will need revisiting.
 		const wrappedRenderer = Object.create(baseRenderer) as typeof baseRenderer;
 
 		wrappedRenderer.html = (text: string | ReactNode[], styles): ReactNode => {
