@@ -9,12 +9,14 @@ import type { MarkedStyles, UserTheme } from "./../theme/types";
 
 export interface useMarkdownHookOptions {
 	colorScheme?: ColorSchemeName;
+	/** Custom renderer. When provided, `selectable` is ignored — configure via `new Renderer({ selectable })`. */
 	renderer?: RendererInterface;
 	theme?: UserTheme;
 	styles?: MarkedStyles;
 	baseUrl?: string;
 	tokenizer?: Tokenizer;
 	hooks?: Hooks;
+	/** Whether Text elements are selectable. Defaults to `true`. Ignored when `renderer` is provided. */
 	selectable?: boolean;
 }
 

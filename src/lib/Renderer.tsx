@@ -19,6 +19,9 @@ import { getTableWidthArr } from "../utils/table";
 import type { RendererInterface } from "./types";
 
 export interface RendererOptions {
+	/**
+	 * Whether Text elements are selectable. Defaults to `true`.
+	 */
 	selectable?: boolean;
 }
 

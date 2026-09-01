@@ -54,6 +54,7 @@ export default ExampleComponent;
 | baseUrl       | A prefix url for any relative link                                                                                                           | string                                                                                                                                                                         | true      |
 | renderer      | Custom component Renderer                                                                                                                    | [RendererInterface](src/lib/types.ts)                                                                                                                                          | true      |
 | hooks         | Hooks run during parsing to transform tokens                                                                                                | [Marked Hooks](https://marked.js.org/using_pro#hooks)                                                                                                                            | true      |
+| selectable    | Whether Text elements are selectable. Defaults to `true`. When a custom `renderer` is provided, this prop is ignored — configure via `new Renderer({ selectable })`. | boolean                                                                                                                                                                          | true      |
 
 
 ### Using hook
@@ -91,8 +92,8 @@ const CustomComponent = () => {
 | baseUrl     | A prefix url for any relative link                                                                                                           | string                                           | true      |
 | renderer    | Custom component Renderer                                                                                                                    | [RendererInterface](src/lib/types.ts)            | true      |
 | tokenizer   | Generate custom tokens                                                                                                                       | [MarkedTokenizer<CustomToken>](src/lib/types.ts) | true      |
-| hooks       | Hooks run during parsing to transform tokens                                                                                                 |
-[Marked Hooks](https://marked.js.org/using_pro#hooks)   | true      |
+| hooks       | Hooks run during parsing to transform tokens                                                                                                 | [Marked Hooks](https://marked.js.org/using_pro#hooks) | true      |
+| selectable  | Whether Text elements are selectable. Defaults to `true`. When a custom `renderer` is provided, this option is ignored — configure via `new Renderer({ selectable })`. | boolean                                          | true      |
 
 
 ## Examples
