@@ -18,14 +18,20 @@ import { onLinkPress } from "../utils/handlers";
 import { getTableWidthArr } from "../utils/table";
 import type { RendererInterface } from "./types";
 
+export interface RendererOptions {
+	selectable?: boolean;
+}
+
 class Renderer implements RendererInterface {
 	private slugPrefix = "react-native-marked-ele";
 	private slugger: Slugger;
 	private windowWidth: number;
-	constructor() {
+	private selectable: boolean;
+	constructor(options?: RendererOptions) {
 		this.slugger = new Slugger();
 		const { width } = Dimensions.get("window");
 		this.windowWidth = width;
+		this.selectable = options?.selectable ?? true;
 	}
 
 	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode {
@@ -101,7 +107,7 @@ class Renderer implements RendererInterface {
 	): ReactNode {
 		return (
 			<Text
-				selectable
+				selectable={this.selectable}
 				accessibilityRole="link"
 				accessibilityHint="Opens in a new window"
 				accessibilityLabel={title || "Link"}
@@ -206,7 +212,7 @@ class Renderer implements RendererInterface {
 		styles?: TextStyle,
 	): ReactNode {
 		return (
-			<Text selectable key={this.getKey()} style={styles}>
+			<Text selectable={this.selectable} key={this.getKey()} style={styles}>
 				{children}
 			</Text>
 		);

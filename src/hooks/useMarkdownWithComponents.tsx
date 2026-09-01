@@ -46,8 +46,9 @@ export function useMarkdownWithComponents(
 	}, []);
 
 	const baseRenderer = useMemo(
-		() => options?.renderer ?? new Renderer(),
-		[options?.renderer],
+		() =>
+			options?.renderer ?? new Renderer({ selectable: options?.selectable }),
+		[options?.renderer, options?.selectable],
 	);
 
 	const renderer = useMemo<RendererInterface>(() => {

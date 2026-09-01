@@ -9,7 +9,7 @@ import useMarkdownWithComponents from "./hooks/useMarkdownWithComponents";
 import Markdown from "./lib/Markdown";
 import type { ReactComponentRegistry } from "./lib/ReactComponentRegistry";
 import { ReactComponentRegistryProvider } from "./lib/ReactComponentRegistry";
-import Renderer from "./lib/Renderer";
+import Renderer, { type RendererOptions } from "./lib/Renderer";
 import type {
 	MarkdownProps,
 	ParserOptions,
@@ -25,6 +25,7 @@ export type {
 	ParserOptions,
 	ReactComponentRegistry,
 	RendererInterface,
+	RendererOptions,
 	Token,
 	Tokens,
 	useMarkdownHookOptions,

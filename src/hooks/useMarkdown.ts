@@ -15,6 +15,7 @@ export interface useMarkdownHookOptions {
 	baseUrl?: string;
 	tokenizer?: Tokenizer;
 	hooks?: Hooks;
+	selectable?: boolean;
 }
 
 const useMarkdown = (
@@ -31,9 +32,11 @@ const useMarkdown = (
 			new Parser({
 				styles: styles,
 				baseUrl: options?.baseUrl,
-				renderer: options?.renderer ?? new Renderer(),
+				renderer:
+					options?.renderer ??
+					new Renderer({ selectable: options?.selectable }),
 			}),
-		[options?.renderer, options?.baseUrl, styles],
+		[options?.renderer, options?.baseUrl, styles, options?.selectable],
 	);
 
 	const elements = useMemo(() => {

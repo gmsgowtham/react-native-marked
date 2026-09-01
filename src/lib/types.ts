@@ -23,6 +23,7 @@ export interface MarkdownProps extends Partial<ParserOptions> {
 	theme?: UserTheme;
 	tokenizer?: Tokenizer;
 	hooks?: Hooks;
+	selectable?: boolean;
 }
 
 export type TableColAlignment = "center" | "left" | "right" | null;
