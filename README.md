@@ -120,6 +120,23 @@ Ref: [CommonMark](https://commonmark.org/help/)
 
 > HTML will be treated as plain text. Please refer [issue#290](https://github.com/gmsgowtham/react-native-marked/issues/290) for a potential solution
 
+### Styling code blocks and inline code
+
+Use `code` for the block container (`ViewStyle`) and `codeText` / `codespan` for the text (`TextStyle`) to guarantee `fontFamily` (and other `TextStyle` props) are applied:
+
+```tsx
+<Markdown
+  value={"```js\nconsole.log('hello')\n```\n\nUse `inline` code"}
+  styles={{
+    code: { backgroundColor: "#f6f8fa", padding: 16 }, // ViewStyle – container
+    codeText: { fontFamily: "Menlo", fontSize: 14 }, // TextStyle – code block text
+    codespan: { fontFamily: "Menlo", backgroundColor: "#f6f8fa" }, // TextStyle – inline
+  }}
+/>
+```
+
+`codeText` was introduced to replace the previous `em`-based fallback for code blocks and ensures all `TextStyle` props win over parent styles.
+
 ## Advanced
 
 ### Embedding React Components in Markdown

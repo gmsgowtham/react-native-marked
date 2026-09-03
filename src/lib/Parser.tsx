@@ -75,7 +75,7 @@ class Parser {
 					token.text,
 					token.lang,
 					this.styles.code,
-					this.styles.em,
+					this.styles.codeText,
 				);
 			}
 			case "hr": {
@@ -179,8 +179,8 @@ class Parser {
 			}
 			case "codespan": {
 				return this.renderer.codespan(decode(token.text), {
+					...(styles as TextStyle),
 					...this.styles.codespan,
-					...styles,
 				});
 			}
 			case "br": {

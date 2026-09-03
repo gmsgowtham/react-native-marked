@@ -18,6 +18,7 @@ export interface MarkedStyles {
 	h6?: TextStyle;
 	codespan?: TextStyle;
 	code?: ViewStyle;
+	codeText?: TextStyle;
 	hr?: ViewStyle;
 	list?: ViewStyle;
 	li?: TextStyle;

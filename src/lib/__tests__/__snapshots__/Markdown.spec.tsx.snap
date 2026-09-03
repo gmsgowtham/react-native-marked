@@ -954,7 +954,8 @@ exports[`Code Code Blocks (backtick) 1`] = `
               {
                 "color": "#333333",
                 "fontSize": 16,
-                "fontStyle": "italic",
+                "fontStyle": "normal",
+                "fontWeight": "400",
                 "lineHeight": 24,
               }
             }
@@ -1014,7 +1015,8 @@ exports[`Code Code Blocks (backtick) 1`] = `
                 {
                   "color": "#333333",
                   "fontSize": 16,
-                  "fontStyle": "italic",
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
                   "lineHeight": 24,
                 }
               }
@@ -1052,7 +1054,8 @@ exports[`Code Code Blocks (backtick), no ending backtick 1`] = `
               {
                 "color": "#333333",
                 "fontSize": 16,
-                "fontStyle": "italic",
+                "fontStyle": "normal",
+                "fontWeight": "400",
                 "lineHeight": 24,
               }
             }
@@ -1112,7 +1115,8 @@ exports[`Code Code Blocks (backtick), no ending backtick 1`] = `
                 {
                   "color": "#333333",
                   "fontSize": 16,
-                  "fontStyle": "italic",
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
                   "lineHeight": 24,
                 }
               }
@@ -1150,7 +1154,8 @@ exports[`Code Code Blocks 1`] = `
               {
                 "color": "#333333",
                 "fontSize": 16,
-                "fontStyle": "italic",
+                "fontStyle": "normal",
+                "fontWeight": "400",
                 "lineHeight": 24,
               }
             }
@@ -1211,7 +1216,8 @@ exports[`Code Code Blocks 1`] = `
                 {
                   "color": "#333333",
                   "fontSize": 16,
-                  "fontStyle": "italic",
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
                   "lineHeight": 24,
                 }
               }
@@ -4665,7 +4671,7 @@ See the section on
               style={
                 {
                   "backgroundColor": "#f6f8fa",
-                  "color": "#58a6ff",
+                  "color": "#333333",
                   "fontSize": 16,
                   "fontStyle": "italic",
                   "fontWeight": "300",
@@ -4849,7 +4855,7 @@ See the section on
               style={
                 {
                   "backgroundColor": "#f6f8fa",
-                  "color": "#58a6ff",
+                  "color": "#333333",
                   "fontSize": 16,
                   "fontStyle": "italic",
                   "fontWeight": "300",
@@ -5856,7 +5862,8 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
                       {
                         "color": "#333333",
                         "fontSize": 16,
-                        "fontStyle": "italic",
+                        "fontStyle": "normal",
+                        "fontWeight": "400",
                         "lineHeight": 24,
                       }
                     }
@@ -6117,7 +6124,8 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
                     {
                       "color": "#333333",
                       "fontSize": 16,
-                      "fontStyle": "italic",
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
                       "lineHeight": 24,
                     }
                   }

@@ -151,6 +151,14 @@ const getStyles = (
 			},
 			userStyles?.code,
 		]),
+		codeText: StyleSheet.flatten([
+			fontStyle.regular,
+			{
+				fontStyle: "normal",
+				fontWeight: "400",
+			},
+			userStyles?.codeText,
+		]),
 		hr: StyleSheet.flatten([
 			{
 				borderBottomWidth: 1,
