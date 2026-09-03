@@ -1,4 +1,4 @@
-import type { Hooks, Tokenizer } from "marked";
+import type { Hooks, Token, Tokenizer } from "marked";
 import type { ReactNode } from "react";
 import type {
 	FlatListProps,
@@ -14,12 +14,19 @@ export interface ParserOptions {
 	renderer: RendererInterface;
 }
 
+export type MarkdownBlock = {
+	id: string;
+	token: Token;
+	raw: string;
+	type: string;
+};
+
 export interface MarkdownProps extends Partial<ParserOptions> {
 	value: string;
 	flatListProps?: Omit<
-		FlatListProps<ReactNode>,
+		FlatListProps<MarkdownBlock>,
 		"data" | "renderItem" | "horizontal"
-	>;
+	> | null;
 	theme?: UserTheme;
 	tokenizer?: Tokenizer;
 	hooks?: Hooks;

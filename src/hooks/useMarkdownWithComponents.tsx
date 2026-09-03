@@ -36,6 +36,11 @@ export function useMarkdownWithComponents(
 		customTokenizer.html = (src: string) => {
 			const token = originalHtml(src);
 			if (token && isReactComponentToken(token)) {
+				// Reuse existing id for stable keys across re-renders if raw already seen
+				const existing = map.get(token.raw);
+				if (existing) {
+					return token;
+				}
 				const id = `${token.componentName}-${componentCounter++}`;
 				map.set(token.raw, { token, id });
 			}
