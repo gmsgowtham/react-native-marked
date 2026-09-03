@@ -1509,3 +1509,801 @@ exports[`Renderer light theme getListNode returns Un-Ordered List 1`] = `
   </Text>
 </View>
 `;
+
+exports[`code and codespan styles #873 code block uses codeText instead of em (not italic) 1`] = `
+<RCTScrollView
+  data={
+    [
+      <ScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <View>
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 24,
+              }
+            }
+          >
+            code
+          </Text>
+        </View>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <View>
+          <View>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              code
+            </Text>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`code and codespan styles #873 code block uses codeText style 1`] = `
+<RCTScrollView
+  data={
+    [
+      <ScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <View>
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontFamily": "Menlo",
+                "fontSize": 16,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "lineHeight": 24,
+              }
+            }
+          >
+            hello
+          </Text>
+        </View>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <View>
+          <View>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontFamily": "Menlo",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              hello
+            </Text>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`code and codespan styles #873 code block with all TextStyle props via codeText 1`] = `
+<RCTScrollView
+  data={
+    [
+      <ScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <View>
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#ff0000",
+                "fontFamily": "Menlo",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "700",
+                "lineHeight": 24,
+              }
+            }
+          >
+            code
+          </Text>
+        </View>
+      </ScrollView>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <RCTScrollView
+        contentContainerStyle={
+          {
+            "backgroundColor": "#f6f8fa",
+            "minWidth": "100%",
+            "padding": 16,
+          }
+        }
+        horizontal={true}
+      >
+        <View>
+          <View>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#ff0000",
+                  "fontFamily": "Menlo",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "700",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              code
+            </Text>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`code and codespan styles #873 codespan preserves style inside em 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={{}}
+        >
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontFamily": "Helvetica-Oblique",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontFamily": "Helvetica-Oblique",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              some 
+            </Text>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "backgroundColor": "#f6f8fa",
+                  "color": "#333333",
+                  "fontFamily": "Menlo",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "300",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              code
+            </Text>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontFamily": "Helvetica-Oblique",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+               inside
+            </Text>
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={{}}
+        >
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontFamily": "Helvetica-Oblique",
+                "fontSize": 16,
+                "fontStyle": "italic",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontFamily": "Helvetica-Oblique",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              some 
+            </Text>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "backgroundColor": "#f6f8fa",
+                  "color": "#333333",
+                  "fontFamily": "Menlo",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "300",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              code
+            </Text>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontFamily": "Helvetica-Oblique",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "lineHeight": 24,
+                }
+              }
+            >
+               inside
+            </Text>
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`code and codespan styles #873 codespan preserves style inside strong 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={{}}
+        >
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontFamily": "Helvetica-Bold",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontFamily": "Helvetica-Bold",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              some 
+            </Text>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "backgroundColor": "#f6f8fa",
+                  "color": "#333333",
+                  "fontFamily": "Menlo",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "300",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              code
+            </Text>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontFamily": "Helvetica-Bold",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+               inside
+            </Text>
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={{}}
+        >
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontFamily": "Helvetica-Bold",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "lineHeight": 24,
+              }
+            }
+          >
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontFamily": "Helvetica-Bold",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              some 
+            </Text>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "backgroundColor": "#f6f8fa",
+                  "color": "#333333",
+                  "fontFamily": "Menlo",
+                  "fontSize": 16,
+                  "fontStyle": "italic",
+                  "fontWeight": "300",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              code
+            </Text>
+            <Text
+              selectable={true}
+              style={
+                {
+                  "color": "#333333",
+                  "fontFamily": "Helvetica-Bold",
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+               inside
+            </Text>
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`code and codespan styles #873 codespan with all TextStyle props 1`] = `
+<RCTScrollView
+  data={
+    [
+      <View
+        style={
+          {
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={{}}
+        >
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Use 
+          </Text>
+          <Text
+            selectable={true}
+            style={
+              {
+                "backgroundColor": "#f6f8fa",
+                "color": "#ff0000",
+                "fontFamily": "Menlo",
+                "fontSize": 14,
+                "fontStyle": "italic",
+                "fontWeight": "700",
+                "lineHeight": 24,
+              }
+            }
+          >
+            code
+          </Text>
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             here
+          </Text>
+        </Text>
+      </View>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialNumToRender={8}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={8}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={0.0001}
+  stickyHeaderIndices={[]}
+  style={
+    {
+      "backgroundColor": "#ffffff",
+    }
+  }
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          {
+            "paddingVertical": 8,
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={{}}
+        >
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Use 
+          </Text>
+          <Text
+            selectable={true}
+            style={
+              {
+                "backgroundColor": "#f6f8fa",
+                "color": "#ff0000",
+                "fontFamily": "Menlo",
+                "fontSize": 14,
+                "fontStyle": "italic",
+                "fontWeight": "700",
+                "lineHeight": 24,
+              }
+            }
+          >
+            code
+          </Text>
+          <Text
+            selectable={true}
+            style={
+              {
+                "color": "#333333",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+             here
+          </Text>
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

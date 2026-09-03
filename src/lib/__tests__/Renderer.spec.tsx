@@ -4,10 +4,11 @@ import {
 	screen,
 	waitFor,
 } from "@testing-library/react-native";
-import type { ReactElement } from "react";
+import React, { type ReactElement } from "react";
 import { type ColorSchemeName, Linking } from "react-native";
 import getStyles from "../../theme/styles";
 import type { MarkedStyles } from "../../theme/types";
+import Markdown from "../Markdown";
 import Renderer from "../Renderer";
 
 jest.mock("react-native/Libraries/Linking/Linking", () => ({
@@ -243,4 +244,93 @@ describe("Renderer", () => {
 			});
 		});
 	}
+});
+
+describe("code and codespan styles #873", () => {
+	it("code block uses codeText style", () => {
+		const r = render(
+			<Markdown
+				value={"```\nhello\n```"}
+				styles={{ codeText: { fontFamily: "Menlo" } }}
+			/>,
+		);
+		expect(r.toJSON()).toMatchSnapshot();
+	});
+
+	it("code block with all TextStyle props via codeText", () => {
+		const r = render(
+			<Markdown
+				value={"```\ncode\n```"}
+				styles={{
+					codeText: {
+						fontFamily: "Menlo",
+						fontSize: 14,
+						color: "#ff0000",
+						fontWeight: "700",
+					},
+				}}
+			/>,
+		);
+		expect(r.toJSON()).toMatchSnapshot();
+	});
+
+	it("code block uses codeText instead of em (not italic)", () => {
+		const r = render(<Markdown value={"```\ncode\n```"} />);
+		expect(r.toJSON()).toMatchSnapshot();
+	});
+
+	it("code container ViewStyle and codeText TextStyle", () => {
+		const styles = getStyles(
+			{
+				code: { padding: 10, backgroundColor: "#fff" },
+				codeText: { fontFamily: "Menlo" },
+			},
+			"light",
+		);
+		expect(styles.code?.padding).toBe(10);
+		expect(styles.codeText?.fontFamily).toBe("Menlo");
+	});
+
+	it("codespan preserves style inside strong", () => {
+		const r = render(
+			<Markdown
+				value={"**some `code` inside**"}
+				styles={{
+					codespan: { fontFamily: "Menlo" },
+					strong: { fontFamily: "Helvetica-Bold" } as never,
+				}}
+			/>,
+		);
+		expect(r.toJSON()).toMatchSnapshot();
+	});
+
+	it("codespan preserves style inside em", () => {
+		const r = render(
+			<Markdown
+				value={"*some `code` inside*"}
+				styles={{
+					codespan: { fontFamily: "Menlo" },
+					em: { fontFamily: "Helvetica-Oblique" } as never,
+				}}
+			/>,
+		);
+		expect(r.toJSON()).toMatchSnapshot();
+	});
+
+	it("codespan with all TextStyle props", () => {
+		const r = render(
+			<Markdown
+				value={"Use `code` here"}
+				styles={{
+					codespan: {
+						fontFamily: "Menlo",
+						fontSize: 14,
+						color: "#ff0000",
+						fontWeight: "700",
+					},
+				}}
+			/>,
+		);
+		expect(r.toJSON()).toMatchSnapshot();
+	});
 });
