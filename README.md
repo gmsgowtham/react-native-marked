@@ -43,23 +43,35 @@ const ExampleComponent = () => {
 export default ExampleComponent;
 ```
 
-#### [Props](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L17)
+#### [Props](https://github.com/gmsgowtham/react-native-marked/blob/main/src/lib/types.ts#L24)
 
-| Prop          | Description                                                                                                                                  | Type                                                                                                                                                                           | Optional? |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| value         | Markdown value                                                                                                                               | string                                                                                                                                                                         | false     |
-| flatListProps | Props for customizing the underlying FlatList used                                                                                           | `Omit<FlatListProps<ReactNode>, 'data' \| 'renderItem' \| 'horizontal'>`<br><br><br>(`'data'`, `'renderItem'`, and `'horizontal'` props are omitted and cannot be overridden.) | true      |
-| styles        | Styles for parsed components                                                                                                                 | [MarkedStyles](src/theme/types.ts)                                                                                                                                             | true      |
-| theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop | [UserTheme](src/theme/types.ts)                                                                                                                                                | true      |
-| baseUrl       | A prefix url for any relative link                                                                                                           | string                                                                                                                                                                         | true      |
-| renderer      | Custom component Renderer                                                                                                                    | [RendererInterface](src/lib/types.ts)                                                                                                                                          | true      |
-| hooks         | Hooks run during parsing to transform tokens                                                                                                | [Marked Hooks](https://marked.js.org/using_pro#hooks)                                                                                                                            | true      |
-| selectable    | Whether Text elements are selectable. Defaults to `true`. When a custom `renderer` is provided, this prop is ignored — configure via `new Renderer({ selectable })`. | boolean                                                                                                                                                                          | true      |
+| Prop          | Description                                                                                                                                                                                                     | Type                                                                                                                                                                             | Optional? |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| value         | Markdown value                                                                                                                                                                                                  | string                                                                                                                                                                           | false     |
+| flatListProps | Props for customizing the underlying FlatList used. Pass `null` to disable virtualization and render with `ScrollView` (useful for small docs). Stable content-derived keys prevent unnecessary re-renders (#451). | `Omit<FlatListProps<MarkdownBlock>, 'data' \| 'renderItem' \| 'horizontal'> \| null`<br><br>(`'data'`, `'renderItem'`, and `'horizontal'` props are omitted and cannot be overridden. `null` disables FlatList.) | true      |
+| styles        | Styles for parsed components                                                                                                                                                                                    | [MarkedStyles](src/theme/types.ts)                                                                                                                                               | true      |
+| theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop                                                                    | [UserTheme](src/theme/types.ts)                                                                                                                                                  | true      |
+| baseUrl       | A prefix url for any relative link                                                                                                                                                                              | string                                                                                                                                                                           | true      |
+| renderer      | Custom component Renderer                                                                                                                                                                                       | [RendererInterface](src/lib/types.ts)                                                                                                                                            | true      |
+| hooks         | Hooks run during parsing to transform tokens                                                                                                                                                                   | [Marked Hooks](https://marked.js.org/using_pro#hooks)                                                                                                                           | true      |
+| selectable    | Whether Text elements are selectable. Defaults to `true`. When a custom `renderer` is provided, this prop is ignored — configure via `new Renderer({ selectable })`.                                           | boolean                                                                                                                                                                            | true      |
 
 
-### Using hook
+### Using hooks
 
-`useMarkdown` hook will return list of elements that can be rendered using a list component of your choice.
+`useMarkdown` hook will return list of elements that can be rendered using a list component of your choice. Elements are memoized with stable references — only changed blocks re-parse (#451), ideal for chat streaming where `value` grows incrementally.
+
+`useMarkdownBlocks` (new) returns `{ blocks: MarkdownBlock[], parser }` for FlatList-optimized rendering with stable `id` keys (content-hash + index, `src/lib/types.ts:17`). Use it when you need virtualization control:
+
+```tsx
+import { useMarkdownBlocks } from "react-native-marked";
+import MarkdownBlock from "react-native-marked/src/lib/MarkdownBlock";
+
+const { blocks, parser } = useMarkdownBlocks(value, { theme, styles });
+<FlatList data={blocks} keyExtractor={b => b.id} renderItem={({item})=> <MarkdownBlock token={item.token} parser={parser} blockId={item.id}/>} />
+```
+
+> **Performance note:** Memoize `styles`/`theme`/`renderer` objects with `useMemo` — new object identities force full re-parse ( `src/hooks/useMarkdown.ts:27`, `src/hooks/useMarkdownBlocks.ts:37`). Pass `flatListProps={null}` for non-virtualized `ScrollView` on small docs.
 
 ```tsx
 import React, { Fragment } from "react";
