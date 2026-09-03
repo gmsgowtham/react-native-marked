@@ -1,7 +1,8 @@
-import React, { type ReactElement, type ReactNode, useCallback } from "react";
-import { FlatList, useColorScheme } from "react-native";
-import useMarkdown from "../hooks/useMarkdown";
-import type { MarkdownProps } from "./types";
+import React, { useCallback } from "react";
+import { FlatList, ScrollView, useColorScheme, View } from "react-native";
+import useMarkdownBlocks from "../hooks/useMarkdownBlocks";
+import MarkdownBlockView from "./MarkdownBlock";
+import type { MarkdownBlock, MarkdownProps } from "./types";
 
 const Markdown = ({
 	value,
@@ -16,7 +17,7 @@ const Markdown = ({
 }: MarkdownProps) => {
 	const colorScheme = useColorScheme();
 
-	const rnElements = useMarkdown(value, {
+	const { blocks, parser } = useMarkdownBlocks(value, {
 		theme,
 		baseUrl,
 		renderer,
@@ -27,14 +28,41 @@ const Markdown = ({
 		selectable,
 	});
 
-	const renderItem = useCallback(({ item }: { item: ReactNode }) => {
-		return item as ReactElement;
-	}, []);
-
-	const keyExtractor = useCallback(
-		(_: ReactNode, index: number) => index.toString(),
-		[],
+	const renderItem = useCallback(
+		({ item }: { item: MarkdownBlock }) => {
+			return (
+				<MarkdownBlockView
+					token={item.token}
+					parser={parser}
+					blockId={item.id}
+				/>
+			);
+		},
+		[parser],
 	);
+
+	const keyExtractor = useCallback((item: MarkdownBlock) => item.id, []);
+
+	const backgroundStyle = {
+		backgroundColor: colorScheme === "light" ? "#ffffff" : "#000000",
+	};
+
+	// Opt-out of virtualization: when flatListProps is explicitly null, render with ScrollView
+	if (flatListProps === null) {
+		return (
+			<ScrollView style={backgroundStyle}>
+				{blocks.map((block) => (
+					<View key={block.id}>
+						<MarkdownBlockView
+							token={block.token}
+							parser={parser}
+							blockId={block.id}
+						/>
+					</View>
+				))}
+			</ScrollView>
+		);
+	}
 
 	return (
 		<FlatList
@@ -42,11 +70,9 @@ const Markdown = ({
 			keyExtractor={keyExtractor}
 			maxToRenderPerBatch={8}
 			initialNumToRender={8}
-			style={{
-				backgroundColor: colorScheme === "light" ? "#ffffff" : "#000000",
-			}}
+			style={backgroundStyle}
 			{...flatListProps}
-			data={rnElements}
+			data={blocks}
 			renderItem={renderItem}
 		/>
 	);
