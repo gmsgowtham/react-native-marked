@@ -26,6 +26,13 @@
 		"includes": [
 			"src/**",
 			"examples/**",
+			"docs/rspress.config.ts",
+			"docs/package.json",
+			"docs/tsconfig.json",
+			"!docs/doc_build",
+			"!docs/node_modules",
+			"!docs/.rspress",
+			"!docs/.temp",
 			"dangerfile.ts",
 			"biome.json",
 			"package.json",

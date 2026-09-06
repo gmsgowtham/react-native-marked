@@ -1,0 +1,19 @@
+{
+	"name": "docs",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "rspress dev",
+		"build": "rspress build",
+		"preview": "rspress preview"
+	},
+	"dependencies": {
+		"react": "19.2.8",
+		"react-dom": "19.2.8"
+	},
+	"devDependencies": {
+		"@rspress/core": "2.0.19",
+		"@rspack/core": "2.2.2",
+		"typescript": "5.9.3"
+	}
+}

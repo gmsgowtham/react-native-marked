@@ -69,3 +69,9 @@ dist/
 # test
 coverage
 .reassure/current.perf
+
+# docs (Rspack / Rspress)
+docs/doc_build
+docs/.rspress
+docs/.temp
+docs/node_modules
