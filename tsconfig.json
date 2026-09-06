@@ -26,5 +26,5 @@
 		"target": "esnext",
 		"declaration": true
 	},
-	"exclude": ["examples", "dangerfile.ts"]
+	"exclude": ["examples", "dangerfile.ts", "docs"]
 }

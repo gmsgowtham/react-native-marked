@@ -33,7 +33,10 @@
 		"release:exclude-pre": "yarn build && release-it --git.tagExclude='*[-]*'",
 		"test": "jest --passWithNoTests",
 		"test:updateSnapshot": "jest --updateSnapshot",
-		"reassure": "reassure"
+		"reassure": "reassure",
+		"docs:dev": "yarn --cwd docs dev",
+		"docs:build": "yarn --cwd docs build",
+		"docs:preview": "yarn --cwd docs preview"
 	},
 	"keywords": [
 		"react-native",

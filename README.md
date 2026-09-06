@@ -9,6 +9,8 @@
 Markdown renderer for React Native powered by
 [marked.js](https://marked.js.org/) with built-in theming support
 
+📚 Documentation: https://gmsgowtham.github.io/react-native-marked/
+
 ## Installation
 
 #### For React Native 0.76 and above, please use the latest version.

@@ -12,10 +12,12 @@
 
 ## Verify (run before PR)
 ```sh
-yarn typescript   # tsc --noEmit — strict, rootDir src/, excludes examples/ + dangerfile.ts
+yarn typescript   # tsc --noEmit — strict, rootDir src/, excludes examples/ + dangerfile.ts + docs/
 yarn lint         # biome check ./
 yarn test --collectCoverage --silent  # CI command; plain `yarn test` is `jest --passWithNoTests`
 yarn format       # biome format ./ --write (auto-fixes)
+yarn docs:dev     # rspress dev (Rspack) — docs site at http://localhost:3000/react-native-marked/
+yarn docs:build   # rspress build (Rspack) → docs/doc_build (GitHub Pages artifact)
 ```
 - Single test/file: `yarn test src/lib/__tests__/Renderer.spec.tsx -t "test name"` (Jest args pass through); update snapshots: `yarn test:updateSnapshot`.
 - Perf: `yarn reassure` (baseline comparison via `./reassure-tests.sh` + `dangerfile.ts` on `perf.yml`).
@@ -26,7 +28,7 @@ yarn format       # biome format ./ --write (auto-fixes)
 - React `19.2.8` / RN `0.78.2` at root, example app uses RN `0.79.4` + Expo `53`.
 
 ## Lint / format / style
-- Biome `2.5.11` for both lint and format (`biome.json`). Included paths: `src/**`, `examples/**`, `dangerfile.ts`, `biome.json`, `package.json`, `renovate.json`, `tsconfig.json`, `babel.config.js`. `jsxRuntime: reactClassic`.
+- Biome `2.5.11` for both lint and format (`biome.json`). Included paths: `src/**`, `examples/**`, `docs/rspress.config.ts`, `docs/package.json`, `docs/tsconfig.json` (plus `!docs/doc_build`, `!docs/node_modules`, `!docs/.rspress`, `!docs/.temp` excludes), `dangerfile.ts`, `biome.json`, `package.json`, `renovate.json`, `tsconfig.json`, `babel.config.js`. `jsxRuntime: reactClassic`.
 - Overrides: `correctness.noRenderReturnValue: off`, `suspicious.noArrayIndexKey: info`.
 - EditorConfig: 2-space indent, `lf`, `utf-8`, trim trailing whitespace.
 - TS `paths` alias: `react-native-marked` → `./src/index`.
