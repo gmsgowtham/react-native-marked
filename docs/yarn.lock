@@ -69,7 +69,7 @@
   dependencies:
     "@tybys/wasm-util" "^0.10.3"
 
-"@rsbuild/core@^2.1.8":
+"@rsbuild/core@^2.1.13":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@rsbuild/core/-/core-2.2.3.tgz#e5d1c1e1dadca5334c6d62f8f4ebf2b5a4e42815"
   integrity sha512-oJrYtYDhb7AMwY8HIda2hgMuuxHkYPYar4svdS5uTq0fXY0M1wLfllkTQz0d729pNJ4S//6GUM1WX5LsW2mFLw==
@@ -191,20 +191,20 @@
   resolved "https://registry.yarnpkg.com/@rspack/plugin-react-refresh/-/plugin-react-refresh-2.0.2.tgz#15851c89c46849998b4bb340da416d4045cb0768"
   integrity sha512-dGNZiCxQxgAUI9sah7gd8u+O7OJZRCmqtEJNDOd8xW5RqcieC86F7p5qcShyw6onH5pKf57evpr2VjGbaFGkZg==
 
-"@rspress/core@2.0.19":
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/@rspress/core/-/core-2.0.19.tgz#e78895dd1efc0afd4b2900d2957ded87432d495a"
-  integrity sha512-m0KfQNNXxjP975652nIOwUTqrvbJapRp4NpnoQMc5heawGhkC4+F7zTHvxY+huvzGYnKtL2fMMTrgWhEjKkrug==
+"@rspress/core@2.0.21":
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/@rspress/core/-/core-2.0.21.tgz#a7c93dfb6081bf103e69d7e3b0c4570a2523cd36"
+  integrity sha512-QxhVqhHhN4guA24MlvlsFTb96pE/X8gBd5RBfp4j1kn5tAu1nJ7A9itKcRAuEw0WYJHcsWtI+WUnd7JPioHtlw==
   dependencies:
     "@mdx-js/mdx" "^3.1.1"
     "@mdx-js/react" "^3.1.1"
-    "@rsbuild/core" "^2.1.8"
+    "@rsbuild/core" "^2.1.13"
     "@rsbuild/plugin-react" "~2.1.0"
-    "@rspress/shared" "2.0.19"
+    "@rspress/shared" "2.0.21"
     "@shikijs/rehype" "^4.2.0"
     "@types/mdast" "^4.0.4"
-    "@types/react" "^19.2.17"
-    "@unhead/react" "^2.1.16"
+    "@types/react" "^19.2.18"
+    "@unhead/react" "^2.1.17"
     body-scroll-lock "4.0.0-beta.0"
     clsx "2.1.1"
     copy-to-clipboard "^3.3.3"
@@ -219,7 +219,7 @@
     react-dom "^19.2.8"
     react-lazy-with-preload "^2.2.1"
     react-render-to-markdown "19.1.0"
-    react-router-dom "^7.18.1"
+    react-router-dom "^7.18.2"
     rehype-external-links "^3.0.0"
     rehype-raw "^7.0.0"
     remark-cjk-friendly "^2.3.1"
@@ -235,14 +235,14 @@
     unist-util-visit-children "^3.0.0"
     vfile "^6.0.3"
 
-"@rspress/shared@2.0.19":
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/@rspress/shared/-/shared-2.0.19.tgz#cc2d928c77827800fe903c786ba3996c0bbce1da"
-  integrity sha512-INrETllWuR49lksqCz+xeLSO6rKtHA+5Ix2YQWcP9nerCuTSyGYwH8eBC0HrIacJkGHxB8wkkbV99tyzGtY8Wg==
+"@rspress/shared@2.0.21":
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/@rspress/shared/-/shared-2.0.21.tgz#2f71630444665a8af645306590cd5946576ce3f4"
+  integrity sha512-siCWkv1a4n6y7JdVRII+fwCRZGZtG5KGFfKi2w/Tt33UnIgh4XGqozZ5F/K0iZ/QUwg0wi93SoVdOQm2Q+wf8w==
   dependencies:
-    "@rsbuild/core" "^2.1.8"
+    "@rsbuild/core" "^2.1.13"
     "@shikijs/rehype" "^4.2.0"
-    "@types/react" "^19.2.17"
+    "@types/react" "^19.2.18"
     mdast-util-mdx-jsx "^3.2.0"
     unified "^11.0.5"
 
@@ -379,7 +379,7 @@
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-2.1.0.tgz#052aa67a48eccc4309d7f0191b7e41434b90bb78"
   integrity sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==
 
-"@types/react@^19.2.17":
+"@types/react@^19.2.18":
   version "19.2.18"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-19.2.18.tgz#eb0b6a1fb635d1a9692d5f84a3495bd8ad153707"
   integrity sha512-AnzbBERsrLKtk2XSfTbYRLjQPdy116Sty4q+T+Bp3IC4l6jNBvreVPAHmpq9qhXQM7CXZPjLVmGMw9sy+hxQ3w==
@@ -401,7 +401,7 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.4.0.tgz#5e2e1374c0a30b5a42e8b083523a225c6945f88a"
   integrity sha512-1mEZtMKPM09vDmQt5y7YvmN2+DFTP7Tg0EWXdic8/C6VRnpb33e4ghisCIE3WZjsE2N8mf+QV1Zqh7ZFYLWInQ==
 
-"@unhead/react@^2.1.16":
+"@unhead/react@^2.1.17":
   version "2.1.17"
   resolved "https://registry.yarnpkg.com/@unhead/react/-/react-2.1.17.tgz#09f0ee467d81c5d6c6f2d088d047b30fba8a4468"
   integrity sha512-KmcYksDjlLozL0fxUjIDwH/0k6+Lg2HWHLUPlkRW8Gl08hdB1AbLB5iU9QxFvkaT8p0Q4dFEqZWnz3g6RMeiRA==
@@ -1530,7 +1530,7 @@ react-render-to-markdown@19.1.0:
   dependencies:
     react-reconciler "0.33.0"
 
-react-router-dom@^7.18.1:
+react-router-dom@^7.18.2:
   version "7.18.3"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-7.18.3.tgz#0688c91b4b376c8b0dcaf0a0064975d52a32e0f7"
   integrity sha512-ytVbyBBM7vMfRCam25r0WMhSVSom909A8p+8m0/f1w853dz/xfFu6etAT2SEbVoSnI+ZoPRDqIsQXVT89gp7kg==
