@@ -1,6 +1,7 @@
 import { type Hooks, lexer, type Token, type Tokenizer } from "marked";
 import { type ReactNode, useMemo, useRef } from "react";
 import type { ColorSchemeName } from "react-native";
+import { isSameBlockToken } from "../lib/blockUtils";
 import Parser from "../lib/Parser";
 import Renderer from "../lib/Renderer";
 import type { RendererInterface } from "../lib/types";
@@ -50,7 +51,7 @@ const useMarkdown = (
 			gfm: true,
 			tokenizer: options?.tokenizer,
 			hooks: options?.hooks,
-		});
+		}).filter((t) => t.type !== "space");
 
 		const prevTokens = prevTokensRef.current;
 		const prevElements = prevElementsRef.current;
@@ -69,9 +70,9 @@ const useMarkdown = (
 		if (prevTokens && prevElements && prevTokens.length === tokens.length) {
 			let allSame = true;
 			for (let i = 0; i < tokens.length; i++) {
-				const a = prevTokens[i] as Token & { raw?: string };
-				const b = tokens[i] as Token & { raw?: string };
-				if (a.raw !== b.raw || a.type !== b.type) {
+				const a = prevTokens[i] as Token;
+				const b = tokens[i] as Token;
+				if (!isSameBlockToken(a, b)) {
 					allSame = false;
 					break;
 				}
@@ -85,9 +86,9 @@ const useMarkdown = (
 		if (prevTokens && prevElements && tokens.length > prevTokens.length) {
 			let prefixMatches = true;
 			for (let i = 0; i < prevTokens.length; i++) {
-				const a = prevTokens[i] as Token & { raw?: string };
-				const b = tokens[i] as Token & { raw?: string };
-				if (a.raw !== b.raw || a.type !== b.type) {
+				const a = prevTokens[i] as Token;
+				const b = tokens[i] as Token;
+				if (!isSameBlockToken(a, b)) {
 					prefixMatches = false;
 					break;
 				}
@@ -108,11 +109,10 @@ const useMarkdown = (
 			let needsParse = false;
 			const newElements: ReactNode[] = new Array(tokens.length);
 			for (let i = 0; i < tokens.length; i++) {
-				const a = prevTokens[i] as Token & { raw?: string };
-				const b = tokens[i] as Token & { raw?: string };
+				const a = prevTokens[i] as Token;
+				const b = tokens[i] as Token;
 				if (
-					a.raw === b.raw &&
-					a.type === b.type &&
+					isSameBlockToken(a, b) &&
 					prevElements[i] !== null &&
 					prevElements[i] !== undefined
 				) {

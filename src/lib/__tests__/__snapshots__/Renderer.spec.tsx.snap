@@ -1515,7 +1515,7 @@ exports[`code and codespan styles #873 code block uses codeText instead of em (n
   data={
     [
       {
-        "id": "code-75db83e8-0",
+        "id": "code-75db83e8",
         "raw": "\`\`\`
 code
 \`\`\`",
@@ -1599,7 +1599,7 @@ exports[`code and codespan styles #873 code block uses codeText style 1`] = `
   data={
     [
       {
-        "id": "code-9b88f5a7-0",
+        "id": "code-9b88f5a7",
         "raw": "\`\`\`
 hello
 \`\`\`",
@@ -1684,7 +1684,7 @@ exports[`code and codespan styles #873 code block with all TextStyle props via c
   data={
     [
       {
-        "id": "code-75db83e8-0",
+        "id": "code-75db83e8",
         "raw": "\`\`\`
 code
 \`\`\`",
@@ -1769,7 +1769,7 @@ exports[`code and codespan styles #873 codespan preserves style inside em 1`] = 
   data={
     [
       {
-        "id": "paragraph-5e1331c0-0",
+        "id": "paragraph-5e1331c0",
         "raw": "*some \`code\` inside*",
         "token": {
           "raw": "*some \`code\` inside*",
@@ -1915,7 +1915,7 @@ exports[`code and codespan styles #873 codespan preserves style inside strong 1`
   data={
     [
       {
-        "id": "paragraph-99f917a0-0",
+        "id": "paragraph-99f917a0",
         "raw": "**some \`code\` inside**",
         "token": {
           "raw": "**some \`code\` inside**",
@@ -2061,7 +2061,7 @@ exports[`code and codespan styles #873 codespan with all TextStyle props 1`] = `
   data={
     [
       {
-        "id": "paragraph-8631daf1-0",
+        "id": "paragraph-8631daf1",
         "raw": "Use \`code\` here",
         "token": {
           "raw": "Use \`code\` here",

@@ -1,5 +1,6 @@
 import type { Token } from "marked";
 import { memo, type ReactElement, type ReactNode, useMemo } from "react";
+import { isSameBlockToken } from "./blockUtils";
 import type Parser from "./Parser";
 
 type MarkdownBlockProps = {
@@ -27,13 +28,9 @@ const areEqual = (
 ): boolean => {
 	if (prev.blockId !== next.blockId) return false;
 	if (prev.parser !== next.parser) return false;
-	// Compare token raw and type to avoid re-render when content unchanged
-	// Token objects are new each lexer call, so compare by value
-	const prevRaw = (prev.token as { raw?: string }).raw ?? "";
-	const nextRaw = (next.token as { raw?: string }).raw ?? "";
-	if (prevRaw !== nextRaw) return false;
-	if (prev.token.type !== next.token.type) return false;
-	return true;
+	// Compare token value (not identity): token objects are recreated on
+	// every lexer call, so identity comparison would never bail out.
+	return isSameBlockToken(prev.token, next.token);
 };
 
 const MarkdownBlock = memo(MarkdownBlockComponent, areEqual);

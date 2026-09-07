@@ -23,10 +23,16 @@ export type MarkdownBlock = {
 
 export interface MarkdownProps extends Partial<ParserOptions> {
 	value: string;
-	flatListProps?: Omit<
-		FlatListProps<MarkdownBlock>,
-		"data" | "renderItem" | "horizontal"
-	> | null;
+	/**
+	 * Props for customizing the underlying FlatList. `MarkdownBlock` is the
+	 * current item type; `ReactNode` remains accepted for backward
+	 * compatibility with v8 and earlier. Pass `null` to disable
+	 * virtualization and render with `ScrollView` (useful for small docs).
+	 */
+	flatListProps?:
+		| Omit<FlatListProps<MarkdownBlock>, "data" | "renderItem" | "horizontal">
+		| Omit<FlatListProps<ReactNode>, "data" | "renderItem" | "horizontal">
+		| null;
 	theme?: UserTheme;
 	tokenizer?: Tokenizer;
 	hooks?: Hooks;

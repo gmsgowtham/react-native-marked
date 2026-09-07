@@ -1,5 +1,10 @@
-import React, { useCallback } from "react";
-import { FlatList, ScrollView, useColorScheme, View } from "react-native";
+import React, { useCallback, useMemo } from "react";
+import {
+	FlatList,
+	type FlatListProps,
+	ScrollView,
+	useColorScheme,
+} from "react-native";
 import useMarkdownBlocks from "../hooks/useMarkdownBlocks";
 import MarkdownBlockView from "./MarkdownBlock";
 import type { MarkdownBlock, MarkdownProps } from "./types";
@@ -43,26 +48,36 @@ const Markdown = ({
 
 	const keyExtractor = useCallback((item: MarkdownBlock) => item.id, []);
 
-	const backgroundStyle = {
-		backgroundColor: colorScheme === "light" ? "#ffffff" : "#000000",
-	};
+	const backgroundStyle = useMemo(
+		() => ({
+			backgroundColor: colorScheme === "light" ? "#ffffff" : "#000000",
+		}),
+		[colorScheme],
+	);
 
 	// Opt-out of virtualization: when flatListProps is explicitly null, render with ScrollView
 	if (flatListProps === null) {
 		return (
 			<ScrollView style={backgroundStyle}>
 				{blocks.map((block) => (
-					<View key={block.id}>
-						<MarkdownBlockView
-							token={block.token}
-							parser={parser}
-							blockId={block.id}
-						/>
-					</View>
+					<MarkdownBlockView
+						key={block.id}
+						token={block.token}
+						parser={parser}
+						blockId={block.id}
+					/>
 				))}
 			</ScrollView>
 		);
 	}
+
+	// `ReactNode`-flavored props are accepted for backward compatibility (see
+	// `MarkdownProps.flatListProps`); at runtime the items are always
+	// `MarkdownBlock`s and the remaining list props don't depend on the item
+	// type, so narrowing here is safe.
+	const restListProps = flatListProps as
+		| Omit<FlatListProps<MarkdownBlock>, "data" | "renderItem" | "horizontal">
+		| undefined;
 
 	return (
 		<FlatList
@@ -71,7 +86,7 @@ const Markdown = ({
 			maxToRenderPerBatch={8}
 			initialNumToRender={8}
 			style={backgroundStyle}
-			{...flatListProps}
+			{...restListProps}
 			data={blocks}
 			renderItem={renderItem}
 		/>

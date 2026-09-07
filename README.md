@@ -50,7 +50,7 @@ export default ExampleComponent;
 | Prop          | Description                                                                                                                                                                                                     | Type                                                                                                                                                                             | Optional? |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | value         | Markdown value                                                                                                                                                                                                  | string                                                                                                                                                                           | false     |
-| flatListProps | Props for customizing the underlying FlatList used. Pass `null` to disable virtualization and render with `ScrollView` (useful for small docs). Stable content-derived keys prevent unnecessary re-renders (#451). | `Omit<FlatListProps<MarkdownBlock>, 'data' \| 'renderItem' \| 'horizontal'> \| null`<br><br>(`'data'`, `'renderItem'`, and `'horizontal'` props are omitted and cannot be overridden. `null` disables FlatList.) | true      |
+| flatListProps | Props for customizing the underlying FlatList used. Pass `null` to disable virtualization and render with `ScrollView` (useful for small docs). Stable content-derived keys prevent unnecessary re-renders (#451). | `Omit<FlatListProps<MarkdownBlock>, 'data' \| 'renderItem' \| 'horizontal'> \| Omit<FlatListProps<ReactNode>, 'data' \| 'renderItem' \| 'horizontal'> \| null`<br><br>(`'data'`, `'renderItem'`, and `'horizontal'` props are omitted and cannot be overridden. `ReactNode` item props remain accepted for backward compatibility. `null` disables FlatList.) | true      |
 | styles        | Styles for parsed components                                                                                                                                                                                    | [MarkedStyles](src/theme/types.ts)                                                                                                                                               | true      |
 | theme         | Props for customizing colors and spacing for all components,and it will get overridden with custom component style applied via 'styles' prop                                                                    | [UserTheme](src/theme/types.ts)                                                                                                                                                  | true      |
 | baseUrl       | A prefix url for any relative link                                                                                                                                                                              | string                                                                                                                                                                           | true      |
@@ -63,14 +63,13 @@ export default ExampleComponent;
 
 `useMarkdown` hook will return list of elements that can be rendered using a list component of your choice. Elements are memoized with stable references — only changed blocks re-parse (#451), ideal for chat streaming where `value` grows incrementally.
 
-`useMarkdownBlocks` (new) returns `{ blocks: MarkdownBlock[], parser }` for FlatList-optimized rendering with stable `id` keys (content-hash + index, `src/lib/types.ts:17`). Use it when you need virtualization control:
+`useMarkdownBlocks` (new) returns `{ blocks: MarkdownBlock[], parser }` for FlatList-optimized rendering with stable content-derived `id` keys (`src/lib/types.ts:17`, `src/lib/blockUtils.ts`). Use it when you need virtualization control:
 
 ```tsx
-import { useMarkdownBlocks } from "react-native-marked";
-import MarkdownBlock from "react-native-marked/src/lib/MarkdownBlock";
+import { MarkdownBlockView, useMarkdownBlocks } from "react-native-marked";
 
 const { blocks, parser } = useMarkdownBlocks(value, { theme, styles });
-<FlatList data={blocks} keyExtractor={b => b.id} renderItem={({item})=> <MarkdownBlock token={item.token} parser={parser} blockId={item.id}/>} />
+<FlatList data={blocks} keyExtractor={b => b.id} renderItem={({item})=> <MarkdownBlockView token={item.token} parser={parser} blockId={item.id}/>} />
 ```
 
 > **Performance note:** Memoize `styles`/`theme`/`renderer` objects with `useMemo` — new object identities force full re-parse ( `src/hooks/useMarkdown.ts:27`, `src/hooks/useMarkdownBlocks.ts:37`). Pass `flatListProps={null}` for non-virtualized `ScrollView` on small docs.

@@ -10,6 +10,7 @@ import useMarkdownBlocks, {
 } from "./hooks/useMarkdownBlocks";
 import useMarkdownWithComponents from "./hooks/useMarkdownWithComponents";
 import Markdown from "./lib/Markdown";
+import MarkdownBlockView from "./lib/MarkdownBlock";
 import type { ReactComponentRegistry } from "./lib/ReactComponentRegistry";
 import { ReactComponentRegistryProvider } from "./lib/ReactComponentRegistry";
 import Renderer, { type RendererOptions } from "./lib/Renderer";
@@ -38,6 +39,7 @@ export type {
 };
 
 export {
+	MarkdownBlockView,
 	MarkedHooks,
 	MarkedLexer,
 	MarkedTokenizer,

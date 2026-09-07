@@ -9,7 +9,9 @@ interface ParserOptions {
 
 interface MarkdownProps extends Partial<ParserOptions> {
   value: string;
-  flatListProps?: Omit<FlatListProps<ReactNode>, "data"|"renderItem"|"horizontal">;
+  flatListProps?: Omit<FlatListProps<MarkdownBlock>, "data"|"renderItem"|"horizontal">
+    | Omit<FlatListProps<ReactNode>, "data"|"renderItem"|"horizontal">
+    | null;
   theme?: UserTheme;
   tokenizer?: Tokenizer;
   hooks?: Hooks;
@@ -18,6 +20,11 @@ interface MarkdownProps extends Partial<ParserOptions> {
 ```
 
 FlatList note: `data` / `renderItem` / `horizontal` are omitted and managed internally.
+`ReactNode` item props remain accepted for backward compatibility with v8 and
+earlier. Pass `flatListProps={null}` to disable virtualization and render with
+`ScrollView` (useful for small docs). Blocks are keyed by content-derived
+`MarkdownBlock.id` (`src/lib/types.ts`), so only new/changed blocks re-parse
+when `value` changes (#451).
 
 ## Hook options (`src/hooks/useMarkdown.ts`)
 

@@ -5,7 +5,7 @@ exports[`Blockquotes Blockquote 1`] = `
   data={
     [
       {
-        "id": "blockquote-73ffc6f0-0",
+        "id": "blockquote-73ffc6f0",
         "raw": "> Dorothy followed her through many of the beautiful rooms in her castle.",
         "token": {
           "raw": "> Dorothy followed her through many of the beautiful rooms in her castle.",
@@ -106,7 +106,7 @@ exports[`Blockquotes Blockquotes with Multiple Paragraphs 1`] = `
   data={
     [
       {
-        "id": "blockquote-77de6fb9-0",
+        "id": "blockquote-77de6fb9",
         "raw": "> Dorothy followed her through many of the beautiful rooms in her castle.
 >
 > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.",
@@ -257,7 +257,7 @@ exports[`Blockquotes Blockquotes with Other Elements 1`] = `
   data={
     [
       {
-        "id": "blockquote-78354748-0",
+        "id": "blockquote-78354748",
         "raw": "> #### The quarterly results look great!
 >
 > - Revenue was off the chart.
@@ -690,7 +690,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
   data={
     [
       {
-        "id": "blockquote-730d4404-0",
+        "id": "blockquote-730d4404",
         "raw": "> Dorothy followed her through many of the beautiful rooms in her castle.
 >",
         "token": {
@@ -719,7 +719,7 @@ exports[`Blockquotes Nested Blockquotes 1`] = `
         "type": "blockquote",
       },
       {
-        "id": "blockquote-c09d6c-1",
+        "id": "blockquote-c09d6c",
         "raw": ">> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.",
         "token": {
           "raw": ">> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.",
@@ -880,7 +880,7 @@ exports[`Code Code Blocks (backtick) 1`] = `
   data={
     [
       {
-        "id": "code-5e6a3f25-0",
+        "id": "code-5e6a3f25",
         "raw": "\`\`\`<html>
       <head>
       </head>
@@ -972,7 +972,7 @@ exports[`Code Code Blocks (backtick), no ending backtick 1`] = `
   data={
     [
       {
-        "id": "code-552af7cf-0",
+        "id": "code-552af7cf",
         "raw": "\`\`\`<html>
       <head>
       </head>
@@ -1062,7 +1062,7 @@ exports[`Code Code Blocks 1`] = `
   data={
     [
       {
-        "id": "code-c5f1090f-0",
+        "id": "code-c5f1090f",
         "raw": "    <html>
       <head>
       </head>
@@ -1154,7 +1154,7 @@ exports[`Code Code Span 1`] = `
   data={
     [
       {
-        "id": "paragraph-23f09ebe-0",
+        "id": "paragraph-23f09ebe",
         "raw": "At the command prompt, type \`'nano'\`.",
         "token": {
           "raw": "At the command prompt, type \`'nano'\`.",
@@ -1275,7 +1275,7 @@ exports[`Emphasis Bold 1`] = `
   data={
     [
       {
-        "id": "paragraph-5111aa8a-0",
+        "id": "paragraph-5111aa8a",
         "raw": "Love **is** bold",
         "token": {
           "raw": "Love **is** bold",
@@ -1402,7 +1402,7 @@ exports[`Emphasis Bold and Italic 1`] = `
   data={
     [
       {
-        "id": "paragraph-ffa0181b-0",
+        "id": "paragraph-ffa0181b",
         "raw": "This is really ***very*** important text.",
         "token": {
           "raw": "This is really ***very*** important text.",
@@ -1549,7 +1549,7 @@ exports[`Emphasis Italic 1`] = `
   data={
     [
       {
-        "id": "paragraph-1bcd6022-0",
+        "id": "paragraph-1bcd6022",
         "raw": "A *cat* meow",
         "token": {
           "raw": "A *cat* meow",
@@ -1676,7 +1676,7 @@ exports[`Emphasis Strikethrough 1`] = `
   data={
     [
       {
-        "id": "paragraph-471a58a2-0",
+        "id": "paragraph-471a58a2",
         "raw": "A ~~cat~~ meow",
         "token": {
           "raw": "A ~~cat~~ meow",
@@ -1804,7 +1804,7 @@ exports[`Escaping Characters Render 1`] = `
   data={
     [
       {
-        "id": "paragraph-b5140f57-0",
+        "id": "paragraph-b5140f57",
         "raw": "\\* Without the backslash, this would be a bullet in an unordered list.",
         "token": {
           "raw": "\\* Without the backslash, this would be a bullet in an unordered list.",
@@ -1904,7 +1904,7 @@ exports[`HTML Render 1`] = `
   data={
     [
       {
-        "id": "paragraph-6851ed15-0",
+        "id": "paragraph-6851ed15",
         "raw": "This **word** is bold. This <em>word</em> is italic.",
         "token": {
           "raw": "This **word** is bold. This <em>word</em> is italic.",
@@ -2107,7 +2107,7 @@ exports[`Headings Alternate Syntax: Heading level 1 1`] = `
   data={
     [
       {
-        "id": "heading-e6141e5d-0",
+        "id": "heading-e6141e5d",
         "raw": "Heading level 1
 ===============",
         "token": {
@@ -2186,7 +2186,7 @@ exports[`Headings Alternate Syntax: Heading level 2 1`] = `
   data={
     [
       {
-        "id": "heading-8b0c3ce-0",
+        "id": "heading-8b0c3ce",
         "raw": "Heading level 2
 ---------------",
         "token": {
@@ -2264,7 +2264,7 @@ exports[`Headings Best Practice 1`] = `
   data={
     [
       {
-        "id": "paragraph-2edcacc2-0",
+        "id": "paragraph-2edcacc2",
         "raw": "Try to put a blank line before...",
         "token": {
           "raw": "Try to put a blank line before...",
@@ -2282,7 +2282,7 @@ exports[`Headings Best Practice 1`] = `
         "type": "paragraph",
       },
       {
-        "id": "heading-4bb4640e-1",
+        "id": "heading-4bb4640e",
         "raw": "# Heading",
         "token": {
           "depth": 1,
@@ -2301,7 +2301,7 @@ exports[`Headings Best Practice 1`] = `
         "type": "heading",
       },
       {
-        "id": "paragraph-9cd99a03-2",
+        "id": "paragraph-9cd99a03",
         "raw": "...and after a heading.",
         "token": {
           "raw": "...and after a heading.",
@@ -2439,7 +2439,7 @@ exports[`Headings Heading level 1 1`] = `
   data={
     [
       {
-        "id": "heading-30698fc9-0",
+        "id": "heading-30698fc9",
         "raw": "# Heading level 1",
         "token": {
           "depth": 1,
@@ -2516,7 +2516,7 @@ exports[`Headings Heading level 2 1`] = `
   data={
     [
       {
-        "id": "heading-c0e81f29-0",
+        "id": "heading-c0e81f29",
         "raw": "## Heading level 2",
         "token": {
           "depth": 2,
@@ -2592,7 +2592,7 @@ exports[`Headings Heading level 3 1`] = `
   data={
     [
       {
-        "id": "heading-37758bab-0",
+        "id": "heading-37758bab",
         "raw": "### Heading level 3",
         "token": {
           "depth": 3,
@@ -2665,7 +2665,7 @@ exports[`Headings Heading level 4 1`] = `
   data={
     [
       {
-        "id": "heading-dacd5ecf-0",
+        "id": "heading-dacd5ecf",
         "raw": "#### Heading level 4",
         "token": {
           "depth": 4,
@@ -2738,7 +2738,7 @@ exports[`Headings Heading level 5 1`] = `
   data={
     [
       {
-        "id": "heading-9b4fb78d-0",
+        "id": "heading-9b4fb78d",
         "raw": "##### Heading level 5",
         "token": {
           "depth": 5,
@@ -2811,7 +2811,7 @@ exports[`Headings Heading level 6 1`] = `
   data={
     [
       {
-        "id": "heading-59f742ed-0",
+        "id": "heading-59f742ed",
         "raw": "###### Heading level 6",
         "token": {
           "depth": 6,
@@ -2884,7 +2884,7 @@ exports[`Headings Heading with text emphasis 1`] = `
   data={
     [
       {
-        "id": "heading-b4e8fd69-0",
+        "id": "heading-b4e8fd69",
         "raw": "## ~~_Heading level 2_~~",
         "token": {
           "depth": 2,
@@ -3011,7 +3011,7 @@ exports[`Hooks invokes hooks when rendering the Markdown component 1`] = `
   data={
     [
       {
-        "id": "paragraph-5b165365-0",
+        "id": "paragraph-5b165365",
         "raw": "Hello **_$$world$$_**",
         "token": {
           "raw": "Hello **_$$world$$_**",
@@ -3194,7 +3194,7 @@ exports[`Horizontal Rules Asterisks 1`] = `
   data={
     [
       {
-        "id": "hr-b864fcf-0",
+        "id": "hr-b864fcf",
         "raw": "***",
         "token": {
           "raw": "***",
@@ -3252,7 +3252,7 @@ exports[`Horizontal Rules Dashes 1`] = `
   data={
     [
       {
-        "id": "hr-b863b68-0",
+        "id": "hr-b863b68",
         "raw": "---",
         "token": {
           "raw": "---",
@@ -3310,7 +3310,7 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
   data={
     [
       {
-        "id": "paragraph-2edcacc2-0",
+        "id": "paragraph-2edcacc2",
         "raw": "Try to put a blank line before...",
         "token": {
           "raw": "Try to put a blank line before...",
@@ -3328,7 +3328,7 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
         "type": "paragraph",
       },
       {
-        "id": "hr-b863b68-1",
+        "id": "hr-b863b68",
         "raw": "---",
         "token": {
           "raw": "---",
@@ -3337,7 +3337,7 @@ exports[`Horizontal Rules Horizontal Rule with Paragraph 1`] = `
         "type": "hr",
       },
       {
-        "id": "paragraph-3d17b15b-2",
+        "id": "paragraph-3d17b15b",
         "raw": "...and after a horizontal rule.",
         "token": {
           "raw": "...and after a horizontal rule.",
@@ -3466,7 +3466,7 @@ exports[`Horizontal Rules Underscores 1`] = `
   data={
     [
       {
-        "id": "hr-69b374fa-0",
+        "id": "hr-69b374fa",
         "raw": "_________________",
         "token": {
           "raw": "_________________",
@@ -3524,7 +3524,7 @@ exports[`Images Linking Images 1`] = `
   data={
     [
       {
-        "id": "paragraph-873ada92-0",
+        "id": "paragraph-873ada92",
         "raw": "[![An old rock in the desert](https://dummyimage.com/100x100/fff/aaa "Shiprock, New Mexico by Beau Rogers")](https://dummyimage.com/100x100/fff/aaa)",
         "token": {
           "raw": "[![An old rock in the desert](https://dummyimage.com/100x100/fff/aaa "Shiprock, New Mexico by Beau Rogers")](https://dummyimage.com/100x100/fff/aaa)",
@@ -3672,7 +3672,7 @@ exports[`Images Render 1`] = `
   data={
     [
       {
-        "id": "paragraph-498f54fd-0",
+        "id": "paragraph-498f54fd",
         "raw": "![The San Juan Mountains are beautiful!](https://dummyimage.com/100x100/fff/aaa "San Juan Mountains")",
         "token": {
           "raw": "![The San Juan Mountains are beautiful!](https://dummyimage.com/100x100/fff/aaa "San Juan Mountains")",
@@ -3789,7 +3789,7 @@ exports[`Images SVG Linking 1`] = `
   data={
     [
       {
-        "id": "paragraph-74325f1f-0",
+        "id": "paragraph-74325f1f",
         "raw": "[![SVG Repo](https://www.svgrepo.com/show/513268/beer.svg "SVG Repo")](https://www.svgrepo.com)",
         "token": {
           "raw": "[![SVG Repo](https://www.svgrepo.com/show/513268/beer.svg "SVG Repo")](https://www.svgrepo.com)",
@@ -3904,7 +3904,7 @@ exports[`Images SVG images 1`] = `
   data={
     [
       {
-        "id": "paragraph-d8f29fd7-0",
+        "id": "paragraph-d8f29fd7",
         "raw": "![svg](https://www.svgrepo.com/show/513268/beer.svg)",
         "token": {
           "raw": "![svg](https://www.svgrepo.com/show/513268/beer.svg)",
@@ -3988,7 +3988,7 @@ exports[`Line Breaks Trailing New Line Character 1`] = `
   data={
     [
       {
-        "id": "paragraph-761e3989-0",
+        "id": "paragraph-761e3989",
         "raw": "First line with a backslash after.
 And the next line.",
         "token": {
@@ -4077,7 +4077,7 @@ exports[`Line Breaks Trailing slash 1`] = `
   data={
     [
       {
-        "id": "paragraph-ed14f495-0",
+        "id": "paragraph-ed14f495",
         "raw": "First line with a backslash after.\\
       And the next line.",
         "token": {
@@ -4193,7 +4193,7 @@ exports[`Links Basic 1`] = `
   data={
     [
       {
-        "id": "paragraph-df05a9a8-0",
+        "id": "paragraph-df05a9a8",
         "raw": "My favorite search engine is [Duck Duck Go](https://duckduckgo.com).",
         "token": {
           "raw": "My favorite search engine is [Duck Duck Go](https://duckduckgo.com).",
@@ -4326,7 +4326,7 @@ exports[`Links Formatting Links 1`] = `
   data={
     [
       {
-        "id": "paragraph-23e1817e-0",
+        "id": "paragraph-23e1817e",
         "raw": "I love supporting the **[EFF](https://eff.org)**.
 This is the *[Markdown Guide](https://www.markdownguide.org)*.
 See the section on [\`code\`](#code).",
@@ -4623,7 +4623,7 @@ exports[`Links Links without text, (no render) 1`] = `
   data={
     [
       {
-        "id": "heading-83fc01f8-0",
+        "id": "heading-83fc01f8",
         "raw": "Table of Contents[](https://mastersoftwaretesting.com/testing-fundamentals/software-testing-101-what-is-software-testing#table-of-contents)
 -------------------------------------------------------------------------------------------------------------------------------------------
 ",
@@ -4727,7 +4727,7 @@ exports[`Links Titles 1`] = `
   data={
     [
       {
-        "id": "paragraph-f3c3b96c-0",
+        "id": "paragraph-f3c3b96c",
         "raw": "My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").",
         "token": {
           "raw": "My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").",
@@ -4860,7 +4860,7 @@ exports[`Links URLs and Email Addresses 1`] = `
   data={
     [
       {
-        "id": "paragraph-7bc7a926-0",
+        "id": "paragraph-7bc7a926",
         "raw": "<https://www.markdownguide.org>",
         "token": {
           "raw": "<https://www.markdownguide.org>",
@@ -4885,7 +4885,7 @@ exports[`Links URLs and Email Addresses 1`] = `
         "type": "paragraph",
       },
       {
-        "id": "paragraph-e32df449-1",
+        "id": "paragraph-e32df449",
         "raw": "<fake@example.com>",
         "token": {
           "raw": "<fake@example.com>",
@@ -5016,7 +5016,7 @@ exports[`Lists Elements in Lists: Blockquotes 1`] = `
   data={
     [
       {
-        "id": "list-e51526f4-0",
+        "id": "list-e51526f4",
         "raw": "- This is the first list item.
 - Here's the second list item.
 
@@ -5442,7 +5442,7 @@ exports[`Lists Elements in Lists: Code Blocks 1`] = `
   data={
     [
       {
-        "id": "list-ec19bf1-0",
+        "id": "list-ec19bf1",
         "raw": "* This is the first list item.
 * Here's the second list item.
 
@@ -5870,7 +5870,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
   data={
     [
       {
-        "id": "list-de2755f6-0",
+        "id": "list-de2755f6",
         "raw": "1. Open the file containing the Linux mascot.
 2. Marvel at its beauty.
 
@@ -6334,7 +6334,7 @@ exports[`Lists Elements in Lists: Lists 1`] = `
   data={
     [
       {
-        "id": "list-26d99293-0",
+        "id": "list-26d99293",
         "raw": "1. First item
 2. Second item
 3. Third item
@@ -6951,7 +6951,7 @@ exports[`Lists Elements in Lists: Paragraphs 1`] = `
   data={
     [
       {
-        "id": "list-d6423403-0",
+        "id": "list-d6423403",
         "raw": "- This is the first list item.
 - Here's the second list item.
 
@@ -7359,7 +7359,7 @@ exports[`Lists Ordered Lists 1`] = `
   data={
     [
       {
-        "id": "list-dbc68170-0",
+        "id": "list-dbc68170",
         "raw": "1. First item
 2. Second item
 3. Third item
@@ -7976,7 +7976,7 @@ exports[`Lists Ordered Lists: With Start Offset 1`] = `
   data={
     [
       {
-        "id": "list-a4d5d264-0",
+        "id": "list-a4d5d264",
         "raw": "57. foo
 1. bar
 2. baz",
@@ -8303,7 +8303,7 @@ exports[`Lists Unordered Lists 1`] = `
   data={
     [
       {
-        "id": "list-e8d8cbf7-0",
+        "id": "list-e8d8cbf7",
         "raw": "- First item
 - Second item
 - Third item
@@ -8920,7 +8920,7 @@ exports[`Paragraphs Paragraph 1`] = `
   data={
     [
       {
-        "id": "paragraph-37e1f67-0",
+        "id": "paragraph-37e1f67",
         "raw": "I really like using Markdown.",
         "token": {
           "raw": "I really like using Markdown.",
@@ -8938,7 +8938,7 @@ exports[`Paragraphs Paragraph 1`] = `
         "type": "paragraph",
       },
       {
-        "id": "paragraph-3c57fd7b-1",
+        "id": "paragraph-3c57fd7b",
         "raw": "I think I'll use it to format all of my documents from now on.",
         "token": {
           "raw": "I think I'll use it to format all of my documents from now on.",
@@ -9052,7 +9052,7 @@ exports[`Paragraphs Paragraph with Image 1`] = `
   data={
     [
       {
-        "id": "paragraph-1a0d2e14-0",
+        "id": "paragraph-1a0d2e14",
         "raw": "Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages.![Chat](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5kq947hwxmjvlmhrbnm6.png)",
         "token": {
           "raw": "Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages.![Chat](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5kq947hwxmjvlmhrbnm6.png)",
@@ -9198,7 +9198,7 @@ exports[`Renderer override Custom 1`] = `
   data={
     [
       {
-        "id": "paragraph-d796ab67-0",
+        "id": "paragraph-d796ab67",
         "raw": "\`hello\`",
         "token": {
           "raw": "\`hello\`",
@@ -9282,7 +9282,7 @@ exports[`Tables Alignment 1`] = `
   data={
     [
       {
-        "id": "table-57cf4111-0",
+        "id": "table-57cf4111",
         "raw": "| Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
 | Header      | Title       | Here's this   |
@@ -9807,7 +9807,7 @@ exports[`Tables Basic 1`] = `
   data={
     [
       {
-        "id": "table-3be802ac-0",
+        "id": "table-3be802ac",
         "raw": "| Syntax      | Description |
 | ----------- | ----------- |
 | Header      | Title       |
@@ -10193,7 +10193,7 @@ exports[`Tables Different Cell Widths 1`] = `
   data={
     [
       {
-        "id": "table-549dc46c-0",
+        "id": "table-549dc46c",
         "raw": "| Syntax | Description |
 | --- | ----------- |
 | Header | Title |
@@ -10579,7 +10579,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
   data={
     [
       {
-        "id": "table-7bb9dfa7-0",
+        "id": "table-7bb9dfa7",
         "raw": "| _This will also be italic_ |      _You **can** combine them_       |
 | -------------------------- | :-----------------------------------: |
 | **left foo**               |              _right foo_              |
@@ -11225,7 +11225,7 @@ exports[`Tables Images 1`] = `
   data={
     [
       {
-        "id": "table-a43e8417-0",
+        "id": "table-a43e8417",
         "raw": "|                                Hello                                |
 | :-----------------------------------------------------------------: |
 | Bingo ![](https://goo.gl/1R3T6h "Tonejito") This also works for me. |",
@@ -11483,7 +11483,7 @@ exports[`Tables Pipe Character 1`] = `
   data={
     [
       {
-        "id": "table-2ba3b01c-0",
+        "id": "table-2ba3b01c",
         "raw": "| Syntax    | Description |       Test Text |
 | :-------- | :---------: | --------------: |
 | Header    |    Title    | Here's \\| this |
@@ -12008,7 +12008,7 @@ exports[`Tokenizer Custom 1`] = `
   data={
     [
       {
-        "id": "paragraph-dc79552c-0",
+        "id": "paragraph-dc79552c",
         "raw": "$ latex code $",
         "token": {
           "raw": "$ latex code $",
@@ -12025,7 +12025,7 @@ exports[`Tokenizer Custom 1`] = `
         "type": "paragraph",
       },
       {
-        "id": "paragraph-d796ab67-1",
+        "id": "paragraph-d796ab67",
         "raw": "\`hello\`",
         "token": {
           "raw": "\`hello\`",

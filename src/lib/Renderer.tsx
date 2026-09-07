@@ -37,10 +37,6 @@ class Renderer implements RendererInterface {
 		this.selectable = options?.selectable ?? true;
 	}
 
-	resetKeys(): void {
-		this.slugger = new Slugger();
-	}
-
 	paragraph(children: ReactNode[], styles?: ViewStyle): ReactNode {
 		return this.getViewNode(children, styles);
 	}

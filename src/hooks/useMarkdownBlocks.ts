@@ -1,23 +1,16 @@
 import { type Hooks, lexer, type Token, type Tokenizer } from "marked";
 import { useMemo, useRef } from "react";
 import type { ColorSchemeName } from "react-native";
+import {
+	assignBlockIds,
+	getBlockRaw,
+	isSameBlockToken,
+} from "../lib/blockUtils";
 import Parser from "../lib/Parser";
 import Renderer from "../lib/Renderer";
 import type { MarkdownBlock, RendererInterface } from "../lib/types";
 import getStyles from "./../theme/styles";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
-
-/**
- * Simple deterministic hash for block id generation.
- * Uses DJB2-like algorithm, returns hex string.
- */
-function hashString(str: string): string {
-	let hash = 5381;
-	for (let i = 0; i < str.length; i++) {
-		hash = (hash * 33) ^ str.charCodeAt(i);
-	}
-	return (hash >>> 0).toString(16);
-}
 
 export interface UseMarkdownBlocksOptions {
 	colorScheme?: ColorSchemeName;
@@ -69,49 +62,59 @@ const useMarkdownBlocks = (
 		const prevBlocks = prevBlocksRef.current;
 		const prevParser = prevParserRef.current;
 		const parserChanged = prevParser !== parser;
+		const ids = assignBlockIds(tokens);
 
 		// If parser changed (styles/theme/renderer changed), all blocks must be recreated
-		// because rendered output depends on styles/renderer.
+		// because rendered output depends on styles/renderer. Ids stay stable because
+		// they are content-derived.
 		if (parserChanged) {
 			const newBlocks: MarkdownBlock[] = tokens.map((token, index) => {
-				const raw = (token as { raw?: string }).raw ?? `${token.type}-${index}`;
-				const type = token.type;
-				const id = `${type}-${hashString(raw)}-${index}`;
-				return { id, token, raw, type };
+				const id = ids[index] as string;
+				return { id, token, raw: getBlockRaw(token, index), type: token.type };
 			});
 			prevBlocksRef.current = newBlocks;
 			prevParserRef.current = parser;
 			return newBlocks;
 		}
 
-		// Parser unchanged: try to reuse blocks where raw+type identical at same index
+		// Fast path: same blocks in the same order — return the previous array
+		// reference so FlatList and memo can bail out completely.
 		if (prevBlocks && prevBlocks.length === tokens.length) {
 			let allEqual = true;
 			for (let i = 0; i < tokens.length; i++) {
-				const t = tokens[i] as Token;
+				const token = tokens[i] as Token;
 				const prev = prevBlocks[i] as MarkdownBlock;
-				const raw = (t as { raw?: string }).raw ?? `${t.type}-${i}`;
-				if (prev.raw !== raw || prev.type !== t.type) {
+				if (prev.id !== ids[i] || !isSameBlockToken(prev.token, token)) {
 					allEqual = false;
 					break;
 				}
 			}
 			if (allEqual) {
-				// Return previous array reference to allow FlatList and memo to bail out completely
 				return prevBlocks;
 			}
 		}
 
+		// Content-keyed reuse: surviving blocks keep their object identity no
+		// matter where they moved (append, prepend, insert, delete, reorder),
+		// so memoized rows bail out. Only new/changed blocks are recreated.
+		const prevById = new Map<string, MarkdownBlock>();
+		if (prevBlocks) {
+			for (const block of prevBlocks) {
+				if (!prevById.has(block.id)) {
+					prevById.set(block.id, block);
+				}
+			}
+		}
+
 		const newBlocks: MarkdownBlock[] = tokens.map((token, index) => {
-			const raw = (token as { raw?: string }).raw ?? `${token.type}-${index}`;
-			const type = token.type;
-			const prev = prevBlocks?.[index];
-			if (prev && prev.raw === raw && prev.type === type) {
-				// Reuse previous block object (and thus its token reference) for memo bail-out
+			const id = ids[index] as string;
+			const prev = prevById.get(id);
+			if (prev && isSameBlockToken(prev.token, token)) {
+				// Consume so two new blocks never share one previous object.
+				prevById.delete(id);
 				return prev;
 			}
-			const id = `${type}-${hashString(raw)}-${index}`;
-			return { id, token: token as Token, raw, type };
+			return { id, token, raw: getBlockRaw(token, index), type: token.type };
 		});
 
 		prevBlocksRef.current = newBlocks;
