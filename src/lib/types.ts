@@ -1,4 +1,4 @@
-import type { Hooks, Tokenizer } from "marked";
+import type { Hooks, Token, Tokenizer } from "marked";
 import type { ReactNode } from "react";
 import type {
 	FlatListProps,
@@ -14,12 +14,25 @@ export interface ParserOptions {
 	renderer: RendererInterface;
 }
 
+export type MarkdownBlock = {
+	id: string;
+	token: Token;
+	raw: string;
+	type: string;
+};
+
 export interface MarkdownProps extends Partial<ParserOptions> {
 	value: string;
-	flatListProps?: Omit<
-		FlatListProps<ReactNode>,
-		"data" | "renderItem" | "horizontal"
-	>;
+	/**
+	 * Props for customizing the underlying FlatList. `MarkdownBlock` is the
+	 * current item type; `ReactNode` remains accepted for backward
+	 * compatibility with v8 and earlier. Pass `null` to disable
+	 * virtualization and render with `ScrollView` (useful for small docs).
+	 */
+	flatListProps?:
+		| Omit<FlatListProps<MarkdownBlock>, "data" | "renderItem" | "horizontal">
+		| Omit<FlatListProps<ReactNode>, "data" | "renderItem" | "horizontal">
+		| null;
 	theme?: UserTheme;
 	tokenizer?: Tokenizer;
 	hooks?: Hooks;

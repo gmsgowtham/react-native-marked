@@ -10,6 +10,28 @@ function useMarkdown(value: string, options: useMarkdownHookOptions): ReactNode[
 
 `options.colorScheme` is required; rest mirrors `MarkdownProps` plus `tokenizer`.
 
+## useMarkdownBlocks (`src/hooks/useMarkdownBlocks.ts`)
+
+Returns `{ blocks: MarkdownBlock[], parser }` for FlatList-optimized rendering
+with stable content-derived `id` keys. Only new/changed blocks re-parse when
+`value` changes (#451):
+
+```tsx
+import { MarkdownBlockView, useMarkdownBlocks } from "react-native-marked";
+
+const { blocks, parser } = useMarkdownBlocks(value, { theme, styles });
+<FlatList
+  data={blocks}
+  keyExtractor={(block) => block.id}
+  renderItem={({ item }) => (
+    <MarkdownBlockView token={item.token} parser={parser} blockId={item.id} />
+  )}
+/>
+```
+
+> Memoize `styles` / `theme` / `renderer` objects with `useMemo` — new object
+> identities force full re-parse.
+
 ## useMarkdownWithComponents (`src/hooks/useMarkdownWithComponents.tsx`)
 
 ```ts

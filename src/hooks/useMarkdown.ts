@@ -1,6 +1,7 @@
-import { type Hooks, lexer, type Tokenizer } from "marked";
-import { type ReactNode, useMemo } from "react";
+import { type Hooks, lexer, type Token, type Tokenizer } from "marked";
+import { type ReactNode, useMemo, useRef } from "react";
 import type { ColorSchemeName } from "react-native";
+import { isSameBlockToken } from "../lib/blockUtils";
 import Parser from "../lib/Parser";
 import Renderer from "../lib/Renderer";
 import type { RendererInterface } from "../lib/types";
@@ -41,13 +42,105 @@ const useMarkdown = (
 		[options?.renderer, options?.baseUrl, styles, options?.selectable],
 	);
 
+	const prevTokensRef = useRef<Token[] | null>(null);
+	const prevElementsRef = useRef<ReactNode[] | null>(null);
+	const prevParserRef = useRef<Parser | null>(null);
+
 	const elements = useMemo(() => {
 		const tokens = lexer(value, {
 			gfm: true,
 			tokenizer: options?.tokenizer,
 			hooks: options?.hooks,
-		});
-		return parser.parse(tokens);
+		}).filter((t) => t.type !== "space");
+
+		const prevTokens = prevTokensRef.current;
+		const prevElements = prevElementsRef.current;
+		const prevParser = prevParserRef.current;
+
+		// If parser changed (styles/renderer changed), re-parse fully
+		if (prevParser !== parser) {
+			const result = parser.parse(tokens);
+			prevTokensRef.current = tokens;
+			prevElementsRef.current = result;
+			prevParserRef.current = parser;
+			return result;
+		}
+
+		// If tokens identical to previous, return same array reference to bail out
+		if (prevTokens && prevElements && prevTokens.length === tokens.length) {
+			let allSame = true;
+			for (let i = 0; i < tokens.length; i++) {
+				const a = prevTokens[i] as Token;
+				const b = tokens[i] as Token;
+				if (!isSameBlockToken(a, b)) {
+					allSame = false;
+					break;
+				}
+			}
+			if (allSame) {
+				return prevElements;
+			}
+		}
+
+		// Try prefix reuse for streaming appends
+		if (prevTokens && prevElements && tokens.length > prevTokens.length) {
+			let prefixMatches = true;
+			for (let i = 0; i < prevTokens.length; i++) {
+				const a = prevTokens[i] as Token;
+				const b = tokens[i] as Token;
+				if (!isSameBlockToken(a, b)) {
+					prefixMatches = false;
+					break;
+				}
+			}
+			if (prefixMatches) {
+				const remainingTokens = tokens.slice(prevTokens.length);
+				const newElements = parser.parse(remainingTokens);
+				const result = [...prevElements, ...newElements];
+				prevTokensRef.current = tokens;
+				prevElementsRef.current = result;
+				return result;
+			}
+		}
+
+		// Per-index reuse for same-length edits (e.g., editing one paragraph)
+		if (prevTokens && prevElements && prevTokens.length === tokens.length) {
+			let hasReuse = false;
+			let needsParse = false;
+			const newElements: ReactNode[] = new Array(tokens.length);
+			for (let i = 0; i < tokens.length; i++) {
+				const a = prevTokens[i] as Token;
+				const b = tokens[i] as Token;
+				if (
+					isSameBlockToken(a, b) &&
+					prevElements[i] !== null &&
+					prevElements[i] !== undefined
+				) {
+					newElements[i] = prevElements[i] as ReactNode;
+					hasReuse = true;
+				} else {
+					needsParse = true;
+					newElements[i] = null as unknown as ReactNode;
+				}
+			}
+			if (hasReuse && needsParse) {
+				for (let i = 0; i < tokens.length; i++) {
+					if (newElements[i] === null) {
+						const parsed = parser.parse([tokens[i] as Token]);
+						newElements[i] = parsed[0] as ReactNode;
+					}
+				}
+				prevTokensRef.current = tokens;
+				prevElementsRef.current = newElements;
+				return newElements;
+			}
+		}
+
+		const result = parser.parse(tokens);
+		prevTokensRef.current = tokens;
+		prevElementsRef.current = result;
+		prevParserRef.current = parser;
+		return result;
 	}, [value, parser, options?.tokenizer, options?.hooks]);
 
 	return elements;
