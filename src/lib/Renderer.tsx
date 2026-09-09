@@ -131,7 +131,7 @@ class Renderer implements RendererInterface {
 	): ReactNode {
 		const key = this.getKey();
 		if (uri.endsWith(".svg")) {
-			return <MDSvg uri={uri} key={key} />;
+			return <MDSvg uri={uri} key={key} alt={alt || title} />;
 		}
 		return <MDImage key={key} uri={uri} alt={alt || title} style={style} />;
 	}

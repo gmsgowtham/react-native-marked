@@ -19,6 +19,8 @@ Links use `onLinkPress` (`src/utils/handlers.ts`) — override via renderer `lin
 
 `.svg` URIs auto-render via `MDSvg` (`src/components/MDSvg.tsx`), others via `MDImage` (`src/components/MDImage.tsx`).
 
+Both use the markdown alt text — falling back to the title — as their `accessibilityLabel`.
+
 ### Tables
 
 Rendered with `react-native-reanimated-table` (`src/components/MDTable.tsx`) — provide `table` / `tableRow` / `tableCell` styles.
