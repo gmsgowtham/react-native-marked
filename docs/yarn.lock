@@ -90,50 +90,100 @@
   resolved "https://registry.yarnpkg.com/@rspack/binding-darwin-arm64/-/binding-darwin-arm64-2.2.2.tgz#04de506a16fc1cbc658dff1bbdae9429af507202"
   integrity sha512-/le/AvV4HSinXTPs2Lqpujxt189Z5T10Ggt96QzckLRPvIchzqoavVDDjltzC7XcaZ87XCH/X06jNKgzkcBBNA==
 
+"@rspack/binding-darwin-arm64@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-darwin-arm64/-/binding-darwin-arm64-2.2.3.tgz#ea078eca5943e5abd80aa1d5edda3bea8463618c"
+  integrity sha512-MGLx4lMTY6XEtJi55S+fk83+683GeUDuoqzjixbq6ehHdr/l6nGiHhgvMtV5DYt9sCytUDzyrCkcJ0AWqJxnTA==
+
 "@rspack/binding-darwin-x64@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-darwin-x64/-/binding-darwin-x64-2.2.2.tgz#dcede5553442edcfe36dd2c6bc36bd09f3b4a7be"
   integrity sha512-uFIcUPUXiPxM6ljenLafp5TemT8eLZm1riRn8fJYmpqNCK+aCcTaud18XHZpI5SjzzcY+xUHfVShgvNzKXuf2g==
+
+"@rspack/binding-darwin-x64@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-darwin-x64/-/binding-darwin-x64-2.2.3.tgz#db31c1db0e9cdbc0687a325e1efdefc723fbfa2b"
+  integrity sha512-5B/c1YTYEz9m7TyqtGQgTmXMr9PoPewyqsyHB4N0AB7nxDhtgmki0GniP2Lqtx3LJzOvQMjwet+I2lmWxvxwCg==
 
 "@rspack/binding-linux-arm64-gnu@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-2.2.2.tgz#fa332a1c381c1b26e27baf564b32f42e1477e9ed"
   integrity sha512-Pjby4pDSMNJQK2VBzpgCj6lb+DGuenS1fEDb6xi5/apbJb9v5WE+e43Mz7i+XqgXS8e846pjaONV3KM5WKB1LQ==
 
+"@rspack/binding-linux-arm64-gnu@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-2.2.3.tgz#d92d13cebb0abcc264824de7e7d5548b2d4a9539"
+  integrity sha512-sU+jPGD2xz3BxFvsdBQVGce538YHqrSKMB4ZSfKhj6RSKjeGzpJ1BVl8+IndiQsfTgaUxi7N+r5cs/ezGy1TVQ==
+
 "@rspack/binding-linux-arm64-musl@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-linux-arm64-musl/-/binding-linux-arm64-musl-2.2.2.tgz#0ded2dec87450b8914ce983c1808baffec4adca9"
   integrity sha512-0u9O7tTVT2z+F6o/eEY6f6+My8Jn9U56QiBwkfy90ZaoAfZyQSSTxqaK/zA7W43oFxQefeCpiPas27VUzrSakw==
+
+"@rspack/binding-linux-arm64-musl@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-linux-arm64-musl/-/binding-linux-arm64-musl-2.2.3.tgz#608c8cf11b2b49aa56fad26fd5eaf7fae2ab4fbd"
+  integrity sha512-EQuADbqWbVgNAh5ep/u/B7Z/8UUkZjMLzHAOKZJklBpe4Y8mnhFNjieX0xc9NadR+drj9tqmEANxzTOkFtVPyQ==
 
 "@rspack/binding-linux-ppc64-gnu@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-2.2.2.tgz#0439364fea6751223acbd5516da0a218ac5d3343"
   integrity sha512-N3lVnhq5qOvpmP5n386JzR1GcE8HzAqq4/r440Z6yle9m7PhVFJ6oXVWxgaDTYV0mtv9YLJmaG+YrjYfUa1vuA==
 
+"@rspack/binding-linux-ppc64-gnu@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-2.2.3.tgz#b77297dbbb7bea3248351db153b429d555e7ca22"
+  integrity sha512-kyXROzr519a5juBII9ysuc5ZD2apEZ0DJqL5PPCAOVHjzMfThEIBwnX3gicNCmp+kY0CCIOl2LagwbtFaOzoiA==
+
 "@rspack/binding-linux-riscv64-gnu@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-2.2.2.tgz#ddd1faf4ae930945dd174142f4ef4b86986ba502"
   integrity sha512-ReClZyp32/rJkUDV/oGDU0X6BCFyEkTR6r4stFwm/qOOaG6mUMRzZe4gur8Yh979p4Hiz9EdkmfEHY02GBXcaQ==
+
+"@rspack/binding-linux-riscv64-gnu@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-2.2.3.tgz#6f56c32ade3b1134e906c6dd16324a0530465355"
+  integrity sha512-F3x6Nu0RUSoLtiaMse3hYQ3Nf5A2de6vTWWDXj14Ll6BpGWXGn+U/eXT/nB199fFnDEYf+CJEa7d6fzcYdwdjA==
 
 "@rspack/binding-linux-riscv64-musl@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-2.2.2.tgz#17fb256e36503fc8dfd0e7e790b3141ce8e10dab"
   integrity sha512-mqsorvTNerr3r8zI35NFTPYATPDlhepdiUhZjKT6ylqpHlP7vLU9fp4aEMK/CuTv2f+IVsa0+iZqtMxHs2tSjw==
 
+"@rspack/binding-linux-riscv64-musl@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-linux-riscv64-musl/-/binding-linux-riscv64-musl-2.2.3.tgz#06f201419bd6ec99930318f564cadbcb1cb73f13"
+  integrity sha512-O3HK7OnPvoBxZu4MX2j+t3gk4qiUsFYqj/29L3WgU1iQsdUSIN6PInW2JvbiLqyuzt09VltIEXTKayY8EysCpQ==
+
 "@rspack/binding-linux-s390x-gnu@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-2.2.2.tgz#85fa68a1d14a2a53903958ca7fc57458bd3fc6f0"
   integrity sha512-ql2Jub8QYWSugBppmj2u0SjcIj6fOQuAaLCYQOqU7zbvz/uuWTfoqmdWKExwrxeCU9Tzt7emVM0ETuVEpoca+A==
+
+"@rspack/binding-linux-s390x-gnu@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-2.2.3.tgz#b174f5c6c721ee911718444d382d535d691f3275"
+  integrity sha512-SIxfGdwBdAjwJ8pDlPTb8MPIZIv/i2lKHn4/ywuDpFOxlUA4Bo/OKqQOenHx2MFD2mN8jigBZQTF0KVe5YP1uQ==
 
 "@rspack/binding-linux-x64-gnu@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-linux-x64-gnu/-/binding-linux-x64-gnu-2.2.2.tgz#c43187cd2ad7a1d1ea7cf147c0a27da98a328649"
   integrity sha512-MNYKYEHrtIVEno2q5rgpou/JVffRwn109xPK3kxct95EojHsniNa8jwy6eEHeOazP4EN60Si7NElE3aQ6JssHw==
 
+"@rspack/binding-linux-x64-gnu@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-linux-x64-gnu/-/binding-linux-x64-gnu-2.2.3.tgz#8ad2bb8b594f50db327212ce1980a7da4b1a8e46"
+  integrity sha512-IzQGcw09WYn/IzwB1SQpg7FQ211MBr+fJB2/WoRrPS6CNdtlkDHZaI8z2oq+2Oc5Su21jgX75VlWFajirUx5Dw==
+
 "@rspack/binding-linux-x64-musl@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-linux-x64-musl/-/binding-linux-x64-musl-2.2.2.tgz#530b333a05d29b349bdbe644c879f957a4b5d8cc"
   integrity sha512-y9/9CmE8lrECaF17GAhacibTL+SvlEPEotQnUuBFC/WFtXh8hU2E7a7bAkpYGSLH6kM0nrJZHO3hTvM1wdWOJw==
+
+"@rspack/binding-linux-x64-musl@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-linux-x64-musl/-/binding-linux-x64-musl-2.2.3.tgz#e8ea650825521f0c9adc13cae9f456f135346943"
+  integrity sha512-9OKSx2ickrR+PFal94XE6Hkj49AQ2HI3KuR9XeRkKOwSxjwrskV/Pn1wc2itDOHkm/QHP7k+MttsYb4FGuNIqw==
 
 "@rspack/binding-wasm32-wasi@2.2.2":
   version "2.2.2"
@@ -144,20 +194,44 @@
     "@emnapi/runtime" "1.11.3"
     "@napi-rs/wasm-runtime" "1.1.6"
 
+"@rspack/binding-wasm32-wasi@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-wasm32-wasi/-/binding-wasm32-wasi-2.2.3.tgz#d99c74b792801f571731467563b1d4d317e56922"
+  integrity sha512-gici3jWJi0GDy9kbYh57LoA57H8A2EAD9cV2jFKp1YoJ2aX2U9lANh4L+xoKPTvVQYpRvleoA5jkAvyfeLQ5bw==
+  dependencies:
+    "@emnapi/core" "1.11.3"
+    "@emnapi/runtime" "1.11.3"
+    "@napi-rs/wasm-runtime" "1.1.6"
+
 "@rspack/binding-win32-arm64-msvc@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-2.2.2.tgz#7aed94eea68fb578781a3ecf3c93a4f199ca6a4d"
   integrity sha512-rfcNg0W3ZPZvXma1gTyEt9/Z8FxASIaQr+sMWTSaTPPaeU3xY1+0hYcrD0kUFNs3/5L4u63myI4R8qRXiuW3pA==
+
+"@rspack/binding-win32-arm64-msvc@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-2.2.3.tgz#10169588ab44d5ed1f5dc7575ab39b7c5d2496bd"
+  integrity sha512-1MG66kcuqAGFs9ewiBc+/NJSTQr1jHrkZ2nCVMyhukl1o8embmFZa3BCibYgBYs5P7FRc6Sa+CDXcrfDZOLInQ==
 
 "@rspack/binding-win32-ia32-msvc@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-2.2.2.tgz#a1c35bcab1b3b14409c60bad0e886ffc661e4aaf"
   integrity sha512-TFPvr9RZw9oHIhooDhXHzWjKcHpGPTxkznSeM2poIWU0CdEuua2rVUfsrriTF1Dmx+9kMly61DQmyOHCbb+b2g==
 
+"@rspack/binding-win32-ia32-msvc@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-win32-ia32-msvc/-/binding-win32-ia32-msvc-2.2.3.tgz#fad912ea25e53c8ba20c756d259c8b3bbca41ebb"
+  integrity sha512-CAigxxh9DYJmEwH9f6FRkSsmt0GhKVqKaFRVFFrF9WDL7gXP3hyE/h/cCeMdmlTzRt8Mht87AvnDX7PG3neMrA==
+
 "@rspack/binding-win32-x64-msvc@2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/binding-win32-x64-msvc/-/binding-win32-x64-msvc-2.2.2.tgz#3089b96b94c61ab1f439addf303e6333d84f0b50"
   integrity sha512-GvEGyL594dtWN9SoVnKWh0exrM8WLInaUjwcuA2JKbCi1ak/9iHxip/U1dY3DuVqBYBhmvYq96JPbl91xnzFjg==
+
+"@rspack/binding-win32-x64-msvc@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding-win32-x64-msvc/-/binding-win32-x64-msvc-2.2.3.tgz#31eb24509dfd5f376722e14a2c7128c6665a3056"
+  integrity sha512-qa5Wc34a+Uux5foZ1Z+9fPQceVRbgTunaIulHezVF/ZxvqKO4DkAC7tFl53shB0YRVBAPg8R78MGd8cByfoxLQ==
 
 "@rspack/binding@2.2.2":
   version "2.2.2"
@@ -179,7 +253,34 @@
     "@rspack/binding-win32-ia32-msvc" "2.2.2"
     "@rspack/binding-win32-x64-msvc" "2.2.2"
 
-"@rspack/core@2.2.2", "@rspack/core@~2.2.2":
+"@rspack/binding@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/binding/-/binding-2.2.3.tgz#63fdb5d2d2329047e2a14a8b87a9529e6d4e23bc"
+  integrity sha512-532+T5N6yIdukChiL85H4NFN2vn9oi8wlLa1ByPNtpNYriE9s24fUhn0RiK7w/xACqnNpYmXCqLYCvjOzyCy+w==
+  optionalDependencies:
+    "@rspack/binding-darwin-arm64" "2.2.3"
+    "@rspack/binding-darwin-x64" "2.2.3"
+    "@rspack/binding-linux-arm64-gnu" "2.2.3"
+    "@rspack/binding-linux-arm64-musl" "2.2.3"
+    "@rspack/binding-linux-ppc64-gnu" "2.2.3"
+    "@rspack/binding-linux-riscv64-gnu" "2.2.3"
+    "@rspack/binding-linux-riscv64-musl" "2.2.3"
+    "@rspack/binding-linux-s390x-gnu" "2.2.3"
+    "@rspack/binding-linux-x64-gnu" "2.2.3"
+    "@rspack/binding-linux-x64-musl" "2.2.3"
+    "@rspack/binding-wasm32-wasi" "2.2.3"
+    "@rspack/binding-win32-arm64-msvc" "2.2.3"
+    "@rspack/binding-win32-ia32-msvc" "2.2.3"
+    "@rspack/binding-win32-x64-msvc" "2.2.3"
+
+"@rspack/core@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@rspack/core/-/core-2.2.3.tgz#401ad1a86f2d9e104a192e758fdd71990d3e56d2"
+  integrity sha512-VHejw+PDd5B5v6VduFyjLSTIFaHBMNGPMKw+Y0zjkMqjYhDD1hjLOBC5frRKjTWcfYdk+Q73auWPp9k/H9PfIQ==
+  dependencies:
+    "@rspack/binding" "2.2.3"
+
+"@rspack/core@~2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/core/-/core-2.2.2.tgz#8bb499b5a774188ec63b75755fd121929758be24"
   integrity sha512-/yztfDZR5syIPBrUpzBpL+6fhhl0IHBPcXlNr4tOMBULbocFIz7Z4/cqvf1ix0DBbKpIGx99v6N1IDbk2gi8hw==
