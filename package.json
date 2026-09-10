@@ -65,7 +65,7 @@
 		"@testing-library/react-native": "v14.0.0-alpha.1",
 		"@types/jest": "30.0.0",
 		"@types/node": "24.13.4",
-		"@types/react": "19.2.18",
+		"@types/react": "19.3.0",
 		"@types/svg-parser": "^2.0.3",
 		"commitlint": "21.2.2",
 		"danger": "14.0.7",
@@ -74,7 +74,7 @@
 		"jest-environment-jsdom": "29.7.0",
 		"pod-install": "1.1.0",
 		"postinstall-postinstall": "2.1.0",
-		"react": "19.2.8",
+		"react": "19.3.0",
 		"react-native": "0.78.2",
 		"react-native-builder-bob": "0.43.1",
 		"react-native-svg": "15.15.5",
@@ -172,7 +172,7 @@
 		"node": ">=18"
 	},
 	"resolutions": {
-		"@types/react": "19.2.18",
-		"**/pretty-format/react-is": "19.2.8"
+		"@types/react": "19.3.0",
+		"**/pretty-format/react-is": "19.3.0"
 	}
 }
