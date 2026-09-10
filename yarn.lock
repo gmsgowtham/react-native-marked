@@ -8959,10 +8959,10 @@ react-is@19.2.8, react-is@^18.0.0, react-is@^18.3.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.2.8.tgz#09826f9fbc187bc668e3e5c62edc001f804d5018"
   integrity sha512-s5un28nYxKJw5gvUHyW5PCC28CvBqLu9r3cWgzHT4Vo/5fqqkFcdRYsGcKf50WMPpjjFZS5d76fn3YCo2njKwQ==
 
-react-native-builder-bob@0.43.0:
-  version "0.43.0"
-  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.43.0.tgz#176a17c3c1057a90dfae010c1d0f7a55ac70955a"
-  integrity sha512-suE1OYf0umMQvzzQ+4Ba+5xMc8jLu60ILQi85x8SCBaBtVUSJfcaGvlv6+34xxXgy+a2PuyNzoOXr9STEweLrQ==
+react-native-builder-bob@0.43.1:
+  version "0.43.1"
+  resolved "https://registry.yarnpkg.com/react-native-builder-bob/-/react-native-builder-bob-0.43.1.tgz#b39d0764ebc7dd33d46e8507d8d45f7d1f20990c"
+  integrity sha512-TRGDmaAI72gMyRXFbNhWVODLe9YOydJ9HV+SCdLp+BjHnUJLeAImFCnZUmlO/2pUQUC1+yS+S4EMlRZ4rGCwBg==
   dependencies:
     "@babel/core" "^7.29.0"
     "@babel/plugin-transform-flow-strip-types" "^7.27.1"
