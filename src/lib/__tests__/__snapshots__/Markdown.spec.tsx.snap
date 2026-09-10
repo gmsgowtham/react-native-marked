@@ -4024,6 +4024,7 @@ exports[`Images SVG Linking 1`] = `
           onPress={[Function]}
         >
           <Memo(MDSvg)
+            alt="SVG Repo"
             uri="https://www.svgrepo.com/show/513268/beer.svg"
           />
         </TouchableHighlight>
@@ -4115,6 +4116,7 @@ exports[`Images SVG images 1`] = `
         }
       >
         <Memo(MDSvg)
+          alt="svg"
           uri="https://www.svgrepo.com/show/513268/beer.svg"
         />
       </View>,

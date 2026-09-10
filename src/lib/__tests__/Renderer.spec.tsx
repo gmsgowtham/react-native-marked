@@ -16,6 +16,7 @@ jest.mock("react-native/Libraries/Linking/Linking", () => ({
 }));
 
 const renderer = new Renderer();
+const SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 64 64"><path d="M0 0h64v64H0z"/></svg>`;
 const userStyles: MarkedStyles = {
 	text: {
 		fontSize: 24,
@@ -195,6 +196,21 @@ describe("Renderer", () => {
 				});
 			});
 			describe("getImageNode", () => {
+				const originalFetch = global.fetch;
+
+				const mockSvgFetch = () => {
+					global.fetch = jest.fn(() =>
+						Promise.resolve({
+							status: 200,
+							text: () => Promise.resolve(SVG),
+						} as Response),
+					);
+				};
+
+				afterEach(() => {
+					global.fetch = originalFetch;
+				});
+
 				it("returns a Image", async () => {
 					const ImageNode = renderer.image(
 						"https://picsum.photos/100/100",
@@ -204,6 +220,30 @@ describe("Renderer", () => {
 						const tree = render(ImageNode as ReactElement).toJSON();
 						expect(tree).toMatchSnapshot();
 					});
+				});
+
+				it("returns a SVG with the alt text as accessibility label", async () => {
+					mockSvgFetch();
+					const ImageNode = renderer.image(
+						"https://example.com/logo.svg",
+						"Logo",
+					);
+					render(ImageNode as ReactElement);
+					const Svg = await screen.findByTestId("react-native-marked-md-svg");
+					expect(Svg.props.accessibilityLabel).toBe("Logo");
+				});
+
+				it("returns a SVG with the title as accessibility label when alt is absent", async () => {
+					mockSvgFetch();
+					const ImageNode = renderer.image(
+						"https://example.com/logo.svg",
+						undefined,
+						undefined,
+						"Logo title",
+					);
+					render(ImageNode as ReactElement);
+					const Svg = await screen.findByTestId("react-native-marked-md-svg");
+					expect(Svg.props.accessibilityLabel).toBe("Logo title");
 				});
 			});
 			describe("getListNode", () => {
