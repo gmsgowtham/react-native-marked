@@ -2886,15 +2886,24 @@
     "@simple-libs/stream-utils" "^2.0.0"
     semver "^7.5.2"
 
+"@conventional-changelog/git-client@^3.1.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@conventional-changelog/git-client/-/git-client-3.1.2.tgz#2298db5ba59a2f8826300bc7ad477169f76f15aa"
+  integrity sha512-jZqwnJwf7nboIlAcw/mkOjVa6DexCcUOgT2oOQgkoi3z9vR8tGFkcMy2BFcYwjhL9sYcDDXkRQDayiDieCoW7A==
+  dependencies:
+    "@simple-libs/child-process-utils" "^2.0.0"
+    "@simple-libs/stream-utils" "^2.0.0"
+    semver "^7.5.2"
+
 "@conventional-changelog/template@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@conventional-changelog/template/-/template-1.2.0.tgz#1de6f07fb55a67f9e32d67aab3124c56148163f2"
   integrity sha512-12qHxvlKjHmP0PQ+17EREgC7lWyLwbph1RKcZQZ7k7ZWGmrxfxC9gadHGfvzr0g0u8BhiBGg3tks93txodlyRQ==
 
-"@conventional-changelog/template@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@conventional-changelog/template/-/template-1.2.1.tgz#8f673635d6ec8289bc5d5a1264629fd1e88b8d4f"
-  integrity sha512-TzlTVpKPjaqW6qOYjQcYUDuGsLCNsvFHVBXkYGTAnf5V37jCWrE5haKNXzz0WZUtVHjrpV76L1buANjwXMfT8w==
+"@conventional-changelog/template@^1.3.0", "@conventional-changelog/template@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@conventional-changelog/template/-/template-1.4.0.tgz#30a8680f2ab8d3a60a08e86bebb33fe8f0f8f100"
+  integrity sha512-aalGyl7dbB5PArRebDIX43ZvBlXrYm9uWzGJ26t+4SzJVPsOuvfILGGbw5X4yX7i50YEmJ8zvbiWnqH/AAnZqg==
 
 "@emnapi/core@1.10.0":
   version "1.10.0"
@@ -4183,16 +4192,16 @@
     invariant "^2.2.4"
     nullthrows "^1.1.1"
 
-"@release-it/conventional-changelog@12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-12.0.0.tgz#df03cd4ce67f946fa8acbd0916256df468264848"
-  integrity sha512-b9N8/tUjO9JNH1u2fVSmq8QmbqnE//Y5iCgvPcytsk0pj0GhgGCp+VmfzhEBIdd+lVGZJKs+ZSaGaOHjtmtv7g==
+"@release-it/conventional-changelog@12.0.2":
+  version "12.0.2"
+  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-12.0.2.tgz#19aacb88c5da56fc0a2dd2b34faae0f956e3c2a5"
+  integrity sha512-mJsfycScVqud9O+GzVLT1wQBsIR2WO3kEe6Xm7ucf9yP9KyKRTY9yqoFe/kjLCNSu0lP0PzpuOooUYyzHm1oFw==
   dependencies:
-    "@conventional-changelog/git-client" "^3.1.0"
+    "@conventional-changelog/git-client" "^3.1.2"
     concat-stream "^2.0.0"
-    conventional-changelog "^8.1.0"
-    conventional-changelog-angular "^9.2.1"
-    conventional-changelog-conventionalcommits "^10.2.1"
+    conventional-changelog "^8.1.3"
+    conventional-changelog-angular "^9.4.0"
+    conventional-changelog-conventionalcommits "^10.4.0"
     conventional-recommended-bump "^12.1.0"
     semver "^7.8.5"
 
@@ -5464,12 +5473,12 @@ conventional-changelog-angular@^9.0.0:
   dependencies:
     "@conventional-changelog/template" "^1.2.0"
 
-conventional-changelog-angular@^9.2.1:
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-angular/-/conventional-changelog-angular-9.2.1.tgz#58c20e13f3cbaf4b41c23d898378c3e02ce716c3"
-  integrity sha512-oWSL6ZhnXbYraOFTK3PgRAQJ8fADDAEv5K6AdeyQPLvjFmhG8+ejL0jZZp/R7vTmGJaBvZEE+sE7dB4bCv7sAw==
+conventional-changelog-angular@^9.4.0:
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-angular/-/conventional-changelog-angular-9.4.0.tgz#ec51393e10b5c4c99c9e79f21d6d293b26cd1314"
+  integrity sha512-HdxRxuS8bBXVIuo4V82gvSwAXT0vYQUizrjs/izmPg5JdDstr8v8I5hduGL3iQbG+o310dUDxC4+LetuS5hu9w==
   dependencies:
-    "@conventional-changelog/template" "^1.2.1"
+    "@conventional-changelog/template" "^1.4.0"
 
 conventional-changelog-conventionalcommits@^10.0.0:
   version "10.2.0"
@@ -5478,41 +5487,42 @@ conventional-changelog-conventionalcommits@^10.0.0:
   dependencies:
     "@conventional-changelog/template" "^1.2.0"
 
-conventional-changelog-conventionalcommits@^10.2.1:
-  version "10.2.1"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-10.2.1.tgz#dfa7cd9b3c6762bc65b2e7c97636097a3b426217"
-  integrity sha512-n4Kr1HFMTf3iMbES0TMxKIcYtUUv4rKqyQQp2JwfOEfFCOfGT3Tq4mCyJ8S9/YPyWhydjfKrrvnyl+gCjA+mJQ==
+conventional-changelog-conventionalcommits@^10.4.0:
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-10.4.0.tgz#a75bb40f10731d66e0b4209dc1dd3ee0cf2925f3"
+  integrity sha512-Rriac6ZrAlVm6cy9Bz4NSp+WMHpwNXoPIYex+HjCgduAVUSbnew29DQjQw0C4g9u3HtSYzGiGY+pdBXAZo+4aA==
   dependencies:
-    "@conventional-changelog/template" "^1.2.1"
+    "@conventional-changelog/template" "^1.4.0"
 
 conventional-changelog-preset-loader@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/conventional-changelog-preset-loader/-/conventional-changelog-preset-loader-6.0.1.tgz#78399937fb5d497265157242bace9fefb5b36620"
   integrity sha512-GZ8E3RQzXQb3JFy0pKl8oeSf7ENIhvAMvJr+PlWkavZOesLHHdhkfNJ4SvW35eo1Fu2+EyVxWQ1tVvtzAG2iWg==
 
-conventional-changelog-writer@^9.2.0:
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-writer/-/conventional-changelog-writer-9.2.0.tgz#4a41aac90a732d7f53001e5e3608be4f842b81b4"
-  integrity sha512-eACD5BaAQCYjeI3RExkCZopNaaIuXzCP4kaAb2lEFXcGa/KOuxJfj8v/SnjhvF6377pYn0A2Gji+6GhwUK8rEA==
+conventional-changelog-writer@^9.2.1:
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-writer/-/conventional-changelog-writer-9.2.1.tgz#d84024ca8e8f25dada9f822aa23e64f71b9a0de5"
+  integrity sha512-StlYSmW3wLedRaqohJMpP3YuWiAqtgD0/cpsai9frdDkXv7rxj0hRbpJrubPYvJxJsjplONsOobEQnPuS9UgCg==
   dependencies:
-    "@conventional-changelog/template" "^1.2.1"
+    "@conventional-changelog/template" "^1.3.0"
     "@simple-libs/stream-utils" "^2.0.0"
     argue-cli "^3.1.0"
     conventional-commits-filter "^6.0.1"
     semver "^7.5.2"
 
-conventional-changelog@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/conventional-changelog/-/conventional-changelog-8.1.0.tgz#3e34549895de82d957b4a1722d258b085be49ba6"
-  integrity sha512-idt1JK+3+Nt7gqH/d/sEYWdDeR+5XPov/jssmFN6XxmYSRlonTWSDWhWUPkmm0zbwYjtVdt+4My5aiPkKyvocw==
+conventional-changelog@^8.1.3:
+  version "8.1.3"
+  resolved "https://registry.yarnpkg.com/conventional-changelog/-/conventional-changelog-8.1.3.tgz#b730fcf0497864d47c02b5bd7e330c753a476332"
+  integrity sha512-fOMwLCxm46znJKPB08jLxl1FD8SOZOQHktlzCVhvhhVUfq0KgQSryoYXsRRHs1aRlZPR1/QK5wztnY8sBNC2AA==
   dependencies:
-    "@conventional-changelog/git-client" "^3.1.0"
+    "@conventional-changelog/git-client" "^3.1.2"
     "@simple-libs/hosted-git-info" "^2.0.0"
     "@simple-libs/normalize-package-data" "^1.0.0"
     argue-cli "^3.1.0"
     conventional-changelog-preset-loader "^6.0.1"
-    conventional-changelog-writer "^9.2.0"
-    conventional-commits-parser "^7.1.0"
+    conventional-changelog-writer "^9.2.1"
+    conventional-commits-filter "^6.0.1"
+    conventional-commits-parser "^7.1.2"
     fd-package-json "^2.0.0"
 
 conventional-commits-filter@^6.0.1:
@@ -5532,6 +5542,14 @@ conventional-commits-parser@^7.1.0:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-7.1.1.tgz#9a7fc548c17469da83d8ca2643ff9fa323b9b5f0"
   integrity sha512-B0f42jI++V5Vb7qK+DDw68r0dNxz5hk+RdKUkx2NOi39emc9hsHa3u2M3doF7QQhRFzCrAj7uM90teG+RBTaYQ==
+  dependencies:
+    "@simple-libs/stream-utils" "^2.0.0"
+    argue-cli "^3.1.0"
+
+conventional-commits-parser@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/conventional-commits-parser/-/conventional-commits-parser-7.1.2.tgz#4dca0779b338bab96fe994e864dfedf3c1908b03"
+  integrity sha512-O+x4N2yH+ijvqWlIyTHsXTAP+algNWgGbjY2duCe8w2vUMvUB95cLRslCPfTMQyLAKlet3bhZTdu6ozn4M+QJQ==
   dependencies:
     "@simple-libs/stream-utils" "^2.0.0"
     argue-cli "^3.1.0"
