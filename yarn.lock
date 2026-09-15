@@ -2927,10 +2927,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@evilmartians/lefthook@2.1.12":
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-2.1.12.tgz#13ebe03f961bb3c8e1f9a1843f66f6b301a551c4"
-  integrity sha512-y/QRYkKeuJSSebsxt3COI3HIyc7mgWAwTXQLVdVFpprBb5XIC8jV20DLDYcbkmUHoQUq8yHkkGfkMDSR34xjbw==
+"@evilmartians/lefthook@2.1.14":
+  version "2.1.14"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-2.1.14.tgz#fbbfef0c2b57b7ce95c2bd16b5538d76af4b759a"
+  integrity sha512-kaj3I6cl5jNxjD1T1ewpjjLaeqQdFwROdx5pWpiQzOEUI3ra/Kj6nS6x1wPucesGbXwAIx2vshCQbkC9OjJVLw==
 
 "@gitbeaker/core@^38.12.1":
   version "38.12.1"
