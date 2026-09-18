@@ -4309,7 +4309,7 @@ exports[`Line Breaks Trailing slash 1`] = `
               }
             }
           >
-                  And the next line.
+            And the next line.
           </Text>
         </Text>
       </View>,
@@ -4384,7 +4384,7 @@ exports[`Line Breaks Trailing slash 1`] = `
               }
             }
           >
-                  And the next line.
+            And the next line.
           </Text>
         </Text>
       </View>
