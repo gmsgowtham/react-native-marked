@@ -245,6 +245,30 @@ describe("Renderer", () => {
 					const Svg = await screen.findByTestId("react-native-marked-md-svg");
 					expect(Svg.props.accessibilityLabel).toBe("Logo title");
 				});
+
+				it("returns a SVG for a uri with a query string", async () => {
+					mockSvgFetch();
+					const ImageNode = renderer.image(
+						"https://example.com/logo.svg?v=1",
+						"Logo",
+					);
+					render(ImageNode as ReactElement);
+					expect(
+						await screen.findByTestId("react-native-marked-md-svg"),
+					).toBeTruthy();
+				});
+
+				it("returns a SVG for a uri with an upper case extension and a fragment", async () => {
+					mockSvgFetch();
+					const ImageNode = renderer.image(
+						"https://example.com/LOGO.SVG#top",
+						"Logo",
+					);
+					render(ImageNode as ReactElement);
+					expect(
+						await screen.findByTestId("react-native-marked-md-svg"),
+					).toBeTruthy();
+				});
 			});
 			describe("getListNode", () => {
 				it("returns Ordered List", () => {
