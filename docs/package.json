@@ -12,7 +12,7 @@
 		"react-dom": "19.3.0"
 	},
 	"devDependencies": {
-		"@rspress/core": "2.0.21",
+		"@rspress/core": "2.0.22",
 		"@rspack/core": "2.2.6",
 		"typescript": "5.9.3"
 	}
