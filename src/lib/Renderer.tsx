@@ -195,6 +195,7 @@ class Renderer implements RendererInterface {
 		const { borderWidth, borderColor } = tableStyle || {};
 		return (
 			<MDTable
+				key={this.getKey()}
 				header={header}
 				rows={rows}
 				widthArr={widthArr}
