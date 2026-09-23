@@ -36,9 +36,9 @@ features:
 ## Install
 
 ```sh
-yarn add react-native-marked react-native-svg
+npm install react-native-marked react-native-svg
 # RN <=0.75 use v6
-# yarn add react-native-marked@6.0.7 react-native-svg
+# npm install react-native-marked@6.0.7 react-native-svg
 ```
 
 ## Hello World
