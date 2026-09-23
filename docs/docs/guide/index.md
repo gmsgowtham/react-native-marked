@@ -10,7 +10,7 @@
 ## Quick Start
 
 ```sh
-yarn add react-native-marked react-native-svg
+npm install react-native-marked react-native-svg
 ```
 
 ```tsx

@@ -16,10 +16,10 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 24.21.0
-          cache: "yarn"
+          cache: "npm"
       - name: Run performance tests
         run: ./reassure-tests.sh
       - name: Run Danger.js
-        run: yarn danger ci
+        run: npx danger ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

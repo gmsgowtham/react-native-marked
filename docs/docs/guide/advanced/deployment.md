@@ -12,18 +12,18 @@ This site is built with **Rspack** via **Rspress** (which uses Rsbuild → Rspac
 ## Local
 
 ```sh
-yarn docs:dev      # HMR dev server
-yarn docs:build    # production build
-yarn docs:preview
+npm run docs:dev      # HMR dev server
+npm run docs:build    # production build
+npm run docs:preview
 ```
 
 ## GitHub Pages
 
 Workflow `.github/workflows/docs.yml` runs on `push: main` (and PRs for build check):
 
-1. `yarn install --frozen-lockfile` (root)
-2. `yarn --cwd docs install --frozen-lockfile` (if `docs/yarn.lock` exists, else falls back to root)
-3. `yarn docs:build` → `docs/doc_build`
+1. `npm ci` (root)
+2. `npm ci --prefix docs`
+3. `npm run docs:build` → `docs/doc_build`
 4. `actions/upload-pages-artifact@v3` with `path: docs/doc_build`
 5. `actions/deploy-pages@v4` (needs `Settings → Pages → Source: GitHub Actions`)
 

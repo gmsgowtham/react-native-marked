@@ -15,12 +15,12 @@ Markdown renderer for React Native powered by
 
 #### For React Native 0.76 and above, please use the latest version.
 ```sh
-yarn add react-native-marked react-native-svg
+npm install react-native-marked react-native-svg
 ```
 
 #### For React Native 0.75 and below, please use version 6.
 ```sh
-yarn add react-native-marked@6.0.7 react-native-svg
+npm install react-native-marked@6.0.7 react-native-svg
 ```
 
 ## Usage

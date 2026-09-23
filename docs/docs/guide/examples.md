@@ -5,8 +5,8 @@
 
 ```sh
 cd examples/react-native-marked-sample
-yarn install
-yarn android | yarn ios | yarn web
+npm install
+npm run android | npm run ios | npm run web
 ```
 
 ## Common snippets

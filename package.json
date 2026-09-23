@@ -27,16 +27,16 @@
 		"lint": "biome check ./",
 		"format": "biome format ./ --write",
 		"build": "bob build",
-		"prepare": "yarn build",
-		"release": "yarn build && release-it",
-		"release:rc": "yarn build && release-it --preRelease=rc",
-		"release:exclude-pre": "yarn build && release-it --git.tagExclude='*[-]*'",
+		"prepare": "npm run build",
+		"release": "npm run build && release-it",
+		"release:rc": "npm run build && release-it --preRelease=rc",
+		"release:exclude-pre": "npm run build && release-it --git.tagExclude='*[-]*'",
 		"test": "jest --passWithNoTests",
 		"test:updateSnapshot": "jest --updateSnapshot",
 		"reassure": "reassure",
-		"docs:dev": "yarn --cwd docs dev",
-		"docs:build": "yarn --cwd docs build",
-		"docs:preview": "yarn --cwd docs preview"
+		"docs:dev": "npm --prefix docs run dev",
+		"docs:build": "npm --prefix docs run build",
+		"docs:preview": "npm --prefix docs run preview"
 	},
 	"keywords": [
 		"react-native",
@@ -171,8 +171,11 @@
 	"engines": {
 		"node": ">=18"
 	},
-	"resolutions": {
+	"packageManager": "npm@12.0.2",
+	"overrides": {
 		"@types/react": "19.3.0",
-		"**/pretty-format/react-is": "19.3.0"
+		"pretty-format": {
+			"react-is": "19.3.0"
+		}
 	}
 }

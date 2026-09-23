@@ -16,13 +16,13 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 24.21.0
-          cache: "yarn"
+          cache: "npm"
       - name: Install dependencies and Build
-        run: yarn install --frozen-lockfile
+        run: npm ci
       - name: Lint code
-        run: yarn lint
+        run: npm run lint
       - name: Test
-        run: yarn test --collectCoverage --silent
+        run: npm test -- --collectCoverage --silent
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:

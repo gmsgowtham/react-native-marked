@@ -10,11 +10,11 @@ Built with **Rspack** via [Rspress](https://rspress.rs) (Rsbuild → Rspack) and
 ## Develop
 
 ```sh
-yarn install --frozen-lockfile          # root (if needed)
-yarn --cwd docs install                 # docs deps (creates docs/yarn.lock)
-yarn docs:dev      # dev server http://localhost:3000/react-native-marked/
-yarn docs:build    # production build -> docs/doc_build
-yarn docs:preview  # preview build
+npm ci                               # root (if needed)
+npm install --prefix docs            # docs deps (creates docs/package-lock.json)
+npm run docs:dev      # dev server http://localhost:3000/react-native-marked/
+npm run docs:build    # production build -> docs/doc_build
+npm run docs:preview  # preview build
 ```
 
 ## Deploy

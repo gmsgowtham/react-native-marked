@@ -27,26 +27,19 @@ jobs:
         uses: actions/setup-node@v7
         with:
           node-version: 24.21.0
-          cache: yarn
+          cache: npm
           cache-dependency-path: |
-            yarn.lock
-            docs/yarn.lock
+            package-lock.json
+            docs/package-lock.json
 
       - name: Install root dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
       - name: Install docs dependencies
-        run: |
-          if [ -f docs/yarn.lock ]; then
-            yarn --cwd docs install --frozen-lockfile
-          elif [ -f docs/package-lock.json ]; then
-            npm --prefix docs ci
-          else
-            yarn --cwd docs install
-          fi
+        run: npm ci --prefix docs
 
       - name: Build docs (Rspack via Rspress)
-        run: yarn docs:build
+        run: npm run docs:build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5

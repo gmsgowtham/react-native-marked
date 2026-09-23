@@ -4,13 +4,11 @@ We want this community to be friendly and respectful to each other. Please follo
 
 ## Development workflow
 
-To get started with the project, run `yarn` in the root directory to install the required dependencies for each package:
+To get started with the project, run `npm install` in the root directory to install the required dependencies for each package:
 
 ```sh
-yarn
+npm install
 ```
-
-> While it's possible to use [`npm`](https://github.com/npm/cli), the tooling is built around [`yarn`](https://classic.yarnpkg.com/), so you'll have an easier time if you use `yarn` for development.
 
 While developing, you can run the [example app](/examples/) to test your changes. Any changes you make in your library's JavaScript code will be reflected in the example app without a rebuild. If you change any native code, then you'll need to rebuild the example app.
 
@@ -18,44 +16,44 @@ To run example app:
 
 ```sh
 cd examples/react-native-marked-sample
-yarn install
+npm install
 ```
 
 To run the example app on Android:
 
 ```sh
-yarn android
+npm run android
 ```
 
 To run the example app on iOS:
 
 ```sh
-yarn ios
+npm run ios
 ```
 
 To run the example app on web:
 
 ```sh
-yarn web
+npm run web
 ```
 
 Make sure your code passes TypeScript and Lint. Run the following to verify:
 
 ```sh
-yarn typescript
-yarn lint
+npm run typescript
+npm run lint
 ```
 
 To fix formatting errors, run the following:
 
 ```sh
-yarn format
+npm run format
 ```
 
 Remember to add tests for your change if possible. Run the unit tests by:
 
 ```sh
-yarn test
+npm test
 ```
 
 ### Commit message convention
@@ -86,21 +84,18 @@ We use [release-it](https://github.com/release-it/release-it) to make it easier 
 To publish new versions, run the following:
 
 ```sh
-yarn release
+npm run release
 ```
 
 ### Scripts
 
 The `package.json` file contains various scripts for common tasks:
 
-- `yarn bootstrap`: setup project by installing all dependencies and pods.
-- `yarn typescript`: type-check files with TypeScript.
-- `yarn lint`: lint files with Biome.
-- `yarn format`: format files with Biome.
-- `yarn test`: run unit tests with Jest.
-- `yarn example start`: start the Metro server for the example app.
-- `yarn example android`: run the example app on Android.
-- `yarn example ios`: run the example app on iOS.
+- `npm install`: setup project by installing all dependencies.
+- `npm run typescript`: type-check files with TypeScript.
+- `npm run lint`: lint files with Biome.
+- `npm run format`: format files with Biome.
+- `npm test`: run unit tests with Jest.
 
 ### Sending a pull request
 
