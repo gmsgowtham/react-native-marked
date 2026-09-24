@@ -177,5 +177,12 @@
 		"pretty-format": {
 			"react-is": "19.3.0"
 		}
+	},
+	"allowScripts": {
+		"@evilmartians/lefthook": true,
+		"@parcel/watcher": true,
+		"core-js": true,
+		"postinstall-postinstall": true,
+		"unrs-resolver": true
 	}
 }
