@@ -1,7 +1,6 @@
 import Slugger from "github-slugger";
 import React, { type ReactNode } from "react";
 import {
-	Dimensions,
 	type ImageStyle,
 	ScrollView,
 	Text,
@@ -15,7 +14,6 @@ import MDList from "./../components/MDList";
 import MDSvg from "./../components/MDSvg";
 import MDTable from "./../components/MDTable";
 import { onLinkPress } from "../utils/handlers";
-import { getTableWidthArr } from "../utils/table";
 import type { RendererInterface } from "./types";
 
 export interface RendererOptions {
@@ -28,12 +26,9 @@ export interface RendererOptions {
 class Renderer implements RendererInterface {
 	private slugPrefix = "react-native-marked-ele";
 	private slugger: Slugger;
-	private windowWidth: number;
 	private selectable: boolean;
 	constructor(options?: RendererOptions) {
 		this.slugger = new Slugger();
-		const { width } = Dimensions.get("window");
-		this.windowWidth = width;
 		this.selectable = options?.selectable ?? true;
 	}
 
@@ -191,14 +186,12 @@ class Renderer implements RendererInterface {
 		rowStyle?: ViewStyle,
 		cellStyle?: ViewStyle,
 	): React.ReactNode {
-		const widthArr = getTableWidthArr(header.length, this.windowWidth);
 		const { borderWidth, borderColor } = tableStyle || {};
 		return (
 			<MDTable
 				key={this.getKey()}
 				header={header}
 				rows={rows}
-				widthArr={widthArr}
 				rowStyle={rowStyle}
 				cellStyle={cellStyle}
 				borderColor={borderColor as string}
