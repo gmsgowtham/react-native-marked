@@ -8,6 +8,7 @@ import React, { type ReactElement } from "react";
 import { type ColorSchemeName, Linking } from "react-native";
 import getStyles from "../../theme/styles";
 import type { MarkedStyles } from "../../theme/types";
+import { getTableWidthArr } from "../../utils/table";
 import Markdown from "../Markdown";
 import Renderer from "../Renderer";
 
@@ -159,6 +160,18 @@ describe("Renderer", () => {
 					expect(screen.queryByText("Hello world 5")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
+				});
+				it("sizes columns to the width the table is laid out at", () => {
+					const headers = [[renderer.text("Hello world 1")]];
+					const rows = [[[renderer.text("Hello world 2")]]];
+					render(renderer.table(headers, rows) as ReactElement);
+					fireEvent(screen.getByText("Hello world 1"), "layout", {
+						nativeEvent: { layout: { width: 300 } },
+					});
+					for (const text of ["Hello world 1", "Hello world 2"]) {
+						const cell = screen.getByText(text).parent?.parent;
+						expect(cell).toHaveStyle({ width: getTableWidthArr(1, 300)[0] });
+					}
 				});
 			});
 			describe("getCodeBlockNode", () => {
