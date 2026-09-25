@@ -4198,8 +4198,7 @@ exports[`Line Breaks Trailing New Line Character 1`] = `
               }
             }
           >
-            First line with a backslash after.
-And the next line.
+            First line with a backslash after. And the next line.
           </Text>
         </Text>
       </View>,
@@ -4255,8 +4254,7 @@ And the next line.
               }
             }
           >
-            First line with a backslash after.
-And the next line.
+            First line with a backslash after. And the next line.
           </Text>
         </Text>
       </View>
@@ -4608,8 +4606,7 @@ exports[`Links Formatting Links 1`] = `
               }
             }
           >
-            .
-This is the 
+            . This is the 
           </Text>
           <Text
             selectable={true}
@@ -4650,8 +4647,7 @@ This is the
               }
             }
           >
-            .
-See the section on 
+            . See the section on 
           </Text>
           <Text
             accessibilityHint="Opens in a new window"
@@ -4792,8 +4788,7 @@ See the section on
               }
             }
           >
-            .
-This is the 
+            . This is the 
           </Text>
           <Text
             selectable={true}
@@ -4834,8 +4829,7 @@ This is the
               }
             }
           >
-            .
-See the section on 
+            . See the section on 
           </Text>
           <Text
             accessibilityHint="Opens in a new window"
