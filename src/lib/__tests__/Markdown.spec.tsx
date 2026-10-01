@@ -133,10 +133,18 @@ describe("Line Breaks", () => {
 		expect(
 			screen.queryByText(
 				"First line with a backslash after. And the next line.",
+				{ normalizer: (text) => text },
 			),
 		).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
+	});
+
+	it("Soft Line Break In Emphasis", () => {
+		render(<Markdown value={"This is **bold \n   text**."} />);
+		expect(
+			screen.queryByText("bold text", { normalizer: (text) => text }),
+		).toBeTruthy();
 	});
 
 	it("Trailing slash", () => {

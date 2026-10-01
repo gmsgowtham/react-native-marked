@@ -7,6 +7,11 @@ import { getTableColAlignmentStyle } from "./../utils/table";
 import { getValidURL } from "./../utils/url";
 import type { ParserOptions, RendererInterface } from "./types";
 
+// A line ending inside a paragraph is a soft line break, which renders as a space.
+// ref: https://spec.commonmark.org/0.31.2/#soft-line-breaks
+const collapseSoftBreaks = (text: string) =>
+	text.replace(/[ \t]*\n[ \t]*/g, " ");
+
 class Parser {
 	private renderer: RendererInterface;
 	private styles: MarkedStyles;
@@ -64,7 +69,11 @@ class Parser {
 				const styles = this.headingStylesMap[token.depth];
 
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.heading(token.text, styles, token.depth);
+					return this.renderer.heading(
+						collapseSoftBreaks(token.text),
+						styles,
+						token.depth,
+					);
 				}
 
 				const children = this._parse(token.tokens, styles);
@@ -139,7 +148,12 @@ class Parser {
 				const href = getValidURL(this.baseUrl, token.href);
 
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.link(token.text, href, linkStyle, token.title);
+					return this.renderer.link(
+						collapseSoftBreaks(token.text),
+						href,
+						linkStyle,
+						token.title,
+					);
 				}
 
 				const children = this._parse(token.tokens, linkStyle);
@@ -159,7 +173,10 @@ class Parser {
 					...styles,
 				};
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.strong(token.text, boldStyle);
+					return this.renderer.strong(
+						collapseSoftBreaks(token.text),
+						boldStyle,
+					);
 				}
 
 				const children = this._parse(token.tokens, boldStyle);
@@ -171,7 +188,7 @@ class Parser {
 					...styles,
 				};
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.em(token.text, italicStyle);
+					return this.renderer.em(collapseSoftBreaks(token.text), italicStyle);
 				}
 
 				const children = this._parse(token.tokens, italicStyle);
@@ -192,14 +209,17 @@ class Parser {
 					...styles,
 				};
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.del(token.text, strikethroughStyle);
+					return this.renderer.del(
+						collapseSoftBreaks(token.text),
+						strikethroughStyle,
+					);
 				}
 
 				const children = this._parse(token.tokens, strikethroughStyle);
 				return this.renderer.del(children, strikethroughStyle);
 			}
 			case "text":
-				return this.renderer.text(token.raw, {
+				return this.renderer.text(collapseSoftBreaks(token.raw), {
 					...this.styles.text,
 					...styles,
 				});
