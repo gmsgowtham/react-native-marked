@@ -13,7 +13,7 @@
 	},
 	"devDependencies": {
 		"@rspress/core": "2.0.23",
-		"@rspack/core": "2.2.7",
+		"@rspack/core": "2.2.8",
 		"typescript": "5.9.3"
 	}
 }
