@@ -553,6 +553,21 @@ describe("Links", () => {
 
 // https://www.markdownguide.org/basic-syntax/#images-1
 describe("Images", () => {
+	// MDSvg fetches remote SVGs; mock fetch rejection so the SVG tests are
+	// hermetic (no network) and deterministically render the error state
+	// captured in the committed snapshots.
+	const originalFetch = global.fetch;
+
+	const mockRejectedSvgFetch = () => {
+		global.fetch = jest.fn(() =>
+			Promise.reject(new Error("Network request failed")),
+		);
+	};
+
+	afterEach(() => {
+		global.fetch = originalFetch;
+	});
+
 	it("Render", async () => {
 		const r = await render(
 			<Markdown
@@ -586,6 +601,7 @@ describe("Images", () => {
 		});
 	});
 	it("SVG images", async () => {
+		mockRejectedSvgFetch();
 		const r = await render(
 			<Markdown
 				value={"![svg](https://www.svgrepo.com/show/513268/beer.svg)"}
@@ -600,6 +616,7 @@ describe("Images", () => {
 		});
 	});
 	it("SVG Linking", async () => {
+		mockRejectedSvgFetch();
 		const r = await render(
 			<Markdown
 				value={
