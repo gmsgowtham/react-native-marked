@@ -268,7 +268,7 @@ describe("Perf test", () => {
 				"If markdown is too limiting, you can just insert your own <strike>crazy</strike> HTML. Span-level HTML <u>can *still* use markdown</u>. Block level elements must be separated from text by a blank line and must not have any spaces before the opening and closing HTML.",
 			);
 		};
-		measureRenders(
+		await measureRenders(
 			<Markdown value={mdString} styles={styles} theme={theme} />,
 			{
 				scenario,
