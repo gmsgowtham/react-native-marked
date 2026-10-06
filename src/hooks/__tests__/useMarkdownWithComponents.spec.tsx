@@ -32,13 +32,13 @@ const InnerRenderer = ({ value }: { value: string }) => {
 
 describe("useMarkdownWithComponents", () => {
 	describe("without registry", () => {
-		it("renders regular markdown without components", () => {
-			render(<TestRenderer value="# Hello World" />);
+		it("renders regular markdown without components", async () => {
+			await render(<TestRenderer value="# Hello World" />);
 			expect(screen.queryByText("Hello World")).toBeTruthy();
 		});
 
-		it("removes unregistered components from output", () => {
-			render(<TestRenderer value="Before <Button /> After" />);
+		it("removes unregistered components from output", async () => {
+			await render(<TestRenderer value="Before <Button /> After" />);
 			expect(screen.queryByText("Before")).toBeTruthy();
 			expect(screen.queryByText("After")).toBeTruthy();
 		});
@@ -61,8 +61,8 @@ describe("useMarkdownWithComponents", () => {
 			),
 		};
 
-		it("renders a self-closing component", () => {
-			render(
+		it("renders a self-closing component", async () => {
+			await render(
 				<TestRenderer
 					value='<Button label="Click me" />'
 					components={components}
@@ -72,8 +72,8 @@ describe("useMarkdownWithComponents", () => {
 			expect(screen.queryByText("Click me")).toBeTruthy();
 		});
 
-		it("renders a component with children", () => {
-			render(
+		it("renders a component with children", async () => {
+			await render(
 				<TestRenderer
 					value='<InfoBox title="Note">Important info</InfoBox>'
 					components={components}
@@ -84,7 +84,7 @@ describe("useMarkdownWithComponents", () => {
 			expect(screen.queryByText("Important info")).toBeTruthy();
 		});
 
-		it("renders components mixed with markdown", () => {
+		it("renders components mixed with markdown", async () => {
 			const markdown = `# Title
 
 Some text before.
@@ -93,7 +93,7 @@ Some text before.
 
 Some text after.`;
 
-			render(<TestRenderer value={markdown} components={components} />);
+			await render(<TestRenderer value={markdown} components={components} />);
 
 			expect(screen.queryByText("Title")).toBeTruthy();
 			expect(screen.queryByText("Some text before.")).toBeTruthy();
@@ -102,19 +102,19 @@ Some text after.`;
 			expect(screen.queryByText("Some text after.")).toBeTruthy();
 		});
 
-		it("removes components not in registry", () => {
+		it("removes components not in registry", async () => {
 			const markdown = `<Button label='Yes' />
 
 <Unknown />
 
 <InfoBox>Hi</InfoBox>`;
 
-			render(<TestRenderer value={markdown} components={components} />);
+			await render(<TestRenderer value={markdown} components={components} />);
 			expect(screen.queryByTestId("custom-button")).toBeTruthy();
 			expect(screen.queryByTestId("info-box")).toBeTruthy();
 		});
 
-		it("passes props correctly to components", () => {
+		it("passes props correctly to components", async () => {
 			const propsComponents: ReactComponentRegistry = {
 				TestProps: ({ props }) => (
 					<View testID="test-props">
@@ -125,7 +125,7 @@ Some text after.`;
 				),
 			};
 
-			render(
+			await render(
 				<TestRenderer
 					value='<TestProps str="hello" num={42} bool={true} />'
 					components={propsComponents}
@@ -139,18 +139,18 @@ Some text after.`;
 	});
 
 	describe("edge cases", () => {
-		it("handles empty markdown", () => {
+		it("handles empty markdown", async () => {
 			const components: ReactComponentRegistry = {};
-			render(<TestRenderer value="" components={components} />);
+			await render(<TestRenderer value="" components={components} />);
 		});
 
-		it("handles markdown with only components", () => {
+		it("handles markdown with only components", async () => {
 			const components: ReactComponentRegistry = {
 				A: () => <Text>Component A</Text>,
 				B: () => <Text>Component B</Text>,
 			};
 
-			render(<TestRenderer value="<A /><B />" components={components} />);
+			await render(<TestRenderer value="<A /><B />" components={components} />);
 
 			expect(screen.queryByText("Component A")).toBeTruthy();
 			expect(screen.queryByText("Component B")).toBeTruthy();
