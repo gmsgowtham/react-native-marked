@@ -9,56 +9,60 @@ import type { RendererInterface } from "../types";
 
 // https://www.markdownguide.org/basic-syntax/#headings
 describe("Headings", () => {
-	it("Heading level 1", () => {
-		const r = render(<Markdown value={"# Heading level 1"} />);
+	it("Heading level 1", async () => {
+		const r = await render(<Markdown value={"# Heading level 1"} />);
 		expect(screen.queryByText("Heading level 1")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Heading level 2", () => {
-		const r = render(<Markdown value={"## Heading level 2"} />);
+	it("Heading level 2", async () => {
+		const r = await render(<Markdown value={"## Heading level 2"} />);
 		expect(screen.queryByText("Heading level 2")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Heading level 3", () => {
-		const r = render(<Markdown value={"### Heading level 3"} />);
+	it("Heading level 3", async () => {
+		const r = await render(<Markdown value={"### Heading level 3"} />);
 		expect(screen.queryByText("Heading level 3")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Heading level 4", () => {
-		const r = render(<Markdown value={"#### Heading level 4"} />);
+	it("Heading level 4", async () => {
+		const r = await render(<Markdown value={"#### Heading level 4"} />);
 		expect(screen.queryByText("Heading level 4")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Heading level 5", () => {
-		const r = render(<Markdown value={"##### Heading level 5"} />);
+	it("Heading level 5", async () => {
+		const r = await render(<Markdown value={"##### Heading level 5"} />);
 		expect(screen.queryByText("Heading level 5")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Heading level 6", () => {
-		const r = render(<Markdown value={"###### Heading level 6"} />);
+	it("Heading level 6", async () => {
+		const r = await render(<Markdown value={"###### Heading level 6"} />);
 		expect(screen.queryByText("Heading level 6")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Alternate Syntax: Heading level 1", () => {
-		const r = render(<Markdown value={"Heading level 1\n==============="} />);
+	it("Alternate Syntax: Heading level 1", async () => {
+		const r = await render(
+			<Markdown value={"Heading level 1\n==============="} />,
+		);
 		expect(screen.queryByText("Heading level 1")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Alternate Syntax: Heading level 2", () => {
-		const r = render(<Markdown value={"Heading level 2\n---------------"} />);
+	it("Alternate Syntax: Heading level 2", async () => {
+		const r = await render(
+			<Markdown value={"Heading level 2\n---------------"} />,
+		);
 		expect(screen.queryByText("Heading level 2")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Best Practice", () => {
-		const r = render(
+	it("Best Practice", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"Try to put a blank line before...\n\n# Heading\n\n...and after a heading."
@@ -73,8 +77,8 @@ describe("Headings", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Heading with text emphasis", () => {
-		const r = render(<Markdown value={"## ~~_Heading level 2_~~"} />);
+	it("Heading with text emphasis", async () => {
+		const r = await render(<Markdown value={"## ~~_Heading level 2_~~"} />);
 		expect(screen.queryByText("Heading level 2")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
@@ -83,8 +87,8 @@ describe("Headings", () => {
 
 // https://www.markdownguide.org/basic-syntax/#paragraphs-1
 describe("Paragraphs", () => {
-	it("Paragraph", () => {
-		const r = render(
+	it("Paragraph", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"I really like using Markdown.\n\nI think I'll use it to format all of my documents from now on."
@@ -101,7 +105,7 @@ describe("Paragraphs", () => {
 		expect(tree).toMatchSnapshot();
 	});
 	it("Paragraph with Image", async () => {
-		const r = render(
+		const r = await render(
 			<Markdown
 				value={
 					"Here, I'll guide you through sending desktop notifications to offline users when they have new chat messages.![Chat](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5kq947hwxmjvlmhrbnm6.png)"
@@ -124,8 +128,8 @@ describe("Paragraphs", () => {
 });
 
 describe("Line Breaks", () => {
-	it("Trailing New Line Character", () => {
-		const r = render(
+	it("Trailing New Line Character", async () => {
+		const r = await render(
 			<Markdown
 				value={"First line with a backslash after.\nAnd the next line."}
 			/>,
@@ -139,8 +143,8 @@ describe("Line Breaks", () => {
 		expect(tree).toMatchSnapshot();
 	});
 
-	it("Trailing slash", () => {
-		const r = render(
+	it("Trailing slash", async () => {
+		const r = await render(
 			<Markdown
 				value={`First line with a backslash after.\\
       And the next line.`}
@@ -157,26 +161,26 @@ describe("Line Breaks", () => {
 
 // https://www.markdownguide.org/basic-syntax/#emphasis
 describe("Emphasis", () => {
-	it("Bold", () => {
-		const r = render(<Markdown value={"Love **is** bold"} />);
+	it("Bold", async () => {
+		const r = await render(<Markdown value={"Love **is** bold"} />);
 		expect(screen.queryByText("is")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Italic", () => {
-		const r = render(<Markdown value={"A *cat* meow"} />);
+	it("Italic", async () => {
+		const r = await render(<Markdown value={"A *cat* meow"} />);
 		expect(screen.queryByText("cat")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Strikethrough", () => {
-		const r = render(<Markdown value={"A ~~cat~~ meow"} />);
+	it("Strikethrough", async () => {
+		const r = await render(<Markdown value={"A ~~cat~~ meow"} />);
 		expect(screen.queryByText("cat")).toBeTruthy();
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Bold and Italic", () => {
-		const r = render(
+	it("Bold and Italic", async () => {
+		const r = await render(
 			<Markdown value={"This is really ***very*** important text."} />,
 		);
 		expect(screen.queryByText("very")).toBeTruthy();
@@ -187,8 +191,8 @@ describe("Emphasis", () => {
 
 // https://www.markdownguide.org/basic-syntax/#blockquotes-1
 describe("Blockquotes", () => {
-	it("Blockquote", () => {
-		const r = render(
+	it("Blockquote", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"> Dorothy followed her through many of the beautiful rooms in her castle."
@@ -203,8 +207,8 @@ describe("Blockquotes", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Blockquotes with Multiple Paragraphs", () => {
-		const r = render(
+	it("Blockquotes with Multiple Paragraphs", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"> Dorothy followed her through many of the beautiful rooms in her castle.\n>\n> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood."
@@ -224,8 +228,8 @@ describe("Blockquotes", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Nested Blockquotes", () => {
-		const r = render(
+	it("Nested Blockquotes", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"> Dorothy followed her through many of the beautiful rooms in her castle.\n>\n\n>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood."
@@ -245,8 +249,8 @@ describe("Blockquotes", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Blockquotes with Other Elements", () => {
-		const r = render(
+	it("Blockquotes with Other Elements", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"> #### The quarterly results look great!\n>\n> - Revenue was off the chart.\n> - Profits were higher than ever.\n>\n>  *Everything* is going according to **plan**."
@@ -268,8 +272,8 @@ describe("Blockquotes", () => {
 
 // https://www.markdownguide.org/basic-syntax/#lists-1
 describe("Lists", () => {
-	it("Ordered Lists", () => {
-		const r = render(
+	it("Ordered Lists", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"1. First item\n2. Second item\n3. Third item\n    1. Indented item1\n    2. Indented item2\n4. Fourth item"
@@ -285,8 +289,8 @@ describe("Lists", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Ordered Lists: With Start Offset", () => {
-		const r = render(<Markdown value={"57. foo\n1. bar\n2. baz"} />);
+	it("Ordered Lists: With Start Offset", async () => {
+		const r = await render(<Markdown value={"57. foo\n1. bar\n2. baz"} />);
 		expect(screen.queryByText("foo")).toBeTruthy();
 		expect(screen.queryByText("bar")).toBeTruthy();
 		expect(screen.queryByText("baz")).toBeTruthy();
@@ -296,8 +300,8 @@ describe("Lists", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Unordered Lists", () => {
-		const r = render(
+	it("Unordered Lists", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"- First item\n- Second item\n- Third item\n    - Indented item1\n    - Indented item2\n- Fourth item"
@@ -313,8 +317,8 @@ describe("Lists", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Elements in Lists: Paragraphs", () => {
-		const r = render(
+	it("Elements in Lists: Paragraphs", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"- This is the first list item.\n- Here's the second list item.\n\n    I need to add another paragraph below the second list item.\n\n- And here's the third list item."
@@ -332,8 +336,8 @@ describe("Lists", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Elements in Lists: Blockquotes", () => {
-		const r = render(
+	it("Elements in Lists: Blockquotes", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"- This is the first list item.\n- Here's the second list item.\n\n    > A blockquote would look great below the second list item.\n\n- And here's the third list item."
@@ -351,8 +355,8 @@ describe("Lists", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Elements in Lists: Code Blocks", () => {
-		const r = render(
+	it("Elements in Lists: Code Blocks", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"* This is the first list item.\n* Here's the second list item.\n\n        <html>\n        <head>\n        </head>\n        </html>\n\n* And here's the third list item."
@@ -366,7 +370,7 @@ describe("Lists", () => {
 		expect(tree).toMatchSnapshot();
 	});
 	it("Elements in Lists: Images", async () => {
-		const r = render(
+		const r = await render(
 			<Markdown
 				value={
 					"1. Open the file containing the Linux mascot.\n2. Marvel at its beauty.\n\n    ![](https://dummyimage.com/100x100/fff/aaa)\n\n3. Close the file."
@@ -386,8 +390,8 @@ describe("Lists", () => {
 			expect(tree).toMatchSnapshot();
 		});
 	});
-	it("Elements in Lists: Lists", () => {
-		const r = render(
+	it("Elements in Lists: Lists", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"1. First item\n2. Second item\n3. Third item\n    - Indented item1\n    - Indented item2\n4. Fourth item"
@@ -407,8 +411,8 @@ describe("Lists", () => {
 
 // https://www.markdownguide.org/basic-syntax/#code
 describe("Code", () => {
-	it("Code Span", () => {
-		const r = render(
+	it("Code Span", async () => {
+		const r = await render(
 			<Markdown value={"At the command prompt, type `'nano'`."} />,
 		);
 		expect(screen.queryByText("At the command prompt, type")).toBeTruthy();
@@ -416,8 +420,8 @@ describe("Code", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Code Blocks", () => {
-		const r = render(
+	it("Code Blocks", async () => {
+		const r = await render(
 			<Markdown
 				value={"    <html>\n      <head>\n      </head>\n    </html>"}
 			/>,
@@ -425,8 +429,8 @@ describe("Code", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Code Blocks (backtick)", () => {
-		const r = render(
+	it("Code Blocks (backtick)", async () => {
+		const r = await render(
 			<Markdown
 				value={"```<html>\n      <head>\n      </head>\n    </html>\n```"}
 			/>,
@@ -434,8 +438,8 @@ describe("Code", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Code Blocks (backtick), no ending backtick", () => {
-		const r = render(
+	it("Code Blocks (backtick), no ending backtick", async () => {
+		const r = await render(
 			<Markdown
 				value={"```<html>\n      <head>\n      </head>\n    </html>"}
 			/>,
@@ -448,23 +452,23 @@ describe("Code", () => {
 
 // https://www.markdownguide.org/basic-syntax/#horizontal-rules
 describe("Horizontal Rules", () => {
-	it("Asterisks", () => {
-		const r = render(<Markdown value={"***"} />);
+	it("Asterisks", async () => {
+		const r = await render(<Markdown value={"***"} />);
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Dashes", () => {
-		const r = render(<Markdown value={"---"} />);
+	it("Dashes", async () => {
+		const r = await render(<Markdown value={"---"} />);
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Underscores", () => {
-		const r = render(<Markdown value={"_________________"} />);
+	it("Underscores", async () => {
+		const r = await render(<Markdown value={"_________________"} />);
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Horizontal Rule with Paragraph", () => {
-		const r = render(
+	it("Horizontal Rule with Paragraph", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"Try to put a blank line before...\n\n---\n\n...and after a horizontal rule."
@@ -482,8 +486,8 @@ describe("Horizontal Rules", () => {
 
 // https://www.markdownguide.org/basic-syntax/#links
 describe("Links", () => {
-	it("Basic", () => {
-		const r = render(
+	it("Basic", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"My favorite search engine is [Duck Duck Go](https://duckduckgo.com)."
@@ -495,8 +499,8 @@ describe("Links", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Titles", () => {
-		const r = render(
+	it("Titles", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					'My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").'
@@ -508,8 +512,8 @@ describe("Links", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("URLs and Email Addresses", () => {
-		const r = render(
+	it("URLs and Email Addresses", async () => {
+		const r = await render(
 			<Markdown
 				value={"<https://www.markdownguide.org>\n\n<fake@example.com>"}
 			/>,
@@ -519,8 +523,8 @@ describe("Links", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Formatting Links", () => {
-		const r = render(
+	it("Formatting Links", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"I love supporting the **[EFF](https://eff.org)**.\nThis is the *[Markdown Guide](https://www.markdownguide.org)*.\nSee the section on [`code`](#code)."
@@ -533,8 +537,8 @@ describe("Links", () => {
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Links without text, (no render)", () => {
-		const r = render(
+	it("Links without text, (no render)", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"Table of Contents[](https://mastersoftwaretesting.com/testing-fundamentals/software-testing-101-what-is-software-testing#table-of-contents)\n-------------------------------------------------------------------------------------------------------------------------------------------\n"
@@ -550,7 +554,7 @@ describe("Links", () => {
 // https://www.markdownguide.org/basic-syntax/#images-1
 describe("Images", () => {
 	it("Render", async () => {
-		const r = render(
+		const r = await render(
 			<Markdown
 				value={
 					'![The San Juan Mountains are beautiful!](https://dummyimage.com/100x100/fff/aaa "San Juan Mountains")'
@@ -566,7 +570,7 @@ describe("Images", () => {
 		});
 	});
 	it("Linking Images", async () => {
-		const r = render(
+		const r = await render(
 			<Markdown
 				value={
 					'[![An old rock in the desert](https://dummyimage.com/100x100/fff/aaa "Shiprock, New Mexico by Beau Rogers")](https://dummyimage.com/100x100/fff/aaa)'
@@ -582,7 +586,7 @@ describe("Images", () => {
 		});
 	});
 	it("SVG images", async () => {
-		const r = render(
+		const r = await render(
 			<Markdown
 				value={"![svg](https://www.svgrepo.com/show/513268/beer.svg)"}
 			/>,
@@ -596,7 +600,7 @@ describe("Images", () => {
 		});
 	});
 	it("SVG Linking", async () => {
-		const r = render(
+		const r = await render(
 			<Markdown
 				value={
 					'[![SVG Repo](https://www.svgrepo.com/show/513268/beer.svg "SVG Repo")](https://www.svgrepo.com)'
@@ -615,8 +619,8 @@ describe("Images", () => {
 
 // https://www.markdownguide.org/basic-syntax/#escaping-characters
 describe("Escaping Characters", () => {
-	it("Render", () => {
-		const r = render(
+	it("Render", async () => {
+		const r = await render(
 			<Markdown
 				value={
 					"\\* Without the backslash, this would be a bullet in an unordered list."
@@ -636,8 +640,8 @@ describe("Escaping Characters", () => {
 
 // https://www.markdownguide.org/basic-syntax/#html
 describe("HTML", () => {
-	it("Render", () => {
-		const r = render(
+	it("Render", async () => {
+		const r = await render(
 			<Markdown
 				value={"This **word** is bold. This <em>word</em> is italic."}
 			/>,
@@ -649,8 +653,8 @@ describe("HTML", () => {
 
 // https://www.markdownguide.org/extended-syntax/#tables
 describe("Tables", () => {
-	it("Basic", () => {
-		const r = render(
+	it("Basic", async () => {
+		const r = await render(
 			<Markdown
 				value={`
 | Syntax      | Description |
@@ -669,8 +673,8 @@ describe("Tables", () => {
 		expect(screen.queryByText("Text")).toBeTruthy();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Different Cell Widths", () => {
-		const r = render(
+	it("Different Cell Widths", async () => {
+		const r = await render(
 			<Markdown
 				value={`
 | Syntax | Description |
@@ -689,8 +693,8 @@ describe("Tables", () => {
 		expect(screen.queryByText("Text")).toBeTruthy();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Alignment", () => {
-		const r = render(
+	it("Alignment", async () => {
+		const r = await render(
 			<Markdown
 				value={`
 | Syntax      | Description | Test Text     |
@@ -712,8 +716,8 @@ describe("Tables", () => {
 		expect(screen.queryByText("And more")).toBeTruthy();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Pipe Character", () => {
-		const r = render(
+	it("Pipe Character", async () => {
+		const r = await render(
 			<Markdown
 				value={`
 | Syntax    | Description |       Test Text |
@@ -735,8 +739,8 @@ describe("Tables", () => {
 		expect(screen.queryByText("And more")).toBeTruthy();
 		expect(tree).toMatchSnapshot();
 	});
-	it("Emphasis, Code, Links", () => {
-		const r = render(
+	it("Emphasis, Code, Links", async () => {
+		const r = await render(
 			<Markdown
 				value={`
 | _This will also be italic_ |      _You **can** combine them_       |
@@ -759,7 +763,7 @@ describe("Tables", () => {
 		expect(tree).toMatchSnapshot();
 	});
 	it("Images", async () => {
-		const r = render(
+		const r = await render(
 			<Markdown
 				value={`
 |                                Hello                                |
@@ -782,7 +786,7 @@ describe("Tables", () => {
 });
 
 describe("Renderer override", () => {
-	it("Custom", () => {
+	it("Custom", async () => {
 		const fn = jest.fn(
 			(text: string, styles?: TextStyle): ReactNode => (
 				<Text style={styles} key={"key-1"}>
@@ -797,7 +801,7 @@ describe("Renderer override", () => {
 			codespan = fn;
 		}
 
-		const r = render(
+		const r = await render(
 			<Markdown
 				value={"`hello`"}
 				renderer={new CustomRenderer()}
@@ -810,7 +814,7 @@ describe("Renderer override", () => {
 	});
 });
 describe("Tokenizer", () => {
-	it("Custom", () => {
+	it("Custom", async () => {
 		const codespanFn = jest.fn(
 			(text: string, styles?: TextStyle): ReactNode => (
 				<Text style={styles} key={"key-1"}>
@@ -840,7 +844,7 @@ describe("Tokenizer", () => {
 			}
 		}
 
-		const r = render(
+		const r = await render(
 			<Markdown
 				value={"$ latex code $\n\n`hello`"}
 				renderer={new CustomRenderer()}
@@ -856,7 +860,7 @@ describe("Tokenizer", () => {
 });
 
 describe("Hooks", () => {
-	it("invokes hooks when rendering the Markdown component", () => {
+	it("invokes hooks when rendering the Markdown component", async () => {
 		const emStrongMaskSpy = jest.fn((src: string) =>
 			src.replace("$", "a").replace("_", "a"),
 		);
@@ -870,7 +874,7 @@ describe("Hooks", () => {
 		const hooks = new CustomHooks();
 
 		const md = "Hello **_$$world$$_**";
-		const r = render(<Markdown value={md} hooks={hooks} />);
+		const r = await render(<Markdown value={md} hooks={hooks} />);
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 
@@ -879,7 +883,7 @@ describe("Hooks", () => {
 		expect(screen.queryByText("$$world$$")).toBeTruthy();
 	});
 
-	it("invokes hooks when rendering via the useMarkdown hook", () => {
+	it("invokes hooks when rendering via the useMarkdown hook", async () => {
 		const emStrongMaskSpy = jest.fn((src: string) =>
 			src.replace("$", "a").replace("_", "a"),
 		);
@@ -899,7 +903,7 @@ describe("Hooks", () => {
 		};
 
 		const md = "Hello **_$$world$$_**";
-		const r = render(<TestRenderer value={md} />);
+		const r = await render(<TestRenderer value={md} />);
 		const tree = r.toJSON();
 		expect(tree).toMatchSnapshot();
 

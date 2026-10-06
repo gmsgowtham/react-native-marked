@@ -32,45 +32,45 @@ describe("Renderer", () => {
 		const styles = getStyles(userStyles, theme);
 		describe(`${theme} theme`, () => {
 			describe("Text Nodes", () => {
-				it("returns a Text node", () => {
+				it("returns a Text node", async () => {
 					const TextNode = renderer.text("Hello world", styles.text);
 
-					const r = render(TextNode as ReactElement);
+					const r = await render(TextNode as ReactElement);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 
-				it("returns a wrapped Text node", () => {
+				it("returns a wrapped Text node", async () => {
 					const TextNodeChild = renderer.text("Hello world", {});
 					const TextNode = renderer.text([TextNodeChild], styles.text);
-					const r = render(TextNode as ReactElement);
+					const r = await render(TextNode as ReactElement);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 
-				it("returns a wrapped Text node with styles", () => {
+				it("returns a wrapped Text node with styles", async () => {
 					const TextNodeChild = renderer.text("Hello world", styles.text);
 					const TextNode = renderer.text([TextNodeChild], styles.text);
-					const r = render(TextNode as ReactElement);
+					const r = await render(TextNode as ReactElement);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 			});
 			describe("Link Nodes", () => {
-				it("returns a Text Link node", () => {
+				it("returns a Text Link node", async () => {
 					const LinkNode = renderer.link(
 						"Link",
 						"https://example.com",
 						styles.link,
 					);
-					const r = render(LinkNode as ReactElement);
+					const r = await render(LinkNode as ReactElement);
 					expect(screen.queryByText("Link")).toBeTruthy();
 					const link = screen.queryByText("Link");
 					if (link) {
-						fireEvent.press(link);
+						await fireEvent.press(link);
 					}
 					expect(Linking.openURL).toHaveBeenCalled();
 					const tree = r.toJSON();
@@ -84,14 +84,14 @@ describe("Renderer", () => {
 						"https://dummyimage.com/100x100/fff/aaa",
 						"Hello world",
 					);
+					await render(LinkNode as ReactElement);
 					await waitFor(() => {
-						const tree = render(LinkNode as ReactElement).toJSON();
-						expect(tree).toMatchSnapshot();
+						expect(screen.toJSON()).toMatchSnapshot();
 					});
 				});
 			});
 			describe("View Nodes", () => {
-				it("returns a paragraph View node", () => {
+				it("returns a paragraph View node", async () => {
 					const TextNode = renderer.text("Hello world", styles.text);
 					const LinkNode = renderer.link(
 						"Link",
@@ -103,22 +103,22 @@ describe("Renderer", () => {
 						styles.paragraph,
 					);
 
-					const r = render(ViewNode as ReactElement);
+					const r = await render(ViewNode as ReactElement);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					expect(screen.queryByText("Link")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 
-				it("returns a hr View node", () => {
+				it("returns a hr View node", async () => {
 					const ViewNode = renderer.hr(styles.hr);
-					const r = render(ViewNode as ReactElement);
+					const r = await render(ViewNode as ReactElement);
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 			});
 			describe("Table Nodes", () => {
-				it("returns a Table", () => {
+				it("returns a Table", async () => {
 					const TextNode1 = renderer.text("Hello world 1");
 					const TextNode2 = renderer.text("Hello world 2", styles.strong);
 					const TextNode3 = renderer.text("Hello world 3", styles.em);
@@ -133,7 +133,7 @@ describe("Renderer", () => {
 						styles.tableRow,
 						styles.tableCell,
 					);
-					const r = render(Table as ReactElement);
+					const r = await render(Table as ReactElement);
 					expect(screen.queryByText("Hello world 1")).toBeTruthy();
 					expect(screen.queryByText("Hello world 2")).toBeTruthy();
 					expect(screen.queryByText("Hello world 3")).toBeTruthy();
@@ -142,7 +142,7 @@ describe("Renderer", () => {
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
-				it("returns a Table without styles", () => {
+				it("returns a Table without styles", async () => {
 					const TextNode1 = renderer.text("Hello world 1");
 					const TextNode2 = renderer.text("Hello world 2", styles.strong);
 					const TextNode3 = renderer.text("Hello world 3", styles.em);
@@ -151,7 +151,7 @@ describe("Renderer", () => {
 					const headers = [[TextNode1], [TextNode2]];
 					const rows = [[[TextNode3]], [[TextNode4, TextNode5]]];
 					const Table = renderer.table(headers, rows);
-					const r = render(Table as ReactElement);
+					const r = await render(Table as ReactElement);
 					expect(screen.queryByText("Hello world 1")).toBeTruthy();
 					expect(screen.queryByText("Hello world 2")).toBeTruthy();
 					expect(screen.queryByText("Hello world 3")).toBeTruthy();
@@ -162,21 +162,21 @@ describe("Renderer", () => {
 				});
 			});
 			describe("getCodeBlockNode", () => {
-				it("returns a Code block (horizontal ScrollView)", () => {
+				it("returns a Code block (horizontal ScrollView)", async () => {
 					const CodeBlock = renderer.code(
 						"print('hello')",
 						"",
 						styles.code,
 						styles.em,
 					);
-					const r = render(CodeBlock as ReactElement);
+					const r = await render(CodeBlock as ReactElement);
 					expect(screen.queryByText("print('hello')")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
 			});
 			describe("getBlockquoteNode", () => {
-				it("returns a Blockquote", () => {
+				it("returns a Blockquote", async () => {
 					const TextNode = renderer.text("Hello world", styles.text);
 					const LinkNode = renderer.link(
 						"Link",
@@ -188,7 +188,7 @@ describe("Renderer", () => {
 						styles.blockquote,
 					);
 
-					const r = render(Blockquote as ReactElement);
+					const r = await render(Blockquote as ReactElement);
 					expect(screen.queryByText("Hello world")).toBeTruthy();
 					expect(screen.queryByText("Link")).toBeTruthy();
 					const tree = r.toJSON();
@@ -216,9 +216,9 @@ describe("Renderer", () => {
 						"https://picsum.photos/100/100",
 						"Hello world",
 					);
+					await render(ImageNode as ReactElement);
 					await waitFor(() => {
-						const tree = render(ImageNode as ReactElement).toJSON();
-						expect(tree).toMatchSnapshot();
+						expect(screen.toJSON()).toMatchSnapshot();
 					});
 				});
 
@@ -228,7 +228,7 @@ describe("Renderer", () => {
 						"https://example.com/logo.svg",
 						"Logo",
 					);
-					render(ImageNode as ReactElement);
+					await render(ImageNode as ReactElement);
 					const Svg = await screen.findByTestId("react-native-marked-md-svg");
 					expect(Svg.props.accessibilityLabel).toBe("Logo");
 				});
@@ -241,7 +241,7 @@ describe("Renderer", () => {
 						undefined,
 						"Logo title",
 					);
-					render(ImageNode as ReactElement);
+					await render(ImageNode as ReactElement);
 					const Svg = await screen.findByTestId("react-native-marked-md-svg");
 					expect(Svg.props.accessibilityLabel).toBe("Logo title");
 				});
@@ -252,7 +252,7 @@ describe("Renderer", () => {
 						"https://example.com/logo.svg?v=1",
 						"Logo",
 					);
-					render(ImageNode as ReactElement);
+					await render(ImageNode as ReactElement);
 					expect(
 						await screen.findByTestId("react-native-marked-md-svg"),
 					).toBeTruthy();
@@ -264,14 +264,14 @@ describe("Renderer", () => {
 						"https://example.com/LOGO.SVG#top",
 						"Logo",
 					);
-					render(ImageNode as ReactElement);
+					await render(ImageNode as ReactElement);
 					expect(
 						await screen.findByTestId("react-native-marked-md-svg"),
 					).toBeTruthy();
 				});
 			});
 			describe("getListNode", () => {
-				it("returns Ordered List", () => {
+				it("returns Ordered List", async () => {
 					const TextNode1 = renderer.text("Hello world 1", styles.li);
 					const TextNode2 = renderer.text("Hello world 2", styles.li);
 					const TextNode3 = renderer.text("Hello world 3", styles.li);
@@ -281,14 +281,14 @@ describe("Renderer", () => {
 						styles.list,
 						styles.li,
 					);
-					const r = render(OL as ReactElement);
+					const r = await render(OL as ReactElement);
 					expect(screen.queryByText("Hello world 1")).toBeTruthy();
 					expect(screen.queryByText("Hello world 2")).toBeTruthy();
 					expect(screen.queryByText("Hello world 3")).toBeTruthy();
 					const tree = r.toJSON();
 					expect(tree).toMatchSnapshot();
 				});
-				it("returns Un-Ordered List", () => {
+				it("returns Un-Ordered List", async () => {
 					const TextNode1 = renderer.text("Hello world 1", styles.li);
 					const TextNode2 = renderer.text("Hello world 2", styles.li);
 					const TextNode3 = renderer.text("Hello world 3", styles.li);
@@ -298,7 +298,7 @@ describe("Renderer", () => {
 						styles.list,
 						styles.li,
 					);
-					const r = render(OL as ReactElement);
+					const r = await render(OL as ReactElement);
 					expect(screen.queryByText("Hello world 1")).toBeTruthy();
 					expect(screen.queryByText("Hello world 2")).toBeTruthy();
 					expect(screen.queryByText("Hello world 3")).toBeTruthy();
@@ -311,8 +311,8 @@ describe("Renderer", () => {
 });
 
 describe("code and codespan styles #873", () => {
-	it("code block uses codeText style", () => {
-		const r = render(
+	it("code block uses codeText style", async () => {
+		const r = await render(
 			<Markdown
 				value={"```\nhello\n```"}
 				styles={{ codeText: { fontFamily: "Menlo" } }}
@@ -321,8 +321,8 @@ describe("code and codespan styles #873", () => {
 		expect(r.toJSON()).toMatchSnapshot();
 	});
 
-	it("code block with all TextStyle props via codeText", () => {
-		const r = render(
+	it("code block with all TextStyle props via codeText", async () => {
+		const r = await render(
 			<Markdown
 				value={"```\ncode\n```"}
 				styles={{
@@ -338,12 +338,12 @@ describe("code and codespan styles #873", () => {
 		expect(r.toJSON()).toMatchSnapshot();
 	});
 
-	it("code block uses codeText instead of em (not italic)", () => {
-		const r = render(<Markdown value={"```\ncode\n```"} />);
+	it("code block uses codeText instead of em (not italic)", async () => {
+		const r = await render(<Markdown value={"```\ncode\n```"} />);
 		expect(r.toJSON()).toMatchSnapshot();
 	});
 
-	it("code container ViewStyle and codeText TextStyle", () => {
+	it("code container ViewStyle and codeText TextStyle", async () => {
 		const styles = getStyles(
 			{
 				code: { padding: 10, backgroundColor: "#fff" },
@@ -355,8 +355,8 @@ describe("code and codespan styles #873", () => {
 		expect(styles.codeText?.fontFamily).toBe("Menlo");
 	});
 
-	it("codespan preserves style inside strong", () => {
-		const r = render(
+	it("codespan preserves style inside strong", async () => {
+		const r = await render(
 			<Markdown
 				value={"**some `code` inside**"}
 				styles={{
@@ -368,8 +368,8 @@ describe("code and codespan styles #873", () => {
 		expect(r.toJSON()).toMatchSnapshot();
 	});
 
-	it("codespan preserves style inside em", () => {
-		const r = render(
+	it("codespan preserves style inside em", async () => {
+		const r = await render(
 			<Markdown
 				value={"*some `code` inside*"}
 				styles={{
@@ -381,8 +381,8 @@ describe("code and codespan styles #873", () => {
 		expect(r.toJSON()).toMatchSnapshot();
 	});
 
-	it("codespan with all TextStyle props", () => {
-		const r = render(
+	it("codespan with all TextStyle props", async () => {
+		const r = await render(
 			<Markdown
 				value={"Use `code` here"}
 				styles={{

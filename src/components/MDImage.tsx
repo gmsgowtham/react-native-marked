@@ -38,7 +38,7 @@ const MDImage: FunctionComponent<MDImageProps> = ({
 	 * Fetches image dimension
 	 * Sets aspect ratio if resolved
 	 */
-	const fetchOriginalSizeFromRemoteImage = () => {
+	useEffect(() => {
 		Image.getSize(
 			uri,
 			(width: number, height: number) => {
@@ -57,11 +57,7 @@ const MDImage: FunctionComponent<MDImageProps> = ({
 				});
 			},
 		);
-	};
-
-	useEffect(() => {
-		fetchOriginalSizeFromRemoteImage();
-	});
+	}, [uri]);
 
 	return (
 		<ImageBackground

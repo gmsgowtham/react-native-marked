@@ -3855,7 +3855,7 @@ exports[`Images Linking Images 1`] = `
             accessibilityIgnoresInvertColors={true}
             style={
               {
-                "aspectRatio": undefined,
+                "aspectRatio": 1.3333333333333333,
                 "width": "100%",
               }
             }
@@ -3887,10 +3887,6 @@ exports[`Images Linking Images 1`] = `
                 ]
               }
               testID="react-native-marked-md-image"
-            />
-            <ActivityIndicator
-              size="small"
-              testID="react-native-marked-md-image-activity-indicator"
             />
           </View>
         </View>
@@ -3963,7 +3959,7 @@ exports[`Images Render 1`] = `
           accessibilityIgnoresInvertColors={true}
           style={
             {
-              "aspectRatio": undefined,
+              "aspectRatio": 1.3333333333333333,
               "width": "100%",
             }
           }
@@ -3995,10 +3991,6 @@ exports[`Images Render 1`] = `
               ]
             }
             testID="react-native-marked-md-image"
-          />
-          <ActivityIndicator
-            size="small"
-            testID="react-native-marked-md-image-activity-indicator"
           />
         </View>
       </View>
@@ -6605,7 +6597,7 @@ exports[`Lists Elements in Lists: Images 1`] = `
               accessibilityIgnoresInvertColors={true}
               style={
                 {
-                  "aspectRatio": undefined,
+                  "aspectRatio": 1.3333333333333333,
                   "width": "100%",
                 }
               }
@@ -6637,10 +6629,6 @@ exports[`Lists Elements in Lists: Images 1`] = `
                   ]
                 }
                 testID="react-native-marked-md-image"
-              />
-              <ActivityIndicator
-                size="small"
-                testID="react-native-marked-md-image-activity-indicator"
               />
             </View>
           </View>
@@ -9695,7 +9683,7 @@ exports[`Paragraphs Paragraph with Image 1`] = `
           accessibilityIgnoresInvertColors={true}
           style={
             {
-              "aspectRatio": undefined,
+              "aspectRatio": 1.3333333333333333,
               "width": "100%",
             }
           }
@@ -9727,10 +9715,6 @@ exports[`Paragraphs Paragraph with Image 1`] = `
               ]
             }
             testID="react-native-marked-md-image"
-          />
-          <ActivityIndicator
-            size="small"
-            testID="react-native-marked-md-image-activity-indicator"
           />
         </View>
       </View>
@@ -12075,7 +12059,7 @@ exports[`Tables Images 1`] = `
                     accessibilityIgnoresInvertColors={true}
                     style={
                       {
-                        "aspectRatio": undefined,
+                        "aspectRatio": 1.3333333333333333,
                         "width": "100%",
                       }
                     }
@@ -12107,10 +12091,6 @@ exports[`Tables Images 1`] = `
                         ]
                       }
                       testID="react-native-marked-md-image"
-                    />
-                    <ActivityIndicator
-                      size="small"
-                      testID="react-native-marked-md-image-activity-indicator"
                     />
                   </View>
                   <Text
