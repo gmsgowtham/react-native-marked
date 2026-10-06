@@ -260,6 +260,8 @@ const theme: UserTheme = {
 };
 
 describe("Perf test", () => {
+	// Reassure renders the full document 10x + 1 warmup run inside this
+	// single test, which exceeds Jest's 5s default timeout on CI runners.
 	it("Renders markdown", async () => {
 		const scenario = async () => {
 			await screen.queryByText("Markdown Quick Reference");
@@ -274,5 +276,5 @@ describe("Perf test", () => {
 				scenario,
 			},
 		);
-	});
+	}, 60_000);
 });
