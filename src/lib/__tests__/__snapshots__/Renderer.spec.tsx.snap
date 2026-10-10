@@ -23,6 +23,7 @@ exports[`Renderer dark theme Link Nodes returns a Text Link node 1`] = `
 exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
 <RCTScrollView
   horizontal={true}
+  onLayout={[Function]}
 >
   <View>
     <View
@@ -205,6 +206,7 @@ exports[`Renderer dark theme Table Nodes returns a Table 1`] = `
 exports[`Renderer dark theme Table Nodes returns a Table without styles 1`] = `
 <RCTScrollView
   horizontal={true}
+  onLayout={[Function]}
 >
   <View>
     <View
@@ -998,6 +1000,7 @@ exports[`Renderer light theme Link Nodes returns a Text Link node 1`] = `
 exports[`Renderer light theme Table Nodes returns a Table 1`] = `
 <RCTScrollView
   horizontal={true}
+  onLayout={[Function]}
 >
   <View>
     <View
@@ -1180,6 +1183,7 @@ exports[`Renderer light theme Table Nodes returns a Table 1`] = `
 exports[`Renderer light theme Table Nodes returns a Table without styles 1`] = `
 <RCTScrollView
   horizontal={true}
+  onLayout={[Function]}
 >
   <View>
     <View
