@@ -74,7 +74,7 @@
 		"jest-environment-jsdom": "30.5.2",
 		"pod-install": "1.1.0",
 		"postinstall-postinstall": "2.1.0",
-		"react": "19.3.0",
+		"react": "19.3.1",
 		"react-native": "0.78.2",
 		"react-native-builder-bob": "0.43.1",
 		"react-native-svg": "15.15.5",
@@ -174,7 +174,7 @@
 	"overrides": {
 		"@types/react": "19.3.0",
 		"pretty-format": {
-			"react-is": "19.3.0"
+			"react-is": "19.3.1"
 		}
 	},
 	"allowScripts": {
