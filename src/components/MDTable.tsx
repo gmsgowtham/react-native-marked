@@ -1,11 +1,16 @@
-import React, { type FunctionComponent, memo, type ReactNode } from "react";
-import { ScrollView, View, type ViewStyle } from "react-native";
+import React, {
+	type FunctionComponent,
+	memo,
+	type ReactNode,
+	useState,
+} from "react";
+import { Dimensions, ScrollView, View, type ViewStyle } from "react-native";
 import { Cell, Table, TableWrapper } from "react-native-reanimated-table";
+import { getTableWidthArr } from "../utils/table";
 
 type MDTableProps = {
 	header: ReactNode[][];
 	rows: ReactNode[][][];
-	widthArr: number[];
 	rowStyle?: ViewStyle;
 	cellStyle?: ViewStyle;
 	borderColor?: string;
@@ -16,15 +21,20 @@ type MDTableProps = {
 const MDTable: FunctionComponent<MDTableProps> = ({
 	header,
 	rows,
-	widthArr,
 	cellStyle,
 	rowStyle,
 	tableStyle,
 	borderColor,
 	borderWidth,
 }) => {
+	// The window width is only a first guess until the table's own width is laid out.
+	const [width, setWidth] = useState(() => Dimensions.get("window").width);
+	const widthArr = getTableWidthArr(header.length, width);
 	return (
-		<ScrollView horizontal={true}>
+		<ScrollView
+			horizontal={true}
+			onLayout={(e) => setWidth(e.nativeEvent.layout.width)}
+		>
 			<Table borderStyle={{ borderColor, borderWidth }} style={tableStyle}>
 				<TableWrapper style={rowStyle}>
 					{header.map((headerCol, index) => {
