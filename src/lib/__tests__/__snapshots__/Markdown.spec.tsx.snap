@@ -9981,13 +9981,6 @@ exports[`Tables Alignment 1`] = `
             ],
           ]
         }
-        widthArr={
-          [
-            325,
-            325,
-            325,
-          ]
-        }
       />,
     ]
   }
@@ -10022,6 +10015,7 @@ exports[`Tables Alignment 1`] = `
     >
       <RCTScrollView
         horizontal={true}
+        onLayout={[Function]}
       >
         <View>
           <View
@@ -10484,12 +10478,6 @@ exports[`Tables Basic 1`] = `
             ],
           ]
         }
-        widthArr={
-          [
-            325,
-            325,
-          ]
-        }
       />,
     ]
   }
@@ -10524,6 +10512,7 @@ exports[`Tables Basic 1`] = `
     >
       <RCTScrollView
         horizontal={true}
+        onLayout={[Function]}
       >
         <View>
           <View
@@ -10887,12 +10876,6 @@ exports[`Tables Different Cell Widths 1`] = `
             ],
           ]
         }
-        widthArr={
-          [
-            325,
-            325,
-          ]
-        }
       />,
     ]
   }
@@ -10927,6 +10910,7 @@ exports[`Tables Different Cell Widths 1`] = `
     >
       <RCTScrollView
         horizontal={true}
+        onLayout={[Function]}
       >
         <View>
           <View
@@ -11404,12 +11388,6 @@ exports[`Tables Emphasis, Code, Links 1`] = `
             ],
           ]
         }
-        widthArr={
-          [
-            325,
-            325,
-          ]
-        }
       />,
     ]
   }
@@ -11444,6 +11422,7 @@ exports[`Tables Emphasis, Code, Links 1`] = `
     >
       <RCTScrollView
         horizontal={true}
+        onLayout={[Function]}
       >
         <View>
           <View
@@ -11923,11 +11902,6 @@ exports[`Tables Images 1`] = `
             ],
           ]
         }
-        widthArr={
-          [
-            325,
-          ]
-        }
       />,
     ]
   }
@@ -11962,6 +11936,7 @@ exports[`Tables Images 1`] = `
     >
       <RCTScrollView
         horizontal={true}
+        onLayout={[Function]}
       >
         <View>
           <View
@@ -12281,13 +12256,6 @@ exports[`Tables Pipe Character 1`] = `
             ],
           ]
         }
-        widthArr={
-          [
-            325,
-            325,
-            325,
-          ]
-        }
       />,
     ]
   }
@@ -12322,6 +12290,7 @@ exports[`Tables Pipe Character 1`] = `
     >
       <RCTScrollView
         horizontal={true}
+        onLayout={[Function]}
       >
         <View>
           <View
