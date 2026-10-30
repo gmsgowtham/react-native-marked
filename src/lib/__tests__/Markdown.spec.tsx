@@ -7,6 +7,22 @@ import Markdown from "../Markdown";
 import Renderer from "../Renderer";
 import type { RendererInterface } from "../types";
 
+const emStrongMaskSpy = jest.fn((src: string) =>
+	src.replace("$", "a").replace("_", "a"),
+);
+class CustomHooks extends Hooks {
+	emStrongMask(src: string): string {
+		return emStrongMaskSpy(src);
+	}
+}
+
+const hooks = new CustomHooks();
+const TestRenderer = ({ value }: { value: string }) => {
+	const elements = useMarkdown(value, { hooks });
+
+	return <>{elements}</>;
+};
+
 // https://www.markdownguide.org/basic-syntax/#headings
 describe("Headings", () => {
 	it("Heading level 1", async () => {
@@ -878,18 +894,6 @@ describe("Tokenizer", () => {
 
 describe("Hooks", () => {
 	it("invokes hooks when rendering the Markdown component", async () => {
-		const emStrongMaskSpy = jest.fn((src: string) =>
-			src.replace("$", "a").replace("_", "a"),
-		);
-
-		class CustomHooks extends Hooks {
-			emStrongMask(src: string): string {
-				return emStrongMaskSpy(src);
-			}
-		}
-
-		const hooks = new CustomHooks();
-
 		const md = "Hello **_$$world$$_**";
 		const r = await render(<Markdown value={md} hooks={hooks} />);
 		const tree = r.toJSON();
@@ -901,24 +905,6 @@ describe("Hooks", () => {
 	});
 
 	it("invokes hooks when rendering via the useMarkdown hook", async () => {
-		const emStrongMaskSpy = jest.fn((src: string) =>
-			src.replace("$", "a").replace("_", "a"),
-		);
-
-		class CustomHooks extends Hooks {
-			emStrongMask(src: string): string {
-				return emStrongMaskSpy(src);
-			}
-		}
-
-		const hooks = new CustomHooks();
-
-		const TestRenderer = ({ value }: { value: string }) => {
-			const elements = useMarkdown(value, { hooks });
-
-			return <>{elements}</>;
-		};
-
 		const md = "Hello **_$$world$$_**";
 		const r = await render(<TestRenderer value={md} />);
 		const tree = r.toJSON();

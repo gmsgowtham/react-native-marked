@@ -4,6 +4,7 @@ import { Text, View } from "react-native";
 import {
 	type ReactComponentRegistry,
 	ReactComponentRegistryProvider,
+	type ReactComponentRendererProps,
 } from "../../lib/ReactComponentRegistry";
 import useMarkdownWithComponents from "../useMarkdownWithComponents";
 
@@ -30,6 +31,30 @@ const InnerRenderer = ({ value }: { value: string }) => {
 	return <>{elements}</>;
 };
 
+const TestProps = ({ props }: ReactComponentRendererProps) => (
+	<View testID="test-props">
+		<Text testID="string-prop">{String(props.str)}</Text>
+		<Text testID="num-prop">{String(props.num)}</Text>
+		<Text testID="bool-prop">{String(props.bool)}</Text>
+	</View>
+);
+
+const InfoBox = ({ props, children }: ReactComponentRendererProps) => (
+	<View testID="info-box">
+		{props.title && <Text testID="info-title">{String(props.title)}</Text>}
+		<Text testID="info-children">{children}</Text>
+	</View>
+);
+
+const Button = ({ props }: ReactComponentRendererProps) => (
+	<View testID="custom-button">
+		<Text>{String(props.label ?? "Default")}</Text>
+	</View>
+);
+
+const A = () => <Text>Component A</Text>;
+const B = () => <Text>Component B</Text>;
+
 describe("useMarkdownWithComponents", () => {
 	describe("without registry", () => {
 		it("renders regular markdown without components", async () => {
@@ -46,19 +71,8 @@ describe("useMarkdownWithComponents", () => {
 
 	describe("with registry", () => {
 		const components: ReactComponentRegistry = {
-			Button: ({ props }) => (
-				<View testID="custom-button">
-					<Text>{String(props.label ?? "Default")}</Text>
-				</View>
-			),
-			InfoBox: ({ props, children }) => (
-				<View testID="info-box">
-					{props.title && (
-						<Text testID="info-title">{String(props.title)}</Text>
-					)}
-					<Text testID="info-children">{children}</Text>
-				</View>
-			),
+			Button,
+			InfoBox,
 		};
 
 		it("renders a self-closing component", async () => {
@@ -116,13 +130,7 @@ Some text after.`;
 
 		it("passes props correctly to components", async () => {
 			const propsComponents: ReactComponentRegistry = {
-				TestProps: ({ props }) => (
-					<View testID="test-props">
-						<Text testID="string-prop">{String(props.str)}</Text>
-						<Text testID="num-prop">{String(props.num)}</Text>
-						<Text testID="bool-prop">{String(props.bool)}</Text>
-					</View>
-				),
+				TestProps,
 			};
 
 			await render(
@@ -146,8 +154,8 @@ Some text after.`;
 
 		it("handles markdown with only components", async () => {
 			const components: ReactComponentRegistry = {
-				A: () => <Text>Component A</Text>,
-				B: () => <Text>Component B</Text>,
+				A,
+				B,
 			};
 
 			await render(<TestRenderer value="<A /><B />" components={components} />);
