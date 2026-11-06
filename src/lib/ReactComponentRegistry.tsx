@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import React, { createContext, useContext, useMemo } from "react";
+import { useStableValue } from "./../hooks/useStableValue";
 import type { ReactComponentProps } from "./ReactComponentTokenizer";
 
 export interface ReactComponentRendererProps {
@@ -31,13 +32,17 @@ export function ReactComponentRegistryProvider({
 	components,
 	children,
 }: ReactComponentRegistryProviderProps) {
+	/* Stable reference for inline `components={{...}}` object literals, so
+	 * context consumers do not invalidate their parse on every render. */
+	const stableComponents = useStableValue(components);
+
 	const contextValue = useMemo<ReactComponentRegistryContextValue>(
 		() => ({
-			components,
-			getComponent: (name: string) => components[name],
-			hasComponent: (name: string) => name in components,
+			components: stableComponents,
+			getComponent: (name: string) => stableComponents[name],
+			hasComponent: (name: string) => name in stableComponents,
 		}),
-		[components],
+		[stableComponents],
 	);
 
 	return (
