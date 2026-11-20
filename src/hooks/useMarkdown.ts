@@ -1,11 +1,20 @@
-import { type Hooks, lexer, type Tokenizer } from "marked";
-import { type ReactNode, useMemo } from "react";
+import { type Hooks, lexer, type Token, type Tokenizer } from "marked";
+import {
+	cloneElement,
+	isValidElement,
+	type ReactNode,
+	useLayoutEffect,
+	useMemo,
+	useRef,
+} from "react";
 import type { ColorSchemeName } from "react-native";
 import Parser from "../lib/Parser";
 import Renderer from "../lib/Renderer";
 import type { RendererInterface } from "../lib/types";
 import getStyles from "./../theme/styles";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
+import isEqual from "./../utils/isEqual";
+import useStableValue from "./useStableValue";
 
 export interface useMarkdownHookOptions {
 	colorScheme?: ColorSchemeName;
@@ -20,35 +29,81 @@ export interface useMarkdownHookOptions {
 	selectable?: boolean;
 }
 
+type CachedBlock = { token: Token; element: ReactNode };
+
+export const usesDefaultMarkdown = ({
+	renderer,
+	tokenizer,
+	hooks,
+}: useMarkdownHookOptions): boolean => !renderer && !tokenizer && !hooks;
+
 const useMarkdown = (
 	value: string,
-	options?: useMarkdownHookOptions,
+	options: useMarkdownHookOptions = {},
 ): ReactNode[] => {
+	const { colorScheme, baseUrl, renderer, selectable, tokenizer, hooks } =
+		options;
+	const userStyles = useStableValue(options.styles);
+	const theme = useStableValue(options.theme);
+	const reuseBlocks = usesDefaultMarkdown(options);
 	const styles = useMemo(
-		() => getStyles(options?.styles, options?.colorScheme, options?.theme),
-		[options?.styles, options?.theme, options?.colorScheme],
+		() => getStyles(userStyles, colorScheme, theme),
+		[userStyles, colorScheme, theme],
 	);
 
 	const parser = useMemo(
 		() =>
 			new Parser({
-				styles: styles,
-				baseUrl: options?.baseUrl,
-				renderer:
-					options?.renderer ??
-					new Renderer({ selectable: options?.selectable }),
+				styles,
+				baseUrl,
+				renderer: renderer ?? new Renderer({ selectable }),
 			}),
-		[options?.renderer, options?.baseUrl, styles, options?.selectable],
+		[renderer, baseUrl, styles, selectable],
 	);
 
-	const elements = useMemo(() => {
-		const tokens = lexer(value, {
-			gfm: true,
-			tokenizer: options?.tokenizer,
-			hooks: options?.hooks,
-		});
-		return parser.parse(tokens);
-	}, [value, parser, options?.tokenizer, options?.hooks]);
+	const committed = useRef<
+		{ parser: Parser; blocks: Map<string, CachedBlock> } | undefined
+	>(undefined);
+	const { elements, cache } = useMemo(() => {
+		const tokens = lexer(value, { gfm: true, tokenizer, hooks });
+		if (!reuseBlocks)
+			return { elements: parser.parse(tokens), cache: undefined };
+
+		const previous =
+			committed.current?.parser === parser
+				? committed.current.blocks
+				: undefined;
+		const occurrences = new Map<string, number>();
+		const blocks = new Map<string, CachedBlock>();
+		const elements: ReactNode[] = [];
+
+		for (const token of tokens) {
+			const content = [token.type, token.raw];
+			const identity = JSON.stringify(content);
+			const occurrence = occurrences.get(identity) ?? 0;
+			occurrences.set(identity, occurrence + 1);
+			const key = JSON.stringify([...content, occurrence]);
+
+			const cached = previous?.get(key);
+			if (cached && isEqual(cached.token, token)) {
+				blocks.set(key, cached);
+				elements.push(cached.element);
+				continue;
+			}
+
+			const [node] = parser.parse([token]);
+			if (!isValidElement(node)) continue;
+			const element = cloneElement(node, { key });
+			blocks.set(key, { token, element });
+			elements.push(element);
+		}
+
+		return { elements, cache: { parser, blocks } };
+	}, [value, parser, tokenizer, hooks, reuseBlocks]);
+
+	useLayoutEffect(() => {
+		committed.current = cache;
+	}, [cache]);
 
 	return elements;
 };

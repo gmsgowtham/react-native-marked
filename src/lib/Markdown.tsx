@@ -1,7 +1,23 @@
-import React, { type ReactElement, type ReactNode, useCallback } from "react";
+import React, {
+	memo,
+	type ReactElement,
+	type ReactNode,
+	useCallback,
+} from "react";
 import { FlatList, useColorScheme } from "react-native";
-import useMarkdown from "../hooks/useMarkdown";
+import useMarkdown, { usesDefaultMarkdown } from "../hooks/useMarkdown";
 import type { MarkdownProps } from "./types";
+
+/**
+ * FlatList cell renderer for a single top-level markdown element.
+ *
+ * Memoized: `useMarkdown` reuses element instances whose tokens are unchanged
+ * (see its element cache), so all unchanged items skip re-rendering on every
+ * streaming update instead of re-rendering the whole visible list.
+ */
+const MarkdownItem = memo(({ node }: { node: ReactNode }) => {
+	return node as ReactElement;
+});
 
 const Markdown = ({
 	value,
@@ -28,12 +44,16 @@ const Markdown = ({
 	});
 
 	const renderItem = useCallback(({ item }: { item: ReactNode }) => {
-		return item as ReactElement;
+		return <MarkdownItem node={item} />;
 	}, []);
 
+	const stableCellKeys = usesDefaultMarkdown({ renderer, tokenizer, hooks });
 	const keyExtractor = useCallback(
-		(_: ReactNode, index: number) => index.toString(),
-		[],
+		(item: ReactNode, index: number) =>
+			stableCellKeys && React.isValidElement(item) && item.key !== null
+				? String(item.key)
+				: index.toString(),
+		[stableCellKeys],
 	);
 
 	return (
@@ -52,4 +72,6 @@ const Markdown = ({
 	);
 };
 
-export default Markdown;
+/* Memoized: identical props (same value, stable option references) skip the
+ * component render entirely, even when a parent triggers a re-render. */
+export default memo(Markdown);
