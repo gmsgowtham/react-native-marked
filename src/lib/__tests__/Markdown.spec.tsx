@@ -819,6 +819,42 @@ describe("Tables", () => {
 });
 
 describe("Renderer override", () => {
+	it("refreshes custom output and scopes duplicate keys to each cell", async () => {
+		class CustomRenderer extends Renderer {
+			label = "before";
+
+			paragraph(children: ReactNode[]): ReactNode {
+				return (
+					<Text key="1">
+						{this.label}
+						{children}
+					</Text>
+				);
+			}
+		}
+
+		const renderer = new CustomRenderer();
+		const consoleError = jest.spyOn(console, "error");
+		try {
+			const { rerender } = await render(
+				<Markdown value="first" renderer={renderer} />,
+			);
+			expect(screen.queryByText("beforefirst")).toBeTruthy();
+
+			renderer.label = "after";
+			await rerender(
+				<Markdown value={"first\n\nsecond"} renderer={renderer} />,
+			);
+			expect(screen.queryByText("afterfirst")).toBeTruthy();
+			expect(screen.queryByText("aftersecond")).toBeTruthy();
+			expect(consoleError.mock.calls.flat().join(" ")).not.toContain(
+				"same key",
+			);
+		} finally {
+			consoleError.mockRestore();
+		}
+	});
+
 	it("Custom", async () => {
 		const fn = jest.fn(
 			(text: string, styles?: TextStyle): ReactNode => (
@@ -847,6 +883,20 @@ describe("Renderer override", () => {
 	});
 });
 describe("Tokenizer", () => {
+	it("renders tokens with circular metadata", async () => {
+		class CustomTokenizer extends Tokenizer {
+			paragraph(src: string): Tokens.Paragraph | undefined {
+				const token = super.paragraph(src);
+				return token && Object.assign(token, { metadata: token });
+			}
+		}
+
+		await render(
+			<Markdown value="Custom paragraph" tokenizer={new CustomTokenizer()} />,
+		);
+		expect(screen.queryByText("Custom paragraph")).toBeTruthy();
+	});
+
 	it("Custom", async () => {
 		const codespanFn = jest.fn(
 			(text: string, styles?: TextStyle): ReactNode => (

@@ -1,5 +1,12 @@
-import { type Hooks, lexer, type Tokenizer } from "marked";
-import { type ReactNode, useMemo, useRef } from "react";
+import { type Hooks, lexer, type Token, type Tokenizer } from "marked";
+import {
+	cloneElement,
+	isValidElement,
+	type ReactNode,
+	useLayoutEffect,
+	useMemo,
+	useRef,
+} from "react";
 import type { ColorSchemeName } from "react-native";
 import Parser from "../lib/Parser";
 import Renderer from "../lib/Renderer";
@@ -7,7 +14,6 @@ import type { RendererInterface } from "../lib/types";
 import getStyles from "./../theme/styles";
 import type { MarkedStyles, UserTheme } from "./../theme/types";
 import isEqual from "./../utils/isEqual";
-import { assignStableKeys, getStableKeyOf } from "./../utils/stableKeys";
 import useStableValue from "./useStableValue";
 
 export interface useMarkdownHookOptions {
@@ -23,61 +29,23 @@ export interface useMarkdownHookOptions {
 	selectable?: boolean;
 }
 
-/**
- * Equality check for hook options: class/hook instances (`renderer`,
- * `tokenizer`, `hooks`) compare by reference, primitives (`baseUrl`,
- * `colorScheme`, `selectable`) by value, style/theme objects structurally.
- * Lets consumers pass inline `styles={{...}}`/`theme={{...}}` object literals
- * without invalidating the parse on every render.
- */
-export const areHookOptionsEqual = (
-	previous?: useMarkdownHookOptions,
-	next?: useMarkdownHookOptions,
-): boolean => {
-	if (previous === next) return true;
-	if (!previous || !next) return false;
-	return (
-		previous.renderer === next.renderer &&
-		previous.tokenizer === next.tokenizer &&
-		previous.hooks === next.hooks &&
-		previous.baseUrl === next.baseUrl &&
-		previous.colorScheme === next.colorScheme &&
-		previous.selectable === next.selectable &&
-		isEqual(previous.theme, next.theme) &&
-		isEqual(previous.styles, next.styles)
-	);
-};
+type CachedBlock = { token: Token; element: ReactNode };
 
-/**
- * Parsed-element cache for top-level tokens.
- *
- * Reuses previously parsed subtrees when their token content is unchanged,
- * keeping element (and every wrapped component) identities stable during
- * streaming updates so unchanged list items skip re-rendering.
- */
-interface ElementsCache {
-	/** Cache only holds entries parsed by this exact parser instance. */
-	epoch: Parser;
-	/** contentKey (occurrence-suffixed stable key + JSON) → parsed ReactNode[]. */
-	entries: Map<string, ReactNode[]>;
-}
+export const usesDefaultMarkdown = ({
+	renderer,
+	tokenizer,
+	hooks,
+}: useMarkdownHookOptions): boolean => !renderer && !tokenizer && !hooks;
 
 const useMarkdown = (
 	value: string,
-	options?: useMarkdownHookOptions,
+	options: useMarkdownHookOptions = {},
 ): ReactNode[] => {
-	const stableOptions = useStableValue(options, areHookOptionsEqual);
-	const {
-		styles: userStyles,
-		theme,
-		colorScheme,
-		baseUrl,
-		renderer,
-		selectable,
-		tokenizer,
-		hooks,
-	} = stableOptions ?? {};
-
+	const { colorScheme, baseUrl, renderer, selectable, tokenizer, hooks } =
+		options;
+	const userStyles = useStableValue(options.styles);
+	const theme = useStableValue(options.theme);
+	const reuseBlocks = usesDefaultMarkdown(options);
 	const styles = useMemo(
 		() => getStyles(userStyles, colorScheme, theme),
 		[userStyles, colorScheme, theme],
@@ -86,62 +54,56 @@ const useMarkdown = (
 	const parser = useMemo(
 		() =>
 			new Parser({
-				styles: styles,
-				baseUrl: baseUrl,
-				renderer: renderer ?? new Renderer({ selectable: selectable }),
+				styles,
+				baseUrl,
+				renderer: renderer ?? new Renderer({ selectable }),
 			}),
 		[renderer, baseUrl, styles, selectable],
 	);
 
-	const cacheRef = useRef<ElementsCache | undefined>(undefined);
+	const committed = useRef<
+		{ parser: Parser; blocks: Map<string, CachedBlock> } | undefined
+	>(undefined);
+	const { elements, cache } = useMemo(() => {
+		const tokens = lexer(value, { gfm: true, tokenizer, hooks });
+		if (!reuseBlocks)
+			return { elements: parser.parse(tokens), cache: undefined };
 
-	const elements = useMemo(() => {
-		const tokens = lexer(value, {
-			gfm: true,
-			tokenizer: tokenizer,
-			hooks: hooks,
-		});
-
-		/*
-		 * Content-derived keys are assigned before parsing so that React keys
-		 * stay identical across re-parses; unchanged tokens reconcile instead
-		 * of remounting (no image refetches, no lost per-element state).
-		 */
-		assignStableKeys(tokens);
-
-		/* Start a fresh cache for a new parser, keep hits from the previous. */
-		const previousCache: ElementsCache | undefined = cacheRef.current;
-		const entries: Map<string, ReactNode[]> = new Map();
-
+		const previous =
+			committed.current?.parser === parser
+				? committed.current.blocks
+				: undefined;
+		const occurrences = new Map<string, number>();
+		const blocks = new Map<string, CachedBlock>();
 		const elements: ReactNode[] = [];
+
 		for (const token of tokens) {
-			/*
-			 * The occurrence-suffixed stable key separates content-identical
-			 * tokens; without it a plain JSON key would deduplicate them into a
-			 * single cached element, duplicating sibling React keys.
-			 */
-			const stableKey = getStableKeyOf(token);
-			const contentKey = stableKey
-				? `${stableKey}\u0000${JSON.stringify(token)}`
-				: JSON.stringify(token);
-			const cached =
-				previousCache?.epoch === parser
-					? previousCache.entries.get(contentKey)
-					: undefined;
-			if (cached) {
-				entries.set(contentKey, cached);
-				elements.push(...cached);
+			const content = [token.type, token.raw];
+			const identity = JSON.stringify(content);
+			const occurrence = occurrences.get(identity) ?? 0;
+			occurrences.set(identity, occurrence + 1);
+			const key = JSON.stringify([...content, occurrence]);
+
+			const cached = previous?.get(key);
+			if (cached && isEqual(cached.token, token)) {
+				blocks.set(key, cached);
+				elements.push(cached.element);
 				continue;
 			}
-			/* One token at a time keeps releases localized, plus cache keys. */
-			const parsed = parser.parse([token]);
-			entries.set(contentKey, parsed);
-			elements.push(...parsed);
+
+			const [node] = parser.parse([token]);
+			if (!isValidElement(node)) continue;
+			const element = cloneElement(node, { key });
+			blocks.set(key, { token, element });
+			elements.push(element);
 		}
 
-		cacheRef.current = { epoch: parser, entries: entries };
-		return elements;
-	}, [value, parser, tokenizer, hooks]);
+		return { elements, cache: { parser, blocks } };
+	}, [value, parser, tokenizer, hooks, reuseBlocks]);
+
+	useLayoutEffect(() => {
+		committed.current = cache;
+	}, [cache]);
 
 	return elements;
 };

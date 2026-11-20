@@ -8,13 +8,16 @@ import {
 } from "../lib/ReactComponentTokenizer";
 import Renderer from "../lib/Renderer";
 import type { RendererInterface } from "../lib/types";
-import { getStableKeyOf } from "../utils/stableKeys";
 import type { useMarkdownHookOptions } from "./useMarkdown";
-import useMarkdown, { areHookOptionsEqual } from "./useMarkdown";
-import useStableValue from "./useStableValue";
+import useMarkdown from "./useMarkdown";
 
 export interface useMarkdownWithComponentsOptions
 	extends Omit<useMarkdownHookOptions, "tokenizer"> {}
+
+interface ComponentData {
+	token: ReactComponentToken;
+	id: string;
+}
 
 export function useMarkdownWithComponents(
 	value: string,
@@ -22,32 +25,30 @@ export function useMarkdownWithComponents(
 ): ReactNode[] {
 	const registry = useReactComponentRegistry();
 
-	/* Stable options snapshot: inline `renderer`/`styles` object literals must
-	 * not invalidate the base renderer (and with it the whole parse). */
-	const stableOptions = useStableValue(options, areHookOptionsEqual);
-
-	const { tokenizer, tokenDataMap } = useMemo(() => {
-		const map = new Map<string, ReactComponentToken>();
+	const { tokenizer, componentMap } = useMemo(() => {
+		const map = new Map<string, ComponentData>();
 
 		const customTokenizer = new ReactComponentTokenizer();
 		const originalHtml = customTokenizer.html.bind(customTokenizer);
 
+		let componentCounter = 0;
+
 		customTokenizer.html = (src: string) => {
 			const token = originalHtml(src);
 			if (token && isReactComponentToken(token)) {
-				map.set(token.raw, token);
+				const id = `${token.componentName}-${componentCounter++}`;
+				map.set(token.raw, { token, id });
 			}
 			return token;
 		};
 
-		return { tokenizer: customTokenizer, tokenDataMap: map };
+		return { tokenizer: customTokenizer, componentMap: map };
 	}, []);
 
-	const baseRenderer = useMemo<Renderer>(
+	const baseRenderer = useMemo(
 		() =>
-			(stableOptions?.renderer as Renderer) ??
-			new Renderer({ selectable: stableOptions?.selectable }),
-		[stableOptions?.renderer, stableOptions?.selectable],
+			options?.renderer ?? new Renderer({ selectable: options?.selectable }),
+		[options?.renderer, options?.selectable],
 	);
 
 	const renderer = useMemo<RendererInterface>(() => {
@@ -57,24 +58,16 @@ export function useMarkdownWithComponents(
 		// consistent. If Renderer ever uses #private fields this pattern will need revisiting.
 		const wrappedRenderer = Object.create(baseRenderer) as typeof baseRenderer;
 
-		wrappedRenderer.html = (text, styles, token): ReactNode => {
+		wrappedRenderer.html = (text: string | ReactNode[], styles): ReactNode => {
 			if (typeof text === "string") {
-				const data = tokenDataMap.get(text);
+				const data = componentMap.get(text);
 				if (data) {
-					if (registry?.hasComponent(data.componentName)) {
-						const Component = registry.getComponent(data.componentName);
+					if (registry?.hasComponent(data.token.componentName)) {
+						const Component = registry.getComponent(data.token.componentName);
 						if (Component) {
-							/*
-							 * Key from the assigned stable token key, so component
-							 * instances keep their identity (and internal state)
-							 * across re-parses and streaming updates.
-							 */
 							return (
-								<Component
-									key={getStableKeyOf(token) ?? data.raw}
-									props={data.componentProps}
-								>
-									{data.componentChildren || undefined}
+								<Component key={data.id} props={data.token.componentProps}>
+									{data.token.componentChildren || undefined}
 								</Component>
 							);
 						}
@@ -83,14 +76,14 @@ export function useMarkdownWithComponents(
 				}
 			}
 
-			return baseRenderer.html(text, styles, token);
+			return baseRenderer.html(text, styles);
 		};
 
 		return wrappedRenderer;
-	}, [baseRenderer, tokenDataMap, registry]);
+	}, [baseRenderer, componentMap, registry]);
 
 	const elements = useMarkdown(value, {
-		...stableOptions,
+		...options,
 		tokenizer,
 		renderer,
 	});

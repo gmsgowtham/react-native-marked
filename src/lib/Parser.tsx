@@ -54,25 +54,21 @@ class Parser {
 					this.styles.text,
 				);
 
-				return this.renderer.paragraph(children, this.styles.paragraph, token);
+				return this.renderer.paragraph(children, this.styles.paragraph);
 			}
 			case "blockquote": {
 				const children = this.parse(token.tokens);
-				return this.renderer.blockquote(
-					children,
-					this.styles.blockquote,
-					token,
-				);
+				return this.renderer.blockquote(children, this.styles.blockquote);
 			}
 			case "heading": {
 				const styles = this.headingStylesMap[token.depth];
 
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.heading(token.text, styles, token.depth, token);
+					return this.renderer.heading(token.text, styles, token.depth);
 				}
 
 				const children = this._parse(token.tokens, styles);
-				return this.renderer.heading(children, styles, token.depth, token);
+				return this.renderer.heading(children, styles, token.depth);
 			}
 			case "code": {
 				return this.renderer.code(
@@ -80,11 +76,10 @@ class Parser {
 					token.lang,
 					this.styles.code,
 					this.styles.codeText,
-					token,
 				);
 			}
 			case "hr": {
-				return this.renderer.hr(this.styles.hr, token);
+				return this.renderer.hr(this.styles.hr);
 			}
 			case "list": {
 				let startIndex = Number.parseInt(token.start.toString(), 10);
@@ -109,7 +104,7 @@ class Parser {
 						return this._parseToken(cItem);
 					});
 
-					return this.renderer.listItem(children, this.styles.li, item);
+					return this.renderer.listItem(children, this.styles.li);
 				});
 
 				return this.renderer.list(
@@ -118,18 +113,13 @@ class Parser {
 					this.styles.list,
 					this.styles.li,
 					startIndex,
-					token,
 				);
 			}
 			case "escape": {
-				return this.renderer.escape(
-					token.text,
-					{
-						...this.styles.text,
-						...styles,
-					},
-					token,
-				);
+				return this.renderer.escape(token.text, {
+					...this.styles.text,
+					...styles,
+				});
 			}
 			case "link": {
 				// Don't render anchors without text and children
@@ -149,23 +139,11 @@ class Parser {
 				const href = getValidURL(this.baseUrl, token.href);
 
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.link(
-						token.text,
-						href,
-						linkStyle,
-						token.title,
-						token,
-					);
+					return this.renderer.link(token.text, href, linkStyle, token.title);
 				}
 
 				const children = this._parse(token.tokens, linkStyle);
-				return this.renderer.link(
-					children,
-					href,
-					linkStyle,
-					token.title,
-					token,
-				);
+				return this.renderer.link(children, href, linkStyle, token.title);
 			}
 			case "image": {
 				return this.renderer.image(
@@ -173,7 +151,6 @@ class Parser {
 					token.text,
 					this.styles.image,
 					token.title,
-					token,
 				);
 			}
 			case "strong": {
@@ -182,11 +159,11 @@ class Parser {
 					...styles,
 				};
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.strong(token.text, boldStyle, token);
+					return this.renderer.strong(token.text, boldStyle);
 				}
 
 				const children = this._parse(token.tokens, boldStyle);
-				return this.renderer.strong(children, boldStyle, token);
+				return this.renderer.strong(children, boldStyle);
 			}
 			case "em": {
 				const italicStyle = {
@@ -194,24 +171,20 @@ class Parser {
 					...styles,
 				};
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.em(token.text, italicStyle, token);
+					return this.renderer.em(token.text, italicStyle);
 				}
 
 				const children = this._parse(token.tokens, italicStyle);
-				return this.renderer.em(children, italicStyle, token);
+				return this.renderer.em(children, italicStyle);
 			}
 			case "codespan": {
-				return this.renderer.codespan(
-					decode(token.text),
-					{
-						...(styles as TextStyle),
-						...this.styles.codespan,
-					},
-					token,
-				);
+				return this.renderer.codespan(decode(token.text), {
+					...(styles as TextStyle),
+					...this.styles.codespan,
+				});
 			}
 			case "br": {
-				return this.renderer.br(token);
+				return this.renderer.br();
 			}
 			case "del": {
 				const strikethroughStyle = {
@@ -219,30 +192,22 @@ class Parser {
 					...styles,
 				};
 				if (this.hasDuplicateTextChildToken(token)) {
-					return this.renderer.del(token.text, strikethroughStyle, token);
+					return this.renderer.del(token.text, strikethroughStyle);
 				}
 
 				const children = this._parse(token.tokens, strikethroughStyle);
-				return this.renderer.del(children, strikethroughStyle, token);
+				return this.renderer.del(children, strikethroughStyle);
 			}
 			case "text":
-				return this.renderer.text(
-					token.raw,
-					{
-						...this.styles.text,
-						...styles,
-					},
-					token,
-				);
+				return this.renderer.text(token.raw, {
+					...this.styles.text,
+					...styles,
+				});
 			case "html": {
-				return this.renderer.html(
-					token.raw,
-					{
-						...this.styles.text,
-						...styles,
-					},
-					token,
-				);
+				return this.renderer.html(token.raw, {
+					...this.styles.text,
+					...styles,
+				});
 			}
 			case "table": {
 				const header = (token as Tokens.Table).header.map((row, i) =>
@@ -265,7 +230,6 @@ class Parser {
 					this.styles.table,
 					this.styles.tableRow,
 					this.styles.tableCell,
-					token,
 				);
 			}
 			default: {
@@ -312,7 +276,6 @@ class Parser {
 							imageToken.text ?? imageToken.title ?? "",
 							this.styles.image,
 							imageToken.title,
-							t,
 						),
 					);
 				}

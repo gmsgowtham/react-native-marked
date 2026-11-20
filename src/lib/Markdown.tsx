@@ -5,7 +5,7 @@ import React, {
 	useCallback,
 } from "react";
 import { FlatList, useColorScheme } from "react-native";
-import useMarkdown from "../hooks/useMarkdown";
+import useMarkdown, { usesDefaultMarkdown } from "../hooks/useMarkdown";
 import type { MarkdownProps } from "./types";
 
 /**
@@ -47,15 +47,14 @@ const Markdown = ({
 		return <MarkdownItem node={item} />;
 	}, []);
 
-	const keyExtractor = useCallback((item: ReactNode, index: number) => {
-		/* Top-level elements carry stable, content-derived keys; prefer them
-		 * so insertions above the viewport don't shift every cell. Nulls
-		 * (e.g. separators) and foreign nodes fall back to the index. */
-		if (React.isValidElement(item) && item.key !== null) {
-			return String(item.key);
-		}
-		return index.toString();
-	}, []);
+	const stableCellKeys = usesDefaultMarkdown({ renderer, tokenizer, hooks });
+	const keyExtractor = useCallback(
+		(item: ReactNode, index: number) =>
+			stableCellKeys && React.isValidElement(item) && item.key !== null
+				? String(item.key)
+				: index.toString(),
+		[stableCellKeys],
+	);
 
 	return (
 		<FlatList

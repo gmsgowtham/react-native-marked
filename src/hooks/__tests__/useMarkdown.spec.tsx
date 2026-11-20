@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import React from "react";
 import { type ColorSchemeName, View } from "react-native";
 import type { MarkedStyles, UserTheme } from "../../theme/types";
-import useMarkdown, { areHookOptionsEqual } from "../useMarkdown";
+import useMarkdown from "../useMarkdown";
 
 const twoParagraphs = "First paragraph.\n\nSecond paragraph.";
 
@@ -139,6 +139,26 @@ describe("useMarkdown", () => {
 		}
 	});
 
+	it("refreshes a reference link when its definition changes", async () => {
+		const collector: ReactNode[][] = [];
+		const value = (path: string) =>
+			`[label][ref]\n\n[ref]: https://example.com/${path}`;
+		const { rerender } = await render(
+			<MarkdownHarness value={value("old")} collector={collector} />,
+		);
+		await rerender(
+			<MarkdownHarness value={value("new")} collector={collector} />,
+		);
+
+		const before = collector[0]?.[0];
+		const after = collector[1]?.[0];
+		if (!React.isValidElement(before) || !React.isValidElement(after)) {
+			throw new Error("Expected both link blocks to render");
+		}
+		expect(after.key).toBe(before.key);
+		expect(after).not.toBe(before);
+	});
+
 	it("re-parses when colorScheme changes", async () => {
 		const collector: ReactNode[][] = [];
 		const { rerender } = await render(
@@ -171,14 +191,17 @@ describe("useMarkdown", () => {
 	it("renders identical top-level tokens with distinct keys", async () => {
 		const collector: ReactNode[][] = [];
 		await render(
-			<MarkdownHarness value={"Same.\n\nSame."} collector={collector} />,
+			<MarkdownHarness
+				value={"same\n\nsame\n\nsame@1"}
+				collector={collector}
+			/>,
 		);
 
 		const elements = collector[0] ?? [];
 		const keys = elements.map((element) =>
 			React.isValidElement(element) ? element.key : undefined,
 		);
-		expect(keys.length).toBe(2);
+		expect(keys.length).toBe(3);
 		// Content-identical tokens must not deduplicate into one keyed element.
 		expect(new Set(keys).size).toBe(keys.length);
 	});
@@ -209,62 +232,5 @@ describe("useMarkdown", () => {
 		await render(<MarkdownHarness value={twoParagraphs} collector={[]} />);
 		expect(screen.queryByText("First paragraph.")).toBeTruthy();
 		expect(screen.queryByText("Second paragraph.")).toBeTruthy();
-	});
-});
-
-describe("areHookOptionsEqual", () => {
-	it("treats inline theme/styles literals with equal content as equal", () => {
-		expect(
-			areHookOptionsEqual(
-				{
-					theme: {
-						colors: {
-							text: "#123456",
-							code: "#f6f8fa",
-							link: "#58a6ff",
-							border: "#d0d7de",
-						},
-					},
-					styles: { paragraph: { marginTop: 2 } },
-				},
-				{
-					theme: {
-						colors: {
-							text: "#123456",
-							code: "#f6f8fa",
-							link: "#58a6ff",
-							border: "#d0d7de",
-						},
-					},
-					styles: { paragraph: { marginTop: 2 } },
-				},
-			),
-		).toBe(true);
-	});
-
-	it("treats differently styled content as unequal", () => {
-		expect(
-			areHookOptionsEqual(
-				{ styles: { paragraph: { marginTop: 2 } } },
-				{ styles: { paragraph: { marginTop: 4 } } },
-			),
-		).toBe(false);
-	});
-
-	it("treats a colorScheme change as unequal", () => {
-		expect(
-			areHookOptionsEqual({ colorScheme: "light" }, { colorScheme: "dark" }),
-		).toBe(false);
-		expect(
-			areHookOptionsEqual({ colorScheme: "dark" }, { colorScheme: "dark" }),
-		).toBe(true);
-	});
-
-	it("requires the same renderer instance", () => {
-		const renderer = { paragraph: () => null } as never;
-		expect(areHookOptionsEqual({ renderer }, { renderer })).toBe(true);
-		expect(areHookOptionsEqual({ renderer }, { renderer: {} as never })).toBe(
-			false,
-		);
 	});
 });
