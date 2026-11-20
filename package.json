@@ -54,10 +54,10 @@
 		"registry": "https://registry.npmjs.org/"
 	},
 	"devDependencies": {
-		"@babel/core": "7.29.7",
+		"@babel/core": "7.29.13",
 		"@babel/helper-explode-assignable-expression": "7.18.6",
 		"@babel/preset-env": "7.29.7",
-		"@biomejs/biome": "2.6.5",
+		"@biomejs/biome": "2.6.6",
 		"@commitlint/config-conventional": "21.2.4",
 		"@evilmartians/lefthook": "2.2.2",
 		"@react-native/babel-preset": "0.78.2",
@@ -163,7 +163,7 @@
 		"@jsamr/react-native-li": "2.3.1",
 		"github-slugger": "2.0.0",
 		"html-entities": "2.6.0",
-		"marked": "18.1.3",
+		"marked": "18.2.1",
 		"react-native-reanimated-table": "0.0.2",
 		"svg-parser": "2.1.0"
 	},
