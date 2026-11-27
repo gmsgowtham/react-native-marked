@@ -65,7 +65,7 @@
 		"@testing-library/react-native": "14.1.0",
 		"@types/jest": "30.0.0",
 		"@types/node": "26.6.6",
-		"@types/react": "19.3.0",
+		"@types/react": "19.3.3",
 		"@types/svg-parser": "^2.0.3",
 		"commitlint": "21.2.4",
 		"danger": "14.1.0",
@@ -172,7 +172,7 @@
 	},
 	"packageManager": "npm@12.2.3",
 	"overrides": {
-		"@types/react": "19.3.0",
+		"@types/react": "19.3.3",
 		"pretty-format": {
 			"react-is": "19.3.1"
 		}
