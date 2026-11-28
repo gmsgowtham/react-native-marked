@@ -54,9 +54,9 @@
 		"registry": "https://registry.npmjs.org/"
 	},
 	"devDependencies": {
-		"@babel/core": "7.29.13",
+		"@babel/core": "7.29.16",
 		"@babel/helper-explode-assignable-expression": "7.18.6",
-		"@babel/preset-env": "7.29.7",
+		"@babel/preset-env": "7.29.14",
 		"@biomejs/biome": "2.6.8",
 		"@commitlint/config-conventional": "21.2.4",
 		"@evilmartians/lefthook": "2.2.2",
